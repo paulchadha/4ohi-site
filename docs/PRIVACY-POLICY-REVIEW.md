@@ -12,7 +12,8 @@ The policy describes the present Internal Alpha state documented before this web
 - no production account or authentication system currently exists;
 - no dedicated advertising or behavioral-analytics SDK is represented as present;
 - operational logging is described conservatively and hosting/platform providers may process standard request or diagnostic data;
-- the static website has no analytics, advertising, forms, client script, or first-party cookie code;
+- the static website has no analytics, advertising, forms, first-party cookies, or third-party requests;
+- Quick Play uses dependency-free client JavaScript and keeps tutorial progress only in page memory; it does not use local storage, session storage, an account, or a backend;
 - support communications are received by email and may contain details and attachments provided by the sender.
 
 Privacy questions currently route to `support@4ohi.com`. Credentials and private correspondence must not be stored in Git.
@@ -33,4 +34,4 @@ Privacy questions currently route to `support@4ohi.com`. Credentials and private
 
 ## Change rule
 
-Do not replace accurate language with “we collect nothing” or another absolute claim. Any new SDK, account feature, durable database, payment, advertising, analytics, social feature, user-generated content, or data transfer requires a new privacy review before release.
+Any new SDK, account feature, storage, durable database, payment, advertising, analytics, social feature, user-generated content, or data transfer requires a new privacy review before release.
