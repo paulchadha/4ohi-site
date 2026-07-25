@@ -44,3 +44,14 @@ DNS restoration must use the last verified zone export and the current documenta
 ## Current limitations
 
 2FA, recovery contacts, domain lock, and authorized sessions require authenticated account inspection and are not yet confirmed.
+
+## Website cutover controls
+
+- The canonical hostname is `4ohi.com`; `www.4ohi.com` must redirect to it.
+- GoDaddy remains the registrar and authoritative DNS provider.
+- Only an authenticated company GoDaddy account may change the zone.
+- Capture the authenticated zone immediately before mutation and a verified after-state immediately afterward.
+- Preserve MX, SPF, DKIM, DMARC, Proton verification, Domain Connect, and unrelated ownership TXT records.
+- Keep GitHub Pages HTTPS enforcement disabled until DNS resolves to GitHub and certificates match both hostnames.
+- If account or DNS integrity is uncertain, stop, preserve evidence, and restore the documented pre-cutover website records without changing mail.
+- GoDaddy browser control was unavailable at the documented pre-cutover checkpoint; therefore no DNS mutation was attempted.

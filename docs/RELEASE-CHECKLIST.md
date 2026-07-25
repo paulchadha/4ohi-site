@@ -49,3 +49,18 @@
 - [ ] Links and commands are tested.
 - [ ] No secret is committed.
 - [ ] Full commit hashes and messages are captured in the launch report.
+
+## Current cutover evidence
+
+- [x] Public DNS baseline confirmed through local, Google, and Cloudflare resolvers.
+- [x] GitHub Pages custom domain is set to `4ohi.com`.
+- [x] Repository `CNAME` contains `4ohi.com`.
+- [x] HTTPS enforcement remains off before certificate provisioning.
+- [x] MX, SPF, and DMARC answers remain unchanged.
+- [x] Unconfigured email addresses are marked pending and mailto links are disabled.
+- [ ] Authenticated GoDaddy zone exported immediately before change.
+- [ ] Website-only DNS records changed.
+- [ ] Apex and `www` propagation confirmed from multiple resolvers.
+- [ ] Matching certificates confirmed for apex and `www`.
+- [ ] HTTPS enforcement enabled after certificate provisioning.
+- [ ] Custom-domain responsive and browser accessibility testing completed.

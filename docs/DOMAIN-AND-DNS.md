@@ -72,3 +72,41 @@ After each change:
 ## Known limitations
 
 Authenticated account settings and the complete private zone view are pending because browser access was unavailable during the public audit.
+
+## Website cutover checkpoint — 2026-07-25 17:25 UTC
+
+### Reconfirmed public baseline
+
+| Name | Type | Current value | Planned action |
+|---|---|---|---|
+| `@` | A | `13.248.243.5` | Remove after authenticated GoDaddy review |
+| `@` | A | `76.223.105.230` | Remove after authenticated GoDaddy review |
+| `www` | CNAME | `4ohi.com` | Replace after authenticated GoDaddy review |
+| `@` | MX 0 | `smtp.secureserver.net` | Preserve exactly |
+| `@` | MX 10 | `mailstore1.secureserver.net` | Preserve exactly |
+| `@` | TXT/SPF | `v=spf1 include:spf.em.secureserver.net ?all` | Preserve exactly |
+| `_dmarc` | TXT | `v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;` | Preserve exactly |
+
+Google Public DNS and Cloudflare DNS independently returned the same apex A, `www` CNAME, and MX answers. The endpoint still identified itself as GoDaddy DPS before any DNS change. No website or mail DNS record was modified at this checkpoint.
+
+### Proposed website-only change — not yet applied
+
+Per [current GitHub Pages custom-domain guidance](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site):
+
+| Name | Type | Proposed value |
+|---|---|---|
+| `@` | A | `185.199.108.153` |
+| `@` | A | `185.199.109.153` |
+| `@` | A | `185.199.110.153` |
+| `@` | A | `185.199.111.153` |
+| `@` | AAAA | `2606:50c0:8000::153` |
+| `@` | AAAA | `2606:50c0:8001::153` |
+| `@` | AAAA | `2606:50c0:8002::153` |
+| `@` | AAAA | `2606:50c0:8003::153` |
+| `www` | CNAME | `paulchadha.github.io` |
+
+Before saving in GoDaddy, re-export the complete authenticated zone and verify the two conflicting placeholder A records and current `www` CNAME are the only website records being replaced. Do not alter MX, SPF, DKIM, DMARC, Proton verification, Domain Connect, or unrelated TXT records.
+
+### Rollback
+
+If the GitHub cutover fails, restore apex A records `13.248.243.5` and `76.223.105.230`, restore `www` CNAME to `4ohi.com`, remove only the GitHub A/AAAA records, and wait through the published TTLs. Mail records remain unchanged during both cutover and rollback.

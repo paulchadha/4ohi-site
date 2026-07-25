@@ -36,3 +36,14 @@ Do not change website A/CNAME records until the temporary `github.io` deployment
 - [Privacy policy review](docs/PRIVACY-POLICY-REVIEW.md)
 
 Never commit credentials, tokens, recovery codes, private keys, or account exports.
+
+## Current domain-cutover status
+
+- GitHub Pages source: `main` at the repository root.
+- GitHub Pages custom domain: `4ohi.com`.
+- Canonical hostname: `4ohi.com`; planned redirect hostname: `www.4ohi.com`.
+- `CNAME` contains `4ohi.com`.
+- HTTPS enforcement is off until DNS points to GitHub Pages and GitHub provisions a matching certificate.
+- GoDaddy website DNS has not been changed; the placeholder remains live.
+- Existing MX, SPF, and DMARC records were rechecked and intentionally left unchanged.
+- Company email addresses are reserved but not operational; public pages clearly mark email setup as pending.
