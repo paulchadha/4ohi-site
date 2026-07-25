@@ -26,7 +26,7 @@ Last run: 2026-07-25
 
 ## Deployment and DNS
 
-- [ ] Release commits are pushed and the Pages workflow matches the final commit.
+- [x] Release commits are pushed; Pages workflow `30175139178` succeeded for `874e28deb1a917bc050854cbc1c3b0a6de754e20`.
 - [x] GitHub Pages custom domain is `4ohi.com`; repository `CNAME` matches.
 - [x] Pages source is `main` at repository root and the pre-release workflow is green.
 - [x] Public DNS baseline was reconfirmed through Google and Cloudflare resolvers.

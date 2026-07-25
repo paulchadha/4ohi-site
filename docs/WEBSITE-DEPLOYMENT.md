@@ -11,7 +11,7 @@
 
 ## Current status
 
-GitHub Pages is configured and its latest pre-polish build is successful. The repository `CNAME` contains `4ohi.com`. Website DNS still serves the GoDaddy placeholder, so the custom-domain certificate is not provisioned and HTTPS enforcement remains off. `support@4ohi.com` is operational; no mail record was changed by this release.
+GitHub Pages is configured. Release workflow `30175139178` successfully built and deployed commit `874e28deb1a917bc050854cbc1c3b0a6de754e20` on 2026-07-25. The repository `CNAME` contains `4ohi.com`. Website DNS still serves the GoDaddy placeholder, so the custom-domain certificate is not provisioned and HTTPS enforcement remains off. `support@4ohi.com` is operational; no mail record was changed by this release.
 
 ## Release workflow
 
