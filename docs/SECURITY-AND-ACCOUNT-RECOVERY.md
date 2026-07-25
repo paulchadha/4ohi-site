@@ -1,23 +1,23 @@
 # Security and account recovery
 
-## Account ownership
+## Ownership and protections
 
-| Service | Responsible account | Required protections | Recovery dependency |
+| Service | Responsible account | Required protection | Recovery dependency |
 |---|---|---|---|
-| GoDaddy | Company domain administrator | unique password, 2FA, domain lock, current recovery email/phone | registrar recovery and company ownership records |
-| Proton Mail | Company mail administrator | unique password, 2FA, recovery method, recovery phrase/file held offline if enabled | Proton recovery process and company ownership records |
-| GitHub | Company source administrator | unique password, 2FA, protected recovery codes held offline | GitHub recovery and repository ownership |
+| GitHub / `paulchadha/4ohi-site` | company source administrator | unique password, 2FA, protected recovery codes, reviewed collaborators | GitHub recovery and company ownership records |
+| GoDaddy / `4ohi.com` | company domain administrator | unique password, 2FA, domain lock, current recovery email and phone | registrar recovery and company ownership records |
+| Company email | company mail administrator | unique password, 2FA, current recovery method, reviewed forwarding and aliases | mail-provider recovery and company ownership records |
 
 Do not store passwords, session cookies, tokens, recovery codes, recovery phrases, DKIM private keys, or private account exports in this repository.
 
-## Baseline
+## Baseline controls
 
-- Require 2FA on all three services.
-- Use an organization-owned recovery route rather than a disposable or former-employee address.
-- Keep at least two authorized recovery custodians when the company is ready to support that separation.
+- Require 2FA on every administrator account.
+- Use an organization-controlled recovery route, not a disposable or former-employee address.
+- Keep at least two authorized recovery custodians when operationally possible.
 - Review active sessions, authorized apps, forwarding, aliases, repository collaborators, Pages settings, and registrar delegates quarterly.
-- Keep the GoDaddy domain locked except during a planned transfer.
-- Enable provider security notifications.
+- Keep the domain locked except during a planned transfer and enable provider security notifications.
+- Protect `main` and require review when the team grows beyond one maintainer.
 
 ## Recovery runbook
 
@@ -32,26 +32,12 @@ Do not store passwords, session cookies, tokens, recovery codes, recovery phrase
 
 ## Domain loss prevention
 
-- Confirm expiration and auto-renew in GoDaddy.
-- Maintain a renewal calendar at 90, 60, and 30 days before expiration.
-- Verify the payment method at least quarterly and after any card/account change.
-- Keep registry lock status in the quarterly review.
+Confirm the public registry expiration of 2028-07-25 in GoDaddy, verify auto-renew and the payment method quarterly, and maintain reminders at 90, 60, and 30 days before expiration. Confirm the intended registry lock status in the authenticated account.
 
-## Incident rollback
+## Website and DNS controls
 
-DNS restoration must use the last verified zone export and the current documentation. Repository restoration must use a signed-in authorized GitHub account and a known-good commit. Mail recovery must prioritize stopping unauthorized forwarding and access before changing public DNS.
+The canonical hostname is `4ohi.com`; `www.4ohi.com` should redirect to it after cutover. Only an authenticated company administrator may change the zone. Capture a complete before-state and after-state. Preserve MX, SPF, DKIM, DMARC, provider-verification, Domain Connect, and unrelated TXT records. Keep GitHub Pages HTTPS enforcement off until DNS resolves to GitHub and certificates match both hostnames.
 
 ## Current limitations
 
-2FA, recovery contacts, domain lock, and authorized sessions require authenticated account inspection and are not yet confirmed.
-
-## Website cutover controls
-
-- The canonical hostname is `4ohi.com`; `www.4ohi.com` must redirect to it.
-- GoDaddy remains the registrar and authoritative DNS provider.
-- Only an authenticated company GoDaddy account may change the zone.
-- Capture the authenticated zone immediately before mutation and a verified after-state immediately afterward.
-- Preserve MX, SPF, DKIM, DMARC, Proton verification, Domain Connect, and unrelated ownership TXT records.
-- Keep GitHub Pages HTTPS enforcement disabled until DNS resolves to GitHub and certificates match both hostnames.
-- If account or DNS integrity is uncertain, stop, preserve evidence, and restore the documented pre-cutover website records without changing mail.
-- GoDaddy browser control was unavailable at the documented pre-cutover checkpoint; therefore no DNS mutation was attempted.
+2FA state, recovery contacts, authorized sessions, domain auto-renew, billing, and the complete private DNS zone require authenticated review and are not confirmed by this repository. No authenticated account setting was changed in the website release.

@@ -2,36 +2,35 @@
 
 Last technical review: 2026-07-25
 
-## Evidence used
+## Current publication basis
 
-The initial policy reflects the current PalaceApp code and security documentation:
+The policy describes the present Internal Alpha state documented before this website sprint:
 
-- player name, avatar, optional photo reference, ratings, reconnect credentials, and a generated identifier are stored locally;
-- online/ranked play sends identity, display profile, session/table, actions, game state, results, and rating information needed for play;
-- multiplayer state, sessions, and rankings are currently in memory;
-- no production account/authentication system exists;
-- no dedicated advertising, behavioral analytics, or crash-reporting SDK appears in current dependencies;
-- server health logging is designed to exclude player identity, profile data, reconnect credentials, and table contents;
-- the static website contains no analytics, trackers, forms, or first-party cookie code.
+- chosen player name, avatar, optional profile-photo reference, ratings, reconnect credential, preferences, and a generated identifier may be stored locally;
+- online or ranked play sends display, session, table, action, game-state, result, reconnect, and rating information needed to operate a match;
+- multiplayer tables, sessions, and rankings are currently in memory rather than a durable production database;
+- no production account or authentication system currently exists;
+- no dedicated advertising or behavioral-analytics SDK is represented as present;
+- operational logging is described conservatively and hosting/platform providers may process standard request or diagnostic data;
+- the static website has no analytics, advertising, forms, client script, or first-party cookie code;
+- support communications are received by email and may contain details and attachments provided by the sender.
+
+Privacy questions currently route to `support@4ohi.com`. Credentials and private correspondence must not be stored in Git.
 
 ## Required review before launch changes
 
-- [ ] Confirm every shipping app version and server commit covered by the policy.
-- [ ] Confirm actual production hosting request logs and retention.
-- [ ] Confirm Expo Updates, Apple, Google, and distribution-provider data flows.
-- [ ] Confirm whether platform crash reports are enabled and accessible to the company.
-- [ ] Confirm whether profile photos are ever uploaded, transformed, cached, or retained server-side.
+- [ ] Confirm every shipping app version and server revision covered by the policy.
+- [ ] Confirm production hosting request logs and retention.
+- [ ] Confirm Apple, Google, update-provider, and distribution-provider data flows.
+- [ ] Confirm platform crash-report behavior and company access.
+- [ ] Confirm whether profile photos are uploaded, transformed, cached, or retained server-side.
 - [ ] Confirm production database, identity, account, moderation, ranking, and abuse-control plans.
-- [ ] Define retention periods for support email and any durable production data.
+- [ ] Define retention periods for support email and durable production data.
 - [ ] Confirm children/family positioning, age gates, COPPA strategy, and store age ratings with counsel.
-- [ ] Identify applicable state, national, and international privacy laws based on users and launch regions.
-- [ ] Establish a verified privacy-request workflow.
-- [ ] Complete legal review and record approval date/owner.
+- [ ] Identify applicable laws based on actual users and launch regions.
+- [ ] Establish and test a privacy-request workflow.
+- [ ] Complete legal review and record approval date and owner.
 
-## Publication rule
+## Change rule
 
-Do not replace accurate language with “we collect nothing” or similarly absolute claims. Any new SDK, account feature, durable database, payment, advertising, analytics, social feature, or user-generated content requires policy review before release.
-
-## Responsible account
-
-Privacy inquiries route to `privacy@4ohi.com`. Credentials and private correspondence must not be stored in Git.
+Do not replace accurate language with “we collect nothing” or another absolute claim. Any new SDK, account feature, durable database, payment, advertising, analytics, social feature, user-generated content, or data transfer requires a new privacy review before release.

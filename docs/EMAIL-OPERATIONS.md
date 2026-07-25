@@ -1,58 +1,34 @@
 # Email operations
 
-## Intended service
+## Current state
 
-- Provider: Proton Mail paid subscription
-- Custom domain: `4ohi.com`
-- Responsible account: company Proton account; no credentials are stored here
-- Required addresses:
-  - `support@4ohi.com` — Four of Hearts Support
-  - `paul@4ohi.com` — Paul Chadha | Four of Hearts Interactive
-  - `privacy@4ohi.com` — Four of Hearts Privacy
-  - `security@4ohi.com` — Four of Hearts Security
-- Preferred model: aliases into the existing protected inbox, unless the Proton plan or operational separation requires addresses/mailboxes
-- Catch-all: disabled
+- Public contact: `support@4ohi.com` — operational, per company confirmation on 2026-07-25.
+- The website routes support, privacy, security, and general inquiries through this address until separate approved addresses are confirmed.
+- Public DNS currently routes mail through GoDaddy MX records. Provider account configuration, mailbox aliases, DKIM selectors, and message-level authentication results were not inspected in this website task.
+- No email DNS or provider setting was changed during the website release.
 
-## Current status
+## Required protection
 
-Proton plan eligibility, domain verification, addresses, MX, SPF, DKIM, and DMARC are pending authenticated Proton audit. Existing public DNS still routes mail to GoDaddy and must remain intact until exact Proton values are obtained and the migration is ready.
-
-## Migration procedure
-
-1. In Proton, confirm the subscription supports custom domains and enough addresses/aliases.
-2. Add `4ohi.com`.
-3. Record Proton's exact verification TXT record.
-4. Record both exact MX targets and priorities.
-5. Record the exact SPF value.
-6. Record every exact DKIM selector and public-key TXT value. Never store a private key.
-7. Record Proton's current DMARC recommendation.
-8. Export the GoDaddy zone and add only the verification record.
-9. Wait for Proton to verify ownership.
-10. Create the four addresses with the display names above.
-11. Replace GoDaddy MX records with Proton MX records.
-12. Replace the single GoDaddy SPF TXT record with Proton's exact SPF value. Ensure the root has exactly one SPF record.
-13. Add all Proton DKIM public records.
-14. Replace the current GoDaddy DMARC record with Proton's recommendation. Unless current guidance supports enforcement immediately, start with `v=DMARC1; p=none; rua=mailto:security@4ohi.com`.
-15. Recheck the entire DNS zone. Website changes must not touch mail records.
+Website work must never modify MX, SPF, DKIM, DMARC, provider-verification, or unrelated TXT records. Before any mail migration, export the full authenticated zone, record exact provider values, plan one coordinated change, and define a complete rollback. Never create duplicate SPF or DMARC records.
 
 ## Validation
 
-- Send from an unrelated external mailbox to `support@4ohi.com`, `privacy@4ohi.com`, and `security@4ohi.com`.
-- Reply from `support@4ohi.com` to the external sender.
-- Send from `paul@4ohi.com` to an external mailbox.
-- Inspect only authentication headers needed to confirm `spf=pass`, `dkim=pass`, and `dmarc=pass`; do not commit private message content.
-- Confirm one root SPF record and one `_dmarc` record.
-- Test website and unrelated DNS after the mail migration.
+For an authorized mail test:
 
-Record timestamps, sender/recipient roles, result, and authentication status without message bodies or secrets.
+1. Send from an unrelated mailbox to `support@4ohi.com`.
+2. Reply from `support@4ohi.com`.
+3. Inspect only the authentication headers needed to confirm SPF, DKIM, and DMARC results.
+4. Record timestamp, sender/recipient roles, delivery result, and authentication status without storing message bodies or secrets.
+5. Confirm the website and unrelated DNS still work.
 
-## Routine operations
+## Operations and privacy
 
-- Review Proton billing and domain status monthly.
-- Review aliases, recovery methods, active sessions, and 2FA quarterly.
-- Investigate rejected mail from provider logs without exporting private messages.
-- Treat security and privacy mail as sensitive business records with least-privilege access.
+- Protect the responsible mail account with a unique password, 2FA, current recovery methods, and security notifications.
+- Review billing, aliases, forwarding, recovery methods, active sessions, and authorized apps quarterly.
+- Treat privacy and security correspondence as sensitive business records with least-privilege access.
+- Define and approve retention rules for support messages before public launch.
+- Never commit passwords, tokens, recovery material, private messages, or DKIM private keys.
 
-## Rollback and recovery
+## Recovery
 
-If Proton delivery fails, first verify propagation, record syntax, and provider status. Do not create split or duplicate SPF records. A return to GoDaddy mail requires restoring both original MX records and the original SPF/DMARC configuration as one documented incident change. Coordinate recovery through the company Proton and GoDaddy account owners.
+If delivery fails, verify propagation, record syntax, account status, and provider status before changing DNS. Restore mail routing only as a complete, documented configuration; never mix partial provider configurations. Website rollback must not touch mail records.

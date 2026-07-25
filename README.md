@@ -1,31 +1,38 @@
 # Four of Hearts Interactive website
 
-Static company website for Four of Hearts Interactive, LLC and `4ohi.com`.
+Public company website for Four of Hearts Interactive, LLC and `4ohi.com`.
+
+## Current product state
+
+- Palace, Hearts, Spades, and Euchre are in Internal Alpha.
+- Public app-store availability is not claimed and no download badges are shown.
+- Player, privacy, security, and general inquiries currently use `support@4ohi.com`.
 
 ## Architecture
 
-- Plain HTML and CSS; no build step.
-- No client analytics, advertising, tracking pixels, remote fonts, databases, or user accounts.
-- GitHub Pages is the intended host.
-- `4ohi.com` is the canonical hostname; `www.4ohi.com` should redirect to it.
+- Plain semantic HTML and CSS; no build step, framework, client JavaScript, forms, or runtime dependencies.
+- No analytics, advertising, tracking pixels, remote fonts, or first-party cookies.
+- GitHub Pages publishes `main` from the repository root.
+- Canonical hostname: `https://4ohi.com/`; `www.4ohi.com` should redirect to the apex after DNS cutover.
 
-## Local preview
-
-From the repository root:
+## Local preview and validation
 
 ```powershell
 python -m http.server 8080
+node scripts/validate-site.mjs
 ```
 
-Then open `http://localhost:8080/`.
+Open `http://localhost:8080/`. The validation script checks pages, internal and email links, metadata, images, accessibility hooks, CNAME, sitemap, mixed content, tracking code, and common secret patterns.
 
-## Deploy
+## Deployment
 
-Push the default branch to GitHub and enable Pages from that branch at the repository root. Validate the temporary `github.io` deployment before adding a `CNAME` file for `4ohi.com`.
+Push reviewed changes to `main`. GitHub Pages deploys the repository root. Wait for the `pages-build-deployment` workflow, confirm its head SHA matches the pushed commit, and verify every public page.
 
-Do not change website A/CNAME records until the temporary `github.io` deployment passes. Do not alter MX, SPF, DKIM, or DMARC records during website deployment.
+The `CNAME` file is already set to `4ohi.com`, but the apex and `www` still point to the GoDaddy placeholder. Do not enable HTTPS enforcement until website DNS points to GitHub and GitHub provisions matching certificates.
 
-## Documentation
+Never change MX, SPF, DKIM, DMARC, Proton verification, or unrelated TXT records during a website release.
+
+## Operations documentation
 
 - [Domain and DNS](docs/DOMAIN-AND-DNS.md)
 - [Email operations](docs/EMAIL-OPERATIONS.md)
@@ -35,15 +42,4 @@ Do not change website A/CNAME records until the temporary `github.io` deployment
 - [Brand assets](docs/BRAND-ASSETS.md)
 - [Privacy policy review](docs/PRIVACY-POLICY-REVIEW.md)
 
-Never commit credentials, tokens, recovery codes, private keys, or account exports.
-
-## Current domain-cutover status
-
-- GitHub Pages source: `main` at the repository root.
-- GitHub Pages custom domain: `4ohi.com`.
-- Canonical hostname: `4ohi.com`; planned redirect hostname: `www.4ohi.com`.
-- `CNAME` contains `4ohi.com`.
-- HTTPS enforcement is off until DNS points to GitHub Pages and GitHub provisions a matching certificate.
-- GoDaddy website DNS has not been changed; the placeholder remains live.
-- Existing MX, SPF, and DMARC records were rechecked and intentionally left unchanged.
-- Company email addresses are reserved but not operational; public pages clearly mark email setup as pending.
+Never commit credentials, tokens, recovery codes, private keys, private correspondence, or account exports.

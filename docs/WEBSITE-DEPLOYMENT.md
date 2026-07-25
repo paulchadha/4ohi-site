@@ -2,49 +2,39 @@
 
 ## Target
 
-- Repository: `4ohi-site`
+- Owner/repository: `paulchadha/4ohi-site` (public)
 - Host: GitHub Pages
-- Canonical URL: `https://4ohi.com/`
-- Alternate hostname: `www.4ohi.com`, redirected to the apex
-- Source: default branch, repository root
+- Source: `main`, repository root
 - Build: none
+- Canonical URL: `https://4ohi.com/`
+- Alternate hostname: `www.4ohi.com`, intended to redirect to the apex
 
-## Current deployment status
+## Current status
 
-- Repository: `https://github.com/paulchadha/4ohi-site` (public).
-- Source: `main`, repository root.
-- CNAME commit: `2e3bbd2dc0a86ad9f7b4ca915173351b502ca8d6`.
-- GitHub Pages custom domain: `4ohi.com`.
-- Pages build: successful.
-- HTTPS enforcement: disabled pending DNS and certificate provisioning.
-- Certificate: not yet provisioned.
-- GoDaddy website DNS: unchanged; placeholder still active.
-- Mail DNS: intentionally unchanged.
-- Email limitation: company addresses are reserved but not operational.
+GitHub Pages is configured and its latest pre-polish build is successful. The repository `CNAME` contains `4ohi.com`. Website DNS still serves the GoDaddy placeholder, so the custom-domain certificate is not provisioned and HTTPS enforcement remains off. `support@4ohi.com` is operational; no mail record was changed by this release.
 
-## First deployment
+## Release workflow
 
-1. Create a private or public GitHub repository as appropriate for Pages plan eligibility.
-2. Push the complete, clean source tree.
-3. Enable GitHub Pages from the default branch and repository root.
-4. Verify the temporary `github.io` URL before changing DNS.
-5. Configure the custom domain `4ohi.com`; GitHub will create or update the repository `CNAME` declaration.
-6. Copy GitHub's current DNS targets exactly into GoDaddy after saving the old website records.
-7. Configure `www` using GitHub's current CNAME instruction.
-8. Wait for GitHub's DNS check, then enforce HTTPS.
-9. Verify apex and `www`; use the platform's domain behavior to keep the apex canonical.
+1. Confirm the worktree is clean and synchronized with `origin/main` before editing.
+2. Preview locally and run `node scripts/validate-site.mjs`.
+3. Test every page, internal link, email link, image, 404, keyboard focus, reduced motion, and requested responsive size.
+4. Run `git diff --check`, review the complete diff, and scan for secrets.
+5. Commit reviewed files and push `main` without force.
+6. Wait for `pages-build-deployment` to complete and confirm its head SHA matches the pushed commit.
+7. Verify the published pages and resources. Before DNS cutover, use the GitHub Pages deployment status as the source of truth because the configured `github.io` URL redirects to the custom domain.
+8. Record the commit, workflow URL, result, and remaining domain work.
 
-## Validation
+## Custom-domain and HTTPS procedure
 
-Run the release checklist. At minimum test every page, internal and email links, 404 behavior, responsive widths, keyboard access, metadata, no mixed content, no unexpected cookies or tracking requests, TLS, and canonical redirects.
+Follow `DOMAIN-AND-DNS.md`. Export the authenticated zone, change website-only records, preserve every mail record, verify apex and `www` propagation, wait for certificates, then enable HTTPS enforcement in GitHub Pages. Confirm canonical redirects and rerun browser checks at the custom domain.
 
 ## Rollback
 
-- Content rollback: revert the relevant website commit and push.
-- Deployment rollback: select the previously known-good commit/branch in Pages.
-- DNS rollback: restore the pre-change GoDaddy website A records and `www` CNAME documented in `DOMAIN-AND-DNS.md`.
-- Do not alter MX, SPF, DKIM, DMARC, or Proton verification during a website rollback.
+- Content: revert the release commit with a new commit and push; do not rewrite published history.
+- Deployment: verify the rollback Pages workflow reaches the revert commit.
+- DNS: restore only the documented pre-cutover website A and `www` records.
+- Never alter MX, SPF, DKIM, DMARC, or provider-verification records during website rollback.
 
-## Dependencies and limitations
+## Review evidence
 
-The site depends on GitHub account access, repository availability, GitHub Pages, GoDaddy DNS, annual domain renewal, and valid HTTPS provisioning. GitHub authorization and the authenticated GoDaddy change remain pending.
+Responsive browser evidence and machine-readable results are stored in `docs/visual-evidence/`. The release checklist records what was validated and what remains blocked by domain cutover or legal review.
