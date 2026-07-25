@@ -9,6 +9,12 @@
 - Source: default branch, repository root
 - Build: none
 
+## Current deployment status
+
+- GitHub repository: https://github.com/paulchadha/4ohi-site`n- Visibility: private
+- Default branch: main`n- Pushed commit before this status update: 4329e43a5504a536358e9a7e0fb949bf556af570`n- GitHub Pages: not configured
+- Public visibility approval is required before using free public GitHub Pages for this repository.
+
 ## First deployment
 
 1. Create a private or public GitHub repository as appropriate for Pages plan eligibility.
