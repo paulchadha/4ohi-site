@@ -1,93 +1,184 @@
 {
   "viewports": [
     {
+      "page": "index.html",
       "width": 320,
       "height": 568,
       "status": 200,
       "overflow": false,
       "scrollWidth": 320,
       "clientWidth": 320,
-      "h1": "Games worth gathering around.",
-      "active": 19,
       "images": true,
+      "h1": "One family. Many games. One joyful table.",
       "consoleErrors": [],
       "failedRequests": []
     },
     {
+      "page": "play.html",
+      "width": 320,
+      "height": 568,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "images": true,
+      "h1": "Learn a little. Play right away.",
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "page": "index.html",
       "width": 360,
       "height": 800,
       "status": 200,
       "overflow": false,
       "scrollWidth": 360,
       "clientWidth": 360,
-      "h1": "Games worth gathering around.",
-      "active": 19,
       "images": true,
+      "h1": "One family. Many games. One joyful table.",
       "consoleErrors": [],
       "failedRequests": []
     },
     {
+      "page": "play.html",
+      "width": 360,
+      "height": 800,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "images": true,
+      "h1": "Learn a little. Play right away.",
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "page": "index.html",
       "width": 390,
       "height": 844,
       "status": 200,
       "overflow": false,
       "scrollWidth": 390,
       "clientWidth": 390,
-      "h1": "Games worth gathering around.",
-      "active": 19,
       "images": true,
+      "h1": "One family. Many games. One joyful table.",
       "consoleErrors": [],
       "failedRequests": []
     },
     {
+      "page": "play.html",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "images": true,
+      "h1": "Learn a little. Play right away.",
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "page": "index.html",
       "width": 430,
       "height": 932,
       "status": 200,
       "overflow": false,
       "scrollWidth": 430,
       "clientWidth": 430,
-      "h1": "Games worth gathering around.",
-      "active": 19,
       "images": true,
+      "h1": "One family. Many games. One joyful table.",
       "consoleErrors": [],
       "failedRequests": []
     },
     {
+      "page": "play.html",
+      "width": 430,
+      "height": 932,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 430,
+      "clientWidth": 430,
+      "images": true,
+      "h1": "Learn a little. Play right away.",
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "page": "index.html",
       "width": 768,
       "height": 1024,
       "status": 200,
       "overflow": false,
       "scrollWidth": 768,
       "clientWidth": 768,
-      "h1": "Games worth gathering around.",
-      "active": 19,
       "images": true,
+      "h1": "One family. Many games. One joyful table.",
       "consoleErrors": [],
       "failedRequests": []
     },
     {
+      "page": "play.html",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "images": true,
+      "h1": "Learn a little. Play right away.",
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "page": "index.html",
       "width": 1366,
       "height": 768,
       "status": 200,
       "overflow": false,
       "scrollWidth": 1366,
       "clientWidth": 1366,
-      "h1": "Games worth gathering around.",
-      "active": 19,
       "images": true,
+      "h1": "One family. Many games. One joyful table.",
       "consoleErrors": [],
       "failedRequests": []
     },
     {
+      "page": "play.html",
+      "width": 1366,
+      "height": 768,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "clientWidth": 1366,
+      "images": true,
+      "h1": "Learn a little. Play right away.",
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "page": "index.html",
       "width": 1920,
       "height": 1080,
       "status": 200,
       "overflow": false,
       "scrollWidth": 1920,
       "clientWidth": 1920,
-      "h1": "Games worth gathering around.",
-      "active": 19,
       "images": true,
+      "h1": "One family. Many games. One joyful table.",
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "page": "play.html",
+      "width": 1920,
+      "height": 1080,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "clientWidth": 1920,
+      "images": true,
+      "h1": "Learn a little. Play right away.",
       "consoleErrors": [],
       "failedRequests": []
     }
@@ -96,19 +187,25 @@
     {
       "name": "index.html",
       "status": 200,
-      "title": "Four of Hearts Interactive — Games worth gathering around",
-      "h1": "Games worth gathering around.",
+      "title": "Four of Hearts Interactive — One family. Many games.",
+      "h1": "One family. Many games. One joyful table.",
       "images": true,
-      "links": 19,
       "cookies": ""
     },
     {
       "name": "games.html",
       "status": 200,
       "title": "Our Games — Four of Hearts Interactive",
-      "h1": "Classic tables, fresh care.",
+      "h1": "Four games. Four worlds. One table.",
       "images": true,
-      "links": 16,
+      "cookies": ""
+    },
+    {
+      "name": "play.html",
+      "status": 200,
+      "title": "Quick Play — Four of Hearts Interactive",
+      "h1": "Learn a little. Play right away.",
+      "images": true,
       "cookies": ""
     },
     {
@@ -117,7 +214,6 @@
       "title": "Support — Four of Hearts Interactive",
       "h1": "Let’s get you back to the table.",
       "images": true,
-      "links": 18,
       "cookies": ""
     },
     {
@@ -126,7 +222,6 @@
       "title": "Privacy Policy — Four of Hearts Interactive",
       "h1": "Privacy Policy",
       "images": true,
-      "links": 17,
       "cookies": ""
     },
     {
@@ -135,7 +230,6 @@
       "title": "Security — Four of Hearts Interactive",
       "h1": "Help us keep the table safe.",
       "images": true,
-      "links": 18,
       "cookies": ""
     },
     {
@@ -144,7 +238,6 @@
       "title": "Internal Alpha Terms — Four of Hearts Interactive",
       "h1": "Terms of Use",
       "images": true,
-      "links": 17,
       "cookies": ""
     },
     {
@@ -153,7 +246,6 @@
       "title": "Contact — Four of Hearts Interactive",
       "h1": "We’d love to hear from you.",
       "images": true,
-      "links": 18,
       "cookies": ""
     },
     {
@@ -162,22 +254,46 @@
       "title": "Page not found — Four of Hearts Interactive",
       "h1": "This card isn’t in the deck.",
       "images": true,
-      "links": 3,
       "cookies": ""
     }
   ],
-  "consoleErrors": [],
-  "failedRequests": [],
+  "interaction": {
+    "steps": [
+      {
+        "step": "Palace friendly miss",
+        "feedback": "Good try. Three is lower than six. Try a card that matches or climbs."
+      },
+      {
+        "step": "Palace complete",
+        "score": "1 of 4 tables complete"
+      },
+      {
+        "step": "Hearts complete",
+        "score": "2 of 4 tables complete"
+      },
+      {
+        "step": "Spades complete",
+        "score": "3 of 4 tables complete"
+      },
+      {
+        "step": "Euchre complete",
+        "score": "4 of 4 tables complete"
+      }
+    ],
+    "finalHeading": "You are a table legend."
+  },
   "accessibility": {
     "firstTab": {
-      "tag": "A",
       "text": "Skip to content",
       "href": "#main",
-      "outlineWidth": "3px",
-      "visible": true
+      "outline": "3px"
     },
-    "skipLinkTarget": "#main",
-    "primaryTargetsAtLeast44px": true,
-    "minimumPrimaryTargetHeight": 44
-  }
+    "tabArrowSequence": [
+      "Hearts",
+      "Spades"
+    ],
+    "primaryTargetsAtLeast44px": true
+  },
+  "consoleErrors": [],
+  "failedRequests": []
 }

@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
-const pages = ["index.html", "games.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html", "404.html"];
+const pages = ["index.html", "games.html", "play.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html", "404.html"];
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 
@@ -43,6 +43,8 @@ for (const page of pages) {
     }
   }
 
+  for (const match of html.matchAll(/<script\b[^>]*src="([^"]+)"/gi)) { check(existsSync(join(root, match[1])), `${page}: missing script ${match[1]}`); }
+
   for (const match of html.matchAll(/<img\b([^>]*)>/gi)) {
     const attrs = match[1];
     const src = attrs.match(/src="([^"]+)"/i)?.[1];
@@ -68,7 +70,7 @@ const allFiles = readdirSync(root, { recursive: true, withFileTypes: true })
   .filter((entry) => entry.isFile() && !entry.parentPath.includes(`${join(root, ".git")}`))
   .map((entry) => join(entry.parentPath, entry.name));
 for (const file of allFiles) {
-  if (!/\.(?:html|css|md|txt|xml|mjs)$/i.test(file)) continue;
+  if (!/\.(?:html|css|js|mjs|md|txt|xml)$/i.test(file)) continue;
   const text = readFileSync(file, "utf8");
   check(!/(-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9_]{20,}|AIza[0-9A-Za-z_-]{30,})/.test(text), `${basename(file)}: possible secret found`);
 }
