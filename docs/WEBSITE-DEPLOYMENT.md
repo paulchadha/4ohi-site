@@ -14,8 +14,8 @@
 - GitHub repository: `https://github.com/paulchadha/4ohi-site`
 - Visibility: public
 - Default branch: `main`
-- GitHub Pages: pending initial configuration
-- Custom domain: intentionally deferred until the temporary `github.io` deployment passes
+- GitHub Pages: live at `https://paulchadha.github.io/4ohi-site/`
+- Initial successful Pages build: commit `1680887f9ee268e8e04e37996576167e4ab8689a` at 2026-07-25 16:44:49 UTC`r`n- Temporary URL verification: required HTML pages, stylesheet, favicon, and Palace icon returned HTTP 200; an unknown route returned HTTP 404`r`n- Custom domain: intentionally deferred until authenticated GoDaddy access is available
 
 ## First deployment
 

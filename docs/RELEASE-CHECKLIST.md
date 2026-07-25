@@ -26,8 +26,8 @@
 
 ## Deployment and DNS
 
-- [ ] Repository is clean and all commits are pushed.
-- [ ] GitHub Pages deployment is green at the temporary URL.
+- [x] Repository is clean and all commits are pushed.
+- [x] GitHub Pages deployment is green at the temporary URL.
 - [ ] Pre-change DNS is exported.
 - [ ] Apex and `www` use GitHub's current documented values.
 - [ ] `https://4ohi.com/` has a valid certificate.
