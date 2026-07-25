@@ -21,7 +21,7 @@ Then open `http://localhost:8080/`.
 
 ## Deploy
 
-Push the default branch to GitHub and enable Pages from that branch at the repository root. The committed `CNAME` file declares `4ohi.com`.
+Push the default branch to GitHub and enable Pages from that branch at the repository root. Validate the temporary `github.io` deployment before adding a `CNAME` file for `4ohi.com`.
 
 Do not change website A/CNAME records until the temporary `github.io` deployment passes. Do not alter MX, SPF, DKIM, or DMARC records during website deployment.
 

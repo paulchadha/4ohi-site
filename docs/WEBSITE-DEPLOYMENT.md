@@ -11,9 +11,11 @@
 
 ## Current deployment status
 
-- GitHub repository: https://github.com/paulchadha/4ohi-site`n- Visibility: private
-- Default branch: main`n- Pushed commit before this status update: 4329e43a5504a536358e9a7e0fb949bf556af570`n- GitHub Pages: not configured
-- Public visibility approval is required before using free public GitHub Pages for this repository.
+- GitHub repository: `https://github.com/paulchadha/4ohi-site`
+- Visibility: public
+- Default branch: `main`
+- GitHub Pages: pending initial configuration
+- Custom domain: intentionally deferred until the temporary `github.io` deployment passes
 
 ## First deployment
 
@@ -21,7 +23,7 @@
 2. Push the complete, clean source tree.
 3. Enable GitHub Pages from the default branch and repository root.
 4. Verify the temporary `github.io` URL before changing DNS.
-5. Configure the custom domain `4ohi.com`; keep the committed `CNAME`.
+5. Configure the custom domain `4ohi.com`; GitHub will create or update the repository `CNAME` declaration.
 6. Copy GitHub's current DNS targets exactly into GoDaddy after saving the old website records.
 7. Configure `www` using GitHub's current CNAME instruction.
 8. Wait for GitHub's DNS check, then enforce HTTPS.
