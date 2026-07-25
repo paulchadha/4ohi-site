@@ -1,0 +1,183 @@
+{
+  "viewports": [
+    {
+      "width": 320,
+      "height": 568,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "h1": "Games worth gathering around.",
+      "active": 19,
+      "images": true,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "h1": "Games worth gathering around.",
+      "active": 19,
+      "images": true,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "h1": "Games worth gathering around.",
+      "active": 19,
+      "images": true,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 430,
+      "clientWidth": 430,
+      "h1": "Games worth gathering around.",
+      "active": 19,
+      "images": true,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "h1": "Games worth gathering around.",
+      "active": 19,
+      "images": true,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "clientWidth": 1366,
+      "h1": "Games worth gathering around.",
+      "active": 19,
+      "images": true,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "status": 200,
+      "overflow": false,
+      "scrollWidth": 1920,
+      "clientWidth": 1920,
+      "h1": "Games worth gathering around.",
+      "active": 19,
+      "images": true,
+      "consoleErrors": [],
+      "failedRequests": []
+    }
+  ],
+  "pages": [
+    {
+      "name": "index.html",
+      "status": 200,
+      "title": "Four of Hearts Interactive — Games worth gathering around",
+      "h1": "Games worth gathering around.",
+      "images": true,
+      "links": 19,
+      "cookies": ""
+    },
+    {
+      "name": "games.html",
+      "status": 200,
+      "title": "Our Games — Four of Hearts Interactive",
+      "h1": "Classic tables, fresh care.",
+      "images": true,
+      "links": 16,
+      "cookies": ""
+    },
+    {
+      "name": "support.html",
+      "status": 200,
+      "title": "Support — Four of Hearts Interactive",
+      "h1": "Let’s get you back to the table.",
+      "images": true,
+      "links": 18,
+      "cookies": ""
+    },
+    {
+      "name": "privacy.html",
+      "status": 200,
+      "title": "Privacy Policy — Four of Hearts Interactive",
+      "h1": "Privacy Policy",
+      "images": true,
+      "links": 17,
+      "cookies": ""
+    },
+    {
+      "name": "security.html",
+      "status": 200,
+      "title": "Security — Four of Hearts Interactive",
+      "h1": "Help us keep the table safe.",
+      "images": true,
+      "links": 18,
+      "cookies": ""
+    },
+    {
+      "name": "terms.html",
+      "status": 200,
+      "title": "Internal Alpha Terms — Four of Hearts Interactive",
+      "h1": "Terms of Use",
+      "images": true,
+      "links": 17,
+      "cookies": ""
+    },
+    {
+      "name": "contact.html",
+      "status": 200,
+      "title": "Contact — Four of Hearts Interactive",
+      "h1": "We’d love to hear from you.",
+      "images": true,
+      "links": 18,
+      "cookies": ""
+    },
+    {
+      "name": "404.html",
+      "status": 200,
+      "title": "Page not found — Four of Hearts Interactive",
+      "h1": "This card isn’t in the deck.",
+      "images": true,
+      "links": 3,
+      "cookies": ""
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "accessibility": {
+    "firstTab": {
+      "tag": "A",
+      "text": "Skip to content",
+      "href": "#main",
+      "outlineWidth": "3px",
+      "visible": true
+    },
+    "skipLinkTarget": "#main",
+    "primaryTargetsAtLeast44px": true,
+    "minimumPrimaryTargetHeight": 44
+  }
+}
