@@ -7,9 +7,10 @@ Last audited: 2026-07-25 (public DNS only)
 - Domain: `4ohi.com`
 - Company: Four of Hearts Interactive, LLC
 - Registrar: GoDaddy (confirmed by company records; authenticated account confirmation pending)
-- Registration expiration: pending authenticated GoDaddy audit
+- Registered: 2026-07-25 15:54:36 UTC (public registry RDAP)
+- Registration expiration: 2028-07-25 15:54:36 UTC (public registry RDAP; confirm in GoDaddy)
 - Auto-renew: pending authenticated GoDaddy audit
-- Domain lock: pending authenticated GoDaddy audit
+- Public registry status: client delete, renew, transfer, and update prohibited; confirm intended lock settings in GoDaddy
 - Registrar 2FA: pending authenticated GoDaddy audit
 - Responsible account: company GoDaddy account; credentials and recovery material are not stored here
 - Renewal dependency: active GoDaddy billing method, account access, and renewal reminders at 90/60/30 days
