@@ -2,11 +2,11 @@
 
 ## Current state
 
-- Public contact: `support@4ohi.com` — operational, per company confirmation on 2026-07-25.
+- Public contact: `support@4ohi.com` — operational per prior company confirmation; a fresh post-cutover send/receive test is required before final launch sign-off.
 - The website routes support, privacy, security, and general inquiries through this address until separate approved addresses are confirmed.
-- Public DNS currently routes mail through GoDaddy MX records. Provider account configuration, mailbox aliases, DKIM selectors, and message-level authentication results were not inspected in this website task.
-- No email DNS or provider setting was changed during the website release.
-
+- Public DNS routes mail through Proton Mail: MX 10 `mail.protonmail.ch`, MX 20 `mailsec.protonmail.ch`, SPF `v=spf1 include:_spf.protonmail.ch ~all`, DMARC `v=DMARC1; p=quarantine`, the Proton verification TXT record, and all three Proton DKIM CNAME selectors.
+- Authoritative GoDaddy DNS, Google Public DNS, and Cloudflare DNS returned the same mail records after the website-only cutover.
+- The website cutover did not replace or remove any Proton Mail record. Outbound TCP port 25 is blocked from the launch-verification environment, so SMTP banner testing here is not evidence of mailbox failure or success.
 ## Required protection
 
 Website work must never modify MX, SPF, DKIM, DMARC, provider-verification, or unrelated TXT records. Before any mail migration, export the full authenticated zone, record exact provider values, plan one coordinated change, and define a complete rollback. Never create duplicate SPF or DMARC records.

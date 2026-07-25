@@ -6,15 +6,15 @@ The current website direction comes from the company-provided `4 of hearts logo.
 
 The site translates that high-energy board into a readable family experience: dark stage-like hero surfaces, bright game accents, generous light content areas, restrained glow, and friendly interactive card lessons. It must remain playful rather than casino-like and must never imply gambling or public store availability.
 
-## Brand-board derivatives
+## Brand-board source and derivatives
 
-The source board remains outside this repository. These optimized derivatives are committed:
+The approved source board is preserved without modification at `docs/source-assets/4oh-brand-board-original.png`; SHA-256 `62E1DF4436CC94BFDD747B266397BF17B6AEA922B8CDE4E9B90403AE07006E72`. These optimized derivatives are committed:
 
 - `assets/brand-board.webp` — full website presentation board;
 - `assets/brand-mark-4oh.webp` — exact crop of the supplied 4OH emblem for the hero;
 - `assets/og-brand.jpg` — 1200×630 social-preview crop.
 
-The derivatives preserve the supplied artwork and do not add invented text. Confirm the board’s final ownership, trademark, and source-art license before a major commercial campaign.
+The derivatives preserve the supplied artwork and do not add invented text. Palace receives flagship hierarchy and electric-blue emphasis; Hearts uses ruby, Spades royal purple, Euchre emerald, and company accents metallic gold or silver-ivory. Confirm final ownership, trademark, and source-art license before a major commercial campaign.
 
 ## Game icons
 

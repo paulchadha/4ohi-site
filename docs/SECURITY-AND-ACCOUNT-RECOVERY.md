@@ -36,7 +36,9 @@ Confirm the public registry expiration of 2028-07-25 in GoDaddy, verify auto-ren
 
 ## Website and DNS controls
 
-The canonical hostname is `4ohi.com`; `www.4ohi.com` should redirect to it after cutover. Only an authenticated company administrator may change the zone. Capture a complete before-state and after-state. Preserve MX, SPF, DKIM, DMARC, provider-verification, Domain Connect, and unrelated TXT records. Keep GitHub Pages HTTPS enforcement off until DNS resolves to GitHub and certificates match both hostnames.
+The canonical hostname is `4ohi.com`; `www.4ohi.com` redirects to it. Only an authenticated company administrator may change the zone. Capture a complete before-state and after-state. Preserve MX, SPF, DKIM, DMARC, provider-verification, Domain Connect, and unrelated TXT records. Enable GitHub Pages HTTPS enforcement only after DNS resolves exclusively to GitHub and matching certificates are presented for both hostnames.
+
+GitHub Pages account-level domain verification is active: the unique `_github-pages-challenge-paulchadha.4ohi.com` TXT is publicly published and the Pages API reports `protected_domain_state: verified`. Retain the TXT permanently. Follow the non-destructive procedure in `DOMAIN-AND-DNS.md` for future re-verification; never replace an existing Proton record.
 
 ## Current limitations
 

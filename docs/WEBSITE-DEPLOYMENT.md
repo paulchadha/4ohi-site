@@ -5,20 +5,20 @@
 - Owner/repository: `paulchadha/4ohi-site` (public)
 - Host: GitHub Pages
 - Source: `main`, repository root
-- Build: none
+- Build: dependency-free static generator (`node scripts/build-site.mjs`); generated files are committed
 - Canonical URL: `https://4ohi.com/`
 - Alternate hostname: `www.4ohi.com`, intended to redirect to the apex
 
 ## Current status
 
-GitHub Pages is configured and the last published release is healthy. The repository `CNAME` contains `4ohi.com`. Website DNS still serves the GoDaddy placeholder, so the custom-domain certificate is not provisioned and HTTPS enforcement remains off. `support@4ohi.com` is operational; no mail or DNS record was changed by the interactive-site release.
+GitHub Pages is configured, the repository `CNAME` contains `4ohi.com`, and authoritative plus public DNS route the apex and `www` to GitHub Pages. The GoDaddy Website Builder placeholder is retired. Certificate, enforcement, redirect, public-browser, and mail evidence are recorded in `RELEASE-CHECKLIST.md` and `PUBLIC-LAUNCH-VERIFICATION.md`.
 
 ## Release workflow
 
 1. Confirm the worktree is clean and synchronized with `origin/main` before editing.
-2. Preview locally and run `node scripts/validate-site.mjs` plus `node --check assets/play.js`.
-3. Test every page, internal link, email link, image, 404, keyboard focus, reduced motion, and requested responsive size.
-4. Complete all four Quick Play lessons, including one friendly error path, tab arrow-key navigation, heart progress, reset, and final completion state.
+2. Run `node scripts/build-site.mjs`, rerun it to confirm idempotence, preview locally, run `node scripts/validate-site.mjs`, and syntax-check all site and tutorial scripts.
+3. Test every page, internal link, email link, image, 404, keyboard focus, text zoom, reduced motion, and requested responsive size locally with `scripts/verify-palace-site.mjs` and publicly with `scripts/verify-public-site.mjs`.
+4. Complete the six-chapter Palace preview, its friendly-error branch, and both decisions in the Hearts, Spades, and Euchre lessons; confirm all replay states.
 5. Run `git diff --check`, review the complete diff, and scan for secrets.
 6. Commit reviewed files and push `main` without force.
 7. Wait for `pages-build-deployment` to complete and confirm its head SHA matches the pushed commit.

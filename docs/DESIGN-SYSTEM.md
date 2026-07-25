@@ -1,0 +1,19 @@
+# Palace-first design system
+
+## Source of truth
+
+The approved 2026-07-25 brand board is preserved exactly at `docs/source-assets/4oh-brand-board-original.png`. Its SHA-256 is `62E1DF4436CC94BFDD747B266397BF17B6AEA922B8CDE4E9B90403AE07006E72`. Website derivatives live in `assets/`; never overwrite the source preservation copy.
+
+## Visual hierarchy
+
+Palace is the flagship and receives the castle art, electric-blue emphasis, largest hero, deepest tutorial, and first position in navigation and editorial layouts. Hearts uses ruby, Spades royal purple, Euchre emerald, and company-level accents use metallic gold or silver-ivory. The surrounding stage stays midnight navy so the game identities remain distinct.
+
+Core CSS tokens are defined once in `assets/palace-site.css`: ink/navy backgrounds, royal and electric blue, ruby, emerald, royal purple, metallic gold, silver-ivory, and white. Do not introduce unrelated colors. Typography uses a local system stack; no remote fonts or render-blocking font requests are permitted.
+
+## Interaction language
+
+Buttons and links have visible focus, at least 44 CSS pixels of target height, plain action labels, and non-color state cues. Motion is restrained to reveal, hover, and pointer-light effects; `prefers-reduced-motion` reduces animation and transition duration to effectively zero. Tutorials use real buttons, live feedback, and no timed decisions.
+
+## Asset rules
+
+Use the optimized WebP icons at their intrinsic 512 by 512 ratio. Include explicit width and height, useful alt text, and lazy loading below the fold. `assets/og-brand.jpg` is the 1200 by 630 social preview. Do not stretch, recolor, overlay, or silently replace approved artwork.

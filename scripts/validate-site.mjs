@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
-const pages = ["index.html", "games.html", "play.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html", "404.html"];
+const pages = readdirSync(root).filter((name) => name.endsWith(".html")).sort();
 const failures = [];
 const check = (condition, message) => { if (!condition) failures.push(message); };
 
@@ -53,7 +53,7 @@ for (const page of pages) {
   }
 }
 
-const css = readFileSync(join(root, "assets", "styles.css"), "utf8");
+const css = readFileSync(join(root, "assets", "palace-site.css"), "utf8");
 check(/:focus-visible/.test(css), "CSS: visible focus styles are missing");
 check(/prefers-reduced-motion/.test(css), "CSS: reduced-motion handling is missing");
 check(/min-height:\s*44px/.test(css), "CSS: 44px touch-target rule is missing");
