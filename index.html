@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Palace Card Game | Four of Hearts Interactive</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-DF8tbi/8HR3+QkLujKfAeaLWhCVVWvYgvgZ2iE6zwyk='; connect-src 'self'; media-src 'self'; font-src 'self'; upgrade-insecure-requests">
   <meta name="description" content="Meet Palace, the flagship Four of Hearts card game. Learn its three-layer rhythm, try an interactive preview, and follow Internal Alpha development.">
 
   <link rel="canonical" href="https://4ohi.com/">
@@ -37,22 +38,30 @@
     </div>
   </header>
   <main id="main">
-    <section class="hero" data-pointer-hero>
-      <div class="shell hero-grid">
+    <section class="hero palace-world" data-pointer-hero>
+      <div class="palace-world-backdrop" aria-hidden="true"></div>
+      <picture class="palace-world-art">
+        <source media="(max-width: 520px)" srcset="assets/palace-hero-384.webp">
+        <source media="(max-width: 900px)" srcset="assets/palace-hero-640.webp">
+        <img src="assets/palace-hero-1024.webp" alt="Palace castle rising above the gold Palace title" width="1024" height="1024" fetchpriority="high">
+      </picture>
+      <span class="world-card world-card-one" aria-hidden="true"><b>Q</b>♠</span>
+      <span class="world-card world-card-two red" aria-hidden="true"><b>7</b>♥</span>
+      <span class="world-card world-card-three" aria-hidden="true"><b>9</b>♣</span>
+      <div class="shell hero-stage">
+        <div class="hero-topline"><span class="alpha-badge">Internal Alpha</span><span>Four of Hearts Interactive presents</span></div>
+        <a class="hero-news-link" href="news.html"><span>Latest</span>Why We’re Building Palace<b aria-hidden="true">→</b></a>
         <div class="hero-copy">
-          <div class="status-line"><span class="alpha-badge">Internal Alpha</span> Four of Hearts presents</div>
+          <p class="hero-game-name">Palace</p>
           <h1>Rule the <span class="gold">table.</span></h1>
-          <p class="lede">Palace is the card game every table remembers: simple to begin, full of momentum, and never quite finished until the last hidden card turns over.</p>
+          <p class="lede">Build three layers. Read the pile. Survive the final hidden card. Welcome to the official home of the Four of Hearts Palace experience.</p>
           <div class="actions">
-            <a class="button" href="palace-play.html">Play the Palace preview</a>
+            <a class="button" href="palace-play.html">Play the Palace tutorial</a>
             <a class="button secondary" href="palace.html">Discover Palace</a>
           </div>
         </div>
-        <div class="palace-art" aria-label="Palace flagship artwork">
-          <span class="floating-card one" aria-hidden="true">Q♠</span>
-          <img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers and gold title" width="512" height="512" fetchpriority="high">
-          <span class="floating-card two" aria-hidden="true">7♥</span>
-        </div>
+        <div class="hero-layer-rail" aria-label="The three Palace layers"><span><b>01</b>Your hand</span><span><b>02</b>Face-up reserve</span><span><b>03</b>Hidden finale</span></div>
+        <a class="hero-scroll" href="#palace-rhythm">Enter the Palace <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
@@ -75,7 +84,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="palace-rhythm">
       <div class="shell">
         <div class="section-heading">
           <div><p class="eyebrow">The Palace rhythm</p><h2>Easy first hand. Memorable last card.</h2></div>

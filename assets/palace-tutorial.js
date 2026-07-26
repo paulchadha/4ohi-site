@@ -27,7 +27,7 @@
 
   const progress = () => `<div class="tutorial-head">
     <span class="alpha-badge">Interactive preview</span>
-    <span class="tutorial-progress">Chapter ${Math.min(state.step + 1, 6)} of 6</span>
+    <span class="tutorial-progress"><span class="turn-light">● Your turn</span> Chapter ${Math.min(state.step + 1, 6)} of 6</span>
   </div>`;
 
   const controls = (label = "Continue") => `<div class="tutorial-controls"><button class="button" type="button" data-action="next"${state.ready ? "" : " disabled"}>${label}</button></div>`;
@@ -61,6 +61,11 @@
           <span class="zone-label">Your hand</span>
           <div class="card-row">${card("3♦")}${card("6♥")}${card("Q♠")}</div>
         </div>
+        <div class="opponent-zone">
+          <span class="zone-label">Rival · 4 cards left</span>
+          <div class="card-row compact">${card("Hidden", { button: false, back: true, ariaLabel: "Opponent card" })}${card("Hidden", { button: false, back: true, ariaLabel: "Opponent card" })}</div>
+        </div>
+        </div>
         <div class="pile-zone">
           <span class="zone-label">Top of pile</span>
           <div class="card-row">${card("6♣", { button: false })}</div>
@@ -82,6 +87,10 @@
         <div class="player-zone">
           <span class="zone-label">Your hand</span>
           <div class="card-row">${card("4♠")}${card("9♣")}</div>
+        </div>
+        <div class="opponent-zone">
+          <span class="zone-label">Rival · watching the pile</span>
+          <div class="card-row compact">${card("Hidden", { button: false, back: true, ariaLabel: "Opponent card" })}</div>
         </div>
         <div class="pile-zone">
           <span class="zone-label">Top of pile</span>
@@ -108,6 +117,10 @@
         <div class="pile-zone">
           <span class="zone-label">Opponent played</span>
           <div class="card-row">${card("K♣", { button: false })}</div>
+        </div>
+        <div class="opponent-zone">
+          <span class="zone-label">Rival just played</span>
+          <div class="card-row compact">${card("Hidden", { button: false, back: true, ariaLabel: "Opponent reserve" })}</div>
         </div>
       </div>
       <div class="tutorial-feedback" role="status" aria-live="polite">No ordinary play is legal. Choose the table action that keeps the game honest.</div>

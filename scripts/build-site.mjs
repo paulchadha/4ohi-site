@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
@@ -59,6 +60,9 @@ const footer = () => `<footer class="site-footer">
 </footer>`;
 
 const head = ({ title, description, path, image = "assets/og-brand.jpg", imageAlt = "Four of Hearts Interactive", type = "website", jsonLd, noindex = false, script = "" }) => {
+  const structuredData = jsonLd ? JSON.stringify(jsonLd) : "";
+  const structuredDataHash = structuredData ? createHash("sha256").update(structuredData).digest("base64") : "";
+  const contentPolicy = `default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'${structuredDataHash ? ` 'sha256-${structuredDataHash}'` : ""}; connect-src 'self'; media-src 'self'; font-src 'self'; upgrade-insecure-requests`;
   const canonical = `${siteUrl}${path}`;
   return `<!doctype html>
 <html lang="en">
@@ -66,6 +70,7 @@ const head = ({ title, description, path, image = "assets/og-brand.jpg", imageAl
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${title}</title>
+  <meta http-equiv="Content-Security-Policy" content="${contentPolicy}">
   <meta name="description" content="${description}">
   ${noindex ? '<meta name="robots" content="noindex">' : ""}
   <link rel="canonical" href="${canonical}">
@@ -82,7 +87,7 @@ const head = ({ title, description, path, image = "assets/og-brand.jpg", imageAl
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
   ${script}
-  ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ""}
+  ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
 };
 
@@ -136,22 +141,30 @@ write("index.html", page({
   },
   bodyClass: "home-page",
   content: `
-    <section class="hero" data-pointer-hero>
-      <div class="shell hero-grid">
+    <section class="hero palace-world" data-pointer-hero>
+      <div class="palace-world-backdrop" aria-hidden="true"></div>
+      <picture class="palace-world-art">
+        <source media="(max-width: 520px)" srcset="assets/palace-hero-384.webp">
+        <source media="(max-width: 900px)" srcset="assets/palace-hero-640.webp">
+        <img src="assets/palace-hero-1024.webp" alt="Palace castle rising above the gold Palace title" width="1024" height="1024" fetchpriority="high">
+      </picture>
+      <span class="world-card world-card-one" aria-hidden="true"><b>Q</b>♠</span>
+      <span class="world-card world-card-two red" aria-hidden="true"><b>7</b>♥</span>
+      <span class="world-card world-card-three" aria-hidden="true"><b>9</b>♣</span>
+      <div class="shell hero-stage">
+        <div class="hero-topline"><span class="alpha-badge">Internal Alpha</span><span>Four of Hearts Interactive presents</span></div>
+        <a class="hero-news-link" href="news.html"><span>Latest</span>${featured.title}<b aria-hidden="true">→</b></a>
         <div class="hero-copy">
-          <div class="status-line"><span class="alpha-badge">Internal Alpha</span> Four of Hearts presents</div>
+          <p class="hero-game-name">Palace</p>
           <h1>Rule the <span class="gold">table.</span></h1>
-          <p class="lede">Palace is the card game every table remembers: simple to begin, full of momentum, and never quite finished until the last hidden card turns over.</p>
+          <p class="lede">Build three layers. Read the pile. Survive the final hidden card. Welcome to the official home of the Four of Hearts Palace experience.</p>
           <div class="actions">
-            <a class="button" href="palace-play.html">Play the Palace preview</a>
+            <a class="button" href="palace-play.html">Play the Palace tutorial</a>
             <a class="button secondary" href="palace.html">Discover Palace</a>
           </div>
         </div>
-        <div class="palace-art" aria-label="Palace flagship artwork">
-          <span class="floating-card one" aria-hidden="true">Q♠</span>
-          <img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers and gold title" width="512" height="512" fetchpriority="high">
-          <span class="floating-card two" aria-hidden="true">7♥</span>
-        </div>
+        <div class="hero-layer-rail" aria-label="The three Palace layers"><span><b>01</b>Your hand</span><span><b>02</b>Face-up reserve</span><span><b>03</b>Hidden finale</span></div>
+        <a class="hero-scroll" href="#palace-rhythm">Enter the Palace <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
@@ -174,7 +187,7 @@ write("index.html", page({
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="palace-rhythm">
       <div class="shell">
         <div class="section-heading">
           <div><p class="eyebrow">The Palace rhythm</p><h2>Easy first hand. Memorable last card.</h2></div>
@@ -254,6 +267,21 @@ write("palace.html", page({
         <article class="panel feature-card" data-reveal><span class="number">K</span><h3>Strategic</h3><p>Strong cards solve today’s problem but may leave tomorrow’s pile harder to escape.</p></article>
         <article class="panel feature-card" data-reveal><span class="number">?</span><h3>Uncertain</h3><p>Hidden cards turn a planned finish into a final act of nerve and luck.</p></article>
       </div>
+    </div></section>
+    <section class="section navy palace-field-guide"><div class="shell">
+      <div class="section-heading"><div><p class="eyebrow">Palace field guide</p><h2>Know the table before it turns.</h2></div><p class="lede">The core rhythm is approachable. The tension comes from planning across three layers while the pile keeps changing.</p></div>
+      <div class="feature-grid">
+        <article class="panel feature-card" data-reveal><span class="number">01</span><h3>How to play</h3><p>Use the interactive preview to deal, match or climb, recover from a blocked hand, and reach the hidden finale.</p><a class="text-link" href="palace-play.html">Learn at the table</a></article>
+        <article class="panel feature-card" data-reveal><span class="number">02</span><h3>Strategy</h3><p>Keep flexible ranks, read the visible reserves, and avoid spending every strong answer before your final layers unlock.</p><a class="text-link" href="palace-play.html">Practice the rhythm</a></article>
+        <article class="panel feature-card" data-reveal><span class="number">03</span><h3>Special cards</h3><p>Palace traditions use exception ranks, but effects vary by table. Four of Hearts will publish its exact marked-card table only after founder approval.</p><span class="review-chip">Founder review open</span></article>
+      </div>
+    </div></section>
+    <section class="section"><div class="narrow faq-block">
+      <p class="eyebrow">Palace FAQ</p><h2>Before you take a seat.</h2>
+      <details><summary>Is the full Palace game publicly available?</summary><p>Not yet. Palace is in Internal Alpha. This website offers a self-contained teaching preview, not a production multiplayer match or store download.</p></details>
+      <details><summary>Why are exact special-card effects not listed?</summary><p>Palace has many household variants. The Four of Hearts effects are still awaiting final founder approval, so the public site teaches special-card awareness without inventing a rule.</p></details>
+      <details><summary>Does the tutorial save anything?</summary><p>No. It uses page memory only: no account, backend, cookies, analytics, local storage, or saved progress.</p></details>
+      <details><summary>Where can I follow development?</summary><p>The <a href="news.html">Newsroom</a> publishes honest Internal Alpha updates, and <a href="support.html">Support</a> explains how invited testers can report issues.</p></details>
     </div></section>
     <section class="section royal"><div class="shell">
       <div class="section-heading"><div><p class="eyebrow">Learn inside the action</p><h2>Your first Palace takes about a minute.</h2></div><p class="lede">Deal the three layers, make legal plays, take a pile, notice special cards, and clear the hidden finale. No account and nothing saved.</p></div>
