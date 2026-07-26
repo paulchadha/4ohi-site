@@ -51,7 +51,8 @@ for (const [locale, mode, expected, dir] of [
   ["he", "shed", "Shed", "rtl"], ["ar", "palace", "Palace", "rtl"],
   ["en-CA-fun", "shed", "Shed", "ltr"]
 ]) {
-  const page = await context.newPage({ viewport: { width: 1366, height: 768 } });
+  const page = await context.newPage();
+  await page.setViewportSize({ width: 1366, height: 768 });
   await page.goto(`${base}/news.html?lang=${encodeURIComponent(locale)}&game=${mode}`, { waitUntil: "networkidle" });
   const state = await page.evaluate((currentMode) => ({
     lang: document.documentElement.lang,
@@ -69,31 +70,50 @@ for (const [locale, mode, expected, dir] of [
 
 for (const [file, width, height, shot] of [
   ["index.html", 1440, 900, "app-home-1440x900.png"],
+  ["index.html", 320, 568, "app-home-320x568.png"],
+  ["index.html", 360, 800, "app-home-360x800.png"],
   ["index.html", 390, 844, "app-home-390x844.png"],
+  ["index.html", 430, 932, "app-home-430x932.png"],
+  ["palace.html", 390, 844, "app-palace-390x844.png"],
   ["news.html", 1440, 900, "app-news-1440x900.png"],
+  ["news.html", 390, 844, "app-news-390x844.png"],
   ["games.html", 1440, 900, "app-games-1440x900.png"],
+  ["games.html", 390, 844, "app-games-390x844.png"],
   ["about.html", 1440, 900, "app-about-1440x900.png"],
+  ["about.html", 390, 844, "app-about-390x844.png"],
   ["palace-play.html", 390, 844, "app-mini-match-390x844.png"],
   ["palace-play.html?lang=ar&game=shed", 390, 844, "app-mini-match-ar-shed-390x844.png"]
 ]) {
-  const page = await context.newPage({ viewport: { width, height } });
+  const page = await context.newPage();
+  await page.setViewportSize({ width, height });
   await page.goto(`${base}/${file}`, { waitUntil: "networkidle" });
   const geometry = await page.evaluate(() => ({
     overflow: document.documentElement.scrollWidth > innerWidth + 1,
+    viewportWidth: innerWidth,
+    scrollWidth: document.documentElement.scrollWidth,
     headerBottom: Math.round(document.querySelector(".site-header")?.getBoundingClientRect().bottom || 0),
+    h1Left: Math.round(document.querySelector("h1")?.getBoundingClientRect().left || 0),
+    h1Right: Math.round(document.querySelector("h1")?.getBoundingClientRect().right || 0),
     h1Bottom: Math.round(document.querySelector("h1")?.getBoundingClientRect().bottom || 0),
+    h1Size: (() => { const heading = document.querySelector("h1"); return heading?.getBoundingClientRect().width ? parseFloat(getComputedStyle(heading).fontSize) : 0; })(),
+    firstActionTop: Math.round(document.querySelector("main .actions .button")?.getBoundingClientRect().top || 0),
     newsTop: Math.round(document.querySelector(".featured-news")?.getBoundingClientRect().top || 0),
     gamesTop: Math.round(document.querySelector(".game-shelf")?.getBoundingClientRect().top || 0)
   }));
   results.layouts[shot] = geometry;
   if (geometry.overflow) fail(`${shot}: horizontal overflow`);
+  if (width <= 430 && (geometry.h1Left < -1 || geometry.h1Right > width + 1)) fail(`${shot}: heading clipped outside phone viewport`);
+  if (width <= 430 && !file.startsWith("palace-play.html") && geometry.h1Size > 58) fail(`${shot}: phone heading remains desktop-sized`);
+  if (width <= 430 && geometry.headerBottom > 80) fail(`${shot}: phone header is too tall`);
+  if (file === "index.html" && width >= 360 && width <= 430 && geometry.firstActionTop > height) fail(`${shot}: primary play action is below the first phone viewport`);
   if (file === "news.html" && geometry.newsTop > height * .72) fail("News featured story is still below the first viewport");
   if (file === "games.html" && geometry.gamesTop > height * .72) fail("More Games cards are still below the first viewport");
   if (captureScreenshots) await page.screenshot({ path: resolve(evidence, shot), fullPage: true });
   await page.close();
 }
 
-const powers = await context.newPage({ viewport: { width: 1440, height: 900 } });
+const powers = await context.newPage();
+await powers.setViewportSize({ width: 1440, height: 900 });
 await powers.goto(`${base}/index.html#rules`, { waitUntil: "networkidle" });
 for (const rank of ["2", "7", "8", "10"]) {
   await powers.locator(`[data-power="${rank}"]`).click();
@@ -104,7 +124,8 @@ for (const rank of ["2", "7", "8", "10"]) {
 if (captureScreenshots) await powers.locator("#rules").screenshot({ path: resolve(evidence, "app-power-cards-1440.png") });
 await powers.close();
 
-const palace = await context.newPage({ viewport: { width: 390, height: 844 } });
+const palace = await context.newPage();
+await palace.setViewportSize({ width: 390, height: 844 });
 await palace.goto(`${base}/palace-play.html?lang=en&game=shed`, { waitUntil: "networkidle" });
 await palace.locator('[data-play="low"]').click();
 await palace.locator('[data-play="match"]').click();
@@ -121,7 +142,8 @@ results.tutorials.push({ game: "Palace/Shed", complete: true });
 await palace.close();
 
 for (const game of ["hearts", "spades", "euchre"]) {
-  const page = await context.newPage({ viewport: { width: 390, height: 844 } });
+  const page = await context.newPage();
+  await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${base}/${game}-play.html`, { waitUntil: "networkidle" });
   for (let round = 0; round < 2; round += 1) {
     const buttons = page.locator("[data-choice]");
