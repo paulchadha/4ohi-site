@@ -67,7 +67,7 @@ check(readFileSync(join(root, "CNAME"), "utf8").trim() === "4ohi.com", "CNAME: e
 const robots = readFileSync(join(root, "robots.txt"), "utf8");
 check(robots.includes("https://4ohi.com/sitemap.xml"), "robots.txt: sitemap URL is missing");
 const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
-for (const page of pages.filter((page) => page !== "404.html")) {
+for (const page of pages.filter((page) => !["404.html", "palace.html"].includes(page))) {
   const url = page === "index.html" ? "https://4ohi.com/" : `https://4ohi.com/${page}`;
   check(sitemap.includes(`<loc>${url}</loc>`), `sitemap.xml: missing ${url}`);
 }

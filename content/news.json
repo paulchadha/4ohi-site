@@ -3,7 +3,7 @@
     "slug": "why-were-building-palace",
     "title": "Why We’re Building Palace",
     "description": "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
-    "date": "2026-07-25",
+    "date": "2026-07-26",
     "category": "Palace",
     "featured": true,
     "image": "assets/icon-palace-4hearts.webp",
@@ -29,7 +29,7 @@
     "slug": "palace-enters-founder-testing",
     "title": "Palace Enters Founder Testing",
     "description": "The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.",
-    "date": "2026-07-25",
+    "date": "2026-07-23",
     "category": "Development",
     "featured": false,
     "image": "assets/icon-palace-4hearts.webp",
@@ -52,36 +52,10 @@
     ]
   },
   {
-    "slug": "welcome-to-four-of-hearts",
-    "title": "Welcome to Four of Hearts Interactive",
-    "description": "Meet the South Dakota studio building Palace and a growing family of timeless card-table experiences.",
-    "date": "2026-07-25",
-    "category": "Studio",
-    "featured": false,
-    "image": "assets/brand-mark-4oh.webp",
-    "imageAlt": "Four of Hearts Interactive logo",
-    "body": [
-      {
-        "heading": "One family. Many games.",
-        "paragraphs": [
-          "Four of Hearts Interactive, LLC is a South Dakota software company creating welcoming digital card games. Palace is our flagship, and Hearts, Spades, and Euchre are growing beside it.",
-          "We care about games that are easy to begin, rewarding to revisit, and worth sharing across generations. The current family is in Internal Alpha, so this site focuses on the work, the ideas, and honest development updates rather than download promises."
-        ]
-      },
-      {
-        "heading": "A public home for the work",
-        "paragraphs": [
-          "This newsroom will document meaningful milestones, teaching decisions, safety work, and product stories. We will not manufacture launch dates, player counts, reviews, or partnerships.",
-          "If you are helping test a Four of Hearts game, the Support page explains how to send a useful report to support@4ohi.com."
-        ]
-      }
-    ]
-  },
-  {
     "slug": "meet-the-four-games",
     "title": "Meet the Four Games in the 4OH Family",
     "description": "Palace leads the table, with Hearts, Spades, and Euchre bringing three distinct kinds of strategy to the studio.",
-    "date": "2026-07-25",
+    "date": "2026-07-20",
     "category": "Games",
     "featured": false,
     "image": "assets/brand-board.webp",
@@ -107,7 +81,7 @@
     "slug": "building-a-safer-card-table",
     "title": "Building a Safer, Family-Friendly Card Table",
     "description": "How Four of Hearts approaches clear policies, restrained data use, accessibility, and honest Internal Alpha communication.",
-    "date": "2026-07-25",
+    "date": "2026-07-17",
     "category": "Company",
     "featured": false,
     "image": "assets/brand-mark-4oh.webp",
@@ -125,6 +99,32 @@
         "paragraphs": [
           "Accessibility, security, privacy, reconnect behavior, rankings, operational logs, and support processes all require review as the games evolve. Our policies describe current limitations and identify the questions that must be revisited before a wider release.",
           "Security reports and player-support requests currently use support@4ohi.com. We do not promise a bug bounty or a guaranteed response time."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "welcome-to-four-of-hearts",
+    "title": "Welcome to Four of Hearts Interactive",
+    "description": "Meet the South Dakota studio building Palace and a growing family of timeless card-table experiences.",
+    "date": "2026-07-14",
+    "category": "Studio",
+    "featured": false,
+    "image": "assets/brand-mark-4oh.webp",
+    "imageAlt": "Four of Hearts Interactive logo",
+    "body": [
+      {
+        "heading": "One family. Many games.",
+        "paragraphs": [
+          "Four of Hearts Interactive, LLC is a South Dakota software company creating welcoming digital card games. Palace is our flagship, and Hearts, Spades, and Euchre are growing beside it.",
+          "We care about games that are easy to begin, rewarding to revisit, and worth sharing across generations. The current family is in Internal Alpha, so this site focuses on the work, the ideas, and honest development updates rather than download promises."
+        ]
+      },
+      {
+        "heading": "A public home for the work",
+        "paragraphs": [
+          "This newsroom will document meaningful milestones, teaching decisions, safety work, and product stories. We will not manufacture launch dates, player counts, reviews, or partnerships.",
+          "If you are helping test a Four of Hearts game, the Support page explains how to send a useful report to support@4ohi.com."
         ]
       }
     ]

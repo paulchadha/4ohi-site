@@ -10,7 +10,7 @@ const evidence = resolve("docs", "visual-evidence");
 const resultFile = process.env.SITE_RESULTS || "app-parity-results.json";
 const captureScreenshots = process.env.NO_SCREENSHOTS !== "1";
 mkdirSync(evidence, { recursive: true });
-const results = { base, checkedAt: new Date().toISOString(), pages: [], modes: [], layouts: {}, tutorials: [], keyboard: {}, privacy: {}, failures: [] };
+const results = { base, checkedAt: new Date().toISOString(), pages: [], modes: [], layouts: {}, tutorials: [], founderReview: {}, keyboard: {}, privacy: {}, failures: [] };
 const fail = (message) => results.failures.push(message);
 const browser = await chromium.launch({ headless: true, executablePath: chrome });
 const context = await browser.newContext();
@@ -45,6 +45,36 @@ for (const file of pages) {
   await page.close();
 }
 
+// Founder page-by-page acceptance gates.
+const canonical = await context.newPage();
+await canonical.setViewportSize({ width: 1440, height: 900 });
+await canonical.goto(`${base}/index.html?lang=en`, { waitUntil: "networkidle" });
+const canonicalState = await canonical.evaluate(() => {
+  const rectangles = [...document.querySelectorAll(".power-playing-card")].map((card) => card.getBoundingClientRect());
+  const overlap = rectangles.some((a, i) => rectangles.some((b, j) => j > i && a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top));
+  const rule = document.querySelector(".power-live")?.getBoundingClientRect();
+  const ruleCoversCard = rule ? rectangles.some((card) => card.left < rule.right && card.right > rule.left && card.top < rule.bottom && card.bottom > rule.top) : true;
+  return { logo: document.querySelector(".brand")?.getAttribute("href"), countdowns: document.querySelectorAll("[data-release-strip], [data-launch-countdown]").length, transmission: document.querySelector(".transmission-link")?.textContent.trim(), powerRanks: [...document.querySelectorAll("[data-power]")].map((node) => node.dataset.power), overlap, ruleCoversCard };
+});
+await canonical.goto(`${base}/palace.html?lang=en&game=shed#rules`, { waitUntil: "networkidle" });
+const legacyFinal = await canonical.evaluate(() => ({ path: location.pathname, search: location.search, hash: location.hash }));
+results.founderReview.canonical = { canonicalState, legacyFinal };
+if (!canonicalState.logo.startsWith("index.html") || canonicalState.countdowns !== 1 || !canonicalState.transmission?.includes("Transmission 001") || canonicalState.powerRanks.join(",") !== "2,7,8,10" || canonicalState.overlap || canonicalState.ruleCoversCard) fail("Canonical homepage, countdown, Transmission, or Power Cards gate failed");
+if (!legacyFinal.path.endsWith("/index.html") || !legacyFinal.search.includes("lang=en") || !legacyFinal.search.includes("game=shed") || legacyFinal.hash !== "#rules") fail("Legacy Palace route did not preserve URL state while canonicalizing home");
+await canonical.close();
+
+const editorial = await context.newPage();
+await editorial.goto(`${base}/news.html`, { waitUntil: "networkidle" });
+const dates = await editorial.locator("time[datetime]").evaluateAll((nodes) => nodes.map((node) => node.dateTime));
+await editorial.goto(`${base}/games.html`, { waitUntil: "networkidle" });
+const futureBackground = await editorial.locator(".future-card").evaluate((node) => getComputedStyle(node).backgroundImage);
+await editorial.goto(`${base}/about.html`, { waitUntil: "networkidle" });
+const founderCopy = await editorial.locator("main").innerText();
+results.founderReview.editorial = { dates, futureBackground, rejectedFounderHeadline: founderCopy.includes("very long field study"), aboutBeats: await editorial.locator(".about-beat").count() };
+if (new Set(dates).size !== dates.length || dates.some((date, index) => index && date > dates[index - 1])) fail("News dates are not distinct and descending");
+if (!futureBackground.includes("gradient")) fail("Future-games presentation remains generic gray");
+if (founderCopy.includes("very long field study") || !founderCopy.includes("rules meet people") || await editorial.locator(".about-beat").count() !== 5) fail("About/founder reconstruction gate failed");
+await editorial.close();
 for (const [locale, mode, expected, dir] of [
   ["en", "palace", "Palace", "ltr"], ["en", "shed", "Shed", "ltr"],
   ["fr", "shed", "Shed", "ltr"], ["es", "palace", "Palace", "ltr"],
@@ -59,7 +89,7 @@ for (const [locale, mode, expected, dir] of [
     lang: document.documentElement.lang,
     dir: document.documentElement.dir,
     name: document.querySelector("[data-current-game]")?.textContent.trim(),
-    navName: document.querySelector('.site-nav a[href*="palace.html"]')?.textContent.trim(),
+    navName: document.querySelector('.site-nav a[href*="index.html"]')?.textContent.trim(),
     playLabel: document.querySelector(".nav-play")?.textContent.trim(),
     newsLabel: document.querySelector("h1")?.textContent.trim(),
     localeLabel: document.querySelector("select[data-locale]")?.selectedOptions?.[0]?.textContent.trim(),
@@ -80,7 +110,9 @@ for (const [file, width, height, shot] of [
   ["index.html", 320, 568, "app-home-320x568.png"],
   ["index.html", 360, 800, "app-home-360x800.png"],
   ["index.html", 390, 844, "app-home-390x844.png"],
+  ["index.html", 412, 915, "app-home-412x915.png"],
   ["index.html", 430, 932, "app-home-430x932.png"],
+  ["index.html", 768, 1024, "app-home-768x1024.png"],
   ["palace.html", 390, 844, "app-palace-390x844.png"],
   ["news.html", 1440, 900, "app-news-1440x900.png"],
   ["news.html", 390, 844, "app-news-390x844.png"],
@@ -161,6 +193,9 @@ await powers.close();
 const palace = await context.newPage();
 await palace.setViewportSize({ width: 390, height: 844 });
 await palace.goto(`${base}/palace-play.html?lang=en&game=shed`, { waitUntil: "networkidle" });
+const palaceSetup = await palace.evaluate(() => ({ faceUp: document.querySelectorAll(".palace-foundation .visible-row .match-card").length, faceDown: document.querySelectorAll(".palace-foundation .hidden-row .match-card").length, drawDeck: document.querySelectorAll(".palace-foundation .draw-deck .match-card").length, hand: document.querySelectorAll(".player-hand .match-card").length, opponent: document.querySelectorAll(".rival-seat .match-card").length, pile: document.querySelectorAll(".central-pile .match-card").length, overflow: document.documentElement.scrollWidth > innerWidth + 1 }));
+results.founderReview.palaceSetup = palaceSetup;
+if (palaceSetup.faceUp !== 3 || palaceSetup.faceDown !== 3 || palaceSetup.drawDeck !== 1 || palaceSetup.hand < 3 || palaceSetup.opponent < 1 || palaceSetup.pile < 1 || palaceSetup.overflow) fail("Palace defining setup is incomplete or overflows mobile");
 await palace.locator('[data-play="low"]').click();
 await palace.locator('[data-play="match"]').click();
 await palace.locator('[data-chapter="burn"]').waitFor();
@@ -179,6 +214,8 @@ for (const game of ["hearts", "spades", "euchre"]) {
   const page = await context.newPage();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${base}/${game}-play.html`, { waitUntil: "networkidle" });
+  const gameTableState = await page.evaluate(() => ({ seats: document.querySelectorAll(".table-avatars > *").length, status: document.querySelectorAll(".game-specific-status span").length, center: Boolean(document.querySelector(".table-trick")), decision: Boolean(document.querySelector(".table-decision")), overflow: document.documentElement.scrollWidth > innerWidth + 1, background: getComputedStyle(document.querySelector(".tutorial-board")).backgroundImage }));
+  if (gameTableState.seats !== 4 || gameTableState.status < 4 || !gameTableState.center || !gameTableState.decision || gameTableState.overflow || !gameTableState.background.includes("radial-gradient")) fail(`${game}: approved table-family structure or mobile bounds failed`);
   for (let round = 0; round < 2; round += 1) {
     const buttons = page.locator("[data-choice]");
     let advanced = false;

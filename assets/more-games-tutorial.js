@@ -92,6 +92,12 @@
   const gameKey = mount.dataset.secondaryTutorial;
   const game = lessons[gameKey];
   if (!game) return;
+  const tableDetails = {
+    hearts: { seats: ["Nora · 1/13", "Maya · 3/13", "Vaughn · 0/13", "You · 2/13"], chips: ["4 SEATS", "HEARTS BROKEN", "Qâ™  STILL OUT", "POINTS 3"], center: "CURRENT TRICK", decision: "YOUR HAND · AVOID THE POINTS" },
+    spades: { seats: ["Nora · Them", "Maya · Us", "Vaughn · Them", "You · Us"], chips: ["PARTNERSHIPS", "CONTRACT 4", "BOOKS 2", "BAGS 1", "NIL AVAILABLE"], center: "CURRENT TRICK", decision: "YOUR HAND · MAKE THE CONTRACT" },
+    euchre: { seats: ["Nora · Them", "Maya · Dealer", "Vaughn · Them", "You · Maker"], chips: ["PARTNERSHIPS", "DEALER MAYA", "UPCARD 9â™¥", "TRUMP HEARTS", "MAKER YOU"], center: "UPCARD / CURRENT TRICK", decision: "YOUR HAND · ORDER UP OR PLAY" }
+  };
+  const table = tableDetails[gameKey];
   let round = 0;
 
   const red = (label) => /[♥♦]/.test(label);
@@ -109,7 +115,8 @@
         <span class="tutorial-progress">Lesson ${round + 1} of ${game.rounds.length}</span>
       </div>
       <div class="table-hud"><strong class="game-badge">${game.name}</strong><span class="table-score">${game.status}</span></div>
-      <div class="table-avatars" aria-label="Four teaching-table seats"><span>Nora</span><span>Maya</span><span>Vaughn</span><strong>You</strong></div>
+      <div class="table-avatars" aria-label="Four teaching-table seats">${table.seats.map((seat, index) => index === 3 ? `<strong>${seat}</strong>` : `<span>${seat}</span>`).join("")}</div>
+      <div class="game-specific-status" aria-label="${game.name} table status">${table.chips.map((chip) => `<span>${chip}</span>`).join("")}</div>
       <div class="tutorial-board">
         <div class="tutorial-copy">
           <p class="eyebrow">${game.name} quick play</p>
@@ -117,8 +124,8 @@
           <p>${canadian ? `${data.prompt} Take your time, bud.` : data.prompt}</p>
         </div>
         <div class="play-area">
-          <div class="player-zone"><span class="zone-label">Your choice</span><div class="card-row">${data.choices.map((choice, index) => card(choice.label, index)).join("")}</div></div>
-          <div class="pile-zone"><span class="zone-label">Table</span><div class="card-row">${data.pile.map((label) => card(label, 0, false)).join("")}</div></div>
+          <div class="player-zone table-decision"><span class="zone-label">${table.decision}</span><div class="card-row">${data.choices.map((choice, index) => card(choice.label, index)).join("")}</div></div>
+          <div class="pile-zone table-trick"><span class="zone-label">${table.center}</span><div class="card-row">${data.pile.map((label) => card(label, 0, false)).join("")}</div></div>
         </div>
         <div class="tutorial-feedback" role="status" aria-live="polite">${canadian ? `${game.intro} One more hand, eh?` : game.intro}</div>
         <div class="tutorial-controls"><button class="button" type="button" data-next disabled>${round + 1 === game.rounds.length ? "Finish lesson" : "Next lesson"}</button></div>

@@ -26,11 +26,15 @@
     ${table}
     <footer><p role="status" aria-live="polite" data-match-status>${instruction}</p>${action}</footer>
   </div>`;
+  const foundation = () => `<section class="palace-foundation" aria-label="Your Palace setup: three face-up cards over three face-down cards and a draw deck">
+    <div class="foundation-stack"><span class="foundation-label">YOUR PALACE · FACE-UP OVER FACE-DOWN</span><div class="foundation-row visible-row">${card("4", "â™¥", "")}${card("8", "â™£", "", { power: true })}${card("K", "â™ ", "")}</div><div class="foundation-row hidden-row">${backs(3)}</div></div>
+    <div class="draw-deck"><span class="draw-deck-label">DRAW DECK</span>${card("", "", "deck", { back: true })}</div>
+  </section>`;
   const table = ({ rival = backs(state.opponentCards), pile, hand, callout = "", layers = "" }) => `<div class="palace-app-table" data-chapter="${chapters[state.chapter]}">
     <div class="castle-silhouette" aria-hidden="true"><span>♜</span><span>♛</span><span>♜</span></div>
     <section class="seat rival-seat"><span class="seat-avatar" aria-hidden="true">N</span><label>${t.rival || "RIVAL"} · ${state.opponentCards} CARDS</label><div class="card-row">${rival}</div></section>
     <section class="central-pile"><label>${t.pile || "TOP OF PILE"}</label><div class="pile-cards">${pile}</div>${callout ? `<strong class="table-callout">${callout}</strong>` : ""}</section>
-    ${layers}
+    ${layers || foundation()}
     <section class="seat player-seat"><span class="seat-avatar you" aria-hidden="true">YOU</span><label>${t.hand || "YOUR HAND"}</label><div class="card-row player-hand">${hand}</div></section>
   </div>`;
   const scene = () => {
@@ -38,7 +42,7 @@
       pile: card("6", "♣", "pile"),
       hand: card("4", "♦", "low", { action: true }) + card("6", "♥", "match", { action: true }) + card("9", "♠", "high", { action: true }) + card("10", "♣", "burn", { action: true, power: true }),
       callout: t.match || "MATCH OR BEAT"
-    }), t.prompt || "Match the rank, play higher, or use a power card.");
+    }), t.prompt || "Your Palace is built: hand, three face-up cards, three face-down cards, and a draw deck. Match the six, play higher, or use a power card.");
     if (state.chapter === 1) return chrome(table({
       pile: card("5", "♦", "pile") + card("7", "♣", "pile") + card("9", "♥", "pile"),
       hand: card("3", "♣", "low", { action: true }) + card("10", "♠", "burn", { action: true, power: true }) + card("K", "♦", "high", { action: true }),
@@ -62,7 +66,7 @@
         card("", "", "level", { action: true, back: true });
       return chrome(table({ pile: card("2", "♠", "pile", { power: true }), hand, layers: levels, callout: [t.levelHand || "HAND", t.levelUp || "FACE-UP", t.levelDown || "FACE-DOWN"][state.layer] }), "Clear the hand, then the face-up row, then trust the hidden finale.");
     }
-    return chrome(`<div class="match-victory"><img data-game-art src="assets/palace-hero-640.webp" alt="" width="512" height="512"><span class="victory-crown">♛</span><p class="eyebrow">MINI-MATCH COMPLETE</p><h2>${t.won || "YOU RULE THE PALACE"}</h2><p>Same rank. Higher card. Power move. Three levels. Now you know why one more game is never just one more game.</p><div class="victory-actions"><button class="button" type="button" data-action="replay">${t.replay || "Replay mini-match"}</button><a class="button secondary" href="palace.html#rules">Full rules</a><a class="text-link" href="palace-story.html">The story</a></div></div>`, "");
+    return chrome(`<div class="match-victory"><img data-game-art src="assets/palace-hero-640.webp" alt="" width="512" height="512"><span class="victory-crown">♛</span><p class="eyebrow">MINI-MATCH COMPLETE</p><h2>${t.won || "YOU RULE THE PALACE"}</h2><p>Hand cleared. Face-up cleared. Mystery card revealed. Now you know why one more game is never just one more game.</p><div class="victory-actions"><button class="button" type="button" data-action="replay">${t.replay || "Replay mini-match"}</button><a class="button secondary" href="index.html#rules">Full rules</a><a class="text-link" href="palace-story.html">The story</a></div></div>`, "");
   };
   const activateCountdown = () => {
     const node = mount.querySelector("[data-release-strip]");
