@@ -72,3 +72,22 @@ Key maintenance records: `docs/COUNTDOWN-CONFIGURATION.md`, `docs/PALACE-NAME-SE
 ## Founder experience recovery (July 26, 2026)
 
 The current public candidate uses the app-parity Palace mini-match, URL-only language/name settings, RTL support, Canadian-fun copy, and the private traditional-name Easter egg. See `docs/FOUNDER-EXPERIENCE-RELEASE.md`, `docs/LOCALIZATION-ARCHITECTURE.md`, and `docs/NAMING-AND-EASTER-EGG.md`. Run `scripts/validate-site.mjs` and `scripts/verify-founder-experience.mjs` before release.
+
+## July 26 app-parity release
+
+The founder-directed app-parity release adds the bright Palace visual system, visible table-name and language controls, authoritative URL-only Palace/Shed/traditional-name state, interactive physical power cards, compact News and More Games first viewports, and the Palace rules/FAQ discovery page.
+
+Authoring and acceptance references:
+
+- `docs/APP-PARITY-AND-PAGE-HIERARCHY.md`
+- `docs/PRODUCT-NAME-AUTHORITY.md`
+- `docs/SEO-KEYWORD-AND-CONTENT-GOVERNANCE.md`
+- `docs/MORE-GAMES-GUIDE.md`
+
+Release commands:
+
+```text
+node scripts/build-site.mjs
+node scripts/validate-site.mjs
+node scripts/verify-app-parity.mjs
+```

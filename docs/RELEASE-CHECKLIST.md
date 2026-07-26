@@ -78,3 +78,15 @@ Last run: 2026-07-26
 - [x] Founder story integrated with claim boundaries.
 - [x] Local semantic and Chromium gates passed.
 - [x] Exact-SHA GitHub Pages product deployment `a9c2c33` verified publicly in run `30210204360`.
+
+## July 26 app-parity gates
+
+- [x] Shared generator produces 23 public HTML pages plus sitemap and RSS.
+- [x] Static validation passes links, email links, metadata, CSP, images, tracking, mixed content, accessibility hooks, and secret scan.
+- [x] Browser QA passes 23 pages and nine locale/name combinations.
+- [x] News featured story and More Games shelf are visible in the first 1440Ã—900 viewport.
+- [x] 2â™£, 7â™¦, 8â™ , and 10â™¥ physical-card interactions pass.
+- [x] Palace plus Hearts, Spades, and Euchre tutorial completion passes.
+- [x] Ten-tap traditional-name confirmation and reset behavior pass.
+- [x] Cookies, local storage, session storage, and external resources remain empty.
+- [ ] Public exact-SHA deployment and post-deployment browser rerun are recorded after push.

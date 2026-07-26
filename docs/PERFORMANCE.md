@@ -26,3 +26,7 @@ Browser acceptance checks failed resources, third-party requests, mixed content,
 ## Founder redesign measurements
 
 Local browser QA on July 26, 2026 measured the 1440×900 homepage at 298,022 transferred bytes (7,262 JavaScript; 71,299 CSS; largest resource 154,972-byte Palace hero) and the 390×844 Palace tutorial at 145,207 transferred bytes (17,427 JavaScript; 71,299 CSS; largest resource 41,764-byte 4OH logo). Third-party requests: zero. The redesign uses local WebP/PNG art, system fonts, static HTML, and small framework-free scripts.
+
+## App-parity asset budget
+
+The Open Graph app-world illustration is a 1200Ã—630 progressive JPEG at approximately 189 KB and is metadata-only. Page art remains responsive WebP. New runtime files are local, dependency-free, and inert when their matching component is absent. No third-party font, image CDN, analytics, or embedded widget was added.

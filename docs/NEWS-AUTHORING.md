@@ -11,3 +11,7 @@ After authoring, run the generator twice and confirm no second-run diff, run `sc
 ## Founder-era editorial standard
 
 Palace must lead the newsroom. Every product statement distinguishes Internal Alpha/testing from public availability. Articles may use obvious campaign hyperbole, but user counts, rankings, endorsements, reviews, partnerships, and release success require evidence. Product rules are the Four of Hearts rules; broader Palace history must preserve the sourced/tradition/folklore boundary.
+
+## Compact newsroom and dynamic visible identity
+
+The newsroom now opens with a compact heading plus featured story in the first desktop viewport. Visible editorial product references use the shared generator `productCopy` helper so Shed mode does not leave a stale Palace headline. Metadata and NewsArticle structured data remain canonical Palace. Do not restore a full-screen title card.

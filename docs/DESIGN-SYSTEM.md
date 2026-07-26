@@ -32,3 +32,7 @@ The first viewport uses a single editorial headline, cinematic negative space, a
 ## App-parity table layer (July 26, 2026)
 
 `assets/app-experience-v2.css` is the Palace product layer: navy/teal felt, cyan information, gold action states, compact product chrome, overlapping readable cards, full-viewport mini-match geometry, RTL card correction, 44-pixel controls, reduced motion, and short-landscape recovery. It derives from the approved public app presentation audit recorded in `FOUNDER-EXPERIENCE-RELEASE.md`.
+
+## App-parity visual authority
+
+The founder-supplied Palace app home screen is now the controlling visual reference. `assets/palace-app-web.css` is the final web layer: sky blue, royal/deep blue, cream, gold, garden green, rounded surfaces, friendly physical cards, and restrained dark contrast. Large condensed display typography was softened with a rounded system stack and more compact section pacing. See `APP-PARITY-AND-PAGE-HIERARCHY.md`.

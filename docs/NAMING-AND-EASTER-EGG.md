@@ -18,3 +18,6 @@ The dialog works with mouse, touch, Enter, and Space. Native `dialog` focus cont
 
 The private name must not appear in canonical metadata, Open Graph copy, JSON-LD, sitemap, RSS, help content, or default public navigation. It may appear in factual history source notes and this internal implementation document.
 
+## Site-wide authority update
+
+The July 26 release replaces the partial page-specific naming layer with `assets/product-authority.js`. Public selection is Palace or Shed. Ten Shed selections within four seconds opens the existing explicit confirmation for the uncensored traditional name. The confirmed name is URL-only, announced through a live region, propagated by `fourOfHearts:gameNameChanged`, and excluded from canonical metadata, RSS, sitemap, Open Graph, and JSON-LD.

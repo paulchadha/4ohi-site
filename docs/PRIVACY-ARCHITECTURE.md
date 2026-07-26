@@ -10,3 +10,7 @@ GitHub Pages and normal network infrastructure may process request metadata need
 ## Language and naming state
 
 Language and table name are URL parameters only. The verified implementation creates no cookie, local-storage entry, session-storage entry, remote translation call, or analytics request. The private alternate name is not inferred from DNS, browser language, identity, or a previous visit.
+
+## Product-name and locale state
+
+The app-parity release keeps locale and product-name state exclusively in the URL. Browser acceptance confirms empty cookies, local storage, and session storage after locale selection, Shed mode, RTL, power-card interaction, and all tutorial flows. The private traditional-name confirmation does not create a stored preference or visitor profile.

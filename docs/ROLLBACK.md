@@ -6,3 +6,7 @@ Do not change DNS or Proton Mail records for a content rollback. The custom doma
 ## Founder experience rollback
 
 Revert the focused website commits only, rebuild, push, and wait for the reverted exact SHA on GitHub Pages. Do not change A/AAAA/CNAME, GitHub domain verification TXT, Proton MX/SPF/DKIM/DMARC, DigitalOcean, or PalaceApp to roll back website presentation.
+
+## App-parity rollback unit
+
+Treat the generator, `palace-app-web.css`, `product-authority.js`, `release-strip.js`, `power-cards.js`, FAQ page, generated HTML, and app-parity documentation as one release unit. To roll back, revert the focused release commits rather than deleting generated pages or changing DNS. Rebuild from the reverted generator, validate locally, push normally, wait for the exact-SHA Pages run, and repeat public HTTPS QA. Do not touch Proton Mail or GitHub Pages DNS records for a visual/content rollback.

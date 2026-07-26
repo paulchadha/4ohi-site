@@ -96,3 +96,7 @@ Local integrated evidence is `visual-evidence/founder-experience-results.json` p
 - Proton MX 10/20, SPF, verification TXT, DMARC quarantine, and all three DKIM CNAME selectors remain public and unchanged.
 - The founder confirmed support email is working. This confirmation, rather than DNS inference, is the mailbox delivery evidence for this release.
 - No DNS, Proton, DigitalOcean, PalaceApp, or native-game configuration was changed by the founder website recovery.
+
+## July 26 app-parity candidate
+
+Local candidate evidence is recorded in `docs/visual-evidence/app-parity-results.json` with first-viewport and tutorial screenshots listed in `APP-PARITY-AND-PAGE-HIERARCHY.md`. It covers 23 pages, nine locale/name states, all four tutorials, physical power cards, RTL, responsive geometry, the traditional-name confirmation, and zero storage. Public exact-SHA results must be appended after GitHub Pages deploys this candidate.

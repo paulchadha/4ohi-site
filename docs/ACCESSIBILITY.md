@@ -15,3 +15,7 @@ Browser automation does not replace screen-reader and physical-device testing. B
 ## Founder redesign verification
 
 The continuous Palace mini-match uses native buttons, visible focus, live status text, non-color labels, minimum 44-pixel primary controls, keyboard and touch input, and a reduced-motion path. The Palace/Shed control uses `aria-pressed`; the secret sequence does not announce intermediate taps. The first focus target remains Skip to content. Browser acceptance passed 125% text zoom and all required viewports without horizontal overflow.
+
+## App-parity acceptance additions
+
+The global name, locale, Settings, power-card, and tutorial controls use native buttons, selects, details, and dialogs. Name changes announce through an `aria-live` status. Power cards expose one pressed state at a time. Browser QA covers keyboard-operable native controls, RTL, reduced motion, 44-pixel targets, mobile overflow, and tutorial completion; physical screen-reader and device checks remain a separate commercial-release gate.

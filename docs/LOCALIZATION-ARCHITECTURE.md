@@ -36,3 +36,6 @@ No cookie, local storage, session storage, account, translation API, analytics s
 
 Legal, privacy, terms, history, and founder-biography translations require qualified review before commercial reliance. The selector shows the active review status.
 
+## Central product-name locale authority
+
+`assets/product-authority.js` owns the eight locale templates and Palace/Shed/traditional display-name resolver. Product names are not translated. Surrounding grammar is locale-aware, RTL is applied at the document root, and every internal link inherits `lang` and `game` from the URL. No preference is stored. See `PRODUCT-NAME-AUTHORITY.md`.
