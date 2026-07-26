@@ -2,60 +2,112 @@
   "use strict";
   const mount = document.querySelector("#palace-tutorial");
   if (!mount) return;
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const wait = (ms) => new Promise((resolve) => window.setTimeout(resolve, reduced ? 0 : ms));
-  const state = { scene: 0, locked: false, powerSeen: new Set(), layer: 0 };
-  const scenes = ["Match or beat", "Ten burns", "Pickup", "Power cards", "Three levels"];
-  const suitRed = /[♥♦]/;
-  const card = (label, value, options = {}) => {
-    const [rank, suit = ""] = [...label];
-    const classes = ["v3-card", suitRed.test(suit) ? "red" : "", options.back ? "back" : "", options.power ? "power" : ""].filter(Boolean).join(" ");
-    const tag = options.button === false ? "span" : "button";
-    const attrs = options.button === false ? "" : ` type="button" data-card="${value}"`;
-    const aria = options.back ? "Face-down card" : `${rank}${suit ? ` of ${suit === "♥" ? "hearts" : suit === "♦" ? "diamonds" : suit === "♣" ? "clubs" : "spades"}` : " power card"}`;
-    return `<${tag} class="${classes}"${attrs} aria-label="${aria}"><span class="corner">${options.back ? "4OH" : `${rank}<i>${suit}</i>`}</span><strong>${options.back ? "♥" : rank}</strong><span class="suit">${options.back ? "" : suit}</span></${tag}>`;
+  const experience = window.PALACE_EXPERIENCE;
+  const t = experience?.t || {};
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const wait = (ms) => new Promise((resolve) => setTimeout(resolve, reduced ? 0 : ms));
+  const suitNames = { "♥": "hearts", "♦": "diamonds", "♣": "clubs", "♠": "spades" };
+  const state = { chapter: 0, layer: 0, locked: false, powers: new Set(), opponentCards: 3 };
+  const chapters = ["match", "burn", "pickup", "powers", "levels", "win"];
+
+  const card = (rank, suit, id, options = {}) => {
+    const label = options.back ? "Face-down card" : `${rank} of ${suitNames[suit]}`;
+    const tag = options.action ? "button" : "span";
+    return `<${tag} class="match-card ${/[♥♦]/.test(suit) ? "red" : ""} ${options.back ? "card-back" : ""} ${options.power ? "power-card" : ""}"${options.action ? ` type="button" data-play="${id}"` : ""} aria-label="${label}">
+      <span class="card-corner">${options.back ? "4OH" : `${rank}<i>${suit}</i>`}</span>
+      <strong>${options.back ? "♥" : rank}</strong><span class="card-suit">${options.back ? "" : suit}</span>
+    </${tag}>`;
   };
-  const header = () => `<div class="v3-tutorial-head"><div><span class="live-dot" aria-hidden="true"></span>PALACE FIELD TRAINING</div><span>Scene ${Math.min(state.scene + 1, 5)} / 5</span></div><ol class="scene-rail" aria-label="Tutorial progress">${scenes.map((name, index) => `<li class="${index < state.scene ? "done" : index === state.scene ? "current" : ""}"><span>${index + 1}</span>${name}</li>`).join("")}</ol>`;
-  const feedback = (text) => `<p class="v3-feedback" role="status" aria-live="polite">${text}</p>`;
-  const table = (content, message) => `${header()}<div class="v3-table">${content}</div>${feedback(message)}`;
-  const intro = () => `<div class="v3-tutorial-head"><div><span class="live-dot" aria-hidden="true"></span>PALACE FIELD TRAINING</div><span>NO ACCOUNT · NOTHING SAVED</span></div><div class="v3-intro"><p class="eyebrow">The whole game starts here</p><h2>Match it.<br>Beat it.<br><em>Rule the table.</em></h2><p>Play every card in your hand, then your face-up row, then the cards you cannot see. Power cards can change everything.</p><button class="button" type="button" data-action="start">Take your seat</button></div>`;
-  const sceneMatch = () => table(`<div class="opponent-seat"><span>RIVAL · 3 CARDS</span><div>${card("", "", { back:true, button:false })}${card("", "", { back:true, button:false })}${card("", "", { back:true, button:false })}</div></div><div class="pile-seat"><span>TOP OF PILE</span><div class="pile-depth">${card("6♣", "pile", { button:false })}</div><b>MATCH 6 OR PLAY HIGHER</b></div><div class="player-seat"><span>YOUR HAND</span><div class="v3-hand">${card("4♦", "wrong")}${card("6♥", "match")}${card("9♠", "beat")}${card("10♣", "ten", {power:true})}</div></div>`, "Choose a card. Try the four first—you can recover from a mistake.");
-  const sceneBurn = () => table(`<div class="opponent-seat"><span>RIVAL · WATCHING</span><div>${card("", "", {back:true,button:false})}${card("", "", {back:true,button:false})}</div></div><div class="pile-seat burn-target"><span>THE PILE IS GETTING HEAVY</span><div class="pile-depth">${card("5♦","",{button:false})}${card("7♣","",{button:false})}${card("9♥","",{button:false})}</div><b>TEN BURNS THE ENTIRE PILE</b></div><div class="player-seat"><span>YOUR HAND</span><div class="v3-hand">${card("3♣","wrong")}${card("10♠","burn",{power:true})}${card("K♦","beat")}</div></div>`, "Play the ten. The pile will disappear and you lead again.");
-  const scenePickup = () => table(`<div class="opponent-seat opponent-thinking"><span>RIVAL · THINKING</span><div class="v3-hand compact">${card("3♠","",{button:false})}${card("5♥","",{button:false})}</div></div><div class="pile-seat pickup-target"><span>TOP OF PILE</span><div class="pile-depth">${card("Q♣","",{button:false})}</div><b>NO MATCH. NOTHING HIGHER.</b></div><div class="player-seat"><span>YOUR MOVE IS COMPLETE</span><button class="button secondary" type="button" data-action="opponent">Let the rival play</button></div>`, "When a player cannot match or beat the pile, they pick up every card in it.");
-  const scenePowers = () => table(`<div class="power-stage"><div><p class="eyebrow">Change the game</p><h2>Four power cards.<br>Four ways out.</h2><p>Select each card to learn the Four of Hearts rule.</p></div><div class="power-grid">${card("2♣","2",{power:true})}${card("7♥","7",{power:true})}${card("8♠","8",{power:true})}${card("10♦","10",{power:true})}</div><div class="power-readout" data-power-readout><strong>Choose a power card</strong><span>2 resets · 7 requires lower · 8 is transparent · 10 burns</span></div></div>`, "Explore all four power cards to continue.");
-  const sceneLayers = () => {
-    const layerNames = ["Cards in hand", "Face-up cards", "Face-down cards"];
-    return table(`<div class="levels-stage"><div><p class="eyebrow">The Palace finish</p><h2>Three levels.<br>One crown.</h2><p>Clear each level in order. The final cards stay hidden until you play them.</p></div><div class="level-stack" data-layer="${state.layer}"><button type="button" data-action="layer" aria-label="Reveal next Palace level"><span class="level face-down">${card("","",{back:true,button:false})}${card("","",{back:true,button:false})}${card("","",{back:true,button:false})}</span><span class="level face-up">${card("4♥","",{button:false})}${card("8♣","",{button:false,power:true})}${card("K♠","",{button:false})}</span><span class="level hand-level">${card("3♦","",{button:false})}${card("6♣","",{button:false})}${card("10♥","",{button:false,power:true})}</span></button><strong>${layerNames[state.layer]}</strong><small>${state.layer < 2 ? "Select the cards to move to the next level" : "The last reveal is pure Palace"}</small></div></div>`, "Hand first. Face-up next. Face-down last.");
+  const backs = (count) => Array.from({ length: count }, (_, i) => card("", "", `back-${i}`, { back: true })).join("");
+  const progress = () => `<div class="match-progress" aria-label="Mini-match progress"><span style="--progress:${Math.min(100, (state.chapter / 5) * 100)}%"></span><b>${state.chapter < 5 ? `${state.chapter + 1} / 5` : "♛"}</b></div>`;
+  const chrome = (table, instruction, action = "") => `<div class="mini-match-chrome">
+    <header><div><img src="assets/brand-mark-4oh.webp" alt="" width="76" height="58"><span><b data-game-name>${experience?.displayName() || "Palace"}</b><small>THE MINI-MATCH</small></span></div>${progress()}</header>
+    <div class="app-release-strip" data-release-strip role="timer"></div>
+    ${table}
+    <footer><p role="status" aria-live="polite" data-match-status>${instruction}</p>${action}</footer>
+  </div>`;
+  const table = ({ rival = backs(state.opponentCards), pile, hand, callout = "", layers = "" }) => `<div class="palace-app-table" data-chapter="${chapters[state.chapter]}">
+    <div class="castle-silhouette" aria-hidden="true"><span>♜</span><span>♛</span><span>♜</span></div>
+    <section class="seat rival-seat"><label>${t.rival || "RIVAL"} · ${state.opponentCards} CARDS</label><div class="card-row">${rival}</div></section>
+    <section class="central-pile"><label>${t.pile || "TOP OF PILE"}</label><div class="pile-cards">${pile}</div>${callout ? `<strong class="table-callout">${callout}</strong>` : ""}</section>
+    ${layers}
+    <section class="seat player-seat"><label>${t.hand || "YOUR HAND"}</label><div class="card-row player-hand">${hand}</div></section>
+  </div>`;
+  const scene = () => {
+    if (state.chapter === 0) return chrome(table({
+      pile: card("6", "♣", "pile"),
+      hand: card("4", "♦", "low", { action: true }) + card("6", "♥", "match", { action: true }) + card("9", "♠", "high", { action: true }) + card("10", "♣", "burn", { action: true, power: true }),
+      callout: t.match || "MATCH OR BEAT"
+    }), t.prompt || "Match the rank, play higher, or use a power card.");
+    if (state.chapter === 1) return chrome(table({
+      pile: card("5", "♦", "pile") + card("7", "♣", "pile") + card("9", "♥", "pile"),
+      hand: card("3", "♣", "low", { action: true }) + card("10", "♠", "burn", { action: true, power: true }) + card("K", "♦", "high", { action: true }),
+      callout: "10 = BURN"
+    }), "A ten clears everything. Burn the pile and keep control.");
+    if (state.chapter === 2) return chrome(table({
+      rival: card("3", "♠", "rival") + card("5", "♥", "rival"),
+      pile: card("Q", "♣", "pile"),
+      hand: card("4", "♦", "waiting") + card("8", "♣", "waiting", { power: true }),
+      callout: "NO LEGAL CARD"
+    }), "Your rival cannot match or beat the queen.", `<button class="match-action" type="button" data-action="pickup">${t.pickup || "PICK UP"}</button>`);
+    if (state.chapter === 3) return chrome(table({
+      pile: card("9", "♠", "pile"),
+      hand: card("2", "♣", "2", { action: true, power: true }) + card("7", "♥", "7", { action: true, power: true }) + card("8", "♠", "8", { action: true, power: true }) + card("10", "♦", "10", { action: true, power: true }),
+      callout: "CHANGE THE GAME"
+    }), state.powers.size ? `${state.powers.size} / 4 power cards discovered.` : "Try every power card: reset, lower, transparent, burn.");
+    if (state.chapter === 4) {
+      const levels = `<div class="palace-level-deck" data-layer="${state.layer}"><div class="level-row hidden-row">${backs(3)}</div><div class="level-row visible-row">${card("4", "♥", "")}${card("8", "♣", "", { power: true })}${card("K", "♠", "")}</div></div>`;
+      const hand = state.layer === 0 ? card("3", "♦", "level", { action: true }) + card("6", "♣", "level", { action: true }) + card("10", "♥", "level", { action: true, power: true }) :
+        state.layer === 1 ? card("4", "♥", "level", { action: true }) + card("8", "♣", "level", { action: true, power: true }) + card("K", "♠", "level", { action: true }) :
+        card("", "", "level", { action: true, back: true });
+      return chrome(table({ pile: card("2", "♠", "pile", { power: true }), hand, layers: levels, callout: [t.levelHand || "HAND", t.levelUp || "FACE-UP", t.levelDown || "FACE-DOWN"][state.layer] }), "Clear the hand, then the face-up row, then trust the hidden finale.");
+    }
+    return chrome(`<div class="match-victory"><img src="assets/icon-palace-4hearts.webp" alt="" width="512" height="512"><span class="victory-crown">♛</span><p class="eyebrow">MINI-MATCH COMPLETE</p><h2>${t.won || "YOU RULE THE PALACE"}</h2><p>Same rank. Higher card. Power move. Three levels. Now you know why one more game is never just one more game.</p><div class="victory-actions"><button class="button" type="button" data-action="replay">${t.replay || "Replay mini-match"}</button><a class="button secondary" href="palace.html#rules">Full rules</a><a class="text-link" href="palace-story.html">The story</a></div></div>`, "");
   };
-  const complete = () => `${header()}<div class="v3-complete"><span class="crown-burst" aria-hidden="true">♛</span><p class="eyebrow">Training complete</p><h2>You rule this Palace.</h2><p>You matched, climbed, burned a pile, watched a pickup, learned the power cards, and crossed all three levels.</p><div class="tutorial-controls"><button class="button" type="button" data-action="replay">Replay tutorial</button><a class="button secondary" href="palace.html#rules">Read full rules</a><a class="text-link" href="palace-story.html">Explore Palace history</a><a class="text-link" href="news.html">Read Palace news</a></div></div>`;
-  const render = () => { mount.innerHTML = state.scene === -1 ? intro() : state.scene === 0 ? sceneMatch() : state.scene === 1 ? sceneBurn() : state.scene === 2 ? scenePickup() : state.scene === 3 ? scenePowers() : state.scene === 4 ? sceneLayers() : complete(); };
-  const say = (text, good = false) => { const node = mount.querySelector(".v3-feedback"); if (node) { node.textContent = text; node.classList.toggle("good", good); } };
-  const advance = async (selected, effect) => { state.locked = true; if (selected) selected.classList.add("played", effect || ""); await wait(760); state.scene += 1; state.locked = false; render(); mount.focus({preventScroll:true}); };
+  const activateCountdown = () => {
+    const node = mount.querySelector("[data-release-strip]");
+    if (!node) return;
+    const delta = Math.max(0, new Date("2026-10-17T00:00:00-05:00").getTime() - Date.now());
+    const units = [Math.floor(delta / 86400000), Math.floor(delta / 3600000) % 24, Math.floor(delta / 60000) % 60, Math.floor(delta / 1000) % 60];
+    node.innerHTML = `<span>${t.launch || "The gates open in"}</span><strong>${units.map((n) => String(n).padStart(2, "0")).join(" : ")}</strong>`;
+  };
+  const render = () => { mount.innerHTML = scene(); activateCountdown(); experience?.applyGame(); };
+  const status = (message, good = false) => {
+    const node = mount.querySelector("[data-match-status]");
+    if (node) { node.textContent = message; node.classList.toggle("good", good); }
+  };
+  const advance = async (button) => {
+    state.locked = true; button?.classList.add("played"); await wait(520); state.chapter += 1; state.locked = false; render(); mount.focus({ preventScroll: true });
+  };
   mount.addEventListener("click", async (event) => {
     if (state.locked) return;
     const action = event.target.closest("[data-action]")?.dataset.action;
-    const selected = event.target.closest("button[data-card]");
-    if (action === "start") { state.scene = 0; render(); return; }
-    if (action === "replay") { state.scene = -1; state.powerSeen.clear(); state.layer = 0; render(); return; }
-    if (action === "opponent" && state.scene === 2) { state.locked = true; say("The rival checks the pile…"); await wait(650); mount.querySelector(".opponent-thinking")?.classList.add("picking-up"); mount.querySelector(".pickup-target")?.classList.add("picked-up"); say("Can’t match or beat it? Pick up the pile.", true); await wait(1200); state.scene = 3; state.locked = false; render(); return; }
-    if (action === "layer" && state.scene === 4) { if (state.layer < 2) { state.layer += 1; render(); } else { await advance(null); } return; }
-    if (!selected) return;
-    const value = selected.dataset.card;
-    if (state.scene === 0) {
-      if (value === "wrong") { selected.classList.add("wrong"); say("Four is lower than six. Try again: match the six or beat it."); await wait(450); selected.classList.remove("wrong"); return; }
-      await advance(selected, value === "match" ? "matched" : "climbed"); return;
+    const button = event.target.closest("[data-play]");
+    if (action === "replay") { Object.assign(state, { chapter: 0, layer: 0, locked: false, opponentCards: 3 }); state.powers.clear(); render(); return; }
+    if (action === "pickup" && state.chapter === 2) {
+      state.locked = true; status("The rival picks up the entire pile…", true); mount.querySelector(".rival-seat")?.classList.add("receiving"); await wait(800);
+      state.opponentCards = 7; state.chapter = 3; state.locked = false; render(); return;
     }
-    if (state.scene === 1) {
-      if (value !== "burn") { selected.classList.add("wrong"); say("Save that one. This scene is about the ten."); await wait(450); selected.classList.remove("wrong"); return; }
-      mount.querySelector(".burn-target")?.classList.add("burning"); say("TEN BURNS THE PILE. You lead again.", true); await advance(selected, "burn-card"); return;
+    if (!button) return;
+    const play = button.dataset.play;
+    if (state.chapter === 0) {
+      if (play === "low") { status("Four is below six. Match the six, play higher, or use the ten."); button.classList.add("illegal"); await wait(400); button.classList.remove("illegal"); return; }
+      await advance(button); return;
     }
-    if (state.scene === 3) {
-      const rules = { "2":["2 RESETS","Play anything next."], "7":["7 REQUIRES LOWER","The next ordinary card must be seven or lower."], "8":["8 IS TRANSPARENT","Ignore it when judging the next play."], "10":["10 BURNS","Sweep the pile away and lead again."] };
-      state.powerSeen.add(value); selected.classList.add("seen"); const [title, body] = rules[value]; const out = mount.querySelector("[data-power-readout]"); out.innerHTML = `<strong>${title}</strong><span>${body}</span>`;
-      say(`${state.powerSeen.size} of 4 power cards explored.`, true);
-      if (state.powerSeen.size === 4) { await wait(900); state.scene = 4; render(); }
+    if (state.chapter === 1) {
+      if (play !== "burn") { status("This is the ten’s moment. Burn the whole pile."); return; }
+      mount.querySelector(".central-pile")?.classList.add("burning"); status("BOOM. The pile is gone—and you lead again.", true); await advance(button); return;
+    }
+    if (state.chapter === 3) {
+      const rules = { "2": "2 resets. Anything may follow.", "7": "7 sends play lower.", "8": "8 is transparent. Read the card below.", "10": "10 burns the pile." };
+      state.powers.add(play); button.classList.add("discovered"); status(rules[play], true);
+      if (state.powers.size === 4) { await wait(700); state.chapter = 4; render(); }
+      return;
+    }
+    if (state.chapter === 4) {
+      button.classList.add("played"); await wait(350);
+      if (state.layer < 2) { state.layer += 1; render(); } else { state.chapter = 5; render(); }
     }
   });
-  state.scene = -1;
   render();
 })();
