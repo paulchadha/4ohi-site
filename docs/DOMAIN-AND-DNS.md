@@ -57,3 +57,7 @@ The TXT value is account-specific and must be copied from GitHub; never invent o
 ## Rollback
 
 If website cutover fails, remove only the GitHub A/AAAA records, restore apex A records `13.248.243.5` and `76.223.105.230`, and restore `www` CNAME to `4ohi.com`. Allow for published TTLs. Mail records must remain unchanged throughout cutover and rollback.
+
+## Founder redesign launch preservation
+
+The redesign is website-code only. It does not change apex A/AAAA records, www CNAME, GitHub ownership TXT, CAA, or any Proton Mail MX/SPF/DKIM/DMARC/verification record. Public TLS and redirect verification must be repeated after the exact redesign SHA deploys.

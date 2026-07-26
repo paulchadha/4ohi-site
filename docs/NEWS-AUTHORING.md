@@ -7,3 +7,7 @@ Each record needs a stable slug, title, description, ISO date, category, image, 
 Use one featured lead on the newsroom page, followed by recent stories in reverse chronological order. Headlines should be specific and calm; body copy should identify what changed, why it matters, and what remains in testing. Palace leads the editorial hierarchy, while Hearts, Spades, Euchre, company, accessibility, privacy, and safety updates support the broader family.
 
 After authoring, run the generator twice and confirm no second-run diff, run `scripts/validate-site.mjs`, then exercise `news.html`, the article, RSS, sitemap, metadata, mobile layout, and internal links in browser QA.
+
+## Founder-era editorial standard
+
+Palace must lead the newsroom. Every product statement distinguishes Internal Alpha/testing from public availability. Articles may use obvious campaign hyperbole, but user counts, rankings, endorsements, reviews, partnerships, and release success require evidence. Product rules are the Four of Hearts rules; broader Palace history must preserve the sourced/tradition/folklore boundary.

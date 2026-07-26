@@ -34,3 +34,7 @@ Current result: pass. No message body, correspondent address, credential, or pri
 ## Recovery
 
 If delivery fails, verify propagation, record syntax, account status, and provider status before changing DNS. Restore mail routing only as a complete, documented configuration; never mix partial provider configurations. Website rollback must not touch mail records.
+
+## Redesign preservation note
+
+No mail or DNS configuration was touched. The founder’s July 25, 2026 physical confirmation of unrelated inbound delivery and a successful reply from support@4ohi.com remains the latest mailbox evidence; website deployment does not replace mailbox testing.

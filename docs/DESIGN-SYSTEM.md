@@ -25,3 +25,7 @@ The launch campaign treats Palace as a card-table legend finally becoming an app
 The first viewport uses a single editorial headline, cinematic negative space, an October 17, 2026 countdown, compact calls to action, floating table cards, and a moving strip of documented regional game-family names. The Fortnite reference informed only the promotional hierarchy: one dominant world, one immediate action, high contrast, and kinetic energy. No Fortnite layout, artwork, copy, or assets are reproduced.
 
 `assets/palace-launch.css` layers the campaign over the stable `palace-site.css` system. Pointer lighting, castle drift, card drift, countdown updates, the mythology strip, focus lift, and tutorial play motion provide depth without audio or mandatory hover. Reduced-motion mode stops continuous animation, and the responsive composition keeps the logo, castle, campaign line, countdown, and primary play action readable from 320 through 1920 CSS pixels.
+
+## Founder-directed composition
+
+`assets/founder-redesign.css` is the final visual layer. It replaces repeated oversized cards with immersive chapters, editorial rule ribbons, full-width storytelling, cinematic art treatment, and a real table surface. Impact/Arial Narrow system typography supplies game-poster force without remote fonts. Palace owns midnight navy, electric blue, castle light, gold, and restrained silver; secondary games retain ruby, purple, and emerald identities. The approved 4OH mark remains the navigation, favicon, touch, footer, and social identity.

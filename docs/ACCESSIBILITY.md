@@ -11,3 +11,7 @@ Automated browser acceptance passed at 320 by 568, 360 by 800, 390 by 844, 412 b
 With `prefers-reduced-motion: reduce`, animation and transition durations resolve to effectively zero and Palace art/card drift stops. No interaction depends on hover, color alone, audio, a timer, or animation completion.
 
 Browser automation does not replace screen-reader and physical-device testing. Before a commercial release, complete VoiceOver or NVDA reading order, 200-percent text zoom, forced-colors, and representative iOS/Android touch testing.
+
+## Founder redesign verification
+
+The five-scene Palace tutorial uses native buttons, visible focus, live status text, non-color labels, minimum 44-pixel primary controls, keyboard and touch input, and a reduced-motion path. The Palace/Shed control uses `aria-pressed`; the secret sequence does not announce intermediate taps. The first focus target remains Skip to content. Browser acceptance passed 125% text zoom and all required viewports without horizontal overflow.

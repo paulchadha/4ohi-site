@@ -63,3 +63,7 @@ Ownership protection is verified. The additive challenge TXT publicly returns `c
 - Content rollback uses a new revert commit; history is never rewritten.
 - Website DNS rollback removes only the GitHub A/AAAA records and restores the two documented GoDaddy Website Builder A records plus the prior `www` CNAME.
 - Website rollback never touches Proton Mail or unrelated DNS records.
+
+## Founder redesign local QA — July 26, 2026
+
+The generated redesign passed static validation for 22 pages and the complete local browser suite. Evidence: `docs/visual-evidence/founder-redesign-local-results.json`; fresh homepage, Palace product, tutorial, history, newsroom, mobile, tablet, desktop, and wide-desktop screenshots are in `docs/visual-evidence/`. Public exact-SHA deployment and HTTPS rerun remain to be appended after push.

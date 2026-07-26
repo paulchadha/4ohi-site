@@ -46,3 +46,7 @@ Read-only review was limited to `Founder-Binder/4OH_Final_App_Design_Tiles.zip` 
 | `4OH_Tile_Spades.png`, 1024×1024, SHA-256 `1552AE5669E6F49363A9188E5D6FE69D473A76606CD1663FBDB2F4B8E93E5874` | `docs/source-assets/founder-binder-approved/4OH_Tile_Spades.png` | `icon-spades-4hearts.webp` at 512×512 | Same |
 | `4OH_Tile_Euchre.png`, 1024×1024, SHA-256 `34CECC883495C53FFA3964B79A8954F2CE332F90F262CE4363F8B14747009E3B` | `docs/source-assets/founder-binder-approved/4OH_Tile_Euchre.png` | `icon-euchre-4hearts.webp` at 512×512 | Same |
 | `4OH_Final_Contact_Sheet.jpg`, 840×600, SHA-256 `295FDC1404F6EE8A159032FBA6FD1E51F75846E66FB9BC26541224E8718551A1` | `docs/source-assets/founder-binder-approved/4OH_Final_Contact_Sheet.jpg` | Preservation/reference only; not loaded by public pages | Same |
+
+## Founder redesign usage
+
+The canonical approved four-heart 4OH mark is used without reconstruction in the upper-left navigation, mobile navigation, favicon, Apple touch icon, footer mark, structured-data publisher identity, and existing social preview. Palace castle derivatives remain the immersive flagship environment. No private Founder’s Binder material was added to public output.

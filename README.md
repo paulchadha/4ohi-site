@@ -63,3 +63,9 @@ Never change MX, SPF, DKIM, DMARC, provider verification, or unrelated TXT recor
 - [Accessibility acceptance](docs/ACCESSIBILITY.md)
 
 Never commit credentials, tokens, recovery codes, private keys, private correspondence, or account exports.
+
+## Founder-directed Palace experience (July 26, 2026)
+
+The current public build makes Palace the first-viewport flagship, uses the canonical four-heart 4OH mark, centralizes the October 17 countdown, provides a five-scene Palace table tutorial, documents the Four of Hearts power cards, separates Palace fact/folklore/legend, tells the four-daughter family story, provides session-only Palace/Shed naming with a documented Easter egg, and reports an intentionally tracker-free Privacy Choices state.
+
+Key maintenance records: `docs/COUNTDOWN-CONFIGURATION.md`, `docs/PALACE-NAME-SETTINGS.md`, `docs/FOUNDER-CLAIM-APPROVAL.md`, `docs/PRIVACY-ARCHITECTURE.md`, and `docs/ROLLBACK.md`.

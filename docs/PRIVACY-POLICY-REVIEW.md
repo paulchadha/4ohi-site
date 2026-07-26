@@ -38,3 +38,7 @@ Facebook and X configuration values remain blank, so no social link, widget, pix
 ## Change rule
 
 Any new SDK, account feature, storage, durable database, payment, advertising, analytics, social feature, user-generated content, or data transfer requires a new privacy review before release.
+
+## Founder redesign privacy review
+
+The new Privacy Choices center accurately reports eight categories: infrastructure-only strictly necessary behavior; no analytics; no advertising; no personalization tracking; no cross-site tracking; no sale/sharing for advertising; no stored tutorial progress; and no persisted Palace name. GPC/DNT behavior, rights contact, normal GitHub Pages metadata handling, and future opt-in requirements are documented. California/EU/UK applicability and final legal language remain open for qualified counsel; no certification is claimed.

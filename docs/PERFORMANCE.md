@@ -22,3 +22,7 @@ These local HTTP figures include development-server response overhead and do not
 ## Verification
 
 Browser acceptance checks failed resources, third-party requests, mixed content, storage, console errors, responsive overflow, and image completion. Before release, inspect a cold-load network trace at phone width and confirm that no unapproved source or unexpectedly large replacement asset entered the critical path.
+
+## Founder redesign measurements
+
+Local browser QA on July 26, 2026 measured the 1440×900 homepage at 298,022 transferred bytes (7,262 JavaScript; 71,299 CSS; largest resource 154,972-byte Palace hero) and the 390×844 Palace tutorial at 145,207 transferred bytes (17,427 JavaScript; 71,299 CSS; largest resource 41,764-byte 4OH logo). Third-party requests: zero. The redesign uses local WebP/PNG art, system fonts, static HTML, and small framework-free scripts.

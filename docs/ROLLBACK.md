@@ -1,0 +1,5 @@
+# Website rollback procedure
+
+Use GitHub history, never a force push or destructive reset. Identify the last known-good public commit and its successful Pages run. Create a new normal revert commit for the specific change, run the generator twice, static validation, browser acceptance, privacy/secret scans, and `git diff --check`, then push main. Wait for the exact revert SHA to deploy and verify HTTPS, canonical redirects, assets, and the public acceptance suite.
+
+Do not change DNS or Proton Mail records for a content rollback. The custom domain, verified ownership TXT, MX, SPF, DKIM, DMARC, and Proton verification records are outside a website-code rollback.

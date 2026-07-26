@@ -18,3 +18,7 @@ Public search supports the international game-family framing: Pagat records mult
 Distinguish three layers of truth: documented game-family history, variable table traditions, and the Four of Hearts adaptation. Never convert a common variant into a universal historical rule. Never imply that Four of Hearts invented the folk game. Product-status language must remain Internal Alpha until an actual public release exists.
 
 Founder review remains required for the exact Four of Hearts special-card effects. Until then, public copy may acknowledge special cards and house-rule variation but must not name an effect as canonical.
+
+## Four of Hearts rule boundary update
+
+The founder-directed website rule set is now approved for product teaching: 2 resets, 7 requires lower, 8 is transparent, and 10 burns. These are described as the Four of Hearts rules, not universal historical rules. Pagat remains the main public source for the broader shedding-game family, names, informal transmission, and rule variation. India popularity remains unsupported and is not published as fact.

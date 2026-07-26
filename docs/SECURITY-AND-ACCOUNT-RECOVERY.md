@@ -49,3 +49,7 @@ Generated pages include a CSP meta policy limiting content, scripts, images, sty
 The public JavaScript uses no `eval`, dynamic function construction, visitor-controlled HTML, remote API, cookie, local storage, session storage, form backend, third-party widget, analytics, ad technology, or remote font. Tutorial template HTML and status messages are fixed application constants.
 
 GitHub Pages does not provide repository-configurable response headers. A meta CSP cannot supply controls such as `frame-ancestors`, HSTS, Permissions-Policy, or cross-origin isolation. HTTPS enforcement supplies transport redirection once certificates are valid, but stronger response-header controls would require a supported edge or hosting layer and a separate reviewed migration.
+
+## Founder redesign security boundary
+
+New interaction remains static and same-origin. The tutorial and naming setting perform no backend request, accept no arbitrary HTML, persist no visitor state, and add no dependency. The Easter egg is explicitly not a security boundary. CSP remains self-only for scripts, styles, images, fonts, and connections within GitHub Pages limitations.

@@ -38,3 +38,7 @@ Follow `DOMAIN-AND-DNS.md`. Export the authenticated zone, change website-only r
 ## Review evidence
 
 Responsive screenshots and machine-readable interaction results are stored in `docs/visual-evidence/`. The release checklist records what was validated and what remains blocked by domain cutover or legal review.
+
+## Founder redesign deployment
+
+Before publishing, regenerate twice, run static validation and the founder browser suite, inspect fresh screenshots, verify the staged diff and secret/privacy scans, then create focused commits. Push main, wait for the exact SHA Pages run, and rerun the acceptance suite against `https://4ohi.com`. Do not touch DNS or mail records for this release.

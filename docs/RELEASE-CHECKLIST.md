@@ -56,3 +56,16 @@ Last run: 2026-07-26
 - Final HTTPS browser results: `docs/visual-evidence/public-launch-results.json` (passing)
 - Current screenshots: `palace-home-1440x900.png`, `palace-tutorial-390x844.png`, and `news-390x844.png` in `docs/visual-evidence/`
 - Automated validation: `node scripts/validate-site.mjs`
+
+## Founder-directed redesign gates
+
+- [x] Palace, canonical logo, immersive art, countdown, Internal Alpha status, tutorial action, discovery action, and News access appear in the first viewport.
+- [x] Rejected block-heavy Palace sections replaced with immersive chapters and full-width rules/story composition.
+- [x] About page tells the four-daughter and smiles story; founder claims are qualified and recorded for approval.
+- [x] Palace story separates sourced fact, table tradition, legend, product rules, and hyperbole.
+- [x] Session-only Palace/Shed setting and ten-tap founder Easter egg reset on refresh and use no storage.
+- [x] Five-scene tutorial verifies recoverable mistake, match, ten burn, opponent pickup, all power cards, three levels, replay/completion links.
+- [x] Privacy Choices center accurately reports zero optional tracking/storage.
+- [x] Local browser suite passed 21 routes, 32 viewport checks, three secondary tutorials, reduced motion, metadata/discovery, zero cookies/storage/third-party requests/console errors/failed requests.
+- [ ] Exact-SHA public deployment and public HTTPS acceptance recorded after commit/push.
+- [ ] Founder factual approvals and qualified legal/history review completed before commercial reliance.
