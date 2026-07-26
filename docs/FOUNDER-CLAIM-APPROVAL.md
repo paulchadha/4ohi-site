@@ -18,3 +18,8 @@ History copy separates sourced description, commonly reported table tradition, a
 ## Integrated About copy
 
 The July 26 About page combines the founder-supplied 50+ years, 20+ years in a university environment, game theory/strategy/teaching/testing interests, four-daughter origin, and smile-first philosophy. “Gameologist” is explicitly playful. No degree, professorship, employer, or publication is claimed. Final factual approval remains required.
+
+
+## Current public founder wording
+
+Pending founder factual approval: **Games have rules. People make them interesting.** The page retains 50+ years around games, 20+ years examining strategy and human interaction in a university environment, and “a person who has spent a lifetime watching what happens when rules meet people.” Defensive credential exclusions remain internal.

@@ -15,3 +15,8 @@ Palace must lead the newsroom. Every product statement distinguishes Internal Al
 ## Compact newsroom and dynamic visible identity
 
 The newsroom now opens with a compact heading plus featured story in the first desktop viewport. Visible editorial product references use the shared generator `productCopy` helper so Shed mode does not leave a stale Palace headline. Metadata and NewsArticle structured data remain canonical Palace. Do not restore a full-screen title card.
+
+
+## July 2026 staggered calendar
+
+The initial five stories now publish on July 14, 17, 20, 23, and 26. Continue with real approved updates every two or three days when possible. See NEWS-EDITORIAL-CALENDAR.md.

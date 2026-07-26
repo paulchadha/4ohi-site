@@ -35,3 +35,8 @@ Verify 320, 390, 768, 1366, 1440, and 1920 widths, keyboard focus, readable game
 ## Table differentiation
 
 Hearts, Spades, and Euchre now expose their own score/state vocabulary, rules, accents, and table decisions inside the shared app-world frame. Recoloring one generic tutorial is not acceptable.
+
+
+## Future-table presentation
+
+The future section uses a blue-purple-ruby mystery-card treatment and does not name unapproved games. Product cards retain equal heights, consistent crops, aligned actions, and game-specific feedback.

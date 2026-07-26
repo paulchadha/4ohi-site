@@ -19,3 +19,8 @@ The continuous Palace mini-match uses native buttons, visible focus, live status
 ## App-parity acceptance additions
 
 The global name, locale, Settings, power-card, and tutorial controls use native buttons, selects, details, and dialogs. Name changes announce through an `aria-live` status. Power cards expose one pressed state at a time. Browser QA covers keyboard-operable native controls, RTL, reduced motion, 44-pixel targets, mobile overflow, and tutorial completion; physical screen-reader and device checks remain a separate commercial-release gate.
+
+
+## Reconstructed gameplay acceptance
+
+Cards and actions remain semantic buttons with visible focus, live status, 44-pixel targets, keyboard activation, and reduced-motion behavior. Automated checks cover routing, Power Card geometry, Palace setup/progression, four-seat tables, RTL, and responsive bounds.

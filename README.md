@@ -91,3 +91,7 @@ node scripts/build-site.mjs
 node scripts/validate-site.mjs
 node scripts/verify-app-parity.mjs
 ```
+
+## Canonical homepage and website games
+
+The canonical public homepage is `/`; `/palace.html` is a state-preserving noindex compatibility redirect. Website game moments are local teaching experiences with no accounts, backend, cookies, storage, analytics, or tracking. See `docs/WEBSITE-INFORMATION-ARCHITECTURE.md`, `docs/WEBSITE-GAMEPLAY-ARCHITECTURE.md`, and `docs/PAGE-BY-PAGE-RECONSTRUCTION-2026-07-26.md`.

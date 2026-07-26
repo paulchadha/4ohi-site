@@ -15,3 +15,8 @@ Treat the generator, `palace-app-web.css`, `product-authority.js`, `release-stri
 ## Fingerprinted front-end rollback
 
 Revert the website commit, rebuild generated pages so asset hashes match the reverted contents, push, and wait for the exact SHA. Do not change DNS or Proton mail records for this front-end-only rollback.
+
+
+## Page reconstruction rollback
+
+Revert the focused website commits, rebuild generated documents and fingerprint manifest, push, wait for exact SHA, and rerun canonical route, game, and privacy tests. DNS, Proton mail, DigitalOcean, and native apps are outside this rollback.

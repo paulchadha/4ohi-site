@@ -42,3 +42,8 @@ Responsive screenshots and machine-readable interaction results are stored in `d
 ## Founder redesign deployment
 
 Before publishing, regenerate twice, run static validation and the founder browser suite, inspect fresh screenshots, verify the staged diff and secret/privacy scans, then create focused commits. Push main, wait for the exact SHA Pages run, and rerun the acceptance suite against `https://4ohi.com`. Do not touch DNS or mail records for this release.
+
+
+## Canonical route deployment
+
+The sitemap includes `/` and excludes the noindex `/palace.html` compatibility route. Acceptance requires the exact pushed SHA, root canonical metadata, logo and Palace navigation to home, and compatibility routing that preserves query/hash while replacing history.

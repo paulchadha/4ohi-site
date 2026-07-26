@@ -95,3 +95,8 @@ Last run: 2026-07-26
 ## Founder correction gate
 
 Before release, run `node scripts/build-site.mjs`, `node scripts/validate-site.mjs`, and `node scripts/verify-app-parity.mjs`. Require exact-SHA Pages deployment, then repeat the browser suite publicly. Founder physical-phone review remains a separate required acceptance item.
+
+
+## Page-by-page reconstruction gate
+
+Require one canonical homepage/countdown, a state-preserving legacy redirect, non-intersecting Power Cards, distinct News dates, five About beats, approved founder wording, complete Palace setup/levels, game-specific four-seat tables, responsive/keyboard/privacy passes, exact-SHA Pages success, and a public rerun.

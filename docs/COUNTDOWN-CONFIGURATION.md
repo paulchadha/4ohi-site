@@ -8,3 +8,8 @@ After changing it, rebuild, run static validation, test the live timer and expir
 ## Localized strip
 
 The authoritative target remains `2026-10-17T00:00:00-05:00`. `assets/palace-experience.js` localizes compact release-strip labels and exposes the strip on Palace, Play Palace, history, and News surfaces. Do not fork the timestamp by locale.
+
+
+## Canonical homepage consolidation
+
+The release strip is the single active countdown on the canonical homepage. The former campaign countdown was retired with the obsolete homepage. Product name, locale, RTL, stable numerals, reduced motion, and the configured date remain shared.

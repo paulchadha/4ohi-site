@@ -14,3 +14,8 @@ Language and table name are URL parameters only. The verified implementation cre
 ## Product-name and locale state
 
 The app-parity release keeps locale and product-name state exclusively in the URL. Browser acceptance confirms empty cookies, local storage, and session storage after locale selection, Shed mode, RTL, power-card interaction, and all tutorial flows. The private traditional-name confirmation does not create a stored preference or visitor profile.
+
+
+## Local website game boundary
+
+Reconstructed game state remains page-memory only. There are no accounts, backend sessions, persistence, cookies, localStorage, sessionStorage, analytics, ads, trackers, third-party fonts, embeds, or post-load game requests.
