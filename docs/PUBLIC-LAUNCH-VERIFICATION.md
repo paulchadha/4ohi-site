@@ -85,3 +85,14 @@ The generated redesign passed static validation for 22 pages and the complete lo
 ## Founder experience evidence — July 26, 2026
 
 Local integrated evidence is `visual-evidence/founder-experience-results.json` plus four mini-match screenshots. The gate passed 22 pages, eight viewports, ten locale/name combinations, full tutorial/replay, Easter-egg/reset, RTL, metadata, and zero-storage privacy. Public exact-SHA evidence must be rerun after push and Pages deployment.
+## Founder experience production verification — July 26, 2026
+
+- Product SHA `a9c2c33a7b7d8802a7db97050403f3eebbc6d008` deployed successfully in Pages run `30210204360`.
+- The full production Chromium suite passed at `https://4ohi.com`: 22 pages, 8 responsive viewports, 10 locale/name combinations, complete mini-match and replay, private-name dialog/reset, RTL, metadata, and zero cookies/storage/external resources.
+- Apex DNS resolves to the four GitHub Pages A and four AAAA addresses; `www` resolves to `paulchadha.github.io`.
+- HTTP apex, HTTP www, and HTTPS www return 301 to canonical `https://4ohi.com/`.
+- Both hostnames strictly validate the same Let's Encrypt certificate, negotiate TLS 1.3, and have no certificate warning. Certificate validity: July 26 through October 24, 2026.
+- GitHub Pages reports `built`, `https_enforced: true`, `protected_domain_state: verified`, and no pending unverified date.
+- Proton MX 10/20, SPF, verification TXT, DMARC quarantine, and all three DKIM CNAME selectors remain public and unchanged.
+- The founder confirmed support email is working. This confirmation, rather than DNS inference, is the mailbox delivery evidence for this release.
+- No DNS, Proton, DigitalOcean, PalaceApp, or native-game configuration was changed by the founder website recovery.

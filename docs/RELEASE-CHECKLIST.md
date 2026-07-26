@@ -77,4 +77,4 @@ Last run: 2026-07-26
 - [x] Canadian-fun copy reviewed for affectionate, non-degrading tone.
 - [x] Founder story integrated with claim boundaries.
 - [x] Local semantic and Chromium gates passed.
-- [ ] Exact-SHA GitHub Pages deployment verified publicly.
+- [x] Exact-SHA GitHub Pages product deployment `a9c2c33` verified publicly in run `30210204360`.

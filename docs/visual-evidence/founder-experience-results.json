@@ -1,6 +1,6 @@
 {
-  "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-07-26T16:19:13.544Z",
+  "base": "https://4ohi.com",
+  "checkedAt": "2026-07-26T16:21:35.828Z",
   "pages": [
     {
       "file": "index.html",
@@ -375,9 +375,9 @@
       "lang": "en",
       "dir": "ltr",
       "game": "Palace",
-      "countdown": "The gates open in82 : 12 : 40 : 27",
+      "countdown": "The gates open in82 : 12 : 38 : 02",
       "settings": "Settings",
-      "href": "http://127.0.0.1:4173/palace.html?lang=en"
+      "href": "https://4ohi.com/palace.html?lang=en"
     },
     {
       "requested": [
@@ -388,9 +388,9 @@
       "lang": "en",
       "dir": "ltr",
       "game": "Shed",
-      "countdown": "The gates open in82 : 12 : 40 : 26",
+      "countdown": "The gates open in82 : 12 : 38 : 01",
       "settings": "Settings",
-      "href": "http://127.0.0.1:4173/palace.html?lang=en&game=shed"
+      "href": "https://4ohi.com/palace.html?lang=en&game=shed"
     },
     {
       "requested": [
@@ -401,9 +401,9 @@
       "lang": "fr",
       "dir": "ltr",
       "game": "Palace",
-      "countdown": "Les portes s’ouvrent dans82 : 12 : 40 : 25",
+      "countdown": "Les portes s’ouvrent dans82 : 12 : 38 : 00",
       "settings": "Réglages",
-      "href": "http://127.0.0.1:4173/palace.html?lang=fr"
+      "href": "https://4ohi.com/palace.html?lang=fr"
     },
     {
       "requested": [
@@ -414,9 +414,9 @@
       "lang": "fr",
       "dir": "ltr",
       "game": "Shed",
-      "countdown": "Les portes s’ouvrent dans82 : 12 : 40 : 25",
+      "countdown": "Les portes s’ouvrent dans82 : 12 : 38 : 00",
       "settings": "Réglages",
-      "href": "http://127.0.0.1:4173/palace.html?lang=fr&game=shed"
+      "href": "https://4ohi.com/palace.html?lang=fr&game=shed"
     },
     {
       "requested": [
@@ -427,9 +427,9 @@
       "lang": "ar",
       "dir": "rtl",
       "game": "القصر",
-      "countdown": "تُفتح البوابات خلال82 : 12 : 40 : 24",
+      "countdown": "تُفتح البوابات خلال82 : 12 : 37 : 59",
       "settings": "الإعدادات",
-      "href": "http://127.0.0.1:4173/palace.html?lang=ar"
+      "href": "https://4ohi.com/palace.html?lang=ar"
     },
     {
       "requested": [
@@ -440,9 +440,9 @@
       "lang": "he",
       "dir": "rtl",
       "game": "Shed",
-      "countdown": "השערים נפתחים בעוד82 : 12 : 40 : 24",
+      "countdown": "השערים נפתחים בעוד82 : 12 : 37 : 58",
       "settings": "הגדרות",
-      "href": "http://127.0.0.1:4173/palace.html?lang=he&game=shed"
+      "href": "https://4ohi.com/palace.html?lang=he&game=shed"
     },
     {
       "requested": [
@@ -453,9 +453,9 @@
       "lang": "en-CA-fun",
       "dir": "ltr",
       "game": "Palace",
-      "countdown": "Give ’er—the gates open in82 : 12 : 40 : 23",
+      "countdown": "Give ’er—the gates open in82 : 12 : 37 : 58",
       "settings": "Settings, eh?",
-      "href": "http://127.0.0.1:4173/palace.html?lang=en-CA-fun"
+      "href": "https://4ohi.com/palace.html?lang=en-CA-fun"
     },
     {
       "requested": [
@@ -466,9 +466,9 @@
       "lang": "es",
       "dir": "ltr",
       "game": "Palace",
-      "countdown": "Las puertas se abren en82 : 12 : 40 : 22",
+      "countdown": "Las puertas se abren en82 : 12 : 37 : 57",
       "settings": "Ajustes",
-      "href": "http://127.0.0.1:4173/palace.html?lang=es"
+      "href": "https://4ohi.com/palace.html?lang=es"
     },
     {
       "requested": [
@@ -479,9 +479,9 @@
       "lang": "zh-Hans",
       "dir": "ltr",
       "game": "宫殿",
-      "countdown": "城门开启倒计时82 : 12 : 40 : 22",
+      "countdown": "城门开启倒计时82 : 12 : 37 : 56",
       "settings": "设置",
-      "href": "http://127.0.0.1:4173/palace.html?lang=zh-Hans"
+      "href": "https://4ohi.com/palace.html?lang=zh-Hans"
     },
     {
       "requested": [
@@ -492,9 +492,9 @@
       "lang": "hi",
       "dir": "ltr",
       "game": "पैलेस",
-      "countdown": "दरवाज़े खुलने में82 : 12 : 40 : 21",
+      "countdown": "दरवाज़े खुलने में82 : 12 : 37 : 56",
       "settings": "सेटिंग्स",
-      "href": "http://127.0.0.1:4173/palace.html?lang=hi"
+      "href": "https://4ohi.com/palace.html?lang=hi"
     }
   ],
   "tutorial": [
@@ -512,7 +512,7 @@
   },
   "failures": [],
   "naming": {
-    "secretUrl": "http://127.0.0.1:4173/palace.html?lang=fr&game=shithead",
+    "secretUrl": "https://4ohi.com/palace.html?lang=fr&game=shithead",
     "secretName": "Shithead",
     "resetName": "Palace"
   }
