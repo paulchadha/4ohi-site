@@ -10,7 +10,14 @@ The site is dependency-free static HTML, CSS, and JavaScript. It uses system fon
 - Preserve explicit image dimensions and lazy-load below-fold artwork.
 - Avoid work on page load that requires network access beyond same-origin static assets.
 
-The current Palace CSS is about 26 KB; site behavior is about 3 KB; Palace tutorial logic is about 12 KB; secondary tutorial logic is about 8 KB. Game WebP icons are roughly 53 to 72 KB each. The 1200 by 630 Open Graph image is metadata-only and does not load into page layout.
+Final local cold-context browser measurements on 2026-07-25:
+
+- Home at 1440x900 transferred 220,924 bytes total: 38,267 CSS, 3,828 JavaScript, 11,881 HTML, 11,976 favicon, and the 154,972-byte responsive Palace hero. The hero was the largest resource.
+- Palace tutorial at 390x844 transferred 72,827 bytes total: 38,267 CSS, 17,206 JavaScript, 5,378 HTML, and 11,976 favicon. No game image is required for the interactive board.
+- Decoded totals were 219,124 bytes for home and 71,027 bytes for the tutorial.
+- Shared CSS is 37,967 decoded bytes; site behavior is 3,121; Palace tutorial logic is 13,078; and secondary-game tutorial logic remains below 8 KB.
+
+These local HTTP figures include development-server response overhead and do not assume GitHub edge compression. The machine-readable entry-by-entry record is `docs/visual-evidence/palace-local-results.json`.
 
 ## Verification
 

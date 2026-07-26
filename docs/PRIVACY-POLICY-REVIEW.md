@@ -18,6 +18,9 @@ The policy describes the present Internal Alpha state documented before this web
 
 Privacy questions currently route to `support@4ohi.com`. Credentials and private correspondence must not be stored in Git.
 
+Facebook and X configuration values remain blank, so no social link, widget, pixel, SDK, remote script, or profile request is emitted. Future approved profiles may be ordinary outbound links only and must not change this data posture.
+
+
 ## Required review before launch changes
 
 - [ ] Confirm every shipping app version and server revision covered by the policy.

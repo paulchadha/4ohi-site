@@ -2,7 +2,7 @@
 
 ## Current state
 
-- Public contact: `support@4ohi.com` — operational per prior company confirmation; a fresh post-cutover send/receive test is required before final launch sign-off.
+- Public contact: `support@4ohi.com` — operational. On 2026-07-25 the founder physically confirmed receipt of an inbound message from an unrelated mailbox and successful receipt of the reply sent from `support@4ohi.com`.
 - The website routes support, privacy, security, and general inquiries through this address until separate approved addresses are confirmed.
 - Public DNS routes mail through Proton Mail: MX 10 `mail.protonmail.ch`, MX 20 `mailsec.protonmail.ch`, SPF `v=spf1 include:_spf.protonmail.ch ~all`, DMARC `v=DMARC1; p=quarantine`, the Proton verification TXT record, and all three Proton DKIM CNAME selectors.
 - Authoritative GoDaddy DNS, Google Public DNS, and Cloudflare DNS returned the same mail records after the website-only cutover.
@@ -20,6 +20,8 @@ For an authorized mail test:
 3. Inspect only the authentication headers needed to confirm SPF, DKIM, and DMARC results.
 4. Record timestamp, sender/recipient roles, delivery result, and authentication status without storing message bodies or secrets.
 5. Confirm the website and unrelated DNS still work.
+
+Current result: pass. No message body, correspondent address, credential, or private header was recorded in the repository.
 
 ## Operations and privacy
 

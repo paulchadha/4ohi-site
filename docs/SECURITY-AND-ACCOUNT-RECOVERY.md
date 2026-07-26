@@ -42,4 +42,10 @@ GitHub Pages account-level domain verification is active: the unique `_github-pa
 
 ## Current limitations
 
-2FA state, recovery contacts, authorized sessions, domain auto-renew, billing, and the complete private DNS zone require authenticated review and are not confirmed by this repository. No authenticated account setting was changed in the website release.
+2FA state, recovery contacts, authorized sessions, domain auto-renew, billing, and the complete private DNS zone require authenticated review and are not confirmed by this repository. No authenticated account setting was changed in the website release.## Static-site browser security
+
+Generated pages include a CSP meta policy limiting content, scripts, images, styles, connections, fonts, media, form actions, base URLs, and insecure upgrades to the same origin. Each inline JSON-LD block receives a page-specific SHA-256 script hash. Inline styles remain allowed because the trusted site script updates pointer-position CSS variables and acceptance testing applies text zoom; no visitor value becomes CSS.
+
+The public JavaScript uses no `eval`, dynamic function construction, visitor-controlled HTML, remote API, cookie, local storage, session storage, form backend, third-party widget, analytics, ad technology, or remote font. Tutorial template HTML and status messages are fixed application constants.
+
+GitHub Pages does not provide repository-configurable response headers. A meta CSP cannot supply controls such as `frame-ancestors`, HSTS, Permissions-Policy, or cross-origin isolation. HTTPS enforcement supplies transport redirection once certificates are valid, but stronger response-header controls would require a supported edge or hosting layer and a separate reviewed migration.

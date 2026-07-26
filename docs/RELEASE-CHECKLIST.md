@@ -16,6 +16,10 @@ Last run: 2026-07-25
 ## Site quality
 
 - [x] All 21 indexable HTML pages plus the custom 404 load in the local browser preview.
+- [x] Palace, approved castle art, `Rule the table.`, Internal Alpha, News, and tutorial/discovery actions dominate the first desktop viewport.
+- [x] At 390×844, Palace art, title, supporting copy, and the primary tutorial action remain visible in the opening viewport.
+- [x] Manual visual review confirms the rejected studio-first split hero is gone and the page reads as a Palace destination.
+- [x] Active tutorial evidence shows readable cards, rival state, pile, feedback, and game-like table composition.
 - [x] Internal links, scripts, and `mailto:` links pass `scripts/validate-site.mjs`.
 - [x] Each page has one H1 and appropriate landmarks; the 404 page is `noindex`.
 - [x] Keyboard focus is visible, primary targets are at least 44 pixels high, tabs support arrow keys, and reduced motion is respected.
@@ -26,6 +30,8 @@ Last run: 2026-07-25
 - [x] Titles, descriptions, canonical URLs, Open Graph data, social image, favicon, theme color, robots, and sitemap are present.
 - [x] Browser checks found no console errors, failed resources, mixed content, first-party cookies, or tracking requests.
 - [x] `git diff --check`, JavaScript syntax, and the repository secret scan pass.
+- [x] Every generated page includes the tested same-origin CSP with hashed JSON-LD; static validation rejects inline handlers, leaked filesystem paths, dynamic code execution, common secrets, and insecure assets.
+- [x] Local cold-context weight is 220,924 bytes for desktop home and 72,827 bytes for the mobile Palace tutorial.
 - [ ] Physical-device acceptance testing remains separate from browser simulation.
 
 ## Deployment and DNS
@@ -40,7 +46,7 @@ Last run: 2026-07-25
 - [x] Confirm authoritative and public propagation to GitHub Pages and removal of the GoDaddy placeholder.
 - [ ] Confirm matching apex and `www` certificates, canonical redirects, and absence of TLS warnings.
 - [ ] Enable HTTPS enforcement only after certificate provisioning.
-- [ ] Complete a fresh inbound-and-reply delivery test for `support@4ohi.com`.
+- [x] Founder physically confirmed a fresh unrelated-mailbox inbound message and reply from `support@4ohi.com`; no message content was retained.
 - [x] Add and retain GitHub Pages account-level domain-verification TXT protection; public TXT and Pages `protected_domain_state: verified` are confirmed.
 
 ## Evidence

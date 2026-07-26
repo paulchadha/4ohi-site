@@ -17,3 +17,11 @@ Buttons and links have visible focus, at least 44 CSS pixels of target height, p
 ## Asset rules
 
 Use the optimized WebP icons at their intrinsic 512 by 512 ratio. Include explicit width and height, useful alt text, and lazy loading below the fold. `assets/og-brand.jpg` is the 1200 by 630 social preview. Do not stretch, recolor, overlay, or silently replace approved artwork.
+
+## Palace-first recovery decision
+
+The rejected baseline used a large studio headline, a conventional copy/image split, the generic 4OH mark as primary art, and broad low-information dark regions. It failed because Palace did not own the first viewport and the page read as a polished corporate landing page rather than a flagship game destination.
+
+The recovery hero is a full-bleed Palace world: the approved castle tile is enlarged, responsively sourced, edge-faded into the navy environment, and layered behind the single `Rule the table.` direction. Palace is named before the headline; Internal Alpha, Four of Hearts endorsement, News, tutorial, discovery, and the three-layer rhythm all appear in the opening experience. The studio logo moves to a supporting section.
+
+Pointer lighting, castle drift, card drift, focus lift, scroll reveal, and tutorial play motion provide depth without audio or mandatory hover. All stop or collapse under reduced motion. On phones, the composition pulls the castle, Palace name, headline, copy, and tutorial action into the first viewport instead of simply stacking a desktop split layout.

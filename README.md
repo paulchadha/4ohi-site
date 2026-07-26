@@ -60,5 +60,6 @@ Never change MX, SPF, DKIM, DMARC, provider verification, or unrelated TXT recor
 - [News authoring](docs/NEWS-AUTHORING.md)
 - [Social links](docs/SOCIAL-LINKS.md)
 - [Performance](docs/PERFORMANCE.md)
+- [Accessibility acceptance](docs/ACCESSIBILITY.md)
 
 Never commit credentials, tokens, recovery codes, private keys, private correspondence, or account exports.

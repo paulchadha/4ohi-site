@@ -14,10 +14,20 @@ Verification date: 2026-07-25
 - Certificate state: pending GitHub issuance.
 - HTTPS enforcement: intentionally disabled until the certificate matches both hostnames.
 - Final apex HTTPS, `www` canonical redirect, HTTP-to-HTTPS, certificate, and mixed-content checks: pending.
+- Current TLS probe: both hostnames present `CN=*.github.io`, issued by Let’s Encrypt `YR2`, with SANs only for GitHub-owned names. Neither `4ohi.com` nor `www.4ohi.com` matches, so enforcement remains off. Google and Cloudflare return no CAA record, ruling out a published CAA authorization conflict.
 
 ## Public browser acceptance
 
 The Palace-first local acceptance run loaded all 21 indexable pages plus the custom 404. It completed the six-chapter Palace preview, a friendly incorrect path, and both lessons for Hearts, Spades, and Euchre. It covered skip navigation, visible 44-pixel targets, 125-percent text zoom, reduced motion, and home, Palace, Palace tutorial, and News at 320, 360, 390, 412, 430, 768, 1366, and 1920 pixel widths without horizontal overflow. Results are in `docs/visual-evidence/palace-local-results.json`.
+## Palace-first recovery visual review
+
+The rejected public baseline was studio-first: a conventional copy/image split, generic 4OH art in the hero, Palace below the first viewport, and large low-information dark regions. Automated correctness did not make that composition acceptable.
+
+The recovered local homepage is materially different. It opens inside a full-bleed Palace world with the approved castle art, Palace name, `Rule the table.` direction, Internal Alpha state, Four of Hearts endorsement, News access, tutorial/discovery actions, animated cards, and the three-layer rhythm. Manual desktop and mobile crop review confirmed the castle is central and the phone viewport includes Palace, the headline, supporting copy, and the tutorial action.
+
+Visual evidence is stored in `docs/visual-evidence/`: desktop, wide-desktop, phone, and tablet home; Palace product; active and full tutorial; history; News landing and article; More Games; and each policy/support route. The active tutorial evidence visibly includes readable rank/suit cards, rival reserve, pile, contextual feedback, and the continue/replay flow.
+
+This visual review is separate from the machine-readable acceptance record and was not inferred from line counts.
 
 Final HTTPS evidence will be written to `docs/visual-evidence/public-launch-results.json` by:
 
@@ -34,7 +44,7 @@ node scripts/verify-public-site.mjs
 ## Email preservation
 
 - Proton MX, SPF, verification, DMARC, and three DKIM CNAME records were present and consistent on authoritative and public resolvers after cutover.
-- A fresh unrelated-mailbox inbound message and reply from `support@4ohi.com` are pending company confirmation. DNS evidence alone is not treated as send/receive proof.
+- The founder physically confirmed a fresh inbound message from an unrelated mailbox and successful reply from `support@4ohi.com` on 2026-07-25. No message content or private correspondent data was recorded. DNS evidence remains a separate preservation check.
 
 ## Domain ownership protection
 

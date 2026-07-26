@@ -15,3 +15,7 @@ State exists only in JavaScript memory and resets on reload. Every choice is a n
 ## Acceptance
 
 Run `node scripts/verify-palace-site.mjs` against a local server and the canonical HTTPS origin. The suite completes the friendly-error path, every Palace chapter, all three secondary lessons, replay-ready final states, keyboard entry, 44-pixel targets, text zoom, reduced motion, cookies/storage, and request integrity.
+
+The active table view uses readable rank/suit cards, a responsive hand, a visible pile, a rival card count/reserve, selection lift, play motion, blocked-card feedback, pickup, layer clearing, contextual hints, and a final crown state. It is still intentionally bounded: the rival response is scripted, state is local, and no production matchmaking or backend is implied.
+
+Visual acceptance includes an active-table evidence capture at `docs/visual-evidence/palace-tutorial-active-390.png` in addition to the full tutorial page.
