@@ -24,17 +24,20 @@
   <meta property="og:image" content="https://4ohi.com/assets/icon-palace-4hearts.webp">
   <meta property="og:image:alt" content="Blue Palace castle artwork">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#000512">
+  <meta name="theme-color" content="#26b7f2">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/palace-site.css">
   <link rel="stylesheet" href="assets/palace-launch.css">
   <link rel="stylesheet" href="assets/founder-redesign.css">
   <link rel="stylesheet" href="assets/app-experience-v2.css">
+  <link rel="stylesheet" href="assets/palace-app-web.css">
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
   <script src="assets/launch-countdown.js" defer></script>
-  <script src="assets/palace-experience.js" defer></script>
+  <script src="assets/product-authority.js" defer></script>
+  <script src="assets/release-strip.js" defer></script>
+  <script src="assets/power-cards.js" defer></script>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Palace Enters Founder Testing","description":"The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.","datePublished":"2026-07-25","dateModified":"2026-07-25","image":"https://4ohi.com/assets/icon-palace-4hearts.webp","author":{"@type":"Organization","name":"Four of Hearts Interactive, LLC"},"publisher":{"@type":"Organization","name":"Four of Hearts Interactive, LLC","logo":{"@type":"ImageObject","url":"https://4ohi.com/assets/brand-mark-4oh.webp"}},"mainEntityOfPage":"https://4ohi.com/news-palace-enters-founder-testing.html"}</script>
 </head>
@@ -49,8 +52,21 @@
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
       <nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary">
-        <a href="palace.html">Palace</a><a class="nav-play" href="palace-play.html">Play Palace</a><a aria-current="page" href="news.html">News</a><a href="games.html">More Games</a><a href="about.html">About 4OH</a><a href="support.html">Support</a>
+        <a href="palace.html"><span data-game-token="gameName">Palace</span></a><a class="nav-play" href="palace-play.html"><span data-game-message="playGame">Play Palace</span></a><a aria-current="page" href="news.html">News</a><a href="games.html">More Games</a><a href="about.html">About 4OH</a><a href="support.html">Support</a>
       </nav>
+      <div class="header-tools" aria-label="Table preferences">
+        <div class="header-tool header-name">
+          <span data-table-label>This table calls it</span>
+          <details><summary><span data-current-game>Palace</span></summary><div class="header-name-menu">
+            <button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button>
+            <button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button>
+          </div></details>
+        </div>
+        <div class="header-tool header-language">
+          <label><span data-language-label>Language</span><select data-locale aria-label="Language"></select></label>
+        </div>
+        <button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button>
+      </div>
     </div>
   </header>
   <div class="release-strip" data-release-strip role="timer"></div>
@@ -58,16 +74,16 @@
       <article>
         <header class="article-header shell">
           <div class="news-meta"><span>Development</span><time datetime="2026-07-25">July 25, 2026</time></div>
-          <h1>Palace Enters Founder Testing</h1><p class="lede">The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.</p>
+          <h1><span data-game-token="gameName">Palace</span> Enters Founder Testing</h1><p class="lede">The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.</p>
         </header>
         <div class="shell"><img class="article-art" src="assets/icon-palace-4hearts.webp" alt="Blue Palace castle artwork" width="1200" height="630"></div>
         <section class="section"><div class="shell article-layout">
-          <div class="prose"><h2>Testing the whole journey</h2><p>Founder testing is focused on the moments that make Palace feel like Palace: reading the pile, choosing when to spend a strong card, moving from the hand to the face-up reserve, and trusting the final hidden cards.</p><p>Internal Alpha means the experience is still changing. Visual feedback, reconnect behavior, scoring, accessibility, and table clarity all require careful testing before any public release claim would be appropriate.</p><h2>What visitors can try now</h2><p>The website includes a short, self-contained teaching preview. It runs entirely in the browser, stores nothing, and is not a production match. Its job is to make the three-layer rhythm understandable in about a minute.</p><p>The website preview now teaches the approved Four of Hearts power cards in context: 2 resets, 7 requires lower, 8 is transparent, and 10 burns the pile. These product rules are not presented as universal folk-game rules.</p></div>
-          <aside class="article-aside"><strong>Development status</strong><p>Palace and every current Four of Hearts game remain in Internal Alpha. This article does not announce public availability.</p></aside>
+          <div class="prose"><h2>Testing the whole journey</h2><p>Founder testing is focused on the moments that make <span data-game-token="gameName">Palace</span> feel like <span data-game-token="gameName">Palace</span>: reading the pile, choosing when to spend a strong card, moving from the hand to the face-up reserve, and trusting the final hidden cards.</p><p>Internal Alpha means the experience is still changing. Visual feedback, reconnect behavior, scoring, accessibility, and table clarity all require careful testing before any public release claim would be appropriate.</p><h2>What visitors can try now</h2><p>The website includes a short, self-contained teaching preview. It runs entirely in the browser, stores nothing, and is not a production match. Its job is to make the three-layer rhythm understandable in about a minute.</p><p>The website preview now teaches the approved Four of Hearts power cards in context: 2 resets, 7 requires lower, 8 is transparent, and 10 burns the pile. These product rules are not presented as universal folk-game rules.</p></div>
+          <aside class="article-aside"><strong>Development status</strong><p><span data-game-token="gameName">Palace</span> and every current Four of Hearts game remain in Internal Alpha. This article does not announce public availability.</p></aside>
         </div></section>
       </article>
       <section class="section navy"><div class="shell"><p class="eyebrow">Keep reading</p><div class="related-grid">
-        <a class="panel feature-card text-link" href="news-why-were-building-palace.html">Why We’re Building Palace</a>
+        <a class="panel feature-card text-link" href="news-why-were-building-palace.html">Why We’re Building <span data-game-token="gameName">Palace</span></a>
         <a class="panel feature-card text-link" href="news-welcome-to-four-of-hearts.html">Welcome to Four of Hearts Interactive</a>
       </div></div></section></main>
   <footer class="site-footer">
@@ -75,13 +91,13 @@
     <div class="footer-grid">
       <div>
         <div class="footer-title"><span aria-hidden="true">♥</span><strong>Four of Hearts Interactive, LLC</strong></div>
-        <p class="footer-copy">Palace leads a growing family of timeless card games. One Family. Many Games.</p>
+        <p class="footer-copy"><span data-game-token="gameName">Palace</span> leads a growing family of timeless card games. One Family. Many Games.</p>
         <a href="mailto:support@4ohi.com">support@4ohi.com</a>
         <div class="social-slot" data-social-slot aria-label="Official social profiles"></div>
       </div>
       <nav class="footer-links" aria-label="Footer">
-        <a href="palace.html">Palace</a><a href="palace-play.html">Palace tutorial</a>
-        <a href="palace-story.html">Palace story</a><a href="news.html">News</a>
+        <a href="palace.html"><span data-game-token="gameName">Palace</span></a><a href="palace-play.html"><span data-game-message="tutorialTitle">Palace Mini-Match</span></a>
+        <a href="palace-story.html"><span data-game-message="gameHistory">Palace History</span></a><a href="palace-faq.html">Palace FAQ</a><a href="news.html">News</a>
         <a href="games.html">More Games</a><a href="about.html">About 4OH</a>
         <a href="support.html">Support</a><a href="privacy.html">Privacy</a>
         <a href="security.html">Security</a><a href="terms.html">Terms</a>
@@ -94,5 +110,24 @@
     </div>
   </div>
 </footer>
+
+  <dialog class="site-dialog" data-settings-dialog aria-labelledby="settings-title">
+    <form method="dialog"><button class="dialog-close" value="cancel" aria-label="Close settings">×</button>
+      <p class="eyebrow">Table settings</p><h2 id="settings-title">Make this table yours.</h2>
+      <fieldset><legend data-table-label>This table calls it</legend><div class="name-options">
+        <button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button>
+        <button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button>
+      </div></fieldset>
+      <label class="dialog-language"><span data-language-label>Language</span><select data-locale></select></label>
+      <p data-name-status>Palace is used at this table. Nothing is stored.</p>
+    </form>
+  </dialog>
+  <dialog class="site-dialog nsfw-dialog" data-nsfw-dialog aria-labelledby="traditional-name-title">
+    <form method="dialog"><p class="eyebrow">Traditional table name</p><h2 id="traditional-name-title">Use the uncensored name?</h2>
+      <p>Some adult tables call this game Shithead. This optional display name changes only this browser URL and is never stored.</p>
+      <div class="actions"><button class="button" value="yes">Yes, use it</button><button class="button secondary" value="no">No, keep Shed</button></div>
+    </form>
+  </dialog>
+  <p class="global-name-status" data-global-name-status role="status" aria-live="polite"></p>
 </body>
 </html>
