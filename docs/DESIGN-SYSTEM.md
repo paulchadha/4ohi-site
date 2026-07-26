@@ -18,10 +18,10 @@ Buttons and links have visible focus, at least 44 CSS pixels of target height, p
 
 Use the optimized WebP icons at their intrinsic 512 by 512 ratio. Include explicit width and height, useful alt text, and lazy loading below the fold. `assets/og-brand.jpg` is the 1200 by 630 social preview. Do not stretch, recolor, overlay, or silently replace approved artwork.
 
-## Palace-first recovery decision
+## Current Palace launch campaign
 
-The rejected baseline used a large studio headline, a conventional copy/image split, the generic 4OH mark as primary art, and broad low-information dark regions. It failed because Palace did not own the first viewport and the page read as a polished corporate landing page rather than a flagship game destination.
+The launch campaign treats Palace as a card-table legend finally becoming an app. The approved castle art remains the world, while the approved four-colored-hearts 4OH emblem now anchors the header, favicon, Apple touch icon, and organization identity.
 
-The recovery hero is a full-bleed Palace world: the approved castle tile is enlarged, responsively sourced, edge-faded into the navy environment, and layered behind the single `Rule the table.` direction. Palace is named before the headline; Internal Alpha, Four of Hearts endorsement, News, tutorial, discovery, and the three-layer rhythm all appear in the opening experience. The studio logo moves to a supporting section.
+The first viewport uses a single editorial headline, cinematic negative space, an October 17, 2026 countdown, compact calls to action, floating table cards, and a moving strip of documented regional game-family names. The Fortnite reference informed only the promotional hierarchy: one dominant world, one immediate action, high contrast, and kinetic energy. No Fortnite layout, artwork, copy, or assets are reproduced.
 
-Pointer lighting, castle drift, card drift, focus lift, scroll reveal, and tutorial play motion provide depth without audio or mandatory hover. All stop or collapse under reduced motion. On phones, the composition pulls the castle, Palace name, headline, copy, and tutorial action into the first viewport instead of simply stacking a desktop split layout.
+`assets/palace-launch.css` layers the campaign over the stable `palace-site.css` system. Pointer lighting, castle drift, card drift, countdown updates, the mythology strip, focus lift, and tutorial play motion provide depth without audio or mandatory hover. Reduced-motion mode stops continuous animation, and the responsive composition keeps the logo, castle, campaign line, countdown, and primary play action readable from 320 through 1920 CSS pixels.

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Palace Card Game | Four of Hearts Interactive</title>
+  <title>Palace Is Coming | Four of Hearts Interactive</title>
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-DF8tbi/8HR3+QkLujKfAeaLWhCVVWvYgvgZ2iE6zwyk='; connect-src 'self'; media-src 'self'; font-src 'self'; upgrade-insecure-requests">
-  <meta name="description" content="Meet Palace, the flagship Four of Hearts card game. Learn its three-layer rhythm, try an interactive preview, and follow Internal Alpha development.">
+  <meta name="description" content="The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.">
 
   <link rel="canonical" href="https://4ohi.com/">
-  <meta property="og:title" content="Palace Card Game | Four of Hearts Interactive">
-  <meta property="og:description" content="Meet Palace, the flagship Four of Hearts card game. Learn its three-layer rhythm, try an interactive preview, and follow Internal Alpha development.">
+  <meta property="og:title" content="Palace Is Coming | Four of Hearts Interactive">
+  <meta property="og:description" content="The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://4ohi.com/">
   <meta property="og:image" content="https://4ohi.com/assets/og-brand.jpg">
@@ -17,9 +17,12 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#000512">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/palace-site.css">
+  <link rel="stylesheet" href="assets/palace-launch.css">
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
+  <script src="assets/launch-countdown.js" defer></script>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Four of Hearts Interactive, LLC","url":"https://4ohi.com/","logo":"https://4ohi.com/assets/brand-mark-4oh.webp","email":"support@4ohi.com","address":{"@type":"PostalAddress","addressRegion":"South Dakota","addressCountry":"US"},"description":"Four of Hearts Interactive creates Palace and a growing family of timeless card games."}</script>
 </head>
@@ -28,12 +31,13 @@
   <header class="site-header">
     <div class="shell nav-wrap">
       <a class="brand" href="index.html" aria-current="page">
+        <img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="Four of Hearts Interactive" width="76" height="58">
         <span class="brand-mark" aria-hidden="true">4♥</span>
         <span class="brand-copy">Four of Hearts<small>Interactive</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
       <nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary">
-        <a href="palace.html">Palace</a><a class="nav-play" href="palace-play.html">How to Play</a><a href="news.html">News</a><a href="games.html">More Games</a><a href="about.html">About 4OH</a><a href="support.html">Support</a>
+        <a href="palace.html">Palace</a><a class="nav-play" href="palace-play.html">Play Palace</a><a href="news.html">News</a><a href="games.html">More Games</a><a href="about.html">About 4OH</a><a href="support.html">Support</a>
       </nav>
     </div>
   </header>
@@ -49,21 +53,25 @@
       <span class="world-card world-card-two red" aria-hidden="true"><b>7</b>♥</span>
       <span class="world-card world-card-three" aria-hidden="true"><b>9</b>♣</span>
       <div class="shell hero-stage">
-        <div class="hero-topline"><span class="alpha-badge">Internal Alpha</span><span>Four of Hearts Interactive presents</span></div>
+        <div class="hero-topline"><span class="transmission-badge">Transmission 001</span><span>Four of Hearts Interactive presents</span></div>
         <a class="hero-news-link" href="news.html"><span>Latest</span>Why We’re Building Palace<b aria-hidden="true">→</b></a>
         <div class="hero-copy">
-          <p class="hero-game-name">Palace</p>
-          <h1>Rule the <span class="gold">table.</span></h1>
-          <p class="lede">Build three layers. Read the pile. Survive the final hidden card. Welcome to the official home of the Four of Hearts Palace experience.</p>
+          <p class="hero-game-name">The world's favorite secret card game</p>
+          <h1>The table has waited <span class="gold">long enough.</span></h1>
+          <p class="launch-deckline">Passed through schools, hostels, kitchens, and continents under a dozen names. <strong>Palace is finally becoming an app?built by Four of Hearts.</strong></p>
+          <div class="launch-countdown" data-launch-countdown role="timer"><span class="launch-countdown-label">The gates open<br>October 17, 2026</span><span class="countdown-unit"><strong data-countdown="days">83</strong><span>Days</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="hours">00</strong><span>Hours</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="minutes">00</strong><span>Min</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="seconds">00</strong><span>Sec</span></span></div>
           <div class="actions">
-            <a class="button" href="palace-play.html">Play the Palace tutorial</a>
-            <a class="button secondary" href="palace.html">Discover Palace</a>
+            <a class="button" href="palace-play.html">Play in 60 seconds</a>
+            <a class="button secondary" href="palace.html">Enter the Palace</a>
           </div>
         </div>
         <div class="hero-layer-rail" aria-label="The three Palace layers"><span><b>01</b>Your hand</span><span><b>02</b>Face-up reserve</span><span><b>03</b>Hidden finale</span></div>
         <a class="hero-scroll" href="#palace-rhythm">Enter the Palace <span aria-hidden="true">↓</span></a>
       </div>
     </section>
+
+    <div class="myth-strip" aria-label="Names used for the Palace card-game family"><div class="myth-strip-track">PALACE /// KARMA /// SHED /// CHINA HAND /// SHITHEAD /// THE GAME THE WORLD KEEPS TEACHING ITSELF /// PALACE /// KARMA /// SHED /// CHINA HAND ///</div></div>
+
 
     <section class="section navy">
       <div class="shell palace-band">

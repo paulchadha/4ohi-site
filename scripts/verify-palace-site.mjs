@@ -114,6 +114,19 @@ const textZoom = await page.evaluate(() => ({
 }));
 result.accessibility.textZoom125 = textZoom;
 check(textZoom.scrollWidth <= textZoom.clientWidth, "home: overflow at 125% text size");
+const launch = await page.evaluate(() => ({
+  brandLoaded: Boolean(document.querySelector(".brand-logo")?.naturalWidth),
+  countdownUnits: document.querySelectorAll("[data-countdown]").length,
+  countdownLabel: document.querySelector("[data-launch-countdown]")?.getAttribute("aria-label") || "",
+  launchDate: document.querySelector(".launch-countdown-label")?.textContent || "",
+  primaryAction: document.querySelector('.hero-copy .button')?.textContent?.trim() || ""
+}));
+result.launch = launch;
+check(launch.brandLoaded, "approved 4OH header logo did not load");
+check(launch.countdownUnits === 4, "launch countdown is incomplete");
+check(launch.countdownLabel.includes("until October 17, 2026"), "launch countdown accessible label is missing");
+check(launch.launchDate.includes("October 17, 2026"), "launch date is missing");
+check(launch.primaryAction === "Play in 60 seconds", "primary Palace action is incorrect");
 
 await page.goto(`${base}/palace-play.html`, { waitUntil: "networkidle" });
 await page.keyboard.press("Tab");
@@ -123,6 +136,7 @@ result.accessibility.firstTab = {
 };
 check(result.accessibility.firstTab.href === "#main", "first Tab did not reach skip link");
 
+/* Legacy six-chapter Palace verifier retained for release-history context.
 const palaceAction = async (label, locator) => {
   await locator.click();
   result.palaceTutorial.push({ label, heading: await page.locator("#palace-tutorial h2").textContent() });
@@ -144,6 +158,7 @@ await palaceAction("face-down layer", page.locator('[data-layer="face-down"]'));
 await palaceAction("finish tutorial", page.locator('[data-action="next"]'));
 result.palaceTutorialFinal = await page.locator("#palace-tutorial h2").textContent();
 check(result.palaceTutorialFinal === "You cleared the Palace.", "Palace tutorial completion state missing");
+*/
 
 for (const game of ["hearts", "spades", "euchre"]) {
   await page.goto(`${base}/${game}-play.html`, { waitUntil: "networkidle" });
@@ -164,6 +179,27 @@ const primaryTargets = await page.locator(".site-header a, .site-header button, 
     height: element.getBoundingClientRect().height
   }))
 );
+/* End of misplaced legacy verifier block marker.
+*/
+const palaceActionV2 = async (label, locator, expectedHeading = "") => {
+  await locator.click();
+  if (expectedHeading) {
+    await page.waitForFunction((heading) => document.querySelector("#palace-tutorial h2")?.textContent === heading, expectedHeading);
+  }
+  result.palaceTutorial.push({ label, heading: await page.locator("#palace-tutorial h2").textContent() });
+};
+await palaceActionV2("deal", page.locator('[data-action="deal"]'), "Match it.");
+await palaceActionV2("friendly low-card hint", page.locator('[data-card="low"]').first());
+check((await page.locator(".tutorial-feedback").textContent()).includes("cannot answer the six"), "Palace match hint missing");
+await palaceActionV2("match the pile", page.locator('[data-card="correct"]'), "Beat it.");
+await palaceActionV2("friendly low-card hint on nine", page.locator('[data-card="low"]').first());
+check((await page.locator(".tutorial-feedback").textContent()).includes("Too low"), "Palace beat hint missing");
+await palaceActionV2("beat the pile", page.locator('[data-card="correct"]'), "Go wild.");
+await palaceActionV2("blocked ordinary card", page.locator('[data-card="low"]').first());
+check((await page.locator(".tutorial-feedback").textContent()).includes("wild-card moment"), "Palace wild-card hint missing");
+await palaceActionV2("play the wild card", page.locator('[data-card="correct"]'), "You cleared the Palace.");
+result.palaceTutorialFinal = await page.locator("#palace-tutorial h2").textContent();
+check(result.palaceTutorialFinal === "You cleared the Palace.", "Palace tutorial completion state missing");
 result.accessibility.primaryTargets = primaryTargets;
 check(primaryTargets.every((target) => target.width >= 44 && target.height >= 44), "primary target smaller than 44px");
 

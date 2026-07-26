@@ -2,9 +2,9 @@
 
 ## Public scope
 
-`palace-play.html` is a 60 to 120 second teaching preview, not a production match. It teaches the verified core rhythm in six chapters: deal three layers; match or climb; matching rank; blocked play and pickup; special-card awareness; hand to face-up to face-down finish.
+`palace-play.html` is a roughly 60-second teaching preview, not a production match. One persistent table teaches exactly three beginner moves: match the top rank, beat it with a higher rank, or use a clearly marked wild card when ordinary play is blocked. Completion then introduces the full game's hand, face-up, and face-down finish without turning the tutorial into a rulebook.
 
-The tutorial intentionally does not assign effects to special ranks. Palace is a folk game with extensive house-rule variation, and the exact Four of Hearts special-card table has not received founder approval. Publishing an invented effect would create a false product promise. Once approved, update the generator, tutorial script, history note, acceptance steps, and this document together.
+The tutorial uses a generic branded `WILD` card because the founder explicitly approved teaching the wild-card concept. It still does not publish unapproved numeric special-rank effects. Palace is a folk game with extensive house-rule variation; update the generator, tutorial, history note, acceptance steps, and this document together when the exact Four of Hearts special-card table is final.
 
 ## Interaction contract
 
@@ -14,8 +14,8 @@ State exists only in JavaScript memory and resets on reload. Every choice is a n
 
 ## Acceptance
 
-Run `node scripts/verify-palace-site.mjs` against a local server and the canonical HTTPS origin. The suite completes the friendly-error path, every Palace chapter, all three secondary lessons, replay-ready final states, keyboard entry, 44-pixel targets, text zoom, reduced motion, cookies/storage, and request integrity.
+Run `node scripts/verify-palace-site.mjs` against a local server and the canonical HTTPS origin. The suite completes low-card feedback for all three rounds, match, beat, wild, completion, all three secondary lessons, keyboard entry, 44-pixel targets, text zoom, reduced motion, cookies/storage, responsive layouts, and request integrity.
 
-The active table view uses readable rank/suit cards, a responsive hand, a visible pile, a rival card count/reserve, selection lift, play motion, blocked-card feedback, pickup, layer clearing, contextual hints, and a final crown state. It is still intentionally bounded: the rival response is scripted, state is local, and no production matchmaking or backend is implied.
+The active arena uses readable rank/suit cards, a fanned responsive hand, a large center pile, a rival reserve, move meter, contextual rule line, selection lift, play motion, friendly blocked-card feedback, wild-card art, and a final crown state. It is intentionally bounded: rival state is scripted, progress is local, and no production matchmaking or backend is implied.
 
-Visual acceptance includes an active-table evidence capture at `docs/visual-evidence/palace-tutorial-active-390.png` in addition to the full tutorial page.
+Visual acceptance includes desktop and phone homepage captures plus the full phone tutorial page. The active interaction is also covered by machine-readable state transitions and the final heading `You cleared the Palace.`.

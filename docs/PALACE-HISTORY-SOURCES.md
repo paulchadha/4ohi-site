@@ -7,6 +7,10 @@ The site describes Palace as part of a wider shedding or beating-game family tra
 ## Reviewed references
 
 - Pagat, `https://www.pagat.com/beating/shithead.html`: accessible rules reference for the three-layer structure, match-or-beat rhythm, recorded names, backpacker transmission, Scandinavian connection theory, and extensive variants.
+## 2026-07-26 popularity review
+
+Public search supports the international game-family framing: Pagat records multiple names and traveler/backpacker transmission, while current app listings describe Palace/Karma/Shithead variants and existing digital adaptations. The review did not find reliable evidence that Palace is currently played by "everyone in India" or that it is among India's most-played card games. Public campaign copy may use subjective folklore language such as "the world's favorite secret card game," but must not publish measured India, player-count, market-share, or chart claims without a defensible source.
+
 - Wikipedia, `https://en.wikipedia.org/wiki/Shithead_(card_game)`: bibliography lead to David Parlett's published card-game work and a 2008 Guardian rules article. It is not treated as sole proof of origin.
 
 ## Editorial safeguards

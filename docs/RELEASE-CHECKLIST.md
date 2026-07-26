@@ -1,6 +1,6 @@
 # Release checklist
 
-Last run: 2026-07-25
+Last run: 2026-07-26
 
 ## Content and legal
 
@@ -16,7 +16,7 @@ Last run: 2026-07-25
 ## Site quality
 
 - [x] All 21 indexable HTML pages plus the custom 404 load in the local browser preview.
-- [x] Palace, approved castle art, `Rule the table.`, Internal Alpha, News, and tutorial/discovery actions dominate the first desktop viewport.
+- [x] Palace, approved castle art, the real four-heart 4OH emblem, launch countdown, campaign headline, and 60-second play action dominate the first desktop viewport.
 - [x] At 390×844, Palace art, title, supporting copy, and the primary tutorial action remain visible in the opening viewport.
 - [x] Manual visual review confirms the rejected studio-first split hero is gone and the page reads as a Palace destination.
 - [x] Active tutorial evidence shows readable cards, rival state, pile, feedback, and game-like table composition.
@@ -25,13 +25,13 @@ Last run: 2026-07-25
 - [x] Keyboard focus is visible, primary targets are at least 44 pixels high, tabs support arrow keys, and reduced motion is respected.
 - [x] Images have alt text and loaded successfully.
 - [x] Home, Palace, Palace tutorial, and News have no horizontal overflow at 320, 360, 390, 412, 430, 768, 1366, or 1920 pixel widths; 125-percent text zoom also passes.
-- [x] The Palace friendly-error branch and all six chapters were completed in browser automation.
+- [x] Palace low-card feedback plus match, beat, wild, and completion states were completed in browser automation.
 - [x] Both teaching decisions and the `Nice play.` completion state were reached for Hearts, Spades, and Euchre.
 - [x] Titles, descriptions, canonical URLs, Open Graph data, social image, favicon, theme color, robots, and sitemap are present.
 - [x] Browser checks found no console errors, failed resources, mixed content, first-party cookies, or tracking requests.
 - [x] `git diff --check`, JavaScript syntax, and the repository secret scan pass.
 - [x] Every generated page includes the tested same-origin CSP with hashed JSON-LD; static validation rejects inline handlers, leaked filesystem paths, dynamic code execution, common secrets, and insecure assets.
-- [x] Local cold-context weight is 220,924 bytes for desktop home and 72,827 bytes for the mobile Palace tutorial.
+- [x] Local cold-context weight is 277,427 bytes for desktop home and 123,019 bytes for the mobile Palace tutorial after the launch campaign and approved-logo assets.
 - [ ] Physical-device acceptance testing remains separate from browser simulation.
 
 ## Deployment and DNS

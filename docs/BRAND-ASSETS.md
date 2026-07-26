@@ -29,6 +29,8 @@ High-quality WebP derivatives with matching base names are used on the site. The
 
 `assets/favicon.png` is a 64×64 derivative of the Hearts icon. The compact header mark is rendered with text and CSS.
 
+Launch override (supersedes the previous favicon sentence): `assets/brand-mark-4oh.webp`, `assets/favicon.png`, and `assets/apple-touch-icon.png` are direct 512-by-512, 64-by-64, and 180-by-180 derivatives of approved `4OH_Logo_Interactive.png`, including all four colored hearts. The emblem appears in the upper-left header and browser/device identity; the legacy text/CSS mark is hidden.
+
 ## Store metadata
 
 Before using any asset in Apple or Google listings, confirm required dimensions, transparency, screenshots, ownership, age rating, privacy disclosures, support URL, privacy URL, and exact product name. Store copy must match live app behavior and actual public availability.

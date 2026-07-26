@@ -14,7 +14,7 @@ const articleFile = (slug) => `news-${slug}.html`;
 const nav = (current) => {
   const items = [
     ["palace", "palace.html", "Palace"],
-    ["play", "palace-play.html", "How to Play"],
+    ["play", "palace-play.html", "Play Palace"],
     ["news", "news.html", "News"],
     ["games", "games.html", "More Games"],
     ["about", "about.html", "About 4OH"],
@@ -23,6 +23,7 @@ const nav = (current) => {
   return `<header class="site-header">
     <div class="shell nav-wrap">
       <a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}>
+        <img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="Four of Hearts Interactive" width="76" height="58">
         <span class="brand-mark" aria-hidden="true">4♥</span>
         <span class="brand-copy">Four of Hearts<small>Interactive</small></span>
       </a>
@@ -83,9 +84,12 @@ const head = ({ title, description, path, image = "assets/og-brand.jpg", imageAl
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#000512">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/palace-site.css">
+  <link rel="stylesheet" href="assets/palace-launch.css">
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
+  <script src="assets/launch-countdown.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
@@ -123,8 +127,8 @@ const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
 
 write("index.html", page({
-  title: "Palace Card Game | Four of Hearts Interactive",
-  description: "Meet Palace, the flagship Four of Hearts card game. Learn its three-layer rhythm, try an interactive preview, and follow Internal Alpha development.",
+  title: "Palace Is Coming | Four of Hearts Interactive",
+  description: "The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.",
   path: "/",
   current: "home",
   image: "assets/og-brand.jpg",
@@ -152,21 +156,25 @@ write("index.html", page({
       <span class="world-card world-card-two red" aria-hidden="true"><b>7</b>♥</span>
       <span class="world-card world-card-three" aria-hidden="true"><b>9</b>♣</span>
       <div class="shell hero-stage">
-        <div class="hero-topline"><span class="alpha-badge">Internal Alpha</span><span>Four of Hearts Interactive presents</span></div>
+        <div class="hero-topline"><span class="transmission-badge">Transmission 001</span><span>Four of Hearts Interactive presents</span></div>
         <a class="hero-news-link" href="news.html"><span>Latest</span>${featured.title}<b aria-hidden="true">→</b></a>
         <div class="hero-copy">
-          <p class="hero-game-name">Palace</p>
-          <h1>Rule the <span class="gold">table.</span></h1>
-          <p class="lede">Build three layers. Read the pile. Survive the final hidden card. Welcome to the official home of the Four of Hearts Palace experience.</p>
+          <p class="hero-game-name">The world's favorite secret card game</p>
+          <h1>The table has waited <span class="gold">long enough.</span></h1>
+          <p class="launch-deckline">Passed through schools, hostels, kitchens, and continents under a dozen names. <strong>Palace is finally becoming an app?built by Four of Hearts.</strong></p>
+          <div class="launch-countdown" data-launch-countdown role="timer"><span class="launch-countdown-label">The gates open<br>October 17, 2026</span><span class="countdown-unit"><strong data-countdown="days">83</strong><span>Days</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="hours">00</strong><span>Hours</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="minutes">00</strong><span>Min</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="seconds">00</strong><span>Sec</span></span></div>
           <div class="actions">
-            <a class="button" href="palace-play.html">Play the Palace tutorial</a>
-            <a class="button secondary" href="palace.html">Discover Palace</a>
+            <a class="button" href="palace-play.html">Play in 60 seconds</a>
+            <a class="button secondary" href="palace.html">Enter the Palace</a>
           </div>
         </div>
         <div class="hero-layer-rail" aria-label="The three Palace layers"><span><b>01</b>Your hand</span><span><b>02</b>Face-up reserve</span><span><b>03</b>Hidden finale</span></div>
         <a class="hero-scroll" href="#palace-rhythm">Enter the Palace <span aria-hidden="true">↓</span></a>
       </div>
     </section>
+
+    <div class="myth-strip" aria-label="Names used for the Palace card-game family"><div class="myth-strip-track">PALACE /// KARMA /// SHED /// CHINA HAND /// SHITHEAD /// THE GAME THE WORLD KEEPS TEACHING ITSELF /// PALACE /// KARMA /// SHED /// CHINA HAND ///</div></div>
+
 
     <section class="section navy">
       <div class="shell palace-band">
@@ -295,12 +303,13 @@ write("palace.html", page({
 
 write("palace-play.html", page({
   title: "How to Play Palace | Interactive Preview",
-  description: "Learn the three layers, legal play, matching ranks, pickup, special-card awareness, and the goal of Palace in an accessible browser tutorial.",
+  description: "Learn Palace in 60 seconds: match the pile, beat the pile, or break free with a wild card in an accessible interactive table.",
   path: "/palace-play.html",
   current: "play",
   image: "assets/icon-palace-4hearts.webp",
+  bodyClass: "palace-play-page",
   imageAlt: "Palace interactive tutorial",
-  script: '<script src="assets/palace-tutorial.js" defer></script>',
+  script: '<script src="assets/palace-tutorial-v2.js" defer></script>',
   content: `
     ${pageHero("Learn by playing", "Build your first Palace.", "A 60–120 second interactive preview of the flagship game’s core rhythm. It is a teaching experience, not a production match.", '<div class="actions"><span class="alpha-badge">No account · No stakes · Nothing saved</span></div>')}
     <section class="section navy"><div class="shell"><div id="palace-tutorial" class="tutorial-stage" tabindex="-1" aria-label="Interactive Palace tutorial"></div><noscript><div class="notice">JavaScript is required for the interactive preview. The Palace story and product pages remain available without it.</div></noscript></div></section>
