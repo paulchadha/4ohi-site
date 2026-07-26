@@ -100,3 +100,16 @@ Before release, run `node scripts/build-site.mjs`, `node scripts/validate-site.m
 ## Page-by-page reconstruction gate
 
 Require one canonical homepage/countdown, a state-preserving legacy redirect, non-intersecting Power Cards, distinct News dates, five About beats, approved founder wording, complete Palace setup/levels, game-specific four-seat tables, responsive/keyboard/privacy passes, exact-SHA Pages success, and a public rerun.
+
+### Public acceptance — July 26, 2026
+
+- [x] Exact product and documentation SHA `3e26967f4a938e63a8c56cedea847bdc652ebc20` built successfully on GitHub Pages.
+- [x] The public browser suite passed at `https://4ohi.com`: 23 pages, nine locale/name states, four guided game tables, responsive first viewports, Power Cards, the founder Easter egg, and zero storage.
+- [x] Apex HTTP redirects to apex HTTPS; both `www` schemes redirect to the canonical apex.
+- [x] Valid certificates are presented for both `4ohi.com` and `www.4ohi.com`; HTTPS enforcement is enabled.
+- [x] GitHub reports `protected_domain_state: verified`, an approved two-domain certificate, a custom 404, and a built Pages site.
+- [x] Public A/AAAA records resolve to GitHub Pages and `www` resolves to `paulchadha.github.io`.
+- [x] Public custom 404, `robots.txt`, and `sitemap.xml` return their expected status codes.
+- [x] Automated public checks found no mixed content, tracking, cookies, local storage, session storage, console errors, or failed resources.
+- [x] Founder confirmed `support@4ohi.com` inbound and reply behavior separately from DNS verification.
+- [ ] Founder physical-phone review and factual wording approval remain required.

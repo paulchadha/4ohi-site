@@ -12,4 +12,6 @@ Current generated evidence:
 - `app-news-*`, `app-games-*`, `app-about-*` — editorial/product pages.
 - Hearts, Spades, and Euchre phone-table screenshots from the previous founder correction remain useful; the JSON result is authoritative for current DOM/state assertions.
 
-A public result file is added after the exact product SHA is deployed and retested through `https://4ohi.com`.
+- `page-reconstruction-public-results.json` — passing public acceptance record for deployed SHA `3e26967f4a938e63a8c56cedea847bdc652ebc20`.
+
+The public result was captured after the exact product SHA built successfully and was retested through `https://4ohi.com`.
