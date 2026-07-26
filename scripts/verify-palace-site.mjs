@@ -56,7 +56,10 @@ const browser = await chromium.launch({ executablePath: chromePath, headless: tr
 const context = await browser.newContext({ viewport: { width: 1366, height: 768 } });
 const page = await context.newPage();
 page.on("request", (request) => result.requests.push(request.url()));
-page.on("requestfailed", (request) => result.failedRequests.push(`${request.method()} ${request.url()}: ${request.failure()?.errorText}`));
+page.on("requestfailed", (request) => {
+  if (request.failure()?.errorText === "net::ERR_ABORTED") return;
+  result.failedRequests.push(`${request.method()} ${request.url()}: ${request.failure()?.errorText}`);
+});
 page.on("console", (message) => {
   if (message.type() === "error") result.consoleErrors.push(message.text());
 });
@@ -181,6 +184,34 @@ for (const [name, expected] of [["robots.txt", "https://4ohi.com/sitemap.xml"], 
   check(response.status() === 200 && body.includes(expected), `${name}: missing or invalid`);
 }
 
+const measureRoute = async (path, width, height) => {
+  const measureContext = await browser.newContext();
+  const measurePage = await measureContext.newPage();
+  await measurePage.setViewportSize({ width, height });
+  await measurePage.goto(`${base}${path}`, { waitUntil: "networkidle" });
+  const entries = await measurePage.evaluate(() => [performance.getEntriesByType("navigation")[0], ...performance.getEntriesByType("resource")].filter(Boolean).map((entry) => ({
+    name: new URL(entry.name).pathname,
+    type: entry.initiatorType,
+    transferSize: entry.transferSize,
+    decodedBodySize: entry.decodedBodySize
+  })));
+  await measureContext.close();
+  const total = entries.reduce((sum, entry) => sum + entry.transferSize, 0);
+  const javascript = entries.filter((entry) => entry.type === "script").reduce((sum, entry) => sum + entry.transferSize, 0);
+  const css = entries.filter((entry) => entry.type === "css" || entry.name.endsWith(".css")).reduce((sum, entry) => sum + entry.transferSize, 0);
+  const largest = [...entries].sort((a, b) => b.transferSize - a.transferSize)[0];
+  const totalDecoded = entries.reduce((sum, entry) => sum + entry.decodedBodySize, 0);
+  const javascriptDecoded = entries.filter((entry) => entry.type === "script").reduce((sum, entry) => sum + entry.decodedBodySize, 0);
+  const cssDecoded = entries.filter((entry) => entry.type === "css" || entry.name.endsWith(".css")).reduce((sum, entry) => sum + entry.decodedBodySize, 0);
+  const largestDecoded = [...entries].sort((a, b) => b.decodedBodySize - a.decodedBodySize)[0];
+  return { path, width, height, totalTransferBytes: total, javascriptTransferBytes: javascript, cssTransferBytes: css, largestResource: largest, totalDecodedBytes: totalDecoded, javascriptDecodedBytes: javascriptDecoded, cssDecodedBytes: cssDecoded, largestDecodedResource: largestDecoded, resources: entries };
+};
+
+result.performance = {
+  homeDesktop: await measureRoute("/", 1440, 900),
+  palaceTutorialMobile: await measureRoute("/palace-play.html", 390, 844)
+};
+
 await page.goto(`${base}/404.html`, { waitUntil: "networkidle" });
 result.notFound = {
   h1: await page.locator("h1").textContent(),
@@ -189,14 +220,28 @@ result.notFound = {
 check(result.notFound.noindex === "noindex", "404 page missing noindex");
 
 if (screenshotDir) {
-  await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto(`${base}/`, { waitUntil: "networkidle" });
-  await page.screenshot({ path: `${screenshotDir}/palace-home-1440x900.png`, fullPage: true });
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(`${base}/palace-play.html`, { waitUntil: "networkidle" });
-  await page.screenshot({ path: `${screenshotDir}/palace-tutorial-390x844.png`, fullPage: true });
-  await page.goto(`${base}/news.html`, { waitUntil: "networkidle" });
-  await page.screenshot({ path: `${screenshotDir}/news-390x844.png`, fullPage: true });
+  const shots = [
+    ["/", "palace-home-1440x900.png", 1440, 900, true],
+    ["/", "palace-home-wide-1920x1080.png", 1920, 1080, false],
+    ["/", "palace-home-mobile-390x844.png", 390, 844, false],
+    ["/", "palace-home-tablet-768x1024.png", 768, 1024, false],
+    ["/palace.html", "palace-product-1440x900.png", 1440, 900, true],
+    ["/palace-play.html", "palace-tutorial-390x844.png", 390, 844, true],
+    ["/palace-story.html", "palace-history-1440x900.png", 1440, 900, true],
+    ["/news.html", "news-390x844.png", 390, 844, true],
+    ["/news-why-were-building-palace.html", "news-article-390x844.png", 390, 844, true],
+    ["/games.html", "more-games-1440x900.png", 1440, 900, true],
+    ["/support.html", "support-390x844.png", 390, 844, false],
+    ["/privacy.html", "privacy-390x844.png", 390, 844, false],
+    ["/security.html", "security-390x844.png", 390, 844, false],
+    ["/terms.html", "terms-390x844.png", 390, 844, false],
+    ["/contact.html", "contact-390x844.png", 390, 844, false]
+  ];
+  for (const [path, filename, width, height, fullPage] of shots) {
+    await page.setViewportSize({ width, height });
+    await page.goto(`${base}${path}`, { waitUntil: "networkidle" });
+    await page.screenshot({ path: `${screenshotDir}/${filename}`, fullPage });
+  }
 }
 
 result.cookies = await context.cookies();

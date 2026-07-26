@@ -20,6 +20,9 @@ for (const page of pages) {
   check(/<title>[^<]+<\/title>/i.test(html), `${page}: title is missing`);
   check(/<meta\s+name="description"/i.test(html), `${page}: description is missing`);
   check(/<meta\s+name="theme-color"/i.test(html), `${page}: theme color is missing`);
+  check(/http-equiv="Content-Security-Policy"/i.test(html), `${page}: Content Security Policy is missing`);
+  check(!/\son[a-z]+\s*=/i.test(html), `${page}: inline event handler found`);
+  check(!/[A-Z]:\\Users\\/i.test(html), `${page}: internal filesystem path found`);
   check(/<link\s+rel="icon"/i.test(html), `${page}: favicon is missing`);
   check(!/[�]|â€”|â€™|Â©/.test(html), `${page}: text contains encoding artifacts`);
   check(!/<form\b/i.test(html), `${page}: unexpected form found`);
@@ -73,6 +76,7 @@ for (const file of allFiles) {
   if (!/\.(?:html|css|js|mjs|md|txt|xml)$/i.test(file)) continue;
   const text = readFileSync(file, "utf8");
   check(!/(-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9_]{20,}|AIza[0-9A-Za-z_-]{30,})/.test(text), `${basename(file)}: possible secret found`);
+  check(!/(\beval\s*\(|\bnew\s+Function\s*\()/i.test(text), `${basename(file)}: dynamic code execution found`);
 }
 
 if (failures.length) {

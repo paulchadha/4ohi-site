@@ -661,8 +661,9 @@
     "http://127.0.0.1:8765/assets/palace-site.css",
     "http://127.0.0.1:8765/assets/site-config.js",
     "http://127.0.0.1:8765/assets/site.js",
-    "http://127.0.0.1:8765/assets/icon-palace-4hearts.webp",
+    "http://127.0.0.1:8765/assets/palace-hero-1024.webp",
     "http://127.0.0.1:8765/assets/favicon.png",
+    "http://127.0.0.1:8765/assets/icon-palace-4hearts.webp",
     "http://127.0.0.1:8765/assets/icon-hearts-4hearts.webp",
     "http://127.0.0.1:8765/assets/icon-spades-4hearts.webp",
     "http://127.0.0.1:8765/assets/icon-euchre-4hearts.webp",
@@ -690,11 +691,137 @@
     "http://127.0.0.1:8765/security.html",
     "http://127.0.0.1:8765/terms.html",
     "http://127.0.0.1:8765/contact.html",
+    "http://127.0.0.1:8765/assets/palace-hero-384.webp",
+    "http://127.0.0.1:8765/assets/palace-hero-640.webp",
     "http://127.0.0.1:8765/404.html"
   ],
   "consoleErrors": [],
   "failedRequests": [],
   "palaceTutorialFinal": "You cleared the Palace.",
+  "performance": {
+    "homeDesktop": {
+      "path": "/",
+      "width": 1440,
+      "height": 900,
+      "totalTransferBytes": 220924,
+      "javascriptTransferBytes": 3828,
+      "cssTransferBytes": 38267,
+      "largestResource": {
+        "name": "/assets/palace-hero-1024.webp",
+        "type": "img",
+        "transferSize": 154972,
+        "decodedBodySize": 154672
+      },
+      "totalDecodedBytes": 219124,
+      "javascriptDecodedBytes": 3228,
+      "cssDecodedBytes": 37967,
+      "largestDecodedResource": {
+        "name": "/assets/palace-hero-1024.webp",
+        "type": "img",
+        "transferSize": 154972,
+        "decodedBodySize": 154672
+      },
+      "resources": [
+        {
+          "name": "/",
+          "type": "navigation",
+          "transferSize": 11881,
+          "decodedBodySize": 11581
+        },
+        {
+          "name": "/assets/palace-site.css",
+          "type": "link",
+          "transferSize": 38267,
+          "decodedBodySize": 37967
+        },
+        {
+          "name": "/assets/site-config.js",
+          "type": "script",
+          "transferSize": 407,
+          "decodedBodySize": 107
+        },
+        {
+          "name": "/assets/site.js",
+          "type": "script",
+          "transferSize": 3421,
+          "decodedBodySize": 3121
+        },
+        {
+          "name": "/assets/palace-hero-1024.webp",
+          "type": "img",
+          "transferSize": 154972,
+          "decodedBodySize": 154672
+        },
+        {
+          "name": "/assets/favicon.png",
+          "type": "other",
+          "transferSize": 11976,
+          "decodedBodySize": 11676
+        }
+      ]
+    },
+    "palaceTutorialMobile": {
+      "path": "/palace-play.html",
+      "width": 390,
+      "height": 844,
+      "totalTransferBytes": 72827,
+      "javascriptTransferBytes": 17206,
+      "cssTransferBytes": 38267,
+      "largestResource": {
+        "name": "/assets/palace-site.css",
+        "type": "link",
+        "transferSize": 38267,
+        "decodedBodySize": 37967
+      },
+      "totalDecodedBytes": 71027,
+      "javascriptDecodedBytes": 16306,
+      "cssDecodedBytes": 37967,
+      "largestDecodedResource": {
+        "name": "/assets/palace-site.css",
+        "type": "link",
+        "transferSize": 38267,
+        "decodedBodySize": 37967
+      },
+      "resources": [
+        {
+          "name": "/palace-play.html",
+          "type": "navigation",
+          "transferSize": 5378,
+          "decodedBodySize": 5078
+        },
+        {
+          "name": "/assets/palace-site.css",
+          "type": "link",
+          "transferSize": 38267,
+          "decodedBodySize": 37967
+        },
+        {
+          "name": "/assets/site-config.js",
+          "type": "script",
+          "transferSize": 407,
+          "decodedBodySize": 107
+        },
+        {
+          "name": "/assets/site.js",
+          "type": "script",
+          "transferSize": 3421,
+          "decodedBodySize": 3121
+        },
+        {
+          "name": "/assets/palace-tutorial.js",
+          "type": "script",
+          "transferSize": 13378,
+          "decodedBodySize": 13078
+        },
+        {
+          "name": "/assets/favicon.png",
+          "type": "other",
+          "transferSize": 11976,
+          "decodedBodySize": 11676
+        }
+      ]
+    }
+  },
   "notFound": {
     "h1": "This card isn’t in the deck.",
     "noindex": "noindex"
