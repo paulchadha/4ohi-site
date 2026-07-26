@@ -23,9 +23,12 @@ for (const page of pages) {
   check(/http-equiv="Content-Security-Policy"/i.test(html), `${page}: Content Security Policy is missing`);
   check(!/\son[a-z]+\s*=/i.test(html), `${page}: inline event handler found`);
   check(!/[A-Z]:\\Users\\/i.test(html), `${page}: internal filesystem path found`);
+  check(!/\$\{game/i.test(html), `${page}: leaked product authoring token found`);
+  check(!/Shithead/i.test(html.split("</head>")[0]), `${page}: private traditional name leaked into metadata`);
   check(/<link\s+rel="icon"/i.test(html), `${page}: favicon is missing`);
   check(!/[�]|â€”|â€™|Â©/.test(html), `${page}: text contains encoding artifacts`);
-  check(!/<form\b/i.test(html), `${page}: unexpected form found`);
+  const unsafeForms = [...html.matchAll(/<form\b([^>]*)>/gi)].filter(([, attrs]) => !/\bmethod="dialog"/i.test(attrs));
+  check(unsafeForms.length === 0, `${page}: unexpected non-dialog form found`);
   check(!/(google-analytics|googletagmanager|facebook\.net|doubleclick|segment\.com)/i.test(html), `${page}: tracking code found`);
   check(!/\bhttp:\/\//i.test(html), `${page}: mixed-content URL found`);
   if (page !== "404.html") {
