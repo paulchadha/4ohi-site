@@ -126,7 +126,7 @@ check(launch.brandLoaded, "approved 4OH header logo did not load");
 check(launch.countdownUnits === 4, "launch countdown is incomplete");
 check(launch.countdownLabel.includes("until October 17, 2026"), "launch countdown accessible label is missing");
 check(launch.launchDate.includes("October 17, 2026"), "launch date is missing");
-check(launch.primaryAction === "Play in 60 seconds", "primary Palace action is incorrect");
+check(launch.primaryAction === "Play the Palace tutorial", "primary Palace action is incorrect");
 
 await page.goto(`${base}/palace-play.html`, { waitUntil: "networkidle" });
 await page.keyboard.press("Tab");
@@ -172,7 +172,7 @@ for (const game of ["hearts", "spades", "euchre"]) {
 }
 
 await page.goto(`${base}/palace-play.html`, { waitUntil: "networkidle" });
-const primaryTargets = await page.locator(".site-header a, .site-header button, .button, .playing-card").evaluateAll((elements) =>
+const primaryTargets = await page.locator(".site-header a, .site-header button, .button, .v3-card").evaluateAll((elements) =>
   elements.filter((element) => element.getClientRects().length).map((element) => ({
     text: element.textContent?.trim(),
     width: element.getBoundingClientRect().width,
@@ -181,33 +181,48 @@ const primaryTargets = await page.locator(".site-header a, .site-header button, 
 );
 /* End of misplaced legacy verifier block marker.
 */
-const palaceActionV2 = async (label, locator, expectedHeading = "") => {
-  await locator.click();
-  if (expectedHeading) {
-    await page.waitForFunction((heading) => document.querySelector("#palace-tutorial h2")?.textContent === heading, expectedHeading);
-  }
-  result.palaceTutorial.push({ label, heading: await page.locator("#palace-tutorial h2").textContent() });
-};
-await palaceActionV2("deal", page.locator('[data-action="deal"]'), "Match it.");
-await palaceActionV2("friendly low-card hint", page.locator('[data-card="low"]').first());
-check((await page.locator(".tutorial-feedback").textContent()).includes("cannot answer the six"), "Palace match hint missing");
-await palaceActionV2("match the pile", page.locator('[data-card="correct"]'), "Beat it.");
-await palaceActionV2("friendly low-card hint on nine", page.locator('[data-card="low"]').first());
-check((await page.locator(".tutorial-feedback").textContent()).includes("Too low"), "Palace beat hint missing");
-await palaceActionV2("beat the pile", page.locator('[data-card="correct"]'), "Go wild.");
-await palaceActionV2("blocked ordinary card", page.locator('[data-card="low"]').first());
-check((await page.locator(".tutorial-feedback").textContent()).includes("wild-card moment"), "Palace wild-card hint missing");
-await palaceActionV2("play the wild card", page.locator('[data-card="correct"]'), "You cleared the Palace.");
+const recordPalace = async (label) => result.palaceTutorial.push({ label, text: await page.locator("#palace-tutorial").innerText() });
+await page.locator('[data-action="start"]').click();
+await recordPalace("take seat");
+await page.locator('[data-card="wrong"]').click();
+check((await page.locator(".v3-feedback").textContent()).includes("lower than six"), "recoverable match mistake missing");
+await page.locator('[data-card="match"]').click();
+await page.waitForSelector('[data-card="burn"]');
+await recordPalace("match equal rank");
+await page.locator('[data-card="burn"]').click();
+await page.waitForSelector('[data-action="opponent"]');
+await recordPalace("ten burns pile");
+await page.locator('[data-action="opponent"]').click();
+await page.waitForSelector('[data-power-readout]');
+await recordPalace("opponent picks up");
+for (const value of ["2", "7", "8", "10"]) await page.locator(`[data-card="${value}"]`).click();
+await page.waitForSelector('[data-action="layer"]');
+await recordPalace("all power cards");
+await page.locator('[data-action="layer"]').click();
+await page.locator('[data-action="layer"]').click();
+await page.locator('[data-action="layer"]').click();
+await page.waitForFunction(() => document.querySelector("#palace-tutorial h2")?.textContent === "You rule this Palace.");
 result.palaceTutorialFinal = await page.locator("#palace-tutorial h2").textContent();
-check(result.palaceTutorialFinal === "You cleared the Palace.", "Palace tutorial completion state missing");
+check(result.palaceTutorialFinal === "You rule this Palace.", "Palace tutorial completion state missing");
 result.accessibility.primaryTargets = primaryTargets;
 check(primaryTargets.every((target) => target.width >= 44 && target.height >= 44), "primary target smaller than 44px");
 
+await page.goto(`${base}/palace.html`, { waitUntil: "networkidle" });
+await page.locator('[data-name-choice="Shed"]').click();
+check((await page.locator('[data-game-name]').first().textContent()) === "Shed", "Palace/Shed session name did not update");
+for (let tap = 0; tap < 9; tap += 1) await page.locator('[data-name-choice="Shed"]').click();
+check((await page.locator('[data-game-name]').first().textContent()) === "Shithead", "ten-tap founder Easter egg did not unlock");
+check(await page.locator('[data-name-secret]').isVisible(), "founder Easter egg acknowledgement missing");
+await page.reload({ waitUntil: "networkidle" });
+check((await page.locator('[data-game-name]').first().textContent()) === "Palace", "name setting persisted after refresh");
+check(await page.evaluate(() => !document.cookie && localStorage.length === 0 && sessionStorage.length === 0), "name setting used browser persistence");
+await page.goto(`${base}/privacy.html`, { waitUntil: "networkidle" });
+check(await page.locator(".privacy-row").count() === 8, "privacy choices center is incomplete");
 const reducedContext = await browser.newContext({ reducedMotion: "reduce", viewport: { width: 390, height: 844 } });
 const reducedPage = await reducedContext.newPage();
 await reducedPage.goto(`${base}/palace-play.html`, { waitUntil: "networkidle" });
-await reducedPage.locator('[data-action="deal"]').click();
-result.accessibility.reducedMotion = await reducedPage.locator(".playing-card").first().evaluate((element) => {
+await reducedPage.locator('[data-action="start"]').click();
+result.accessibility.reducedMotion = await reducedPage.locator(".v3-card").first().evaluate((element) => {
   const style = getComputedStyle(element);
   return { animationDuration: style.animationDuration, transitionDuration: style.transitionDuration };
 });
