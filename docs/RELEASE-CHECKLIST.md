@@ -36,7 +36,7 @@ Last run: 2026-07-26
 
 ## Deployment and DNS
 
-- [x] Palace-first release commit `c6a7590a69f312cb10a90978fd54fdce6e16d84b` was deployed successfully; the current Pages deployment matches GitHub's automatic restored-CNAME commit `79e8a2831ddd27644052b065e225daaaf9d58c09`.
+- [x] Palace countdown campaign commit `235ec4571662003c9234585678fca469691f741e` was deployed successfully by Pages run `30206574573`; public HTTPS acceptance passed against that exact release.
 - [x] GitHub Pages custom domain is `4ohi.com`; repository `CNAME` matches.
 - [x] Pages source is `main` at repository root and the prior release workflow is green.
 - [x] HTTPS enforcement remained off throughout DNS propagation and while the certificate was not valid.

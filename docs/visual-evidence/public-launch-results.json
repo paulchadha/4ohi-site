@@ -2,12 +2,12 @@
   "base": "https://4ohi.com",
   "pages": [
     {
-      "title": "Palace Card Game | Four of Hearts Interactive",
-      "h1": "Rule the table.",
-      "description": "Meet Palace, the flagship Four of Hearts card game. Learn its three-layer rhythm, try an interactive preview, and follow Internal Alpha development.",
+      "title": "Palace Is Coming | Four of Hearts Interactive",
+      "h1": "The table has waited long enough.",
+      "description": "The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.",
       "canonical": "https://4ohi.com/",
-      "ogTitle": "Palace Card Game | Four of Hearts Interactive",
-      "ogDescription": "Meet Palace, the flagship Four of Hearts card game. Learn its three-layer rhythm, try an interactive preview, and follow Internal Alpha development.",
+      "ogTitle": "Palace Is Coming | Four of Hearts Interactive",
+      "ogDescription": "The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.",
       "ogImage": "https://4ohi.com/assets/og-brand.jpg",
       "imagesLoaded": true,
       "cookie": "",
@@ -34,10 +34,10 @@
     {
       "title": "How to Play Palace | Interactive Preview",
       "h1": "Build your first Palace.",
-      "description": "Learn the three layers, legal play, matching ranks, pickup, special-card awareness, and the goal of Palace in an accessible browser tutorial.",
+      "description": "Learn Palace in 60 seconds: match the pile, beat the pile, or break free with a wild card in an accessible interactive table.",
       "canonical": "https://4ohi.com/palace-play.html",
       "ogTitle": "How to Play Palace | Interactive Preview",
-      "ogDescription": "Learn the three layers, legal play, matching ranks, pickup, special-card awareness, and the goal of Palace in an accessible browser tutorial.",
+      "ogDescription": "Learn Palace in 60 seconds: match the pile, beat the pile, or break free with a wild card in an accessible interactive table.",
       "ogImage": "https://4ohi.com/assets/icon-palace-4hearts.webp",
       "imagesLoaded": true,
       "cookie": "",
@@ -546,54 +546,30 @@
   "palaceTutorial": [
     {
       "label": "deal",
-      "heading": "Match or climb."
+      "heading": "Match it."
     },
     {
-      "label": "friendly incorrect legal play",
-      "heading": "Match or climb."
+      "label": "friendly low-card hint",
+      "heading": "Match it."
     },
     {
-      "label": "legal equal play",
-      "heading": "Match or climb."
+      "label": "match the pile",
+      "heading": "Beat it."
     },
     {
-      "label": "next to matching",
-      "heading": "A match keeps you moving."
+      "label": "friendly low-card hint on nine",
+      "heading": "Beat it."
     },
     {
-      "label": "matching rank",
-      "heading": "A match keeps you moving."
-    },
-    {
-      "label": "next to pickup",
-      "heading": "Sometimes you take the pile."
+      "label": "beat the pile",
+      "heading": "Go wild."
     },
     {
       "label": "blocked ordinary card",
-      "heading": "Sometimes you take the pile."
+      "heading": "Go wild."
     },
     {
-      "label": "pick up pile",
-      "heading": "Sometimes you take the pile."
-    },
-    {
-      "label": "special-card awareness",
-      "heading": "Special cards change the plan."
-    },
-    {
-      "label": "next to layers",
-      "heading": "Hand. Face-up. Face-down."
-    },
-    {
-      "label": "face-up layer",
-      "heading": "Hand. Face-up. Face-down."
-    },
-    {
-      "label": "face-down layer",
-      "heading": "Hand. Face-up. Face-down."
-    },
-    {
-      "label": "finish tutorial",
+      "label": "play the wild card",
       "heading": "You cleared the Palace."
     }
   ],
@@ -623,8 +599,8 @@
     "primaryTargets": [
       {
         "text": "4♥\n        Four of HeartsInteractive",
-        "width": 46,
-        "height": 46
+        "width": 66,
+        "height": 58
       },
       {
         "text": "Menu",
@@ -632,8 +608,8 @@
         "height": 48
       },
       {
-        "text": "Deal my Palace",
-        "width": 158.921875,
+        "text": "Deal the cards",
+        "width": 151.65625,
         "height": 53.984375
       }
     ],
@@ -659,18 +635,20 @@
   "requests": [
     "https://4ohi.com/",
     "https://4ohi.com/assets/palace-site.css",
+    "https://4ohi.com/assets/palace-launch.css",
     "https://4ohi.com/assets/site-config.js",
     "https://4ohi.com/assets/site.js",
+    "https://4ohi.com/assets/launch-countdown.js",
+    "https://4ohi.com/assets/brand-mark-4oh.webp",
     "https://4ohi.com/assets/palace-hero-1024.webp",
     "https://4ohi.com/assets/favicon.png",
     "https://4ohi.com/assets/icon-palace-4hearts.webp",
     "https://4ohi.com/assets/icon-hearts-4hearts.webp",
     "https://4ohi.com/assets/icon-spades-4hearts.webp",
     "https://4ohi.com/assets/icon-euchre-4hearts.webp",
-    "https://4ohi.com/assets/brand-mark-4oh.webp",
     "https://4ohi.com/palace.html",
     "https://4ohi.com/palace-play.html",
-    "https://4ohi.com/assets/palace-tutorial.js",
+    "https://4ohi.com/assets/palace-tutorial-v2.js",
     "https://4ohi.com/palace-story.html",
     "https://4ohi.com/news.html",
     "https://4ohi.com/assets/brand-board.webp",
@@ -697,24 +675,31 @@
   ],
   "consoleErrors": [],
   "failedRequests": [],
+  "launch": {
+    "brandLoaded": true,
+    "countdownUnits": 4,
+    "countdownLabel": "83 days, 10 hours, 16 minutes, and 31 seconds until October 17, 2026",
+    "launchDate": "The gates openOctober 17, 2026",
+    "primaryAction": "Play in 60 seconds"
+  },
   "palaceTutorialFinal": "You cleared the Palace.",
   "performance": {
     "homeDesktop": {
       "path": "/",
       "width": 1440,
       "height": 900,
-      "totalTransferBytes": 181419,
-      "javascriptTransferBytes": 1924,
-      "cssTransferBytes": 8706,
+      "totalTransferBytes": 225951,
+      "javascriptTransferBytes": 2809,
+      "cssTransferBytes": 12788,
       "largestResource": {
         "name": "/assets/palace-hero-1024.webp",
         "type": "img",
         "transferSize": 154972,
         "decodedBodySize": 154672
       },
-      "totalDecodedBytes": 217877,
-      "javascriptDecodedBytes": 3228,
-      "cssDecodedBytes": 36720,
+      "totalDecodedBytes": 273543,
+      "javascriptDecodedBytes": 4589,
+      "cssDecodedBytes": 50807,
       "largestDecodedResource": {
         "name": "/assets/palace-hero-1024.webp",
         "type": "img",
@@ -725,8 +710,8 @@
         {
           "name": "/",
           "type": "navigation",
-          "transferSize": 3841,
-          "decodedBodySize": 11581
+          "transferSize": 4230,
+          "decodedBodySize": 12923
         },
         {
           "name": "/assets/palace-site.css",
@@ -735,16 +720,34 @@
           "decodedBodySize": 36720
         },
         {
+          "name": "/assets/palace-launch.css",
+          "type": "link",
+          "transferSize": 4082,
+          "decodedBodySize": 14087
+        },
+        {
           "name": "/assets/site-config.js",
           "type": "script",
           "transferSize": 407,
           "decodedBodySize": 107
         },
         {
+          "name": "/assets/launch-countdown.js",
+          "type": "script",
+          "transferSize": 885,
+          "decodedBodySize": 1361
+        },
+        {
           "name": "/assets/site.js",
           "type": "script",
           "transferSize": 1517,
           "decodedBodySize": 3121
+        },
+        {
+          "name": "/assets/brand-mark-4oh.webp",
+          "type": "img",
+          "transferSize": 41764,
+          "decodedBodySize": 41464
         },
         {
           "name": "/assets/palace-hero-1024.webp",
@@ -755,8 +758,8 @@
         {
           "name": "/assets/favicon.png",
           "type": "other",
-          "transferSize": 11976,
-          "decodedBodySize": 11676
+          "transferSize": 9388,
+          "decodedBodySize": 9088
         }
       ]
     },
@@ -764,30 +767,30 @@
       "path": "/palace-play.html",
       "width": 390,
       "height": 844,
-      "totalTransferBytes": 28486,
-      "javascriptTransferBytes": 5652,
-      "cssTransferBytes": 8706,
+      "totalTransferBytes": 71753,
+      "javascriptTransferBytes": 5593,
+      "cssTransferBytes": 12788,
       "largestResource": {
-        "name": "/assets/favicon.png",
-        "type": "other",
-        "transferSize": 11976,
-        "decodedBodySize": 11676
+        "name": "/assets/brand-mark-4oh.webp",
+        "type": "img",
+        "transferSize": 41764,
+        "decodedBodySize": 41464
       },
-      "totalDecodedBytes": 69490,
-      "javascriptDecodedBytes": 16016,
-      "cssDecodedBytes": 36720,
+      "totalDecodedBytes": 118919,
+      "javascriptDecodedBytes": 12189,
+      "cssDecodedBytes": 50807,
       "largestDecodedResource": {
-        "name": "/assets/palace-site.css",
-        "type": "link",
-        "transferSize": 8706,
-        "decodedBodySize": 36720
+        "name": "/assets/brand-mark-4oh.webp",
+        "type": "img",
+        "transferSize": 41764,
+        "decodedBodySize": 41464
       },
       "resources": [
         {
           "name": "/palace-play.html",
           "type": "navigation",
-          "transferSize": 2152,
-          "decodedBodySize": 5078
+          "transferSize": 2220,
+          "decodedBodySize": 5371
         },
         {
           "name": "/assets/palace-site.css",
@@ -796,10 +799,10 @@
           "decodedBodySize": 36720
         },
         {
-          "name": "/assets/site.js",
-          "type": "script",
-          "transferSize": 1517,
-          "decodedBodySize": 3121
+          "name": "/assets/palace-launch.css",
+          "type": "link",
+          "transferSize": 4082,
+          "decodedBodySize": 14087
         },
         {
           "name": "/assets/site-config.js",
@@ -808,16 +811,34 @@
           "decodedBodySize": 107
         },
         {
-          "name": "/assets/palace-tutorial.js",
+          "name": "/assets/site.js",
           "type": "script",
-          "transferSize": 3728,
-          "decodedBodySize": 12788
+          "transferSize": 1517,
+          "decodedBodySize": 3121
+        },
+        {
+          "name": "/assets/palace-tutorial-v2.js",
+          "type": "script",
+          "transferSize": 2784,
+          "decodedBodySize": 7600
+        },
+        {
+          "name": "/assets/launch-countdown.js",
+          "type": "script",
+          "transferSize": 885,
+          "decodedBodySize": 1361
+        },
+        {
+          "name": "/assets/brand-mark-4oh.webp",
+          "type": "img",
+          "transferSize": 41764,
+          "decodedBodySize": 41464
         },
         {
           "name": "/assets/favicon.png",
           "type": "other",
-          "transferSize": 11976,
-          "decodedBodySize": 11676
+          "transferSize": 9388,
+          "decodedBodySize": 9088
         }
       ]
     }

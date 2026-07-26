@@ -59,6 +59,7 @@ Ownership protection is verified. The additive challenge TXT publicly returns `c
 
 - GitHub Pages run `30182211280` successfully deployed the approved Palace release commit `c6a7590a69f312cb10a90978fd54fdce6e16d84b`.
 - GitHub Pages run `30184458266` successfully deployed GitHub's automatic restored-CNAME commit `79e8a2831ddd27644052b065e225daaaf9d58c09` during certificate recovery.
+- GitHub Pages run `30206574573` successfully deployed the Palace countdown campaign commit `235ec4571662003c9234585678fca469691f741e`; the complete public HTTPS browser suite passed afterward.
 - Content rollback uses a new revert commit; history is never rewritten.
 - Website DNS rollback removes only the GitHub A/AAAA records and restores the two documented GoDaddy Website Builder A records plus the prior `www` CNAME.
 - Website rollback never touches Proton Mail or unrelated DNS records.
