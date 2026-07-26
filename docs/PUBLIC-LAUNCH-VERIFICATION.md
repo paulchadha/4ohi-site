@@ -1,6 +1,6 @@
 # Public launch verification
 
-Verification date: 2026-07-25
+Verification date: 2026-07-26
 
 ## DNS and hosting
 
@@ -11,14 +11,19 @@ Verification date: 2026-07-25
 
 ## HTTPS and redirects
 
-- Certificate state: pending GitHub issuance.
-- HTTPS enforcement: intentionally disabled until the certificate matches both hostnames.
-- Final apex HTTPS, `www` canonical redirect, HTTP-to-HTTPS, certificate, and mixed-content checks: pending.
+- Certificate state: approved for `4ohi.com` and `www.4ohi.com`, expiring 2026-10-23.
+- GitHub Pages HTTPS enforcement: enabled only after strict certificate validation passed for both hostnames.
+- `https://4ohi.com/` returns the site with no certificate warning. `https://www.4ohi.com/` redirects to the canonical apex.
+- Plain HTTP reaches the canonical HTTPS origin. The apex redirects directly; `www` may traverse the cached apex canonicalization before the HTTPS redirect.
+
+Historical pre-recovery evidence (resolved):
 - Current TLS probe: both hostnames present `CN=*.github.io`, issued by Let’s Encrypt `YR2`, with SANs only for GitHub-owned names. Neither `4ohi.com` nor `www.4ohi.com` matches, so enforcement remains off. Google and Cloudflare return no CAA record, ruling out a published CAA authorization conflict.
+- Current state supersedes the historical probe above: GitHub approved a certificate covering both hostnames and HTTPS enforcement is enabled.
+- After more than one hour without a certificate request, GitHub's documented remove-and-re-add custom-domain procedure was used in Pages settings only. The new request progressed from `authorization_pending` to `approved` after the automatic Pages rebuild. DNS and Proton Mail records were not changed.
 
 ## Public browser acceptance
 
-The Palace-first local acceptance run loaded all 21 indexable pages plus the custom 404. It completed the six-chapter Palace preview, a friendly incorrect path, and both lessons for Hearts, Spades, and Euchre. It covered skip navigation, visible 44-pixel targets, 125-percent text zoom, reduced motion, and home, Palace, Palace tutorial, and News at 320, 360, 390, 412, 430, 768, 1366, and 1920 pixel widths without horizontal overflow. Results are in `docs/visual-evidence/palace-local-results.json`.
+The Palace-first local and final public HTTPS acceptance runs loaded all 21 indexable pages plus the custom 404. They completed the six-chapter Palace preview, a friendly incorrect path, and both lessons for Hearts, Spades, and Euchre. They covered skip navigation, visible 44-pixel targets, 125-percent text zoom, reduced motion, and home, Palace, Palace tutorial, and News at 320, 360, 390, 412, 430, 768, 1366, and 1920 pixel widths without horizontal overflow. Results are in `docs/visual-evidence/palace-local-results.json` and `docs/visual-evidence/public-launch-results.json`.
 ## Palace-first recovery visual review
 
 The rejected public baseline was studio-first: a conventional copy/image split, generic 4OH art in the hero, Palace below the first viewport, and large low-information dark regions. Automated correctness did not make that composition acceptable.
@@ -29,7 +34,7 @@ Visual evidence is stored in `docs/visual-evidence/`: desktop, wide-desktop, pho
 
 This visual review is separate from the machine-readable acceptance record and was not inferred from line counts.
 
-Final HTTPS evidence will be written to `docs/visual-evidence/public-launch-results.json` by:
+Final HTTPS evidence was written to `docs/visual-evidence/public-launch-results.json` by:
 
 ```powershell
 node scripts/verify-public-site.mjs
@@ -52,7 +57,8 @@ Ownership protection is verified. The additive challenge TXT publicly returns `c
 
 ## Release and rollback
 
-- GitHub Pages run `30177242400` successfully deployed commit `44dd907d119e32f525d5e11511e7633e0410fb4d`.
+- GitHub Pages run `30182211280` successfully deployed the approved Palace release commit `c6a7590a69f312cb10a90978fd54fdce6e16d84b`.
+- GitHub Pages run `30184458266` successfully deployed GitHub's automatic restored-CNAME commit `79e8a2831ddd27644052b065e225daaaf9d58c09` during certificate recovery.
 - Content rollback uses a new revert commit; history is never rewritten.
 - Website DNS rollback removes only the GitHub A/AAAA records and restores the two documented GoDaddy Website Builder A records plus the prior `www` CNAME.
 - Website rollback never touches Proton Mail or unrelated DNS records.

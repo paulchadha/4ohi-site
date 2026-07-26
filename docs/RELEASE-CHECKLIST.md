@@ -36,7 +36,7 @@ Last run: 2026-07-25
 
 ## Deployment and DNS
 
-- [x] Interactive-edition commits are pushed and the current Pages deployment matches commit `44dd907d119e32f525d5e11511e7633e0410fb4d`.
+- [x] Palace-first release commit `c6a7590a69f312cb10a90978fd54fdce6e16d84b` was deployed successfully; the current Pages deployment matches GitHub's automatic restored-CNAME commit `79e8a2831ddd27644052b065e225daaaf9d58c09`.
 - [x] GitHub Pages custom domain is `4ohi.com`; repository `CNAME` matches.
 - [x] Pages source is `main` at repository root and the prior release workflow is green.
 - [x] HTTPS enforcement remained off throughout DNS propagation and while the certificate was not valid.
@@ -44,8 +44,8 @@ Last run: 2026-07-25
 - [ ] Export the authenticated GoDaddy zone immediately before cutover.
 - [x] Apply only the documented website A/AAAA and `www` CNAME changes.
 - [x] Confirm authoritative and public propagation to GitHub Pages and removal of the GoDaddy placeholder.
-- [ ] Confirm matching apex and `www` certificates, canonical redirects, and absence of TLS warnings.
-- [ ] Enable HTTPS enforcement only after certificate provisioning.
+- [x] Confirm matching apex and `www` certificates, canonical redirects, and absence of TLS warnings.
+- [x] Enable HTTPS enforcement only after certificate provisioning.
 - [x] Founder physically confirmed a fresh unrelated-mailbox inbound message and reply from `support@4ohi.com`; no message content was retained.
 - [x] Add and retain GitHub Pages account-level domain-verification TXT protection; public TXT and Pages `protected_domain_state: verified` are confirmed.
 
@@ -53,6 +53,6 @@ Last run: 2026-07-25
 
 - Palace local browser results: `docs/visual-evidence/palace-local-results.json`
 - Public launch record: `docs/PUBLIC-LAUNCH-VERIFICATION.md`
-- Final HTTPS browser results: `docs/visual-evidence/public-launch-results.json`
+- Final HTTPS browser results: `docs/visual-evidence/public-launch-results.json` (passing)
 - Current screenshots: `palace-home-1440x900.png`, `palace-tutorial-390x844.png`, and `news-390x844.png` in `docs/visual-evidence/`
 - Automated validation: `node scripts/validate-site.mjs`

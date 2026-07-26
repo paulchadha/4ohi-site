@@ -11,7 +11,7 @@
 
 ## Current status
 
-GitHub Pages is configured, the repository `CNAME` contains `4ohi.com`, and authoritative plus public DNS route the apex and `www` to GitHub Pages. The GoDaddy Website Builder placeholder is retired. Certificate, enforcement, redirect, public-browser, and mail evidence are recorded in `RELEASE-CHECKLIST.md` and `PUBLIC-LAUNCH-VERIFICATION.md`.
+GitHub Pages is configured, the repository `CNAME` contains `4ohi.com`, and authoritative plus public DNS route the apex and `www` to GitHub Pages. The GoDaddy Website Builder placeholder is retired. The certificate is approved for both hostnames, HTTPS enforcement is enabled, canonical redirects pass, and the complete public browser suite passes. Certificate, enforcement, redirect, public-browser, and mail evidence are recorded in `RELEASE-CHECKLIST.md` and `PUBLIC-LAUNCH-VERIFICATION.md`.
 
 ## Release workflow
 

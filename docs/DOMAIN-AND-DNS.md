@@ -1,6 +1,6 @@
 # Domain and DNS
 
-Last public audit: 2026-07-25 21:04 UTC
+Last public audit: 2026-07-26 02:24 UTC
 
 ## Ownership and renewal
 
@@ -38,7 +38,7 @@ The retired GoDaddy Website Builder addresses `13.248.243.5` and `76.223.105.230
 
 Only the website records were replaced: the two GoDaddy Website Builder apex A records were removed; the four GitHub Pages A and four AAAA records were added; and `www` was changed to `paulchadha.github.io`. The mail, verification, DKIM, DMARC, Domain Connect, and unrelated records were not part of the website change.
 
-After any future DNS change, verify authoritative DNS plus at least two independent public resolvers. Keep GitHub Pages HTTPS enforcement off until matching certificates are actually presented for both the apex and `www`; then enforce HTTPS and retest redirects, mixed content, and every public page.
+After any future DNS change, verify authoritative DNS plus at least two independent public resolvers. Keep GitHub Pages HTTPS enforcement off until matching certificates are actually presented for both the apex and `www`; then enforce HTTPS and retest redirects, mixed content, and every public page. For this launch, GitHub approved a certificate covering both hostnames through 2026-10-23, HTTPS enforcement was enabled afterward, and the final public HTTPS suite passed.
 
 ## GitHub Pages ownership protection
 
