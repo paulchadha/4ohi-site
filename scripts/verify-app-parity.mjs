@@ -7,6 +7,8 @@ const { chromium } = require("playwright");
 const base = process.env.SITE_URL || "http://127.0.0.1:4173";
 const chrome = process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const evidence = resolve("docs", "visual-evidence");
+const resultFile = process.env.SITE_RESULTS || "app-parity-results.json";
+const captureScreenshots = process.env.NO_SCREENSHOTS !== "1";
 mkdirSync(evidence, { recursive: true });
 const results = { base, checkedAt: new Date().toISOString(), pages: [], modes: [], layouts: {}, tutorials: [], privacy: {}, failures: [] };
 const fail = (message) => results.failures.push(message);
@@ -87,7 +89,7 @@ for (const [file, width, height, shot] of [
   if (geometry.overflow) fail(`${shot}: horizontal overflow`);
   if (file === "news.html" && geometry.newsTop > height * .72) fail("News featured story is still below the first viewport");
   if (file === "games.html" && geometry.gamesTop > height * .72) fail("More Games cards are still below the first viewport");
-  await page.screenshot({ path: resolve(evidence, shot), fullPage: true });
+  if (captureScreenshots) await page.screenshot({ path: resolve(evidence, shot), fullPage: true });
   await page.close();
 }
 
@@ -99,7 +101,7 @@ for (const rank of ["2", "7", "8", "10"]) {
   const active = await powers.locator("[data-power-showcase]").getAttribute("data-active-power");
   if (pressed !== "true" || active !== rank) fail(`Power card ${rank}: interaction state failed`);
 }
-await powers.locator("#rules").screenshot({ path: resolve(evidence, "app-power-cards-1440.png") });
+if (captureScreenshots) await powers.locator("#rules").screenshot({ path: resolve(evidence, "app-power-cards-1440.png") });
 await powers.close();
 
 const palace = await context.newPage({ viewport: { width: 390, height: 844 } });
@@ -161,7 +163,7 @@ if (results.privacy.cookies || results.privacy.localStorage || results.privacy.s
 await privacy.close();
 
 await browser.close();
-writeFileSync(resolve(evidence, "app-parity-results.json"), `${JSON.stringify(results, null, 2)}\n`);
+writeFileSync(resolve(evidence, resultFile), `${JSON.stringify(results, null, 2)}\n`);
 if (results.failures.length) {
   console.error(`App-parity verification failed:\n- ${results.failures.join("\n- ")}`);
   process.exit(1);

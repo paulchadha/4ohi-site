@@ -38,3 +38,7 @@ If delivery fails, verify propagation, record syntax, account status, and provid
 ## Redesign preservation note
 
 No mail or DNS configuration was touched. The founder’s July 25, 2026 physical confirmation of unrelated inbound delivery and a successful reply from support@4ohi.com remains the latest mailbox evidence; website deployment does not replace mailbox testing.
+
+## App-parity release preservation
+
+The app-parity release made no mail or DNS change. The authoritative zone still returns Proton MX priorities 10/20, SPF, verification TXT, DMARC quarantine, and all three DKIM CNAME selectors exactly as documented. The founder's release-thread confirmation that inbound mail and a support reply work remains the mailbox-delivery evidence; DNS alone is not treated as delivery proof.

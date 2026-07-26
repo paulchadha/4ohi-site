@@ -89,4 +89,4 @@ Last run: 2026-07-26
 - [x] Palace plus Hearts, Spades, and Euchre tutorial completion passes.
 - [x] Ten-tap traditional-name confirmation and reset behavior pass.
 - [x] Cookies, local storage, session storage, and external resources remain empty.
-- [ ] Public exact-SHA deployment and post-deployment browser rerun are recorded after push.
+- [x] Exact SHA `701cf3f234e40e72dd7f0dfc5f357c1bea881c95` deployed successfully and the full browser suite passed at `https://4ohi.com`.

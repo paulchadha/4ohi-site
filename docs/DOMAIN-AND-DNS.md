@@ -61,3 +61,7 @@ If website cutover fails, remove only the GitHub A/AAAA records, restore apex A 
 ## Founder redesign launch preservation
 
 The redesign is website-code only. It does not change apex A/AAAA records, www CNAME, GitHub ownership TXT, CAA, or any Proton Mail MX/SPF/DKIM/DMARC/verification record. Public TLS and redirect verification must be repeated after the exact redesign SHA deploys.
+
+## App-parity deployment recheck
+
+After the July 26 app-parity deployment, authoritative GoDaddy DNS, Cloudflare, and Google still returned the four GitHub Pages A records, four AAAA records, `www` CNAME, and additive ownership TXT. GitHub reported `protected_domain_state: verified` and HTTPS enforcement remained enabled. No DNS record was changed.

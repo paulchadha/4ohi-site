@@ -100,3 +100,19 @@ Local integrated evidence is `visual-evidence/founder-experience-results.json` p
 ## July 26 app-parity candidate
 
 Local candidate evidence is recorded in `docs/visual-evidence/app-parity-results.json` with first-viewport and tutorial screenshots listed in `APP-PARITY-AND-PAGE-HIERARCHY.md`. It covers 23 pages, nine locale/name states, all four tutorials, physical power cards, RTL, responsive geometry, the traditional-name confirmation, and zero storage. Public exact-SHA results must be appended after GitHub Pages deploys this candidate.
+
+## App-parity exact-SHA public verification — 2026-07-26
+
+- Public source SHA: `701cf3f234e40e72dd7f0dfc5f357c1bea881c95`.
+- GitHub Pages run: `30213379342`; build, status report, and deploy jobs completed successfully for that exact SHA.
+- Authenticated Pages state: `status: built`, `cname: 4ohi.com`, `https_enforced: true`, `protected_domain_state: verified`, source `main:/`.
+- Ownership TXT: `_github-pages-challenge-paulchadha.4ohi.com = cb671e54e3d83a6de07c4ed963a882` on the GoDaddy authoritative server, Cloudflare `1.1.1.1`, and Google `8.8.8.8`.
+- Apex A and AAAA records match all eight GitHub Pages endpoints; `www` is `paulchadha.github.io` on authoritative, Cloudflare, and Google resolution.
+- HTTP apex, HTTP www, and HTTPS www each return `301` to `https://4ohi.com/`; HTTPS apex returns `200`.
+- Strict TLS trust and hostname validation passes for both names with one Let's Encrypt certificate, SANs `4ohi.com` and `www.4ohi.com`, TLS 1.3, valid from 2026-07-26 through 2026-10-24.
+- Public Playwright acceptance passed 23 pages, nine locale/name states, all four tutorials, physical power cards, RTL, responsive first viewports, traditional-name confirmation, and zero cookies/storage/external resources.
+- `robots.txt`, `sitemap.xml`, and `feed.xml` return `200`; an unknown path returns HTTP `404` with the custom card-not-found page.
+- No certificate warning, mixed-content request, browser error, tracker, external script, or persisted preference was observed.
+- The founder confirmed `support@4ohi.com` inbound and reply operation in this release thread. DNS verification separately confirms both Proton MX records, SPF, Proton verification, DMARC quarantine, and all three DKIM selectors unchanged.
+
+Public browser evidence: `docs/visual-evidence/app-parity-public-results.json`.

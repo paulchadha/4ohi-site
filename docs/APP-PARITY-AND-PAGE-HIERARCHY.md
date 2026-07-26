@@ -67,3 +67,7 @@ The final local evidence set is under `docs/visual-evidence/`:
 - `app-parity-results.json`
 
 The automated suite checks geometry, but acceptance also included human inspection of the homepage, compact News and More Games first viewports, About hierarchy, and the physical-card presentation.
+
+## Public acceptance
+
+The exact `701cf3f234e40e72dd7f0dfc5f357c1bea881c95` Pages deployment passed the same app-parity suite at `https://4ohi.com`. Public machine-readable evidence is `docs/visual-evidence/app-parity-public-results.json`; approved local screenshots remain unchanged.

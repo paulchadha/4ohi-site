@@ -1,0 +1,459 @@
+{
+  "base": "https://4ohi.com",
+  "checkedAt": "2026-07-26T17:51:05.500Z",
+  "pages": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "palace.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "palace-play.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "palace-story.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "palace-faq.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-why-were-building-palace.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-palace-enters-founder-testing.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-welcome-to-four-of-hearts.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-meet-the-four-games.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-building-a-safer-card-table.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "games.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "play.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "hearts-play.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "spades-play.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "euchre-play.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "about.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "support.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "privacy.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "security.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "terms.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "contact.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "404.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "errors": []
+    }
+  ],
+  "modes": [
+    {
+      "locale": "en",
+      "mode": "palace",
+      "lang": "en",
+      "dir": "ltr",
+      "name": "Palace",
+      "navName": "Palace",
+      "playLabel": "Play Palace",
+      "newsLabel": "Palace News",
+      "linksPreserve": true
+    },
+    {
+      "locale": "en",
+      "mode": "shed",
+      "lang": "en",
+      "dir": "ltr",
+      "name": "Shed",
+      "navName": "Shed",
+      "playLabel": "Play Shed",
+      "newsLabel": "Shed News",
+      "linksPreserve": true
+    },
+    {
+      "locale": "fr",
+      "mode": "shed",
+      "lang": "fr",
+      "dir": "ltr",
+      "name": "Shed",
+      "navName": "Shed",
+      "playLabel": "Jouer à Shed",
+      "newsLabel": "Actualités Shed",
+      "linksPreserve": true
+    },
+    {
+      "locale": "es",
+      "mode": "palace",
+      "lang": "es",
+      "dir": "ltr",
+      "name": "Palace",
+      "navName": "Palace",
+      "playLabel": "Jugar a Palace",
+      "newsLabel": "Noticias de Palace",
+      "linksPreserve": true
+    },
+    {
+      "locale": "hi",
+      "mode": "shed",
+      "lang": "hi",
+      "dir": "ltr",
+      "name": "Shed",
+      "navName": "Shed",
+      "playLabel": "Shed खेलें",
+      "newsLabel": "Shed समाचार",
+      "linksPreserve": true
+    },
+    {
+      "locale": "zh-Hans",
+      "mode": "palace",
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "name": "Palace",
+      "navName": "Palace",
+      "playLabel": "试玩 Palace",
+      "newsLabel": "Palace 新闻",
+      "linksPreserve": true
+    },
+    {
+      "locale": "he",
+      "mode": "shed",
+      "lang": "he",
+      "dir": "rtl",
+      "name": "Shed",
+      "navName": "Shed",
+      "playLabel": "לשחק Shed",
+      "newsLabel": "חדשות Shed",
+      "linksPreserve": true
+    },
+    {
+      "locale": "ar",
+      "mode": "palace",
+      "lang": "ar",
+      "dir": "rtl",
+      "name": "Palace",
+      "navName": "Palace",
+      "playLabel": "العب Palace",
+      "newsLabel": "أخبار Palace",
+      "linksPreserve": true
+    },
+    {
+      "locale": "en-CA-fun",
+      "mode": "shed",
+      "lang": "en-CA-fun",
+      "dir": "ltr",
+      "name": "Shed",
+      "navName": "Shed",
+      "playLabel": "Give Shed a go",
+      "newsLabel": "Shed News, eh?",
+      "linksPreserve": true
+    }
+  ],
+  "layouts": {
+    "app-home-1440x900.png": {
+      "overflow": false,
+      "headerBottom": 89,
+      "h1Bottom": 636,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-home-390x844.png": {
+      "overflow": false,
+      "headerBottom": 89,
+      "h1Bottom": 636,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-news-1440x900.png": {
+      "overflow": false,
+      "headerBottom": 89,
+      "h1Bottom": 273,
+      "newsTop": 479,
+      "gamesTop": 0
+    },
+    "app-games-1440x900.png": {
+      "overflow": false,
+      "headerBottom": 89,
+      "h1Bottom": 343,
+      "newsTop": 0,
+      "gamesTop": 518
+    },
+    "app-about-1440x900.png": {
+      "overflow": false,
+      "headerBottom": 89,
+      "h1Bottom": 543,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-mini-match-390x844.png": {
+      "overflow": false,
+      "headerBottom": 89,
+      "h1Bottom": 148,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-mini-match-ar-shed-390x844.png": {
+      "overflow": false,
+      "headerBottom": 89,
+      "h1Bottom": 148,
+      "newsTop": 0,
+      "gamesTop": 0
+    }
+  },
+  "tutorials": [
+    {
+      "game": "Palace/Shed",
+      "complete": true
+    },
+    {
+      "game": "hearts",
+      "complete": true
+    },
+    {
+      "game": "spades",
+      "complete": true
+    },
+    {
+      "game": "euchre",
+      "complete": true
+    }
+  ],
+  "privacy": {
+    "cookies": "",
+    "localStorage": 0,
+    "sessionStorage": 0,
+    "external": []
+  },
+  "failures": []
+}
