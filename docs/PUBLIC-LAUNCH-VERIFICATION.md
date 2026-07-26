@@ -78,7 +78,10 @@ The generated redesign passed static validation for 22 pages and the complete lo
 - GitHub Pages reports `https_enforced: true`, `protected_domain_state: verified`, `pending_domain_unverified_at: null`, and `status: built`.
 - Public A and AAAA records are the four GitHub Pages addresses; `www` is `paulchadha.github.io`.
 - Proton preservation check: MX remains `mail.protonmail.ch` priority 10 and `mailsec.protonmail.ch` priority 20; SPF and Proton verification TXT remain present. No DNS or mail record was changed.
-- Full public browser suite: 21 content routes, 32 required responsive compositions, homepage countdown/logo/CTA, five-scene Palace completion, ten burn, opponent pickup, four power cards, three levels, Palace/Shed/Easter-egg reset, three secondary tutorials, privacy center, custom 404, metadata, robots, sitemap, RSS, keyboard entry, 44-pixel targets, 125% text zoom, and reduced motion all passed.
+- Full public browser suite: 21 content routes, 32 required responsive compositions, homepage countdown/logo/CTA, continuous Palace mini-match completion, ten burn, opponent pickup, four power cards, three levels, Palace/Shed/Easter-egg reset, three secondary tutorials, privacy center, custom 404, metadata, robots, sitemap, RSS, keyboard entry, 44-pixel targets, 125% text zoom, and reduced motion all passed.
 - Public runtime: zero cookies, localStorage, sessionStorage, third-party requests, insecure requests, failed requests, mixed content, or console errors.
 - Public transfer measurements: homepage 232,348 bytes at 1440×900; Palace tutorial 78,817 bytes at 390×844.
 - Evidence: `docs/visual-evidence/founder-redesign-public-results.json` plus the refreshed screenshot set in `docs/visual-evidence/`.
+## Founder experience evidence — July 26, 2026
+
+Local integrated evidence is `visual-evidence/founder-experience-results.json` plus four mini-match screenshots. The gate passed 22 pages, eight viewports, ten locale/name combinations, full tutorial/replay, Easter-egg/reset, RTL, metadata, and zero-storage privacy. Public exact-SHA evidence must be rerun after push and Pages deployment.

@@ -66,6 +66,9 @@ Never commit credentials, tokens, recovery codes, private keys, private correspo
 
 ## Founder-directed Palace experience (July 26, 2026)
 
-The current public build makes Palace the first-viewport flagship, uses the canonical four-heart 4OH mark, centralizes the October 17 countdown, provides a five-scene Palace table tutorial, documents the Four of Hearts power cards, separates Palace fact/folklore/legend, tells the four-daughter family story, provides session-only Palace/Shed naming with a documented Easter egg, and reports an intentionally tracker-free Privacy Choices state.
+The current public build makes Palace the first-viewport flagship, uses the canonical four-heart 4OH mark, centralizes the October 17 countdown, provides one continuous app-parity Palace mini-match, documents the Four of Hearts power cards, separates Palace fact/folklore/legend, tells the four-daughter family story, provides session-only Palace/Shed naming with a documented Easter egg, and reports an intentionally tracker-free Privacy Choices state.
 
 Key maintenance records: `docs/COUNTDOWN-CONFIGURATION.md`, `docs/PALACE-NAME-SETTINGS.md`, `docs/FOUNDER-CLAIM-APPROVAL.md`, `docs/PRIVACY-ARCHITECTURE.md`, and `docs/ROLLBACK.md`.
+## Founder experience recovery (July 26, 2026)
+
+The current public candidate uses the app-parity Palace mini-match, URL-only language/name settings, RTL support, Canadian-fun copy, and the private traditional-name Easter egg. See `docs/FOUNDER-EXPERIENCE-RELEASE.md`, `docs/LOCALIZATION-ARCHITECTURE.md`, and `docs/NAMING-AND-EASTER-EGG.md`. Run `scripts/validate-site.mjs` and `scripts/verify-founder-experience.mjs` before release.

@@ -15,3 +15,6 @@
 | Public app availability | Unresolved future fact | Site says Internal Alpha/currently testing | Do not claim release until separately verified |
 
 History copy separates sourced description, commonly reported table tradition, atmospheric folklore, product rules, and hyperbole. Qualified history/legal review remains required before commercial reliance.
+## Integrated About copy
+
+The July 26 About page combines the founder-supplied 50+ years, 20+ years in a university environment, game theory/strategy/teaching/testing interests, four-daughter origin, and smile-first philosophy. “Gameologist” is explicitly playful. No degree, professorship, employer, or publication is claimed. Final factual approval remains required.

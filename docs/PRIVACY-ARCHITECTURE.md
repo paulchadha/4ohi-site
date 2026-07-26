@@ -7,3 +7,6 @@ The public site is static and uses no analytics, advertising, pixels, third-part
 `privacy.html` is the Privacy Choices center and policy. It reports the actual state instead of displaying a fake consent banner. GPC and DNT do not need to disable optional tracking because no optional tracking loads. Any future nonessential storage must remain off by default, receive applicable affirmative consent before loading, offer equally easy rejection/withdrawal, and trigger policy and QA updates.
 
 GitHub Pages and normal network infrastructure may process request metadata needed to deliver and protect the site. Support email receives only information a sender chooses to provide. California, European, UK, children/family, retention, and applicability questions remain marked for qualified legal review; the site claims no legal certification.
+## Language and naming state
+
+Language and table name are URL parameters only. The verified implementation creates no cookie, local-storage entry, session-storage entry, remote translation call, or analytics request. The private alternate name is not inferred from DNS, browser language, identity, or a previous visit.

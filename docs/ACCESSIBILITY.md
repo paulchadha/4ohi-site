@@ -14,4 +14,4 @@ Browser automation does not replace screen-reader and physical-device testing. B
 
 ## Founder redesign verification
 
-The five-scene Palace tutorial uses native buttons, visible focus, live status text, non-color labels, minimum 44-pixel primary controls, keyboard and touch input, and a reduced-motion path. The Palace/Shed control uses `aria-pressed`; the secret sequence does not announce intermediate taps. The first focus target remains Skip to content. Browser acceptance passed 125% text zoom and all required viewports without horizontal overflow.
+The continuous Palace mini-match uses native buttons, visible focus, live status text, non-color labels, minimum 44-pixel primary controls, keyboard and touch input, and a reduced-motion path. The Palace/Shed control uses `aria-pressed`; the secret sequence does not announce intermediate taps. The first focus target remains Skip to content. Browser acceptance passed 125% text zoom and all required viewports without horizontal overflow.

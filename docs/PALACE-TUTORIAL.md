@@ -20,6 +20,9 @@ The active arena uses readable rank/suit cards, a fanned responsive hand, a larg
 
 Visual acceptance includes desktop and phone homepage captures plus the full phone tutorial page. The active interaction is also covered by machine-readable state transitions and the final heading `You cleared the Palace.`.
 
-## Founder-directed five-scene table (supersedes the earlier three-move preview)
+## Continuous app-parity mini-match (supersedes all scene-based previews)
 
 `assets/palace-tutorial-v3.js` runs five connected scenes: recoverable match-or-beat play; a visible ten burn; an opponent thinking pause and pile pickup; interactive 2/7/8/10 power-card teaching; and hand/face-up/face-down progression. Completion offers replay, full rules, Palace history, and news. Cards are real buttons with opaque faces, stable corners/suits, selection lift, hand reflow, pile depth, keyboard/touch input, live feedback, and reduced-motion alternatives. The tutorial performs no fetch after initial load and uses only page memory.
+## Continuous mini-match supersession
+
+The prior five-scene Field Training implementation is retired. `assets/palace-tutorial-v3.js` now presents one continuous mini-match: match/beat, ten burn, opponent pickup, four power cards, three levels, crown completion, and replay. Do not reintroduce a scene rail, training language, small central table, or large unused margins.

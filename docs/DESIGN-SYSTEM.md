@@ -29,3 +29,6 @@ The first viewport uses a single editorial headline, cinematic negative space, a
 ## Founder-directed composition
 
 `assets/founder-redesign.css` is the final visual layer. It replaces repeated oversized cards with immersive chapters, editorial rule ribbons, full-width storytelling, cinematic art treatment, and a real table surface. Impact/Arial Narrow system typography supplies game-poster force without remote fonts. Palace owns midnight navy, electric blue, castle light, gold, and restrained silver; secondary games retain ruby, purple, and emerald identities. The approved 4OH mark remains the navigation, favicon, touch, footer, and social identity.
+## App-parity table layer (July 26, 2026)
+
+`assets/app-experience-v2.css` is the Palace product layer: navy/teal felt, cyan information, gold action states, compact product chrome, overlapping readable cards, full-viewport mini-match geometry, RTL card correction, 44-pixel controls, reduced motion, and short-landscape recovery. It derives from the approved public app presentation audit recorded in `FOUNDER-EXPERIENCE-RELEASE.md`.

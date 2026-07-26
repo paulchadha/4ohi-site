@@ -1,0 +1,519 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "checkedAt": "2026-07-26T16:19:13.544Z",
+  "pages": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Palace Is Coming | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/",
+      "description": "The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "palace.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Palace | The Flagship Game from Four of Hearts",
+      "canonical": "https://4ohi.com/palace.html",
+      "description": "Discover Palace: match, beat, burn, and clear three levels in the flagship Four of Hearts card game now in Internal Alpha.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "palace-play.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Play Palace | Interactive Mini-Match",
+      "canonical": "https://4ohi.com/palace-play.html",
+      "description": "Learn Palace inside one immersive mini-match: match or beat, burn with ten, pick up, use power cards, and clear all three levels.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "palace-story.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Palace: Fact, Folklore & Legend | Four of Hearts",
+      "canonical": "https://4ohi.com/palace-story.html",
+      "description": "Explore what is documented about Palace, what players pass along, and the clearly labeled legends that travel with the game.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news.html",
+      "status": 200,
+      "h1": 1,
+      "title": "News | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/news.html",
+      "description": "Palace development stories, studio updates, and honest Internal Alpha news from Four of Hearts Interactive.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-why-were-building-palace.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Why We’re Building Palace | Four of Hearts News",
+      "canonical": "https://4ohi.com/news-why-were-building-palace.html",
+      "description": "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-palace-enters-founder-testing.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Palace Enters Founder Testing | Four of Hearts News",
+      "canonical": "https://4ohi.com/news-palace-enters-founder-testing.html",
+      "description": "The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-welcome-to-four-of-hearts.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Welcome to Four of Hearts Interactive | Four of Hearts News",
+      "canonical": "https://4ohi.com/news-welcome-to-four-of-hearts.html",
+      "description": "Meet the South Dakota studio building Palace and a growing family of timeless card-table experiences.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-meet-the-four-games.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Meet the Four Games in the 4OH Family | Four of Hearts News",
+      "canonical": "https://4ohi.com/news-meet-the-four-games.html",
+      "description": "Palace leads the table, with Hearts, Spades, and Euchre bringing three distinct kinds of strategy to the studio.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "news-building-a-safer-card-table.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Building a Safer, Family-Friendly Card Table | Four of Hearts News",
+      "canonical": "https://4ohi.com/news-building-a-safer-card-table.html",
+      "description": "How Four of Hearts approaches clear policies, restrained data use, accessibility, and honest Internal Alpha communication.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "games.html",
+      "status": 200,
+      "h1": 1,
+      "title": "More Games from Four of Hearts",
+      "canonical": "https://4ohi.com/games.html",
+      "description": "Meet Hearts, Spades, and Euchre—the growing game family behind flagship Palace—and try an accessible Internal Alpha teaching moment for each.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "play.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Quick Play | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/play.html",
+      "description": "Start the flagship Palace preview or try short Hearts, Spades, and Euchre teaching moments from Four of Hearts Interactive.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "hearts-play.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Hearts Quick Play | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/hearts-play.html",
+      "description": "Try two accessible Hearts teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "spades-play.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Spades Quick Play | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/spades-play.html",
+      "description": "Try two accessible Spades teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "euchre-play.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Euchre Quick Play | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/euchre-play.html",
+      "description": "Try two accessible Euchre teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "about.html",
+      "status": 200,
+      "h1": 1,
+      "title": "About Four of Hearts Interactive | One Family. Many Games.",
+      "canonical": "https://4ohi.com/about.html",
+      "description": "Meet the family and lifelong gameologist behind Four of Hearts Interactive, the studio bringing Palace to its definitive digital table.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "support.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Support | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/support.html",
+      "description": "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "privacy.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy Choices & Policy | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/privacy.html",
+      "description": "Four of Hearts designed this website to avoid optional tracking: no analytics, advertising, cookies, browser storage, or visitor profiles.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "security.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Security | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/security.html",
+      "description": "Responsible security-reporting guidance for Four of Hearts Interactive products and website.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "terms.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Internal Alpha Terms | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/terms.html",
+      "description": "Conservative terms for invited Internal Alpha use of Four of Hearts Interactive games and website tutorials.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "contact.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Contact | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/contact.html",
+      "description": "Contact Four of Hearts Interactive, LLC in South Dakota about Palace, support, privacy, or security.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    },
+    {
+      "file": "404.html",
+      "status": 200,
+      "h1": 1,
+      "title": "Page Not Found | Four of Hearts Interactive",
+      "canonical": "https://4ohi.com/404.html",
+      "description": "The requested Four of Hearts page could not be found.",
+      "overflow": false,
+      "trackers": [],
+      "alternates": 9,
+      "errors": []
+    }
+  ],
+  "viewports": [
+    {
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "width": 412,
+      "height": 915,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "tableWidth": 1228,
+      "tableHeight": 607,
+      "handBottom": 597,
+      "viewport": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "combinations": [
+    {
+      "requested": [
+        "en",
+        "palace",
+        "ltr"
+      ],
+      "lang": "en",
+      "dir": "ltr",
+      "game": "Palace",
+      "countdown": "The gates open in82 : 12 : 40 : 27",
+      "settings": "Settings",
+      "href": "http://127.0.0.1:4173/palace.html?lang=en"
+    },
+    {
+      "requested": [
+        "en",
+        "shed",
+        "ltr"
+      ],
+      "lang": "en",
+      "dir": "ltr",
+      "game": "Shed",
+      "countdown": "The gates open in82 : 12 : 40 : 26",
+      "settings": "Settings",
+      "href": "http://127.0.0.1:4173/palace.html?lang=en&game=shed"
+    },
+    {
+      "requested": [
+        "fr",
+        "palace",
+        "ltr"
+      ],
+      "lang": "fr",
+      "dir": "ltr",
+      "game": "Palace",
+      "countdown": "Les portes s’ouvrent dans82 : 12 : 40 : 25",
+      "settings": "Réglages",
+      "href": "http://127.0.0.1:4173/palace.html?lang=fr"
+    },
+    {
+      "requested": [
+        "fr",
+        "shed",
+        "ltr"
+      ],
+      "lang": "fr",
+      "dir": "ltr",
+      "game": "Shed",
+      "countdown": "Les portes s’ouvrent dans82 : 12 : 40 : 25",
+      "settings": "Réglages",
+      "href": "http://127.0.0.1:4173/palace.html?lang=fr&game=shed"
+    },
+    {
+      "requested": [
+        "ar",
+        "palace",
+        "rtl"
+      ],
+      "lang": "ar",
+      "dir": "rtl",
+      "game": "القصر",
+      "countdown": "تُفتح البوابات خلال82 : 12 : 40 : 24",
+      "settings": "الإعدادات",
+      "href": "http://127.0.0.1:4173/palace.html?lang=ar"
+    },
+    {
+      "requested": [
+        "he",
+        "shed",
+        "rtl"
+      ],
+      "lang": "he",
+      "dir": "rtl",
+      "game": "Shed",
+      "countdown": "השערים נפתחים בעוד82 : 12 : 40 : 24",
+      "settings": "הגדרות",
+      "href": "http://127.0.0.1:4173/palace.html?lang=he&game=shed"
+    },
+    {
+      "requested": [
+        "en-CA-fun",
+        "palace",
+        "ltr"
+      ],
+      "lang": "en-CA-fun",
+      "dir": "ltr",
+      "game": "Palace",
+      "countdown": "Give ’er—the gates open in82 : 12 : 40 : 23",
+      "settings": "Settings, eh?",
+      "href": "http://127.0.0.1:4173/palace.html?lang=en-CA-fun"
+    },
+    {
+      "requested": [
+        "es",
+        "palace",
+        "ltr"
+      ],
+      "lang": "es",
+      "dir": "ltr",
+      "game": "Palace",
+      "countdown": "Las puertas se abren en82 : 12 : 40 : 22",
+      "settings": "Ajustes",
+      "href": "http://127.0.0.1:4173/palace.html?lang=es"
+    },
+    {
+      "requested": [
+        "zh-Hans",
+        "palace",
+        "ltr"
+      ],
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "game": "宫殿",
+      "countdown": "城门开启倒计时82 : 12 : 40 : 22",
+      "settings": "设置",
+      "href": "http://127.0.0.1:4173/palace.html?lang=zh-Hans"
+    },
+    {
+      "requested": [
+        "hi",
+        "palace",
+        "ltr"
+      ],
+      "lang": "hi",
+      "dir": "ltr",
+      "game": "पैलेस",
+      "countdown": "दरवाज़े खुलने में82 : 12 : 40 : 21",
+      "settings": "सेटिंग्स",
+      "href": "http://127.0.0.1:4173/palace.html?lang=hi"
+    }
+  ],
+  "tutorial": [
+    "Four is below six. Match the six, play higher, or use the ten.",
+    {
+      "replayed": 1,
+      "finalChapter": "match"
+    }
+  ],
+  "privacy": {
+    "cookies": "",
+    "localStorage": 0,
+    "sessionStorage": 0,
+    "externalResources": []
+  },
+  "failures": [],
+  "naming": {
+    "secretUrl": "http://127.0.0.1:4173/palace.html?lang=fr&game=shithead",
+    "secretName": "Shithead",
+    "resetName": "Palace"
+  }
+}

@@ -50,3 +50,6 @@ Read-only review was limited to `Founder-Binder/4OH_Final_App_Design_Tiles.zip` 
 ## Founder redesign usage
 
 The canonical approved four-heart 4OH mark is used without reconstruction in the upper-left navigation, mobile navigation, favicon, Apple touch icon, footer mark, structured-data publisher identity, and existing social preview. Palace castle derivatives remain the immersive flagship environment. No private Founder’s Binder material was added to public output.
+## Public app presentation references
+
+The July 26 app-parity audit copied three public presentation references into `docs/visual-evidence` for evidence only. They are not requested by public pages. Production continues to use the approved 4OH mark, Palace tile, and responsive Palace hero assets already documented here.

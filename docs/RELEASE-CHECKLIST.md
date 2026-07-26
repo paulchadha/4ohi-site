@@ -69,3 +69,12 @@ Last run: 2026-07-26
 - [x] Local browser suite passed 21 routes, 32 viewport checks, three secondary tutorials, reduced motion, metadata/discovery, zero cookies/storage/third-party requests/console errors/failed requests.
 - [x] Exact-SHA public deployment and public HTTPS acceptance recorded after commit/push.
 - [ ] Founder factual approvals and qualified legal/history review completed before commercial reliance.
+## Founder experience release gate
+
+- [x] Field Training removed and continuous mini-match implemented.
+- [x] Eight locale routes and RTL behavior verified locally.
+- [x] Palace/Shed/private-name URL-state behavior verified locally.
+- [x] Canadian-fun copy reviewed for affectionate, non-degrading tone.
+- [x] Founder story integrated with claim boundaries.
+- [x] Local semantic and Chromium gates passed.
+- [ ] Exact-SHA GitHub Pages deployment verified publicly.
