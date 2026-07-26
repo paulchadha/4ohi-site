@@ -4,7 +4,8 @@
   const countdown = document.querySelector("[data-launch-countdown]");
   if (!countdown) return;
 
-  const target = new Date("2026-10-17T20:00:00-05:00").getTime();
+  const launchConfig = window.FOUR_HEARTS_CONFIG?.launch ?? {};
+  const target = new Date(launchConfig.target || "2026-10-17T00:00:00-05:00").getTime();
   const fields = {
     days: countdown.querySelector('[data-countdown="days"]'),
     hours: countdown.querySelector('[data-countdown="hours"]'),
@@ -33,7 +34,7 @@
 
     if (remaining === 0) {
       const label = countdown.querySelector(".launch-countdown-label");
-      if (label) label.textContent = "The gate is open";
+      if (label) label.textContent = launchConfig.expiredLabel || "The gates are opening";
     }
   };
 

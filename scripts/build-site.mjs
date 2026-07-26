@@ -87,8 +87,10 @@ const head = ({ title, description, path, image = "assets/og-brand.jpg", imageAl
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/palace-site.css">
   <link rel="stylesheet" href="assets/palace-launch.css">
+  <link rel="stylesheet" href="assets/founder-redesign.css">
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
+  <script src="assets/palace-name.js" defer></script>
   <script src="assets/launch-countdown.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
@@ -159,85 +161,37 @@ write("index.html", page({
         <div class="hero-topline"><span class="transmission-badge">Transmission 001</span><span>Four of Hearts Interactive presents</span></div>
         <a class="hero-news-link" href="news.html"><span>Latest</span>${featured.title}<b aria-hidden="true">→</b></a>
         <div class="hero-copy">
-          <p class="hero-game-name">The world's favorite secret card game</p>
-          <h1>The table has waited <span class="gold">long enough.</span></h1>
-          <p class="launch-deckline">Passed through schools, hostels, kitchens, and continents under a dozen names. <strong>Palace is finally becoming an app?built by Four of Hearts.</strong></p>
-          <div class="launch-countdown" data-launch-countdown role="timer"><span class="launch-countdown-label">The gates open<br>October 17, 2026</span><span class="countdown-unit"><strong data-countdown="days">83</strong><span>Days</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="hours">00</strong><span>Hours</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="minutes">00</strong><span>Min</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="seconds">00</strong><span>Sec</span></span></div>
+          <p class="hero-game-name">The hottest card game in the galaxy</p>
+          <h1><span data-game-name>Palace</span> is finally <span class="gold">coming home.</span></h1>
+          <p class="launch-deckline">Three levels. One pile. One crown. <strong>The table legend is finally becoming an app—built by Four of Hearts.</strong></p>
+          <div class="launch-countdown" data-launch-countdown role="timer"><span class="launch-countdown-label">The Palace opens in<br>October 17, 2026</span><span class="countdown-unit"><strong data-countdown="days">83</strong><span>Days</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="hours">00</strong><span>Hours</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="minutes">00</strong><span>Min</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="seconds">00</strong><span>Sec</span></span></div>
           <div class="actions">
-            <a class="button" href="palace-play.html">Play in 60 seconds</a>
-            <a class="button secondary" href="palace.html">Enter the Palace</a>
+            <a class="button" href="palace-play.html">Play the Palace tutorial</a>
+            <a class="button secondary" href="palace.html">Discover Palace</a>
           </div>
+          <div class="hero-status-line"><span>Internal Alpha</span><span>Currently in testing</span><a href="news.html">News from the table →</a></div>
         </div>
         <div class="hero-layer-rail" aria-label="The three Palace layers"><span><b>01</b>Your hand</span><span><b>02</b>Face-up reserve</span><span><b>03</b>Hidden finale</span></div>
         <a class="hero-scroll" href="#palace-rhythm">Enter the Palace <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
-    <div class="myth-strip" aria-label="Names used for the Palace card-game family"><div class="myth-strip-track">PALACE /// KARMA /// SHED /// CHINA HAND /// SHITHEAD /// THE GAME THE WORLD KEEPS TEACHING ITSELF /// PALACE /// KARMA /// SHED /// CHINA HAND ///</div></div>
+    <div class="myth-strip" aria-label="Names used for the Palace card-game family"><div class="myth-strip-track">PALACE /// SHED /// KARMA /// CHINA HAND /// PASSED HAND TO HAND /// BUILT FOR ANY TABLE /// PALACE /// SHED /// KARMA ///</div></div>
 
+    <section class="section story-chapter" id="palace-rhythm"><div class="shell story-split">
+      <div class="story-copy" data-reveal><p class="eyebrow">The game in one breath</p><h2>Match it. Beat it. Change the game.</h2><p class="lede">Play the same rank, climb higher, or turn the table with a power card. Clear your hand, your face-up cards, and then the cards nobody has seen—not even you.</p><div class="actions"><a class="button blue" href="palace-play.html">Learn by playing</a><a class="text-link" href="palace.html#rules">See the full rules</a></div></div>
+      <div class="palace-levels" aria-label="The three levels of Palace" data-reveal><article class="palace-level"><b>Level 01</b><strong>Cards in hand</strong><span>Your plan begins here.</span></article><article class="palace-level"><b>Level 02</b><strong>Face-up cards</strong><span>Everyone sees your ending.</span></article><article class="palace-level"><b>Level 03</b><strong>Face-down cards</strong><span>Now trust the Palace.</span></article></div>
+    </div></section>
 
-    <section class="section navy">
-      <div class="shell palace-band">
-        <div class="layer-stack" aria-label="Three layers of Palace" data-reveal>
-          <div class="layer-card"><strong>Face-down finale</strong><span>The mystery waiting underneath.</span></div>
-          <div class="layer-card"><strong>Face-up reserve</strong><span>Your visible plan for the endgame.</span></div>
-          <div class="layer-card"><strong>Your hand</strong><span>Match, climb, and choose what to save.</span></div>
-        </div>
-        <div data-reveal>
-          <p class="eyebrow">Three levels. One goal.</p>
-          <h2>Clear every card in your Palace.</h2>
-          <p class="lede">Play through your hand, unlock the cards everyone can see, then trust the hidden finale. Every layer changes what you know—and what you dare to play.</p>
-          <div class="actions">
-            <a class="button blue" href="palace-play.html">Learn by playing</a>
-            <a class="text-link" href="palace-story.html">Follow the game’s story</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="rule-ribbon" id="rules" aria-labelledby="power-title"><h2 class="sr-only" id="power-title">Palace power cards</h2><article><b>2</b><h3>Resets</h3><p>Drop a two and the next player may start fresh with any card.</p></article><article><b>7</b><h3>Requires lower</h3><p>The next ordinary card must be seven or lower. High cards suddenly have nowhere to go.</p></article><article><b>8</b><h3>Is transparent</h3><p>Ignore the eight when reading the pile. The card beneath still sets the challenge.</p></article><article><b>10</b><h3>Burns</h3><p>Clear the entire pile, take control, and lead the next play.</p></article></section>
 
-    <section class="section" id="palace-rhythm">
-      <div class="shell">
-        <div class="section-heading">
-          <div><p class="eyebrow">The Palace rhythm</p><h2>Easy first hand. Memorable last card.</h2></div>
-          <p class="lede">The rules create a clean arc from control to uncertainty. Strategy matters, but the hidden cards keep every finish alive.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="panel feature-card" data-reveal><span class="number">01</span><h3>Read the pile</h3><p>Match the top rank or climb higher. A legal move is simple; the right move asks what comes next.</p></article>
-          <article class="panel feature-card" data-reveal><span class="number">02</span><h3>Protect the ending</h3><p>Your face-up reserve is public information. Build a finish that can survive the table.</p></article>
-          <article class="panel feature-card" data-reveal><span class="number">03</span><h3>Trust the unknown</h3><p>The final face-down cards arrive without a preview. That last reveal is pure Palace.</p></article>
-        </div>
-      </div>
-    </section>
+    <section class="section navy"><div class="shell quote-stage"><div class="quote-mark" aria-hidden="true">“</div><blockquote>Easy enough to teach in a minute. Wild enough to become the story everyone remembers.<cite>Why Palace survives every table</cite></blockquote></div></section>
 
-    <section class="section royal">
-      <div class="shell">
-        <div class="featured-news panel" data-reveal>
-          <div class="news-art"><img src="${featured.image}" alt="${featured.imageAlt}" width="512" height="512" loading="lazy"></div>
-          <div class="news-body">
-            <div class="news-meta"><span>Featured · ${featured.category}</span><time datetime="${featured.date}">${formatDate(featured.date)}</time></div>
-            <h2>${featured.title}</h2>
-            <p>${featured.description}</p>
-            <a class="button small" href="${articleFile(featured.slug)}">Read the story</a>
-          </div>
-        </div>
-        <div class="actions"><a class="text-link" href="news.html">Visit the newsroom</a></div>
-      </div>
-    </section>
+    <section class="section royal"><div class="shell story-split"><div><p class="eyebrow">Featured from the newsroom</p><h2>${featured.title}</h2><p class="lede">${featured.description}</p><div class="actions"><a class="button" href="${articleFile(featured.slug)}">Read the story</a><a class="text-link" href="news.html">All Palace news</a></div></div><a class="news-art cinematic-news" href="${articleFile(featured.slug)}"><img src="${featured.image}" alt="${featured.imageAlt}" width="512" height="512" loading="lazy"></a></div></section>
 
-    <section class="section">
-      <div class="shell">
-        <div class="section-heading">
-          <div><p class="eyebrow">More games from 4OH</p><h2>One flagship. A growing family.</h2></div>
-          <p class="lede">Palace leads the way. Hearts, Spades, and Euchre bring three more timeless kinds of table strategy—all currently in Internal Alpha.</p>
-        </div>
-        <div class="game-grid">
-          <article class="panel game-tile hearts" data-reveal><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Hearts</h3><p>Follow suit, duck the points, and know when to risk everything.</p><a class="text-link" href="hearts-play.html">Try the lesson</a></div></article>
-          <article class="panel game-tile spades" data-reveal><img src="assets/icon-spades-4hearts.webp" alt="Spades royal purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Spades</h3><p>Bid with care, work with your partner, and let trump change the trick.</p><a class="text-link" href="spades-play.html">Try the lesson</a></div></article>
-          <article class="panel game-tile euchre" data-reveal><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green playing-card artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Euchre</h3><p>Make the call, trust your partner, and remember where the bowers rule.</p><a class="text-link" href="euchre-play.html">Try the lesson</a></div></article>
-        </div>
-      </div>
-    </section>
+    <section class="section family-story"><div class="shell story-split"><div><p class="eyebrow">The four hearts behind the name</p><h2>Built from one family for many.</h2><div class="four-heart-line" aria-label="Four hearts"><span>♥</span><span>♥</span><span>♥</span><span>♥</span></div></div><div><p class="lede">Four daughters created the spark. Four hearts became the name. The company grew from a family table and one stubborn belief: life is short, playing together matters, and the best measure of a game is the smiles it leaves around the table.</p><p><strong>One Family. Many Games.</strong></p><a class="text-link" href="about.html">Meet Four of Hearts</a></div></div></section>
 
+    <section class="section"><div class="shell"><div class="section-heading"><div><p class="eyebrow">More games from Four of Hearts</p><h2>Three more seats are waiting.</h2></div><p class="lede">Palace leads. Hearts, Spades, and Euchre bring three more distinct table traditions—each currently in Internal Alpha.</p></div><div class="game-grid"><article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Hearts</h3><a class="text-link" href="hearts-play.html">Try Quick Play</a></div></article><article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Spades</h3><a class="text-link" href="spades-play.html">Try Quick Play</a></div></article><article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Try Quick Play</a></div></article></div></div></section>
     <section class="section compact navy">
       <div class="shell palace-band">
         <img src="assets/brand-mark-4oh.webp" alt="Four of Hearts Interactive emblem" width="570" height="365" loading="lazy">
@@ -247,106 +201,30 @@ write("index.html", page({
 }));
 
 write("palace.html", page({
-  title: "Palace | Flagship Card Game from Four of Hearts",
-  description: "Explore Palace, the flagship Four of Hearts shedding card game: three layers, readable strategy, hidden-card drama, and an honest Internal Alpha status.",
-  path: "/palace.html",
-  current: "palace",
-  image: "assets/icon-palace-4hearts.webp",
-  imageAlt: "Palace castle artwork",
-  jsonLd: {
-    "@context": "https://schema.org",
-    "@type": "Game",
-    name: "Palace",
-    description: "A three-layer shedding card game currently in Internal Alpha at Four of Hearts Interactive.",
-    publisher: { "@type": "Organization", name: company },
-    url: `${siteUrl}/palace.html`,
-    gameItem: "Standard playing cards"
-  },
+  title: "Palace | The Flagship Game from Four of Hearts",
+  description: "Discover Palace: match, beat, burn, and clear three levels in the flagship Four of Hearts card game now in Internal Alpha.",
+  path: "/palace.html", current: "palace", image: "assets/icon-palace-4hearts.webp", imageAlt: "Palace castle artwork", bodyClass: "palace-product",
+  jsonLd: { "@context":"https://schema.org", "@type":"Game", name:"Palace", description:"A three-level shedding card game in Internal Alpha at Four of Hearts Interactive.", publisher:{"@type":"Organization",name:company}, url:`${siteUrl}/palace.html`, gameItem:"Standard playing cards" },
   content: `
-    ${pageHero("The flagship experience", 'Welcome to <span class="metal-gold">Palace.</span>', "A shedding game with a visible plan, a hidden ending, and the kind of table story people teach to the next person.", '<div class="actions"><a class="button" href="palace-play.html">Play the preview</a><a class="button secondary" href="palace-story.html">Read the story</a></div>')}
-    <section class="section navy"><div class="shell palace-band">
-      <img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers" width="512" height="512">
-      <div data-reveal><span class="alpha-badge">Founder testing underway</span><p class="eyebrow">Distinctly Palace</p><h2>Control gives way to mystery.</h2><p class="lede">You begin with cards in hand, move to a visible reserve, and finish with cards no one has seen—not even you. The goal is to get rid of every card before the table catches you.</p></div>
-    </div></section>
-    <section class="section"><div class="shell">
-      <div class="section-heading"><div><p class="eyebrow">Why it stays with you</p><h2>A small rule set with a long memory.</h2></div><p class="lede">Palace creates tension without demanding a long explanation. The pile is readable, the choices are immediate, and the ending refuses to be predictable.</p></div>
-      <div class="feature-grid">
-        <article class="panel feature-card" data-reveal><span class="number">A</span><h3>Accessible</h3><p>Match or climb is an approachable first habit. Friendly contextual teaching handles the rest.</p></article>
-        <article class="panel feature-card" data-reveal><span class="number">K</span><h3>Strategic</h3><p>Strong cards solve today’s problem but may leave tomorrow’s pile harder to escape.</p></article>
-        <article class="panel feature-card" data-reveal><span class="number">?</span><h3>Uncertain</h3><p>Hidden cards turn a planned finish into a final act of nerve and luck.</p></article>
-      </div>
-    </div></section>
-    <section class="section navy palace-field-guide"><div class="shell">
-      <div class="section-heading"><div><p class="eyebrow">Palace field guide</p><h2>Know the table before it turns.</h2></div><p class="lede">The core rhythm is approachable. The tension comes from planning across three layers while the pile keeps changing.</p></div>
-      <div class="feature-grid">
-        <article class="panel feature-card" data-reveal><span class="number">01</span><h3>How to play</h3><p>Use the interactive preview to deal, match or climb, recover from a blocked hand, and reach the hidden finale.</p><a class="text-link" href="palace-play.html">Learn at the table</a></article>
-        <article class="panel feature-card" data-reveal><span class="number">02</span><h3>Strategy</h3><p>Keep flexible ranks, read the visible reserves, and avoid spending every strong answer before your final layers unlock.</p><a class="text-link" href="palace-play.html">Practice the rhythm</a></article>
-        <article class="panel feature-card" data-reveal><span class="number">03</span><h3>Special cards</h3><p>Palace traditions use exception ranks, but effects vary by table. Four of Hearts will publish its exact marked-card table only after founder approval.</p><span class="review-chip">Founder review open</span></article>
-      </div>
-    </div></section>
-    <section class="section"><div class="narrow faq-block">
-      <p class="eyebrow">Palace FAQ</p><h2>Before you take a seat.</h2>
-      <details><summary>Is the full Palace game publicly available?</summary><p>Not yet. Palace is in Internal Alpha. This website offers a self-contained teaching preview, not a production multiplayer match or store download.</p></details>
-      <details><summary>Why are exact special-card effects not listed?</summary><p>Palace has many household variants. The Four of Hearts effects are still awaiting final founder approval, so the public site teaches special-card awareness without inventing a rule.</p></details>
-      <details><summary>Does the tutorial save anything?</summary><p>No. It uses page memory only: no account, backend, cookies, analytics, local storage, or saved progress.</p></details>
-      <details><summary>Where can I follow development?</summary><p>The <a href="news.html">Newsroom</a> publishes honest Internal Alpha updates, and <a href="support.html">Support</a> explains how invited testers can report issues.</p></details>
-    </div></section>
-    <section class="section royal"><div class="shell">
-      <div class="section-heading"><div><p class="eyebrow">Learn inside the action</p><h2>Your first Palace takes about a minute.</h2></div><p class="lede">Deal the three layers, make legal plays, take a pile, notice special cards, and clear the hidden finale. No account and nothing saved.</p></div>
-      <a class="button" href="palace-play.html">Start the Palace preview</a>
-    </div></section>
-    <section class="section"><div class="shell palace-band">
-      <div data-reveal><p class="eyebrow">A folk game, not a fixed artifact</p><h2>Passed from table to table.</h2><p class="lede">Palace belongs to a wider shedding-game family known by several regional names and house-rule traditions. Our story separates documented references from uncertain origins—and the Four of Hearts adaptation from both.</p><div class="actions"><a class="button secondary" href="palace-story.html">Explore the history</a></div></div>
-      <div class="panel feature-card" data-reveal><span class="number">4♥</span><h3>The modern table</h3><p>Four of Hearts is shaping a clear, responsive Palace for contemporary phones and future real-time play. It remains in Internal Alpha.</p></div>
-    </div></section>`
+    ${pageHero("The Four of Hearts flagship", '<span data-game-name>Palace</span> is calling.', "Match it. Beat it. Burn it. Rule the table. The card-table legend is finally becoming an app.", '<div class="hero-status-line"><span>Internal Alpha</span><span>Founder testing underway</span></div><div class="actions"><a class="button" href="palace-play.html">Play the Palace tutorial</a><a class="button secondary" href="#rules">How to play</a></div>')}
+    <section class="product-manifesto"><div class="shell"><div class="manifesto-line"><b>01</b><div><p class="eyebrow">Immediate</p><h2>Match it or climb higher.</h2><p>Read the top card. Play the same rank or anything higher. One rule gets everyone into the game; every card you save shapes the ending.</p></div></div><div class="manifesto-line"><b>02</b><div><p class="eyebrow">Explosive</p><h2>Power cards rewrite the table.</h2><p>Two resets. Seven forces lower. Eight turns transparent. Ten burns the pile. These are the Four of Hearts rules.</p></div></div><div class="manifesto-line"><b>03</b><div><p class="eyebrow">Unforgettable</p><h2>The last cards are a mystery.</h2><p>Finish your hand, then your face-up row, then reveal the face-down finale one card at a time.</p></div></div></div></section>
+    <section class="rule-ribbon" id="rules"><h2 class="sr-only">Palace power cards</h2><article><b>2</b><h3>Reset</h3><p>Anything may follow.</p></article><article><b>7</b><h3>Lower</h3><p>Seven or lower must follow.</p></article><article><b>8</b><h3>Transparent</h3><p>Read through to the card below.</p></article><article><b>10</b><h3>Burn</h3><p>Clear the pile and lead again.</p></article></section>
+    <section class="section navy"><div class="shell story-split"><div><p class="eyebrow">Same game. Different tables.</p><h2>What do you call it?</h2><p class="lede">Palace and Shed are names used for the same wider game family. Change the displayed name for this page session; nothing is stored.</p></div><div class="name-console"><h3>Table name</h3><div class="name-options" role="group" aria-label="Choose the displayed game name"><button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button><button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button></div><p data-name-status role="status">Palace is used at this table. This choice resets when you refresh.</p><p class="name-secret" data-name-secret tabindex="-1" hidden>You found the name some tables whisper. Welcome to the founder’s table.</p></div></div></section>
+    <section class="section"><div class="shell story-split"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers" width="512" height="512" loading="lazy"><div><p class="eyebrow">A game built to travel</p><h2>Passed hand to hand.</h2><p class="lede">Palace belongs to a folk shedding-game family with many regional names and house rules. The exact origin remains uncertain. The Four of Hearts edition gives that living tradition one clear rule set and a world of its own.</p><div class="actions"><a class="button" href="palace-play.html">Take your seat</a><a class="text-link" href="palace-story.html">Fact, folklore & legend</a></div></div></div></section>`
 }));
-
 write("palace-play.html", page({
-  title: "How to Play Palace | Interactive Preview",
-  description: "Learn Palace in 60 seconds: match the pile, beat the pile, or break free with a wild card in an accessible interactive table.",
-  path: "/palace-play.html",
-  current: "play",
-  image: "assets/icon-palace-4hearts.webp",
-  bodyClass: "palace-play-page",
-  imageAlt: "Palace interactive tutorial",
-  script: '<script src="assets/palace-tutorial-v2.js" defer></script>',
-  content: `
-    ${pageHero("Learn by playing", "Build your first Palace.", "A 60–120 second interactive preview of the flagship game’s core rhythm. It is a teaching experience, not a production match.", '<div class="actions"><span class="alpha-badge">No account · No stakes · Nothing saved</span></div>')}
-    <section class="section navy"><div class="shell"><div id="palace-tutorial" class="tutorial-stage" tabindex="-1" aria-label="Interactive Palace tutorial"></div><noscript><div class="notice">JavaScript is required for the interactive preview. The Palace story and product pages remain available without it.</div></noscript></div></section>
-    <section class="section compact"><div class="shell"><h2>Designed for every player.</h2><div class="values-grid">
-      <div class="status-card"><span class="icon" aria-hidden="true">⌨</span><div><h3>Keyboard and touch ready</h3><p>Every choice is a real button with visible focus and a generous target.</p></div></div>
-      <div class="status-card"><span class="icon" aria-hidden="true">◌</span><div><h3>Your pace</h3><p>No timer, no penalty, and motion reduces automatically when your device asks.</p></div></div>
-    </div></div></section>`
+  title: "How to Play Palace | Interactive Five-Scene Tutorial",
+  description: "Play a polished Palace tutorial: match or beat, burn with ten, watch a pile pickup, learn power cards, and clear all three levels.",
+  path: "/palace-play.html", current: "play", image: "assets/icon-palace-4hearts.webp", imageAlt: "Palace interactive tutorial", bodyClass: "palace-play-page",
+  script: '<script src="assets/palace-tutorial-v3.js" defer></script>',
+  content: `${pageHero("Learn inside the action", "Take your seat at the Palace.", "Five focused scenes teach the real Four of Hearts table: match or beat, ten burns, blocked players pick up, power cards change play, and every Palace ends across three levels.", '<div class="hero-status-line"><span>Keyboard + touch</span><span>No account</span><span>Nothing saved</span></div>')}<section class="section navy"><div class="shell"><div id="palace-tutorial" class="tutorial-stage" tabindex="-1" aria-label="Interactive five-scene Palace tutorial"></div><noscript><div class="notice">JavaScript is required for the interactive table. The full rules remain available on the Palace page.</div></noscript></div></section>`
 }));
-
 write("palace-story.html", page({
-  title: "The Story of Palace | Four of Hearts Interactive",
-  description: "Explore Palace as a folk shedding-game tradition with many names and regional rules, then see how Four of Hearts is building its modern adaptation.",
-  path: "/palace-story.html",
-  current: "palace",
-  image: "assets/icon-palace-4hearts.webp",
-  imageAlt: "Palace castle artwork",
-  content: `
-    ${pageHero("The Palace story", "A game carried by memory.", "No single box owns Palace’s history. It lives in a family of shedding games passed between travelers, students, friends, and households—often under different names and rules.")}
-    <section class="section"><div class="shell">
-      <h2>A history with many hands.</h2>
-      <div class="timeline">
-        <article class="timeline-item" data-reveal><span class="timeline-dot">01</span><div><h3>Passed from table to table</h3><p>Palace is commonly documented as a shedding or beating game: players try to get rid of their cards, and ordinary play usually matches or exceeds the pile. Its informal transmission makes a single point of invention difficult to establish.</p></div></article>
-        <article class="timeline-item" data-reveal><span class="timeline-dot">02</span><div><h3>Different names, shared spirit</h3><p>Reference sources record names including Palace, Karma, Shed, China Hand, and Ten-Two Slide. The names and details shift by region; the recognizable family resemblance remains.</p></div></article>
-        <article class="timeline-item" data-reveal><span class="timeline-dot">03</span><div><h3>A traveler’s game</h3><p>Pagat describes the family as widely spread by young travelers and backpackers in the late twentieth century, with possible connections to Scandinavian games. That is a documented theory, not a proven single origin.</p></div></article>
-        <article class="timeline-item" data-reveal><span class="timeline-dot">04</span><div><h3>Why families remember it</h3><p>A standard deck, a quick explanation, and three visible layers are enough to begin. House rules are part of the culture, especially around special ranks and pile-clearing effects.</p></div></article>
-        <article class="timeline-item" data-reveal><span class="timeline-dot">05</span><div><h3>The Four of Hearts rule set</h3><p>Four of Hearts is turning a passed-along game into a deliberate product: consistent rules, in-context teaching, readable feedback, and a visual world centered on the Palace castle. Exact special-card effects remain subject to founder approval before public documentation.</p></div></article>
-        <article class="timeline-item" data-reveal><span class="timeline-dot">06</span><div><h3>The next table</h3><p>Founder testing is underway. The goal is a definitive modern Palace experience for phones and future real-time play—without claiming a public release before one exists.</p></div></article>
-      </div>
-    </div></section>
-    <section class="section navy"><div class="narrow prose">
-      <p class="eyebrow">Source notes</p><h2>What we know—and what we do not.</h2>
-      <p>The historical account intentionally avoids a definitive inventor or date. The strongest accessible rules reference reviewed for this page is <a href="https://www.pagat.com/beating/shithead.html" rel="noopener noreferrer">Pagat’s account of the game family</a>, which records regional names, backpacker transmission, common three-layer structure, and extensive variants.</p>
-      <p><a href="https://en.wikipedia.org/wiki/Shithead_(card_game)" rel="noopener noreferrer">The reference trail for the related game family</a> points readers toward David Parlett’s published card-game work and a 2008 Guardian rules article. It is treated here as a bibliography lead rather than proof of a single origin.</p>
-      <p class="note"><strong>Founder review:</strong> approve the exact Four of Hearts special-card table before those effects are published in the tutorial or history. The public site currently teaches only verified core structure and explicitly labels the unresolved boundary.</p>
-    </div></section>`
+  title: "Palace: Fact, Folklore & Legend | Four of Hearts",
+  description: "Explore what is documented about Palace, what players pass along, and the clearly labeled legends that travel with the game.",
+  path: "/palace-story.html", current: "palace", image: "assets/icon-palace-4hearts.webp", imageAlt: "Palace castle artwork",
+  content: `${pageHero("Fact · folklore · legend", "A game carried by memory.", "Palace has no single box, rulebook, or universally proven origin. Its history lives in sources, table tradition, and the stories players tell.")}<section class="history-triad"><article><p class="eyebrow">What we know</p><h2>A shedding game with many names.</h2><p>Published rules references describe a beating or shedding game usually played through cards in hand, face-up cards, and face-down cards. Names include Palace, Shed, Karma, Shithead, China Hand, and regional variants.</p><p><a class="text-link" href="https://www.pagat.com/beating/shithead.html" rel="noopener noreferrer">Read the Pagat source notes</a></p></article><article><p class="eyebrow">What players tell</p><h2>Every table changes it.</h2><p>House rules—especially the effects of special ranks—are part of the tradition. Players teach the game from memory, adapt it locally, and pass it to the next table. Exact origins remain uncertain.</p></article><article><p class="eyebrow">The legend of Palace</p><h2>A deck fits anywhere.</h2><p>In a barracks before dawn. Below deck, weeks from shore. Between flights. In a hostel, a dorm, a kitchen, or the last table still awake.</p><p><em>This is founder-supplied table lore and atmospheric storytelling—not verified historical reporting.</em></p></article></section><section class="section navy"><div class="narrow prose"><h2>The Four of Hearts rule set</h2><p>Four of Hearts uses a documented product rule set: 2 resets, 7 requires lower, 8 is transparent, and 10 burns. That consistency belongs to this adaptation; it is not presented as the only traditional way to play.</p><p class="notice">History and founder-biography language remain marked for founder and qualified editorial/legal review before commercial reliance.</p></div></section>`
 }));
-
 write("news.html", page({
   title: "News | Four of Hearts Interactive",
   description: "Palace development stories, studio updates, and honest Internal Alpha news from Four of Hearts Interactive.",
@@ -467,24 +345,11 @@ write("play.html", page({
 }));
 
 write("about.html", page({
-  title: "About Four of Hearts Interactive",
-  description: "Meet the South Dakota software studio behind flagship Palace and a growing family of polished card-table games.",
-  path: "/about.html",
-  current: "about",
-  content: `
-    ${pageHero("The studio behind Palace", "One Family. Many Games.", "Four of Hearts Interactive, LLC is a South Dakota software company building welcoming digital card games with product honesty, thoughtful teaching, and room to grow.")}
-    <section class="section navy"><div class="shell palace-band">
-      <img src="assets/brand-mark-4oh.webp" alt="Four of Hearts Interactive logo" width="570" height="365">
-      <div class="prose"><h2>Built around the table.</h2><p>Palace is our flagship experience. Hearts, Spades, and Euchre are additional games in Internal Alpha, and future games may join the family when there is something real to share.</p><p>The approved brand board gives each game a jewel-tone identity inside one midnight, blue, gold, and silver studio system.</p></div>
-    </div></section>
-    <section class="section"><div class="shell values-grid">
-      <article class="status-card"><span class="icon" aria-hidden="true">♥</span><div><h3>Welcoming by design</h3><p>Clear teaching, readable interfaces, and no casino framing.</p></div></article>
-      <article class="status-card"><span class="icon" aria-hidden="true">✓</span><div><h3>Honest about status</h3><p>Internal Alpha means testing—not a fake public launch or store listing.</p></div></article>
-      <article class="status-card"><span class="icon" aria-hidden="true">⌨</span><div><h3>Accessible in practice</h3><p>Keyboard, touch, reduced motion, contrast, and readable structure are product requirements.</p></div></article>
-      <article class="status-card"><span class="icon" aria-hidden="true">◌</span><div><h3>Privacy-minded</h3><p>The public site avoids accounts, forms, analytics, ads, cookies, and social widgets.</p></div></article>
-    </div></section>`
+  title: "About Four of Hearts Interactive | One Family. Many Games.",
+  description: "Four daughters inspired Four of Hearts Interactive—a family-rooted game studio that measures success in smiles around the table.",
+  path: "/about.html", current: "about", bodyClass: "about-page",
+  content: `${pageHero("The studio behind Palace", "Four daughters. Four hearts. One idea worth building.", "Four of Hearts began at a family table: four daughters who love to play, and a belief that the best games leave people smiling long after the cards are put away.")}<section class="section family-story"><div class="shell story-split"><div><img src="assets/brand-mark-4oh.webp" alt="Four of Hearts Interactive four-heart logo" width="512" height="512"><div class="four-heart-line" aria-hidden="true"><span>♥</span><span>♥</span><span>♥</span><span>♥</span></div></div><div><p class="eyebrow">Why we exist</p><h2>We measure fun in smiles.</h2><p class="lede">Life is short. Playing together matters. Four daughters created the spark, four hearts became the name, and one family’s table became a studio promise for many families.</p><p><strong>One Family. Many Games.</strong></p></div></div></section><section class="section navy"><div class="shell quote-stage"><div class="quote-mark" aria-hidden="true">♛</div><div><p class="eyebrow">The founder</p><blockquote>Never stop asking why a game keeps people at the table.<cite>A lifelong student of games</cite></blockquote><p class="lede">Founder-supplied biography describes more than five decades playing, studying, teaching, testing, and thinking about games, plus more than two decades examining strategic interaction in a university environment. At Four of Hearts, “gameologist” is a playful word for that lifelong curiosity—not a license or academic credential.</p><p class="notice">These biography statements are founder-supplied and remain subject to final factual approval. No degree, professorship, employer, or publication claim is made.</p></div></div></section><section class="section"><div class="shell story-split"><div><p class="eyebrow">The flagship</p><h2>Palace deserves its definitive digital table.</h2><p class="lede">Its rules are immediate, its decisions stay interesting, and its hidden finish creates the kind of story families retell. That is why Palace leads Four of Hearts.</p></div><img src="assets/icon-palace-4hearts.webp" alt="Palace castle artwork" width="512" height="512" loading="lazy"></div></section>`
 }));
-
 write("support.html", page({
   title: "Support | Four of Hearts Interactive",
   description: "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
@@ -501,24 +366,11 @@ write("support.html", page({
 }));
 
 write("privacy.html", page({
-  title: "Privacy Policy | Four of Hearts Interactive",
-  description: "Plain-language privacy information for the Four of Hearts website and current Internal Alpha game testing.",
-  path: "/privacy.html",
-  current: "",
-  content: `
-    ${pageHero("Privacy", "Privacy Policy", "Last technically reviewed July 25, 2026. This policy describes the current public website and Internal Alpha testing state; it will change before broader release if the products change.")}
-    <section class="section"><div class="narrow prose">
-      <h2>The public website</h2><p>This static website does not provide user accounts, collect form submissions, run analytics or advertising, set first-party cookies, use browser storage, or load social widgets. Its interactive tutorials keep progress only in page memory and discard it when the page closes or reloads.</p>
-      <p>GitHub Pages and normal internet infrastructure may process standard request information needed to deliver the site. Four of Hearts does not claim unsupported control over provider logs or response headers.</p>
-      <h2>Internal Alpha games</h2><p>Current test builds may process a chosen player name, avatar, optional profile-photo reference, preferences, generated identifier, rankings or ratings, table and session information, game actions and results, reconnect information, and operational diagnostics needed to run and improve a match.</p>
-      <p>The current architecture has been described as using temporary in-memory multiplayer sessions and rankings rather than a durable production account database. There is no production account system represented as active. Those statements require revalidation for every shipping build and server revision.</p>
-      <h2>Support communications</h2><p>If you email support, the company receives the address, message, and attachments you choose to provide. Send only what is needed. Retention and deletion procedures require formal approval before wider launch.</p>
-      <h2>Children and families</h2><p>The company’s family-friendly positioning does not replace legal review, age-appropriate design work, or any consent and disclosure requirements that may apply. No public commercial availability is claimed.</p>
-      <h2>Questions</h2><p>Email <a href="mailto:support@4ohi.com?subject=Privacy%20question">support@4ohi.com</a>. Do not send passwords or authentication material.</p>
-      <p class="notice">Qualified privacy and legal review remains required before public commercial launch.</p>
-    </div></section>`
+  title: "Privacy Choices & Policy | Four of Hearts Interactive",
+  description: "Four of Hearts designed this website to avoid optional tracking: no analytics, advertising, cookies, browser storage, or visitor profiles.",
+  path: "/privacy.html", current: "",
+  content: `${pageHero("Privacy choices", "Collect nothing the website does not need.", "We designed this website to avoid optional tracking rather than asking visitors to accept it. The controls below report the current technical state; they are not a decorative consent banner.")}<section class="section navy"><div class="shell"><div class="privacy-dashboard" aria-label="Website privacy status"><div class="privacy-row"><div><b>Strictly necessary</b><p>Only ordinary hosting and internet delivery.</p></div><span>Infrastructure only</span></div><div class="privacy-row"><div><b>Analytics</b><p>No analytics scripts or visitor measurement.</p></div><span>Not used</span></div><div class="privacy-row"><div><b>Advertising</b><p>No ads, pixels, or targeted advertising.</p></div><span>Not used</span></div><div class="privacy-row"><div><b>Personalization tracking</b><p>No visitor profile or persisted tutorial progress.</p></div><span>Not used</span></div><div class="privacy-row"><div><b>Cross-site tracking</b><p>No third-party embeds or social widgets.</p></div><span>Not used</span></div><div class="privacy-row"><div><b>Sale or sharing</b><p>Website visitor information is not sold or shared for advertising.</p></div><span>Not performed</span></div><div class="privacy-row"><div><b>Tutorial progress</b><p>Held in page memory and discarded on refresh.</p></div><span>Not stored</span></div><div class="privacy-row"><div><b>Palace name setting</b><p>Current page session only.</p></div><span>Not persisted</span></div></div></div></section><section class="section"><div class="narrow prose"><h2>Your choices and rights</h2><p>Because the website does not activate optional trackers, there is nothing to accept or reject. Global Privacy Control and Do Not Track signals do not need to disable optional website tracking because none is loaded. If optional storage is ever introduced, it must remain off by default until any required affirmative choice is made.</p><p>Depending on where you live and whether a law applies, you may have rights to ask about, access, correct, or delete personal information. Email <a href="mailto:support@4ohi.com?subject=Privacy%20rights%20request">support@4ohi.com</a>. Four of Hearts does not sell or share website visitor information for cross-context behavioral advertising.</p><h2>Normal infrastructure</h2><p>GitHub Pages and ordinary internet providers may process request metadata needed to deliver and protect the site. Four of Hearts does not claim control over provider logs it does not operate.</p><h2>Support email</h2><p>If you contact support, the company receives the address, message, and attachments you choose to send. Include only what is needed.</p><p class="notice">This privacy text is designed for later California, European, and UK legal review. It does not claim formal certification or that every privacy law necessarily applies.</p></div></section>`
 }));
-
 write("security.html", page({
   title: "Security | Four of Hearts Interactive",
   description: "Responsible security-reporting guidance for Four of Hearts Interactive products and website.",
