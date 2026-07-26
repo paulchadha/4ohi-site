@@ -39,3 +39,8 @@ Legal, privacy, terms, history, and founder-biography translations require quali
 ## Central product-name locale authority
 
 `assets/product-authority.js` owns the eight locale templates and Palace/Shed/traditional display-name resolver. Product names are not translated. Surrounding grammar is locale-aware, RTL is applied at the document root, and every internal link inherits `lang` and `game` from the URL. No preference is stored. See `PRODUCT-NAME-AUTHORITY.md`.
+
+
+## Canadian voice mode
+
+`en-CA-fun` is presented to visitors as **Canadian**. It changes material page copy as well as navigation and game prompts. See [Brand Voice and Canadian](BRAND-VOICE-AND-CANADIAN.md).

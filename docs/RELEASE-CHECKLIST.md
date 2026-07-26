@@ -90,3 +90,8 @@ Last run: 2026-07-26
 - [x] Ten-tap traditional-name confirmation and reset behavior pass.
 - [x] Cookies, local storage, session storage, and external resources remain empty.
 - [x] Exact SHA `701cf3f234e40e72dd7f0dfc5f357c1bea881c95` deployed successfully and the full browser suite passed at `https://4ohi.com`.
+
+
+## Founder correction gate
+
+Before release, run `node scripts/build-site.mjs`, `node scripts/validate-site.mjs`, and `node scripts/verify-app-parity.mjs`. Require exact-SHA Pages deployment, then repeat the browser suite publicly. Founder physical-phone review remains a separate required acceptance item.

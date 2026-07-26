@@ -53,3 +53,8 @@ The canonical approved four-heart 4OH mark is used without reconstruction in the
 ## Public app presentation references
 
 The July 26 app-parity audit copied three public presentation references into `docs/visual-evidence` for evidence only. They are not requested by public pages. Production continues to use the approved 4OH mark, Palace tile, and responsive Palace hero assets already documented here.
+
+
+## Name-specific identity tiles
+
+Approved delivery variants now include Palace, Shed, and confirmed Shithead identities. Source and WebP derivatives are documented in [Founder Correction Release](FOUNDER-CORRECTION-RELEASE-2026-07-26.md). Palace remains canonical for metadata.

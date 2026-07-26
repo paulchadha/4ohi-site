@@ -47,3 +47,8 @@ Canonical phone evidence is stored in `docs/visual-evidence/`:
 - `app-mini-match-ar-shed-390x844.png`
 
 The release gate requires both the local run and the post-deployment public run of `scripts/verify-app-parity.mjs` to pass.
+
+
+## Founder correction acceptance
+
+The new responsive gate covers 320, 360, 390, and 430-pixel widths. The phone header intentionally uses a second compact row so table-name and language choices remain visible. See [Interactive Table and Mobile QA](INTERACTIVE-TABLE-AND-MOBILE-QA.md).

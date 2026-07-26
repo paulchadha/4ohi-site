@@ -21,3 +21,8 @@ The private name must not appear in canonical metadata, Open Graph copy, JSON-LD
 ## Site-wide authority update
 
 The July 26 release replaces the partial page-specific naming layer with `assets/product-authority.js`. Public selection is Palace or Shed. Ten Shed selections within four seconds opens the existing explicit confirmation for the uncensored traditional name. The confirmed name is URL-only, announced through a live region, propagated by `fourOfHearts:gameNameChanged`, and excluded from canonical metadata, RSS, sitemap, Open Graph, and JSON-LD.
+
+
+## 2026-07-26 clarification
+
+Keep **This Table Calls It** in the header. Palace and Shed are ordinary choices. The traditional uncensored name remains ten-tap, explicitly confirmed, URL-only, never stored, and excluded from canonical metadata. Confirmed mode now has its own coordinated artwork.

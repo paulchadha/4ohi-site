@@ -26,3 +26,8 @@ Visual acceptance includes desktop and phone homepage captures plus the full pho
 ## Continuous mini-match supersession
 
 The prior five-scene Field Training implementation is retired. `assets/palace-tutorial-v3.js` now presents one continuous mini-match: match/beat, ten burn, opponent pickup, four power cards, three levels, crown completion, and replay. Do not reintroduce a scene rail, training language, small central table, or large unused margins.
+
+
+## App-world correction
+
+The mini-match now uses blue felt, gold table rails, garden/castle framing, named seats, and a compact game HUD. Its five chapters still teach match/beat, burn, pickup, powers, and three levels. The displayed name and art follow **This Table Calls It**.

@@ -30,3 +30,8 @@ Local browser QA on July 26, 2026 measured the 1440×900 homepage at 298,022 tra
 ## App-parity asset budget
 
 The Open Graph app-world illustration is a 1200Ã—630 progressive JPEG at approximately 189 KB and is metadata-only. Page art remains responsive WebP. New runtime files are local, dependency-free, and inert when their matching component is absent. No third-party font, image CDN, analytics, or embedded widget was added.
+
+
+## Content-hashed delivery
+
+Generated pages now reference CSS, JavaScript, and images with content hashes. Runtime-selected art uses the generated manifest. See [Asset Cache Busting](ASSET-CACHE-BUSTING.md).

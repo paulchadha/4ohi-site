@@ -53,3 +53,8 @@ State lives only in `?lang=` and `?game=`. Internal links inherit both values. B
 ## Acceptance
 
 `scripts/verify-app-parity.mjs` checks all public pages plus nine language/name combinations, RTL, state-preserving links, the ten-tap traditional-name flow, all tutorials, and zero storage. `scripts/validate-site.mjs` checks generated markup, metadata, links, mixed content, tracking, secrets, and accessibility hooks.
+
+
+## Artwork is part of name authority
+
+The active table name now selects its coordinated Palace, Shed, or confirmed Shithead art at the same render boundary as copy and links. See [Dynamic Naming and Artwork](DYNAMIC-NAMING-AND-ARTWORK.md).

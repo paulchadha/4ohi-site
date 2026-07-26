@@ -30,3 +30,8 @@ The lower Palace band returns visitors to the three-layer mini-match. Its visibl
 ## Acceptance
 
 Verify 320, 390, 768, 1366, 1440, and 1920 widths, keyboard focus, readable game-card order in RTL, no horizontal overflow, no stored state, and all three tutorial completion/replay paths.
+
+
+## Table differentiation
+
+Hearts, Spades, and Euchre now expose their own score/state vocabulary, rules, accents, and table decisions inside the shared app-world frame. Recoloring one generic tutorial is not acceptable.

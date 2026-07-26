@@ -10,3 +10,8 @@ Revert the focused website commits only, rebuild, push, and wait for the reverte
 ## App-parity rollback unit
 
 Treat the generator, `palace-app-web.css`, `product-authority.js`, `release-strip.js`, `power-cards.js`, FAQ page, generated HTML, and app-parity documentation as one release unit. To roll back, revert the focused release commits rather than deleting generated pages or changing DNS. Rebuild from the reverted generator, validate locally, push normally, wait for the exact-SHA Pages run, and repeat public HTTPS QA. Do not touch Proton Mail or GitHub Pages DNS records for a visual/content rollback.
+
+
+## Fingerprinted front-end rollback
+
+Revert the website commit, rebuild generated pages so asset hashes match the reverted contents, push, and wait for the exact SHA. Do not change DNS or Proton mail records for this front-end-only rollback.

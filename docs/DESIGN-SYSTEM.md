@@ -36,3 +36,8 @@ The first viewport uses a single editorial headline, cinematic negative space, a
 ## App-parity visual authority
 
 The founder-supplied Palace app home screen is now the controlling visual reference. `assets/palace-app-web.css` is the final web layer: sky blue, royal/deep blue, cream, gold, garden green, rounded surfaces, friendly physical cards, and restrained dark contrast. Large condensed display typography was softened with a rounded system stack and more compact section pacing. See `APP-PARITY-AND-PAGE-HIERARCHY.md`.
+
+
+## 2026 founder correction
+
+The website now follows the app-world table system: royal/navy blues, gold rails, bright sky and garden framing, white physical cards, and compact mobile typography. Power cards must be drawn as playing cards, not abstract numeric blocks. See [Founder Correction Release](FOUNDER-CORRECTION-RELEASE-2026-07-26.md).
