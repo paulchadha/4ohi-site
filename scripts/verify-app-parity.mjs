@@ -10,7 +10,7 @@ const evidence = resolve("docs", "visual-evidence");
 const resultFile = process.env.SITE_RESULTS || "app-parity-results.json";
 const captureScreenshots = process.env.NO_SCREENSHOTS !== "1";
 mkdirSync(evidence, { recursive: true });
-const results = { base, checkedAt: new Date().toISOString(), pages: [], modes: [], layouts: {}, tutorials: [], privacy: {}, failures: [] };
+const results = { base, checkedAt: new Date().toISOString(), pages: [], modes: [], layouts: {}, tutorials: [], keyboard: {}, privacy: {}, failures: [] };
 const fail = (message) => results.failures.push(message);
 const browser = await chromium.launch({ headless: true, executablePath: chrome });
 const context = await browser.newContext();
@@ -37,10 +37,11 @@ for (const file of pages) {
     languageControl: Boolean(document.querySelector(".header-language select")),
     settings: Boolean(document.querySelector("[data-open-settings]")),
     externalScripts: [...document.scripts].map((script) => script.src).filter((url) => url && new URL(url).origin !== location.origin),
-    alternates: document.querySelectorAll('link[rel="alternate"][hreflang]').length
+    alternates: document.querySelectorAll('link[rel="alternate"][hreflang]').length,
+    fingerprintedAssets: [...document.querySelectorAll('script[src], link[rel="stylesheet"]')].every((node) => new URL(node.src || node.href).searchParams.has("v"))
   }));
   results.pages.push({ file, status: response?.status(), ...data, errors });
-  if (response?.status() !== 200 || data.h1 !== 1 || data.overflow || !data.nameControl || !data.languageControl || !data.settings || data.externalScripts.length || data.alternates !== 9 || errors.length) fail(`${file}: public page gate failed`);
+  if (response?.status() !== 200 || data.h1 !== 1 || data.overflow || !data.nameControl || !data.languageControl || !data.settings || data.externalScripts.length || data.alternates !== 9 || !data.fingerprintedAssets || errors.length) fail(`${file}: public page gate failed`);
   await page.close();
 }
 
@@ -61,10 +62,16 @@ for (const [locale, mode, expected, dir] of [
     navName: document.querySelector('.site-nav a[href*="palace.html"]')?.textContent.trim(),
     playLabel: document.querySelector(".nav-play")?.textContent.trim(),
     newsLabel: document.querySelector("h1")?.textContent.trim(),
+    localeLabel: document.querySelector("select[data-locale]")?.selectedOptions?.[0]?.textContent.trim(),
+    navNews: document.querySelector('[data-brand-message="navNews"]')?.textContent.trim(),
+    artMode: document.querySelector("img[data-game-art]")?.dataset.gameArt || "",
+    artSrc: document.querySelector("img[data-game-art]")?.currentSrc || "",
     linksPreserve: [...document.querySelectorAll(".site-nav a")].every((a) => a.search.includes("lang=") && (currentMode === "palace" ? !a.search.includes("game=") : a.search.includes(`game=${currentMode}`)))
   }), mode);
   results.modes.push({ locale, mode, ...state });
   if (state.lang !== locale || state.dir !== dir || state.name !== expected || state.navName !== expected || !state.playLabel.includes(expected) || !state.newsLabel.includes(expected) || !state.linksPreserve) fail(`${locale}/${mode}: naming or locale gate failed`);
+  if (locale === "en-CA-fun" && (state.localeLabel !== "Canadian" || state.navNews !== "Table Talk")) fail("Canadian locale label or navigation voice failed");
+  if (state.artMode && state.artMode !== mode) fail(`${locale}/${mode}: dynamic artwork mode failed`);
   await page.close();
 }
 
@@ -104,11 +111,38 @@ for (const [file, width, height, shot] of [
   if (geometry.overflow) fail(`${shot}: horizontal overflow`);
   if (width <= 430 && (geometry.h1Left < -1 || geometry.h1Right > width + 1)) fail(`${shot}: heading clipped outside phone viewport`);
   if (width <= 430 && !file.startsWith("palace-play.html") && geometry.h1Size > 58) fail(`${shot}: phone heading remains desktop-sized`);
-  if (width <= 430 && geometry.headerBottom > 80) fail(`${shot}: phone header is too tall`);
+  if (width <= 430 && geometry.headerBottom > 125) fail(`${shot}: phone header is too tall`);
   if (file === "index.html" && width >= 360 && width <= 430 && geometry.firstActionTop > height) fail(`${shot}: primary play action is below the first phone viewport`);
   if (file === "news.html" && geometry.newsTop > height * .72) fail("News featured story is still below the first viewport");
   if (file === "games.html" && geometry.gamesTop > height * .72) fail("More Games cards are still below the first viewport");
   if (captureScreenshots) await page.screenshot({ path: resolve(evidence, shot), fullPage: true });
+  await page.close();
+}
+
+for (const file of ["index.html","palace.html","palace-play.html","news.html","games.html","about.html","support.html","404.html"]) {
+  const page = await context.newPage();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(`${base}/${file}?lang=en&game=shed`, { waitUntil: "networkidle" });
+  const authority = await page.evaluate(() => ({
+    header: document.querySelector("[data-current-game]")?.textContent.trim(),
+    nav: document.querySelector(".site-nav a:first-child")?.textContent.trim(),
+    play: document.querySelector(".nav-play")?.textContent.trim(),
+    countdown: document.querySelector("[data-game-message='gameCountdown']")?.textContent.trim() || "",
+    artModes: [...document.querySelectorAll("img[data-game-art]")].map((image) => image.dataset.gameArt),
+    controlsVisible: [...document.querySelectorAll(".header-name,.header-language")].every((node) => getComputedStyle(node).display !== "none" && node.getBoundingClientRect().height >= 40)
+  }));
+  if (authority.header !== "Shed" || authority.nav !== "Shed" || !authority.play.includes("Shed") || (authority.countdown && !authority.countdown.includes("Shed")) || authority.artModes.some((mode) => mode !== "shed") || !authority.controlsVisible) fail(`${file}: Shed authority or mobile controls failed`);
+  await page.close();
+}
+
+for (const file of ["index.html","news.html","games.html","about.html","support.html","404.html"]) {
+  const page = await context.newPage();
+  await page.goto(`${base}/${file}?lang=en-CA-fun&game=shed`, { waitUntil: "networkidle" });
+  const canadian = await page.evaluate(() => ({
+    label: document.querySelector("select[data-locale]")?.selectedOptions?.[0]?.textContent.trim(),
+    changed: [...document.querySelectorAll("[data-brand-message]")].filter((node) => node.textContent.trim() !== node.dataset.brandDefault).length
+  }));
+  if (canadian.label !== "Canadian" || canadian.changed < 1) fail(`${file}: Canadian copy did not materially change`);
   await page.close();
 }
 
@@ -161,6 +195,22 @@ for (const game of ["hearts", "spades", "euchre"]) {
   await page.close();
 }
 
+const keyboard = await context.newPage();
+await keyboard.setViewportSize({ width: 390, height: 844 });
+await keyboard.goto(`${base}/palace.html?game=shed`, { waitUntil: "networkidle" });
+await keyboard.locator('[data-power="7"]').focus();
+await keyboard.keyboard.press("Enter");
+const powerByKeyboard = await keyboard.locator('[data-power="7"]').getAttribute("aria-pressed") === "true";
+await keyboard.locator(".header-name summary").focus();
+await keyboard.keyboard.press("Enter");
+const nameMenuByKeyboard = await keyboard.locator(".header-name details").getAttribute("open") !== null;
+await keyboard.locator("[data-open-settings]").focus();
+await keyboard.keyboard.press("Enter");
+const dialogByKeyboard = await keyboard.locator("[data-settings-dialog]").evaluate((dialog) => dialog.open);
+await keyboard.keyboard.press("Escape");
+results.keyboard = { powerByKeyboard, nameMenuByKeyboard, dialogByKeyboard };
+if (!powerByKeyboard || !nameMenuByKeyboard || !dialogByKeyboard) fail("Keyboard interaction gate failed");
+await keyboard.close();
 const naming = await context.newPage();
 await naming.goto(`${base}/palace.html?lang=en&game=shed`, { waitUntil: "networkidle" });
 await naming.locator("[data-open-settings]").click();
@@ -171,6 +221,8 @@ if (!(await naming.locator("[data-nsfw-dialog]").evaluate((dialog) => dialog.ope
 await naming.locator('[data-nsfw-dialog] button[value="yes"]').click();
 await naming.waitForFunction(() => location.search.includes("game=shithead"));
 if ((await naming.locator("[data-current-game]").first().textContent()) !== "Shithead") fail("Traditional mode did not render globally");
+if (await naming.locator('img[data-game-art]:not([data-game-art="shithead"])').count()) fail("Traditional mode artwork did not update globally");
+if (!naming.url().includes("game=shithead")) fail("Traditional mode was not kept in URL-only state");
 await naming.close();
 
 const privacy = await context.newPage();

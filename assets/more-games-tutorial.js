@@ -4,9 +4,11 @@
   const mount = document.querySelector("[data-secondary-tutorial]");
   if (!mount) return;
 
+  const canadian = document.documentElement.dataset.locale === "en-CA-fun";
   const lessons = {
     hearts: {
       name: "Hearts",
+      status: "HEARTS BROKEN · POINTS 3 · TRICKS 2",
       intro: "Follow the suit that was led when you can, then learn to duck a point-heavy trick.",
       rounds: [
         {
@@ -33,6 +35,7 @@
     },
     spades: {
       name: "Spades",
+      status: "BID 4 · BOOKS 2 · BAGS 1",
       intro: "Every spade is trump. A small spade can beat a high card from another suit.",
       rounds: [
         {
@@ -59,6 +62,7 @@
     },
     euchre: {
       name: "Euchre",
+      status: "TRUMP ♥ · MAKER YOU · DEALER MAYA",
       intro: "The two jacks around trump become the right and left bowers.",
       rounds: [
         {
@@ -104,17 +108,19 @@
         <span class="alpha-badge">Internal Alpha lesson</span>
         <span class="tutorial-progress">Lesson ${round + 1} of ${game.rounds.length}</span>
       </div>
+      <div class="table-hud"><strong class="game-badge">${game.name}</strong><span class="table-score">${game.status}</span></div>
+      <div class="table-avatars" aria-label="Four teaching-table seats"><span>Nora</span><span>Maya</span><span>Vaughn</span><strong>You</strong></div>
       <div class="tutorial-board">
         <div class="tutorial-copy">
           <p class="eyebrow">${game.name} quick play</p>
           <h2>${data.title}</h2>
-          <p>${data.prompt}</p>
+          <p>${canadian ? `${data.prompt} Take your time, bud.` : data.prompt}</p>
         </div>
         <div class="play-area">
           <div class="player-zone"><span class="zone-label">Your choice</span><div class="card-row">${data.choices.map((choice, index) => card(choice.label, index)).join("")}</div></div>
           <div class="pile-zone"><span class="zone-label">Table</span><div class="card-row">${data.pile.map((label) => card(label, 0, false)).join("")}</div></div>
         </div>
-        <div class="tutorial-feedback" role="status" aria-live="polite">${game.intro}</div>
+        <div class="tutorial-feedback" role="status" aria-live="polite">${canadian ? `${game.intro} One more hand, eh?` : game.intro}</div>
         <div class="tutorial-controls"><button class="button" type="button" data-next disabled>${round + 1 === game.rounds.length ? "Finish lesson" : "Next lesson"}</button></div>
       </div>`;
 

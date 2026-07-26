@@ -87,15 +87,28 @@
       }
     },
     "en-CA-fun": {
-      label: "Canadian — Just for Fun", dir: "ltr", tableLabel: "This table calls it", languageLabel: "Language, eh?",
+      label: "Canadian", dir: "ltr", tableLabel: "This table calls it", languageLabel: "Language",
       templates: {
-        playGame: (n) => `Give ${n} a go`, gameNews: (n) => `${n} News, eh?`,
-        gameRules: (n) => `${n} Rules`, gameHistory: (n) => `${n}’s table stories`,
-        gameCountdown: (n) => `${n} lands in`, discoverGame: (n) => `Meet ${n}, bud`,
-        aboutGame: (n) => `About ${n}`, latestFromGame: (n) => `Fresh from ${n}`,
-        whyBuildingGame: (n) => `Why We’re Building ${n}`, tutorialTitle: (n) => `${n} Mini-Match`,
+        playGame: (n) => `Give ${n} a go, eh?`, gameNews: (n) => `${n} News from the table`,
+        gameRules: (n) => `${n} Rules`, gameHistory: (n) => `${n}'s table stories`,
+        gameCountdown: (n) => `${n} opens soon. Sorry for the wait.`, discoverGame: (n) => `Meet ${n}, bud`,
+        aboutGame: (n) => `About ${n}`, latestFromGame: (n) => `Fresh from the ${n} table`,
+        whyBuildingGame: (n) => `Why We're Building ${n}`, tutorialTitle: (n) => `${n} Mini-Match`,
         flagship: (n) => `${n} gets the crown. Beauty.`, supportGame: (n) => `${n} help, please`,
-        status: (n) => `This table calls it ${n}. No storage—sorry, eh?`
+        status: (n) => `This table calls it ${n}. Nothing is stored. Very polite.`
+      },
+      brand: {
+        navNews: "Table Talk", navGames: "More Games", navAbout: "Our Family", navSupport: "Help, Please",
+        heroKicker: "The hottest card game in the galaxy, now dressed for a long winter",
+        heroDeck: (n) => `Three levels. One pile. One crown. ${n} is finally becoming an app - worth waiting through at least one snow day.`,
+        heroStatus: "News from the table, with fewer weather warnings than expected",
+        powerIntro: "Four cards change everything. The ten clears the pile very responsibly.",
+        newsIntro: "News from the table. Some of it is even useful, bud.",
+        gamesIntro: (n) => `${n} gets the crown. Hearts, Spades, and Euchre brought snacks.`,
+        aboutIntro: "Four daughters. Four hearts. Enough opinions for one excellent game studio.",
+        supportIntro: "Something broke? Blame the dealer politely for thirty seconds, then tell us.",
+        notFound: "This card fell under the table. We checked near the toque.",
+        footer: "Built for long winters, warm tables, and one more game."
       }
     }
   });
@@ -104,6 +117,12 @@
   const url = new URL(location.href);
   let locale = localeCatalog[url.searchParams.get("lang")] ? url.searchParams.get("lang") : "en";
   let mode = allowedModes.has(url.searchParams.get("game")) ? url.searchParams.get("game") : "palace";
+  const versionedAsset = (path) => window.FOUR_HEARTS_ASSETS?.[path] || path;
+  const artByMode = Object.freeze({
+    palace: Object.freeze({ small: versionedAsset("assets/palace-hero-384.webp"), medium: versionedAsset("assets/palace-hero-640.webp"), large: versionedAsset("assets/palace-hero-1024.webp") }),
+    shed: Object.freeze({ small: versionedAsset("assets/shed-identity-384.webp"), medium: versionedAsset("assets/shed-identity-640.webp"), large: versionedAsset("assets/shed-identity-1024.webp") }),
+    shithead: Object.freeze({ small: versionedAsset("assets/shithead-identity-384.webp"), medium: versionedAsset("assets/shithead-identity-640.webp"), large: versionedAsset("assets/shithead-identity-1024.webp") })
+  });
   const canonicalName = "Palace";
   const modeName = () => ({ palace: "Palace", shed: "Shed", shithead: "Shithead" })[mode];
 
@@ -149,6 +168,23 @@
     document.documentElement.dir = localeCatalog[locale].dir;
     document.documentElement.dataset.gameMode = mode;
     document.documentElement.dataset.locale = locale;
+    const art = artByMode[mode];
+    document.documentElement.style.setProperty("--active-game-art", `url("../${art.large}")`);
+    document.querySelectorAll("img[data-game-art], img[src*='icon-palace-4hearts'], img[src*='palace-hero-']").forEach((image) => {
+      image.src = art.large;
+      image.srcset = `${art.small} 384w, ${art.medium} 640w, ${art.large} 1024w`;
+      image.sizes = image.closest(".palace-world-art") ? "(max-width: 600px) 300px, min(61vw, 780px)" : "(max-width: 600px) 90vw, 512px";
+      image.alt = `${state.gameName} game artwork from Four of Hearts Interactive`;
+      image.dataset.gameArt = mode;
+    });
+    document.querySelectorAll(".palace-world-art source").forEach((source) => {
+      source.srcset = source.media.includes("520") ? art.small : art.medium;
+    });
+    document.querySelectorAll("[data-brand-message]").forEach((node) => {
+      if (!node.dataset.brandDefault) node.dataset.brandDefault = node.textContent.trim();
+      const copy = localeCatalog[locale].brand?.[node.dataset.brandMessage];
+      node.textContent = typeof copy === "function" ? copy(state.gameName) : (copy || node.dataset.brandDefault);
+    });
     document.querySelectorAll("[data-game-token]").forEach((node) => {
       const key = node.dataset.gameToken;
       node.textContent = state[key] ?? state.gameName;
@@ -234,7 +270,7 @@
   });
   window.PALACE_EXPERIENCE = Object.freeze({
     get locale() { return locale; },
-    get t() { return { launch: resolve().message("gameCountdown"), rival: "RIVAL", pile: "TOP OF PILE", hand: "YOUR HAND", match: "MATCH OR BEAT", prompt: "Match the rank, play higher, or use a power card.", pickup: "PICK UP", replay: "Replay mini-match", won: `YOU RULE ${resolve().gameNameUpper}`, levelHand: "HAND", levelUp: "FACE-UP", levelDown: "FACE-DOWN" }; },
+    get t() { return { launch: resolve().message("gameCountdown"), rival: "RIVAL", pile: "TOP OF PILE", hand: "YOUR HAND", match: "MATCH OR BEAT", prompt: locale === "en-CA-fun" ? "Match the rank, play higher, or use a power card, bud." : "Match the rank, play higher, or use a power card.", pickup: locale === "en-CA-fun" ? "PICK IT UP. SORRY." : "PICK UP", replay: locale === "en-CA-fun" ? "One more hand, eh?" : "Replay mini-match", won: locale === "en-CA-fun" ? `BEAUTY. YOU RULE ${resolve().gameNameUpper}` : `YOU RULE ${resolve().gameNameUpper}`, levelHand: "HAND", levelUp: "FACE-UP", levelDown: "FACE-DOWN" }; },
     get game() { return mode; },
     displayName: () => resolve().gameName,
     applyGame: render

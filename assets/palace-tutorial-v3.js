@@ -21,17 +21,17 @@
   const backs = (count) => Array.from({ length: count }, (_, i) => card("", "", `back-${i}`, { back: true })).join("");
   const progress = () => `<div class="match-progress" aria-label="Mini-match progress"><span style="--progress:${Math.min(100, (state.chapter / 5) * 100)}%"></span><b>${state.chapter < 5 ? `${state.chapter + 1} / 5` : "♛"}</b></div>`;
   const chrome = (table, instruction, action = "") => `<div class="mini-match-chrome">
-    <header><div><img src="assets/brand-mark-4oh.webp" alt="" width="76" height="58"><span><b data-game-name>${experience?.displayName() || "Palace"}</b><small>THE MINI-MATCH</small></span></div>${progress()}</header>
-    <div class="app-release-strip" data-release-strip role="timer"></div>
+    <header><div><img data-game-art src="assets/palace-hero-384.webp" alt="" width="76" height="58"><span><b data-game-name>${experience?.displayName() || "Palace"}</b><small>THE MINI-MATCH</small></span></div>${progress()}</header>
+
     ${table}
     <footer><p role="status" aria-live="polite" data-match-status>${instruction}</p>${action}</footer>
   </div>`;
   const table = ({ rival = backs(state.opponentCards), pile, hand, callout = "", layers = "" }) => `<div class="palace-app-table" data-chapter="${chapters[state.chapter]}">
     <div class="castle-silhouette" aria-hidden="true"><span>♜</span><span>♛</span><span>♜</span></div>
-    <section class="seat rival-seat"><label>${t.rival || "RIVAL"} · ${state.opponentCards} CARDS</label><div class="card-row">${rival}</div></section>
+    <section class="seat rival-seat"><span class="seat-avatar" aria-hidden="true">N</span><label>${t.rival || "RIVAL"} · ${state.opponentCards} CARDS</label><div class="card-row">${rival}</div></section>
     <section class="central-pile"><label>${t.pile || "TOP OF PILE"}</label><div class="pile-cards">${pile}</div>${callout ? `<strong class="table-callout">${callout}</strong>` : ""}</section>
     ${layers}
-    <section class="seat player-seat"><label>${t.hand || "YOUR HAND"}</label><div class="card-row player-hand">${hand}</div></section>
+    <section class="seat player-seat"><span class="seat-avatar you" aria-hidden="true">YOU</span><label>${t.hand || "YOUR HAND"}</label><div class="card-row player-hand">${hand}</div></section>
   </div>`;
   const scene = () => {
     if (state.chapter === 0) return chrome(table({
@@ -62,7 +62,7 @@
         card("", "", "level", { action: true, back: true });
       return chrome(table({ pile: card("2", "♠", "pile", { power: true }), hand, layers: levels, callout: [t.levelHand || "HAND", t.levelUp || "FACE-UP", t.levelDown || "FACE-DOWN"][state.layer] }), "Clear the hand, then the face-up row, then trust the hidden finale.");
     }
-    return chrome(`<div class="match-victory"><img src="assets/icon-palace-4hearts.webp" alt="" width="512" height="512"><span class="victory-crown">♛</span><p class="eyebrow">MINI-MATCH COMPLETE</p><h2>${t.won || "YOU RULE THE PALACE"}</h2><p>Same rank. Higher card. Power move. Three levels. Now you know why one more game is never just one more game.</p><div class="victory-actions"><button class="button" type="button" data-action="replay">${t.replay || "Replay mini-match"}</button><a class="button secondary" href="palace.html#rules">Full rules</a><a class="text-link" href="palace-story.html">The story</a></div></div>`, "");
+    return chrome(`<div class="match-victory"><img data-game-art src="assets/palace-hero-640.webp" alt="" width="512" height="512"><span class="victory-crown">♛</span><p class="eyebrow">MINI-MATCH COMPLETE</p><h2>${t.won || "YOU RULE THE PALACE"}</h2><p>Same rank. Higher card. Power move. Three levels. Now you know why one more game is never just one more game.</p><div class="victory-actions"><button class="button" type="button" data-action="replay">${t.replay || "Replay mini-match"}</button><a class="button secondary" href="palace.html#rules">Full rules</a><a class="text-link" href="palace-story.html">The story</a></div></div>`, "");
   };
   const activateCountdown = () => {
     const node = mount.querySelector("[data-release-strip]");

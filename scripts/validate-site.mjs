@@ -49,13 +49,13 @@ for (const page of pages) {
     }
   }
 
-  for (const match of html.matchAll(/<script\b[^>]*src="([^"]+)"/gi)) { check(existsSync(join(root, match[1])), `${page}: missing script ${match[1]}`); }
+  for (const match of html.matchAll(/<script\b[^>]*src="([^"]+)"/gi)) { check(existsSync(join(root, match[1].split(/[?#]/)[0])), `${page}: missing script ${match[1]}`); }
 
   for (const match of html.matchAll(/<img\b([^>]*)>/gi)) {
     const attrs = match[1];
     const src = attrs.match(/src="([^"]+)"/i)?.[1];
     check(/\balt="[^"]*"/i.test(attrs), `${page}: image is missing alt text`);
-    if (src && !src.startsWith("https://")) check(existsSync(join(root, src)), `${page}: missing image ${src}`);
+    if (src && !src.startsWith("https://")) check(existsSync(join(root, src.split(/[?#]/)[0])), `${page}: missing image ${src}`);
   }
 }
 
