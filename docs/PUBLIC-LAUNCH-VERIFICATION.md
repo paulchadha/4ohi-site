@@ -67,3 +67,18 @@ Ownership protection is verified. The additive challenge TXT publicly returns `c
 ## Founder redesign local QA — July 26, 2026
 
 The generated redesign passed static validation for 22 pages and the complete local browser suite. Evidence: `docs/visual-evidence/founder-redesign-local-results.json`; fresh homepage, Palace product, tutorial, history, newsroom, mobile, tablet, desktop, and wide-desktop screenshots are in `docs/visual-evidence/`. Public exact-SHA deployment and HTTPS rerun remain to be appended after push.
+## Founder redesign public acceptance — July 26, 2026
+
+- Site implementation SHA: `824081281695805ade6d37bd95d8eb920fbbbfa1`.
+- QA/evidence SHA: `1e92d24c052217c30a4935e6664798d864bcdde7`.
+- Documentation SHA deployed for this acceptance: `7c115ba4625e311ec3d1aa0d10ad41061be90b07`.
+- GitHub Pages run `30208167171` completed successfully for that exact SHA.
+- `https://4ohi.com`, secure `www`, and both HTTP forms end at canonical `https://4ohi.com/` with strict certificate verification result 0.
+- Presented certificate: subject `CN=4ohi.com`; SANs `4ohi.com` and `www.4ohi.com`; issuer Let’s Encrypt YR1; validity July 26–October 24, 2026.
+- GitHub Pages reports `https_enforced: true`, `protected_domain_state: verified`, `pending_domain_unverified_at: null`, and `status: built`.
+- Public A and AAAA records are the four GitHub Pages addresses; `www` is `paulchadha.github.io`.
+- Proton preservation check: MX remains `mail.protonmail.ch` priority 10 and `mailsec.protonmail.ch` priority 20; SPF and Proton verification TXT remain present. No DNS or mail record was changed.
+- Full public browser suite: 21 content routes, 32 required responsive compositions, homepage countdown/logo/CTA, five-scene Palace completion, ten burn, opponent pickup, four power cards, three levels, Palace/Shed/Easter-egg reset, three secondary tutorials, privacy center, custom 404, metadata, robots, sitemap, RSS, keyboard entry, 44-pixel targets, 125% text zoom, and reduced motion all passed.
+- Public runtime: zero cookies, localStorage, sessionStorage, third-party requests, insecure requests, failed requests, mixed content, or console errors.
+- Public transfer measurements: homepage 232,348 bytes at 1440×900; Palace tutorial 78,817 bytes at 390×844.
+- Evidence: `docs/visual-evidence/founder-redesign-public-results.json` plus the refreshed screenshot set in `docs/visual-evidence/`.

@@ -1,0 +1,871 @@
+{
+  "base": "https://4ohi.com",
+  "pages": [
+    {
+      "title": "Palace Is Coming | Four of Hearts Interactive",
+      "h1": "Palace is finally coming home.",
+      "description": "The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.",
+      "canonical": "https://4ohi.com/",
+      "ogTitle": "Palace Is Coming | Four of Hearts Interactive",
+      "ogDescription": "The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "index.html",
+      "status": 200
+    },
+    {
+      "title": "Palace | The Flagship Game from Four of Hearts",
+      "h1": "Palace is calling.",
+      "description": "Discover Palace: match, beat, burn, and clear three levels in the flagship Four of Hearts card game now in Internal Alpha.",
+      "canonical": "https://4ohi.com/palace.html",
+      "ogTitle": "Palace | The Flagship Game from Four of Hearts",
+      "ogDescription": "Discover Palace: match, beat, burn, and clear three levels in the flagship Four of Hearts card game now in Internal Alpha.",
+      "ogImage": "https://4ohi.com/assets/icon-palace-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "palace.html",
+      "status": 200
+    },
+    {
+      "title": "How to Play Palace | Interactive Five-Scene Tutorial",
+      "h1": "Take your seat at the Palace.",
+      "description": "Play a polished Palace tutorial: match or beat, burn with ten, watch a pile pickup, learn power cards, and clear all three levels.",
+      "canonical": "https://4ohi.com/palace-play.html",
+      "ogTitle": "How to Play Palace | Interactive Five-Scene Tutorial",
+      "ogDescription": "Play a polished Palace tutorial: match or beat, burn with ten, watch a pile pickup, learn power cards, and clear all three levels.",
+      "ogImage": "https://4ohi.com/assets/icon-palace-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "palace-play.html",
+      "status": 200
+    },
+    {
+      "title": "Palace: Fact, Folklore & Legend | Four of Hearts",
+      "h1": "A game carried by memory.",
+      "description": "Explore what is documented about Palace, what players pass along, and the clearly labeled legends that travel with the game.",
+      "canonical": "https://4ohi.com/palace-story.html",
+      "ogTitle": "Palace: Fact, Folklore & Legend | Four of Hearts",
+      "ogDescription": "Explore what is documented about Palace, what players pass along, and the clearly labeled legends that travel with the game.",
+      "ogImage": "https://4ohi.com/assets/icon-palace-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "palace-story.html",
+      "status": 200
+    },
+    {
+      "title": "News | Four of Hearts Interactive",
+      "h1": "The table is taking shape.",
+      "description": "Palace development stories, studio updates, and honest Internal Alpha news from Four of Hearts Interactive.",
+      "canonical": "https://4ohi.com/news.html",
+      "ogTitle": "News | Four of Hearts Interactive",
+      "ogDescription": "Palace development stories, studio updates, and honest Internal Alpha news from Four of Hearts Interactive.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "news.html",
+      "status": 200
+    },
+    {
+      "title": "Why We’re Building Palace | Four of Hearts News",
+      "h1": "Why We’re Building Palace",
+      "description": "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
+      "canonical": "https://4ohi.com/news-why-were-building-palace.html",
+      "ogTitle": "Why We’re Building Palace | Four of Hearts News",
+      "ogDescription": "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
+      "ogImage": "https://4ohi.com/assets/icon-palace-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "news-why-were-building-palace.html",
+      "status": 200
+    },
+    {
+      "title": "Palace Enters Founder Testing | Four of Hearts News",
+      "h1": "Palace Enters Founder Testing",
+      "description": "The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.",
+      "canonical": "https://4ohi.com/news-palace-enters-founder-testing.html",
+      "ogTitle": "Palace Enters Founder Testing | Four of Hearts News",
+      "ogDescription": "The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.",
+      "ogImage": "https://4ohi.com/assets/icon-palace-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "news-palace-enters-founder-testing.html",
+      "status": 200
+    },
+    {
+      "title": "Welcome to Four of Hearts Interactive | Four of Hearts News",
+      "h1": "Welcome to Four of Hearts Interactive",
+      "description": "Meet the South Dakota studio building Palace and a growing family of timeless card-table experiences.",
+      "canonical": "https://4ohi.com/news-welcome-to-four-of-hearts.html",
+      "ogTitle": "Welcome to Four of Hearts Interactive | Four of Hearts News",
+      "ogDescription": "Meet the South Dakota studio building Palace and a growing family of timeless card-table experiences.",
+      "ogImage": "https://4ohi.com/assets/brand-mark-4oh.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "news-welcome-to-four-of-hearts.html",
+      "status": 200
+    },
+    {
+      "title": "Meet the Four Games in the 4OH Family | Four of Hearts News",
+      "h1": "Meet the Four Games in the 4OH Family",
+      "description": "Palace leads the table, with Hearts, Spades, and Euchre bringing three distinct kinds of strategy to the studio.",
+      "canonical": "https://4ohi.com/news-meet-the-four-games.html",
+      "ogTitle": "Meet the Four Games in the 4OH Family | Four of Hearts News",
+      "ogDescription": "Palace leads the table, with Hearts, Spades, and Euchre bringing three distinct kinds of strategy to the studio.",
+      "ogImage": "https://4ohi.com/assets/brand-board.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "news-meet-the-four-games.html",
+      "status": 200
+    },
+    {
+      "title": "Building a Safer, Family-Friendly Card Table | Four of Hearts News",
+      "h1": "Building a Safer, Family-Friendly Card Table",
+      "description": "How Four of Hearts approaches clear policies, restrained data use, accessibility, and honest Internal Alpha communication.",
+      "canonical": "https://4ohi.com/news-building-a-safer-card-table.html",
+      "ogTitle": "Building a Safer, Family-Friendly Card Table | Four of Hearts News",
+      "ogDescription": "How Four of Hearts approaches clear policies, restrained data use, accessibility, and honest Internal Alpha communication.",
+      "ogImage": "https://4ohi.com/assets/brand-mark-4oh.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "news-building-a-safer-card-table.html",
+      "status": 200
+    },
+    {
+      "title": "More Games from Four of Hearts",
+      "h1": "Three more seats at the table.",
+      "description": "Meet Hearts, Spades, and Euchre—the growing game family behind flagship Palace—and try an accessible Internal Alpha teaching moment for each.",
+      "canonical": "https://4ohi.com/games.html",
+      "ogTitle": "More Games from Four of Hearts",
+      "ogDescription": "Meet Hearts, Spades, and Euchre—the growing game family behind flagship Palace—and try an accessible Internal Alpha teaching moment for each.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "games.html",
+      "status": 200
+    },
+    {
+      "title": "Quick Play | Four of Hearts Interactive",
+      "h1": "Choose your table.",
+      "description": "Start the flagship Palace preview or try short Hearts, Spades, and Euchre teaching moments from Four of Hearts Interactive.",
+      "canonical": "https://4ohi.com/play.html",
+      "ogTitle": "Quick Play | Four of Hearts Interactive",
+      "ogDescription": "Start the flagship Palace preview or try short Hearts, Spades, and Euchre teaching moments from Four of Hearts Interactive.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "play.html",
+      "status": 200
+    },
+    {
+      "title": "Hearts Quick Play | Four of Hearts Interactive",
+      "h1": "Follow suit. Duck the points.",
+      "description": "Try two accessible Hearts teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "canonical": "https://4ohi.com/hearts-play.html",
+      "ogTitle": "Hearts Quick Play | Four of Hearts Interactive",
+      "ogDescription": "Try two accessible Hearts teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "ogImage": "https://4ohi.com/assets/icon-hearts-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "hearts-play.html",
+      "status": 200
+    },
+    {
+      "title": "Spades Quick Play | Four of Hearts Interactive",
+      "h1": "Bid together. Let trump speak.",
+      "description": "Try two accessible Spades teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "canonical": "https://4ohi.com/spades-play.html",
+      "ogTitle": "Spades Quick Play | Four of Hearts Interactive",
+      "ogDescription": "Try two accessible Spades teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "ogImage": "https://4ohi.com/assets/icon-spades-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "spades-play.html",
+      "status": 200
+    },
+    {
+      "title": "Euchre Quick Play | Four of Hearts Interactive",
+      "h1": "Call trump. Find the bowers.",
+      "description": "Try two accessible Euchre teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "canonical": "https://4ohi.com/euchre-play.html",
+      "ogTitle": "Euchre Quick Play | Four of Hearts Interactive",
+      "ogDescription": "Try two accessible Euchre teaching decisions from Four of Hearts Interactive. No account, cookies, tracking, or saved progress.",
+      "ogImage": "https://4ohi.com/assets/icon-euchre-4hearts.webp",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "euchre-play.html",
+      "status": 200
+    },
+    {
+      "title": "About Four of Hearts Interactive | One Family. Many Games.",
+      "h1": "Four daughters. Four hearts. One idea worth building.",
+      "description": "Four daughters inspired Four of Hearts Interactive—a family-rooted game studio that measures success in smiles around the table.",
+      "canonical": "https://4ohi.com/about.html",
+      "ogTitle": "About Four of Hearts Interactive | One Family. Many Games.",
+      "ogDescription": "Four daughters inspired Four of Hearts Interactive—a family-rooted game studio that measures success in smiles around the table.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "about.html",
+      "status": 200
+    },
+    {
+      "title": "Support | Four of Hearts Interactive",
+      "h1": "Let’s get you back to the table.",
+      "description": "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
+      "canonical": "https://4ohi.com/support.html",
+      "ogTitle": "Support | Four of Hearts Interactive",
+      "ogDescription": "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "support.html",
+      "status": 200
+    },
+    {
+      "title": "Privacy Choices & Policy | Four of Hearts Interactive",
+      "h1": "Collect nothing the website does not need.",
+      "description": "Four of Hearts designed this website to avoid optional tracking: no analytics, advertising, cookies, browser storage, or visitor profiles.",
+      "canonical": "https://4ohi.com/privacy.html",
+      "ogTitle": "Privacy Choices & Policy | Four of Hearts Interactive",
+      "ogDescription": "Four of Hearts designed this website to avoid optional tracking: no analytics, advertising, cookies, browser storage, or visitor profiles.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "privacy.html",
+      "status": 200
+    },
+    {
+      "title": "Security | Four of Hearts Interactive",
+      "h1": "Help us keep the table safe.",
+      "description": "Responsible security-reporting guidance for Four of Hearts Interactive products and website.",
+      "canonical": "https://4ohi.com/security.html",
+      "ogTitle": "Security | Four of Hearts Interactive",
+      "ogDescription": "Responsible security-reporting guidance for Four of Hearts Interactive products and website.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "security.html",
+      "status": 200
+    },
+    {
+      "title": "Internal Alpha Terms | Four of Hearts Interactive",
+      "h1": "Terms of Use",
+      "description": "Conservative terms for invited Internal Alpha use of Four of Hearts Interactive games and website tutorials.",
+      "canonical": "https://4ohi.com/terms.html",
+      "ogTitle": "Internal Alpha Terms | Four of Hearts Interactive",
+      "ogDescription": "Conservative terms for invited Internal Alpha use of Four of Hearts Interactive games and website tutorials.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "terms.html",
+      "status": 200
+    },
+    {
+      "title": "Contact | Four of Hearts Interactive",
+      "h1": "We’d love to hear from you.",
+      "description": "Contact Four of Hearts Interactive, LLC in South Dakota about Palace, support, privacy, or security.",
+      "canonical": "https://4ohi.com/contact.html",
+      "ogTitle": "Contact | Four of Hearts Interactive",
+      "ogDescription": "Contact Four of Hearts Interactive, LLC in South Dakota about Palace, support, privacy, or security.",
+      "ogImage": "https://4ohi.com/assets/og-brand.jpg",
+      "imagesLoaded": true,
+      "cookie": "",
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "name": "contact.html",
+      "status": 200
+    }
+  ],
+  "responsive": [
+    {
+      "path": "/",
+      "width": 320,
+      "height": 568,
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/",
+      "width": 360,
+      "height": 800,
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/",
+      "width": 412,
+      "height": 915,
+      "clientWidth": 412,
+      "scrollWidth": 412
+    },
+    {
+      "path": "/",
+      "width": 430,
+      "height": 932,
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "height": 1024,
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/",
+      "width": 1366,
+      "height": 768,
+      "clientWidth": 1366,
+      "scrollWidth": 1366
+    },
+    {
+      "path": "/",
+      "width": 1920,
+      "height": 1080,
+      "clientWidth": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "path": "/palace.html",
+      "width": 320,
+      "height": 568,
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/palace.html",
+      "width": 360,
+      "height": 800,
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    {
+      "path": "/palace.html",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/palace.html",
+      "width": 412,
+      "height": 915,
+      "clientWidth": 412,
+      "scrollWidth": 412
+    },
+    {
+      "path": "/palace.html",
+      "width": 430,
+      "height": 932,
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    {
+      "path": "/palace.html",
+      "width": 768,
+      "height": 1024,
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/palace.html",
+      "width": 1366,
+      "height": 768,
+      "clientWidth": 1366,
+      "scrollWidth": 1366
+    },
+    {
+      "path": "/palace.html",
+      "width": 1920,
+      "height": 1080,
+      "clientWidth": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 320,
+      "height": 568,
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 360,
+      "height": 800,
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 412,
+      "height": 915,
+      "clientWidth": 412,
+      "scrollWidth": 412
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 430,
+      "height": 932,
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 768,
+      "height": 1024,
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 1366,
+      "height": 768,
+      "clientWidth": 1366,
+      "scrollWidth": 1366
+    },
+    {
+      "path": "/palace-play.html",
+      "width": 1920,
+      "height": 1080,
+      "clientWidth": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "path": "/news.html",
+      "width": 320,
+      "height": 568,
+      "clientWidth": 320,
+      "scrollWidth": 320
+    },
+    {
+      "path": "/news.html",
+      "width": 360,
+      "height": 800,
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    {
+      "path": "/news.html",
+      "width": 390,
+      "height": 844,
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    {
+      "path": "/news.html",
+      "width": 412,
+      "height": 915,
+      "clientWidth": 412,
+      "scrollWidth": 412
+    },
+    {
+      "path": "/news.html",
+      "width": 430,
+      "height": 932,
+      "clientWidth": 430,
+      "scrollWidth": 430
+    },
+    {
+      "path": "/news.html",
+      "width": 768,
+      "height": 1024,
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/news.html",
+      "width": 1366,
+      "height": 768,
+      "clientWidth": 1366,
+      "scrollWidth": 1366
+    },
+    {
+      "path": "/news.html",
+      "width": 1920,
+      "height": 1080,
+      "clientWidth": 1920,
+      "scrollWidth": 1920
+    }
+  ],
+  "palaceTutorial": [
+    {
+      "label": "take seat",
+      "text": "PALACE FIELD TRAINING\nScene 1 / 5\n1\nMATCH OR BEAT\n2\nTEN BURNS\n3\nPICKUP\n4\nPOWER CARDS\n5\nTHREE LEVELS\nRIVAL · 3 CARDS\n4OH\n♥\n4OH\n♥\n4OH\n♥\nTOP OF PILE\n6\n♣\n6\n♣\nMATCH 6 OR PLAY HIGHER\nYOUR HAND\n4\n♦\n4\n♦\n6\n♥\n6\n♥\n9\n♠\n9\n♠\n1\n0\n1\n0\n\nChoose a card. Try the four first—you can recover from a mistake."
+    },
+    {
+      "label": "match equal rank",
+      "text": "PALACE FIELD TRAINING\nScene 2 / 5\n1\nMATCH OR BEAT\n2\nTEN BURNS\n3\nPICKUP\n4\nPOWER CARDS\n5\nTHREE LEVELS\nRIVAL · WATCHING\n4OH\n♥\n4OH\n♥\nTHE PILE IS GETTING HEAVY\n5\n♦\n5\n♦\n7\n♣\n7\n♣\n9\n♥\n9\n♥\nTEN BURNS THE ENTIRE PILE\nYOUR HAND\n3\n♣\n3\n♣\n1\n0\n1\n0\nK\n♦\nK\n♦\n\nPlay the ten. The pile will disappear and you lead again."
+    },
+    {
+      "label": "ten burns pile",
+      "text": "PALACE FIELD TRAINING\nScene 3 / 5\n1\nMATCH OR BEAT\n2\nTEN BURNS\n3\nPICKUP\n4\nPOWER CARDS\n5\nTHREE LEVELS\nRIVAL · THINKING\n3\n♠\n3\n♠\n5\n♥\n5\n♥\nTOP OF PILE\nQ\n♣\nQ\n♣\nNO MATCH. NOTHING HIGHER.\nYOUR MOVE IS COMPLETE\nLet the rival play\n\nWhen a player cannot match or beat the pile, they pick up every card in it."
+    },
+    {
+      "label": "opponent picks up",
+      "text": "PALACE FIELD TRAINING\nScene 4 / 5\n1\nMATCH OR BEAT\n2\nTEN BURNS\n3\nPICKUP\n4\nPOWER CARDS\n5\nTHREE LEVELS\n\nCHANGE THE GAME\n\nFOUR POWER CARDS.\nFOUR WAYS OUT.\n\nSelect each card to learn the Four of Hearts rule.\n\n2\n♣\n2\n♣\n7\n♥\n7\n♥\n8\n♠\n8\n♠\n1\n0\n1\n0\nChoose a power card\n2 resets · 7 requires lower · 8 is transparent · 10 burns\n\nExplore all four power cards to continue."
+    },
+    {
+      "label": "all power cards",
+      "text": "PALACE FIELD TRAINING\nScene 5 / 5\n1\nMATCH OR BEAT\n2\nTEN BURNS\n3\nPICKUP\n4\nPOWER CARDS\n5\nTHREE LEVELS\n\nTHE PALACE FINISH\n\nTHREE LEVELS.\nONE CROWN.\n\nClear each level in order. The final cards stay hidden until you play them.\n\n4OH\n♥\n4OH\n♥\n4OH\n♥\n4\n♥\n4\n♥\n8\n♣\n8\n♣\nK\n♠\nK\n♠\n3\n♦\n3\n♦\n6\n♣\n6\n♣\n1\n0\n1\n0\nCARDS IN HAND\nSelect the cards to move to the next level\n\nHand first. Face-up next. Face-down last."
+    }
+  ],
+  "secondaryTutorials": [
+    {
+      "game": "hearts",
+      "heading": "Nice play."
+    },
+    {
+      "game": "spades",
+      "heading": "Nice play."
+    },
+    {
+      "game": "euchre",
+      "heading": "Nice play."
+    }
+  ],
+  "accessibility": {
+    "textZoom125": {
+      "clientWidth": 390,
+      "scrollWidth": 390
+    },
+    "firstTab": {
+      "text": "Skip to content",
+      "href": "#main"
+    },
+    "primaryTargets": [
+      {
+        "text": "4♥\n        Four of HeartsInteractive",
+        "width": 68,
+        "height": 56
+      },
+      {
+        "text": "Menu",
+        "width": 58.78125,
+        "height": 48
+      },
+      {
+        "text": "Take your seat",
+        "width": 155.53125,
+        "height": 53.984375
+      }
+    ],
+    "reducedMotion": {
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s"
+    }
+  },
+  "discovery": {
+    "robots.txt": {
+      "status": 200,
+      "containsExpected": true
+    },
+    "sitemap.xml": {
+      "status": 200,
+      "containsExpected": true
+    },
+    "feed.xml": {
+      "status": 200,
+      "containsExpected": true
+    }
+  },
+  "requests": [
+    "https://4ohi.com/",
+    "https://4ohi.com/assets/palace-site.css",
+    "https://4ohi.com/assets/palace-launch.css",
+    "https://4ohi.com/assets/founder-redesign.css",
+    "https://4ohi.com/assets/site-config.js",
+    "https://4ohi.com/assets/site.js",
+    "https://4ohi.com/assets/palace-name.js",
+    "https://4ohi.com/assets/launch-countdown.js",
+    "https://4ohi.com/assets/brand-mark-4oh.webp",
+    "https://4ohi.com/assets/palace-hero-1024.webp",
+    "https://4ohi.com/assets/favicon.png",
+    "https://4ohi.com/assets/icon-palace-4hearts.webp",
+    "https://4ohi.com/assets/icon-hearts-4hearts.webp",
+    "https://4ohi.com/assets/icon-spades-4hearts.webp",
+    "https://4ohi.com/assets/icon-euchre-4hearts.webp",
+    "https://4ohi.com/palace.html",
+    "https://4ohi.com/palace-play.html",
+    "https://4ohi.com/assets/palace-tutorial-v3.js",
+    "https://4ohi.com/palace-story.html",
+    "https://4ohi.com/news.html",
+    "https://4ohi.com/assets/brand-board.webp",
+    "https://4ohi.com/news-why-were-building-palace.html",
+    "https://4ohi.com/news-palace-enters-founder-testing.html",
+    "https://4ohi.com/news-welcome-to-four-of-hearts.html",
+    "https://4ohi.com/news-meet-the-four-games.html",
+    "https://4ohi.com/news-building-a-safer-card-table.html",
+    "https://4ohi.com/games.html",
+    "https://4ohi.com/play.html",
+    "https://4ohi.com/hearts-play.html",
+    "https://4ohi.com/assets/more-games-tutorial.js",
+    "https://4ohi.com/spades-play.html",
+    "https://4ohi.com/euchre-play.html",
+    "https://4ohi.com/about.html",
+    "https://4ohi.com/support.html",
+    "https://4ohi.com/privacy.html",
+    "https://4ohi.com/security.html",
+    "https://4ohi.com/terms.html",
+    "https://4ohi.com/contact.html",
+    "https://4ohi.com/assets/palace-hero-384.webp",
+    "https://4ohi.com/assets/palace-hero-640.webp",
+    "https://4ohi.com/404.html"
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "launch": {
+    "brandLoaded": true,
+    "countdownUnits": 4,
+    "countdownLabel": "82 days, 13 hours, 32 minutes, and 25 seconds until October 17, 2026",
+    "launchDate": "The Palace opens inOctober 17, 2026",
+    "primaryAction": "Play the Palace tutorial"
+  },
+  "palaceTutorialFinal": "You rule this Palace.",
+  "performance": {
+    "homeDesktop": {
+      "path": "/",
+      "width": 1440,
+      "height": 900,
+      "totalTransferBytes": 232348,
+      "javascriptTransferBytes": 3826,
+      "cssTransferBytes": 18043,
+      "largestResource": {
+        "name": "/assets/palace-hero-1024.webp",
+        "type": "img",
+        "transferSize": 154972,
+        "decodedBodySize": 154672
+      },
+      "totalDecodedBytes": 293473,
+      "javascriptDecodedBytes": 6061,
+      "cssDecodedBytes": 69151,
+      "largestDecodedResource": {
+        "name": "/assets/palace-hero-1024.webp",
+        "type": "img",
+        "transferSize": 154972,
+        "decodedBodySize": 154672
+      },
+      "resources": [
+        {
+          "name": "/",
+          "type": "navigation",
+          "transferSize": 4355,
+          "decodedBodySize": 13037
+        },
+        {
+          "name": "/assets/palace-site.css",
+          "type": "link",
+          "transferSize": 8706,
+          "decodedBodySize": 36720
+        },
+        {
+          "name": "/assets/palace-launch.css",
+          "type": "link",
+          "transferSize": 4082,
+          "decodedBodySize": 14087
+        },
+        {
+          "name": "/assets/founder-redesign.css",
+          "type": "link",
+          "transferSize": 5255,
+          "decodedBodySize": 18344
+        },
+        {
+          "name": "/assets/site-config.js",
+          "type": "script",
+          "transferSize": 516,
+          "decodedBodySize": 294
+        },
+        {
+          "name": "/assets/site.js",
+          "type": "script",
+          "transferSize": 1517,
+          "decodedBodySize": 3121
+        },
+        {
+          "name": "/assets/palace-name.js",
+          "type": "script",
+          "transferSize": 846,
+          "decodedBodySize": 1164
+        },
+        {
+          "name": "/assets/launch-countdown.js",
+          "type": "script",
+          "transferSize": 947,
+          "decodedBodySize": 1482
+        },
+        {
+          "name": "/assets/brand-mark-4oh.webp",
+          "type": "img",
+          "transferSize": 41764,
+          "decodedBodySize": 41464
+        },
+        {
+          "name": "/assets/palace-hero-1024.webp",
+          "type": "img",
+          "transferSize": 154972,
+          "decodedBodySize": 154672
+        },
+        {
+          "name": "/assets/favicon.png",
+          "type": "other",
+          "transferSize": 9388,
+          "decodedBodySize": 9088
+        }
+      ]
+    },
+    "palaceTutorialMobile": {
+      "path": "/palace-play.html",
+      "width": 390,
+      "height": 844,
+      "totalTransferBytes": 78817,
+      "javascriptTransferBytes": 7556,
+      "cssTransferBytes": 18043,
+      "largestResource": {
+        "name": "/assets/brand-mark-4oh.webp",
+        "type": "img",
+        "transferSize": 41764,
+        "decodedBodySize": 41464
+      },
+      "totalDecodedBytes": 140658,
+      "javascriptDecodedBytes": 15926,
+      "cssDecodedBytes": 69151,
+      "largestDecodedResource": {
+        "name": "/assets/brand-mark-4oh.webp",
+        "type": "img",
+        "transferSize": 41764,
+        "decodedBodySize": 41464
+      },
+      "resources": [
+        {
+          "name": "/palace-play.html",
+          "type": "navigation",
+          "transferSize": 2066,
+          "decodedBodySize": 5029
+        },
+        {
+          "name": "/assets/palace-site.css",
+          "type": "link",
+          "transferSize": 8706,
+          "decodedBodySize": 36720
+        },
+        {
+          "name": "/assets/palace-launch.css",
+          "type": "link",
+          "transferSize": 4082,
+          "decodedBodySize": 14087
+        },
+        {
+          "name": "/assets/founder-redesign.css",
+          "type": "link",
+          "transferSize": 5255,
+          "decodedBodySize": 18344
+        },
+        {
+          "name": "/assets/site-config.js",
+          "type": "script",
+          "transferSize": 516,
+          "decodedBodySize": 294
+        },
+        {
+          "name": "/assets/palace-name.js",
+          "type": "script",
+          "transferSize": 846,
+          "decodedBodySize": 1164
+        },
+        {
+          "name": "/assets/site.js",
+          "type": "script",
+          "transferSize": 1517,
+          "decodedBodySize": 3121
+        },
+        {
+          "name": "/assets/launch-countdown.js",
+          "type": "script",
+          "transferSize": 947,
+          "decodedBodySize": 1482
+        },
+        {
+          "name": "/assets/palace-tutorial-v3.js",
+          "type": "script",
+          "transferSize": 3730,
+          "decodedBodySize": 9865
+        },
+        {
+          "name": "/assets/brand-mark-4oh.webp",
+          "type": "img",
+          "transferSize": 41764,
+          "decodedBodySize": 41464
+        },
+        {
+          "name": "/assets/favicon.png",
+          "type": "other",
+          "transferSize": 9388,
+          "decodedBodySize": 9088
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "h1": "This card isn’t in the deck.",
+    "noindex": "noindex"
+  },
+  "cookies": [],
+  "thirdPartyRequests": [],
+  "insecureSourceRequests": []
+}

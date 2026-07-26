@@ -67,5 +67,5 @@ Last run: 2026-07-26
 - [x] Five-scene tutorial verifies recoverable mistake, match, ten burn, opponent pickup, all power cards, three levels, replay/completion links.
 - [x] Privacy Choices center accurately reports zero optional tracking/storage.
 - [x] Local browser suite passed 21 routes, 32 viewport checks, three secondary tutorials, reduced motion, metadata/discovery, zero cookies/storage/third-party requests/console errors/failed requests.
-- [ ] Exact-SHA public deployment and public HTTPS acceptance recorded after commit/push.
+- [x] Exact-SHA public deployment and public HTTPS acceptance recorded after commit/push.
 - [ ] Founder factual approvals and qualified legal/history review completed before commercial reliance.
