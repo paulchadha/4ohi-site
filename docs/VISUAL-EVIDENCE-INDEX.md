@@ -11,6 +11,9 @@ Current generated evidence:
 - `app-mini-match-390x844.png` and RTL Shed variant — Palace table.
 - `app-news-*`, `app-games-*`, `app-about-*` — editorial/product pages.
 - Hearts, Spades, and Euchre phone-table screenshots from the previous founder correction remain useful; the JSON result is authoritative for current DOM/state assertions.
+- `commander-thumb-hero-320x568.png`, `430x932`, `768x1024`, and `1366x768` — Commander ThumB hero at phone, tablet, and laptop sizes.
+- `palace-readability-375x812.png` — repaired Play Palace contrast and solid-surface treatment on a phone.
+- `commander-thumb-results.json` — passing local Commander route, lore, spelling, artwork, responsive, keyboard, reduced-motion, and Palace readability record.
 
 - `page-reconstruction-public-results.json` — passing public acceptance record for deployed SHA `3e26967f4a938e63a8c56cedea847bdc652ebc20`.
 

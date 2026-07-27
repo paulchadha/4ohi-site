@@ -16,7 +16,7 @@ const browser = await chromium.launch({ headless: true, executablePath: chrome }
 const context = await browser.newContext();
 
 const pages = [
-  "index.html", "palace.html", "palace-play.html", "palace-story.html", "palace-faq.html",
+  "index.html", "palace.html", "palace-play.html", "palace-story.html", "palace-faq.html", "commander-thumb.html",
   "news.html", "news-why-were-building-palace.html", "news-palace-enters-founder-testing.html",
   "news-welcome-to-four-of-hearts.html", "news-meet-the-four-games.html",
   "news-building-a-safer-card-table.html", "games.html", "play.html",

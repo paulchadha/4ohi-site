@@ -5,6 +5,7 @@ Public company website for Four of Hearts Interactive, LLC and `4ohi.com`.
 ## Current product state
 
 - Palace, Hearts, Spades, and Euchre are in Internal Alpha.
+- Commander ThumB is an original Coming Soon arcade-defense game; no public-play or release-date claim is made.
 - Public app-store availability is not claimed and no download badges are shown.
 - `play.html` offers two short, no-stakes teaching choices for each game; these are tutorials, not full game builds.
 - Player, privacy, security, and general inquiries currently use `support@4ohi.com`.
@@ -12,7 +13,7 @@ Public company website for Four of Hearts Interactive, LLC and `4ohi.com`.
 ## Architecture
 
 - Dependency-free static HTML, CSS, and JavaScript generated from shared templates; no framework or production runtime.
-- `scripts/build-site.mjs` generates 22 HTML pages plus sitemap and RSS from shared navigation, metadata, and `content/news.json`.
+- `scripts/build-site.mjs` generates 24 HTML pages plus sitemap and RSS from shared navigation, metadata, and `content/news.json`.
 - All tutorials keep progress only in page memory. They use no account, storage, form, API, or network request beyond static site assets.
 - No analytics, advertising, tracking pixels, remote fonts, or first-party cookies.
 - GitHub Pages publishes `main` from the repository root.
@@ -61,6 +62,7 @@ Never change MX, SPF, DKIM, DMARC, provider verification, or unrelated TXT recor
 - [Social links](docs/SOCIAL-LINKS.md)
 - [Performance](docs/PERFORMANCE.md)
 - [Accessibility acceptance](docs/ACCESSIBILITY.md)
+- [Commander ThumB website](COMMANDER_THUMB_WEBSITE.md)
 
 Never commit credentials, tokens, recovery codes, private keys, private correspondence, or account exports.
 

@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-07-26T17:43:47.254Z",
+  "checkedAt": "2026-07-27T01:49:35.261Z",
   "pages": [
     {
       "file": "index.html",
@@ -12,6 +12,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -24,6 +25,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -36,6 +38,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -48,6 +51,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -60,6 +64,20 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
+      "errors": []
+    },
+    {
+      "file": "commander-thumb.html",
+      "status": 200,
+      "h1": 1,
+      "overflow": false,
+      "nameControl": true,
+      "languageControl": true,
+      "settings": true,
+      "externalScripts": [],
+      "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -72,6 +90,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -84,6 +103,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -96,6 +116,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -108,6 +129,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -120,6 +142,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -132,6 +155,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -144,6 +168,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -156,6 +181,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -168,6 +194,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -180,6 +207,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -192,6 +220,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -204,6 +233,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -216,6 +246,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -228,6 +259,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -240,6 +272,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -252,6 +285,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -264,6 +298,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     },
     {
@@ -276,6 +311,7 @@
       "settings": true,
       "externalScripts": [],
       "alternates": 9,
+      "fingerprintedAssets": true,
       "errors": []
     }
   ],
@@ -289,6 +325,10 @@
       "navName": "Palace",
       "playLabel": "Play Palace",
       "newsLabel": "Palace News",
+      "localeLabel": "English",
+      "navNews": "News",
+      "artMode": "palace",
+      "artSrc": "http://127.0.0.1:4173/assets/palace-hero-640.webp?v=f20e56a256c7",
       "linksPreserve": true
     },
     {
@@ -300,6 +340,10 @@
       "navName": "Shed",
       "playLabel": "Play Shed",
       "newsLabel": "Shed News",
+      "localeLabel": "English",
+      "navNews": "News",
+      "artMode": "shed",
+      "artSrc": "http://127.0.0.1:4173/assets/shed-identity-640.webp?v=f9d4fe31d211",
       "linksPreserve": true
     },
     {
@@ -311,6 +355,10 @@
       "navName": "Shed",
       "playLabel": "Jouer à Shed",
       "newsLabel": "Actualités Shed",
+      "localeLabel": "Français",
+      "navNews": "News",
+      "artMode": "shed",
+      "artSrc": "http://127.0.0.1:4173/assets/shed-identity-640.webp?v=f9d4fe31d211",
       "linksPreserve": true
     },
     {
@@ -322,6 +370,10 @@
       "navName": "Palace",
       "playLabel": "Jugar a Palace",
       "newsLabel": "Noticias de Palace",
+      "localeLabel": "Español",
+      "navNews": "News",
+      "artMode": "palace",
+      "artSrc": "http://127.0.0.1:4173/assets/palace-hero-640.webp?v=f20e56a256c7",
       "linksPreserve": true
     },
     {
@@ -333,6 +385,10 @@
       "navName": "Shed",
       "playLabel": "Shed खेलें",
       "newsLabel": "Shed समाचार",
+      "localeLabel": "हिन्दी",
+      "navNews": "News",
+      "artMode": "shed",
+      "artSrc": "http://127.0.0.1:4173/assets/shed-identity-640.webp?v=f9d4fe31d211",
       "linksPreserve": true
     },
     {
@@ -344,6 +400,10 @@
       "navName": "Palace",
       "playLabel": "试玩 Palace",
       "newsLabel": "Palace 新闻",
+      "localeLabel": "简体中文",
+      "navNews": "News",
+      "artMode": "palace",
+      "artSrc": "http://127.0.0.1:4173/assets/palace-hero-640.webp?v=f20e56a256c7",
       "linksPreserve": true
     },
     {
@@ -355,6 +415,10 @@
       "navName": "Shed",
       "playLabel": "לשחק Shed",
       "newsLabel": "חדשות Shed",
+      "localeLabel": "עברית",
+      "navNews": "News",
+      "artMode": "shed",
+      "artSrc": "http://127.0.0.1:4173/assets/shed-identity-640.webp?v=f9d4fe31d211",
       "linksPreserve": true
     },
     {
@@ -366,6 +430,10 @@
       "navName": "Palace",
       "playLabel": "العب Palace",
       "newsLabel": "أخبار Palace",
+      "localeLabel": "العربية",
+      "navNews": "News",
+      "artMode": "palace",
+      "artSrc": "http://127.0.0.1:4173/assets/palace-hero-640.webp?v=f20e56a256c7",
       "linksPreserve": true
     },
     {
@@ -375,58 +443,221 @@
       "dir": "ltr",
       "name": "Shed",
       "navName": "Shed",
-      "playLabel": "Give Shed a go",
-      "newsLabel": "Shed News, eh?",
+      "playLabel": "Give Shed a go, eh?",
+      "newsLabel": "Shed News from the table",
+      "localeLabel": "Canadian",
+      "navNews": "Table Talk",
+      "artMode": "shed",
+      "artSrc": "http://127.0.0.1:4173/assets/shed-identity-640.webp?v=f9d4fe31d211",
       "linksPreserve": true
     }
   ],
   "layouts": {
     "app-home-1440x900.png": {
       "overflow": false,
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
       "headerBottom": 89,
-      "h1Bottom": 636,
+      "h1Left": 130,
+      "h1Right": 595,
+      "h1Bottom": 474,
+      "h1Size": 99.2,
+      "firstActionTop": 637,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-home-320x568.png": {
+      "overflow": false,
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 198,
+      "h1Bottom": 580,
+      "h1Size": 40,
+      "firstActionTop": 797,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-home-360x800.png": {
+      "overflow": false,
+      "viewportWidth": 360,
+      "scrollWidth": 360,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 221,
+      "h1Bottom": 576,
+      "h1Size": 45,
+      "firstActionTop": 765,
       "newsTop": 0,
       "gamesTop": 0
     },
     "app-home-390x844.png": {
       "overflow": false,
-      "headerBottom": 89,
-      "h1Bottom": 636,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 239,
+      "h1Bottom": 583,
+      "h1Size": 48.75,
+      "firstActionTop": 732,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-home-412x915.png": {
+      "overflow": false,
+      "viewportWidth": 412,
+      "scrollWidth": 412,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 251,
+      "h1Bottom": 588,
+      "h1Size": 51.5,
+      "firstActionTop": 737,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-home-430x932.png": {
+      "overflow": false,
+      "viewportWidth": 430,
+      "scrollWidth": 430,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 262,
+      "h1Bottom": 592,
+      "h1Size": 53.75,
+      "firstActionTop": 741,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-home-768x1024.png": {
+      "overflow": false,
+      "viewportWidth": 768,
+      "scrollWidth": 768,
+      "headerBottom": 83,
+      "h1Left": 16,
+      "h1Right": 268,
+      "h1Bottom": 346,
+      "h1Size": 53.76,
+      "firstActionTop": 495,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-palace-390x844.png": {
+      "overflow": false,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 239,
+      "h1Bottom": 583,
+      "h1Size": 48.75,
+      "firstActionTop": 732,
       "newsTop": 0,
       "gamesTop": 0
     },
     "app-news-1440x900.png": {
       "overflow": false,
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
       "headerBottom": 89,
-      "h1Bottom": 273,
-      "newsTop": 479,
+      "h1Left": 608,
+      "h1Right": 1267,
+      "h1Bottom": 288,
+      "h1Size": 86.4,
+      "firstActionTop": 0,
+      "newsTop": 439,
+      "gamesTop": 0
+    },
+    "app-news-390x844.png": {
+      "overflow": false,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 353,
+      "h1Bottom": 293,
+      "h1Size": 48.75,
+      "firstActionTop": 0,
+      "newsTop": 378,
       "gamesTop": 0
     },
     "app-games-1440x900.png": {
       "overflow": false,
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
       "headerBottom": 89,
-      "h1Bottom": 343,
+      "h1Left": 608,
+      "h1Right": 1267,
+      "h1Bottom": 368,
+      "h1Size": 86.4,
+      "firstActionTop": 0,
       "newsTop": 0,
-      "gamesTop": 518
+      "gamesTop": 550
+    },
+    "app-games-390x844.png": {
+      "overflow": false,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 353,
+      "h1Bottom": 339,
+      "h1Size": 48.75,
+      "firstActionTop": 0,
+      "newsTop": 0,
+      "gamesTop": 450
     },
     "app-about-1440x900.png": {
       "overflow": false,
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
       "headerBottom": 89,
-      "h1Bottom": 543,
+      "h1Left": 130,
+      "h1Right": 1002,
+      "h1Bottom": 599,
+      "h1Size": 99.2,
+      "firstActionTop": 3284,
+      "newsTop": 0,
+      "gamesTop": 0
+    },
+    "app-about-390x844.png": {
+      "overflow": false,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "headerBottom": 119,
+      "h1Left": 10,
+      "h1Right": 353,
+      "h1Bottom": 510,
+      "h1Size": 48.75,
+      "firstActionTop": 3838,
       "newsTop": 0,
       "gamesTop": 0
     },
     "app-mini-match-390x844.png": {
       "overflow": false,
-      "headerBottom": 89,
-      "h1Bottom": 148,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "headerBottom": 119,
+      "h1Left": 0,
+      "h1Right": 1,
+      "h1Bottom": 158,
+      "h1Size": 66.3,
+      "firstActionTop": 0,
       "newsTop": 0,
       "gamesTop": 0
     },
     "app-mini-match-ar-shed-390x844.png": {
       "overflow": false,
-      "headerBottom": 89,
-      "h1Bottom": 148,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "headerBottom": 119,
+      "h1Left": 389,
+      "h1Right": 390,
+      "h1Bottom": 158,
+      "h1Size": 66.3,
+      "firstActionTop": 0,
       "newsTop": 0,
       "gamesTop": 0
     }
@@ -449,6 +680,54 @@
       "complete": true
     }
   ],
+  "founderReview": {
+    "canonical": {
+      "canonicalState": {
+        "logo": "index.html?lang=en",
+        "countdowns": 1,
+        "transmission": "Transmission 001 · Development log",
+        "powerRanks": [
+          "2",
+          "7",
+          "8",
+          "10"
+        ],
+        "overlap": false,
+        "ruleCoversCard": false
+      },
+      "legacyFinal": {
+        "path": "/index.html",
+        "search": "?lang=en&game=shed",
+        "hash": "#rules"
+      }
+    },
+    "editorial": {
+      "dates": [
+        "2026-07-26",
+        "2026-07-23",
+        "2026-07-20",
+        "2026-07-17",
+        "2026-07-14"
+      ],
+      "futureBackground": "linear-gradient(135deg, rgb(11, 76, 167), rgb(84, 36, 143) 56%, rgb(178, 32, 58))",
+      "rejectedFounderHeadline": false,
+      "aboutBeats": 5
+    },
+    "palaceSetup": {
+      "faceUp": 3,
+      "faceDown": 3,
+      "drawDeck": 1,
+      "hand": 4,
+      "opponent": 3,
+      "pile": 1,
+      "overflow": false
+    }
+  },
+  "keyboard": {
+    "powerByKeyboard": true,
+    "nameMenuByKeyboard": true,
+    "dialogByKeyboard": true
+  },
   "privacy": {
     "cookies": "",
     "localStorage": 0,
