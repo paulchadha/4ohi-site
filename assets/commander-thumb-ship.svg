@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" ><defs>
+    <linearGradient id="ship-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset=".34" stop-color="#B9EFFF"/><stop offset=".7" stop-color="#168CFF"/><stop offset="1" stop-color="#083B91"/></linearGradient>
+    <linearGradient id="ship-accent" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFF2A4"/><stop offset=".45" stop-color="#FFD05A"/><stop offset="1" stop-color="#D85B08"/></linearGradient>
+    <radialGradient id="ship-core"><stop stop-color="#FFFFFF"/><stop offset=".28" stop-color="#168CFF"/><stop offset="1" stop-color="#06317C"/></radialGradient>
+    <filter id="ship-glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+    <path d="M50 4 63 31 94 43 75 59 61 56 50 94 39 56 25 59 6 43 37 31Z" fill="url(#ship-metal)" stroke="#FFFFFF" stroke-width="2.4"/>
+    <path d="M50 15 60 38 50 58 40 38Z" fill="#D93346" stroke="#FFE27B" stroke-width="2"/>
+    <path d="M10 43 36 35 31 52 18 60ZM90 43 64 35 69 52 82 60Z" fill="url(#ship-accent)" stroke="#FFE98D" stroke-width="1.8"/>
+    <path d="M50 71V96M35 55 30 77M65 55 70 77" stroke="#55ECFF" stroke-width="5" stroke-linecap="round" filter="url(#ship-glow)"/>
+    <path d="M50 31 57 43 50 54 43 43Z" fill="#27B8FF" opacity=".8"/>
+    </svg>

@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
+import { commanderPage } from "./commander-content.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const assetVersion = (assetPath) => {
@@ -30,6 +31,7 @@ const nav = (current) => {
   const items = [
     ["palace", "index.html", gameToken("gameName", "Palace")],
     ["play", "palace-play.html", gameMessage("playGame", "Play Palace")],
+    ["commander", "commander-thumb.html", "Commander ThumB"],
     ["news", "news.html", brandMessage("navNews", "News")],
     ["games", "games.html", brandMessage("navGames", "More Games")],
     ["about", "about.html", brandMessage("navAbout", "About 4OH")],
@@ -97,7 +99,7 @@ const footer = () => `<footer class="site-footer">
       <nav class="footer-links" aria-label="Footer">
         <a href="index.html">${gameToken("gameName", "Palace")}</a><a href="palace-play.html">${gameMessage("tutorialTitle", "Palace Mini-Match")}</a>
         <a href="palace-story.html">${gameMessage("gameHistory", "Palace History")}</a><a href="palace-faq.html">${gameMessage("gameRules", "Palace Rules")} & FAQ</a><a href="news.html">${brandMessage("navNews", "News")}</a>
-        <a href="games.html">More Games</a><a href="about.html">About 4OH</a>
+        <a href="commander-thumb.html">Commander ThumB</a><a href="games.html">More Games</a><a href="about.html">About 4OH</a>
         <a href="support.html">Support</a><a href="privacy.html">Privacy</a>
         <a href="security.html">Security</a><a href="terms.html">Terms</a>
         <a href="contact.html">Contact</a>
@@ -142,6 +144,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/founder-redesign.css">
   <link rel="stylesheet" href="assets/app-experience-v2.css">
   <link rel="stylesheet" href="assets/palace-app-web.css">
+  <link rel="stylesheet" href="assets/commander-thumb.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -262,7 +265,7 @@ write("index.html", page({
 
     <section class="section family-story"><div class="shell story-split"><div><p class="eyebrow">The four hearts behind the name</p><h2>Built from one family for many.</h2><div class="four-heart-line" aria-label="Four hearts"><span>♥</span><span>♥</span><span>♥</span><span>♥</span></div></div><div><p class="lede">Four daughters created the spark. Four hearts became the name. The company grew from a family table and one stubborn belief: life is short, playing together matters, and the best measure of a game is the smiles it leaves around the table.</p><p><strong>One Family. Many Games.</strong></p><a class="text-link" href="about.html">Meet Four of Hearts</a></div></div></section>
 
-    <section class="section"><div class="shell"><div class="section-heading"><div><p class="eyebrow">More games from Four of Hearts</p><h2>Three more seats are waiting.</h2></div><p class="lede">${gameToken("gameName", "Palace")} leads. Hearts, Spades, and Euchre bring three more distinct table traditions—each currently in Internal Alpha.</p></div><div class="game-grid"><article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Hearts</h3><a class="text-link" href="hearts-play.html">Try Quick Play</a></div></article><article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Spades</h3><a class="text-link" href="spades-play.html">Try Quick Play</a></div></article><article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Try Quick Play</a></div></article></div></div></section>
+    <section class="section"><div class="shell"><div class="section-heading"><div><p class="eyebrow">More games from Four of Hearts</p><h2>Another world is calling.</h2></div><p class="lede">${gameToken("gameName", "Palace")} leads. Hearts, Spades, and Euchre bring three more distinct table traditions—each currently in Internal Alpha.</p></div><div class="game-grid"><article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Hearts</h3><a class="text-link" href="hearts-play.html">Try Quick Play</a></div></article><article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Spades</h3><a class="text-link" href="spades-play.html">Try Quick Play</a></div></article><article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Try Quick Play</a></div></article><article class="panel game-tile commander-tile"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div class="game-tile-content"><span class="alpha-badge">Coming Soon</span><h3>Commander ThumB</h3><p>A distant world is under attack. Protect the bases of Thum B and battle through 1,000 levels to save the Thum System.</p><a class="text-link" href="commander-thumb.html">Enter the Thum System</a></div></article></div></div></section>
     <section class="section"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Learn the table legend</p><h2>Rules, strategy, names, and the final hidden card.</h2></div><p class="lede">New here? Start with the match-or-beat rule, meet the four power cards, then learn why the game travels under so many names.</p></div><div class="actions"><a class="button" href="palace-faq.html">Palace rules & FAQ</a><a class="text-link" href="palace-story.html">History, sources & table lore</a></div></div></section>
     <section class="section compact navy">
       <div class="shell palace-band">
@@ -293,7 +296,8 @@ write("palace.html", page({
       </div>
     </div></section>
     <section class="section navy"><div class="shell story-split"><div><p class="eyebrow">Same game. Different tables.</p><h2>What do you call it?</h2><p class="lede">Palace and Shed are names used for the same wider game family. Change the displayed name for this page session; nothing is stored.</p></div><div class="name-console"><h3>Table name</h3><div class="name-options" role="group" aria-label="Choose the displayed game name"><button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button><button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button></div><p data-name-status role="status">Palace is used at this table. This choice resets when you refresh.</p><p class="name-secret" data-name-secret tabindex="-1" hidden>You found the name some tables whisper. Welcome to the founder’s table.</p></div></div></section>
-    <section class="section"><div class="shell story-split"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers" width="512" height="512" loading="lazy"><div><p class="eyebrow">A game built to travel</p><h2>Passed hand to hand.</h2><p class="lede">Palace belongs to a folk shedding-game family with many regional names and house rules. The exact origin remains uncertain. The Four of Hearts edition gives that living tradition one clear rule set and a world of its own.</p><div class="actions"><a class="button" href="palace-play.html">Take your seat</a><a class="text-link" href="palace-story.html">Fact, folklore & legend</a></div></div></div></section>`
+    <section class="section"><div class="shell story-split"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers" width="512" height="512" loading="lazy"><div><p class="eyebrow">A game built to travel</p><h2>Passed hand to hand.</h2><p class="lede">Palace belongs to a folk shedding-game family with many regional names and house rules. The exact origin remains uncertain. The Four of Hearts edition gives that living tradition one clear rule set and a world of its own.</p><div class="actions"><a class="button" href="palace-play.html">Take your seat</a><a class="text-link" href="palace-story.html">Fact, folklore & legend</a></div></div></div></section>
+    <section class="section ct-home-feature"><div class="shell story-split"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div><p class="ct-kicker">Coming Soon from Four of Hearts</p><h2>Commander ThumB</h2><p class="lede">A distant world is under attack. Take command of the last great defense ship, protect the bases of Thum B, and battle through 1,000 levels to save the Thum System.</p><a class="ct-button" href="commander-thumb.html">Enter the Thum System</a></div></div></section>`
 }));
 write("palace-play.html", page({
   title: "Play Palace | Interactive Mini-Match",
@@ -376,12 +380,14 @@ write("games.html", page({
       <div class="game-shelf">
         <article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h2>Hearts</h2><p>Dodge the points—or take every one.</p><a class="button small" href="hearts-play.html">Try Hearts</a></div></article>
         <article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades royal purple artwork" width="512" height="512"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h2>Spades</h2><p>Bid together. Let trump speak.</p><a class="button small" href="spades-play.html">Try Spades</a></div></article>
-        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green card artwork" width="512" height="512"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h2>Euchre</h2><p>Call it. Find the bowers. Move fast.</p><a class="button small" href="euchre-play.html">Try Euchre</a></div></article>
+        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green card artwork" width="512" height="512"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h2>Euchre</h2><p>Call it. Find the bowers. Move fast.</p><a class="button small" href="euchre-play.html">Try Euchre</a></div></article><article class="panel game-tile commander-tile"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540"></picture><div class="game-tile-content"><span class="alpha-badge">Coming Soon</span><h2>Commander ThumB</h2><p>One thumb. One ship. One thousand levels.</p><a class="button small" href="commander-thumb.html">Follow the Mission</a></div></article>
       </div>
       <div class="future-card"><div><p class="eyebrow">The family will grow</p><h2>More games are joining the table.</h2><p class="lede">We have more cards up our sleeves. We are simply refusing to ruin the reveal.</p></div></div>
     </div></section>
     <section class="section navy"><div class="shell palace-band"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle artwork" width="512" height="512" loading="lazy"><div><p class="eyebrow">Start with the flagship</p><h2>${gameMessage("flagship", "Palace gets the crown.")}</h2><p class="lede">Try the three-layer interactive mini-match that anchors Four of Hearts.</p><a class="button" href="palace-play.html">${gameMessage("playGame", "Play Palace")}</a></div></div></section>`
 }));
+
+write("commander-thumb.html", commanderPage({ page, company, siteUrl }));
 
 const secondaryPages = [
   ["hearts", "Hearts", "Follow suit. Duck the points.", "assets/icon-hearts-4hearts.webp", "Hearts ruby artwork"],
@@ -406,7 +412,7 @@ secondaryPages.forEach(([key, name, headline, image, imageAlt]) => {
 
 write("play.html", page({
   title: "Quick Play | Four of Hearts Interactive",
-  description: "Start the flagship Palace preview or try short Hearts, Spades, and Euchre teaching moments from Four of Hearts Interactive.",
+  description: "Start the Palace preview, try Hearts, Spades, and Euchre teaching moments, or enter the upcoming Commander ThumB universe.",
   path: "/play.html",
   current: "play",
   content: `
@@ -419,7 +425,7 @@ write("play.html", page({
       <div class="game-grid">
         <article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Hearts</h3><a class="text-link" href="hearts-play.html">Follow suit</a></div></article>
         <article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Spades</h3><a class="text-link" href="spades-play.html">Play trump</a></div></article>
-        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Find the bowers</a></div></article>
+        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Find the bowers</a></div></article><article class="panel game-tile commander-tile"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div class="game-tile-content"><h3>Commander ThumB</h3><a class="text-link" href="commander-thumb.html">Follow the mission</a></div></article>
       </div>
     </div></section>`
 }));
@@ -482,7 +488,7 @@ write("terms.html", page({
   content: `
     ${pageHero("Internal Alpha", "Terms of Use", "Last technically reviewed July 25, 2026. These plain-language terms describe a testing-stage website and game family, not a public commercial release.")}
     <section class="section"><div class="narrow prose">
-      <h2>Current availability</h2><p>Palace, Hearts, Spades, and Euchre are in Internal Alpha. Access may be limited, changed, interrupted, or withdrawn. The website tutorials are short teaching previews, not complete matches and not gambling.</p>
+      <h2>Current availability</h2><p>Palace, Hearts, Spades, and Euchre are in Internal Alpha. Commander ThumB is coming soon. Access may be limited, changed, interrupted, or withdrawn. The website tutorials are short teaching previews, not complete matches and not gambling.</p>
       <h2>Use the products responsibly</h2><p>Do not interfere with service, attempt unauthorized access, misuse reconnect or ranking behavior, reverse engineer where prohibited by law, harass other testers, or use the products for unlawful activity.</p>
       <h2>Testing information</h2><p>Feedback may be used to improve the games. Do not include confidential information, passwords, or third-party material you lack permission to share.</p>
       <h2>No promise of release</h2><p>Features, rules, visual design, rankings, data behavior, and availability may change. Participation in testing does not guarantee a future download, account, entitlement, purchase, or permanent record.</p>
@@ -544,7 +550,7 @@ let legacyPalace = page({
 }).replaceAll("https://4ohi.com/palace.html", "https://4ohi.com/");
 write("palace.html", legacyPalace);
 const sitemapFiles = [
-  "index.html", "palace-play.html", "palace-story.html", "news.html",
+  "index.html", "palace-play.html", "palace-story.html", "commander-thumb.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"
