@@ -162,3 +162,7 @@
     box-shadow: 6px 6px 0 #d76029;
   }
 }
+
+.game-title-case {
+  text-transform: none;
+}
