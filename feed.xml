@@ -3,8 +3,29 @@
   <channel>
     <title>Four of Hearts Interactive News</title>
     <link>https://4ohi.com/news.html</link>
-    <description>Palace development and studio news from Four of Hearts Interactive.</description>
+    <description>Company and game news from Four of Hearts Interactive.</description>
     <language>en-us</language>
+    <item>
+      <title>Commander ThumB Is Coming to Four of Hearts Interactive</title>
+      <link>https://4ohi.com/news-commander-thumb-is-coming.html</link>
+      <guid>https://4ohi.com/news-commander-thumb-is-coming.html</guid>
+      <pubDate>Sun, 26 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Meet a brand-new 4OH game: an original one-thumb arcade adventure across the mysterious Thum System.</description>
+    </item>
+    <item>
+      <title>Welcome to the Thum System</title>
+      <link>https://4ohi.com/news-welcome-to-the-thum-system.html</link>
+      <guid>https://4ohi.com/news-welcome-to-the-thum-system.html</guid>
+      <pubDate>Sun, 26 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Three related worlds orbit one star: Thum A invades, Thum B defends, and Thum C watches.</description>
+    </item>
+    <item>
+      <title>Building Commander ThumB: One Thumb, One Ship, 1,000 Levels</title>
+      <link>https://4ohi.com/news-building-commander-thumb.html</link>
+      <guid>https://4ohi.com/news-building-commander-thumb.html</guid>
+      <pubDate>Sun, 26 Jul 2026 12:00:00 GMT</pubDate>
+      <description>The design promise behind Commander ThumB is immediate control, escalating spectacle, and a long campaign built for mobile play.</description>
+    </item>
     <item>
       <title>Why We’re Building Palace</title>
       <link>https://4ohi.com/news-why-were-building-palace.html</link>

@@ -1,0 +1,1057 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "checkedAt": "2026-07-27T03:00:21.348Z",
+  "pages": [
+    {
+      "route": "index.html",
+      "status": 200,
+      "title": "Four of Hearts Interactive | Games That Bring People Together",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "status": 200,
+      "title": "Games | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "palace.html",
+      "status": 200,
+      "title": "Palace | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "status": 200,
+      "title": "Play Palace | Interactive Mini-Match",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 1,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "palace-story.html",
+      "status": 200,
+      "title": "Palace: Fact, Folklore & Legend | Four of Hearts",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "palace-faq.html",
+      "status": 200,
+      "title": "Palace Card Game Rules, Power Cards & FAQ | Four of Hearts",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "status": 200,
+      "title": "Commander ThumB | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "status": 200,
+      "title": "News | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-commander-thumb-is-coming.html",
+      "status": 200,
+      "title": "Commander ThumB Is Coming to Four of Hearts Interactive | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-welcome-to-the-thum-system.html",
+      "status": 200,
+      "title": "Welcome to the Thum System | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-building-commander-thumb.html",
+      "status": 200,
+      "title": "Building Commander ThumB: One Thumb, One Ship, 1,000 Levels | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-why-were-building-palace.html",
+      "status": 200,
+      "title": "Why We’re Building Palace | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-palace-enters-founder-testing.html",
+      "status": 200,
+      "title": "Palace Enters Founder Testing | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "status": 200,
+      "title": "About Four of Hearts Interactive | One Family. Many Games.",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "support.html",
+      "status": 200,
+      "title": "Support | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "privacy.html",
+      "status": 200,
+      "title": "Privacy Choices & Policy | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "security.html",
+      "status": 200,
+      "title": "Security | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "terms.html",
+      "status": 200,
+      "title": "Internal Alpha Terms | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "contact.html",
+      "status": 200,
+      "title": "Contact | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "404.html",
+      "status": 200,
+      "title": "Page Not Found | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "News",
+        "About 4OH",
+        "Support"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Commander ThumBComing Soon",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "viewports": [
+    {
+      "route": "index.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    }
+  ],
+  "interactions": {
+    "mobile": {
+      "menuExpanded": "true",
+      "gamesOpen": "",
+      "commanderVisible": true
+    },
+    "palaceSelector": {
+      "label": "Shed",
+      "url": "?game=shed&lang=en",
+      "commanderLink": "commander-thumb.html?lang=en"
+    },
+    "commander": {
+      "title": "Commander ThumB | Four of Hearts Interactive",
+      "h1": [
+        "Commander ThumB"
+      ],
+      "status": true,
+      "wrong": false,
+      "newsLinks": 3,
+      "planetDiagram": false
+    },
+    "news": {
+      "selected": "commander",
+      "visible": 3,
+      "allCommander": true
+    },
+    "palaceTutorial": {
+      "recoverable": true,
+      "finish": "YOU RULE PALACE"
+    },
+    "secondaryTutorials": [
+      {
+        "game": "hearts",
+        "finish": "Nice play."
+      },
+      {
+        "game": "spades",
+        "finish": "Nice play."
+      },
+      {
+        "game": "euchre",
+        "finish": "Nice play."
+      }
+    ],
+    "locale-he": {
+      "lang": "he",
+      "dir": "rtl",
+      "title": "Commander ThumB | Four of Hearts Interactive",
+      "overflow": false,
+      "gameQuery": false,
+      "selected": "he"
+    },
+    "locale-en-CA-fun": {
+      "lang": "en-CA-fun",
+      "dir": "ltr",
+      "title": "Commander ThumB | Four of Hearts Interactive",
+      "overflow": false,
+      "gameQuery": false,
+      "selected": "en-CA-fun"
+    },
+    "privacy": {
+      "cookies": "",
+      "local": 0,
+      "session": 0
+    }
+  },
+  "failures": []
+}

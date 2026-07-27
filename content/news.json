@@ -1,11 +1,104 @@
 [
   {
+    "slug": "commander-thumb-is-coming",
+    "title": "Commander ThumB Is Coming to Four of Hearts Interactive",
+    "description": "Meet a brand-new 4OH game: an original one-thumb arcade adventure across the mysterious Thum System.",
+    "date": "2026-07-26",
+    "category": "Announcement",
+    "gameKey": "commander",
+    "tags": [
+      "Commander ThumB",
+      "Coming Soon"
+    ],
+    "featured": true,
+    "image": "assets/commander-thumb-70s-hero-960.webp",
+    "imageAlt": "Commander-Class ship defending Thum B in an original 1970s-inspired space illustration",
+    "body": [
+      {
+        "heading": "A new world joins the family",
+        "paragraphs": [
+          "Four of Hearts Interactive is building Commander ThumB, an original one-thumb arcade-defense adventure set among the related worlds of the Thum System.",
+          "Commander ThumB is in development and is not publicly playable yet. This announcement introduces the world and the mission without claiming a release date."
+        ]
+      },
+      {
+        "heading": "The mission",
+        "paragraphs": [
+          "Thum A has launched an invasion. Peaceful Thum B must hold its bases while the scholars of Thum C watch in silence. Players will move with one thumb, fire automatically, collect power-ups, recruit Wing ThumBs, and fight through a planned 1,000-level campaign.",
+          "Follow the Commander ThumB overview for the latest approved story and feature information."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "welcome-to-the-thum-system",
+    "title": "Welcome to the Thum System",
+    "description": "Three related worlds orbit one star: Thum A invades, Thum B defends, and Thum C watches.",
+    "date": "2026-07-26",
+    "category": "World",
+    "gameKey": "commander",
+    "tags": [
+      "Commander ThumB",
+      "Story"
+    ],
+    "featured": false,
+    "image": "assets/commander-thumb-70s-hero-960.webp",
+    "imageAlt": "Retro-futurist Commander-Class ship, invasion fleet, and three worlds of the Thum System",
+    "body": [
+      {
+        "heading": "Thum A invades",
+        "paragraphs": [
+          "The related ThumBs of harsh, industrial Thum A have sent an armored fleet across the darkness. Their true reason remains hidden.",
+          "The invasion gives Commander ThumB its immediate danger and a larger mystery to unravel."
+        ]
+      },
+      {
+        "heading": "Thum B defends. Thum C watches.",
+        "paragraphs": [
+          "Families, pilots, builders, and dreamers on peaceful Thum B stand together behind one Commander-Class ship.",
+          "Scientific Thum C observes and calculates but refuses to choose a side. Its silence may matter as much as the invasion."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "building-commander-thumb",
+    "title": "Building Commander ThumB: One Thumb, One Ship, 1,000 Levels",
+    "description": "The design promise behind Commander ThumB is immediate control, escalating spectacle, and a long campaign built for mobile play.",
+    "date": "2026-07-26",
+    "category": "Development",
+    "gameKey": "commander",
+    "tags": [
+      "Commander ThumB",
+      "Design"
+    ],
+    "featured": false,
+    "image": "assets/commander-thumb-70s-hero-960.webp",
+    "imageAlt": "Commander ThumB hero ship racing toward an enemy fleet above Thum B",
+    "body": [
+      {
+        "heading": "One-thumb clarity",
+        "paragraphs": [
+          "The control idea is direct: drag to move, keep contact to fire, and let positioning make the difference. The title’s capital B is part of both the name and the game’s one-thumb identity.",
+          "Power-ups, Wing ThumBs, ship improvements, and base defenses add depth without obscuring the immediate action."
+        ]
+      },
+      {
+        "heading": "Built for a long campaign",
+        "paragraphs": [
+          "The approved design target spans 1,000 levels across ten escalating sectors and boss encounters. That is a development direction, not a claim that a public version is available today.",
+          "Commander ThumB remains Coming Soon. Four of Hearts will publish release news only when there is a working public version."
+        ]
+      }
+    ]
+  },
+  {
     "slug": "why-were-building-palace",
     "title": "Why We’re Building Palace",
     "description": "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
     "date": "2026-07-26",
     "category": "Palace",
-    "featured": true,
+    "featured": false,
     "image": "assets/icon-palace-4hearts.webp",
     "imageAlt": "Palace castle artwork from Four of Hearts Interactive",
     "body": [

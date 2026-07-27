@@ -28,6 +28,42 @@
     });
   }
 
+  const gamesMenu = document.querySelector(".games-menu");
+  if (gamesMenu) {
+    gamesMenu.addEventListener("click", (event) => {
+      if (event.target.closest("a")) gamesMenu.open = false;
+    });
+    document.addEventListener("click", (event) => {
+      if (gamesMenu.open && !gamesMenu.contains(event.target)) gamesMenu.open = false;
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || !gamesMenu.open) return;
+      gamesMenu.open = false;
+      gamesMenu.querySelector("summary")?.focus();
+    });
+  }
+
+  const newsFilters = [...document.querySelectorAll("[data-news-filter]")];
+  const newsCards = [...document.querySelectorAll("[data-news-tags]")];
+  if (newsFilters.length && newsCards.length) {
+    const applyNewsFilter = (filter) => {
+      let visible = 0;
+      newsCards.forEach((card) => {
+        const matches = filter === "all" || card.dataset.newsTags.split(/\s+/).includes(filter);
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      newsFilters.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.newsFilter === filter)));
+      const empty = document.querySelector("[data-news-empty]");
+      if (empty) empty.hidden = visible !== 0;
+      const next = new URL(location.href);
+      if (filter === "all") next.searchParams.delete("tag"); else next.searchParams.set("tag", filter);
+      history.replaceState({}, "", `${next.pathname}${next.search}${next.hash}`);
+    };
+    const requested = new URL(location.href).searchParams.get("tag")?.toLowerCase();
+    applyNewsFilter(newsFilters.some((button) => button.dataset.newsFilter === requested) ? requested : "all");
+    newsFilters.forEach((button) => button.addEventListener("click", () => applyNewsFilter(button.dataset.newsFilter)));
+  }
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const revealItems = [...document.querySelectorAll("[data-reveal]")];
   if (reduceMotion || !("IntersectionObserver" in window)) {

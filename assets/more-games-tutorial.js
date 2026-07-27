@@ -93,9 +93,9 @@
   const game = lessons[gameKey];
   if (!game) return;
   const tableDetails = {
-    hearts: { seats: ["Nora · 1/13", "Maya · 3/13", "Vaughn · 0/13", "You · 2/13"], chips: ["4 SEATS", "HEARTS BROKEN", "Qâ™  STILL OUT", "POINTS 3"], center: "CURRENT TRICK", decision: "YOUR HAND · AVOID THE POINTS" },
+    hearts: { seats: ["Nora · 1/13", "Maya · 3/13", "Vaughn · 0/13", "You · 2/13"], chips: ["4 SEATS", "HEARTS BROKEN", "Q? STILL OUT", "POINTS 3"], center: "CURRENT TRICK", decision: "YOUR HAND · AVOID THE POINTS" },
     spades: { seats: ["Nora · Them", "Maya · Us", "Vaughn · Them", "You · Us"], chips: ["PARTNERSHIPS", "CONTRACT 4", "BOOKS 2", "BAGS 1", "NIL AVAILABLE"], center: "CURRENT TRICK", decision: "YOUR HAND · MAKE THE CONTRACT" },
-    euchre: { seats: ["Nora · Them", "Maya · Dealer", "Vaughn · Them", "You · Maker"], chips: ["PARTNERSHIPS", "DEALER MAYA", "UPCARD 9â™¥", "TRUMP HEARTS", "MAKER YOU"], center: "UPCARD / CURRENT TRICK", decision: "YOUR HAND · ORDER UP OR PLAY" }
+    euchre: { seats: ["Nora · Them", "Maya · Dealer", "Vaughn · Them", "You · Maker"], chips: ["PARTNERSHIPS", "DEALER MAYA", "UPCARD 9?", "TRUMP HEARTS", "MAKER YOU"], center: "UPCARD / CURRENT TRICK", decision: "YOUR HAND · ORDER UP OR PLAY" }
   };
   const table = tableDetails[gameKey];
   let round = 0;

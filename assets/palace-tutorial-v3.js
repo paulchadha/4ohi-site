@@ -27,7 +27,7 @@
     <footer><p role="status" aria-live="polite" data-match-status>${instruction}</p>${action}</footer>
   </div>`;
   const foundation = () => `<section class="palace-foundation" aria-label="Your Palace setup: three face-up cards over three face-down cards and a draw deck">
-    <div class="foundation-stack"><span class="foundation-label">YOUR PALACE · FACE-UP OVER FACE-DOWN</span><div class="foundation-row visible-row">${card("4", "â™¥", "")}${card("8", "â™£", "", { power: true })}${card("K", "â™ ", "")}</div><div class="foundation-row hidden-row">${backs(3)}</div></div>
+    <div class="foundation-stack"><span class="foundation-label">YOUR PALACE · FACE-UP OVER FACE-DOWN</span><div class="foundation-row visible-row">${card("4", "?", "")}${card("8", "?", "", { power: true })}${card("K", "?", "")}</div><div class="foundation-row hidden-row">${backs(3)}</div></div>
     <div class="draw-deck"><span class="draw-deck-label">DRAW DECK</span>${card("", "", "deck", { back: true })}</div>
   </section>`;
   const table = ({ rival = backs(state.opponentCards), pile, hand, callout = "", layers = "" }) => `<div class="palace-app-table" data-chapter="${chapters[state.chapter]}">

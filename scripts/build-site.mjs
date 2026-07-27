@@ -1,7 +1,8 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
-import { commanderPage } from "./commander-content.mjs";
+import { commanderPage } from "./commander-content-v2.mjs";
+import { featuredGames, gameByKey, gameCatalog, primaryGames } from "./game-catalog.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const assetVersion = (assetPath) => {
@@ -28,37 +29,26 @@ const assetManifest = Object.fromEntries(readdirSync(resolve(root, "assets")).fi
 write("assets/asset-manifest.js", `window.FOUR_HEARTS_ASSETS = Object.freeze(${JSON.stringify(assetManifest, null, 2)});`);
 
 const nav = (current) => {
-  const items = [
-    ["palace", "index.html", gameToken("gameName", "Palace")],
-    ["play", "palace-play.html", gameMessage("playGame", "Play Palace")],
-    ["commander", "commander-thumb.html", "Commander ThumB"],
-    ["news", "news.html", brandMessage("navNews", "News")],
-    ["games", "games.html", brandMessage("navGames", "More Games")],
-    ["about", "about.html", brandMessage("navAbout", "About 4OH")],
-    ["support", "support.html", brandMessage("navSupport", "Support")]
-  ];
+  const gameLinks = primaryGames.map((game) => `<a href="${game.infoUrl}"${game.key === current ? ' aria-current="page"' : ""}>${game.title}<small>${game.status}</small></a>`).join("");
   return `<header class="site-header">
     <div class="shell nav-wrap">
       <a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}>
-        <img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="Four of Hearts Interactive" width="76" height="58">
-        <span class="brand-mark" aria-hidden="true">4♥</span>
+        <img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="4OH Interactive — Four of Hearts Interactive home" width="76" height="58">
         <span class="brand-copy">Four of Hearts<small>Interactive</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
       <nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary">
-        ${items.map(([key, href, label]) => `<a${key === current ? ' aria-current="page"' : ""}${key === "play" ? ' class="nav-play"' : ""} href="${href}">${label}</a>`).join("")}
+        <a href="index.html"${current === "home" ? ' aria-current="page"' : ""}>Home</a>
+        <details class="games-menu"${["games", "palace", "play", "commander"].includes(current) ? " data-current=true" : ""}>
+          <summary>Games</summary>
+          <div class="games-menu-panel">${gameLinks}<a class="view-all-games" href="games.html"${current === "games" ? ' aria-current="page"' : ""}>View All Games</a></div>
+        </details>
+        <a href="news.html"${current === "news" ? ' aria-current="page"' : ""}>News</a>
+        <a href="about.html"${current === "about" ? ' aria-current="page"' : ""}>About 4OH</a>
+        <a href="support.html"${current === "support" ? ' aria-current="page"' : ""}>Support</a>
       </nav>
-      <div class="header-tools" aria-label="Table preferences">
-        <div class="header-tool header-name">
-          <span data-table-label>This table calls it</span>
-          <details><summary><span data-current-game>Palace</span></summary><div class="header-name-menu">
-            <button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button>
-            <button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button>
-          </div></details>
-        </div>
-        <div class="header-tool header-language">
-          <label><span data-language-label>Language</span><select data-locale aria-label="Language"></select></label>
-        </div>
+      <div class="header-tools" aria-label="Site preferences">
+        <label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label>
         <button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button>
       </div>
     </div>
@@ -68,48 +58,48 @@ const nav = (current) => {
 const globalDialogs = () => `
   <dialog class="site-dialog" data-settings-dialog aria-labelledby="settings-title">
     <form method="dialog"><button class="dialog-close" value="cancel" aria-label="Close settings">×</button>
-      <p class="eyebrow">Table settings</p><h2 id="settings-title">Make this table yours.</h2>
-      <fieldset><legend data-table-label>This table calls it</legend><div class="name-options">
-        <button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button>
-        <button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button>
-      </div></fieldset>
+      <p class="eyebrow">Site settings</p><h2 id="settings-title">Make the site comfortable.</h2>
       <label class="dialog-language"><span data-language-label>Language</span><select data-locale></select></label>
-      <p data-name-status>Palace is used at this table. Nothing is stored.</p>
+      <p>No preference is stored. This site uses no cookies or tracking.</p>
     </form>
-  </dialog>
+  </dialog>`;
+
+const palaceDialogs = () => `
   <dialog class="site-dialog nsfw-dialog" data-nsfw-dialog aria-labelledby="traditional-name-title">
     <form method="dialog"><p class="eyebrow">Traditional table name</p><h2 id="traditional-name-title">Use the uncensored name?</h2>
-      <p>Some adult tables call this game Shithead. This optional display name changes only this browser URL and is never stored.</p>
+      <p>Some adult tables call this game Shithead. This optional display name changes only this page URL and is never stored.</p>
       <div class="actions"><button class="button" value="yes">Yes, use it</button><button class="button secondary" value="no">No, keep Shed</button></div>
     </form>
-  </dialog>
-  <p class="global-name-status" data-global-name-status role="status" aria-live="polite"></p>`;
+  </dialog>`;
 
+const gameNav = (game, section) => {
+  const links = game === "palace"
+    ? [["overview", "palace.html", "Overview"], ["rules", "palace-faq.html", "How to Play"], ["play", "palace-play.html", "Play Palace"], ["news", "news.html?tag=palace", "Palace News"]]
+    : [["overview", "commander-thumb.html", "Overview"], ["story", "commander-thumb.html#story", "Thum System"], ["mission", "commander-thumb.html#mission", "Gameplay"], ["news", "news.html?tag=commander", "News"]];
+  return `<nav class="game-subnav" aria-label="${game === "palace" ? "Palace" : "Commander ThumB"}">
+    <div class="shell"><strong>${game === "palace" ? "Palace" : "Commander ThumB"}</strong>
+      <div>${links.map(([key, href, label]) => `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("")}${game === "commander" ? '<span class="status-badge coming">Coming Soon</span>' : ""}</div>
+    </div>
+  </nav>`;
+};
 
+const palaceTableTools = () => `<aside class="palace-table-tools" data-palace-context aria-label="Palace table preferences">
+  <span data-table-label>This table calls it</span>
+  <details><summary><span data-current-game>Palace</span></summary><div>
+    <button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button>
+    <button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button>
+  </div></details>
+  <p data-name-status class="sr-only" aria-live="polite">Palace is used at this table. Nothing is stored.</p>
+  ${palaceDialogs()}
+</aside>`;
 
 const footer = () => `<footer class="site-footer">
-  <div class="shell">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div>
-        <p class="footer-copy">${gameToken("gameName", "Palace")} leads a growing family of timeless card games. <span data-brand-message="footer">One Family. Many Games.</span></p>
-        <a href="mailto:support@4ohi.com">support@4ohi.com</a>
-        <div class="social-slot" data-social-slot aria-label="Official social profiles"></div>
-      </div>
-      <nav class="footer-links" aria-label="Footer">
-        <a href="index.html">${gameToken("gameName", "Palace")}</a><a href="palace-play.html">${gameMessage("tutorialTitle", "Palace Mini-Match")}</a>
-        <a href="palace-story.html">${gameMessage("gameHistory", "Palace History")}</a><a href="palace-faq.html">${gameMessage("gameRules", "Palace Rules")} & FAQ</a><a href="news.html">${brandMessage("navNews", "News")}</a>
-        <a href="commander-thumb.html">Commander ThumB</a><a href="games.html">More Games</a><a href="about.html">About 4OH</a>
-        <a href="support.html">Support</a><a href="privacy.html">Privacy</a>
-        <a href="security.html">Security</a><a href="terms.html">Terms</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 ${company}. All rights reserved.</span>
-      <span>${gameToken("gameName", "Palace")} and all current games are in Internal Alpha.</span>
-    </div>
-  </div>
+  <div class="shell"><div class="footer-grid">
+    <div><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-copy">Colorful, social, original games—from classic card-table competition to entirely new worlds.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
+    <nav class="footer-group" aria-label="Four of Hearts Interactive"><h2>Four of Hearts Interactive</h2><a href="index.html">Home</a><a href="about.html">About 4OH</a><a href="news.html">News</a><a href="support.html">Support</a></nav>
+    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="palace.html">Palace</a><a href="palace-play.html">Play Palace</a><a href="commander-thumb.html">Commander ThumB</a><a href="games.html">All Games</a></nav>
+    <nav class="footer-group" aria-label="Legal"><h2>Legal & Safety</h2><a href="privacy.html">Privacy</a><a href="security.html">Security</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></nav>
+  </div><div class="footer-bottom"><span>© 2026 ${company}. All rights reserved.</span><span>4OH is the compact mark of Four of Hearts Interactive.</span></div></div>
 </footer>`;
 
 const head = ({ title, description, path, image = "assets/og-palace-app-world.jpg", imageAlt = "Four of Hearts Interactive", type = "website", jsonLd, noindex = false, script = "" }) => {
@@ -145,6 +135,8 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/app-experience-v2.css">
   <link rel="stylesheet" href="assets/palace-app-web.css">
   <link rel="stylesheet" href="assets/commander-thumb.css">
+  <link rel="stylesheet" href="assets/company-architecture.css">
+  <link rel="stylesheet" href="assets/company-architecture-fixes.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -161,7 +153,7 @@ const page = ({ title, description, path, current, content, image, imageAlt, typ
 <body class="${bodyClass}">
   <a class="skip-link" href="#main">Skip to content</a>
   ${nav(current)}
-  ${["home", "palace", "play", "news", "games"].includes(current) ? `<div class="release-strip" data-release-strip role="timer"></div>` : ""}
+  ${["palace", "play"].includes(current) ? `<div class="release-strip" data-release-strip role="timer"></div>` : ""}
   <main id="main">${content}</main>
   ${footer()}
   ${globalDialogs()}
@@ -177,107 +169,42 @@ const pageHero = (eyebrow, title, lede, actions = "") => `<header class="page-he
   </div>
 </header>`;
 
-const newsCard = (item) => `<a class="panel news-card" href="${articleFile(item.slug)}" data-reveal>
+const newsCard = (item) => `<a class="panel news-card" href="${articleFile(item.slug)}" data-news-tags="${[item.category, item.gameKey, ...(item.tags ?? [])].filter(Boolean).join(" ").toLowerCase()}" data-reveal>
   <div class="news-art"><img src="${item.image}" alt="${item.imageAlt}" width="512" height="512" loading="lazy"></div>
   <div class="news-body">
-    <div class="news-meta"><span>${item.category}</span><time datetime="${item.date}">${formatDate(item.date)}</time></div>
-    <h3>${productCopy(item.title)}</h3>
+    <div class="news-meta"><span>${item.category}${item.gameKey ? ` · ${gameByKey[item.gameKey]?.title ?? item.gameKey}` : ""}</span><time datetime="${item.date}">${formatDate(item.date)}</time></div>
+    <h2>${productCopy(item.title)}</h2>
     <p>${productCopy(item.description)}</p>
     <span class="read-more">Read story →</span>
   </div>
 </a>`;
 
+const gameCard = (game, heading = "h2") => `<article class="catalog-card ${game.key}" data-game-key="${game.key}">
+  <a class="catalog-art" href="${game.infoUrl}"><img src="${game.artwork}" alt="${game.alt}" width="960" height="${game.key === "commander" ? 640 : 960}" loading="lazy"></a>
+  <div class="catalog-copy"><div class="catalog-meta"><span class="status-badge">${game.status}</span><span>${game.genre}</span></div>
+  <${heading}><a href="${game.infoUrl}">${game.title}</a></${heading}><p>${game.description}</p><p class="availability">${game.availability}</p>
+  <div class="actions"><a class="button small" href="${game.infoUrl}">Overview</a>${game.playUrl ? `<a class="button small secondary" href="${game.playUrl}">${game.playLabel}</a>` : ""}</div></div>
+</article>`;
+
 const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
 
 write("index.html", page({
-  title: "Palace Is Coming | Four of Hearts Interactive",
-  description: "The card-table legend known as Palace is finally becoming a Four of Hearts app. Learn the game in 60 seconds and watch the countdown.",
-  path: "/",
-  current: "home",
-  image: "assets/og-palace-app-world.jpg",
-  imageAlt: "Palace and the Four of Hearts Interactive game family",
-  jsonLd: {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: company,
-    url: `${siteUrl}/`,
-    logo: `${siteUrl}/assets/brand-mark-4oh.webp`,
-    email: "support@4ohi.com",
-    address: { "@type": "PostalAddress", addressRegion: "South Dakota", addressCountry: "US" },
-    description: "Four of Hearts Interactive creates Palace and a growing family of timeless card games."
-  },
-  bodyClass: "home-page",
+  title: "Four of Hearts Interactive | Games That Bring People Together",
+  description: "Four of Hearts Interactive creates colorful, welcoming games—including Palace and Commander ThumB—built to bring people together.",
+  path: "/", current: "home", bodyClass: "company-home",
+  image: "assets/brand-board.webp", imageAlt: "Four of Hearts Interactive game family",
+  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"Four of Hearts Interactive creates colorful, welcoming games that bring people together." },
   content: `
-    <section class="hero palace-world" data-pointer-hero>
-      <div class="palace-world-backdrop" aria-hidden="true"></div>
-      <picture class="palace-world-art">
-        <source media="(max-width: 520px)" srcset="assets/palace-hero-384.webp">
-        <source media="(max-width: 900px)" srcset="assets/palace-hero-640.webp">
-        <img src="assets/palace-hero-1024.webp" alt="Palace castle rising above the gold Palace title" width="1024" height="1024" fetchpriority="high">
-      </picture>
-      <span class="world-card world-card-one" aria-hidden="true"><b>Q</b>♠</span>
-      <span class="world-card world-card-two red" aria-hidden="true"><b>7</b>♥</span>
-      <span class="world-card world-card-three" aria-hidden="true"><b>9</b>♣</span>
-      <div class="shell hero-stage">
-        <div class="hero-topline"><span class="transmission-badge">Transmission 001</span><span>Four of Hearts Interactive presents</span></div>
-        <a class="hero-news-link" href="news.html"><span>Latest</span>${productCopy(featured.title)}<b aria-hidden="true">→</b></a>
-        <div class="hero-copy">
-          <p class="hero-game-name">${brandMessage("heroKicker", "The hottest card game in the galaxy")}</p>
-          <h1>${gameToken("gameName", "Palace")} is finally <span class="gold">coming home.</span></h1>
-          <p class="launch-deckline">${brandMessage("heroDeck", "Three levels. One pile. One crown. The table legend is finally becoming an app—built by Four of Hearts.")}</p>
-          <div class="launch-countdown" data-launch-countdown role="timer"><span class="launch-countdown-label">${gameMessage("gameCountdown", "Palace lands in")}<br>October 17, 2026</span><span class="countdown-unit"><strong data-countdown="days">83</strong><span>Days</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="hours">00</strong><span>Hours</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="minutes">00</strong><span>Min</span></span><i class="countdown-separator" aria-hidden="true">:</i><span class="countdown-unit"><strong data-countdown="seconds">00</strong><span>Sec</span></span></div>
-          <div class="actions">
-            <a class="button" href="palace-play.html">${gameMessage("playGame", "Play Palace")}</a>
-            <a class="button secondary" href="index.html">${gameMessage("discoverGame", "Discover Palace")}</a>
-          </div>
-          <div class="hero-status-line"><span>Internal Alpha</span><span>Currently in testing</span><a href="news.html">${brandMessage("heroStatus", "News from the table →")}</a></div>
-        </div>
-        <div class="hero-layer-rail" aria-label="The three game layers"><span><b>01</b>Your hand</span><span><b>02</b>Face-up reserve</span><span><b>03</b>Hidden finale</span></div>
-        <a class="hero-scroll" href="#palace-rhythm">Enter ${gameToken("gameName", "Palace")} <span aria-hidden="true">↓</span></a>
-      </div>
-    </section>
-
-    <div class="myth-strip" aria-label="Names used for the Palace card-game family"><div class="myth-strip-track">PALACE /// SHED /// KARMA /// CHINA HAND /// PASSED HAND TO HAND /// BUILT FOR ANY TABLE /// PALACE /// SHED /// KARMA ///</div></div>
-
-    <section class="section story-chapter" id="palace-rhythm"><div class="shell story-split">
-      <div class="story-copy" data-reveal><p class="eyebrow">The game in one breath</p><h2>Match it. Beat it. Change the game.</h2><p class="lede">Play the same rank, climb higher, or turn the table with a power card. Clear your hand, your face-up cards, and then the cards nobody has seen—not even you.</p><div class="actions"><a class="button blue" href="palace-play.html">Learn by playing</a><a class="text-link" href="index.html#rules">See the full rules</a></div></div>
-      <div class="palace-levels" aria-label="The three game levels" data-reveal><article class="palace-level"><b>Level 01</b><strong>Cards in hand</strong><span>Your plan begins here.</span></article><article class="palace-level"><b>Level 02</b><strong>Face-up cards</strong><span>Everyone sees your ending.</span></article><article class="palace-level"><b>Level 03</b><strong>Face-down cards</strong><span>Now trust ${gameToken("gameName", "Palace")}.</span></article></div>
-    </div></section>
-
-    <section class="power-card-world" id="rules" aria-labelledby="power-title"><div class="shell">
-      <div class="power-heading"><p class="eyebrow">Four cards. Four plot twists.</p><h2 id="power-title">Meet the power cards.</h2><p>${brandMessage("powerIntro", "Tap a card to feel how one small rule can flip the whole table.")}</p></div>
-      <div class="power-showcase" data-power-showcase data-active-power="2">
-        <div class="power-card-fan" role="group" aria-label="Interactive Palace power cards">
-          <button class="power-playing-card" type="button" data-power="2" aria-pressed="true"><span class="rank">2<small>♣</small></span><span class="pip">♣</span><span class="rule"><b>RESET</b><span>Anything can follow.</span></span><span class="rank bottom">2<small>♣</small></span></button>
-          <button class="power-playing-card red" type="button" data-power="7" aria-pressed="false"><span class="rank">7<small>♦</small></span><span class="pip">♦</span><span class="rule"><b>GO LOW</b><span>Seven or lower follows.</span></span><span class="rank bottom">7<small>♦</small></span></button>
-          <button class="power-playing-card" type="button" data-power="8" aria-pressed="false"><span class="rank">8<small>♠</small></span><span class="pip">♠</span><span class="rule"><b>SEE THROUGH</b><span>Read the card beneath.</span></span><span class="rank bottom">8<small>♠</small></span></button>
-          <button class="power-playing-card red" type="button" data-power="10" aria-pressed="false"><span class="rank">10<small>♥</small></span><span class="pip">♥</span><span class="rule"><b>BURN</b><span>Clear it. Lead again.</span></span><span class="rank bottom">10<small>♥</small></span></button>
-        </div>
-        <div class="power-live" data-power-live aria-live="polite"><b>2 resets the pile.</b><span>Anything can follow.</span><small>Control returns to the table.</small></div>
-      </div>
-    </div></section>
-
-    <section class="names-homage"><div class="shell story-split"><div><p class="eyebrow">One game. A thousand tables.</p><h2>Palace. Shed. Karma. Whatever your table calls it.</h2></div><div><p class="lede">This shedding-game family has crossed generations and borders by being taught person to person. Names and house rules change; the delight of turning over that last hidden card does not.</p><a class="button" href="mailto:support@4ohi.com?subject=What%20Our%20Table%20Calls%20Palace">Tell us your table name</a></div></div></section>
-    <section class="section navy"><div class="shell quote-stage"><div class="quote-mark" aria-hidden="true">“</div><blockquote>Easy enough to teach in a minute. Wild enough to become the story everyone remembers.<cite>Why ${gameToken("gameName", "Palace")} survives every table</cite></blockquote></div></section>
-
-    <section class="section royal"><div class="shell story-split"><div><p class="eyebrow">Featured from the newsroom</p><h2>${productCopy(featured.title)}</h2><p class="lede">${productCopy(featured.description)}</p><div class="actions"><a class="button" href="${articleFile(featured.slug)}">Read the story</a><a class="text-link" href="news.html">All ${gameToken("gameName", "Palace")} news</a></div></div><a class="news-art cinematic-news" href="${articleFile(featured.slug)}"><img src="${featured.image}" alt="${featured.imageAlt}" width="512" height="512" loading="lazy"></a></div></section>
-
-    <section class="section family-story"><div class="shell story-split"><div><p class="eyebrow">The four hearts behind the name</p><h2>Built from one family for many.</h2><div class="four-heart-line" aria-label="Four hearts"><span>♥</span><span>♥</span><span>♥</span><span>♥</span></div></div><div><p class="lede">Four daughters created the spark. Four hearts became the name. The company grew from a family table and one stubborn belief: life is short, playing together matters, and the best measure of a game is the smiles it leaves around the table.</p><p><strong>One Family. Many Games.</strong></p><a class="text-link" href="about.html">Meet Four of Hearts</a></div></div></section>
-
-    <section class="section"><div class="shell"><div class="section-heading"><div><p class="eyebrow">More games from Four of Hearts</p><h2>Another world is calling.</h2></div><p class="lede">${gameToken("gameName", "Palace")} leads. Hearts, Spades, and Euchre bring three more distinct table traditions—each currently in Internal Alpha.</p></div><div class="game-grid"><article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Hearts</h3><a class="text-link" href="hearts-play.html">Try Quick Play</a></div></article><article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Spades</h3><a class="text-link" href="spades-play.html">Try Quick Play</a></div></article><article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Try Quick Play</a></div></article><article class="panel game-tile commander-tile"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div class="game-tile-content"><span class="alpha-badge">Coming Soon</span><h3>Commander ThumB</h3><p>A distant world is under attack. Protect the bases of Thum B and battle through 1,000 levels to save the Thum System.</p><a class="text-link" href="commander-thumb.html">Enter the Thum System</a></div></article></div></div></section>
-    <section class="section"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Learn the table legend</p><h2>Rules, strategy, names, and the final hidden card.</h2></div><p class="lede">New here? Start with the match-or-beat rule, meet the four power cards, then learn why the game travels under so many names.</p></div><div class="actions"><a class="button" href="palace-faq.html">Palace rules & FAQ</a><a class="text-link" href="palace-story.html">History, sources & table lore</a></div></div></section>
-    <section class="section compact navy">
-      <div class="shell palace-band">
-        <img src="assets/brand-mark-4oh.webp" alt="Four of Hearts Interactive emblem" width="570" height="365" loading="lazy">
-        <div><p class="eyebrow">The studio behind ${gameToken("gameName", "Palace")}</p><h2>One Family. Many Games.</h2><p class="lede">Four of Hearts Interactive builds polished digital card tables with clear teaching, honest privacy choices, and room for the family to grow.</p><div class="actions"><a class="button secondary" href="about.html">Meet Four of Hearts</a></div></div>
-      </div>
-    </section>`
+    <section class="company-hero"><div class="shell company-hero-grid"><div><p class="eyebrow">Four of Hearts Interactive</p><h1>Games with heart.<br>Worlds worth sharing.</h1><p class="lede">From the card-table suspense of Palace to the cosmic action of Commander ThumB, 4OH makes original games with clear rules, big personality, and one purpose: bring people together.</p><div class="actions"><a class="button" href="games.html">Explore Our Games</a><a class="button secondary" href="about.html">Meet 4OH</a></div></div><img src="assets/brand-mark-4oh.webp" alt="4OH Interactive compact mark with four colored hearts" width="570" height="365" fetchpriority="high"></div></section>
+    <section class="section featured-games"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Now at Four of Hearts</p><h2>Two games. Two very different adventures.</h2></div><p class="lede">Palace and Commander ThumB are peer worlds from one growing independent game company.</p></div><div class="featured-game-grid">${featuredGames.map((game) => gameCard(game)).join("")}</div><p class="section-link"><a class="text-link" href="games.html">View All Games →</a></p></div></section>
+    <section class="section company-news"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Latest from 4OH</p><h2>News from every world.</h2></div><a class="text-link" href="news.html">All company news →</a></div><div class="news-grid">${news.slice(0, 3).map(newsCard).join("")}</div></div></section>
+    <section class="section navy"><div class="shell company-close"><p class="eyebrow">One family. Many games.</p><h2>There is always room for one more at this table.</h2><a class="button" href="about.html">Our Story</a></div></section>`
 }));
 
 write("palace.html", page({
-  title: "Palace | The Flagship Game from Four of Hearts",
-  description: "Discover Palace: match, beat, burn, and clear three levels in the flagship Four of Hearts card game now in Internal Alpha.",
+  title: "Palace | Four of Hearts Interactive",
+  description: "Discover Palace from Four of Hearts Interactive: match or beat, master four power cards, and survive the final hidden card.",
   path: "/palace.html", current: "palace", image: "assets/icon-palace-4hearts.webp", imageAlt: "Palace castle artwork", bodyClass: "palace-product",
   jsonLd: { "@context":"https://schema.org", "@type":"Game", name:"Palace", description:"A three-level shedding card game in Internal Alpha at Four of Hearts Interactive.", publisher:{"@type":"Organization",name:company}, url:`${siteUrl}/palace.html`, gameItem:"Standard playing cards" },
   content: `
@@ -304,25 +231,28 @@ write("palace-play.html", page({
   description: "Learn Palace inside one immersive mini-match: match or beat, burn with ten, pick up, use power cards, and clear all three levels.",
   path: "/palace-play.html", current: "play", image: "assets/icon-palace-4hearts.webp", imageAlt: "Palace interactive mini-match", bodyClass: "palace-play-page",
   script: '<script src="assets/palace-tutorial-v3.js" defer></script>',
-  content: `<h1 class="sr-only">Play the Palace interactive mini-match</h1><section class="section navy"><div class="shell"><div id="palace-tutorial" class="tutorial-stage" tabindex="-1" aria-label="Interactive Palace mini-match"></div><noscript><div class="notice">JavaScript is required for the interactive table. The full rules remain available on the Palace page.</div></noscript></div></section>`
+  content: `${gameNav("palace", "play")}${palaceTableTools()}<h1 class="sr-only">Play the Palace interactive mini-match</h1><section class="section navy"><div class="shell"><div id="palace-tutorial" class="tutorial-stage" tabindex="-1" aria-label="Interactive Palace mini-match"></div><noscript><div class="notice">JavaScript is required for the interactive table. The full rules remain available on the Palace page.</div></noscript></div></section>`
 }));write("palace-story.html", page({
   title: "Palace: Fact, Folklore & Legend | Four of Hearts",
   description: "Explore what is documented about Palace, what players pass along, and the clearly labeled legends that travel with the game.",
   path: "/palace-story.html", current: "palace", image: "assets/icon-palace-4hearts.webp", imageAlt: "Palace castle artwork",
-  content: `${pageHero("Fact · folklore · legend", "A game carried by memory.", "Palace has no single box, rulebook, or universally proven origin. Its history lives in sources, table tradition, and the stories players tell.")}<section class="history-triad"><article><p class="eyebrow">What we know</p><h2>A shedding game with many names.</h2><p>Published rules references describe a beating or shedding game usually played through cards in hand, face-up cards, and face-down cards. Names include Palace, Shed, Karma, China Hand, and regional variants. One traditional adult alternate name remains behind the site's opt-in Easter egg.</p><p><a class="text-link" href="https://www.pagat.com/beating/shithead.html" rel="noopener noreferrer">Read the Pagat source notes</a></p></article><article><p class="eyebrow">What players tell</p><h2>Every table changes it.</h2><p>House rules—especially the effects of special ranks—are part of the tradition. Players teach the game from memory, adapt it locally, and pass it to the next table. Exact origins remain uncertain.</p></article><article><p class="eyebrow">The legend of Palace</p><h2>A deck fits anywhere.</h2><p>In a barracks before dawn. Below deck, weeks from shore. Between flights. In a hostel, a dorm, a kitchen, or the last table still awake.</p><p><em>This is founder-supplied table lore and atmospheric storytelling—not verified historical reporting.</em></p></article></section><section class="section navy"><div class="narrow prose"><h2>The Four of Hearts rule set</h2><p>Four of Hearts uses a documented product rule set: 2 resets, 7 requires lower, 8 is transparent, and 10 burns. That consistency belongs to this adaptation; it is not presented as the only traditional way to play.</p><p class="notice">History and founder-biography language remain marked for founder and qualified editorial/legal review before commercial reliance.</p></div></section>`
+  content: `${gameNav("palace", "story")}${pageHero("Fact · folklore · legend", "A game carried by memory.", "Palace has no single box, rulebook, or universally proven origin. Its history lives in sources, table tradition, and the stories players tell.")}<section class="history-triad"><article><p class="eyebrow">What we know</p><h2>A shedding game with many names.</h2><p>Published rules references describe a beating or shedding game usually played through cards in hand, face-up cards, and face-down cards. Names include Palace, Shed, Karma, China Hand, and regional variants. One traditional adult alternate name remains behind the site's opt-in Easter egg.</p><p><a class="text-link" href="https://www.pagat.com/beating/shithead.html" rel="noopener noreferrer">Read the Pagat source notes</a></p></article><article><p class="eyebrow">What players tell</p><h2>Every table changes it.</h2><p>House rules—especially the effects of special ranks—are part of the tradition. Players teach the game from memory, adapt it locally, and pass it to the next table. Exact origins remain uncertain.</p></article><article><p class="eyebrow">The legend of Palace</p><h2>A deck fits anywhere.</h2><p>In a barracks before dawn. Below deck, weeks from shore. Between flights. In a hostel, a dorm, a kitchen, or the last table still awake.</p><p><em>This is founder-supplied table lore and atmospheric storytelling—not verified historical reporting.</em></p></article></section><section class="section navy"><div class="narrow prose"><h2>The Four of Hearts rule set</h2><p>Four of Hearts uses a documented product rule set: 2 resets, 7 requires lower, 8 is transparent, and 10 burns. That consistency belongs to this adaptation; it is not presented as the only traditional way to play.</p><p class="notice">History and founder-biography language remain marked for founder and qualified editorial/legal review before commercial reliance.</p></div></section>`
 }));
 write("news.html", page({
   title: "News | Four of Hearts Interactive",
-  description: "Palace development stories, studio updates, and honest Internal Alpha news from Four of Hearts Interactive.",
-  path: "/news.html",
-  current: "news",
+  description: "Company, Palace, and Commander ThumB news from Four of Hearts Interactive, with accurate development and availability status.",
+  path: "/news.html", current: "news", bodyClass: "news-page",
   content: `
-    <section class="news-page-intro"><div class="shell"><header class="compact-page-heading"><p class="eyebrow">Four of Hearts newsroom</p><h1>${gameMessage("gameNews", "Palace News")}</h1><p class="lede">${brandMessage("newsIntro", "News from the table. Some of it is even useful.")}</p></header>
-      <a class="featured-news panel news-card" href="${articleFile(featured.slug)}" data-reveal>
-        <div class="news-art"><img src="${featured.image}" alt="${featured.imageAlt}" width="512" height="512"></div>
-        <div class="news-body"><div class="news-meta"><span>Featured · ${featured.category}</span><time datetime="${featured.date}">${formatDate(featured.date)}</time></div><h2>${productCopy(featured.title)}</h2><p>${productCopy(featured.description)}</p><span class="read-more">Read featured story →</span></div>
-      </a>
-      <div class="news-grid">${otherNews.map(newsCard).join("")}</div>
+    <section class="news-page-intro"><div class="shell"><header class="compact-page-heading"><p class="eyebrow">Four of Hearts Interactive newsroom</p><h1>News from every world.</h1><p class="lede">Company updates, Palace development, and dispatches from the Commander ThumB universe—without invented dates, releases, or player counts.</p></header>
+      <div class="news-filters" role="group" aria-label="Filter news">
+        <button type="button" data-news-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-news-filter="company" aria-pressed="false">Company</button>
+        <button type="button" data-news-filter="palace" aria-pressed="false">Palace</button>
+        <button type="button" data-news-filter="commander" aria-pressed="false">Commander ThumB</button>
+        <button type="button" data-news-filter="development" aria-pressed="false">Development</button>
+      </div>
+      <div class="news-grid company-news-grid">${news.map(newsCard).join("")}</div>
+      <p data-news-empty hidden>No stories match this filter.</p>
       <div class="actions"><a class="text-link" href="feed.xml">Subscribe via RSS</a></div>
     </div></section>`
 }));
@@ -360,7 +290,7 @@ news.forEach((item, index) => {
         <div class="shell"><img class="article-art" src="${item.image}" alt="${item.imageAlt}" width="1200" height="630"></div>
         <section class="section"><div class="shell article-layout">
           <div class="prose">${body}</div>
-          <aside class="article-aside"><strong>Development status</strong><p>${gameToken("gameName", "Palace")} and every current Four of Hearts game remain in Internal Alpha. This article does not announce public availability.</p></aside>
+          <aside class="article-aside"><strong>Availability</strong><p>${item.gameKey === "commander" ? "Commander ThumB is Coming Soon and is not publicly playable. This article does not announce a release." : item.gameKey === "palace" ? "Palace has an interactive website preview and remains in development." : "This article reports current company work and does not announce public availability."}</p>${item.gameKey ? `<a class="text-link" href="${gameByKey[item.gameKey]?.infoUrl ?? "games.html"}">Visit ${gameByKey[item.gameKey]?.title ?? "the game"} →</a>` : ""}</aside>
         </div></section>
       </article>
       <section class="section navy"><div class="shell"><p class="eyebrow">Keep reading</p><div class="related-grid">
@@ -371,23 +301,14 @@ news.forEach((item, index) => {
 });
 
 write("games.html", page({
-  title: "More Games from Four of Hearts",
-  description: "Meet Hearts, Spades, and Euchre—the growing game family behind flagship Palace—and try an accessible Internal Alpha teaching moment for each.",
-  path: "/games.html",
-  current: "games",
-  content: `
-    <section class="games-page-intro"><div class="shell"><header class="compact-page-heading"><p class="eyebrow">More games from Four of Hearts</p><h1>More ways to own the table.</h1><p class="lede">${brandMessage("gamesIntro", gameToken("gameName", "Palace") + " gets the crown. Hearts, Spades, and Euchre still stole chairs.")}</p></header>
-      <div class="game-shelf">
-        <article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h2>Hearts</h2><p>Dodge the points—or take every one.</p><a class="button small" href="hearts-play.html">Try Hearts</a></div></article>
-        <article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades royal purple artwork" width="512" height="512"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h2>Spades</h2><p>Bid together. Let trump speak.</p><a class="button small" href="spades-play.html">Try Spades</a></div></article>
-        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green card artwork" width="512" height="512"><div class="game-tile-content"><span class="alpha-badge">Internal Alpha</span><h2>Euchre</h2><p>Call it. Find the bowers. Move fast.</p><a class="button small" href="euchre-play.html">Try Euchre</a></div></article><article class="panel game-tile commander-tile"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540"></picture><div class="game-tile-content"><span class="alpha-badge">Coming Soon</span><h2>Commander ThumB</h2><p>One thumb. One ship. One thousand levels.</p><a class="button small" href="commander-thumb.html">Follow the Mission</a></div></article>
-      </div>
-      <div class="future-card"><div><p class="eyebrow">The family will grow</p><h2>More games are joining the table.</h2><p class="lede">We have more cards up our sleeves. We are simply refusing to ruin the reveal.</p></div></div>
-    </div></section>
-    <section class="section navy"><div class="shell palace-band"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle artwork" width="512" height="512" loading="lazy"><div><p class="eyebrow">Start with the flagship</p><h2>${gameMessage("flagship", "Palace gets the crown.")}</h2><p class="lede">Try the three-layer interactive mini-match that anchors Four of Hearts.</p><a class="button" href="palace-play.html">${gameMessage("playGame", "Play Palace")}</a></div></div></section>`
+  title: "Games | Four of Hearts Interactive",
+  description: "Explore the growing Four of Hearts Interactive game catalog, including Palace and Commander ThumB.",
+  path: "/games.html", current: "games", bodyClass: "games-page",
+  content: `${pageHero("The 4OH game catalog", "Choose your next world.", "Card tables, cosmic battles, and more to come. Every title has its own identity; every title belongs to Four of Hearts Interactive.")}
+    <section class="section"><div class="shell"><div class="catalog-grid">${gameCatalog.map((game) => gameCard(game)).join("")}</div></div></section>`
 }));
 
-write("commander-thumb.html", commanderPage({ page, company, siteUrl }));
+write("commander-thumb.html", commanderPage({ page, company, siteUrl, gameNav }));
 
 const secondaryPages = [
   ["hearts", "Hearts", "Follow suit. Duck the points.", "assets/icon-hearts-4hearts.webp", "Hearts ruby artwork"],
@@ -434,16 +355,16 @@ write("about.html", page({
   title: "About Four of Hearts Interactive | One Family. Many Games.",
   description: "Meet the family and lifelong game observer behind Four of Hearts Interactive, the studio bringing Palace to a definitive digital table.",
   path: "/about.html", current: "about", bodyClass: "about-page",
-  content: `${pageHero("The studio behind " + gameToken("gameName", "Palace"), "Four daughters. Four hearts. One wonderfully serious case of game night.", brandMessage("aboutIntro", "This began around a family table: four daughters, plenty of opinions, and the kind of laughter that makes everyone stay for one more hand."))}
+  content: `${pageHero("The people behind 4OH", "Four daughters. Four hearts. One wonderfully serious case of game night.", brandMessage("aboutIntro", "This began around a family table: four daughters, plenty of opinions, and the kind of laughter that makes everyone stay for one more hand."))}
   <section class="section"><div class="shell about-beats" aria-label="The Four of Hearts story">
     <article class="about-beat"><b aria-hidden="true">01</b><h2>Four daughters started the spark.</h2><p>The people came first.</p></article>
     <article class="about-beat"><b aria-hidden="true">♥♥♥♥</b><h2>Four hearts became the name.</h2><p>A family mark with a job to do.</p></article>
     <article class="about-beat"><b aria-hidden="true">03</b><h2>One table became a studio.</h2><p>Good rules. Better company.</p></article>
     <article class="about-beat"><b aria-hidden="true">☺</b><h2>Success is measured in smiles.</h2><p>Also rematches and house-rule arguments.</p></article>
-    <article class="about-beat"><b aria-hidden="true">4OH</b><h2>One Family. Many Games.</h2><p>Palace leads. The table keeps growing.</p></article>
+    <article class="about-beat"><b aria-hidden="true">4OH</b><h2>One Family. Many Games.</h2><p>The family keeps growing.</p></article>
   </div></section>
-  <section class="section navy founder-feature"><div class="shell founder-story-grid"><div><p class="eyebrow">Meet the founder · wording awaiting factual approval</p><h2>Games have rules. People make them interesting.</h2><p class="lede">For more than fifty years, the founder has played, taught, tested, argued about, laughed over, and tried to understand games. More than twenty of those years included examining strategy and human interaction in a university environment.</p><p>The question always returns to the table: <em>why does this game make people stay?</em> He is a person who has spent a lifetime watching what happens when rules meet people.</p><p>That curiosity shapes Four of Hearts: clear enough to welcome a newcomer, deep enough to reward a regular, and human enough to create a story.</p><div class="founder-notes"><div class="founder-note"><b>50+ years</b><span>playing, teaching, testing, and studying games</span></div><div class="founder-note"><b>20+ years</b><span>examining strategy and human interaction</span></div><div class="founder-note"><b>1 question</b><span>why does this game make people stay?</span></div><div class="founder-note"><b>1 test</b><span>did the table smile?</span></div></div></div><img data-game-art src="assets/palace-hero-640.webp" alt="Palace castle artwork from Four of Hearts Interactive" width="640" height="640" loading="lazy"></div></section>
-  <section class="section family-story"><div class="shell story-split"><div><p class="eyebrow">Why ${gameToken("gameName", "Palace")} leads</p><h2>The table legend deserves its castle.</h2><p class="lede">Match it. Beat it. Use a power card. Survive your hand, your face-up cards, and the mystery underneath. Easy to teach. Impossible to forget.</p><p>One more game is rarely one more game.</p><div class="actions"><a class="button" href="palace-play.html">Play the mini-match</a><a class="text-link" href="palace-story.html">Read fact, tradition & legend</a></div></div><img data-game-art src="assets/palace-hero-640.webp" alt="Palace castle rising above the Palace title" width="640" height="640" loading="lazy"></div></section>`
+  <section class="section navy founder-feature"><div class="shell founder-story-grid"><div><p class="eyebrow">Meet the founder · Player, teacher, observer</p><h2>Games have rules. People make them interesting.</h2><p class="lede">For more than fifty years, the founder has played, taught, tested, argued about, laughed over, and tried to understand games. More than twenty of those years included examining strategy and human interaction in a university environment.</p><p>The question always returns to the table: <em>why does this game make people stay?</em> He is a person who has spent a lifetime watching what happens when rules meet people.</p><p>That curiosity shapes Four of Hearts: clear enough to welcome a newcomer, deep enough to reward a regular, and human enough to create a story.</p><div class="founder-notes"><div class="founder-note"><b>50+ years</b><span>playing, teaching, testing, and studying games</span></div><div class="founder-note"><b>20+ years</b><span>examining strategy and human interaction</span></div><div class="founder-note"><b>1 question</b><span>why does this game make people stay?</span></div><div class="founder-note"><b>1 test</b><span>did the table smile?</span></div></div></div><img data-game-art src="assets/palace-hero-640.webp" alt="Palace castle artwork from Four of Hearts Interactive" width="640" height="640" loading="lazy"></div></section>
+  <section class="section family-story"><div class="shell story-split"><div><p class="eyebrow">A lifelong question</p><h2>What makes people stay for one more game?</h2><p class="lede">Match it. Beat it. Use a power card. Survive your hand, your face-up cards, and the mystery underneath. Easy to teach. Impossible to forget.</p><p>The founder’s philosophy is simple: welcome people quickly, reward curiosity, and measure success in smiles, stories, and rematches.</p><div class="actions"><a class="button" href="palace-play.html">Play the mini-match</a><a class="text-link" href="palace-story.html">Read fact, tradition & legend</a></div></div><img data-game-art src="assets/palace-hero-640.webp" alt="Palace castle rising above the Palace title" width="640" height="640" loading="lazy"></div></section>`
 }));write("support.html", page({
   title: "Support | Four of Hearts Interactive",
   description: "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
@@ -521,7 +442,7 @@ write("palace-faq.html", page({
       {"@type":"Question","name":"Is Palace also called Shed?","acceptedAnswer":{"@type":"Answer","text":"Palace belongs to a wider shedding-game family with many table names, including Shed, Karma, China Hand, and an uncensored traditional adult name."}}
     ]
   },
-  content: `${pageHero("Rules · strategy · table names", "How to play Palace.", "Match the rank or play higher. If you cannot, pick up. Power cards bend the rules; three levels make the ending unforgettable.", '<div class="actions"><a class="button" href="palace-play.html">Learn by playing</a><a class="button secondary" href="#faq">Read the FAQ</a></div>')}
+  content: `${gameNav("palace", "rules")}${pageHero("Rules · strategy · table names", "How to play Palace.", "Match the rank or play higher. If you cannot, pick up. Power cards bend the rules; three levels make the ending unforgettable.", '<div class="actions"><a class="button" href="palace-play.html">Learn by playing</a><a class="button secondary" href="#faq">Read the FAQ</a></div>')}
     <section class="section"><div class="narrow prose"><h2>Palace in one minute</h2><ol><li>Play the same rank as the top card or a higher rank.</li><li>If you cannot make a legal play, pick up the pile.</li><li>Use the Four of Hearts power cards: 2 resets, 7 requires lower, 8 is transparent, and 10 burns.</li><li>Clear your hand, then your visible face-up cards, then the hidden face-down finale.</li></ol><h2>Simple strategy</h2><p>Save flexibility for the end. Low cards can become traps; a 2 escapes almost anything; a 10 clears danger; and the cards everyone can see tell rivals how your finish may unfold.</p></div></section>
     <section class="section navy" id="faq"><div class="narrow prose"><h2>Frequently asked questions</h2><h3>Is Palace a shedding game?</h3><p>Yes. The goal is to shed every card across three levels before the other players.</p><h3>Is Palace also called Shed?</h3><p>Palace is part of a folk game family with names that vary by table and region. Shed, Karma, and China Hand appear in published rules references. House rules also vary.</p><h3>Are these the only traditional power-card rules?</h3><p>No. This site teaches the clear Four of Hearts rule set. Other tables may assign different powers or use different ranks.</p><h3>How many people can play?</h3><p>Palace is commonly taught as a small-group card game. Exact setup and deck use can vary by the number of players and local rules.</p><p><a class="text-link" href="https://www.pagat.com/beating/shithead.html" rel="noopener noreferrer">Read the Pagat rules and history notes</a></p></div></section>`
 }));
@@ -536,21 +457,8 @@ write("404.html", page({
 }));
 
 
-const canonicalHome = readFileSync(resolve(root, "palace.html"), "utf8")
-  .replaceAll("https://4ohi.com/palace.html", "https://4ohi.com/")
-  .replace('<body class="palace-product">', '<body class="palace-product canonical-home">')
-  .replace('<p class="eyebrow">The Four of Hearts flagship</p>', '<a class="transmission-link" href="news-why-were-building-palace.html">Transmission 001 · Development log</a><p class="eyebrow">The Four of Hearts flagship</p>');
-write("index.html", canonicalHome);
-let legacyPalace = page({
-  title: "Palace has moved home | Four of Hearts Interactive",
-  description: "The Palace flagship experience now begins at 4ohi.com.",
-  path: "/palace.html", current: "palace", noindex: true,
-  script: '<script src="assets/route-home.js" defer></script>',
-  content: `${pageHero("One Palace home", "The table moved to the front door.", "Taking you to the canonical Four of Hearts homepage.", '<div class="actions"><a class="button" href="index.html">Continue home</a></div>')}`
-}).replaceAll("https://4ohi.com/palace.html", "https://4ohi.com/");
-write("palace.html", legacyPalace);
 const sitemapFiles = [
-  "index.html", "palace-play.html", "palace-story.html", "commander-thumb.html", "news.html",
+  "index.html", "palace.html", "palace-play.html", "palace-story.html", "commander-thumb.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"
@@ -566,7 +474,7 @@ write("feed.xml", `<?xml version="1.0" encoding="UTF-8"?>
   <channel>
     <title>Four of Hearts Interactive News</title>
     <link>${siteUrl}/news.html</link>
-    <description>Palace development and studio news from Four of Hearts Interactive.</description>
+    <description>Company and game news from Four of Hearts Interactive.</description>
     <language>en-us</language>
 ${news.map((item) => `    <item>
       <title>${item.title.replaceAll("&", "&amp;")}</title>

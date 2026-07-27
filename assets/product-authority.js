@@ -116,7 +116,12 @@
   const allowedModes = new Set(["palace", "shed", "shithead"]);
   const url = new URL(location.href);
   let locale = localeCatalog[url.searchParams.get("lang")] ? url.searchParams.get("lang") : "en";
-  let mode = allowedModes.has(url.searchParams.get("game")) ? url.searchParams.get("game") : "palace";
+  const palaceContext = Boolean(document.querySelector("[data-palace-context]"));
+  let mode = palaceContext && allowedModes.has(url.searchParams.get("game")) ? url.searchParams.get("game") : "palace";
+  if (!palaceContext && url.searchParams.has("game")) {
+    url.searchParams.delete("game");
+    history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  }
   const versionedAsset = (path) => window.FOUR_HEARTS_ASSETS?.[path] || path;
   const artByMode = Object.freeze({
     palace: Object.freeze({ small: versionedAsset("assets/palace-hero-384.webp"), medium: versionedAsset("assets/palace-hero-640.webp"), large: versionedAsset("assets/palace-hero-1024.webp") }),
@@ -145,7 +150,7 @@
 
   const setUrlState = (nextMode, replace = false) => {
     const next = new URL(location.href);
-    if (nextMode === "palace") next.searchParams.delete("game");
+    if (!palaceContext || nextMode === "palace") next.searchParams.delete("game");
     else next.searchParams.set("game", nextMode);
     next.searchParams.set("lang", locale);
     history[replace ? "replaceState" : "pushState"]({}, "", `${next.pathname}${next.search}${next.hash}`);
@@ -157,7 +162,8 @@
       if (!raw || raw.startsWith("#") || raw.startsWith("mailto:") || raw.startsWith("tel:") || /^https?:/i.test(raw)) return;
       const next = new URL(raw, location.href);
       next.searchParams.set("lang", locale);
-      if (mode === "palace") next.searchParams.delete("game"); else next.searchParams.set("game", mode);
+      const palaceRoute = /^(palace(?:-play|-story|-faq)?\.html)$/.test(next.pathname.split("/").pop() || "index.html");
+      if (!palaceContext || !palaceRoute || mode === "palace") next.searchParams.delete("game"); else next.searchParams.set("game", mode);
       link.href = `${next.pathname.split("/").pop() || "index.html"}${next.search}${next.hash}`;
     });
   };
@@ -170,14 +176,14 @@
     document.documentElement.dataset.locale = locale;
     const art = artByMode[mode];
     document.documentElement.style.setProperty("--active-game-art", `url("../${art.large}")`);
-    document.querySelectorAll("img[data-game-art], img[src*='icon-palace-4hearts'], img[src*='palace-hero-']").forEach((image) => {
+    if (palaceContext) document.querySelectorAll("img[data-game-art], img[src*='icon-palace-4hearts'], img[src*='palace-hero-']").forEach((image) => {
       image.src = art.large;
       image.srcset = `${art.small} 384w, ${art.medium} 640w, ${art.large} 1024w`;
       image.sizes = image.closest(".palace-world-art") ? "(max-width: 600px) 300px, min(61vw, 780px)" : "(max-width: 600px) 90vw, 512px";
       image.alt = `${state.gameName} game artwork from Four of Hearts Interactive`;
       image.dataset.gameArt = mode;
     });
-    document.querySelectorAll(".palace-world-art source").forEach((source) => {
+    if (palaceContext) document.querySelectorAll(".palace-world-art source").forEach((source) => {
       source.srcset = source.media.includes("520") ? art.small : art.medium;
     });
     document.querySelectorAll("[data-brand-message]").forEach((node) => {
@@ -185,11 +191,11 @@
       const copy = localeCatalog[locale].brand?.[node.dataset.brandMessage];
       node.textContent = typeof copy === "function" ? copy(state.gameName) : (copy || node.dataset.brandDefault);
     });
-    document.querySelectorAll("[data-game-token]").forEach((node) => {
+    if (palaceContext) document.querySelectorAll("[data-game-token]").forEach((node) => {
       const key = node.dataset.gameToken;
       node.textContent = state[key] ?? state.gameName;
     });
-    document.querySelectorAll("[data-game-message]").forEach((node) => {
+    if (palaceContext) document.querySelectorAll("[data-game-message]").forEach((node) => {
       node.textContent = state.message(node.dataset.gameMessage);
     });
     document.querySelectorAll("[data-current-game]").forEach((node) => { node.textContent = state.gameName; });
@@ -206,7 +212,7 @@
       image.alt = image.dataset.dynamicGameAlt.replace("{{GAME_NAME}}", state.gameName);
     });
     const fixedTitle = document.querySelector('meta[property="og:title"]')?.content || document.title;
-    if (mode !== "shithead") document.title = fixedTitle.replace(/\bPalace\b/g, state.gameName);
+    if (palaceContext && mode !== "shithead") document.title = fixedTitle.replace(/\bPalace\b/g, state.gameName);
     updateLinks();
     if (announce) {
       document.querySelector("[data-global-name-status]")?.replaceChildren(document.createTextNode(localeCatalog[locale].templates.status(state.gameName)));
@@ -247,7 +253,7 @@
     if (!localeCatalog[nextLocale]) return;
     const next = new URL(location.href);
     next.searchParams.set("lang", nextLocale);
-    if (mode === "palace") next.searchParams.delete("game"); else next.searchParams.set("game", mode);
+    if (!palaceContext || mode === "palace") next.searchParams.delete("game"); else next.searchParams.set("game", mode);
     location.assign(next);
   });
   nsfw?.addEventListener("close", () => {
@@ -257,7 +263,7 @@
   });
   addEventListener("popstate", () => {
     const current = new URL(location.href);
-    mode = allowedModes.has(current.searchParams.get("game")) ? current.searchParams.get("game") : "palace";
+    mode = palaceContext && allowedModes.has(current.searchParams.get("game")) ? current.searchParams.get("game") : "palace";
     render({ announce: true });
   });
 

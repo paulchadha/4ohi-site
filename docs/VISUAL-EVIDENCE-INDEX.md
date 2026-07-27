@@ -18,3 +18,12 @@ Current generated evidence:
 - `page-reconstruction-public-results.json` — passing public acceptance record for deployed SHA `3e26967f4a938e63a8c56cedea847bdc652ebc20`.
 
 The public result was captured after the exact product SHA built successfully and was retested through `https://4ohi.com`.
+## Company architecture production audit
+
+- `company-architecture-results.json` — 20 routes, seven viewports, mobile/keyboard navigation, Palace selector isolation, Commander metadata/status/news, News filters, localization, four tutorials, and zero-storage results.
+- `company-index-*` — Four of Hearts Interactive homepage at 320, 430, 768, and 1366 pixels.
+- `company-games-*` — reusable Games catalog at the same widths.
+- `company-commander-thumb-*` — original 1970s-inspired Commander ThumB promotion at the same widths.
+- `company-palace-play-*` — Palace-local controls and tutorial at the same widths.
+
+Generated locally July 26, 2026 with `scripts/verify-company-architecture.mjs`.

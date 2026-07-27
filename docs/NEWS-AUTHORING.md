@@ -1,22 +1,24 @@
 # News authoring workflow
 
-News records live in `content/news.json`; generated article pages, `news.html`, `feed.xml`, and `sitemap.xml` come from `scripts/build-site.mjs`. Edit the source record, run the generator, then validate the generated output. Do not hand-edit a generated article.
+Public news records live in `content/news.json`; generated articles, `news.html`, `feed.xml`, and `sitemap.xml` come from `scripts/build-site.mjs`. Each record uses a stable slug, accurate ISO date, category, optional `gameKey`, tags, image, meaningful alt text, featured state, and body sections.
 
-Each record needs a stable slug, title, description, ISO date, category, image, image alt text, featured state, and paragraph content. Use only verified milestones and Internal Alpha language. Do not imply a store listing, public multiplayer service, release date, partnership, player count, or certification that does not exist.
+The company newsroom covers Four of Hearts Interactive and all games. Filters currently expose Company, Palace, Commander ThumB, and Development categories. Do not make one game the global editorial identity.
 
-Use one featured lead on the newsroom page, followed by recent stories in reverse chronological order. Headlines should be specific and calm; body copy should identify what changed, why it matters, and what remains in testing. Palace leads the editorial hierarchy, while Hearts, Spades, Euchre, company, accessibility, privacy, and safety updates support the broader family.
+Availability language is factual:
 
-After authoring, run the generator twice and confirm no second-run diff, run `scripts/validate-site.mjs`, then exercise `news.html`, the article, RSS, sitemap, metadata, mobile layout, and internal links in browser QA.
+- Palace has an interactive website preview and remains in development.
+- Commander ThumB is Coming Soon and is not publicly playable.
+- Hearts, Spades, and Euchre have local teaching lessons and remain Internal Alpha.
 
-## Founder-era editorial standard
+Never claim a public release, store listing, public multiplayer service, date, partnership, player count, endorsement, review, or certification without verified evidence. A release article may be drafted under `content/drafts/`, but drafts must not enter `content/news.json`, public HTML, sitemap, or RSS. The current Commander release draft is explicitly guarded this way.
 
-Palace must lead the newsroom. Every product statement distinguishes Internal Alpha/testing from public availability. Articles may use obvious campaign hyperbole, but user counts, rankings, endorsements, reviews, partnerships, and release success require evidence. Product rules are the Four of Hearts rules; broader Palace history must preserve the sourced/tradition/folklore boundary.
+After editing content:
 
-## Compact newsroom and dynamic visible identity
+```powershell
+node scripts/build-site.mjs
+node scripts/build-site.mjs
+node scripts/validate-site.mjs
+node scripts/verify-company-architecture.mjs
+```
 
-The newsroom now opens with a compact heading plus featured story in the first desktop viewport. Visible editorial product references use the shared generator `productCopy` helper so Shed mode does not leave a stale Palace headline. Metadata and NewsArticle structured data remain canonical Palace. Do not restore a full-screen title card.
-
-
-## July 2026 staggered calendar
-
-The initial five stories now publish on July 14, 17, 20, 23, and 26. Continue with real approved updates every two or three days when possible. See NEWS-EDITORIAL-CALENDAR.md.
+Confirm the second build changes nothing, direct article routes load, filters work from query parameters, dates and tags are accurate, metadata/JSON-LD are truthful, and all images and links work at phone through desktop widths.
