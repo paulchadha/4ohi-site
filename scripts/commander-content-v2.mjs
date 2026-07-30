@@ -96,7 +96,7 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
     <section class="retro-news" id="news" aria-labelledby="commander-news-title">
       <div class="shell">
         <header class="retro-section-heading"><p>Transmissions from mission control</p><h2 id="commander-news-title">The story is just beginning.</h2></header>
-        <div class="retro-news-grid">${commanderNews.map(([slug, title]) => `<a href="news-${slug}.html"><span>Commander ThumB · Development</span><strong>${title}</strong><em>Read transmission →</em></a>`).join("")}</div>
+        <div class="retro-news-grid">${commanderNews.map(([slug, title]) => `<a href="news-${slug}.html"><span><b class="game-title-case">Commander ThumB</b> · Development</span><strong>${title}</strong><em>Read transmission →</em></a>`).join("")}</div>
         <div class="retro-final"><p>Thum A invades. Thum B defends. Thum C watches.</p><strong>Commander ThumB must save them all.</strong><span class="status-badge coming">Coming Soon</span></div>
       </div>
     </section>`

@@ -137,6 +137,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/commander-thumb.css">
   <link rel="stylesheet" href="assets/company-architecture.css">
   <link rel="stylesheet" href="assets/company-architecture-fixes.css">
+  <link rel="stylesheet" href="assets/next-level.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -144,6 +145,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <script src="assets/product-authority.js" defer></script>
   <script src="assets/release-strip.js" defer></script>
   <script src="assets/power-cards.js" defer></script>
+  <script src="assets/next-level.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
@@ -196,7 +198,7 @@ write("index.html", page({
   image: "assets/brand-board.webp", imageAlt: "Four of Hearts Interactive game family",
   jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"Four of Hearts Interactive creates colorful, welcoming games that bring people together." },
   content: `
-    <section class="company-hero"><div class="shell company-hero-grid"><div><p class="eyebrow">Four of Hearts Interactive</p><h1>Games with heart.<br>Worlds worth sharing.</h1><p class="lede">From the card-table suspense of Palace to the cosmic action of Commander ThumB, 4OH makes original games with clear rules, big personality, and one purpose: bring people together.</p><div class="actions"><a class="button" href="games.html">Explore Our Games</a><a class="button secondary" href="about.html">Meet 4OH</a></div></div><img src="assets/brand-mark-4oh.webp" alt="4OH Interactive compact mark with four colored hearts" width="570" height="365" fetchpriority="high"></div></section>
+    <section class="company-hero"><div class="shell company-hero-grid"><div class="company-hero-copy"><p class="eyebrow">Four of Hearts Interactive</p><h1><span>Games with</span><span class="accent">heart.</span></h1><p class="lede">From the card-table suspense of Palace to the cosmic action of Commander ThumB, 4OH makes original games with clear rules, big personality, and one purpose: bring people together.</p><div class="actions"><a class="button" href="games.html">Explore Our Games</a><a class="button secondary" href="about.html">Meet 4OH</a></div></div><div class="hero-orbit" aria-label="Explore Four of Hearts games"><div class="orbit-core" aria-hidden="true"><img src="assets/brand-mark-4oh.webp" alt="" width="570" height="365" fetchpriority="high"></div><a class="orbit-card palace" href="palace.html"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle artwork" width="960" height="960"><span>Enter Palace</span></a><a class="orbit-card commander" href="commander-thumb.html"><img src="assets/commander-thumb-70s-hero-960.webp" alt="Commander ThumB hero ship" width="960" height="640"><span>Discover Commander ThumB</span></a><span class="orbit-suit one" aria-hidden="true">♠</span><span class="orbit-suit two" aria-hidden="true">♥</span></div></div><p class="hero-scroll-note" aria-hidden="true">Scroll to explore</p></section>
     <section class="section featured-games"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Now at Four of Hearts</p><h2>Two games. Two very different adventures.</h2></div><p class="lede">Palace and Commander ThumB are peer worlds from one growing independent game company.</p></div><div class="featured-game-grid">${featuredGames.map((game) => gameCard(game)).join("")}</div><p class="section-link"><a class="text-link" href="games.html">View All Games →</a></p></div></section>
     <section class="section company-news"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Latest from 4OH</p><h2>News from every world.</h2></div><a class="text-link" href="news.html">All company news →</a></div><div class="news-grid">${news.slice(0, 3).map(newsCard).join("")}</div></div></section>
     <section class="section navy"><div class="shell company-close"><p class="eyebrow">One family. Many games.</p><h2>There is always room for one more at this table.</h2><a class="button" href="about.html">Our Story</a></div></section>`
