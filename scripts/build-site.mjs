@@ -138,6 +138,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/company-architecture.css">
   <link rel="stylesheet" href="assets/company-architecture-fixes.css">
   <link rel="stylesheet" href="assets/next-level.css">
+  <link rel="stylesheet" href="assets/spatial-gallery.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -146,6 +147,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <script src="assets/release-strip.js" defer></script>
   <script src="assets/power-cards.js" defer></script>
   <script src="assets/next-level.js" defer></script>
+  <script src="assets/spatial-gallery.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
@@ -188,7 +190,14 @@ const gameCard = (game, heading = "h2") => `<article class="catalog-card ${game.
   <div class="actions"><a class="button small" href="${game.infoUrl}">Overview</a>${game.playUrl ? `<a class="button small secondary" href="${game.playUrl}">${game.playLabel}</a>` : ""}</div></div>
 </article>`;
 
-const universeCard = (game) => `<a class="universe-game ${game.key}" href="${game.infoUrl}" data-game-key="${game.key}"><img src="${game.artwork}" alt="${game.alt}" width="512" height="512"><span><b>${game.title}</b><small>${game.status}</small></span></a>`;
+const spatialWorld = (game, index) => `<article class="spatial-world ${game.key}${index === 0 ? " is-active" : ""}" data-spatial-world data-world-index="${index}" data-title="${game.title}" data-description="${game.description}" data-status="${game.status}" data-href="${game.infoUrl}"${index === 0 ? "" : ' aria-hidden="true"'}>
+  <a href="${game.infoUrl}" class="world-art-link"${index === 0 ? "" : ' tabindex="-1"'}>
+    <span class="world-number">0${index + 1}</span>
+    <img src="${game.artwork}" alt="${game.alt}" width="960" height="${game.key === "commander" ? 640 : 960}"${index === 0 ? ' fetchpriority="high"' : ' loading="lazy"'}>
+  </a>
+</article>`;
+
+const worldIndexRow = (game, index) => `<a class="world-index-row" href="${game.infoUrl}" data-game-key="${game.key}"><span>0${index + 1}</span><strong>${game.title}</strong><em>${game.genre}</em><small>${game.status}</small><img src="${game.artwork}" alt="" width="240" height="240" loading="lazy"></a>`;
 
 const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
@@ -200,10 +209,29 @@ write("index.html", page({
   image: "assets/brand-board.webp", imageAlt: "Four of Hearts Interactive game family",
   jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"Four of Hearts Interactive creates colorful, welcoming games that bring people together." },
   content: `
-    <section class="company-hero"><div class="shell company-hero-grid"><div class="company-hero-copy"><p class="eyebrow">Four of Hearts Interactive</p><h1><span>Games with</span><span class="accent">heart.</span></h1><p class="lede">Palace, Hearts, Spades, Euchre, and Commander ThumB: five distinct games from one independent studio, all built to bring people together.</p><div class="actions"><a class="button" href="games.html">Explore All Games</a><a class="button secondary" href="about.html">Meet 4OH</a></div></div><div class="game-universe" aria-label="Choose a Four of Hearts game"><div class="universe-heading"><span>4OH Game Universe</span><small>Choose a world</small></div><div class="universe-grid">${gameCatalog.map(universeCard).join("")}</div></div></div><p class="hero-scroll-note" aria-hidden="true">Five games · one family</p></section>
-    <section class="section featured-games"><div class="shell"><div class="section-heading"><div><p class="eyebrow">The Four of Hearts lineup</p><h2>Five games. One growing family.</h2></div><p class="lede">Start with a Palace mini-match, sharpen your card-table instincts in Hearts, Spades, and Euchre, or follow Commander ThumB into a whole new universe.</p></div><div class="featured-game-grid">${gameCatalog.map((game) => gameCard(game)).join("")}</div><p class="section-link"><a class="text-link" href="games.html">See the complete lineup →</a></p></div></section>
-    <section class="section company-news"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Latest from 4OH</p><h2>News from every world.</h2></div><a class="text-link" href="news.html">All company news →</a></div><div class="news-grid">${news.slice(0, 3).map(newsCard).join("")}</div></div></section>
-    <section class="section navy"><div class="shell company-close"><p class="eyebrow">One family. Many games.</p><h2>There is always room for one more at this table.</h2><a class="button" href="about.html">Our Story</a></div></section>`
+    <section class="spatial-gallery" data-spatial-gallery aria-labelledby="gallery-heading">
+      <div class="spatial-gallery-sticky">
+        <div class="spatial-sky" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="gallery-masthead"><span>Four of Hearts Interactive</span><span>Gallery of Games · 01—05</span></div>
+        <h1 id="gallery-heading" class="sr-only">Explore five games from Four of Hearts Interactive</h1>
+        <div class="spatial-stage">${gameCatalog.map(spatialWorld).join("")}</div>
+        <div class="spatial-caption" aria-live="polite">
+          <p><span data-spatial-count>01</span><span>of 05</span><span data-spatial-status>${gameCatalog[0].status}</span></p>
+          <h2 data-spatial-title>${gameCatalog[0].title}</h2>
+          <div class="spatial-caption-foot"><p data-spatial-description>${gameCatalog[0].description}</p><a href="${gameCatalog[0].infoUrl}" data-spatial-link>Enter this world <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="spatial-controls">
+          <button type="button" data-spatial-prev aria-label="Previous game">←</button>
+          <div role="group" aria-label="Choose a game">${gameCatalog.map((game, index) => `<button type="button" data-spatial-select="${index}" aria-label="Show ${game.title}"${index === 0 ? ' aria-current="true"' : ""}><span>0${index + 1}</span></button>`).join("")}</div>
+          <button type="button" data-spatial-next aria-label="Next game">→</button>
+        </div>
+        <p class="spatial-instruction"><span>Drag</span><span>Scroll</span><span>Arrow keys</span></p>
+      </div>
+    </section>
+    <section class="home-thesis"><div class="shell"><p class="thesis-index">Independent studio · South Dakota</p><h2>Five worlds.<br><em>One reason to play.</em></h2><div class="thesis-notes"><p>We make games that turn a screen into a place people want to stay: a card table, a star system, a shared story.</p><p>Four of Hearts is a family studio. Palace, Hearts, Spades, Euchre, and Commander ThumB each have their own rules, rhythm, and unmistakable world.</p><a href="about.html">Meet the people behind 4OH <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="world-index"><div class="shell"><header><p>Collection 001</p><h2>The games</h2><a href="games.html">View the full catalog</a></header><div class="world-index-list">${gameCatalog.map(worldIndexRow).join("")}</div></div></section>
+    <section class="section company-news"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Dispatches from 4OH</p><h2>Stories behind<br>the worlds.</h2></div><a class="text-link" href="news.html">Enter the newsroom →</a></div><div class="news-grid">${news.slice(0, 3).map(newsCard).join("")}</div></div></section>
+    <section class="home-finale"><div class="shell"><p>Four of Hearts Interactive</p><h2>Come for the game.<br><em>Stay for the table.</em></h2><div><a href="games.html">Explore all five games</a><a href="about.html">Our story</a></div></div></section>`
 }));
 
 write("palace.html", page({

@@ -1,43 +1,42 @@
-# 4OH Spatial Editorial Visual System
+# 4OH Spatial Gallery Visual System
 
 ## Direction
 
-The July 2026 redesign moves Four of Hearts Interactive away from stacked, oversized marketing blocks and into an exploratory digital-gallery experience.
+The July 2026 rebuild makes the Four of Hearts homepage an explorable gallery rather than a stack of promotional cards. Its inspiration is the feeling of discovery found in exceptional cultural websites: one focused object at a time, controlled depth, quiet interface chrome, editorial pacing, and movement that responds to the visitor.
 
-The reference point is the feeling of spatial discovery found in high-end cultural websites: restrained navigation, a deep canvas, editorial typography, and interaction that rewards curiosity. No reference-site assets, maps, layouts, copy, or branded elements are reproduced.
+No reference-site assets, proprietary typefaces, maps, copy, branded elements, or source implementation are reproduced. The system is original to Four of Hearts and uses only approved 4OH artwork.
+
+## Experience architecture
+
+1. **One world in focus.** Palace, Commander ThumB, Hearts, Spades, and Euchre occupy a circular spatial stage. One game is active and actionable; neighboring worlds remain visible as depth cues.
+2. **Exploration has several doors.** Visitors can use the numbered world controls, previous/next controls, arrow keys, a mouse wheel, a trackpad, or a touch drag. Scrolling exits normally at the first and last world so the gallery cannot trap the page.
+3. **The interface stays quiet.** The company mark floats above the gallery. On desktop, company navigation becomes a compact glass navigation island near the bottom edge. Mobile uses an explicit Menu button and a readable overlay.
+4. **The page changes rhythm.** The spatial opening gives way to a crisp studio statement, a typographic game index, an asymmetrical editorial newsroom, and a focused closing invitation.
+5. **News is readable.** Homepage News uses near-black type on cool light gray rather than low-contrast beige. The full News page uses white type on near-black with large editorial imagery.
 
 ## Brand expression
 
-- Four of Hearts Interactive remains the parent brand.
-- The approved 4OH compact mark anchors the company experience.
-- Palace, Hearts, Spades, Euchre, and Commander ThumB appear as five distinct game worlds.
-- Approved game artwork remains the primary imagery.
-- Deep ink, luminous cyan, heart red, violet, emerald, and gold form the shared palette.
-- Display typography uses a refined system-serif stack; controls and body copy use a clean system-sans stack. No third-party font request is made.
-
-## Experience principles
-
-1. **Explore five worlds.** The homepage game universe is an explicit, interactive catalog rather than an unexplained decorative object.
-2. **Content remains primary.** Motion and decoration never hide required text or controls.
-3. **Every viewport is intentional.** The five-game universe, cards, navigation, and editorial grids recompose from 320 pixels through large desktop widths. On narrow phones, the game universe becomes a labeled horizontal swipe gallery without page-level overflow.
-4. **Motion is optional.** Pointer depth, entrance reveals, and ambient animation are disabled by reduced-motion preferences.
-5. **News is readable.** News cards use a high-contrast dark editorial treatment with clear white type and gold actions.
-6. **Privacy remains structural.** The experience creates no cookies, local storage, analytics, advertising, or third-party embeds.
-7. **Game controls stay scoped.** Palace table naming remains confined to the Palace playing context.
+- Four of Hearts Interactive is always the parent brand.
+- 4OH remains the approved compact mark.
+- Palace, Hearts, Spades, Euchre, and Commander ThumB are five distinct game worlds.
+- Deep black, paper gray, electric blue, cyan, and 4OH gold provide the shared environment while each game keeps its own artwork and color.
+- Large Georgia-based editorial display type is paired with a system sans-serif. No external font request is introduced.
 
 ## Implementation
 
-- `assets/next-level.css` is the final visual-system layer. It contains the palette, type system, responsive compositions, focus treatment, five-game layouts, and legacy-layer containment.
-- `assets/next-level.js` adds an in-memory scroll indicator, intersection-based reveals, pointer-only depth, and temporary hover/focus atmosphere changes.
-- `scripts/game-catalog.mjs` is the single five-game source for global navigation and company catalog surfaces.
-- `scripts/build-site.mjs` owns the spatial homepage markup and loads both assets on every generated route.
-- `scripts/commander-content-v2.mjs` preserves the exact `Commander ThumB` casing in visually transformed labels.
+- `scripts/build-site.mjs` generates the spatial homepage and loads the experience assets across generated pages.
+- `assets/spatial-gallery.css` owns the spatial stage, homepage navigation island, studio statement, game index, homepage News, and full newsroom treatment.
+- `assets/spatial-gallery.js` owns circular positioning, captions, mouse-wheel boundaries, drag/swipe, selectors, and keyboard behavior.
+- `scripts/game-catalog.mjs` remains the single source of truth for all five game worlds.
+- `scripts/verify-spatial-gallery.mjs` guards six viewport geometries, five-world state, active-world count, 42px targets, keyboard behavior, links, and horizontal overflow.
 
-## Accessibility and performance
+## Accessibility, privacy, and performance
 
-- Semantic landmarks, headings, skip links, accessible names, and keyboard menus remain intact.
-- Focus is a high-contrast gold outline with an offset.
-- Touch targets remain at least 42–44 pixels.
-- Reduced-motion users receive the complete static experience.
-- Artwork is reused in responsive WebP variants already managed by the asset manifest.
-- No external font, script, image, or tracking dependency is introduced.
+- Exactly one game world is exposed as active at a time; inactive world links are removed from the keyboard order and marked `aria-hidden`.
+- Captions update in an `aria-live` region.
+- All visible gallery controls are at least 42px; phone controls are 44px.
+- Motion is removed when `prefers-reduced-motion` is active.
+- The gallery provides explicit controls in addition to gestures and never depends on hover.
+- Existing semantic landmarks, skip link, current-page state, dialogs, and mobile navigation remain intact.
+- No cookies, local storage, analytics, advertising, external fonts, or third-party embeds are introduced.
+- Approved WebP artwork is reused; inactive artwork is lazy-loaded.
