@@ -81,7 +81,7 @@ export const gameCatalog = Object.freeze([
   })
 ]);
 
-export const primaryGames = gameCatalog.filter(({ key }) => ["palace", "commander"].includes(key));
+export const primaryGames = gameCatalog;
 export const featuredGames = gameCatalog.filter(({ featured }) => featured);
 export const gameByKey = Object.freeze(Object.fromEntries(gameCatalog.map((game) => [game.key, game])));
 

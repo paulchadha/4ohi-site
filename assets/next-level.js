@@ -40,6 +40,7 @@
   }
 
   const orbit = document.querySelector(".hero-orbit");
+  const universe = document.querySelector(".game-universe");
   const finePointer = window.matchMedia("(pointer: fine)");
   if (orbit && finePointer.matches && !reducedMotion.matches) {
     orbit.addEventListener("pointermove", (event) => {
@@ -53,6 +54,17 @@
     });
   }
 
+  if (universe && finePointer.matches && !reducedMotion.matches) {
+    universe.addEventListener("pointermove", (event) => {
+      const bounds = universe.getBoundingClientRect();
+      const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+      const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+      universe.style.transform = `perspective(1400px) rotateX(${-y * 2}deg) rotateY(${x * 2}deg)`;
+    });
+    universe.addEventListener("pointerleave", () => {
+      universe.style.transform = "perspective(1400px) rotateX(0deg) rotateY(-2deg)";
+    });
+  }
   document.querySelectorAll("[data-game-key]").forEach((card) => {
     const key = card.getAttribute("data-game-key");
     const enter = () => { if (key) body.dataset.atmosphere = key; };

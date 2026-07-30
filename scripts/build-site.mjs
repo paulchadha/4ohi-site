@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 import { commanderPage } from "./commander-content-v2.mjs";
-import { featuredGames, gameByKey, gameCatalog, primaryGames } from "./game-catalog.mjs";
+import { gameByKey, gameCatalog, primaryGames } from "./game-catalog.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const assetVersion = (assetPath) => {
@@ -188,18 +188,20 @@ const gameCard = (game, heading = "h2") => `<article class="catalog-card ${game.
   <div class="actions"><a class="button small" href="${game.infoUrl}">Overview</a>${game.playUrl ? `<a class="button small secondary" href="${game.playUrl}">${game.playLabel}</a>` : ""}</div></div>
 </article>`;
 
+const universeCard = (game) => `<a class="universe-game ${game.key}" href="${game.infoUrl}" data-game-key="${game.key}"><img src="${game.artwork}" alt="${game.alt}" width="512" height="512"><span><b>${game.title}</b><small>${game.status}</small></span></a>`;
+
 const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
 
 write("index.html", page({
   title: "Four of Hearts Interactive | Games That Bring People Together",
-  description: "Four of Hearts Interactive creates colorful, welcoming games—including Palace and Commander ThumB—built to bring people together.",
+  description: "Four of Hearts Interactive creates colorful, welcoming games—including Palace, Hearts, Spades, Euchre, and Commander ThumB—built to bring people together.",
   path: "/", current: "home", bodyClass: "company-home",
   image: "assets/brand-board.webp", imageAlt: "Four of Hearts Interactive game family",
   jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"Four of Hearts Interactive creates colorful, welcoming games that bring people together." },
   content: `
-    <section class="company-hero"><div class="shell company-hero-grid"><div class="company-hero-copy"><p class="eyebrow">Four of Hearts Interactive</p><h1><span>Games with</span><span class="accent">heart.</span></h1><p class="lede">From the card-table suspense of Palace to the cosmic action of Commander ThumB, 4OH makes original games with clear rules, big personality, and one purpose: bring people together.</p><div class="actions"><a class="button" href="games.html">Explore Our Games</a><a class="button secondary" href="about.html">Meet 4OH</a></div></div><div class="hero-orbit" aria-label="Explore Four of Hearts games"><div class="orbit-core" aria-hidden="true"><img src="assets/brand-mark-4oh.webp" alt="" width="570" height="365" fetchpriority="high"></div><a class="orbit-card palace" href="palace.html"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle artwork" width="960" height="960"><span>Enter Palace</span></a><a class="orbit-card commander" href="commander-thumb.html"><img src="assets/commander-thumb-70s-hero-960.webp" alt="Commander ThumB hero ship" width="960" height="640"><span>Discover Commander ThumB</span></a><span class="orbit-suit one" aria-hidden="true">♠</span><span class="orbit-suit two" aria-hidden="true">♥</span></div></div><p class="hero-scroll-note" aria-hidden="true">Scroll to explore</p></section>
-    <section class="section featured-games"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Now at Four of Hearts</p><h2>Two games. Two very different adventures.</h2></div><p class="lede">Palace and Commander ThumB are peer worlds from one growing independent game company.</p></div><div class="featured-game-grid">${featuredGames.map((game) => gameCard(game)).join("")}</div><p class="section-link"><a class="text-link" href="games.html">View All Games →</a></p></div></section>
+    <section class="company-hero"><div class="shell company-hero-grid"><div class="company-hero-copy"><p class="eyebrow">Four of Hearts Interactive</p><h1><span>Games with</span><span class="accent">heart.</span></h1><p class="lede">Palace, Hearts, Spades, Euchre, and Commander ThumB: five distinct games from one independent studio, all built to bring people together.</p><div class="actions"><a class="button" href="games.html">Explore All Games</a><a class="button secondary" href="about.html">Meet 4OH</a></div></div><div class="game-universe" aria-label="Choose a Four of Hearts game"><div class="universe-heading"><span>4OH Game Universe</span><small>Choose a world</small></div><div class="universe-grid">${gameCatalog.map(universeCard).join("")}</div></div></div><p class="hero-scroll-note" aria-hidden="true">Five games · one family</p></section>
+    <section class="section featured-games"><div class="shell"><div class="section-heading"><div><p class="eyebrow">The Four of Hearts lineup</p><h2>Five games. One growing family.</h2></div><p class="lede">Start with a Palace mini-match, sharpen your card-table instincts in Hearts, Spades, and Euchre, or follow Commander ThumB into a whole new universe.</p></div><div class="featured-game-grid">${gameCatalog.map((game) => gameCard(game)).join("")}</div><p class="section-link"><a class="text-link" href="games.html">See the complete lineup →</a></p></div></section>
     <section class="section company-news"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Latest from 4OH</p><h2>News from every world.</h2></div><a class="text-link" href="news.html">All company news →</a></div><div class="news-grid">${news.slice(0, 3).map(newsCard).join("")}</div></div></section>
     <section class="section navy"><div class="shell company-close"><p class="eyebrow">One family. Many games.</p><h2>There is always room for one more at this table.</h2><a class="button" href="about.html">Our Story</a></div></section>`
 }));
@@ -304,7 +306,7 @@ news.forEach((item, index) => {
 
 write("games.html", page({
   title: "Games | Four of Hearts Interactive",
-  description: "Explore the growing Four of Hearts Interactive game catalog, including Palace and Commander ThumB.",
+  description: "Explore Palace, Hearts, Spades, Euchre, and Commander ThumB in the growing Four of Hearts Interactive game catalog.",
   path: "/games.html", current: "games", bodyClass: "games-page",
   content: `${pageHero("The 4OH game catalog", "Choose your next world.", "Card tables, cosmic battles, and more to come. Every title has its own identity; every title belongs to Four of Hearts Interactive.")}
     <section class="section"><div class="shell"><div class="catalog-grid">${gameCatalog.map((game) => gameCard(game)).join("")}</div></div></section>`
