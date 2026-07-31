@@ -41,3 +41,6 @@ The founder-supplied Palace app home screen is now the controlling visual refere
 ## 2026 founder correction
 
 The website now follows the app-world table system: royal/navy blues, gold rails, bright sky and garden framing, white physical cards, and compact mobile typography. Power cards must be drawn as playing cards, not abstract numeric blocks. See [Founder Correction Release](FOUNDER-CORRECTION-RELEASE-2026-07-26.md).
+## Immersive world layer — 2026-07-31
+
+The current production authority is `assets/immersive-world.css`, documented in `IMMERSIVE-DIGITAL-EXPERIENCE-2026-07-31.md`. It introduces organic masks, spatial depth, cyan/gold focus, restrained display-serif hierarchy, and connected scene rhythm while preserving the semantic company system. New work must extend these tokens and avoid returning to repetitive rectangular panels or page-filling type without a content reason.

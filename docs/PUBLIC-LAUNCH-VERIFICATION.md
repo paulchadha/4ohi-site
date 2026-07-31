@@ -116,3 +116,6 @@ Local candidate evidence is recorded in `docs/visual-evidence/app-parity-results
 - The founder confirmed `support@4ohi.com` inbound and reply operation in this release thread. DNS verification separately confirms both Proton MX records, SPF, Proton verification, DMARC quarantine, and all three DKIM selectors unchanged.
 
 Public browser evidence: `docs/visual-evidence/app-parity-public-results.json`.
+## Immersive presentation verification — 2026-07-31
+
+Local browser gates passed for eight opening viewport sizes and 28 route/viewports. Required first-screen Palace art, countdown, Play, latest News, name control, language control, and 4OH identity were programmatically confirmed. Public verification must be repeated against the exact deployed SHA after push and recorded with the final production run.

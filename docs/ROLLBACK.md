@@ -20,3 +20,6 @@ Revert the website commit, rebuild generated pages so asset hashes match the rev
 ## Page reconstruction rollback
 
 Revert the focused website commits, rebuild generated documents and fingerprint manifest, push, wait for exact SHA, and rerun canonical route, game, and privacy tests. DNS, Proton mail, DigitalOcean, and native apps are outside this rollback.
+## Immersive release rollback — 2026-07-31
+
+Revert the focused immersive release commit and rebuild. The rollback unit is the two `immersive-world` assets, the homepage generator changes, generated HTML, verifier, evidence, and related documentation. No DNS, Proton Mail, native game, DigitalOcean, or other repository change is part of this release.

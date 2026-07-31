@@ -47,3 +47,6 @@ Before publishing, regenerate twice, run static validation and the founder brows
 ## Canonical route deployment
 
 The sitemap includes `/` and excludes the noindex `/palace.html` compatibility route. Acceptance requires the exact pushed SHA, root canonical metadata, logo and Palace navigation to home, and compatibility routing that preserves query/hash while replacing history.
+## Immersive release procedure — 2026-07-31
+
+Build with `node scripts/build-site.mjs`, then run `validate-site.mjs`, `verify-company-architecture.mjs`, `verify-spatial-gallery.mjs`, and `verify-immersive-experience.mjs`. Capture `immersive-after-*` evidence before committing. After pushing main, wait for the exact SHA GitHub Pages deployment, rerun the public browser gates with `SITE_URL=https://4ohi.com`, and confirm the worktree is clean and synchronized.

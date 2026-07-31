@@ -24,3 +24,6 @@ The global name, locale, Settings, power-card, and tutorial controls use native 
 ## Reconstructed gameplay acceptance
 
 Cards and actions remain semantic buttons with visible focus, live status, 44-pixel targets, keyboard activation, and reduced-motion behavior. Automated checks cover routing, Power Card geometry, Palace setup/progression, four-seat tables, RTL, and responsive bounds.
+## Immersive experience audit — 2026-07-31
+
+The spatial gallery retains standard links, buttons, one H1, one main landmark, skip navigation, `aria-current`, and keyboard control with Arrow keys plus Home/End. Non-active worlds leave the tab order. Power Cards now support arrow-key selection with `aria-pressed` and a live explanation. The Palace table-name disclosure is keyboard operable; focus uses a three-pixel cyan outline. Reduced-motion behavior is enforced in the final CSS layer.

@@ -113,3 +113,13 @@ Require one canonical homepage/countdown, a state-preserving legacy redirect, no
 - [x] Automated public checks found no mixed content, tracking, cookies, local storage, session storage, console errors, or failed resources.
 - [x] Founder confirmed `support@4ohi.com` inbound and reply behavior separately from DNS verification.
 - [ ] Founder physical-phone review and factual wording approval remain required.
+## Immersive experience gates — 2026-07-31
+
+- [x] Palace-led first viewport contains mark, artwork, countdown, Play, News, name, and language.
+- [x] Five game worlds remain discoverable and correctly routed.
+- [x] Palace-only controls hide in non-Palace worlds.
+- [x] Eight target viewports pass opening-screen and overflow checks.
+- [x] Power Cards pass mouse, touch-compatible button, and keyboard checks.
+- [x] Reduced motion, privacy, metadata, routes, and payload budgets pass locally.
+- [ ] Founder exploration review on production.
+- [ ] Physical iOS/Android feel review when devices are available.

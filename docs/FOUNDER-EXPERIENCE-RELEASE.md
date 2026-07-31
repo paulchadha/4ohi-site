@@ -42,4 +42,6 @@ No PalaceApp file, native game code, server code, secret, private state, Digital
 ## Security and release
 
 The site remains a static GitHub Pages publication with the existing CSP, HTTPS-only target, canonical apex domain, verified GitHub protected-domain state, local assets, and no form backend. DNS and Proton Mail records are outside this change. Rollback is `git revert` of the focused recovery commits; do not edit DNS or mail records to roll back presentation.
+## Immersive founder pass — 2026-07-31
 
+The latest founder-directed pass replaces conventional stacks with an exploratory, connected world while preserving approved content. Full decisions, QA, performance, privacy, rollback, and limitations are recorded in `IMMERSIVE-DIGITAL-EXPERIENCE-2026-07-31.md`.

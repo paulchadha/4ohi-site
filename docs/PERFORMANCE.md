@@ -35,3 +35,6 @@ The Open Graph app-world illustration is a 1200Ã—630 progressive JPEG at appr
 ## Content-hashed delivery
 
 Generated pages now reference CSS, JavaScript, and images with content hashes. Runtime-selected art uses the generated manifest. See [Asset Cache Busting](ASSET-CACHE-BUSTING.md).
+## Immersive release measurement — 2026-07-31
+
+The generated homepage loads 275,939 bytes of local CSS and JavaScript before transfer compression, below the 450 KB release gate. The redesign reuses optimized WebP assets and adds no runtime bitmap. Organic geometry and atmosphere are CSS-native. Images keep explicit dimensions, and full-viewport regions reserve layout space to limit CLS.

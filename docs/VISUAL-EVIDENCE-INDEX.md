@@ -27,3 +27,6 @@ The public result was captured after the exact product SHA built successfully an
 - `company-palace-play-*` — Palace-local controls and tutorial at the same widths.
 
 Generated locally July 26, 2026 with `scripts/verify-company-architecture.mjs`.
+## Immersive digital experience — 2026-07-31
+
+Baseline files use `immersive-before-*`; rebuilt files use `immersive-after-*`. Home evidence covers 320×568, 360×800, 390×844, 412×915, 430×932, 768×1024, 1366×768, and 1920×1080. Palace, Palace Play, Palace Story, Games, News, and About each include 390×844 and 1366×768 captures. The capture source is `scripts/capture-immersive-evidence.mjs`.

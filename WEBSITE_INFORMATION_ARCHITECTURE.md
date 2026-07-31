@@ -64,3 +64,6 @@ node scripts/verify-company-architecture.mjs
 ```
 
 `scripts/verify-palace-site.mjs` is the compatibility entry point for the same current production browser gate.
+## 2026-07-31 production presentation
+
+The company hierarchy is unchanged. The homepage is now an immersive five-world navigator led by Palace, while preserving standard Home, Games, News, About 4OH, and Support navigation and all existing deep routes. See `docs/IMMERSIVE-DIGITAL-EXPERIENCE-2026-07-31.md`.
