@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-07-27T03:00:21.348Z",
+  "checkedAt": "2026-07-31T19:56:49.804Z",
   "pages": [
     {
       "route": "index.html",
@@ -19,9 +19,12 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
-      "tableSelector": 0,
+      "tableSelector": 1,
       "externalScripts": [],
       "tracking": false,
       "imagesBroken": [],
@@ -45,6 +48,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -71,6 +77,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -97,6 +106,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 1,
@@ -123,6 +135,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -149,6 +164,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -175,6 +193,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -201,6 +222,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -227,6 +251,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -253,6 +280,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -279,6 +309,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -305,6 +338,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -331,6 +367,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -357,6 +396,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -383,6 +425,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -409,6 +454,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -435,6 +483,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -461,6 +512,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -487,6 +541,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
@@ -513,6 +570,9 @@
       "gameLinks": [
         "PalaceInteractive Preview",
         "Commander ThumBComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
         "View All Games"
       ],
       "tableSelector": 0,
