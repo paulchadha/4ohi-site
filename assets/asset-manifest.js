@@ -72,6 +72,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/palace-tutorial-v3.js": "assets/palace-tutorial-v3.js?v=8a8c9278b846",
   "assets/palace-tutorial.js": "assets/palace-tutorial.js?v=272dea16ae9e",
   "assets/play.js": "assets/play.js?v=b499799d932d",
+  "assets/portfolio-worlds.css": "assets/portfolio-worlds.css?v=58e388b3023e",
   "assets/power-cards.js": "assets/power-cards.js?v=eaed8f0f7e0b",
   "assets/product-authority.js": "assets/product-authority.js?v=a9dadd083d32",
   "assets/release-strip.js": "assets/release-strip.js?v=826d71a86fb5",

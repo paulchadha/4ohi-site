@@ -1,30 +1,32 @@
 {
-  "base": "https://4ohi.com",
-  "checkedAt": "2026-07-31T20:04:02.945Z",
+  "base": "http://127.0.0.1:4173",
+  "checkedAt": "2026-07-31T21:43:52.637Z",
   "pages": [
     {
       "route": "index.html",
       "status": 200,
-      "title": "Four of Hearts Interactive | Games That Bring People Together",
+      "title": "Four of Hearts Interactive | One Family. Many Games.",
       "h1Count": 1,
       "skip": true,
       "main": true,
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
         "View All Games"
       ],
-      "tableSelector": 1,
+      "tableSelector": 0,
       "externalScripts": [],
       "tracking": false,
       "imagesBroken": [],
@@ -41,13 +43,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -70,13 +74,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -99,13 +105,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -128,13 +136,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -157,13 +167,77 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "status": 200,
+      "title": "Bobby the Breadasaurus | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "Play Palace",
+        "News",
+        "About 4OH"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "status": 200,
+      "title": "Evil Doom Adventures: Shadow Run | Four of Hearts Interactive",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "Play Palace",
+        "News",
+        "About 4OH"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -179,20 +253,22 @@
     {
       "route": "commander-thumb.html",
       "status": 200,
-      "title": "Commander ThumB | Four of Hearts Interactive",
+      "title": "Commander Thum-B | Four of Hearts Interactive",
       "h1Count": 1,
       "skip": true,
       "main": true,
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -215,13 +291,77 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-bobby-the-breadasaurus-joins-the-family.html",
+      "status": 200,
+      "title": "Bobby the Breadasaurus Joins the Four of Hearts Family | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "Play Palace",
+        "News",
+        "About 4OH"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-shadow-run-enters-development.html",
+      "status": 200,
+      "title": "Evil Doom Adventures: Shadow Run Enters Development | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Home",
+        "Games",
+        "Play Palace",
+        "News",
+        "About 4OH"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -237,20 +377,22 @@
     {
       "route": "news-commander-thumb-is-coming.html",
       "status": 200,
-      "title": "Commander ThumB Is Coming to Four of Hearts Interactive | Four of Hearts News",
+      "title": "Commander Thum-B Is Coming to Four of Hearts Interactive | Four of Hearts News",
       "h1Count": 1,
       "skip": true,
       "main": true,
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -273,13 +415,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -295,20 +439,22 @@
     {
       "route": "news-building-commander-thumb.html",
       "status": 200,
-      "title": "Building Commander ThumB: One Thumb, One Ship, 1,000 Levels | Four of Hearts News",
+      "title": "Building Commander Thum-B: One Thumb, One Ship, 1,000 Levels | Four of Hearts News",
       "h1Count": 1,
       "skip": true,
       "main": true,
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -324,20 +470,22 @@
     {
       "route": "news-why-were-building-palace.html",
       "status": 200,
-      "title": "Why We’re Building Palace | Four of Hearts News",
+      "title": "Why We're Building Palace | Four of Hearts News",
       "h1Count": 1,
       "skip": true,
       "main": true,
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -360,13 +508,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -389,13 +539,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -418,13 +570,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -447,13 +601,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -476,13 +632,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -505,13 +663,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -534,13 +694,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -563,13 +725,15 @@
       "nav": [
         "Home",
         "Games",
+        "Play Palace",
         "News",
-        "About 4OH",
-        "Support"
+        "About 4OH"
       ],
       "gameLinks": [
         "PalaceInteractive Preview",
-        "Commander ThumBComing Soon",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Commander Thum-BComing Soon",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -729,6 +893,160 @@
     },
     {
       "route": "games.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "bodyWidth": 1920,
+      "viewport": 1920,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "bodyWidth": 320,
+      "viewport": 320,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "bodyWidth": 375,
+      "viewport": 375,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "bodyWidth": 430,
+      "viewport": 430,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "bodyWidth": 768,
+      "viewport": 768,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1024,
+      "viewport": 1024,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "bodyWidth": 1366,
+      "viewport": 1366,
+      "tinyTargets": [],
+      "heroVisible": true,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
       "width": 1920,
       "height": 1080,
       "overflow": false,
@@ -1051,7 +1369,9 @@
     "mobile": {
       "menuExpanded": "true",
       "gamesOpen": "",
-      "commanderVisible": true
+      "commanderVisible": true,
+      "bobbyVisible": true,
+      "evilVisible": true
     },
     "palaceSelector": {
       "label": "Shed",
@@ -1059,9 +1379,9 @@
       "commanderLink": "commander-thumb.html?lang=en"
     },
     "commander": {
-      "title": "Commander ThumB | Four of Hearts Interactive",
+      "title": "Commander Thum-B | Four of Hearts Interactive",
       "h1": [
-        "Commander ThumB"
+        "Commander Thum-B"
       ],
       "status": true,
       "wrong": false,
@@ -1094,7 +1414,7 @@
     "locale-he": {
       "lang": "he",
       "dir": "rtl",
-      "title": "Commander ThumB | Four of Hearts Interactive",
+      "title": "Commander Thum-B | Four of Hearts Interactive",
       "overflow": false,
       "gameQuery": false,
       "selected": "he"
@@ -1102,7 +1422,7 @@
     "locale-en-CA-fun": {
       "lang": "en-CA-fun",
       "dir": "ltr",
-      "title": "Commander ThumB | Four of Hearts Interactive",
+      "title": "Commander Thum-B | Four of Hearts Interactive",
       "overflow": false,
       "gameQuery": false,
       "selected": "en-CA-fun"

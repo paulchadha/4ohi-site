@@ -1,225 +1,289 @@
 [
-  {
-    "slug": "commander-thumb-is-coming",
-    "title": "Commander ThumB Is Coming to Four of Hearts Interactive",
-    "description": "Meet a brand-new 4OH game: an original one-thumb arcade adventure across the mysterious Thum System.",
-    "date": "2026-07-26",
-    "category": "Announcement",
-    "gameKey": "commander",
-    "tags": [
-      "Commander ThumB",
-      "Coming Soon"
-    ],
-    "featured": true,
-    "image": "assets/commander-thumb-70s-hero-960.webp",
-    "imageAlt": "Commander-Class ship defending Thum B in an original 1970s-inspired space illustration",
-    "body": [
-      {
-        "heading": "A new world joins the family",
-        "paragraphs": [
-          "Four of Hearts Interactive is building Commander ThumB, an original one-thumb arcade-defense adventure set among the related worlds of the Thum System.",
-          "Commander ThumB is in development and is not publicly playable yet. This announcement introduces the world and the mission without claiming a release date."
-        ]
-      },
-      {
-        "heading": "The mission",
-        "paragraphs": [
-          "Thum A has launched an invasion. Peaceful Thum B must hold its bases while the scholars of Thum C watch in silence. Players will move with one thumb, fire automatically, collect power-ups, recruit Wing ThumBs, and fight through a planned 1,000-level campaign.",
-          "Follow the Commander ThumB overview for the latest approved story and feature information."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "welcome-to-the-thum-system",
-    "title": "Welcome to the Thum System",
-    "description": "Three related worlds orbit one star: Thum A invades, Thum B defends, and Thum C watches.",
-    "date": "2026-07-26",
-    "category": "World",
-    "gameKey": "commander",
-    "tags": [
-      "Commander ThumB",
-      "Story"
-    ],
-    "featured": false,
-    "image": "assets/commander-thumb-70s-hero-960.webp",
-    "imageAlt": "Retro-futurist Commander-Class ship, invasion fleet, and three worlds of the Thum System",
-    "body": [
-      {
-        "heading": "Thum A invades",
-        "paragraphs": [
-          "The related ThumBs of harsh, industrial Thum A have sent an armored fleet across the darkness. Their true reason remains hidden.",
-          "The invasion gives Commander ThumB its immediate danger and a larger mystery to unravel."
-        ]
-      },
-      {
-        "heading": "Thum B defends. Thum C watches.",
-        "paragraphs": [
-          "Families, pilots, builders, and dreamers on peaceful Thum B stand together behind one Commander-Class ship.",
-          "Scientific Thum C observes and calculates but refuses to choose a side. Its silence may matter as much as the invasion."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "building-commander-thumb",
-    "title": "Building Commander ThumB: One Thumb, One Ship, 1,000 Levels",
-    "description": "The design promise behind Commander ThumB is immediate control, escalating spectacle, and a long campaign built for mobile play.",
-    "date": "2026-07-26",
-    "category": "Development",
-    "gameKey": "commander",
-    "tags": [
-      "Commander ThumB",
-      "Design"
-    ],
-    "featured": false,
-    "image": "assets/commander-thumb-70s-hero-960.webp",
-    "imageAlt": "Commander ThumB hero ship racing toward an enemy fleet above Thum B",
-    "body": [
-      {
-        "heading": "One-thumb clarity",
-        "paragraphs": [
-          "The control idea is direct: drag to move, keep contact to fire, and let positioning make the difference. The title’s capital B is part of both the name and the game’s one-thumb identity.",
-          "Power-ups, Wing ThumBs, ship improvements, and base defenses add depth without obscuring the immediate action."
-        ]
-      },
-      {
-        "heading": "Built for a long campaign",
-        "paragraphs": [
-          "The approved design target spans 1,000 levels across ten escalating sectors and boss encounters. That is a development direction, not a claim that a public version is available today.",
-          "Commander ThumB remains Coming Soon. Four of Hearts will publish release news only when there is a working public version."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "why-were-building-palace",
-    "title": "Why We’re Building Palace",
-    "description": "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
-    "date": "2026-07-26",
-    "category": "Palace",
-    "featured": false,
-    "image": "assets/icon-palace-4hearts.webp",
-    "imageAlt": "Palace castle artwork from Four of Hearts Interactive",
-    "body": [
-      {
-        "heading": "The game people teach from memory",
-        "paragraphs": [
-          "Palace often arrives without a box or a manual. Someone at the table remembers the three layers, deals the cards, and teaches the next person by playing a hand. That passed-along quality is part of its charm.",
-          "It is easy to begin: match or climb, pick up when the table turns against you, and work through your hand, visible reserve, and hidden finale. The decisions become memorable because every card you save changes the shape of the ending."
-        ]
-      },
-      {
-        "heading": "A definitive modern experience",
-        "paragraphs": [
-          "Four of Hearts Interactive is building Palace as its flagship experience. Our aim is clear presentation, welcoming teaching, responsive play, and a table that feels lively without losing the human rhythm of the folk game.",
-          "Founder testing is underway. Palace is not publicly available in an app store yet, and we will not pretend otherwise. Development news will stay honest about what has been tested and what is still ahead."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "palace-enters-founder-testing",
-    "title": "Palace Enters Founder Testing",
-    "description": "The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.",
-    "date": "2026-07-23",
-    "category": "Development",
-    "featured": false,
-    "image": "assets/icon-palace-4hearts.webp",
-    "imageAlt": "Blue Palace castle artwork",
-    "body": [
-      {
-        "heading": "Testing the whole journey",
-        "paragraphs": [
-          "Founder testing is focused on the moments that make Palace feel like Palace: reading the pile, choosing when to spend a strong card, moving from the hand to the face-up reserve, and trusting the final hidden cards.",
-          "Internal Alpha means the experience is still changing. Visual feedback, reconnect behavior, scoring, accessibility, and table clarity all require careful testing before any public release claim would be appropriate."
-        ]
-      },
-      {
-        "heading": "What visitors can try now",
-        "paragraphs": [
-          "The website includes a short, self-contained teaching preview. It runs entirely in the browser, stores nothing, and is not a production match. Its job is to make the three-layer rhythm understandable in about a minute.",
-          "The website preview now teaches the approved Four of Hearts power cards in context: 2 resets, 7 requires lower, 8 is transparent, and 10 burns the pile. These product rules are not presented as universal folk-game rules."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "meet-the-four-games",
-    "title": "Meet the Four Games in the 4OH Family",
-    "description": "Palace leads the table, with Hearts, Spades, and Euchre bringing three distinct kinds of strategy to the studio.",
-    "date": "2026-07-20",
-    "category": "Games",
-    "featured": false,
-    "image": "assets/brand-board.webp",
-    "imageAlt": "Four of Hearts brand board with Palace, Hearts, Spades, and Euchre",
-    "body": [
-      {
-        "heading": "A flagship and a family",
-        "paragraphs": [
-          "Palace is the primary Four of Hearts product story: a shedding game of three layers, changing momentum, and unforgettable endings. It sets the pace for how we teach, animate, and welcome players.",
-          "Hearts brings point avoidance and nerve. Spades adds partnership, bidding, and ever-present trump. Euchre turns a small hand into a quick contest of trust and decisive calls."
-        ]
-      },
-      {
-        "heading": "Still in testing",
-        "paragraphs": [
-          "All four games are currently in Internal Alpha. The small website lessons demonstrate a real idea from each table, but they are not full games and do not indicate public app-store availability.",
-          "More games may join the family later. We will introduce them only when there is an approved product to discuss."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "building-a-safer-card-table",
-    "title": "Building a Safer, Family-Friendly Card Table",
-    "description": "How Four of Hearts approaches clear policies, restrained data use, accessibility, and honest Internal Alpha communication.",
-    "date": "2026-07-17",
-    "category": "Company",
-    "featured": false,
-    "image": "assets/brand-mark-4oh.webp",
-    "imageAlt": "Four of Hearts Interactive emblem",
-    "body": [
-      {
-        "heading": "Trust starts with plain language",
-        "paragraphs": [
-          "A family-friendly game company should explain what is available, what is being tested, and what information may be involved. Our public pages distinguish the static website from Internal Alpha game services and avoid promises the current product cannot support.",
-          "The website has no analytics, advertising, account system, form backend, cookie, tracking pixel, or social widget. Its tutorials keep progress only in page memory."
-        ]
-      },
-      {
-        "heading": "Safety is ongoing work",
-        "paragraphs": [
-          "Accessibility, security, privacy, reconnect behavior, rankings, operational logs, and support processes all require review as the games evolve. Our policies describe current limitations and identify the questions that must be revisited before a wider release.",
-          "Security reports and player-support requests currently use support@4ohi.com. We do not promise a bug bounty or a guaranteed response time."
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "welcome-to-four-of-hearts",
-    "title": "Welcome to Four of Hearts Interactive",
-    "description": "Meet the South Dakota studio building Palace and a growing family of timeless card-table experiences.",
-    "date": "2026-07-14",
-    "category": "Studio",
-    "featured": false,
-    "image": "assets/brand-mark-4oh.webp",
-    "imageAlt": "Four of Hearts Interactive logo",
-    "body": [
-      {
-        "heading": "One family. Many games.",
-        "paragraphs": [
-          "Four of Hearts Interactive, LLC is a South Dakota software company creating welcoming digital card games. Palace is our flagship, and Hearts, Spades, and Euchre are growing beside it.",
-          "We care about games that are easy to begin, rewarding to revisit, and worth sharing across generations. The current family is in Internal Alpha, so this site focuses on the work, the ideas, and honest development updates rather than download promises."
-        ]
-      },
-      {
-        "heading": "A public home for the work",
-        "paragraphs": [
-          "This newsroom will document meaningful milestones, teaching decisions, safety work, and product stories. We will not manufacture launch dates, player counts, reviews, or partnerships.",
-          "If you are helping test a Four of Hearts game, the Support page explains how to send a useful report to support@4ohi.com."
-        ]
-      }
-    ]
-  }
+    {
+        "slug":  "bobby-the-breadasaurus-joins-the-family",
+        "title":  "Bobby the Breadasaurus Joins the Four of Hearts Family",
+        "description":  "A brave little dinosaur and a bread-filled world begin their journey at Four of Hearts Interactive.",
+        "date":  "2026-07-31",
+        "category":  "Announcement",
+        "gameKey":  "bobby",
+        "tags":  [
+                     "Bobby the Breadasaurus",
+                     "In Development",
+                     "Family Adventure"
+                 ],
+        "featured":  true,
+        "image":  "assets/bobby/bobby-hero-1200.webp",
+        "imageAlt":  "Bobby the Breadasaurus running through a colorful prehistoric bread world",
+        "body":  [
+                     {
+                         "heading":  "A small hero enters a very big world",
+                         "paragraphs":  [
+                                            "Four of Hearts Interactive is developing Bobby the Breadasaurus, a warm family adventure about a brave little dinosaur, a scattered herd, and a world where bread seems to turn up in the most unlikely places.",
+                                            "The project is in concept development. The artwork on this site establishes a direction, not a promise about final gameplay, platforms, characters, or release timing."
+                                        ]
+                     },
+                     {
+                         "heading":  "Adventure, friendship, and bread",
+                         "paragraphs":  [
+                                            "The design exploration centers on responsive platforming, collecting bread, dodging imaginative dangers, and helping Bobby find the way home.",
+                                            "Bobby brings a sunny new kind of world to the Four of Hearts family while keeping the studio's core idea intact: welcome people in, reward curiosity, and leave them smiling."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "shadow-run-enters-development",
+        "title":  "Evil Doom Adventures: Shadow Run Enters Development",
+        "description":  "Two shadow heroes begin a dangerous rescue story built around movement, trust, and finding a way through together.",
+        "date":  "2026-07-31",
+        "category":  "Development",
+        "gameKey":  "evil-doom",
+        "tags":  [
+                     "Evil Doom Adventures",
+                     "Shadow Run",
+                     "In Development"
+                 ],
+        "featured":  false,
+        "image":  "assets/evil-doom/evil-doom-hero-purple-1200.webp",
+        "imageAlt":  "Evil Doom Boy and Evil Doom Girl in a moonlit shadow world",
+        "body":  [
+                     {
+                         "heading":  "Two shadows. One rescue.",
+                         "paragraphs":  [
+                                            "Evil Doom Adventures: Shadow Run is a new action-platforming world in concept development at Four of Hearts Interactive. Its story follows two shadow heroes through a rescue mission that keeps testing whether they can trust each other.",
+                                            "Current visual and movement explorations include running, jumping, ducking, sliding, climbing, ropes, and swings. These are design directions rather than a claim that a public build exists."
+                                        ]
+                     },
+                     {
+                         "heading":  "A distinct visual language",
+                         "paragraphs":  [
+                                            "Evil Doom Boy moves through black, charcoal, and dangerous red. Evil Doom Girl's approved website identity uses deep purple, anchored by #4E2A84, to stay fierce and distinct without leaning on hot pink.",
+                                            "No release date, public platform, level count, rating, or public availability has been announced."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "commander-thumb-is-coming",
+        "title":  "Commander Thum-B Is Coming to Four of Hearts Interactive",
+        "description":  "Meet a brand-new 4OH game: an original one-thumb arcade adventure across the mysterious Thum System.",
+        "date":  "2026-07-26",
+        "category":  "Announcement",
+        "gameKey":  "commander",
+        "tags":  [
+                     "Commander Thum-B",
+                     "Coming Soon"
+                 ],
+        "featured":  false,
+        "image":  "assets/commander-thumb-70s-hero-960.webp",
+        "imageAlt":  "Commander-Class ship defending Thum B in an original 1970s-inspired space illustration",
+        "body":  [
+                     {
+                         "heading":  "A new world joins the family",
+                         "paragraphs":  [
+                                            "Four of Hearts Interactive is building Commander Thum-B, an original one-thumb arcade-defense adventure set among the related worlds of the Thum System.",
+                                            "Commander Thum-B is in development and is not publicly playable yet. This announcement introduces the world and the mission without claiming a release date."
+                                        ]
+                     },
+                     {
+                         "heading":  "The mission",
+                         "paragraphs":  [
+                                            "Thum A has launched an invasion. Peaceful Thum B must hold its bases while the scholars of Thum C watch in silence. Players will move with one thumb, fire automatically, collect power-ups, recruit Wing ThumBs, and fight through a planned 1,000-level campaign.",
+                                            "Follow the Commander Thum-B overview for the latest approved story and feature information."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "welcome-to-the-thum-system",
+        "title":  "Welcome to the Thum System",
+        "description":  "Three related worlds orbit one star: Thum A invades, Thum B defends, and Thum C watches.",
+        "date":  "2026-07-26",
+        "category":  "World",
+        "gameKey":  "commander",
+        "tags":  [
+                     "Commander Thum-B",
+                     "Story"
+                 ],
+        "featured":  false,
+        "image":  "assets/commander-thumb-70s-hero-960.webp",
+        "imageAlt":  "Retro-futurist Commander-Class ship, invasion fleet, and three worlds of the Thum System",
+        "body":  [
+                     {
+                         "heading":  "Thum A invades",
+                         "paragraphs":  [
+                                            "The related ThumBs of harsh, industrial Thum A have sent an armored fleet across the darkness. Their true reason remains hidden.",
+                                            "The invasion gives Commander Thum-B its immediate danger and a larger mystery to unravel."
+                                        ]
+                     },
+                     {
+                         "heading":  "Thum B defends. Thum C watches.",
+                         "paragraphs":  [
+                                            "Families, pilots, builders, and dreamers on peaceful Thum B stand together behind one Commander-Class ship.",
+                                            "Scientific Thum C observes and calculates but refuses to choose a side. Its silence may matter as much as the invasion."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "building-commander-thumb",
+        "title":  "Building Commander Thum-B: One Thumb, One Ship, 1,000 Levels",
+        "description":  "The design promise behind Commander Thum-B is immediate control, escalating spectacle, and a long campaign built for mobile play.",
+        "date":  "2026-07-26",
+        "category":  "Development",
+        "gameKey":  "commander",
+        "tags":  [
+                     "Commander Thum-B",
+                     "Design"
+                 ],
+        "featured":  false,
+        "image":  "assets/commander-thumb-70s-hero-960.webp",
+        "imageAlt":  "Commander Thum-B hero ship racing toward an enemy fleet above Thum B",
+        "body":  [
+                     {
+                         "heading":  "One-thumb clarity",
+                         "paragraphs":  [
+                                            "The control idea is direct: drag to move, keep contact to fire, and let positioning make the difference. The title's capital B is part of both the name and the game's one-thumb identity.",
+                                            "Power-ups, Wing ThumBs, ship improvements, and base defenses add depth without obscuring the immediate action."
+                                        ]
+                     },
+                     {
+                         "heading":  "Built for a long campaign",
+                         "paragraphs":  [
+                                            "The approved design target spans 1,000 levels across ten escalating sectors and boss encounters. That is a development direction, not a claim that a public version is available today.",
+                                            "Commander Thum-B remains Coming Soon. Four of Hearts will publish release news only when there is a working public version."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "why-were-building-palace",
+        "title":  "Why We're Building Palace",
+        "description":  "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
+        "date":  "2026-07-26",
+        "category":  "Palace",
+        "featured":  false,
+        "image":  "assets/icon-palace-4hearts.webp",
+        "imageAlt":  "Palace castle artwork from Four of Hearts Interactive",
+        "body":  [
+                     {
+                         "heading":  "The game people teach from memory",
+                         "paragraphs":  [
+                                            "Palace often arrives without a box or a manual. Someone at the table remembers the three layers, deals the cards, and teaches the next person by playing a hand. That passed-along quality is part of its charm.",
+                                            "It is easy to begin: match or climb, pick up when the table turns against you, and work through your hand, visible reserve, and hidden finale. The decisions become memorable because every card you save changes the shape of the ending."
+                                        ]
+                     },
+                     {
+                         "heading":  "A definitive modern experience",
+                         "paragraphs":  [
+                                            "Four of Hearts Interactive is building Palace as its flagship experience. Our aim is clear presentation, welcoming teaching, responsive play, and a table that feels lively without losing the human rhythm of the folk game.",
+                                            "Founder testing is underway. Palace is not publicly available in an app store yet, and we will not pretend otherwise. Development news will stay honest about what has been tested and what is still ahead."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "palace-enters-founder-testing",
+        "title":  "Palace Enters Founder Testing",
+        "description":  "The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.",
+        "date":  "2026-07-23",
+        "category":  "Development",
+        "featured":  false,
+        "image":  "assets/icon-palace-4hearts.webp",
+        "imageAlt":  "Blue Palace castle artwork",
+        "body":  [
+                     {
+                         "heading":  "Testing the whole journey",
+                         "paragraphs":  [
+                                            "Founder testing is focused on the moments that make Palace feel like Palace: reading the pile, choosing when to spend a strong card, moving from the hand to the face-up reserve, and trusting the final hidden cards.",
+                                            "Internal Alpha means the experience is still changing. Visual feedback, reconnect behavior, scoring, accessibility, and table clarity all require careful testing before any public release claim would be appropriate."
+                                        ]
+                     },
+                     {
+                         "heading":  "What visitors can try now",
+                         "paragraphs":  [
+                                            "The website includes a short, self-contained teaching preview. It runs entirely in the browser, stores nothing, and is not a production match. Its job is to make the three-layer rhythm understandable in about a minute.",
+                                            "The website preview now teaches the approved Four of Hearts power cards in context: 2 resets, 7 requires lower, 8 is transparent, and 10 burns the pile. These product rules are not presented as universal folk-game rules."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "meet-the-four-games",
+        "title":  "Meet the Seven Games in the 4OH Family",
+        "description":  "Seven distinct worlds now share one family studio: Palace, Bobby, Evil Doom Adventures, Commander Thum-B, Hearts, Spades, and Euchre.",
+        "date":  "2026-07-20",
+        "category":  "Games",
+        "featured":  false,
+        "image":  "assets/brand-board.webp",
+        "imageAlt":  "Four of Hearts brand board with Palace, Hearts, Spades, and Euchre",
+        "body":  [
+                     {
+                         "heading":  "Seven worlds, one family",
+                         "paragraphs":  [
+                                            "Palace is the flagship card-table experience. Bobby the Breadasaurus brings a warm family adventure. Evil Doom Adventures: Shadow Run adds a fast, shadowy rescue story. Commander Thum-B opens a cosmic arcade frontier.",
+                                            "Hearts, Spades, and Euchre complete the current portfolio with distinct kinds of classic card-table strategy."
+                                        ]
+                     },
+                     {
+                         "heading":  "Still in testing",
+                         "paragraphs":  [
+                                            "Every title is still being built or tested. Website lessons demonstrate real ideas from the card games, but they are not complete public releases. Bobby, Shadow Run, and Commander Thum-B do not have public builds or announced release dates.",
+                                            "More games can join this structure later. Four of Hearts will introduce them only when there is an approved product and an honest status to share."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "building-a-safer-card-table",
+        "title":  "Building a Safer, Family-Friendly Card Table",
+        "description":  "How Four of Hearts approaches clear policies, restrained data use, accessibility, and honest Internal Alpha communication.",
+        "date":  "2026-07-17",
+        "category":  "Company",
+        "featured":  false,
+        "image":  "assets/brand-mark-4oh.webp",
+        "imageAlt":  "Four of Hearts Interactive emblem",
+        "body":  [
+                     {
+                         "heading":  "Trust starts with plain language",
+                         "paragraphs":  [
+                                            "A family-friendly game company should explain what is available, what is being tested, and what information may be involved. Our public pages distinguish the static website from Internal Alpha game services and avoid promises the current product cannot support.",
+                                            "The website has no analytics, advertising, account system, form backend, cookie, tracking pixel, or social widget. Its tutorials keep progress only in page memory."
+                                        ]
+                     },
+                     {
+                         "heading":  "Safety is ongoing work",
+                         "paragraphs":  [
+                                            "Accessibility, security, privacy, reconnect behavior, rankings, operational logs, and support processes all require review as the games evolve. Our policies describe current limitations and identify the questions that must be revisited before a wider release.",
+                                            "Security reports and player-support requests currently use support@4ohi.com. We do not promise a bug bounty or a guaranteed response time."
+                                        ]
+                     }
+                 ]
+    },
+    {
+        "slug":  "welcome-to-four-of-hearts",
+        "title":  "Welcome to Four of Hearts Interactive",
+        "description":  "Meet the family-inspired South Dakota studio building seven distinct game worlds around one welcoming philosophy.",
+        "date":  "2026-07-14",
+        "category":  "Studio",
+        "featured":  false,
+        "image":  "assets/brand-mark-4oh.webp",
+        "imageAlt":  "Four of Hearts Interactive logo",
+        "body":  [
+                     {
+                         "heading":  "One family. Many games.",
+                         "paragraphs":  [
+                                            "Four of Hearts Interactive, LLC is a South Dakota software company inspired by four daughters and the belief that games should bring people closer. Our current portfolio spans Palace, Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Commander Thum-B, Hearts, Spades, and Euchre.",
+                                            "We care about games that are easy to begin, rewarding to revisit, and worth sharing across generations. Current products are in development or internal testing, so this site focuses on the work and honest status rather than download promises."
+                                        ]
+                     },
+                     {
+                         "heading":  "A public home for the work",
+                         "paragraphs":  [
+                                            "This newsroom will document meaningful milestones, teaching decisions, safety work, and product stories. We will not manufacture launch dates, player counts, reviews, or partnerships.",
+                                            "If you are helping test a Four of Hearts game, the Support page explains how to send a useful report to support@4ohi.com."
+                                        ]
+                     }
+                 ]
+    }
 ]

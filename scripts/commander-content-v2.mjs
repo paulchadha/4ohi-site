@@ -12,14 +12,14 @@ const bosses = [
 ];
 
 const commanderNews = [
-  ["commander-thumb-is-coming", "Commander ThumB Is Coming to Four of Hearts Interactive"],
+  ["commander-thumb-is-coming", "Commander Thum-B Is Coming to Four of Hearts Interactive"],
   ["welcome-to-the-thum-system", "Welcome to the Thum System"],
-  ["building-commander-thumb", "Building Commander ThumB: One Thumb, One Ship, 1,000 Levels"]
+  ["building-commander-thumb", "Building Commander Thum-B: One Thumb, One Ship, 1,000 Levels"]
 ];
 
 export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
-  title: "Commander ThumB | Four of Hearts Interactive",
-  description: "Enter the distant Thum System, defend the people of Thum B, and battle the invading fleets of Thum A in Commander ThumB—an original one-thumb arcade adventure from Four of Hearts Interactive.",
+  title: "Commander Thum-B | Four of Hearts Interactive",
+  description: "Enter the distant Thum System, defend the people of Thum B, and battle the invading fleets of Thum A in Commander Thum-B—an original one-thumb arcade adventure from Four of Hearts Interactive.",
   path: "/commander-thumb.html",
   current: "commander",
   image: "assets/og-commander-thumb-70s.jpg",
@@ -28,7 +28,7 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
   jsonLd: {
     "@context": "https://schema.org",
     "@type": "VideoGame",
-    name: "Commander ThumB",
+    name: "Commander Thum-B",
     description: "An upcoming original one-thumb arcade-defense adventure set in the fictional Thum System.",
     gamePlatform: "Mobile",
     applicationCategory: "Game",
@@ -45,7 +45,7 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
       <div class="retro-hero-shade" aria-hidden="true"></div>
       <div class="shell retro-hero-copy">
         <p class="retro-issue">A Four of Hearts Interactive original · Mission File 001</p>
-        <h1 id="commander-title"><span>Commander</span> ThumB</h1>
+        <h1 id="commander-title"><span>Commander</span> Thum-B</h1>
         <p class="retro-kicker">The hottest game in the galaxy!</p>
         <p class="retro-slogan">Save the base.<br>Save the ThumBs from disaster.<br><strong>Only you can do it!</strong></p>
         <div class="retro-actions"><span class="status-badge coming">Coming Soon</span><a class="button" href="#mission">Follow the mission</a></div>
@@ -57,7 +57,7 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
         <header class="retro-section-heading"><p>Previously, in the Thum System…</p><h2 id="story-title">Three worlds. One war. One silence.</h2></header>
         <div class="retro-story-reel">
           <article><span>01</span><p class="retro-label">Thum A · Invades</p><h3>The red world strikes.</h3><p>The related ThumBs of harsh, industrial Thum A have sent an armored fleet across the darkness. No one yet knows why.</p></article>
-          <article><span>02</span><p class="retro-label">Thum B · Defends</p><h3>A bright world stands together.</h3><p>Families, pilots, builders, and dreamers defend their peaceful home. Their last great hope is Commander ThumB.</p></article>
+          <article><span>02</span><p class="retro-label">Thum B · Defends</p><h3>A bright world stands together.</h3><p>Families, pilots, builders, and dreamers defend their peaceful home. Their last great hope is Commander Thum-B.</p></article>
           <article><span>03</span><p class="retro-label">Thum C · Watches</p><h3>The scholars keep their counsel.</h3><p>Scientific Thum C observes, calculates, and refuses to choose a side. What do its leaders know about the war?</p></article>
         </div>
         <p class="retro-cliffhanger">Beneath the light of the star Thum, one pilot must save the base—and uncover the truth.</p>
@@ -80,8 +80,8 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
           </div>
         </div>
         <figure class="retro-commander-card">
-          <img src="assets/commander-thumb-character.svg" alt="Commander ThumB, defender of Thum B" width="320" height="360" loading="lazy">
-          <figcaption>Commander ThumB<br><small>Thum B Defense Force</small></figcaption>
+          <img src="assets/commander-thumb-character.svg" alt="Commander Thum-B, defender of Thum B" width="320" height="360" loading="lazy">
+          <figcaption>Commander Thum-B<br><small>Thum B Defense Force</small></figcaption>
         </figure>
       </div>
     </section>
@@ -96,8 +96,8 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
     <section class="retro-news" id="news" aria-labelledby="commander-news-title">
       <div class="shell">
         <header class="retro-section-heading"><p>Transmissions from mission control</p><h2 id="commander-news-title">The story is just beginning.</h2></header>
-        <div class="retro-news-grid">${commanderNews.map(([slug, title]) => `<a href="news-${slug}.html"><span><b class="game-title-case">Commander ThumB</b> · Development</span><strong>${title}</strong><em>Read transmission →</em></a>`).join("")}</div>
-        <div class="retro-final"><p>Thum A invades. Thum B defends. Thum C watches.</p><strong>Commander ThumB must save them all.</strong><span class="status-badge coming">Coming Soon</span></div>
+        <div class="retro-news-grid">${commanderNews.map(([slug, title]) => `<a href="news-${slug}.html"><span><b class="game-title-case">Commander Thum-B</b> · Development</span><strong>${title}</strong><em>Read transmission →</em></a>`).join("")}</div>
+        <div class="retro-final"><p>Thum A invades. Thum B defends. Thum C watches.</p><strong>Commander Thum-B must save them all.</strong><span class="status-badge coming">Coming Soon</span></div>
       </div>
     </section>`
 });

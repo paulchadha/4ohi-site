@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 import { commanderPage } from "./commander-content-v2.mjs";
 import { gameByKey, gameCatalog, primaryGames } from "./game-catalog.mjs";
+import { bobbyPage, evilDoomPage } from "./portfolio-content.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const assetVersion = (assetPath) => {
@@ -25,7 +26,7 @@ const gameToken = (key = "gameName", fallback = "Palace") => `<span data-game-to
 const gameMessage = (key, fallback) => `<span data-game-message="${key}">${fallback}</span>`;
 const productCopy = (value) => String(value).replaceAll("Palace", gameToken("gameName", "Palace"));
 const brandMessage = (key, fallback) => `<span data-brand-message="${key}">${fallback}</span>`;
-const assetManifest = Object.fromEntries(readdirSync(resolve(root, "assets")).filter((name) => name !== "asset-manifest.js").map((name) => [`assets/${name}`, assetVersion(`assets/${name}`)]));
+const assetManifest = Object.fromEntries(readdirSync(resolve(root, "assets"), { withFileTypes: true }).filter((entry) => entry.isFile() && entry.name !== "asset-manifest.js").map((entry) => [`assets/${entry.name}`, assetVersion(`assets/${entry.name}`)]));
 write("assets/asset-manifest.js", `window.FOUR_HEARTS_ASSETS = Object.freeze(${JSON.stringify(assetManifest, null, 2)});`);
 
 const nav = (current) => {
@@ -39,13 +40,13 @@ const nav = (current) => {
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
       <nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary">
         <a href="index.html"${current === "home" ? ' aria-current="page"' : ""}>Home</a>
-        <details class="games-menu"${["games", "palace", "play", "commander"].includes(current) ? " data-current=true" : ""}>
+        <details class="games-menu"${["games", "palace", "play", "commander", "bobby", "evil-doom"].includes(current) ? " data-current=true" : ""}>
           <summary>Games</summary>
           <div class="games-menu-panel">${gameLinks}<a class="view-all-games" href="games.html"${current === "games" ? ' aria-current="page"' : ""}>View All Games</a></div>
         </details>
+        <a class="nav-play-palace" href="palace-play.html"${current === "play" ? ' aria-current="page"' : ""}>Play Palace</a>
         <a href="news.html"${current === "news" ? ' aria-current="page"' : ""}>News</a>
         <a href="about.html"${current === "about" ? ' aria-current="page"' : ""}>About 4OH</a>
-        <a href="support.html"${current === "support" ? ' aria-current="page"' : ""}>Support</a>
       </nav>
       <div class="header-tools" aria-label="Site preferences">
         <label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label>
@@ -76,8 +77,8 @@ const gameNav = (game, section) => {
   const links = game === "palace"
     ? [["overview", "palace.html", "Overview"], ["rules", "palace-faq.html", "How to Play"], ["play", "palace-play.html", "Play Palace"], ["news", "news.html?tag=palace", "Palace News"]]
     : [["overview", "commander-thumb.html", "Overview"], ["story", "commander-thumb.html#story", "Thum System"], ["mission", "commander-thumb.html#mission", "Gameplay"], ["news", "news.html?tag=commander", "News"]];
-  return `<nav class="game-subnav" aria-label="${game === "palace" ? "Palace" : "Commander ThumB"}">
-    <div class="shell"><strong>${game === "palace" ? "Palace" : "Commander ThumB"}</strong>
+  return `<nav class="game-subnav" aria-label="${game === "palace" ? "Palace" : "Commander Thum-B"}">
+    <div class="shell"><strong>${game === "palace" ? "Palace" : "Commander Thum-B"}</strong>
       <div>${links.map(([key, href, label]) => `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("")}${game === "commander" ? '<span class="status-badge coming">Coming Soon</span>' : ""}</div>
     </div>
   </nav>`;
@@ -97,7 +98,7 @@ const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid">
     <div><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-copy">Colorful, social, original games—from classic card-table competition to entirely new worlds.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
     <nav class="footer-group" aria-label="Four of Hearts Interactive"><h2>Four of Hearts Interactive</h2><a href="index.html">Home</a><a href="about.html">About 4OH</a><a href="news.html">News</a><a href="support.html">Support</a></nav>
-    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="palace.html">Palace</a><a href="palace-play.html">Play Palace</a><a href="commander-thumb.html">Commander ThumB</a><a href="games.html">All Games</a></nav>
+    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="palace.html">Palace</a><a href="palace-play.html">Play Palace</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="evil-doom-adventures.html">Evil Doom Adventures</a><a href="commander-thumb.html">Commander Thum-B</a><a href="games.html">All Games</a></nav>
     <nav class="footer-group" aria-label="Legal"><h2>Legal & Safety</h2><a href="privacy.html">Privacy</a><a href="security.html">Security</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></nav>
   </div><div class="footer-bottom"><span>© 2026 ${company}. All rights reserved.</span><span>4OH is the compact mark of Four of Hearts Interactive.</span></div></div>
 </footer>`;
@@ -140,6 +141,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/next-level.css">
   <link rel="stylesheet" href="assets/spatial-gallery.css">
   <link rel="stylesheet" href="assets/immersive-world.css">
+  <link rel="stylesheet" href="assets/portfolio-worlds.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -175,6 +177,14 @@ const pageHero = (eyebrow, title, lede, actions = "") => `<header class="page-he
   </div>
 </header>`;
 
+const availabilityCopy = (item) => {
+  if (item.gameKey === "palace") return "Palace has an interactive website preview and remains in development.";
+  if (item.gameKey === "commander") return "Commander Thum-B is Coming Soon and is not publicly playable. This article does not announce a release.";
+  if (item.gameKey === "bobby") return "Bobby the Breadasaurus is in concept development and is not publicly playable. No release date or platform has been announced.";
+  if (item.gameKey === "evil-doom") return "Evil Doom Adventures: Shadow Run is in concept development and is not publicly playable. No release date or platform has been announced.";
+  return "This article reports current company work and does not announce public availability.";
+};
+
 const newsCard = (item) => `<a class="panel news-card" href="${articleFile(item.slug)}" data-news-tags="${[item.category, item.gameKey, ...(item.tags ?? [])].filter(Boolean).join(" ").toLowerCase()}" data-reveal>
   <div class="news-art"><img src="${item.image}" alt="${item.imageAlt}" width="512" height="512" loading="lazy"></div>
   <div class="news-body">
@@ -205,42 +215,49 @@ const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
 
 write("index.html", page({
-  title: "Four of Hearts Interactive | Games That Bring People Together",
-  description: "Four of Hearts Interactive creates colorful, welcoming games—including Palace, Hearts, Spades, Euchre, and Commander ThumB—built to bring people together.",
+  title: "Four of Hearts Interactive | One Family. Many Games.",
+  description: "Four of Hearts Interactive creates welcoming games and original worlds for families, friends, and everyone who stays for one more round.",
   path: "/", current: "home", bodyClass: "company-home",
   image: "assets/brand-board.webp", imageAlt: "Four of Hearts Interactive game family",
-  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"Four of Hearts Interactive creates colorful, welcoming games that bring people together." },
+  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"One Family. Many Games.", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"A family-inspired independent game studio creating welcoming games and original worlds." },
   content: `
-    <section class="spatial-gallery immersive-portal" data-spatial-gallery aria-labelledby="gallery-heading">
-      <div class="spatial-gallery-sticky">
-        <div class="spatial-sky" aria-hidden="true"><i></i><i></i><i></i></div>
-        <div class="portal-aurora" aria-hidden="true"></div>
-        <div class="gallery-masthead"><span>Four of Hearts Interactive</span><span>World signal · 01—05</span></div>
-        <h1 id="gallery-heading" class="sr-only">Explore five games from Four of Hearts Interactive</h1>
-        <div class="portal-utility" data-palace-portal-tools>
-          <div class="portal-countdown"><span>Palace arrives</span><strong data-release-strip role="timer"></strong></div>
-          <label class="portal-language"><span>Language</span><select data-locale aria-label="Language"></select></label>
-          ${palaceTableTools()}
+    <section class="studio-hero" aria-labelledby="studio-hero-title">
+      <div class="shell studio-hero-grid">
+        <div class="studio-hero-copy">
+          <p class="eyebrow">Four of Hearts Interactive, LLC</p>
+          <h1 id="studio-hero-title">One Family.<br><span>Many Games.</span></h1>
+          <p class="lede">Seven worlds. One independent studio inspired by four daughters—and one very serious belief that games should leave people smiling.</p>
+          <div class="actions"><a class="button" href="games.html">Explore the games</a><a class="button secondary" href="palace-play.html">Play Palace</a></div>
+          <p class="studio-kicker">Made to welcome people in</p>
         </div>
-        <a class="portal-news-signal" href="${articleFile(featured.slug)}"><span>Latest transmission</span><strong>${featured.title}</strong><i aria-hidden="true">↗</i></a>
-        <div class="spatial-stage">${gameCatalog.map(spatialWorld).join("")}</div>
-        <div class="spatial-caption" aria-live="polite">
-          <p><span data-spatial-count>01</span><span>of 05</span><span data-spatial-status>${gameCatalog[0].status}</span></p>
-          <h2 data-spatial-title>${gameCatalog[0].title}</h2>
-          <div class="spatial-caption-foot"><p data-spatial-description>${gameCatalog[0].description}</p><a href="${gameCatalog[0].playUrl}" data-spatial-link>Play Palace <span aria-hidden="true">↗</span></a></div>
+        <div class="world-orbit" aria-label="Featured Four of Hearts worlds">
+          <a class="orbit-card palace" href="palace.html"><img src="assets/icon-palace-4hearts.webp" alt="Enter the Palace card-game world" width="960" height="960" fetchpriority="high"></a>
+          <a class="orbit-card bobby" href="bobby-the-breadasaurus.html"><img src="assets/bobby/bobby-character-720.webp" alt="Meet Bobby the Breadasaurus" width="720" height="720"></a>
+          <a class="orbit-card doom" href="evil-doom-adventures.html"><img src="assets/evil-doom/evil-doom-heroes-purple-1200.webp" alt="Enter Evil Doom Adventures: Shadow Run" width="1200" height="620"></a>
+          <span class="orbit-mark" aria-hidden="true">4OH</span>
         </div>
-        <div class="spatial-controls">
-          <button type="button" data-spatial-prev aria-label="Previous game">←</button>
-          <div role="group" aria-label="Choose a game">${gameCatalog.map((game, index) => `<button type="button" data-spatial-select="${index}" aria-label="Show ${game.title}"${index === 0 ? ' aria-current="true"' : ""}><span>0${index + 1}</span></button>`).join("")}</div>
-          <button type="button" data-spatial-next aria-label="Next game">→</button>
-        </div>
-        <p class="spatial-instruction"><span>Drag</span><span>Scroll</span><span>Arrow keys</span></p>
-        <div class="portal-depth-line" aria-hidden="true"><span></span><span></span><span></span></div>
       </div>
-    </section>    <section class="home-thesis"><div class="shell"><p class="thesis-index">Independent studio · South Dakota</p><h2>Five worlds.<br><em>One reason to play.</em></h2><div class="thesis-notes"><p>We make games that turn a screen into a place people want to stay: a card table, a star system, a shared story.</p><p>Four of Hearts is a family studio. Palace, Hearts, Spades, Euchre, and Commander ThumB each have their own rules, rhythm, and unmistakable world.</p><a href="about.html">Meet the people behind 4OH <span aria-hidden="true">↗</span></a></div></div></section>
-    <section class="world-index"><div class="shell"><header><p>Collection 001</p><h2>The games</h2><a href="games.html">View the full catalog</a></header><div class="world-index-list">${gameCatalog.map(worldIndexRow).join("")}</div></div></section>
+    </section>
+    <section class="studio-intro"><div class="shell studio-intro-grid">
+      <div><p class="eyebrow">Why Four of Hearts</p><h2>Good games bring <em>people closer.</em></h2></div>
+      <div class="studio-intro-copy"><p>Four daughters inspired the name. Family game nights supplied the philosophy. We build card tables, cosmic battles, bread-filled adventures, and shadow worlds with the same promise: clear fun, honest development, and no manipulative nonsense.</p>
+        <div class="family-principles"><article><b>01</b><h3>Made for smiles</h3><p>Welcome newcomers. Reward curiosity. Make the rematch irresistible.</p></article><article><b>02</b><h3>Privacy-conscious</h3><p>No cookies, no behavioral tracking, and no knowingly selling visitor data.</p></article><article><b>03</b><h3>Built together</h3><p>One family keeps asking the question: would we want this at our table?</p></article></div>
+      </div>
+    </div></section>
+    <section class="featured-worlds"><div class="shell">
+      <header class="featured-worlds-header"><div><p class="eyebrow">Featured worlds</p><h2>Pick a doorway.</h2></div><a class="text-link" href="games.html">View all seven games →</a></header>
+      <div class="world-journal">
+        <article class="world-entry palace-entry"><img src="assets/icon-palace-4hearts.webp" alt="" width="960" height="960" loading="lazy"><div class="world-entry-copy"><span class="entry-number">WORLD 01 · FLAGSHIP</span><h3>Palace</h3><p>Match it. Beat it. Burn it. The table legend is becoming a vivid digital game—and you can learn it right now.</p><div class="actions"><a class="button" href="palace-play.html">Play the mini-match</a><a class="button secondary" href="palace.html">Explore Palace</a></div></div></article>
+        <article class="world-entry bobby-entry"><img src="assets/bobby/bobby-hero-1200.webp" alt="" width="1200" height="800" loading="lazy"><div class="world-entry-copy"><span class="entry-number">WORLD 02 · IN DEVELOPMENT</span><h3>Bobby the<br>Breadasaurus</h3><p>A brave little dinosaur, a scattered herd, and a prehistoric world where every trail seems to lead to bread.</p><a class="button" href="bobby-the-breadasaurus.html">Follow the crumbs</a></div></article>
+        <article class="world-entry doom-entry"><img src="assets/evil-doom/evil-doom-hero-purple-1200.webp" alt="" width="1200" height="800" loading="lazy"><div class="world-entry-copy"><span class="entry-number">WORLD 03 · IN DEVELOPMENT</span><h3>Evil Doom<br>Adventures</h3><p>Two shadow heroes. One rescue mission. A dangerous run through worlds that refuse to let them leave together.</p><a class="button" href="evil-doom-adventures.html">Enter Shadow Run</a></div></article>
+      </div>
+    </div></section>
+    <section class="portfolio-ribbon"><div class="shell portfolio-ribbon-grid">
+      <div class="ribbon-intro"><p class="eyebrow">More from 4OH</p><h2>The family keeps growing.</h2><a class="text-link" href="games.html">See the full catalog →</a></div>
+      ${gameCatalog.filter(({ key }) => ["commander","hearts","spades","euchre"].includes(key)).map((game) => `<article class="ribbon-game"><img src="${game.artwork}" alt="" width="160" height="160" loading="lazy"><p>${game.status}</p><h3>${game.title}</h3><p>${game.description}</p><a href="${game.infoUrl}">Explore →</a></article>`).join("")}
+    </div></section>
     <section class="section company-news"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Dispatches from 4OH</p><h2>Stories behind<br>the worlds.</h2></div><a class="text-link" href="news.html">Enter the newsroom →</a></div><div class="news-grid">${news.slice(0, 3).map(newsCard).join("")}</div></div></section>
-    <section class="home-finale"><div class="shell"><p>Four of Hearts Interactive</p><h2>Come for the game.<br><em>Stay for the table.</em></h2><div><a href="games.html">Explore all five games</a><a href="about.html">Our story</a></div></div></section>`
+    <section class="home-finale"><div class="shell"><p>Four of Hearts Interactive</p><h2>Come for the game.<br><em>Stay for the people.</em></h2><div><a href="games.html">Explore all seven games</a><a href="about.html">Our family story</a></div></div></section>`
 }));
 
 write("palace.html", page({
@@ -265,7 +282,7 @@ write("palace.html", page({
     </div></section>
     <section class="section navy"><div class="shell story-split"><div><p class="eyebrow">Same game. Different tables.</p><h2>What do you call it?</h2><p class="lede">Palace and Shed are names used for the same wider game family. Change the displayed name for this page session; nothing is stored.</p></div><div class="name-console"><h3>Table name</h3><div class="name-options" role="group" aria-label="Choose the displayed game name"><button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button><button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button></div><p data-name-status role="status">Palace is used at this table. This choice resets when you refresh.</p><p class="name-secret" data-name-secret tabindex="-1" hidden>You found the name some tables whisper. Welcome to the founder’s table.</p></div></div></section>
     <section class="section"><div class="shell story-split"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers" width="512" height="512" loading="lazy"><div><p class="eyebrow">A game built to travel</p><h2>Passed hand to hand.</h2><p class="lede">Palace belongs to a folk shedding-game family with many regional names and house rules. The exact origin remains uncertain. The Four of Hearts edition gives that living tradition one clear rule set and a world of its own.</p><div class="actions"><a class="button" href="palace-play.html">Take your seat</a><a class="text-link" href="palace-story.html">Fact, folklore & legend</a></div></div></div></section>
-    <section class="section ct-home-feature"><div class="shell story-split"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div><p class="ct-kicker">Coming Soon from Four of Hearts</p><h2>Commander ThumB</h2><p class="lede">A distant world is under attack. Take command of the last great defense ship, protect the bases of Thum B, and battle through 1,000 levels to save the Thum System.</p><a class="ct-button" href="commander-thumb.html">Enter the Thum System</a></div></div></section>`
+    <section class="section ct-home-feature"><div class="shell story-split"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander Thum-B ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div><p class="ct-kicker">Coming Soon from Four of Hearts</p><h2>Commander Thum-B</h2><p class="lede">A distant world is under attack. Take command of the last great defense ship, protect the bases of Thum B, and battle through 1,000 levels to save the Thum System.</p><a class="ct-button" href="commander-thumb.html">Enter the Thum System</a></div></div></section>`
 }));
 write("palace-play.html", page({
   title: "Play Palace | Interactive Mini-Match",
@@ -281,15 +298,17 @@ write("palace-play.html", page({
 }));
 write("news.html", page({
   title: "News | Four of Hearts Interactive",
-  description: "Company, Palace, and Commander ThumB news from Four of Hearts Interactive, with accurate development and availability status.",
+  description: "Company, Palace, and Commander Thum-B news from Four of Hearts Interactive, with accurate development and availability status.",
   path: "/news.html", current: "news", bodyClass: "news-page",
   content: `
-    <section class="news-page-intro"><div class="shell"><header class="compact-page-heading"><p class="eyebrow">Four of Hearts Interactive newsroom</p><h1>News from every world.</h1><p class="lede">Company updates, Palace development, and dispatches from the Commander ThumB universe—without invented dates, releases, or player counts.</p></header>
+    <section class="news-page-intro"><div class="shell"><header class="compact-page-heading"><p class="eyebrow">Four of Hearts Interactive newsroom</p><h1>News from every world.</h1><p class="lede">Honest studio updates from every Four of Hearts world—without invented dates, releases, player counts, or partnerships.</p></header>
       <div class="news-filters" role="group" aria-label="Filter news">
         <button type="button" data-news-filter="all" aria-pressed="true">All</button>
         <button type="button" data-news-filter="company" aria-pressed="false">Company</button>
         <button type="button" data-news-filter="palace" aria-pressed="false">Palace</button>
-        <button type="button" data-news-filter="commander" aria-pressed="false">Commander ThumB</button>
+        <button type="button" data-news-filter="bobby" aria-pressed="false">Bobby</button>
+        <button type="button" data-news-filter="evil-doom" aria-pressed="false">Evil Doom</button>
+        <button type="button" data-news-filter="commander" aria-pressed="false">Commander Thum-B</button>
         <button type="button" data-news-filter="development" aria-pressed="false">Development</button>
       </div>
       <div class="news-grid company-news-grid">${news.map(newsCard).join("")}</div>
@@ -331,7 +350,7 @@ news.forEach((item, index) => {
         <div class="shell"><img class="article-art" src="${item.image}" alt="${item.imageAlt}" width="1200" height="630"></div>
         <section class="section"><div class="shell article-layout">
           <div class="prose">${body}</div>
-          <aside class="article-aside"><strong>Availability</strong><p>${item.gameKey === "commander" ? "Commander ThumB is Coming Soon and is not publicly playable. This article does not announce a release." : item.gameKey === "palace" ? "Palace has an interactive website preview and remains in development." : "This article reports current company work and does not announce public availability."}</p>${item.gameKey ? `<a class="text-link" href="${gameByKey[item.gameKey]?.infoUrl ?? "games.html"}">Visit ${gameByKey[item.gameKey]?.title ?? "the game"} →</a>` : ""}</aside>
+          <aside class="article-aside"><strong>Availability</strong><p>${availabilityCopy(item)}</p>${item.gameKey ? `<a class="text-link" href="${gameByKey[item.gameKey]?.infoUrl ?? "games.html"}">Visit ${gameByKey[item.gameKey]?.title ?? "the game"} →</a>` : ""}</aside>
         </div></section>
       </article>
       <section class="section navy"><div class="shell"><p class="eyebrow">Keep reading</p><div class="related-grid">
@@ -343,13 +362,15 @@ news.forEach((item, index) => {
 
 write("games.html", page({
   title: "Games | Four of Hearts Interactive",
-  description: "Explore Palace, Hearts, Spades, Euchre, and Commander ThumB in the growing Four of Hearts Interactive game catalog.",
+  description: "Explore Palace, Hearts, Spades, Euchre, and Commander Thum-B in the growing Four of Hearts Interactive game catalog.",
   path: "/games.html", current: "games", bodyClass: "games-page",
-  content: `${pageHero("The 4OH game catalog", "Choose your next world.", "Card tables, cosmic battles, and more to come. Every title has its own identity; every title belongs to Four of Hearts Interactive.")}
+  content: `${pageHero("The 4OH game catalog", "Choose your next world.", "Card tables, cosmic battles, bread-filled adventures, and shadow runs. Every title has its own identity; every title belongs to Four of Hearts Interactive.")}
     <section class="section"><div class="shell"><div class="catalog-grid">${gameCatalog.map((game) => gameCard(game)).join("")}</div></div></section>`
 }));
 
 write("commander-thumb.html", commanderPage({ page, company, siteUrl, gameNav }));
+write("bobby-the-breadasaurus.html", bobbyPage({ page, company, siteUrl }));
+write("evil-doom-adventures.html", evilDoomPage({ page, company, siteUrl }));
 
 const secondaryPages = [
   ["hearts", "Hearts", "Follow suit. Duck the points.", "assets/icon-hearts-4hearts.webp", "Hearts ruby artwork"],
@@ -374,7 +395,7 @@ secondaryPages.forEach(([key, name, headline, image, imageAlt]) => {
 
 write("play.html", page({
   title: "Quick Play | Four of Hearts Interactive",
-  description: "Start the Palace preview, try Hearts, Spades, and Euchre teaching moments, or enter the upcoming Commander ThumB universe.",
+  description: "Start the Palace preview or try short Hearts, Spades, and Euchre teaching moments from the Four of Hearts portfolio.",
   path: "/play.html",
   current: "play",
   content: `
@@ -387,14 +408,14 @@ write("play.html", page({
       <div class="game-grid">
         <article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Hearts</h3><a class="text-link" href="hearts-play.html">Follow suit</a></div></article>
         <article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Spades</h3><a class="text-link" href="spades-play.html">Play trump</a></div></article>
-        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Find the bowers</a></div></article><article class="panel game-tile commander-tile"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander ThumB ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div class="game-tile-content"><h3>Commander ThumB</h3><a class="text-link" href="commander-thumb.html">Follow the mission</a></div></article>
+        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Find the bowers</a></div></article><article class="panel game-tile commander-tile"><picture><source media="(max-width:600px)" srcset="assets/commander-thumb-tile-480.webp"><img src="assets/commander-thumb-tile-960.webp" alt="Commander Thum-B ship defending Thum B from an enemy fleet" width="960" height="540" loading="lazy"></picture><div class="game-tile-content"><h3>Commander Thum-B</h3><a class="text-link" href="commander-thumb.html">Follow the mission</a></div></article>
       </div>
     </div></section>`
 }));
 
 write("about.html", page({
   title: "About Four of Hearts Interactive | One Family. Many Games.",
-  description: "Meet the family and lifelong game observer behind Four of Hearts Interactive, the studio bringing Palace to a definitive digital table.",
+  description: "Meet the family-inspired South Dakota studio behind Palace, Bobby the Breadasaurus, Evil Doom Adventures, Commander Thum-B, and more.",
   path: "/about.html", current: "about", bodyClass: "about-page",
   content: `${pageHero("The people behind 4OH", "Four daughters. Four hearts. One wonderfully serious case of game night.", brandMessage("aboutIntro", "This began around a family table: four daughters, plenty of opinions, and the kind of laughter that makes everyone stay for one more hand."))}
   <section class="section"><div class="shell about-beats" aria-label="The Four of Hearts story">
@@ -404,8 +425,16 @@ write("about.html", page({
     <article class="about-beat"><b aria-hidden="true">☺</b><h2>Success is measured in smiles.</h2><p>Also rematches and house-rule arguments.</p></article>
     <article class="about-beat"><b aria-hidden="true">4OH</b><h2>One Family. Many Games.</h2><p>The family keeps growing.</p></article>
   </div></section>
-  <section class="section navy founder-feature"><div class="shell founder-story-grid"><div><p class="eyebrow">Meet the founder · Player, teacher, observer</p><h2>Games have rules. People make them interesting.</h2><p class="lede">For more than fifty years, the founder has played, taught, tested, argued about, laughed over, and tried to understand games. More than twenty of those years included examining strategy and human interaction in a university environment.</p><p>The question always returns to the table: <em>why does this game make people stay?</em> He is a person who has spent a lifetime watching what happens when rules meet people.</p><p>That curiosity shapes Four of Hearts: clear enough to welcome a newcomer, deep enough to reward a regular, and human enough to create a story.</p><div class="founder-notes"><div class="founder-note"><b>50+ years</b><span>playing, teaching, testing, and studying games</span></div><div class="founder-note"><b>20+ years</b><span>examining strategy and human interaction</span></div><div class="founder-note"><b>1 question</b><span>why does this game make people stay?</span></div><div class="founder-note"><b>1 test</b><span>did the table smile?</span></div></div></div><img data-game-art src="assets/palace-hero-640.webp" alt="Palace castle artwork from Four of Hearts Interactive" width="640" height="640" loading="lazy"></div></section>
-  <section class="section family-story"><div class="shell story-split"><div><p class="eyebrow">A lifelong question</p><h2>What makes people stay for one more game?</h2><p class="lede">Match it. Beat it. Use a power card. Survive your hand, your face-up cards, and the mystery underneath. Easy to teach. Impossible to forget.</p><p>The founder’s philosophy is simple: welcome people quickly, reward curiosity, and measure success in smiles, stories, and rematches.</p><div class="actions"><a class="button" href="palace-play.html">Play the mini-match</a><a class="text-link" href="palace-story.html">Read fact, tradition & legend</a></div></div><img data-game-art src="assets/palace-hero-640.webp" alt="Palace castle rising above the Palace title" width="640" height="640" loading="lazy"></div></section>`
+  <section class="section navy founder-feature"><div class="shell founder-story-grid"><div><p class="eyebrow">Meet the founder · Player, teacher, observer</p><h2>Games have rules. People make them interesting.</h2><p class="lede">For more than fifty years, the founder has played, taught, tested, argued about, laughed over, and tried to understand games. More than twenty of those years included examining strategy and human interaction in a university environment.</p><p>The question always returns to the table: <em>why does this game make people stay?</em> He is a person who has spent a lifetime watching what happens when rules meet people.</p><p>That curiosity shapes Four of Hearts: clear enough to welcome a newcomer, deep enough to reward a regular, and human enough to create a story.</p><div class="founder-notes"><div class="founder-note"><b>50+ years</b><span>playing, teaching, testing, and studying games</span></div><div class="founder-note"><b>20+ years</b><span>examining strategy and human interaction</span></div><div class="founder-note"><b>1 question</b><span>why does this game make people stay?</span></div><div class="founder-note"><b>1 test</b><span>did the table smile?</span></div></div></div><img data-game-art src="assets/brand-board.webp" alt="Four of Hearts Interactive portfolio artwork" width="1536" height="1024" loading="lazy"></div></section>
+  <section class="section family-story portfolio-family-story"><div class="shell">
+    <div class="section-heading"><div><p class="eyebrow">The philosophy in practice</p><h2>Different worlds.<br>Same welcome.</h2></div><p class="lede">A good Four of Hearts game makes its rules legible, its choices meaningful, and its table worth returning to.</p></div>
+    <div class="about-worlds">
+      <a href="palace.html"><img src="assets/icon-palace-4hearts.webp" alt="" width="512" height="512" loading="lazy"><span>Strategy at the table</span><strong>Palace</strong></a>
+      <a href="bobby-the-breadasaurus.html"><img src="assets/bobby/bobby-character-720.webp" alt="" width="720" height="720" loading="lazy"><span>Adventure with heart</span><strong>Bobby</strong></a>
+      <a href="evil-doom-adventures.html"><img src="assets/evil-doom/evil-doom-heroes-purple-1200.webp" alt="" width="1200" height="620" loading="lazy"><span>Trust in motion</span><strong>Shadow Run</strong></a>
+    </div>
+    <div class="actions"><a class="button" href="games.html">Explore all seven games</a><a class="text-link" href="news.html">Read the development journal</a></div>
+  </div></section>`
 }));write("support.html", page({
   title: "Support | Four of Hearts Interactive",
   description: "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
@@ -450,7 +479,7 @@ write("terms.html", page({
   content: `
     ${pageHero("Internal Alpha", "Terms of Use", "Last technically reviewed July 25, 2026. These plain-language terms describe a testing-stage website and game family, not a public commercial release.")}
     <section class="section"><div class="narrow prose">
-      <h2>Current availability</h2><p>Palace, Hearts, Spades, and Euchre are in Internal Alpha. Commander ThumB is coming soon. Access may be limited, changed, interrupted, or withdrawn. The website tutorials are short teaching previews, not complete matches and not gambling.</p>
+      <h2>Current availability</h2><p>Palace, Hearts, Spades, and Euchre are in internal testing. Commander Thum-B, Bobby the Breadasaurus, and Evil Doom Adventures: Shadow Run are in development and are not publicly playable. Access may be limited, changed, interrupted, or withdrawn. The website tutorials are short teaching previews, not complete matches and not gambling.</p>
       <h2>Use the products responsibly</h2><p>Do not interfere with service, attempt unauthorized access, misuse reconnect or ranking behavior, reverse engineer where prohibited by law, harass other testers, or use the products for unlawful activity.</p>
       <h2>Testing information</h2><p>Feedback may be used to improve the games. Do not include confidential information, passwords, or third-party material you lack permission to share.</p>
       <h2>No promise of release</h2><p>Features, rules, visual design, rankings, data behavior, and availability may change. Participation in testing does not guarantee a future download, account, entitlement, purchase, or permanent record.</p>
@@ -494,12 +523,12 @@ write("404.html", page({
   path: "/404.html",
   current: "",
   noindex: true,
-  content: `<section class="page-hero"><div class="shell"><p class="eyebrow">404 · Card not found</p><h1>${brandMessage("notFound", "This card fell under the table.")}</h1><p class="lede">The page may have moved, but the ${gameToken("gameName", "Palace")} table is still waiting.</p><div class="actions"><a class="button" href="index.html">Return home</a><a class="button secondary" href="palace-play.html">${gameMessage("playGame", "Play Palace")}</a></div></div></section>`
+  content: `<section class="page-hero"><div class="shell"><p class="eyebrow">404 · Card not found</p><h1>${brandMessage("notFound", "This card fell under the table.")}</h1><p class="lede">The page may have moved, but seven Four of Hearts worlds are still waiting.</p><div class="actions"><a class="button" href="index.html">Return home</a><a class="button secondary" href="games.html">Explore the games</a></div></div></section>`
 }));
 
 
 const sitemapFiles = [
-  "index.html", "palace.html", "palace-play.html", "palace-story.html", "commander-thumb.html", "news.html",
+  "index.html", "palace.html", "palace-play.html", "palace-story.html", "commander-thumb.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"

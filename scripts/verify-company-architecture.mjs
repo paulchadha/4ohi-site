@@ -11,7 +11,8 @@ mkdirSync(evidence, { recursive: true });
 
 const routes = [
   "index.html", "games.html", "palace.html", "palace-play.html", "palace-story.html", "palace-faq.html",
-  "commander-thumb.html", "news.html", "news-commander-thumb-is-coming.html",
+  "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "commander-thumb.html", "news.html",
+  "news-bobby-the-breadasaurus-joins-the-family.html", "news-shadow-run-enters-development.html", "news-commander-thumb-is-coming.html",
   "news-welcome-to-the-thum-system.html", "news-building-commander-thumb.html",
   "news-why-were-building-palace.html", "news-palace-enters-founder-testing.html",
   "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html", "404.html"
@@ -20,7 +21,7 @@ const matrix = [
   [320, 568], [375, 812], [430, 932], [768, 1024],
   [1024, 768], [1366, 768], [1920, 1080]
 ];
-const keyRoutes = ["index.html", "games.html", "palace-play.html", "commander-thumb.html", "news.html", "about.html"];
+const keyRoutes = ["index.html", "games.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "palace-play.html", "commander-thumb.html", "news.html", "about.html"];
 const results = { base, checkedAt: new Date().toISOString(), pages: [], viewports: [], interactions: {}, failures: [] };
 const fail = (message) => results.failures.push(message);
 
@@ -50,9 +51,9 @@ for (const route of routes) {
   }));
   results.pages.push({ route, status: response?.status(), ...data, errors });
   if (response?.status() !== 200 || data.h1Count !== 1 || !data.skip || !data.main || data.overflow || data.imagesBroken.length || errors.length) fail(`${route}: route, structure, image, overflow, or runtime failure`);
-  if (data.nav.join("|") !== "Home|Games|News|About 4OH|Support") fail(`${route}: company navigation hierarchy is incorrect`);
-  if (!data.gameLinks.some((item) => item.startsWith("Palace")) || !data.gameLinks.some((item) => item.startsWith("Commander ThumB")) || !data.gameLinks.includes("View All Games")) fail(`${route}: Games menu is incomplete`);
-  if (data.tableSelector !== (["index.html", "palace-play.html"].includes(route) ? 1 : 0)) fail(`${route}: Palace table selector scope is incorrect`);
+  if (data.nav.join("|") !== "Home|Games|Play Palace|News|About 4OH") fail(`${route}: company navigation hierarchy is incorrect`);
+  if (!["Palace", "Bobby the Breadasaurus", "Evil Doom Adventures: Shadow Run", "Commander Thum-B", "Hearts", "Spades", "Euchre"].every((title) => data.gameLinks.some((item) => item.startsWith(title))) || !data.gameLinks.includes("View All Games")) fail(route + ": Games menu is incomplete");
+  if (data.tableSelector !== (route === "palace-play.html" ? 1 : 0)) fail(`${route}: Palace table selector scope is incorrect`);
   if (data.externalScripts.length || data.tracking) fail(`${route}: external script or tracking detected`);
   await page.close();
 }
@@ -77,7 +78,7 @@ for (const route of keyRoutes) {
     results.viewports.push({ route, width, height, ...state, errors });
     if (state.overflow || !state.heroVisible || errors.length) fail(`${route} at ${width}x${height}: responsive runtime failed`);
     if (width <= 430 && state.tinyTargets.length) fail(`${route} at ${width}x${height}: undersized targets ${state.tinyTargets.join(", ")}`);
-    if ([320, 430, 768, 1366].includes(width) && ["index.html", "commander-thumb.html", "games.html", "palace-play.html"].includes(route)) {
+    if ([320, 430, 768, 1366].includes(width) && ["index.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "commander-thumb.html", "games.html", "palace-play.html"].includes(route)) {
       await page.screenshot({ path: resolve(evidence, `company-${route.replace(".html", "")}-${width}x${height}.png`), fullPage: true });
     }
     await page.close();
@@ -92,9 +93,11 @@ await mobile.locator(".games-menu > summary").click();
 results.interactions.mobile = {
   menuExpanded: await mobile.locator(".menu-toggle").getAttribute("aria-expanded"),
   gamesOpen: await mobile.locator(".games-menu").getAttribute("open"),
-  commanderVisible: await mobile.locator('.games-menu-panel a[href^="commander-thumb.html"]').isVisible()
+  commanderVisible: await mobile.locator('.games-menu-panel a[href^="commander-thumb.html"]').isVisible(),
+  bobbyVisible: await mobile.locator('.games-menu-panel a[href^="bobby-the-breadasaurus.html"]').isVisible(),
+  evilVisible: await mobile.locator('.games-menu-panel a[href^="evil-doom-adventures.html"]').isVisible()
 };
-if (results.interactions.mobile.menuExpanded !== "true" || results.interactions.mobile.gamesOpen === null || !results.interactions.mobile.commanderVisible) fail("Mobile company/Games navigation failed");
+if (results.interactions.mobile.menuExpanded !== "true" || results.interactions.mobile.gamesOpen === null || !results.interactions.mobile.commanderVisible || !results.interactions.mobile.bobbyVisible || !results.interactions.mobile.evilVisible) fail("Mobile company/Games navigation failed");
 await mobile.keyboard.press("Escape");
 if (await mobile.locator(".games-menu").getAttribute("open") !== null) fail("Games menu did not close on Escape");
 await mobile.close();
@@ -126,7 +129,7 @@ const commanderState = await commander.evaluate(() => {
   };
 });
 results.interactions.commander = commanderState;
-if (commanderState.title !== "Commander ThumB | Four of Hearts Interactive" || commanderState.h1.length !== 1 || commanderState.h1[0] !== "Commander ThumB" || !commanderState.status || commanderState.wrong || commanderState.newsLinks !== 3 || commanderState.planetDiagram) fail("Commander ThumB identity, status, title, News, or story treatment failed");
+if (commanderState.title !== "Commander Thum-B | Four of Hearts Interactive" || commanderState.h1.length !== 1 || commanderState.h1[0] !== "Commander Thum-B" || !commanderState.status || commanderState.wrong || commanderState.newsLinks !== 3 || commanderState.planetDiagram) fail("Commander Thum-B identity, status, title, News, or story treatment failed");
 await commander.close();
 
 const news = await context.newPage();
@@ -137,7 +140,7 @@ const newsState = await news.evaluate(() => ({
   allCommander: [...document.querySelectorAll("[data-news-tags]")].filter((node) => !node.hidden).every((node) => node.dataset.newsTags.includes("commander"))
 }));
 results.interactions.news = newsState;
-if (newsState.selected !== "commander" || newsState.visible !== 3 || !newsState.allCommander) fail("Commander ThumB News filter failed");
+if (newsState.selected !== "commander" || newsState.visible !== 3 || !newsState.allCommander) fail("Commander Thum-B News filter failed");
 await news.close();
 
 const tutorial = await context.newPage();
@@ -187,7 +190,7 @@ for (const localeCase of [{ lang: "he", dir: "rtl" }, { lang: "en-CA-fun", dir: 
     selected: document.querySelector("[data-locale]")?.value
   }));
   results.interactions[`locale-${localeCase.lang}`] = state;
-  if (state.lang !== localeCase.lang || state.dir !== localeCase.dir || state.title !== "Commander ThumB | Four of Hearts Interactive" || state.overflow || state.gameQuery || state.selected !== localeCase.lang) fail(`${localeCase.lang}: language control layout or game-state isolation failed`);
+  if (state.lang !== localeCase.lang || state.dir !== localeCase.dir || state.title !== "Commander Thum-B | Four of Hearts Interactive" || state.overflow || state.gameQuery || state.selected !== localeCase.lang) fail(`${localeCase.lang}: language control layout or game-state isolation failed`);
   await localized.close();
 }
 const privacy = await context.newPage();

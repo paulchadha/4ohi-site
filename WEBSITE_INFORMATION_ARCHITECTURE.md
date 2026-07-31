@@ -1,69 +1,74 @@
-# Four of Hearts Interactive Website Information Architecture
+# Four of Hearts Interactive website information architecture
 
 ## Brand hierarchy
 
-Four of Hearts Interactive is the parent company. `4OH` is its approved compact mark. Palace and Commander ThumB are peer game properties; Hearts, Spades, and Euchre are additional catalog entries. No game name substitutes for the company identity.
+Four of Hearts Interactive, LLC is the parent company. 4OH is the approved compact mark. The studio line is **One Family. Many Games.**
 
-The reusable game source of truth is `scripts/game-catalog.mjs`. Add future games there, then render cards, navigation, and status from the shared record.
+The current catalog has seven peer game properties:
+
+1. Palace — flagship card game; Interactive Preview.
+2. Bobby the Breadasaurus — family adventure; In Development.
+3. Evil Doom Adventures: Shadow Run — action platformer; In Development.
+4. Commander Thum-B — arcade defense; Coming Soon.
+5. Hearts — card game; Internal Alpha teaching lesson.
+6. Spades — card game; Internal Alpha teaching lesson.
+7. Euchre — card game; Internal Alpha teaching lesson.
+
+No game name substitutes for the company. Future games are added to scripts/game-catalog.mjs and flow through shared navigation and catalog rendering.
 
 ## Global navigation
 
-Every public page uses the same company-level header:
+Every public page uses this studio-level header:
 
 1. Home
-2. Games
-   - Palace
-   - Commander ThumB
-   - View All Games
-3. News
-4. About 4OH
-5. Support
+2. Games — all seven titles plus View All Games
+3. Play Palace
+4. News
+5. About 4OH
 
-The Games disclosure is native, keyboard-operable, Escape-closeable, and converted into the mobile menu below 820 pixels. Language and general settings remain global. Palace naming is not global.
+Support remains in the footer and at /support.html. The Games disclosure is keyboard-operable, Escape-closeable, and integrated with the mobile menu. No Palace-specific selector appears globally.
 
-## Game-local navigation
+## Game-local behavior
 
-Palace and Commander ThumB each have a local sub-navigation below the company header. The Palace table-name control, “THIS TABLE CALLS IT,” exists only on `/palace-play.html`. Its Palace, Shed, and private traditional-name behavior affects only the Palace playing route and never changes the company, Commander ThumB, or another game.
+The table-name control, “This table calls it,” exists only on /palace-play.html. It never renames the company or another game.
+
+Commander Thum-B retains local navigation. Bobby and Shadow Run are cinematic overview pages without false play controls.
 
 ## Canonical routes
 
-- `/` and `/index.html`: Four of Hearts Interactive company homepage.
-- `/games.html`: reusable game catalog.
-- `/palace.html`: Palace overview.
-- `/palace-play.html`: interactive Palace five-scene tutorial.
-- `/palace-story.html` and `/palace-faq.html`: Palace history and rules.
-- `/commander-thumb.html`: Commander ThumB Coming Soon overview.
-- `/news.html`: filterable company newsroom.
-- `/news-commander-thumb-is-coming.html`
-- `/news-welcome-to-the-thum-system.html`
-- `/news-building-commander-thumb.html`
-- Existing Palace and company articles remain public.
-- `/about.html`, `/support.html`, and the legal/safety routes remain company-level pages.
-- `/play.html` and the three secondary `*-play.html` routes remain compatible teaching-preview URLs.
+- / and /index.html — studio-first portfolio homepage.
+- /games.html — reusable seven-game catalog.
+- /palace.html, /palace-play.html, /palace-story.html, /palace-faq.html.
+- /bobby-the-breadasaurus.html.
+- /evil-doom-adventures.html.
+- /commander-thumb.html.
+- /hearts-play.html, /spades-play.html, /euchre-play.html.
+- /news.html and generated article routes, including Bobby and Shadow Run.
+- /about.html, /support.html, and legal/safety routes.
+- /play.html remains a compatible teaching-preview route.
 
-Generated HTML, sitemap, RSS, metadata, and structured data come from `scripts/build-site.mjs`. Older `.html` URLs remain valid direct-navigation targets on GitHub Pages.
+The generator owns HTML, metadata, JSON-LD, sitemap, and RSS. Existing public URLs remain direct-navigation targets on GitHub Pages.
 
-## Status language
+## Content and status rules
 
-- Palace: Interactive Preview; a website tutorial is available.
-- Commander ThumB: Coming Soon; no public play link and no invented release date.
-- Hearts, Spades, and Euchre: Internal Alpha; website lessons are available, but no public-game availability is claimed.
-
-The guarded Commander release article remains in `content/drafts/` and is excluded from the generator, sitemap, RSS feed, and public routes until a working public version is verified.
+- Bobby and Shadow Run may say In Development or concept development; no platform, date, rating, level, download, or public-availability claims.
+- Commander Thum-B is Coming Soon with no false play or release claim.
+- Palace may link to its website teaching preview, which is not a public app release.
+- Hearts, Spades, and Euchre may link to their two-step teaching lessons.
+- Concept-board embedded labels are not canonical content. Bobby friend names are not published.
+- The only approved Commander product title is **Commander Thum-B**.
 
 ## Responsive and accessibility contract
 
-Production QA covers 320, 375, 430, 768 portrait, 1024 landscape, 1366 laptop, and 1920 desktop widths. Pages must retain one H1, landmarks, skip link, visible focus, a usable mobile menu, 40–44 pixel interactive targets, no horizontal overflow, reduced-motion support, local images with meaningful alt text, and no cookies, browser storage, analytics, advertising, or tracking.
+Rendered QA covers 320×568, 375×812, 430×932, 768×1024, 1024×768, 1366×768, 1920×1080, and 844×390.
 
-Run:
+Every route must retain one H1, semantic landmarks, a skip link, visible focus, a usable mobile menu, readable targets, no horizontal overflow, reduced-motion support, meaningful alt text, local assets, and no cookies, storage, analytics, advertising, or tracking.
 
-```powershell
-node scripts/build-site.mjs
-node scripts/validate-site.mjs
-node scripts/verify-company-architecture.mjs
-```
+Validation commands:
 
-`scripts/verify-palace-site.mjs` is the compatibility entry point for the same current production browser gate.
-## 2026-07-31 production presentation
+    node scripts/build-site.mjs
+    node scripts/validate-site.mjs
+    node scripts/verify-company-architecture.mjs
+    node scripts/verify-portfolio-expansion.mjs
 
-The company hierarchy is unchanged. The homepage is now an immersive five-world navigator led by Palace, while preserving standard Home, Games, News, About 4OH, and Support navigation and all existing deep routes. See `docs/IMMERSIVE-DIGITAL-EXPERIENCE-2026-07-31.md`.
+Founder physical visual acceptance remains a separate human approval gate.

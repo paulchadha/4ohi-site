@@ -1,13 +1,13 @@
-# Commander ThumB Website
+# Commander Thum-B Website
 
 ## Identity and status
 
-- The only approved title is **Commander ThumB**. The capital `B` is intentional.
+- The only approved title is **Commander Thum-B**. The capital `B` is intentional.
 - Route: `/commander-thumb.html`.
-- Browser title: `Commander ThumB | Four of Hearts Interactive`.
+- Browser title: `Commander Thum-B | Four of Hearts Interactive`.
 - Parent company: Four of Hearts Interactive; compact mark: 4OH.
 - Status: **Coming Soon**. The page has no play or download link, no invented release date, and no released claim.
-- Commander ThumB is a peer game offering beside Palace, not a company or sub-brand.
+- Commander Thum-B is one of seven peer game properties beside Palace, Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Hearts, Spades, and Euchre. It is not a company or sub-brand.
 
 ## Page treatment
 
@@ -36,16 +36,16 @@ Never overwrite the source. Optimize derivatives, preserve explicit dimensions, 
 
 Published records:
 
-- `Commander ThumB Is Coming to Four of Hearts Interactive`
+- `Commander Thum-B Is Coming to Four of Hearts Interactive`
 - `Welcome to the Thum System`
-- `Building Commander ThumB: One Thumb, One Ship, 1,000 Levels`
+- `Building Commander Thum-B: One Thumb, One Ship, 1,000 Levels`
 
-All are dated July 26, 2026, tagged to Commander ThumB, and state that the game is in development. `content/drafts/commander-thumb-has-arrived.json` is intentionally unpublished until a working public version exists.
+All are dated July 26, 2026, tagged to Commander Thum-B, and state that the game is in development. `content/drafts/commander-thumb-has-arrived.json` is intentionally unpublished until a working public version exists.
 
 ## Accessibility and responsive behavior
 
 - One H1 and one visual title treatment.
-- Company header plus Commander-local navigation.
+- Studio header plus Commander-local navigation.
 - Native keyboard Games disclosure, mobile menu, visible focus, and 40–44 pixel actions.
 - Responsive hero crop and stacked story/mission/news layouts at phone sizes.
 - No horizontal overflow at 320, 375, 430, 768, 1024, 1366, or 1920 pixels.

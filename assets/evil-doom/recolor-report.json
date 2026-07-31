@@ -1,0 +1,32 @@
+{
+  "method": "HSV-isolated saturated magenta selection; non-selected pixels copied byte-for-byte in the decoded raster",
+  "target_purple": "#4E2A84",
+  "sources": {
+    "a": {
+      "source_sha256": "729824e8bb56ff7add4fe11292f8fac2674a421472323a7faca23d57c341a1bf",
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "original_derivative": "assets/evil-doom/evil-doom-concept-board-a-original-1280.webp",
+      "purple_derivative": "assets/evil-doom/evil-doom-concept-board-a-purple-1280.webp",
+      "target": "#4E2A84",
+      "selected_pixels": 24790,
+      "changed_pixels": 24790,
+      "changed_outside_selection": 0
+    },
+    "b": {
+      "source_sha256": "9a1d4c88a87df6713f5f99aa47a2d2f848defd04f98cb1ae1dfbda49c4b8ac9a",
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "original_derivative": "assets/evil-doom/evil-doom-concept-board-b-original-1280.webp",
+      "purple_derivative": "assets/evil-doom/evil-doom-concept-board-b-purple-1280.webp",
+      "target": "#4E2A84",
+      "selected_pixels": 28097,
+      "changed_pixels": 28097,
+      "changed_outside_selection": 0
+    }
+  }
+}

@@ -1,42 +1,38 @@
-# 4OH Spatial Gallery Visual System
+# 4OH studio portfolio visual system
 
 ## Direction
 
-The July 2026 rebuild makes the Four of Hearts homepage an explorable gallery rather than a stack of promotional cards. Its inspiration is the feeling of discovery found in exceptional cultural websites: one focused object at a time, controlled depth, quiet interface chrome, editorial pacing, and movement that responds to the visitor.
+The July 31 rebuild presents Four of Hearts Interactive as a studio of distinct worlds rather than a Palace-first gallery. The opening feeling is discovery: a confident studio promise, layered art, large cinematic doors, editorial pacing, and visible proof that the family extends beyond card games.
 
-No reference-site assets, proprietary typefaces, maps, copy, branded elements, or source implementation are reproduced. The system is original to Four of Hearts and uses only approved 4OH artwork.
+The system is original to Four of Hearts. It reproduces no reference-site assets, proprietary typefaces, maps, copy, branded elements, or implementation.
 
 ## Experience architecture
 
-1. **One world in focus.** Palace, Commander ThumB, Hearts, Spades, and Euchre occupy a circular spatial stage. One game is active and actionable; neighboring worlds remain visible as depth cues.
-2. **Exploration has several doors.** Visitors can use the numbered world controls, previous/next controls, arrow keys, a mouse wheel, a trackpad, or a touch drag. Scrolling exits normally at the first and last world so the gallery cannot trap the page.
-3. **The interface stays quiet.** The company mark floats above the gallery. On desktop, company navigation becomes a compact glass navigation island near the bottom edge. Mobile uses an explicit Menu button and a readable overlay.
-4. **The page changes rhythm.** The spatial opening gives way to a crisp studio statement, a typographic game index, an asymmetrical editorial newsroom, and a focused closing invitation.
-5. **News is readable.** Homepage News uses near-black type on cool light gray rather than low-contrast beige. The full News page uses white type on near-black with large editorial imagery.
+1. The studio leads with “One Family. Many Games.”
+2. Palace, Bobby the Breadasaurus, and Evil Doom Adventures: Shadow Run receive major visual doorways.
+3. Commander Thum-B, Hearts, Spades, and Euchre remain visible in a compact portfolio ribbon.
+4. Games renders all seven reusable catalog records.
+5. News and About continue the company story rather than turning one product into the company.
 
-## Brand expression
+## Visual language
 
-- Four of Hearts Interactive is always the parent brand.
-- 4OH remains the approved compact mark.
-- Palace, Hearts, Spades, Euchre, and Commander ThumB are five distinct game worlds.
-- Deep black, paper gray, electric blue, cyan, and 4OH gold provide the shared environment while each game keeps its own artwork and color.
-- Large Georgia-based editorial display type is paired with a system sans-serif. No external font request is introduced.
+- Studio frame: midnight blue, electric sky, gold, and cream.
+- Bobby: warm bread browns, sunlit orange, landscape green, and bright blue.
+- Shadow Run: black, charcoal, danger red, and Evil Girl deep purple #4E2A84.
+- Large system typography and responsive editorial scale; no remote font dependency.
+- Local WebP artwork with preserved founder source boards and repeatable derivative generation.
 
 ## Implementation
 
-- `scripts/build-site.mjs` generates the spatial homepage and loads the experience assets across generated pages.
-- `assets/spatial-gallery.css` owns the spatial stage, homepage navigation island, studio statement, game index, homepage News, and full newsroom treatment.
-- `assets/spatial-gallery.js` owns circular positioning, captions, mouse-wheel boundaries, drag/swipe, selectors, and keyboard behavior.
-- `scripts/game-catalog.mjs` remains the single source of truth for all five game worlds.
-- `scripts/verify-spatial-gallery.mjs` guards six viewport geometries, five-world state, active-world count, 42px targets, keyboard behavior, links, and horizontal overflow.
+- scripts/build-site.mjs owns shared structure, navigation, metadata, sitemap, and RSS.
+- scripts/game-catalog.mjs is the seven-game source of truth.
+- scripts/portfolio-content.mjs owns Bobby and Shadow Run page content.
+- assets/portfolio-worlds.css owns studio and portfolio visual treatment.
+- scripts/process-portfolio-art.py owns optimized crops and selective recolor derivatives.
+- scripts/verify-portfolio-expansion.mjs guards the experience at eight viewport geometries.
 
-## Accessibility, privacy, and performance
+## Accessibility and privacy
 
-- Exactly one game world is exposed as active at a time; inactive world links are removed from the keyboard order and marked `aria-hidden`.
-- Captions update in an `aria-live` region.
-- All visible gallery controls are at least 42px; phone controls are 44px.
-- Motion is removed when `prefers-reduced-motion` is active.
-- The gallery provides explicit controls in addition to gestures and never depends on hover.
-- Existing semantic landmarks, skip link, current-page state, dialogs, and mobile navigation remain intact.
-- No cookies, local storage, analytics, advertising, external fonts, or third-party embeds are introduced.
-- Approved WebP artwork is reused; inactive artwork is lazy-loaded.
+The experience retains semantic landmarks, one H1, skip links, visible focus, keyboard and mobile menus, reduced-motion behavior, readable targets, local assets, and zero cookies, storage, analytics, ads, external fonts, or tracking.
+
+Founder physical visual acceptance remains pending.
