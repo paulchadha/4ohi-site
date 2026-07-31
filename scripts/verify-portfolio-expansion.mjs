@@ -5,7 +5,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const base = process.env.SITE_URL || "http://127.0.0.1:4173";
 const chrome = process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
-const evidence = resolve("docs", "visual-evidence");
+const evidence = resolve("docs", "visual-evidence", "reconstruction", "legacy-portfolio");
 mkdirSync(evidence, { recursive: true });
 const routes = ["index.html","games.html","bobby-the-breadasaurus.html","evil-doom-adventures.html","news.html","about.html"];
 const matrix = [[320,568],[375,812],[430,932],[768,1024],[1024,768],[1366,768],[1920,1080],[844,390]];
@@ -49,7 +49,7 @@ const mobile = await page.evaluate(() => ({
   focus:parseFloat(getComputedStyle(document.activeElement).outlineWidth) > 0,
   storage:[document.cookie,localStorage.length,sessionStorage.length]
 }));
-if (!skip || !mobile.skip || mobile.h1 !== "One Family. Many Games." || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
+if (!skip || !mobile.skip || mobile.h1 !== "Choose your next world." || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
 await page.close();
 const games = await browser.newPage({ viewport:{ width:1366, height:768 } });
 await games.goto(base + "/games.html", { waitUntil:"networkidle" });

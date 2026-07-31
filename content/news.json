@@ -26,7 +26,7 @@
                          "heading":  "Adventure, friendship, and bread",
                          "paragraphs":  [
                                             "The design exploration centers on responsive platforming, collecting bread, dodging imaginative dangers, and helping Bobby find the way home.",
-                                            "Bobby brings a sunny new kind of world to the Four of Hearts family while keeping the studio's core idea intact: welcome people in, reward curiosity, and leave them smiling."
+                                            "Bobby brings a sunny new kind of world to the Four of Hearts portfolio while keeping the studio's focus intact: welcome newcomers, reward curiosity, and make exploration feel good."
                                         ]
                      }
                  ]
@@ -79,7 +79,7 @@
         "imageAlt":  "Commander-Class ship defending Thum B in an original 1970s-inspired space illustration",
         "body":  [
                      {
-                         "heading":  "A new world joins the family",
+                         "heading":  "A new world joins the lineup",
                          "paragraphs":  [
                                             "Four of Hearts Interactive is building Commander Thum-B, an original one-thumb arcade-defense adventure set among the related worlds of the Thum System.",
                                             "Commander Thum-B is in development and is not publicly playable yet. This announcement introduces the world and the mission without claiming a release date."
@@ -211,7 +211,7 @@
     {
         "slug":  "meet-the-four-games",
         "title":  "Meet the Seven Games in the 4OH Family",
-        "description":  "Seven distinct worlds now share one family studio: Palace, Bobby, Evil Doom Adventures, Commander Thum-B, Hearts, Spades, and Euchre.",
+        "description":  "Seven distinct worlds now share one independent studio: Palace, Bobby, Evil Doom Adventures, Commander Thum-B, Hearts, Spades, and Euchre.",
         "date":  "2026-07-20",
         "category":  "Games",
         "featured":  false,
@@ -219,7 +219,7 @@
         "imageAlt":  "Four of Hearts brand board with Palace, Hearts, Spades, and Euchre",
         "body":  [
                      {
-                         "heading":  "Seven worlds, one family",
+                         "heading":  "Seven worlds, one studio",
                          "paragraphs":  [
                                             "Palace is the flagship card-table experience. Bobby the Breadasaurus brings a warm family adventure. Evil Doom Adventures: Shadow Run adds a fast, shadowy rescue story. Commander Thum-B opens a cosmic arcade frontier.",
                                             "Hearts, Spades, and Euchre complete the current portfolio with distinct kinds of classic card-table strategy."
@@ -263,7 +263,7 @@
     {
         "slug":  "welcome-to-four-of-hearts",
         "title":  "Welcome to Four of Hearts Interactive",
-        "description":  "Meet the family-inspired South Dakota studio building seven distinct game worlds around one welcoming philosophy.",
+        "description":  "Meet the South Dakota studio building seven distinct game worlds across card, arcade, platform, puzzle, and adventure genres.",
         "date":  "2026-07-14",
         "category":  "Studio",
         "featured":  false,
@@ -271,9 +271,9 @@
         "imageAlt":  "Four of Hearts Interactive logo",
         "body":  [
                      {
-                         "heading":  "One family. Many games.",
+                         "heading":  "Seven worlds. One studio.",
                          "paragraphs":  [
-                                            "Four of Hearts Interactive, LLC is a South Dakota software company inspired by four daughters and the belief that games should bring people closer. Our current portfolio spans Palace, Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Commander Thum-B, Hearts, Spades, and Euchre.",
+                                            "Four of Hearts Interactive, LLC is a South Dakota software company creating original card, arcade, platform, puzzle, and adventure games. The current portfolio spans Palace, Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Commander Thum-B, Hearts, Spades, and Euchre.",
                                             "We care about games that are easy to begin, rewarding to revisit, and worth sharing across generations. Current products are in development or internal testing, so this site focuses on the work and honest status rather than download promises."
                                         ]
                      },

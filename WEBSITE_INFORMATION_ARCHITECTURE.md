@@ -72,3 +72,4 @@ Validation commands:
     node scripts/verify-portfolio-expansion.mjs
 
 Founder physical visual acceptance remains a separate human approval gate.
+> **Current architecture (2026-07-31):** The founder-rejection reconstruction replaces the stacked presentation system with `assets/studio-reconstruction.css`, retains `scripts/game-catalog.mjs` as the seven-game source of truth, and validates the global shell with `scripts/verify-reconstruction.mjs`. See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the current route map, status rules, visual system, evidence, and acceptance requirements.

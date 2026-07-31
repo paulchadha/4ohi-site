@@ -130,18 +130,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <meta name="theme-color" content="#26b7f2">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="assets/palace-site.css">
-  <link rel="stylesheet" href="assets/palace-launch.css">
-  <link rel="stylesheet" href="assets/founder-redesign.css">
-  <link rel="stylesheet" href="assets/app-experience-v2.css">
-  <link rel="stylesheet" href="assets/palace-app-web.css">
-  <link rel="stylesheet" href="assets/commander-thumb.css">
-  <link rel="stylesheet" href="assets/company-architecture.css">
-  <link rel="stylesheet" href="assets/company-architecture-fixes.css">
-  <link rel="stylesheet" href="assets/next-level.css">
-  <link rel="stylesheet" href="assets/spatial-gallery.css">
-  <link rel="stylesheet" href="assets/immersive-world.css">
-  <link rel="stylesheet" href="assets/portfolio-worlds.css">
+  <link rel="stylesheet" href="assets/studio-reconstruction.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -149,9 +138,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <script src="assets/product-authority.js" defer></script>
   <script src="assets/release-strip.js" defer></script>
   <script src="assets/power-cards.js" defer></script>
-  <script src="assets/next-level.js" defer></script>
-  <script src="assets/spatial-gallery.js" defer></script>
-  <script src="assets/immersive-world.js" defer></script>
+  <script src="assets/studio-reconstruction.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
@@ -215,20 +202,20 @@ const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
 
 write("index.html", page({
-  title: "Four of Hearts Interactive | One Family. Many Games.",
-  description: "Four of Hearts Interactive creates welcoming games and original worlds for families, friends, and everyone who stays for one more round.",
+  title: "Four of Hearts Interactive | Original Game Worlds",
+  description: "Explore original card, arcade, platform, puzzle, and family-adventure games from Four of Hearts Interactive.",
   path: "/", current: "home", bodyClass: "company-home",
-  image: "assets/brand-board.webp", imageAlt: "Four of Hearts Interactive game family",
-  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"One Family. Many Games.", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"A family-inspired independent game studio creating welcoming games and original worlds." },
+  image: "assets/brand-board.webp", imageAlt: "Seven original game worlds from Four of Hearts Interactive",
+  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"One Family. Many Games.", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"An independent studio creating original card, arcade, platform, puzzle, and family-adventure games." },
   content: `
     <section class="studio-hero" aria-labelledby="studio-hero-title">
       <div class="shell studio-hero-grid">
         <div class="studio-hero-copy">
-          <p class="eyebrow">Four of Hearts Interactive, LLC</p>
-          <h1 id="studio-hero-title">One Family.<br><span>Many Games.</span></h1>
-          <p class="lede">Seven worlds. One independent studio inspired by four daughters—and one very serious belief that games should leave people smiling.</p>
+          <p class="eyebrow">Four of Hearts Interactive presents</p>
+          <h1 id="studio-hero-title">Choose your<br><span>next world.</span></h1>
+          <p class="lede">Card-table legends, shadow rescues, cosmic defenses, and one extremely determined bread dinosaur.</p>
           <div class="actions"><a class="button" href="games.html">Explore the games</a><a class="button secondary" href="palace-play.html">Play Palace</a></div>
-          <p class="studio-kicker">Made to welcome people in</p>
+          <p class="studio-kicker">Seven original games · one independent studio</p>
         </div>
         <div class="world-orbit" aria-label="Featured Four of Hearts worlds">
           <a class="orbit-card palace" href="palace.html"><img src="assets/icon-palace-4hearts.webp" alt="Enter the Palace card-game world" width="960" height="960" fetchpriority="high"></a>
@@ -239,9 +226,9 @@ write("index.html", page({
       </div>
     </section>
     <section class="studio-intro"><div class="shell studio-intro-grid">
-      <div><p class="eyebrow">Why Four of Hearts</p><h2>Good games bring <em>people closer.</em></h2></div>
-      <div class="studio-intro-copy"><p>Four daughters inspired the name. Family game nights supplied the philosophy. We build card tables, cosmic battles, bread-filled adventures, and shadow worlds with the same promise: clear fun, honest development, and no manipulative nonsense.</p>
-        <div class="family-principles"><article><b>01</b><h3>Made for smiles</h3><p>Welcome newcomers. Reward curiosity. Make the rematch irresistible.</p></article><article><b>02</b><h3>Privacy-conscious</h3><p>No cookies, no behavioral tracking, and no knowingly selling visitor data.</p></article><article><b>03</b><h3>Built together</h3><p>One family keeps asking the question: would we want this at our table?</p></article></div>
+      <div><p class="eyebrow">Inside the studio</p><h2>Original games.<br><em>Distinct worlds.</em></h2></div>
+      <div class="studio-intro-copy"><p>Four of Hearts Interactive creates original games across card, arcade, platform, puzzle, and family-adventure genres.</p>
+        <div class="family-principles"><article><b>01</b><h3>Play first</h3><p>Readable rules, responsive controls, and reasons to try again.</p></article><article><b>02</b><h3>Worlds with character</h3><p>Every game earns its own color, rhythm, and point of view.</p></article><article><b>03</b><h3>Player respect</h3><p>No cookies, no behavioral tracking, and honest development updates.</p></article></div>
       </div>
     </div></section>
     <section class="featured-worlds"><div class="shell">
@@ -253,11 +240,11 @@ write("index.html", page({
       </div>
     </div></section>
     <section class="portfolio-ribbon"><div class="shell portfolio-ribbon-grid">
-      <div class="ribbon-intro"><p class="eyebrow">More from 4OH</p><h2>The family keeps growing.</h2><a class="text-link" href="games.html">See the full catalog →</a></div>
+      <div class="ribbon-intro"><p class="eyebrow">More from 4OH</p><h2>More worlds<br>are taking shape.</h2><a class="text-link" href="games.html">See the full catalog →</a></div>
       ${gameCatalog.filter(({ key }) => ["commander","hearts","spades","euchre"].includes(key)).map((game) => `<article class="ribbon-game"><img src="${game.artwork}" alt="" width="160" height="160" loading="lazy"><p>${game.status}</p><h3>${game.title}</h3><p>${game.description}</p><a href="${game.infoUrl}">Explore →</a></article>`).join("")}
     </div></section>
     <section class="section company-news"><div class="shell"><div class="section-heading"><div><p class="eyebrow">Dispatches from 4OH</p><h2>Stories behind<br>the worlds.</h2></div><a class="text-link" href="news.html">Enter the newsroom →</a></div><div class="news-grid">${news.slice(0, 3).map(newsCard).join("")}</div></div></section>
-    <section class="home-finale"><div class="shell"><p>Four of Hearts Interactive</p><h2>Come for the game.<br><em>Stay for the people.</em></h2><div><a href="games.html">Explore all seven games</a><a href="about.html">Our family story</a></div></div></section>`
+    <section class="home-finale"><div class="shell"><p>Four of Hearts Interactive</p><h2>Seven worlds.<br><em>Your next favorite is waiting.</em></h2><div><a href="games.html">Explore all seven games</a><a href="news.html">See what is in development</a></div></div></section>`
 }));
 
 write("palace.html", page({
@@ -414,24 +401,22 @@ write("play.html", page({
 }));
 
 write("about.html", page({
-  title: "About Four of Hearts Interactive | One Family. Many Games.",
-  description: "Meet the family-inspired South Dakota studio behind Palace, Bobby the Breadasaurus, Evil Doom Adventures, Commander Thum-B, and more.",
+  title: "About Four of Hearts Interactive | Independent Game Studio",
+  description: "Meet the independent studio creating Palace, Bobby the Breadasaurus, Evil Doom Adventures, Commander Thum-B, Hearts, Spades, and Euchre.",
   path: "/about.html", current: "about", bodyClass: "about-page",
-  content: `${pageHero("The people behind 4OH", "Four daughters. Four hearts. One wonderfully serious case of game night.", brandMessage("aboutIntro", "This began around a family table: four daughters, plenty of opinions, and the kind of laughter that makes everyone stay for one more hand."))}
-  <section class="section"><div class="shell about-beats" aria-label="The Four of Hearts story">
-    <article class="about-beat"><b aria-hidden="true">01</b><h2>Four daughters started the spark.</h2><p>The people came first.</p></article>
-    <article class="about-beat"><b aria-hidden="true">♥♥♥♥</b><h2>Four hearts became the name.</h2><p>A family mark with a job to do.</p></article>
-    <article class="about-beat"><b aria-hidden="true">03</b><h2>One table became a studio.</h2><p>Good rules. Better company.</p></article>
-    <article class="about-beat"><b aria-hidden="true">☺</b><h2>Success is measured in smiles.</h2><p>Also rematches and house-rule arguments.</p></article>
-    <article class="about-beat"><b aria-hidden="true">4OH</b><h2>One Family. Many Games.</h2><p>The family keeps growing.</p></article>
+  content: `${pageHero("Independent game studio", "We make worlds worth playing.", "Four of Hearts Interactive creates original card, arcade, platform, puzzle, and family-adventure games with clear rules, strong characters, and honest development updates.")}
+  <section class="section"><div class="shell about-beats" aria-label="How Four of Hearts works">
+    <article class="about-beat"><b aria-hidden="true">01</b><h2>Start with play.</h2><p>A good idea earns attention by becoming fun in someone’s hands.</p></article>
+    <article class="about-beat"><b aria-hidden="true">02</b><h2>Give it a world.</h2><p>Artwork, motion, sound, and rules should tell the same story.</p></article>
+    <article class="about-beat"><b aria-hidden="true">03</b><h2>Show the work.</h2><p>Development updates say what is real, what is changing, and what is not ready yet.</p></article>
   </div></section>
-  <section class="section navy founder-feature"><div class="shell founder-story-grid"><div><p class="eyebrow">Meet the founder · Player, teacher, observer</p><h2>Games have rules. People make them interesting.</h2><p class="lede">For more than fifty years, the founder has played, taught, tested, argued about, laughed over, and tried to understand games. More than twenty of those years included examining strategy and human interaction in a university environment.</p><p>The question always returns to the table: <em>why does this game make people stay?</em> He is a person who has spent a lifetime watching what happens when rules meet people.</p><p>That curiosity shapes Four of Hearts: clear enough to welcome a newcomer, deep enough to reward a regular, and human enough to create a story.</p><div class="founder-notes"><div class="founder-note"><b>50+ years</b><span>playing, teaching, testing, and studying games</span></div><div class="founder-note"><b>20+ years</b><span>examining strategy and human interaction</span></div><div class="founder-note"><b>1 question</b><span>why does this game make people stay?</span></div><div class="founder-note"><b>1 test</b><span>did the table smile?</span></div></div></div><img data-game-art src="assets/brand-board.webp" alt="Four of Hearts Interactive portfolio artwork" width="1536" height="1024" loading="lazy"></div></section>
+  <section class="section navy founder-feature"><div class="shell founder-story-grid"><div><p class="eyebrow">The studio point of view</p><h2>Rules create the possibility. Players create the story.</h2><p class="lede">Four of Hearts studies what makes a game immediately readable, strategically interesting, and memorable enough to bring people back.</p><p>That curiosity reaches from the final hidden card in Palace to the movement of Shadow Run, the warm exploration of Bobby, and the escalating pressure of Commander Thum-B.</p><p class="origin-note">The name Four of Hearts was inspired by the founder’s four daughters.</p><div class="founder-notes"><div class="founder-note"><b>7 worlds</b><span>across card, arcade, platform, puzzle, and adventure genres</span></div><div class="founder-note"><b>1 standard</b><span>make every interaction earn its place</span></div></div></div><img data-game-art src="assets/brand-board.webp" alt="Four of Hearts Interactive portfolio artwork" width="1536" height="1024" loading="lazy"></div></section>
   <section class="section family-story portfolio-family-story"><div class="shell">
-    <div class="section-heading"><div><p class="eyebrow">The philosophy in practice</p><h2>Different worlds.<br>Same welcome.</h2></div><p class="lede">A good Four of Hearts game makes its rules legible, its choices meaningful, and its table worth returning to.</p></div>
+    <div class="section-heading"><div><p class="eyebrow">Explore the work</p><h2>Different genres.<br>Distinct visual worlds.</h2></div><p class="lede">Each game has its own identity, status, and destination. Nothing here pretends to be released before it is ready.</p></div>
     <div class="about-worlds">
-      <a href="palace.html"><img src="assets/icon-palace-4hearts.webp" alt="" width="512" height="512" loading="lazy"><span>Strategy at the table</span><strong>Palace</strong></a>
-      <a href="bobby-the-breadasaurus.html"><img src="assets/bobby/bobby-character-720.webp" alt="" width="720" height="720" loading="lazy"><span>Adventure with heart</span><strong>Bobby</strong></a>
-      <a href="evil-doom-adventures.html"><img src="assets/evil-doom/evil-doom-heroes-purple-1200.webp" alt="" width="1200" height="620" loading="lazy"><span>Trust in motion</span><strong>Shadow Run</strong></a>
+      <a href="palace.html"><img src="assets/icon-palace-4hearts.webp" alt="" width="512" height="512" loading="lazy"><span>Card-table strategy</span><strong>Palace</strong></a>
+      <a href="bobby-the-breadasaurus.html"><img src="assets/bobby/bobby-character-720.webp" alt="" width="720" height="720" loading="lazy"><span>Family adventure</span><strong>Bobby</strong></a>
+      <a href="evil-doom-adventures.html"><img src="assets/evil-doom/evil-doom-heroes-purple-1200.webp" alt="" width="1200" height="620" loading="lazy"><span>Action platformer</span><strong>Shadow Run</strong></a>
     </div>
     <div class="actions"><a class="button" href="games.html">Explore all seven games</a><a class="text-link" href="news.html">Read the development journal</a></div>
   </div></section>`

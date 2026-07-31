@@ -89,5 +89,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/site.js": "assets/site.js?v=dea01b0b9ec9",
   "assets/spatial-gallery.css": "assets/spatial-gallery.css?v=5eaf65266433",
   "assets/spatial-gallery.js": "assets/spatial-gallery.js?v=4730262f9a5c",
+  "assets/studio-reconstruction.css": "assets/studio-reconstruction.css?v=b1c7f28cbdbf",
+  "assets/studio-reconstruction.js": "assets/studio-reconstruction.js?v=378f2c8d2678",
   "assets/styles.css": "assets/styles.css?v=b64e2fa93a75"
 });
