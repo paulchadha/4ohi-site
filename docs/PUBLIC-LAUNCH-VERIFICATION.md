@@ -119,3 +119,13 @@ Public browser evidence: `docs/visual-evidence/app-parity-public-results.json`.
 ## Immersive presentation verification — 2026-07-31
 
 Local browser gates passed for eight opening viewport sizes and 28 route/viewports. Required first-screen Palace art, countdown, Play, latest News, name control, language control, and 4OH identity were programmatically confirmed. Public verification must be repeated against the exact deployed SHA after push and recorded with the final production run.
+## Public deployment evidence — 2026-07-31
+
+- Deployed implementation SHA: `912b512d09c279be5b910a42f6c6f2fb91406237` (GitHub Pages build status `built`).
+- `https://4ohi.com/`: 200 from GitHub Pages.
+- `http://4ohi.com/`, `http://www.4ohi.com/`, and `https://www.4ohi.com/`: 301 to `https://4ohi.com/`.
+- GitHub Pages: custom domain `4ohi.com`, `https_enforced: true`, `protected_domain_state: verified`.
+- Certificate: approved for `4ohi.com` and `www.4ohi.com`, expiry reported as 2026-10-23.
+- DNS: four GitHub Pages A records, four GitHub Pages AAAA records, and `www` CNAME to `paulchadha.github.io` confirmed.
+- Public browser gates: 20 routes × 7 viewport profiles; eight opening viewports; 28 immersive route/viewports; gallery keyboard/touch-equivalent controls; localization; Palace scope; privacy; and overflow all passed.
+- Runtime payload observed by the public immersive gate: 275,777 bytes of local CSS and JavaScript.

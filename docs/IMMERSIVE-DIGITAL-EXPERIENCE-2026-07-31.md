@@ -63,3 +63,13 @@ No physical iOS or Android device was attached to this workspace. Mobile validat
 ## Rollback unit
 
 The redesign is isolated in `assets/immersive-world.css`, `assets/immersive-world.js`, the homepage composition in `scripts/build-site.mjs`, and its generated HTML. Reverting the focused release commit and rebuilding restores the previous public presentation without DNS, email, native-app, or game-repository changes.
+## Public deployment evidence — 2026-07-31
+
+- Deployed implementation SHA: `912b512d09c279be5b910a42f6c6f2fb91406237` (GitHub Pages build status `built`).
+- `https://4ohi.com/`: 200 from GitHub Pages.
+- `http://4ohi.com/`, `http://www.4ohi.com/`, and `https://www.4ohi.com/`: 301 to `https://4ohi.com/`.
+- GitHub Pages: custom domain `4ohi.com`, `https_enforced: true`, `protected_domain_state: verified`.
+- Certificate: approved for `4ohi.com` and `www.4ohi.com`, expiry reported as 2026-10-23.
+- DNS: four GitHub Pages A records, four GitHub Pages AAAA records, and `www` CNAME to `paulchadha.github.io` confirmed.
+- Public browser gates: 20 routes × 7 viewport profiles; eight opening viewports; 28 immersive route/viewports; gallery keyboard/touch-equivalent controls; localization; Palace scope; privacy; and overflow all passed.
+- Runtime payload observed by the public immersive gate: 275,777 bytes of local CSS and JavaScript.
