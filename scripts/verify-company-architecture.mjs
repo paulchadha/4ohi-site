@@ -52,7 +52,7 @@ for (const route of routes) {
   if (response?.status() !== 200 || data.h1Count !== 1 || !data.skip || !data.main || data.overflow || data.imagesBroken.length || errors.length) fail(`${route}: route, structure, image, overflow, or runtime failure`);
   if (data.nav.join("|") !== "Home|Games|News|About 4OH|Support") fail(`${route}: company navigation hierarchy is incorrect`);
   if (!data.gameLinks.some((item) => item.startsWith("Palace")) || !data.gameLinks.some((item) => item.startsWith("Commander ThumB")) || !data.gameLinks.includes("View All Games")) fail(`${route}: Games menu is incomplete`);
-  if (data.tableSelector !== (route === "palace-play.html" ? 1 : 0)) fail(`${route}: Palace table selector scope is incorrect`);
+  if (data.tableSelector !== (["index.html", "palace-play.html"].includes(route) ? 1 : 0)) fail(`${route}: Palace table selector scope is incorrect`);
   if (data.externalScripts.length || data.tracking) fail(`${route}: external script or tracking detected`);
   await page.close();
 }
