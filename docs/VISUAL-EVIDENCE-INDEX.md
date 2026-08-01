@@ -19,3 +19,21 @@ Earlier app, Palace, Commander Thum-B, public-launch, and company-architecture e
 ## 2026-07-31 game-first reconstruction
 
 See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the architecture, validation record, evidence manifest, and founder review status. Evidence is under `docs/visual-evidence/reconstruction/`.
+
+## Game-first reconstruction — August 1, 2026
+
+Current founder-review evidence is in `docs/visual-evidence/reconstruction/`:
+
+- `desktop-home-feature-palace.png`
+- `desktop-home-feature-bobby.png`
+- `desktop-home-feature-shadow-run.png`
+- `desktop-home-feature-commander.png`
+- `desktop-games-menu-open.png`
+- `desktop-games-index.png`
+- desktop pages for Palace, Bobby, Shadow Run, Commander Thum-B, News, and About
+- mobile Home, Games, Bobby, Shadow Run, Play Palace, and navigation-open states
+- `evil-doom-girl-purple.png` and `game-card-hover.png`
+- `founder-review-walkthrough.gif`
+- `reconstruction-results.json`
+
+The walkthrough is an animated sequence of browser-verified states, not a claim of automatic homepage rotation. The implemented feature selector remains manual and pauses by design because it never auto-advances.

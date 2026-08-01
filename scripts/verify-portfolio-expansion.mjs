@@ -18,7 +18,7 @@ for (const route of routes) {
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
     const response = await page.goto(base + "/" + route, { waitUntil:"networkidle" });
-    for (const image of await page.locator("img").all()) await image.scrollIntoViewIfNeeded();
+    for (const image of await page.locator("img:visible").all()) await image.scrollIntoViewIfNeeded();
     await page.waitForTimeout(80);
     const state = await page.evaluate(() => ({
       h1:document.querySelectorAll("h1").length,
@@ -49,7 +49,7 @@ const mobile = await page.evaluate(() => ({
   focus:parseFloat(getComputedStyle(document.activeElement).outlineWidth) > 0,
   storage:[document.cookie,localStorage.length,sessionStorage.length]
 }));
-if (!skip || !mobile.skip || mobile.h1 !== "Choose your next world." || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
+if (!skip || !mobile.skip || mobile.h1 !== "Palace" || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
 await page.close();
 const games = await browser.newPage({ viewport:{ width:1366, height:768 } });
 await games.goto(base + "/games.html", { waitUntil:"networkidle" });

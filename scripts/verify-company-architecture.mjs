@@ -34,7 +34,7 @@ for (const route of routes) {
   page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
   page.on("pageerror", (error) => errors.push(error.message));
   const response = await page.goto(`${base}/${route}`, { waitUntil: "networkidle" });
-  for (const image of await page.locator("img").all()) await image.scrollIntoViewIfNeeded();
+  for (const image of await page.locator("img:visible").all()) await image.scrollIntoViewIfNeeded();
   await page.waitForTimeout(100);
   const data = await page.evaluate(() => ({
     title: document.title,
@@ -51,8 +51,8 @@ for (const route of routes) {
   }));
   results.pages.push({ route, status: response?.status(), ...data, errors });
   if (response?.status() !== 200 || data.h1Count !== 1 || !data.skip || !data.main || data.overflow || data.imagesBroken.length || errors.length) fail(`${route}: route, structure, image, overflow, or runtime failure`);
-  if (data.nav.join("|") !== "Home|Games|Play Palace|News|About 4OH") fail(`${route}: company navigation hierarchy is incorrect`);
-  if (!["Palace", "Bobby the Breadasaurus", "Evil Doom Adventures: Shadow Run", "Commander Thum-B", "Hearts", "Spades", "Euchre"].every((title) => data.gameLinks.some((item) => item.startsWith(title))) || !data.gameLinks.includes("View All Games")) fail(route + ": Games menu is incomplete");
+  if (data.nav.join("|") !== "Games|News|About|Play Palace") fail(`${route}: company navigation hierarchy is incorrect`);
+  if (!["Palace", "Bobby the Breadasaurus", "Evil Doom Adventures: Shadow Run", "Commander Thum-B", "Hearts", "Spades", "Euchre"].every((title) => data.gameLinks.some((item) => item.startsWith(title))) || !data.gameLinks.some((item) => item.startsWith("View All Games"))) fail(route + ": Games menu is incomplete");
   if (data.tableSelector !== (route === "palace-play.html" ? 1 : 0)) fail(`${route}: Palace table selector scope is incorrect`);
   if (data.externalScripts.length || data.tracking) fail(`${route}: external script or tracking detected`);
   await page.close();
@@ -122,7 +122,7 @@ const commanderState = await commander.evaluate(() => {
   return {
     title: document.title,
     h1: [...document.querySelectorAll("h1")].map((node) => node.textContent.replace(/\s+/g, " ").trim()),
-    status: /Coming Soon/i.test(text),
+    status: /In Development/i.test(text),
     wrong: text.includes("Commander Thum" + String.fromCharCode(98)) || text.includes("Commander " + "TH" + "UMB") || text.includes("COMMANDER " + "TH" + "UMB"),
     newsLinks: document.querySelectorAll('.retro-news-grid a[href^="news-"]').length,
     planetDiagram: Boolean(document.querySelector(".ct-system-map"))

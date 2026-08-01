@@ -55,6 +55,24 @@ for (const route of routes) {
 
 const desktop = await browser.newPage({ viewport: { width: 1440, height: 900 } });
 await desktop.goto(`${base}/index.html`, { waitUntil: "networkidle" });
+const featureEvidence = [
+  ["palace", "desktop-home-feature-palace.png"],
+  ["bobby", "desktop-home-feature-bobby.png"],
+  ["evil-doom", "desktop-home-feature-shadow-run.png"],
+  ["commander", "desktop-home-feature-commander.png"]
+];
+for (let index = 0; index < featureEvidence.length; index += 1) {
+  const [key, file] = featureEvidence[index];
+  const selector = desktop.locator("[data-feature-selector]").nth(index);
+  await selector.click();
+  const selected = await selector.getAttribute("aria-selected");
+  const visibleKey = await desktop.locator("[data-feature-panel]:not([hidden])").getAttribute("data-game-key");
+  if (selected !== "true" || visibleKey !== key) failures.push(`Feature selector ${key} did not activate its panel.`);
+  await desktop.screenshot({ path: resolve(evidence, file) });
+}
+await desktop.locator("[data-feature-selector]").first().focus();
+await desktop.keyboard.press("ArrowRight");
+if (await desktop.locator("[data-feature-selector]").nth(1).getAttribute("aria-selected") !== "true") failures.push("Feature selector keyboard navigation failed.");
 await desktop.locator(".games-menu > summary").click();
 const desktopItems = await desktop.locator(".games-menu-panel a:not(.view-all-games)").allTextContents();
 if (desktopItems.length !== 7 || games.some(([title]) => !desktopItems.some((text) => text.includes(title)))) failures.push("Desktop Games menu does not expose all seven canonical titles.");
@@ -111,7 +129,7 @@ const shots = [
 for (const [route, name, width, height, featured] of shots) {
   const page = await browser.newPage({ viewport: { width, height } });
   await page.goto(`${base}/${route}`, { waitUntil: "networkidle" });
-  if (featured) await page.locator(".featured-worlds").scrollIntoViewIfNeeded();
+  if (featured) await page.locator(".all-games-stage").scrollIntoViewIfNeeded();
   await page.screenshot({ path: resolve(evidence, name), fullPage: false });
   await page.close();
 }
