@@ -37,3 +37,12 @@ Current founder-review evidence is in `docs/visual-evidence/reconstruction/`:
 - `reconstruction-results.json`
 
 The walkthrough is an animated sequence of browser-verified states, not a claim of automatic homepage rotation. The implemented feature selector remains manual and pauses by design because it never auto-advances.
+## Second-stage playable studio reconstruction — 2026-08-01
+
+- visual-evidence/second-stage/default-home-mobile-390x844.png
+- visual-evidence/second-stage/default-home-desktop-1440x900.png
+- visual-evidence/second-stage/canadian-home-mobile-390x844.png
+- visual-evidence/second-stage/canadian-home-desktop-1440x900.png
+- Bobby and Evil Doom default/Canadian mobile captures
+- visual-evidence/second-stage/canadian-route-flow.gif
+- visual-evidence/second-stage/second-stage-results.json — 35/35 rendered-browser acceptance tests

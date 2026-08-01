@@ -17,3 +17,6 @@ Setup includes three face-down cards, three face-up cards, hand, opponent, pile,
 - Euchre: partnerships, dealer, upcard, trump, maker, bowers, Order Up/play decisions.
 
 These moments intentionally stop short of full native-app rules engines or production multiplayer.
+## 2026-08-01 portfolio interaction layer
+
+Homepage discovery is implemented in scripts/homepage-playable-studio.mjs, assets/playable-studio.css, and assets/playable-studio.js. The interactive Palace tutorial remains isolated to Palace routes. Portfolio cards link to real play routes only where the manifest declares one; in-development worlds link to their overview pages. Mobile portfolio controls enhance native horizontal scrolling and scroll snap.

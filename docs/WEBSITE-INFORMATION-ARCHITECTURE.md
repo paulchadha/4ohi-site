@@ -81,3 +81,6 @@ The public information architecture now begins with Four of Hearts Interactive a
 Canonical clean destinations are `/games`, `/games/palace`, `/games/bobby-the-breadasaurus`, `/games/evil-doom-adventures-shadow-run`, `/games/commander-thum-b`, `/games/hearts`, `/games/spades`, `/games/euchre`, `/play`, `/news`, `/about`, `/support`, and `/privacy`. Static `.html` routes remain the implementation and backward-compatible public URLs; generated directory indexes provide redirects for the clean destinations.
 
 The single source of catalog truth is `scripts/game-catalog.mjs`. See `docs/GAME-FIRST-RECONSTRUCTION-REVIEW.md` and `docs/GAME-STUDIO-WEBSITE-REFERENCE-AUDIT.md`.
+## 2026-08-01 playable studio homepage
+
+The homepage is company-first and portfolio-led: compact studio marquee, four major editorial worlds, compact Palace play band, all-seven portfolio reel, no more than three news items, and a compact studio signoff. Palace remains one game; Bobby, Evil Doom, Commander Thum-B, Hearts, Spades, and Euchre are peers in the manifest-backed portfolio. Full game regions are semantic links. Canadian-fun mode is query-driven and route-persistent without storage.
