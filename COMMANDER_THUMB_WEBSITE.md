@@ -38,7 +38,7 @@ Published records:
 
 - `Commander Thum-B Is Coming to Four of Hearts Interactive`
 - `Welcome to the Thum System`
-- `Building Commander Thum-B: One Thumb, One Ship, 1,000 Levels`
+- `Building Commander Thum-B: One Thumb, One Ship, One Big Defense`
 
 All are dated July 26, 2026, tagged to Commander Thum-B, and state that the game is in development. `content/drafts/commander-thumb-has-arrived.json` is intentionally unpublished until a working public version exists.
 
@@ -64,3 +64,11 @@ node scripts/build-site.mjs
 node scripts/validate-site.mjs
 node scripts/verify-company-architecture.mjs
 ```
+
+## August 1, 2026 status and scope correction
+
+The approved public title is **Commander Thum-B**. Its website status is **In Development**. It is a distinct Four of Hearts Interactive game and is never presented as the company. The overview uses a single title treatment, links to Commander news, and describes one-thumb arcade defense through escalating waves.
+
+The public page no longer frames the concept art as a completed fixed 1,000-level product. Boss artwork is labeled as threat concepts rather than shipped level milestones. No public-play action is shown because no working public version exists.
+
+Canonical clean route: `/games/commander-thum-b`. Backward-compatible static route: `/commander-thumb.html`.

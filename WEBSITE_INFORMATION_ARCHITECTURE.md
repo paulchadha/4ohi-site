@@ -9,7 +9,7 @@ The current catalog has seven peer game properties:
 1. Palace — flagship card game; Interactive Preview.
 2. Bobby the Breadasaurus — family adventure; In Development.
 3. Evil Doom Adventures: Shadow Run — action platformer; In Development.
-4. Commander Thum-B — arcade defense; Coming Soon.
+4. Commander Thum-B — arcade defense; In Development.
 5. Hearts — card game; Internal Alpha teaching lesson.
 6. Spades — card game; Internal Alpha teaching lesson.
 7. Euchre — card game; Internal Alpha teaching lesson.
@@ -52,7 +52,7 @@ The generator owns HTML, metadata, JSON-LD, sitemap, and RSS. Existing public UR
 ## Content and status rules
 
 - Bobby and Shadow Run may say In Development or concept development; no platform, date, rating, level, download, or public-availability claims.
-- Commander Thum-B is Coming Soon with no false play or release claim.
+- Commander Thum-B is In Development with no false play or release claim.
 - Palace may link to its website teaching preview, which is not a public app release.
 - Hearts, Spades, and Euchre may link to their two-step teaching lessons.
 - Concept-board embedded labels are not canonical content. Bobby friend names are not published.
@@ -73,3 +73,11 @@ Validation commands:
 
 Founder physical visual acceptance remains a separate human approval gate.
 > **Current architecture (2026-07-31):** The founder-rejection reconstruction replaces the stacked presentation system with `assets/studio-reconstruction.css`, retains `scripts/game-catalog.mjs` as the seven-game source of truth, and validates the global shell with `scripts/verify-reconstruction.mjs`. See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the current route map, status rules, visual system, evidence, and acceptance requirements.
+
+## August 1, 2026 game-first reconstruction
+
+The public information architecture now begins with Four of Hearts Interactive as the studio and a manifest-driven catalog of seven peer products. Global navigation is Home via the 4OH mark, Games (graphical mega menu), News, About, and Play Palace. Game-specific controls never appear globally.
+
+Canonical clean destinations are `/games`, `/games/palace`, `/games/bobby-the-breadasaurus`, `/games/evil-doom-adventures-shadow-run`, `/games/commander-thum-b`, `/games/hearts`, `/games/spades`, `/games/euchre`, `/play`, `/news`, `/about`, `/support`, and `/privacy`. Static `.html` routes remain the implementation and backward-compatible public URLs; generated directory indexes provide redirects for the clean destinations.
+
+The single source of catalog truth is `scripts/game-catalog.mjs`. See `docs/GAME-FIRST-RECONSTRUCTION-REVIEW.md` and `docs/GAME-STUDIO-WEBSITE-REFERENCE-AUDIT.md`.

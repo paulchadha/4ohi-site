@@ -127,7 +127,7 @@
     },
     {
         "slug":  "building-commander-thumb",
-        "title":  "Building Commander Thum-B: One Thumb, One Ship, 1,000 Levels",
+        "title":  "Building Commander Thum-B: One Thumb, One Ship, One Big Defense",
         "description":  "The design promise behind Commander Thum-B is immediate control, escalating spectacle, and a long campaign built for mobile play.",
         "date":  "2026-07-26",
         "category":  "Development",
@@ -150,8 +150,8 @@
                      {
                          "heading":  "Built for a long campaign",
                          "paragraphs":  [
-                                            "The approved design target spans 1,000 levels across ten escalating sectors and boss encounters. That is a development direction, not a claim that a public version is available today.",
-                                            "Commander Thum-B remains Coming Soon. Four of Hearts will publish release news only when there is a working public version."
+                                            "The design target explores escalating sectors, formations, and boss encounters. Scope remains in development and no completed level count is being announced.",
+                                            "Commander Thum-B remains in development. Four of Hearts will publish release news only when there is a working public version."
                                         ]
                      }
                  ]

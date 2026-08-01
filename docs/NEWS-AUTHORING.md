@@ -9,7 +9,7 @@ Availability language is factual:
 - Palace has an interactive website preview and remains in development.
 - Bobby the Breadasaurus is in concept development and is not publicly playable.
 - Evil Doom Adventures: Shadow Run is in concept development and is not publicly playable.
-- Commander Thum-B is Coming Soon and is not publicly playable.
+- Commander Thum-B is in development and is not publicly playable.
 - Hearts, Spades, and Euchre have website teaching lessons and remain in internal testing.
 
 Never claim a public release, store listing, platform, date, partnership, player count, endorsement, review, rating, or certification without verified evidence. Release drafts remain under content/drafts and must not enter public HTML, sitemap, or RSS.

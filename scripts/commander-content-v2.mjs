@@ -14,7 +14,7 @@ const bosses = [
 const commanderNews = [
   ["commander-thumb-is-coming", "Commander Thum-B Is Coming to Four of Hearts Interactive"],
   ["welcome-to-the-thum-system", "Welcome to the Thum System"],
-  ["building-commander-thumb", "Building Commander Thum-B: One Thumb, One Ship, 1,000 Levels"]
+  ["building-commander-thumb", "Building Commander Thum-B: One Thumb, One Ship, One Big Defense"]
 ];
 
 export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
@@ -48,7 +48,7 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
         <h1 id="commander-title"><span>Commander</span> Thum-B</h1>
         <p class="retro-kicker">The hottest game in the galaxy!</p>
         <p class="retro-slogan">Save the base.<br>Save the ThumBs from disaster.<br><strong>Only you can do it!</strong></p>
-        <div class="retro-actions"><span class="status-badge coming">Coming Soon</span><a class="button" href="#mission">Follow the mission</a></div>
+        <div class="retro-actions"><span class="status-badge coming">In Development</span><a class="button" href="#mission">Follow the mission</a></div>
       </div>
     </section>
 
@@ -68,7 +68,7 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
       <div class="shell retro-mission-layout">
         <div>
           <p class="retro-label">Pilot’s manual</p>
-          <h2 id="mission-title">One thumb. One ship. 1,000 levels.</h2>
+          <h2 id="mission-title">One thumb. One ship. Waves incoming.</h2>
           <p>Drag to move. Keep contact to fire. Break enemy formations before they reach Thum B, collect power-ups, recruit Wing ThumBs, and reinforce the base below.</p>
           <div class="retro-feature-grid">
             <article><b>MOVE</b><span>One-thumb control</span></article>
@@ -88,8 +88,8 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
 
     <section class="retro-bosses" id="bosses" aria-labelledby="boss-title">
       <div class="shell">
-        <header class="retro-section-heading"><p>Ten sectors · ten major threats</p><h2 id="boss-title">A new legend every 100 levels.</h2></header>
-        <div class="retro-boss-reel">${bosses.map(([level, name, file]) => `<article><img src="assets/commander-thumb-boss-${file}.svg" alt="${name}, major boss at Level ${level}" width="150" height="150" loading="lazy"><b>Level ${level}</b><span>${name}</span></article>`).join("")}</div>
+        <header class="retro-section-heading"><p>Threat concepts from the Thum System</p><h2 id="boss-title">Every wave introduces a new kind of danger.</h2></header>
+        <div class="retro-boss-reel">${bosses.map(([level, name, file]) => `<article><img src="assets/commander-thumb-boss-${file}.svg" alt="${name}, a Commander Thum-B threat concept" width="150" height="150" loading="lazy"><b>Threat ${String(Number(level) / 100).padStart(2, "0")}</b><span>${name}</span></article>`).join("")}</div>
       </div>
     </section>
 
@@ -97,7 +97,7 @@ export const commanderPage = ({ page, company, siteUrl, gameNav }) => page({
       <div class="shell">
         <header class="retro-section-heading"><p>Transmissions from mission control</p><h2 id="commander-news-title">The story is just beginning.</h2></header>
         <div class="retro-news-grid">${commanderNews.map(([slug, title]) => `<a href="news-${slug}.html"><span><b class="game-title-case">Commander Thum-B</b> · Development</span><strong>${title}</strong><em>Read transmission →</em></a>`).join("")}</div>
-        <div class="retro-final"><p>Thum A invades. Thum B defends. Thum C watches.</p><strong>Commander Thum-B must save them all.</strong><span class="status-badge coming">Coming Soon</span></div>
+        <div class="retro-final"><p>Thum A invades. Thum B defends. Thum C watches.</p><strong>Commander Thum-B must save them all.</strong><span class="status-badge coming">In Development</span></div>
       </div>
     </section>`
 });
