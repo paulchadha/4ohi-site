@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-08-01T18:02:05.523Z",
+  "base": "http://127.0.0.1:4173",
+  "passed": [
+    "01 homepage responds without browser errors",
+    "02 homepage has one clear H1",
+    "03 rejected feature stage is absent",
+    "04 compact studio marquee is present",
+    "05 four major editorial worlds are present",
+    "06 all seven portfolio worlds are present",
+    "07 homepage has no nested links",
+    "08 Palace major link",
+    "09 Bobby major link",
+    "10 Evil Doom major link",
+    "11 Commander major link",
+    "12 canonical seven-game names render",
+    "13 outdated Bobby naming is absent",
+    "14 Evil Doom approved purple is active",
+    "15 homepage news is capped at three",
+    "16 compact Palace band has play link",
+    "17 mobile 390x844 has no overflow or broken art",
+    "18 mobile 360x800 has no overflow or broken art",
+    "19 mobile 430x932 has no overflow or broken art",
+    "20 landscape 844x390 has no overflow or broken art",
+    "21 tablet 768x1024 has no overflow or broken art",
+    "22 laptop 1366x768 has no overflow or broken art",
+    "23 desktop 1440x900 has no overflow or broken art",
+    "24 mobile menu opens accessibly",
+    "25 major game keyboard focus is visible",
+    "26 reduced motion removes art transitions",
+    "27 Canadian homepage copy activates",
+    "28 Canadian mode is selectable",
+    "29 Canadian mode persists through links",
+    "30 Bobby gets specific Canadian copy",
+    "31 Games Canadian copy",
+    "32 About Canadian copy",
+    "33 Support Canadian copy",
+    "34 Privacy Canadian clarity",
+    "35 Canadian 404 recovery"
+  ],
+  "failed": [],
+  "metrics": {
+    "390x844": {
+      "h1": 1,
+      "overflow": 0,
+      "broken": 0,
+      "nested": 0
+    },
+    "360x800": {
+      "h1": 1,
+      "overflow": 0,
+      "broken": 0,
+      "nested": 0
+    },
+    "430x932": {
+      "h1": 1,
+      "overflow": 0,
+      "broken": 0,
+      "nested": 0
+    },
+    "844x390": {
+      "h1": 1,
+      "overflow": 0,
+      "broken": 0,
+      "nested": 0
+    },
+    "768x1024": {
+      "h1": 1,
+      "overflow": 0,
+      "broken": 0,
+      "nested": 0
+    },
+    "1366x768": {
+      "h1": 1,
+      "overflow": 0,
+      "broken": 0,
+      "nested": 0
+    },
+    "1440x900": {
+      "h1": 1,
+      "overflow": 0,
+      "broken": 0,
+      "nested": 0
+    }
+  },
+  "centralCopyKeys": 73,
+  "forbiddenBobbyName": false
+}
