@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 import { commanderPage } from "./commander-content-v2.mjs";
 import { featuredGames, gameByKey, gameCatalog, primaryGames } from "./game-catalog.mjs";
+import { playableStudioHomepage } from "./homepage-playable-studio.mjs";
 import { bobbyPage, evilDoomPage } from "./portfolio-content.mjs";
 
 const root = resolve(import.meta.dirname, "..");
@@ -32,7 +33,7 @@ write("assets/asset-manifest.js", `window.FOUR_HEARTS_ASSETS = Object.freeze(${J
 const nav = (current) => {
   const featuredMenuLinks = featuredGames.map((game) => `<a class="featured-game" href="${game.infoUrl}"${game.key === current ? ' aria-current="page"' : ""}><img src="${game.artwork}" alt="" width="320" height="200"><strong>${game.title}</strong><small>${game.status}</small></a>`).join("");
   const compactMenuLinks = gameCatalog.filter(({ featured }) => !featured).map((game) => `<a class="compact-game" href="${game.infoUrl}"${game.key === current ? ' aria-current="page"' : ""}><img src="${game.artwork}" alt="" width="62" height="62"><strong>${game.title}</strong><small>${game.status}</small></a>`).join("");
-  return `<header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}><img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="4OH — Four of Hearts Interactive home" width="76" height="58"><span class="brand-copy">Four of Hearts<small>Interactive</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button><nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary"><details class="games-menu"${["games", "palace", "play", "commander", "bobby", "evil-doom", "hearts", "spades", "euchre"].includes(current) ? " data-current=true" : ""}><summary>Games</summary><div class="games-menu-panel">${featuredMenuLinks}${compactMenuLinks}<a class="view-all-games" href="games.html"${current === "games" ? ' aria-current="page"' : ""}>View All Games →</a></div></details><a href="news.html"${current === "news" ? ' aria-current="page"' : ""}>News</a><a href="about.html"${current === "about" ? ' aria-current="page"' : ""}>About</a><a class="nav-play-palace" href="palace-play.html"${current === "play" ? ' aria-current="page"' : ""}>Play Palace</a></nav><div class="header-tools" aria-label="Site preferences"><label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label><button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button></div></div></header>`;
+  return `<header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}><img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="4OH — Four of Hearts Interactive home" width="76" height="58"><span class="brand-copy">Four of Hearts<small>Interactive</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button><nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary"><details class="games-menu"${["games", "palace", "play", "commander", "bobby", "evil-doom", "hearts", "spades", "euchre"].includes(current) ? " data-current=true" : ""}><summary data-canadian-key="nav.games">Games</summary><div class="games-menu-panel">${featuredMenuLinks}${compactMenuLinks}<a class="view-all-games" href="games.html"${current === "games" ? ' aria-current="page"' : ""} data-canadian-key="nav.viewAll">View All Games →</a></div></details><a href="news.html"${current === "news" ? ' aria-current="page"' : ""} data-canadian-key="nav.news">News</a><a href="about.html"${current === "about" ? ' aria-current="page"' : ""} data-canadian-key="nav.about">About</a><a class="nav-play-palace" href="palace-play.html"${current === "play" ? ' aria-current="page"' : ""} data-canadian-key="nav.playPalace">Play Palace</a></nav><div class="header-tools" aria-label="Site preferences"><label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label><button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button></div></div></header>`;
 };
 const globalDialogs = () => `
   <dialog class="site-dialog" data-settings-dialog aria-labelledby="settings-title">
@@ -74,7 +75,7 @@ const palaceTableTools = () => `<aside class="palace-table-tools" data-palace-co
 
 const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid">
-    <div><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-copy">Colorful, social, original games—from classic card-table competition to entirely new worlds.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
+    <div><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-copy" data-canadian-key="footer.statement">Colorful, social, original games—from classic card-table competition to entirely new worlds.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
     <nav class="footer-group" aria-label="Four of Hearts Interactive"><h2>Four of Hearts Interactive</h2><a href="index.html">Home</a><a href="about.html">About 4OH</a><a href="news.html">News</a><a href="support.html">Support</a></nav>
     <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="palace.html">Palace</a><a href="palace-play.html">Play Palace</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="evil-doom-adventures.html">Evil Doom Adventures</a><a href="commander-thumb.html">Commander Thum-B</a><a href="games.html">All Games</a></nav>
     <nav class="footer-group" aria-label="Legal"><h2>Legal & Safety</h2><a href="privacy.html">Privacy</a><a href="security.html">Security</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></nav>
@@ -109,16 +110,18 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/studio-reconstruction.css">
-  <link rel="stylesheet" href="assets/game-first-v3.css">
+  <link rel="stylesheet" href="assets/playable-studio.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
+  <script src="assets/canadian-copy.js" defer></script>
   <script src="assets/launch-countdown.js" defer></script>
   <script src="assets/product-authority.js" defer></script>
   <script src="assets/release-strip.js" defer></script>
   <script src="assets/power-cards.js" defer></script>
   <script src="assets/studio-reconstruction.js" defer></script>
-  <script src="assets/game-first-v3.js" defer></script>
+  <script src="assets/playable-studio.js" defer></script>
+  <script src="assets/canadian-mode.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
@@ -182,13 +185,15 @@ const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
 
 write("index.html", page({
-  title: "Four of Hearts Interactive | Original Game Worlds", description: "Play Palace and explore original card, arcade, platform, and family-adventure games from Four of Hearts Interactive.", path: "/", current: "home", bodyClass: "company-home game-first-home", image: "assets/brand-board.webp", imageAlt: "Original game worlds from Four of Hearts Interactive",
-  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"One Family. Many Games.", url:`${siteUrl}/`, logo:`${siteUrl}/assets/brand-mark-4oh.webp`, email:"support@4ohi.com", description:"An independent studio creating original card, arcade, platform, and family-adventure games." },
-  content: `<section class="feature-stage" data-feature-stage data-active-game="palace" aria-label="Featured games">${featuredGames.map((game, index) => `<article id="feature-${game.key}" class="feature-panel${index === 0 ? " is-active" : ""}" data-feature-panel data-game-key="${game.key}" style="--focal:${game.imageFocalPoint}"${index === 0 ? "" : ' hidden aria-hidden="true"'}><img class="feature-art" src="${game.heroArtwork}" alt="${game.alt}" width="1600" height="1000" style="object-position:${game.imageFocalPoint}"${index === 0 ? ' fetchpriority="high"' : ' loading="lazy"'}><div class="shell feature-content"><div class="feature-copy"><div class="feature-meta"><span>${game.status}</span><span>${game.genre}</span></div><${index === 0 ? "h1" : "h2"}>${game.title}</${index === 0 ? "h1" : "h2"}><p class="feature-tagline">${game.shortDescription}</p><div class="actions"><a class="button" href="${game.primaryAction}">${game.primaryActionLabel}</a>${game.secondaryAction ? `<a class="button secondary" href="${game.secondaryAction}">${game.secondaryActionLabel}</a>` : ""}</div></div></div></article>`).join("")}<div class="feature-selector-wrap"><div class="shell feature-selectors" role="tablist" aria-label="Choose a featured game">${featuredGames.map((game, index) => `<button class="feature-selector" type="button" role="tab" data-feature-selector aria-selected="${index === 0}" aria-controls="feature-${game.key}" style="--selector-accent:${game.theme.accent}"${index === 0 ? "" : ' tabindex="-1"'}><span>0${index + 1}</span><strong>${game.title}</strong><small>${game.status}</small></button>`).join("")}</div></div></section>
-  <section class="home-section all-games-stage" aria-labelledby="all-games-title"><div class="shell"><header class="home-section-head"><h2 id="all-games-title">Explore all games.</h2><p>Seven games. Seven identities. One studio building card-table competition, colorful adventures, shadow runs, and arcade action.</p></header><div class="game-world-grid">${gameCatalog.map((game) => `<article class="game-world-card ${game.key}${game.featured ? "" : " card-game"}" style="--focal:${game.imageFocalPoint}"><img src="${game.artwork}" alt="" width="960" height="960" loading="lazy" style="object-position:${game.imageFocalPoint}"><div class="game-world-copy"><span class="status-badge">${game.status}</span><h3>${game.title}</h3><p>${game.shortDescription}</p><a href="${game.primaryAction}">${game.primaryActionLabel} <span aria-hidden="true">→</span></a></div></article>`).join("")}</div></div></section>
-  <section class="home-section play-palace-home" aria-labelledby="play-palace-title"><div class="shell play-palace-layout"><div class="palace-table-art"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle game artwork" width="960" height="960" loading="lazy"></div><div class="play-palace-copy"><p class="eyebrow">Playable now on 4ohi.com</p><h2 id="play-palace-title">Learn the table by playing it.</h2><p>Match or beat the pile, discover the four power cards, and clear all three levels in a short interactive mini-match.</p><div class="actions"><a class="button" href="palace-play.html">Play Palace</a><a class="button secondary" href="palace.html">Learn About Palace</a></div></div></div></section>
-  <section class="home-section studio-news-home" aria-labelledby="latest-title"><div class="shell"><header class="home-section-head"><h2 id="latest-title">Latest from the studio.</h2><p>Honest development notes from the worlds currently taking shape.</p></header><div class="studio-news-list">${news.slice(0,3).map((item) => `<a class="studio-news-card" href="${articleFile(item.slug)}"><img src="${item.image}" alt="" width="320" height="180" loading="lazy"><div><div class="news-meta"><span>${item.category}</span><time datetime="${item.date}">${formatDate(item.date)}</time></div><h3>${productCopy(item.title)}</h3><p>${productCopy(item.description)}</p></div><span aria-hidden="true">→</span></a>`).join("")}</div><div class="actions"><a class="text-link" href="news.html">All studio news →</a></div></div></section>
-  <section class="studio-statement"><div class="shell"><p>Four of Hearts Interactive creates original card, arcade, and adventure games designed to be easy to start and worth coming back to.</p></div></section>`
+  title: "Four of Hearts Interactive | Original Game Worlds",
+  description: "Seven original game worlds from Four of Hearts Interactive: card-table competition, family adventure, shadow runs, and arcade action.",
+  path: "/",
+  current: "home",
+  bodyClass: "company-home playable-studio-home",
+  image: "assets/brand-board.webp",
+  imageAlt: "Original game worlds from Four of Hearts Interactive",
+  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"One Family. Many Games.", url:siteUrl + "/", logo:siteUrl + "/assets/brand-mark-4oh.webp", email:"support@4ohi.com", description:"An independent studio creating original card, arcade, platform, and family-adventure games." },
+  content: playableStudioHomepage({ gameCatalog, gameByKey, news, articleFile, formatDate, productCopy })
 }));
 
 write("palace.html", page({
