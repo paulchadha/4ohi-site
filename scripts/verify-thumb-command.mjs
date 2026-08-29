@@ -28,6 +28,7 @@ for (const route of routes) {
     page.on("console", (message) => { if (message.type() === "error") errors.push(message.text()); });
     const response = await page.goto(`${base}/${route}`, { waitUntil: "networkidle" });
     for (const image of await page.locator("img:visible").all()) await image.scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => [...document.images].every((image) => image.complete), null, { timeout: 15000 }).catch(() => {});
     const state = await page.evaluate(() => ({
       h1: document.querySelectorAll("h1").length,
       overflow: document.documentElement.scrollWidth - innerWidth,
@@ -86,7 +87,7 @@ const articleTitles = await news.locator('[data-news-tags*="thumb-command"] h2')
 if (articleTitles.length < 5) failures.push("Thumb Command news collection gate failed");
 await news.close();
 
-for (const [oldRoute, expected] of [["commander-thumb.html","thumb-command.html"],["news-commander-thumb-is-coming.html","news-thumb-command-save-planet-earth.html"],["news-welcome-to-the-thum-system.html","news-the-city-is-the-base.html"],["news-building-commander-thumb.html","news-meet-the-blueguard.html"]]) {
+for (const [oldRoute, expected] of [["games/commander-thum-b/","thumb-command.html"],["commander-thumb.html","thumb-command.html"],["news-commander-thumb-is-coming.html","news-thumb-command-save-planet-earth.html"],["news-welcome-to-the-thum-system.html","news-the-city-is-the-base.html"],["news-building-commander-thumb.html","news-meet-the-blueguard.html"]]) {
   const page = await browser.newPage();
   await page.goto(`${base}/${oldRoute}`, { waitUntil: "networkidle" });
   await page.waitForURL(new RegExp(`${expected.replaceAll(".", "\\.")}(?:[?#].*)?$`));
