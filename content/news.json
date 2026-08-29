@@ -1,15 +1,15 @@
 [
   {
     "slug": "thumb-command-save-planet-earth",
-    "title": "Introducing Commander Thum-B: Save Planet Earth",
+    "title": "Introducing Thumb Command: Save Planet Earth",
     "description": "Meet the Blueguard interceptor, the cities it protects, and the worldwide fight at the heart of Four of Hearts Interactive’s new arcade-defense direction.",
     "date": "2026-08-29",
-    "category": "Announcement",
+    "category": "Studio Dispatch",
     "gameKey": "thumb-command",
     "tags": [
-      "Commander Thum-B",
+      "Thumb Command",
       "Blueguard",
-      "World Campaign"
+      "City Campaign"
     ],
     "featured": true,
     "image": "assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg",
@@ -18,7 +18,7 @@
       {
         "heading": "A new command for Planet Earth",
         "paragraphs": [
-          "Commander Thum-B is a new creative direction from Four of Hearts Interactive: a fast, colorful arcade-defense game built around one clear promise—save Planet Earth.",
+          "Thumb Command is a new creative direction from Four of Hearts Interactive: a fast, colorful arcade-defense game built around one clear promise—save Planet Earth.",
           "Alien forces are descending on the cities below. The player launches the blue-white-gold Blueguard interceptor, breaks incoming formations, protects the city shield, and keeps every projectile away from the people beneath the battle."
         ]
       },
@@ -26,7 +26,7 @@
         "heading": "The city is the base",
         "paragraphs": [
           "There is no expendable outpost. Chicago, San Francisco, New York City, London, Tokyo, and future campaign destinations are the bases. Their skylines, weather, shields, and attack patterns give each defense a different pulse.",
-          "Commander Thum-B is in development. No public build, platform release, or release date has been announced; future availability news will be published only when it is real."
+          "Thumb Command is in development. No public build, platform release, or release date has been announced; future availability news will be published only when it is real."
         ]
       }
     ]
@@ -34,9 +34,9 @@
   {
     "slug": "unicorn-land-adventures-development",
     "title": "Building Unicorn Land Adventures",
-    "description": "Unicorn creation, magical habitats, decorating, discovery, and mini-games define a distinct creative world.",
+    "description": "Unicorn creation, magical habitats, decorating, discovery, and mini-games define a distinct creative game.",
     "date": "2026-08-29",
-    "category": "Development",
+    "category": "Build Notes",
     "gameKey": "unicorn-land",
     "tags": [
       "Building Unicorn Land Adventures",
@@ -58,9 +58,9 @@
   {
     "slug": "princess-land-adventures-development",
     "title": "Inside Princess Land Adventures",
-    "description": "Character style, castle rooms, cooking, decorating, and mini-games begin forming one creative world.",
+    "description": "Character style, castle rooms, cooking, decorating, and mini-games begin forming one creative game.",
     "date": "2026-08-29",
-    "category": "Development",
+    "category": "Build Notes",
     "gameKey": "princess-land",
     "tags": [
       "Inside Princess Land Adventures",
@@ -73,7 +73,7 @@
       {
         "heading": "Current development direction",
         "paragraphs": [
-          "Princess Land explores character styling, castle building, room decoration, cooking, and approachable mini-games inside one creative world.",
+          "Princess Land explores character styling, castle building, room decoration, cooking, and approachable mini-games inside one creative game.",
           "No public build, store availability, or release date is announced."
         ]
       }
@@ -82,36 +82,36 @@
   {
     "slug": "heartstack-unicorn-blast-development",
     "title": "HeartStack Unicorn Blast Joins the Workbench",
-    "description": "A first look at the character-led puzzle adventure, its block language, boosters, obstacles, and royal rescue goals.",
+    "description": "A first look at suit matching, colorful combos, crystal cages, boosters, and unicorn rescue.",
     "date": "2026-08-29",
-    "category": "Development",
+    "category": "Build Notes",
     "gameKey": "heartstack",
     "tags": [
       "HeartStack Unicorn Blast Joins the Workbench",
       "In Development"
     ],
     "featured": false,
-    "image": "assets/portfolio-2026/heartstack-unicorn-blast.webp",
-    "imageAlt": "HeartStack Unicorn Blast puzzle artwork",
+    "image": "assets/heartstack-2026/heartstack-gameplay.webp",
+    "imageAlt": "HeartStack Unicorn Blast colorful heart, spade, club, and diamond match board",
     "body": [
       {
-        "heading": "Current development direction",
+        "heading": "Current build direction",
         "paragraphs": [
-          "HeartStack combines colourful block-clearing decisions with character powers, boosters, obstacles, and rescue goals.",
-          "No public build, store availability, or release date is announced."
+          "HeartStack combines colorful suit matching with cascading combos, boosters, rainbow effects, crystal cages, and unicorn rescue sequences.",
+          "No king, queen, or human royalty is part of the current product identity. No public build, store availability, or release date is announced."
         ]
       }
     ]
   },
   {
     "slug": "evil-doom-two-heroes-one-adventure",
-    "title": "Evil Doom Adventures: Two Heroes, One Route",
+    "title": "Evil Doom Girl Adventures: Two Heroes, One Route",
     "description": "Why Evil Doom Boy and Evil Doom Girl now trade the lead inside one shared action-adventure identity.",
     "date": "2026-08-29",
-    "category": "Development",
+    "category": "Build Notes",
     "gameKey": "evil-doom",
     "tags": [
-      "Evil Doom Adventures",
+      "Evil Doom Girl Adventures",
       "In Development"
     ],
     "featured": false,
@@ -129,13 +129,13 @@
   },
   {
     "slug": "bobby-tower-defense-takes-shape",
-    "title": "Bobby’s Tower-Defense World Takes Shape",
+    "title": "Bobby’s Tower Defense Takes Shape",
     "description": "Bread-powered towers, branching paths, cheerful enemies, and one heroic dinosaur define Bobby’s current direction.",
     "date": "2026-08-29",
-    "category": "Development",
+    "category": "Build Notes",
     "gameKey": "bobby",
     "tags": [
-      "Bobby’s Tower-Defense World Takes Shape",
+      "Bobby’s Tower Defense Takes Shape",
       "In Development"
     ],
     "featured": false,
@@ -153,19 +153,19 @@
   },
   {
     "slug": "the-city-is-the-base",
-    "title": "The City Is the Base: Building Commander Thum-B’s New Battlefields",
+    "title": "The City Is the Base: Building Thumb Command’s New Battlefields",
     "description": "Why Chicago sits directly beneath the player—and how five cities turn shield defense into a worldwide arcade campaign.",
     "date": "2026-08-29",
-    "category": "World",
+    "category": "Studio Dispatch",
     "gameKey": "thumb-command",
     "tags": [
-      "Commander Thum-B",
+      "Thumb Command",
       "Cities",
       "Design"
     ],
     "featured": false,
     "image": "assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg",
-    "imageAlt": "Commander Thum-B battle above Chicago with the city shield active",
+    "imageAlt": "Thumb Command battle above Chicago with the city shield active",
     "body": [
       {
         "heading": "Start at the lakefront",
@@ -175,7 +175,7 @@
         ]
       },
       {
-        "heading": "A world campaign with a new sky every time",
+        "heading": "A city campaign with a new sky every time",
         "paragraphs": [
           "San Francisco catches the invasion at sunset. New York fights through rain and lightning. London protects the Thames under a gold shield. Tokyo becomes a neon counterstrike as portals open above the city.",
           "The shared mission stays clear while atmosphere, visibility, enemy rhythm, and shield color make every stop feel like a new defense—not a recycled background."
@@ -186,12 +186,12 @@
   {
     "slug": "meet-the-blueguard",
     "title": "Meet the Blueguard: Earth’s Last Interceptor",
-    "description": "Inside Commander Thum-B’s blue-white-gold hero ship, responsive arcade control, and Vanguard, Sentinel, and Paladin upgrade path.",
+    "description": "Inside Thumb Command’s blue-white-gold hero ship, responsive arcade control, and Vanguard, Sentinel, and Paladin upgrade path.",
     "date": "2026-08-29",
-    "category": "Development",
+    "category": "Build Notes",
     "gameKey": "thumb-command",
     "tags": [
-      "Commander Thum-B",
+      "Thumb Command",
       "Blueguard",
       "Upgrades"
     ],
@@ -217,19 +217,19 @@
   },
   {
     "slug": "designing-the-alien-invasion",
-    "title": "Designing the Alien Invasion of Commander Thum-B",
+    "title": "Designing the Alien Invasion of Thumb Command",
     "description": "How purple silhouettes, readable formations, distinct enemy classes, and a massive Mothership create family-friendly arcade pressure.",
     "date": "2026-08-29",
-    "category": "Design",
+    "category": "Build Notes",
     "gameKey": "thumb-command",
     "tags": [
-      "Commander Thum-B",
+      "Thumb Command",
       "Aliens",
       "Bosses"
     ],
     "featured": false,
     "image": "assets/thumb-command/thumb-command-alien-fleet-news-1200.jpg",
-    "imageAlt": "Purple and magenta Mothership boss from Commander Thum-B",
+    "imageAlt": "Purple and magenta Mothership boss from Thumb Command",
     "body": [
       {
         "heading": "A fleet you can read at full speed",
@@ -249,24 +249,24 @@
   },
   {
     "slug": "thumb-command-world-tour",
-    "title": "From Chicago to Tokyo: The Commander Thum-B World Tour",
-    "description": "Five cities establish a worldwide campaign—and a flexible foundation for future Commander Thum-B missions.",
+    "title": "From Chicago to Tokyo: The Thumb Command World Tour",
+    "description": "Five cities establish a worldwide campaign—and a flexible foundation for future Thumb Command missions.",
     "date": "2026-08-29",
-    "category": "World",
+    "category": "Studio Dispatch",
     "gameKey": "thumb-command",
     "tags": [
-      "Commander Thum-B",
-      "World Tour",
+      "Thumb Command",
+      "City Campaign",
       "Cities"
     ],
     "featured": false,
     "image": "assets/thumb-command/thumb-command-city-tokyo-news-1200.jpg",
-    "imageAlt": "San Francisco, New York City, London, and Tokyo campaign environments from Commander Thum-B",
+    "imageAlt": "San Francisco, New York City, London, and Tokyo campaign environments from Thumb Command",
     "body": [
       {
         "heading": "Protect the whole planet",
         "paragraphs": [
-          "Commander Thum-B begins with recognizable places because the mission is planetary, not distant. Chicago’s lakefront, San Francisco’s bay, New York’s harbor, London’s Thames, and Tokyo’s neon skyline make every victory feel connected to Earth.",
+          "Thumb Command begins with recognizable places because the mission is planetary, not distant. Chicago’s lakefront, San Francisco’s bay, New York’s harbor, London’s Thames, and Tokyo’s neon skyline make every victory feel connected to Earth.",
           "The Blueguard and alien fleet remain consistent, but the environment changes the color, weather, rhythm, and emotional temperature of the fight."
         ]
       },
@@ -274,17 +274,17 @@
         "heading": "A campaign designed to expand",
         "paragraphs": [
           "The city-as-base structure gives future missions a clear foundation: a place worth protecting, a shield under pressure, and an invasion pattern shaped for that skyline.",
-          "No additional city, launch window, or public platform is being promised here. The world tour describes the current creative direction and the room it leaves for future development."
+          "No additional city, launch window, or public platform is being promised here. The city campaign describes the current creative direction and the room it leaves for future development."
         ]
       }
     ]
   },
   {
     "slug": "bobby-the-breadasaurus-joins-the-family",
-    "title": "Bobby the Breadasaurus Builds a Tower-Defense World",
-    "description": "Bobby’s current direction puts the little dinosaur at the centre of a colourful, bread-powered tower-defense adventure.",
+    "title": "Bobby the Breadasaurus Builds a Tower Defense",
+    "description": "Bobby’s current direction puts the little dinosaur at the centre of a colourful bread-powered tower-defense game.",
     "date": "2026-07-31",
-    "category": "Announcement",
+    "category": "Studio Dispatch",
     "gameKey": "bobby",
     "tags": [
       "Bobby the Breadasaurus",
@@ -312,14 +312,14 @@
     ]
   },
   {
-    "slug": "shadow-run-enters-development",
-    "title": "Evil Doom Adventures Enters Dual-Hero Development",
+    "slug": "evil-doom-girl-enters-development",
+    "title": "Evil Doom Girl Adventures Enters Dual-Hero Development",
     "description": "Evil Doom Boy and Evil Doom Girl share one action-adventure identity built around movement, trust, and rescue.",
     "date": "2026-07-31",
-    "category": "Development",
+    "category": "Build Notes",
     "gameKey": "evil-doom",
     "tags": [
-      "Evil Doom Adventures",
+      "Evil Doom Girl Adventures",
       "Dual Hero",
       "In Development"
     ],
@@ -330,7 +330,7 @@
       {
         "heading": "Two shadows. One adventure.",
         "paragraphs": [
-          "Evil Doom Adventures is a dual-hero action world in development at Four of Hearts Interactive. Evil Doom Boy and Evil Doom Girl trade the lead through a rescue mission that keeps testing whether they can trust each other.",
+          "Evil Doom Girl Adventures is a dual-hero action game in development at Four of Hearts Interactive. Evil Doom Boy and Evil Doom Girl trade the lead through a rescue mission that keeps testing whether they can trust each other.",
           "Current visual and movement explorations are development directions rather than a claim that a public build exists."
         ]
       },
@@ -348,7 +348,7 @@
     "title": "Why We're Building Palace",
     "description": "A familiar card-table game deserves a modern home that respects its mystery, momentum, and many table traditions.",
     "date": "2026-07-26",
-    "category": "Palace",
+    "category": "Playtest",
     "featured": false,
     "image": "assets/icon-palace-4hearts.webp",
     "imageAlt": "Palace castle artwork from Four of Hearts Interactive",
@@ -367,14 +367,15 @@
           "Founder testing is underway. Palace is not publicly available in an app store yet, and we will not pretend otherwise. Development news will stay honest about what has been tested and what is still ahead."
         ]
       }
-    ]
+    ],
+    "tags": []
   },
   {
     "slug": "palace-enters-founder-testing",
     "title": "Palace Enters Founder Testing",
     "description": "The flagship Four of Hearts experience is in hands-on internal testing, with attention on clarity, feel, and the full table journey.",
     "date": "2026-07-23",
-    "category": "Development",
+    "category": "Build Notes",
     "featured": false,
     "image": "assets/icon-palace-4hearts.webp",
     "imageAlt": "Blue Palace castle artwork",
@@ -393,40 +394,42 @@
           "The website preview now teaches the approved Four of Hearts power cards in context: 2 resets, 7 requires lower, 8 is transparent, and 10 burns the pile. These product rules are not presented as universal folk-game rules."
         ]
       }
-    ]
+    ],
+    "tags": []
   },
   {
     "slug": "meet-the-four-games",
-    "title": "Meet the Ten Games in the 4OH Studio",
-    "description": "Ten distinct products now share one independent studio, from Palace and Commander Thum-B to puzzle, creative, card-table, and action worlds.",
+    "title": "What We’re Making at 4OH",
+    "description": "A direct look at the current Four of Hearts lineup, from classic cards to arcade defense, puzzle play, and new experiments.",
     "date": "2026-07-20",
-    "category": "Games",
+    "category": "Studio Dispatch",
     "featured": false,
     "image": "assets/brand-board.webp",
     "imageAlt": "Four of Hearts brand board with Palace, Hearts, Spades, and Euchre",
     "body": [
       {
-        "heading": "Ten worlds. One studio.",
+        "heading": "The current lineup",
         "paragraphs": [
-          "Palace is the playable card-table preview. Commander Thum-B opens a worldwide arcade-defense campaign. Bobby brings tower defence; Evil Doom Adventures brings a dual-hero rescue; HeartStack, Princess Land, and Unicorn Land build distinct puzzle and creative worlds.",
-          "Hearts, Spades, and Euchre complete the current portfolio with three kinds of classic card-table strategy."
+          "Palace is the playable card-table preview. Thumb Command brings colorful arcade defense. Bobby brings tower defence; Evil Doom Girl Adventures brings a dual-hero rescue; HeartStack, Princess Land, and Unicorn Land bring puzzle and creative play.",
+          "Hearts, Spades, and Euchre round out the current lineup with three kinds of classic card-table strategy."
         ]
       },
       {
         "heading": "Still in testing",
         "paragraphs": [
-          "Every title is still being built or tested. Website lessons demonstrate real ideas from the card games, but they are not complete public releases. Bobby, Evil Doom Adventures, and Commander Thum-B do not have public builds or announced release dates.",
-          "More games can join this structure later. Four of Hearts will introduce them only when there is an approved product and an honest status to share."
+          "Every title is still being built or tested. Website lessons demonstrate real ideas from the card games, but they are not complete public releases. Bobby, Evil Doom Girl Adventures, and Thumb Command do not have public builds or announced release dates.",
+          "The lineup can grow without turning the studio into a grand theory. We will introduce more only when there is an approved product and an honest status to share."
         ]
       }
-    ]
+    ],
+    "tags": []
   },
   {
     "slug": "building-a-safer-card-table",
     "title": "Building a Safer, Family-Friendly Card Table",
     "description": "How Four of Hearts approaches clear policies, restrained data use, accessibility, and honest Internal Alpha communication.",
     "date": "2026-07-17",
-    "category": "Company",
+    "category": "Studio Dispatch",
     "featured": false,
     "image": "assets/brand-mark-4oh.webp",
     "imageAlt": "Four of Hearts Interactive emblem",
@@ -445,23 +448,24 @@
           "Security reports and player-support requests currently use support@4ohi.com. We do not promise a bug bounty or a guaranteed response time."
         ]
       }
-    ]
+    ],
+    "tags": []
   },
   {
     "slug": "welcome-to-four-of-hearts",
     "title": "Welcome to the Four of Hearts Studio",
-    "description": "Meet the independent South Dakota software studio building ten distinct game worlds.",
+    "description": "Meet the independent South Dakota software studio making classic cards, original games, and useful applications.",
     "date": "2026-07-14",
-    "category": "Studio",
+    "category": "From the Workbench",
     "featured": false,
     "image": "assets/brand-mark-4oh.webp",
     "imageAlt": "Four of Hearts Interactive logo",
     "body": [
       {
-        "heading": "Ten products. One independent studio.",
+        "heading": "Small studio. Plenty in progress.",
         "paragraphs": [
-          "Four of Hearts Interactive, LLC is a South Dakota software studio creating original card, arcade, strategy, platform, puzzle, and creative-world experiences. The current public portfolio contains ten distinct products.",
-          "We care about experiences that are easy to begin, rewarding to revisit, and worth sharing."
+          "Four of Hearts Interactive, LLC is a South Dakota software studio creating original card, arcade, strategy, platform, puzzle, and creative experiences.",
+          "We like old games. We like new games. Mostly, we like making things that are easy to begin and worth coming back to."
         ]
       },
       {
@@ -471,6 +475,7 @@
           "If you are helping test a Four of Hearts game, the Support page explains how to send a useful report to support@4ohi.com."
         ]
       }
-    ]
+    ],
+    "tags": []
   }
 ]

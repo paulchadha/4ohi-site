@@ -16,7 +16,7 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
 
     "home.marqueeKicker": "Independent games, responsibly overprepared",
     "home.marqueeTitle": "Four of Hearts Interactive",
-    "home.marqueeStatement": "Seven game worlds. One studio. Everyone remembered a sweater.",
+    "home.marqueeStatement": "Games, apps, and one studio. Everyone remembered a sweater.",
     "home.explore": "Explore the games. We kept the good chair open.",
     "home.play": "Pull up a chair and play Palace",
     "home.worldsEyebrow": "A polite amount of danger",
@@ -40,12 +40,12 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
 
     "doom.status": "In development. Purple respected. Shadows winterized.",
     "doom.short": "Two heroes cross dangerous shadows and apologize only when it won’t slow the rescue.",
-    "doom.action": "Enter Evil Doom Adventures, carefully",
+    "doom.action": "Enter Evil Doom Girl Adventures, carefully",
     "doom.detail": "Trust is dangerous. Leaving your partner behind would also be extremely poor manners.",
 
     "thumb-command.status": "In development. The launch pad has a block heater now.",
     "thumb-command.short": "Defend Earth, warn the aliens politely, and make absolutely no fuss about saving the planet.",
-    "thumb-command.action": "Enter Commander Thum-B, boots off please",
+    "thumb-command.action": "Enter Thumb Command, boots off please",
     "thumb-command.detail": "One interceptor. One planet. Several frozen launch procedures nobody read until this morning.",
 
     "hearts.status": "Internal alpha. Feelings remain strategically complicated.",
@@ -82,8 +82,8 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
     "404.html": [[".page-hero h1", "notFound.title"], [".page-hero .lede", "notFound.lede"]]
   }),
   metadata: Object.freeze({
-    "index.html": ["Four of Hearts Interactive | Games, politely organized", "Seven original game worlds from one independent studio. Everyone remembered a sweater."],
-    "games.html": ["Games | Four of Hearts Interactive, all accounted for", "Explore all ten Four of Hearts game worlds. Nobody was left waiting in the car."],
+    "index.html": ["Four of Hearts Interactive | Games, politely organized", "Original games and playful software from one independent studio. Everyone remembered a sweater."],
+    "games.html": ["Games | Four of Hearts Interactive, all accounted for", "See what Four of Hearts is making. Nobody was left waiting in the car."],
     "404.html": ["Page wandered off | Four of Hearts Interactive", "Sorry about this. The page wandered off and was too polite to say where."]
   })
 });

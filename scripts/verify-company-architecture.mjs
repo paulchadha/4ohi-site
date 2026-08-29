@@ -29,7 +29,7 @@ const failures = [];
 const results = { checkedAt: new Date().toISOString(), base, routes: [], responsive: [], interactions: {}, redirects: [], failures };
 const fail = (message) => failures.push(message);
 const retired = /Commander\s+(?:Thum|Thumb)|\bThum[-‑ ]B\b|Thum System/i;
-const expectedGames = ["Palace", "Bobby the Breadasaurus", "Evil Doom Adventures: Shadow Run", "Thumb Command", "Hearts", "Spades", "Euchre"];
+const expectedGames = ["Palace", "Bobby the Breadasaurus", "Evil Doom Girl Adventures", "Thumb Command", "Hearts", "Spades", "Euchre"];
 
 const browser = await chromium.launch({ headless: true, executablePath: chrome });
 const context = await browser.newContext();
@@ -58,7 +58,7 @@ for (const route of regularRoutes) {
     main: Boolean(document.querySelector("main#main")),
     skip: Boolean(document.querySelector('.skip-link[href="#main"]')),
     nav: [...document.querySelectorAll("#primary-navigation > a, #primary-navigation > details > summary")].map((node) => node.textContent.trim()),
-    gameLinks: [...document.querySelectorAll(".games-menu-panel > a")].map((node) => node.textContent.trim()),
+    gameLinks: [...document.querySelectorAll(".games-menu-panel a")].map((node) => node.textContent.trim()),
     brokenImages: [...document.images].filter((image) => image.currentSrc && (!image.complete || image.naturalWidth === 0)).map((image) => image.currentSrc),
     overflow: Math.max(0, document.documentElement.scrollWidth - document.documentElement.clientWidth),
     title: document.title,
@@ -69,7 +69,7 @@ for (const route of regularRoutes) {
   }));
   results.routes.push({ route, status: response?.status(), ...state, text: undefined, errors });
   if (response?.status() !== 200 || state.h1 !== 1 || !state.main || !state.metadata || state.brokenImages.length || state.overflow > 1 || errors.length) fail(`${route}: route, metadata, image, overflow, or runtime failure`);
-  if (route !== "404.html" && (!state.skip || state.nav.join("|") !== "Games|News|About|Play Palace")) fail(`${route}: company navigation or skip link is incomplete`);
+  if (route !== "404.html" && (!state.skip || state.nav.join("|") !== "Games|News|About|Support|Play Palace")) fail(`${route}: company navigation or skip link is incomplete`);
   if (route !== "404.html" && !expectedGames.every((title) => state.gameLinks.some((item) => item.startsWith(title)))) fail(`${route}: Games navigation is incomplete`);
   if (retired.test(state.title) || retired.test(state.text)) fail(`${route}: retired public branding remains visible`);
   if (state.tracking || state.storage) fail(`${route}: tracking or persisted browser state detected`);
@@ -132,8 +132,8 @@ await home.locator(".menu-toggle").click();
 await home.locator(".games-menu > summary").click();
 await home.locator('.games-menu-panel a[href*="games/thumb-command/"]').waitFor({ state: "visible" });
 results.interactions.home = {
-  portfolioVisible: await home.locator(".portfolio-link.thumb-command").isVisible(),
-  campaignVisible: await home.locator(".palace-campaign-hero").isVisible(),
+  portfolioVisible: await home.locator('.lineup-feature[data-lineup-game="thumb-command"]').isVisible(),
+  campaignVisible: await home.locator(".studio-opening").isVisible(),
   menuLinkVisible: await home.locator('.games-menu-panel a[href*="games/thumb-command/"]').isVisible(),
   menuExpanded: await home.locator(".menu-toggle").getAttribute("aria-expanded")
 };

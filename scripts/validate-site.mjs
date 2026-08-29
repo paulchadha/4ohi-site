@@ -29,7 +29,7 @@ for (const page of pages) {
   check(/<link\s+rel="icon"/i.test(html), `${page}: favicon is missing`);
   check(!/[�]|â€”|â€™|Â©/.test(html), `${page}: text contains encoding artifacts`);
   if (legacyRedirect) check(/name="robots"\s+content="noindex/i.test(html), `${page}: noindex is missing from compatibility route`);
-  else check(!/Commander\s+(?:Thumb|ThumB|Thumb-B)|\bThumb Command\b/i.test(html), `${page}: retired arcade branding remains visible`);
+  else check(!/Commander\s+(?:Thumb|ThumB|Thumb-B)|Commander\s+Thum-B/i.test(html), `${page}: obsolete arcade branding remains visible`);
   const unsafeForms = [...html.matchAll(/<form\b([^>]*)>/gi)].filter(([, attrs]) => !/\bmethod="dialog"/i.test(attrs));
   check(unsafeForms.length === 0, `${page}: unexpected non-dialog form found`);
   check(!/(google-analytics|googletagmanager|facebook\.net|doubleclick|segment\.com)/i.test(html), `${page}: tracking code found`);
@@ -70,12 +70,12 @@ check(readFileSync(join(root, "CNAME"), "utf8").trim() === "4ohi.com", "CNAME: e
 const robots = readFileSync(join(root, "robots.txt"), "utf8");
 check(robots.includes("https://4ohi.com/sitemap.xml"), "robots.txt: sitemap URL is missing");
 const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
-const sitemapExcluded = new Set(["404.html", "palace.html", "thumb-command.html", "commander-thumb.html", "news-building-commander-thumb.html", "news-commander-thumb-is-coming.html", "news-welcome-to-the-thum-system.html"]);
+const sitemapExcluded = new Set(["404.html", "palace.html", "thumb-command.html", "commander-thumb.html", "news-building-commander-thumb.html", "news-commander-thumb-is-coming.html", "news-welcome-to-the-thum-system.html", "news-shadow-run-enters-development.html"]);
 for (const page of pages.filter((page) => !sitemapExcluded.has(page))) {
   const url = page === "index.html" ? "https://4ohi.com/" : `https://4ohi.com/${page}`;
   check(sitemap.includes(`<loc>${url}</loc>`), `sitemap.xml: missing ${url}`);
 }
-check(sitemap.includes("<loc>https://4ohi.com/games/commander-thum-b/</loc>"), "sitemap.xml: missing canonical Commander Thum-B route");
+check(sitemap.includes("<loc>https://4ohi.com/games/thumb-command/</loc>"), "sitemap.xml: missing canonical Thumb Command route");
 
 const allFiles = readdirSync(root, { recursive: true, withFileTypes: true })
   .filter((entry) => entry.isFile() && !entry.parentPath.includes(`${join(root, ".git")}`))

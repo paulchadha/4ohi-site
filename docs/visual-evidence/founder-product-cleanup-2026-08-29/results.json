@@ -1,0 +1,28 @@
+{
+  "passed": [
+    "canonical product names and obsolete labels",
+    "homepage editorial lineup is complete and fully linked",
+    "games menu has three balanced groups",
+    "mobile menu remains compact and keyboard reachable",
+    "Evil Doom Girl leads one canonical game",
+    "HeartStack uses current no-royalty art and copy",
+    "Palace table selector stays in Palace context",
+    "responsive 1440x900",
+    "responsive 1280x800",
+    "responsive 1024x768",
+    "responsive 820x1180",
+    "responsive 430x932",
+    "responsive 375x812",
+    "responsive 320x700"
+  ],
+  "failed": [],
+  "viewports": {
+    "1440x900": "pass",
+    "1280x800": "pass",
+    "1024x768": "pass",
+    "820x1180": "pass",
+    "430x932": "pass",
+    "375x812": "pass",
+    "320x700": "pass"
+  }
+}

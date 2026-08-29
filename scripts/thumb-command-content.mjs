@@ -25,17 +25,17 @@ const enemies = ["Stingray", "Voidripper", "Hexblade", "Skitterer", "Wraith", "B
 const defenses = ["Energy core", "Repair module", "Shield power-up", "Weapon spread", "Missile upgrade", "Plasma turret", "Missile battery", "Shield projector"];
 
 export const thumbCommandPage = ({ page, company, siteUrl, gameNav }) => page({
-  title: "Commander Thum-B — Save Planet Earth | Four of Hearts Interactive",
-  description: "Command the Blueguard interceptor, defend cities around the world, and stop a massive alien invasion in Commander Thum-B from Four of Hearts Interactive.",
+  title: "Thumb Command — Save Planet Earth | Four of Hearts Interactive",
+  description: "Command the Blueguard interceptor, defend cities around the world, and stop a massive alien invasion in Thumb Command from Four of Hearts Interactive.",
   path: "/games/thumb-command/",
   current: "thumb-command",
   image: "assets/thumb-command/thumb-command-social-1200x630.jpg",
-  imageAlt: "The Blueguard interceptor defending Chicago from a purple alien fleet in Commander Thum-B",
+  imageAlt: "The Blueguard interceptor defending Chicago from a purple alien fleet in Thumb Command",
   bodyClass: "thumb-command-page",
   jsonLd: {
     "@context": "https://schema.org",
     "@type": "VideoGame",
-    name: "Commander Thum-B",
+    name: "Thumb Command",
     description: "A fast, colorful space-defense arcade game about protecting the cities of Earth from an alien invasion.",
     applicationCategory: "Game",
     playMode: "SinglePlayer",
@@ -58,7 +58,7 @@ export const thumbCommandPage = ({ page, company, siteUrl, gameNav }) => page({
           <div class="tc-actions"><a class="tc-button" href="#mission">See the Mission</a><a class="tc-button ghost" href="#cities">Explore the Cities</a></div>
           <p class="tc-status">In development · mission briefing available now</p>
         </div>
-        <img class="tc-app-icon" src="assets/thumb-command/thumb-command-app-icon-768.webp" alt="Commander Thum-B app artwork showing the Blueguard interceptor rising toward a purple alien fleet" width="768" height="768">
+        <img class="tc-app-icon" src="assets/thumb-command/thumb-command-app-icon-768.webp" alt="Thumb Command app artwork showing the Blueguard interceptor rising toward a purple alien fleet" width="768" height="768">
       </div>
     </section>
 
@@ -107,7 +107,7 @@ export const thumbCommandPage = ({ page, company, siteUrl, gameNav }) => page({
       </div>
     </section>
 
-    <section class="tc-news-callout" aria-labelledby="tc-news-title"><div class="shell"><div><p class="tc-kicker">Mission control</p><h2 id="tc-news-title">Follow the campaign.</h2><p>Meet the Blueguard, visit the battlefields, and see how the alien invasion took shape.</p></div><div><a href="news-thumb-command-save-planet-earth.html">Introducing Commander Thum-B</a><a href="news-the-city-is-the-base.html">Building the battlefields</a><a href="news-meet-the-blueguard.html">Meet the Blueguard</a><a href="news-designing-the-alien-invasion.html">Designing the invasion</a><a href="news-thumb-command-world-tour.html">Tour the cities</a></div></div></section>
+    <section class="tc-news-callout" aria-labelledby="tc-news-title"><div class="shell"><div><p class="tc-kicker">Mission control</p><h2 id="tc-news-title">Follow the campaign.</h2><p>Meet the Blueguard, visit the battlefields, and see how the alien invasion took shape.</p></div><div><a href="news-thumb-command-save-planet-earth.html">Introducing Thumb Command</a><a href="news-the-city-is-the-base.html">Building the battlefields</a><a href="news-meet-the-blueguard.html">Meet the Blueguard</a><a href="news-designing-the-alien-invasion.html">Designing the invasion</a><a href="news-thumb-command-world-tour.html">Tour the cities</a></div></div></section>
 
-    <section class="tc-final" aria-labelledby="tc-final-title"><div class="shell"><p class="tc-kicker">Incoming transmission</p><h2 id="tc-final-title">Earth is under attack.</h2><p>Take command of the Blueguard. Protect the cities. Stop the invasion.</p><a class="tc-button" href="news.html?tag=thumb-command">Prepare for Launch</a><small>Commander Thum-B is in development. Follow verified mission updates—no fake download button.</small></div></section>`
+    <section class="tc-final" aria-labelledby="tc-final-title"><div class="shell"><p class="tc-kicker">Incoming transmission</p><h2 id="tc-final-title">Earth is under attack.</h2><p>Take command of the Blueguard. Protect the cities. Stop the invasion.</p><a class="tc-button" href="news.html?tag=thumb-command">Prepare for Launch</a><small>Thumb Command is in development. Follow verified mission updates—no fake download button.</small></div></section>`
 });

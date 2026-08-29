@@ -12,7 +12,7 @@ mkdirSync(evidence, { recursive: true });
 const games = [
   ["Palace", "/palace-play.html"],
   ["Bobby the Breadasaurus", "/bobby-the-breadasaurus.html"],
-  ["Evil Doom Adventures: Shadow Run", "/evil-doom-adventures.html"],
+  ["Evil Doom Girl Adventures", "/evil-doom-adventures.html"],
   ["Thumb Command", "/games/thumb-command/"],
   ["Hearts", "/hearts-play.html"],
   ["Spades", "/spades-play.html"],

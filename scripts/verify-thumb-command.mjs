@@ -32,7 +32,7 @@ const failures = [];
 const results = { checkedAt: new Date().toISOString(), base, routes: [], responsive: [], interactions: {}, redirects: [], failures };
 const fail = (message) => failures.push(message);
 const retired = /Commander\s+(?:Thum|Thumb)|\bThum[-‑ ]B\b|Thum System/i;
-const expectedGames = ["Palace", "Bobby the Breadasaurus", "Evil Doom Adventures: Shadow Run", "Thumb Command", "Hearts", "Spades", "Euchre"];
+const expectedGames = ["Palace", "Bobby the Breadasaurus", "Evil Doom Girl Adventures", "Thumb Command", "Hearts", "Spades", "Euchre"];
 
 const browser = await chromium.launch({ headless: true, executablePath: chrome });
 const context = await browser.newContext();
