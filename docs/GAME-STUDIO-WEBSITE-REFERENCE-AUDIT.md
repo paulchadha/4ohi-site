@@ -6,7 +6,7 @@ Reviewed August 1, 2026 for the isolated game-first reconstruction. These sites 
 
 | Reference | Access | Useful pattern | 4OH response |
 |---|---|---|---|
-| [SciPlay](https://www.sciplay.com/) | Successful | Portfolio is visible early and company navigation stays shallow. | Put seven games in one graphical Games menu and a visual catalog. |
+| [SciPlay](https://www.sciplay.com/) | Successful | Portfolio is visible early and company navigation stays shallow. | Put ten games in one graphical Games menu and a visual catalog. |
 | [Naughty Dog](https://www.naughtydog.com/) | Successful | Large franchise artwork establishes identity before corporate explanation. | Homepage opens on game art and playable destinations. |
 | [Built In gaming companies](https://builtin.com/companies/type/gaming-companies) | Successful | Directory helped identify additional studio patterns; it was not treated as an authority on product status. | Cross-checked official sites below. |
 | [thatgamecompany](https://thatgamecompany.com/) | Successful | Atmospheric art and restrained copy create a distinct world quickly. | Each 4OH feature panel uses its own art, focal point, palette, and short promise. |

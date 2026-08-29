@@ -2,14 +2,14 @@
 
 Public records live in content/news.json. Generated articles, news.html, feed.xml, and sitemap.xml come from scripts/build-site.mjs.
 
-Each record needs a stable slug, accurate ISO date, category, optional gameKey, tags, image, meaningful alt text, featured state, and body sections. The company newsroom covers all seven games. Filters expose Company, Palace, Bobby, Evil Doom, Thumb Command, and Development views.
+Each record needs a stable slug, accurate ISO date, category, optional gameKey, tags, image, meaningful alt text, featured state, and body sections. The company newsroom covers all ten games. Filters expose Company, Palace, Bobby, Evil Doom, Commander Thum-B, and Development views.
 
 Availability language is factual:
 
 - Palace has an interactive website preview and remains in development.
 - Bobby the Breadasaurus is in concept development and is not publicly playable.
 - Evil Doom Adventures: Shadow Run is in concept development and is not publicly playable.
-- Thumb Command is in development and is not publicly playable.
+- Commander Thum-B is in development and is not publicly playable.
 - Hearts, Spades, and Euchre have website teaching lessons and remain in internal testing.
 
 Never claim a public release, store listing, platform, date, partnership, player count, endorsement, review, rating, or certification without verified evidence. Release drafts remain under content/drafts and must not enter public HTML, sitemap, or RSS.

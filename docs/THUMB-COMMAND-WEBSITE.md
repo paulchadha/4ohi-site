@@ -1,10 +1,10 @@
-# Thumb Command website authority
+# Commander Thum-B website authority
 
-Thumb Command is the Four of Hearts Interactive arcade-defense property at `/thumb-command.html`. The company remains the parent brand; Thumb Command is one of seven current game worlds.
+Commander Thum-B is the Four of Hearts Interactive arcade-defense property at `/thumb-command.html`. The company remains the parent brand; Commander Thum-B is one of seven current game worlds.
 
 ## Product identity
 
-- Title: **Thumb Command**
+- Title: **Commander Thum-B**
 - Tagline: **Save Planet Earth**
 - Hero craft: the blue-white-gold Blueguard interceptor
 - Threat palette: purple, magenta, violet, coral, and black
@@ -31,4 +31,4 @@ node scripts/validate-site.mjs
 node scripts/verify-company-architecture.mjs
 ```
 
-The browser gate covers the homepage tile, seven-game navigation, five-city page, five new articles, metadata, broken images, overflow, touch targets, reduced motion, keyboard focus, console errors, and all compatibility routes at phone, tablet, laptop, and desktop sizes.
+The browser gate covers the homepage tile, ten-product navigation, five-city page, five new articles, metadata, broken images, overflow, touch targets, reduced motion, keyboard focus, console errors, and all compatibility routes at phone, tablet, laptop, and desktop sizes.

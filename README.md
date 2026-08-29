@@ -9,9 +9,9 @@ Public portfolio website for Four of Hearts Interactive, LLC and 4ohi.com.
 - Palace is the flagship card game and has an interactive website preview.
 - Bobby the Breadasaurus is a family adventure in concept development.
 - Evil Doom Adventures: Shadow Run is an action platformer in concept development.
-- Thumb Command is an arcade-defense game in development with no announced release date or public build.
+- Commander Thum-B is an arcade-defense game in development with no announced release date or public build.
 - Hearts, Spades, and Euchre remain in internal testing and each has a website lesson.
-- The reusable seven-game source of truth is scripts/game-catalog.mjs.
+- The reusable ten-product source of truth is scripts/game-catalog.mjs.
 
 No page claims an unverified release date, platform, rating, store listing, player count, or public build.
 
@@ -33,7 +33,7 @@ The site uses no account, backend form, cookie, browser storage, analytics, adve
     node scripts/verify-company-architecture.mjs
     node scripts/verify-portfolio-expansion.mjs
 
-Rendered gates cover phone, tablet, laptop, desktop, and mobile landscape. They check keyboard navigation, all seven games, honest statuses, Palace isolation, four tutorials, images, overflow, metadata, spelling, artwork provenance, the deep-purple Evil Girl treatment, and zero tracking.
+Rendered gates cover phone, tablet, laptop, desktop, and mobile landscape. They check keyboard navigation, all ten games, honest statuses, Palace isolation, four tutorials, images, overflow, metadata, spelling, artwork provenance, the deep-purple Evil Girl treatment, and zero tracking.
 
 There is no package manifest, so no separate framework lint, type-check, or bundler command exists. Syntax checks, the generator, static validation, and rendered Chromium suites are the production build gates.
 
@@ -48,7 +48,7 @@ The CNAME is 4ohi.com. Never alter Proton MX, SPF, DKIM, DMARC, provider verific
 - [Website information architecture](docs/WEBSITE-INFORMATION-ARCHITECTURE.md)
 - [Portfolio expansion](docs/PORTFOLIO-EXPANSION-2026-07-31.md)
 - [Portfolio art provenance](docs/PORTFOLIO-ART-PROVENANCE.md)
-- [Thumb Command website](docs/THUMB-COMMAND-WEBSITE.md)
+- [Commander Thum-B website](docs/THUMB-COMMAND-WEBSITE.md)
 - [Website deployment](docs/WEBSITE-DEPLOYMENT.md)
 - [Accessibility](docs/ACCESSIBILITY.md)
 - [News authoring](docs/NEWS-AUTHORING.md)

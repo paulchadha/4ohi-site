@@ -5,11 +5,11 @@
 1. Homepage initial state: Palace.
 2. Homepage feature selector: Bobby the Breadasaurus.
 3. Homepage feature selector: Evil Doom Adventures: Shadow Run.
-4. Homepage feature selector: Thumb Command.
+4. Homepage feature selector: Commander Thum-B.
 5. Games mega menu and View All Games.
 6. Full Games index and all seven destinations.
 7. Palace overview and interactive mini-match.
-8. Bobby, Shadow Run, and Thumb Command overview pages.
+8. Bobby, Shadow Run, and Commander Thum-B overview pages.
 9. Hearts, Spades, and Euchre Quick Play pages.
 10. News and About.
 11. Phone navigation and feature selector at 375px.
@@ -35,10 +35,10 @@ The global hierarchy is Four of Hearts Interactive → Games → individual titl
 - Palace: Interactive Preview.
 - Bobby the Breadasaurus: In Development.
 - Evil Doom Adventures: Shadow Run: In Development.
-- Thumb Command: In Development.
+- Commander Thum-B: In Development.
 - Hearts, Spades, Euchre: Internal Alpha teaching previews.
 
-Thumb Command page language describes concept threats and escalating waves; it does not claim a completed 1,000-level product. Evil Doom Girl uses approved purple `#4E2A84`.
+Commander Thum-B page language describes concept threats and escalating waves; it does not claim a completed 1,000-level product. Evil Doom Girl uses approved purple `#4E2A84`.
 
 ## Evidence
 
@@ -49,7 +49,7 @@ Browser artifacts and `reconstruction-results.json` are under `docs/visual-evide
 - [ ] Approve visual hierarchy and overall feeling.
 - [ ] Approve all four feature-panel crops.
 - [ ] Approve mega-menu density and mobile presentation.
-- [ ] Approve seven-game catalog order and status labels.
+- [ ] Approve ten-product catalog order and status labels.
 - [ ] Approve individual game page identities.
 - [ ] Approve news and About presentation.
 - [ ] Grant permission to merge.

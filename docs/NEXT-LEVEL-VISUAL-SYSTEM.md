@@ -10,7 +10,7 @@ The system is original to Four of Hearts. It reproduces no reference-site assets
 
 1. The studio leads with “One Family. Many Games.”
 2. Palace, Bobby the Breadasaurus, and Evil Doom Adventures: Shadow Run receive major visual doorways.
-3. Thumb Command, Hearts, Spades, and Euchre remain visible in a compact portfolio ribbon.
+3. Commander Thum-B, Hearts, Spades, and Euchre remain visible in a compact portfolio ribbon.
 4. Games renders all seven reusable catalog records.
 5. News and About continue the company story rather than turning one product into the company.
 
@@ -25,7 +25,7 @@ The system is original to Four of Hearts. It reproduces no reference-site assets
 ## Implementation
 
 - scripts/build-site.mjs owns shared structure, navigation, metadata, sitemap, and RSS.
-- scripts/game-catalog.mjs is the seven-game source of truth.
+- scripts/game-catalog.mjs is the ten-product source of truth.
 - scripts/portfolio-content.mjs owns Bobby and Shadow Run page content.
 - assets/portfolio-worlds.css owns studio and portfolio visual treatment.
 - scripts/process-portfolio-art.py owns optimized crops and selective recolor derivatives.

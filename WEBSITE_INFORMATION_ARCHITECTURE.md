@@ -9,7 +9,7 @@ The current catalog has seven peer game properties:
 1. Palace — flagship card game; Interactive Preview.
 2. Bobby the Breadasaurus — family adventure; In Development.
 3. Evil Doom Adventures: Shadow Run — action platformer; In Development.
-4. Thumb Command — arcade defense; In Development.
+4. Commander Thum-B — arcade defense; In Development.
 5. Hearts — card game; Internal Alpha teaching lesson.
 6. Spades — card game; Internal Alpha teaching lesson.
 7. Euchre — card game; Internal Alpha teaching lesson.
@@ -32,12 +32,12 @@ Support remains in the footer and at /support.html. The Games disclosure is keyb
 
 The table-name control, “This table calls it,” exists only on /palace-play.html. It never renames the company or another game.
 
-Thumb Command uses an immersive in-page mission navigation. Bobby and Shadow Run are cinematic overview pages without false play controls.
+Commander Thum-B uses an immersive in-page mission navigation. Bobby and Shadow Run are cinematic overview pages without false play controls.
 
 ## Canonical routes
 
 - / and /index.html — studio-first portfolio homepage.
-- /games.html — reusable seven-game catalog.
+- /games.html — reusable ten-product catalog.
 - /palace.html, /palace-play.html, /palace-story.html, /palace-faq.html.
 - /bobby-the-breadasaurus.html.
 - /evil-doom-adventures.html.
@@ -52,11 +52,11 @@ The generator owns HTML, metadata, JSON-LD, sitemap, and RSS. Existing public UR
 ## Content and status rules
 
 - Bobby and Shadow Run may say In Development or concept development; no platform, date, rating, level, download, or public-availability claims.
-- Thumb Command is In Development with no false play or release claim.
+- Commander Thum-B is In Development with no false play or release claim.
 - Palace may link to its website teaching preview, which is not a public app release.
 - Hearts, Spades, and Euchre may link to their two-step teaching lessons.
 - Concept-board embedded labels are not canonical content. Bobby friend names are not published.
-- The approved game title is **Thumb Command** and the tagline is **Save Planet Earth**.
+- The approved game title is **Commander Thum-B** and the tagline is **Save Planet Earth**.
 
 ## Responsive and accessibility contract
 
@@ -72,7 +72,7 @@ Validation commands:
     node scripts/verify-portfolio-expansion.mjs
 
 Founder physical visual acceptance remains a separate human approval gate.
-> **Current architecture (2026-07-31):** The founder-rejection reconstruction replaces the stacked presentation system with `assets/studio-reconstruction.css`, retains `scripts/game-catalog.mjs` as the seven-game source of truth, and validates the global shell with `scripts/verify-reconstruction.mjs`. See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the current route map, status rules, visual system, evidence, and acceptance requirements.
+> **Current architecture (2026-07-31):** The founder-rejection reconstruction replaces the stacked presentation system with `assets/studio-reconstruction.css`, retains `scripts/game-catalog.mjs` as the ten-product source of truth, and validates the global shell with `scripts/verify-reconstruction.mjs`. See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the current route map, status rules, visual system, evidence, and acceptance requirements.
 
 ## August 1, 2026 game-first reconstruction
 

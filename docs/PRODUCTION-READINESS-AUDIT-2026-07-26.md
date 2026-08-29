@@ -2,17 +2,17 @@
 
 ## Result
 
-The reorganized Four of Hearts Interactive website passes the local production gate. The root route is company-level; Palace and Thumb Command are peer games; the global navigation is reusable; and Palace naming is isolated to the Palace playing context.
+The reorganized Four of Hearts Interactive website passes the local production gate. The root route is company-level; Palace and Commander Thum-B are peer games; the global navigation is reusable; and Palace naming is isolated to the Palace playing context.
 
 ## Repairs verified
 
 - Replaced the Palace-global header with Home, Games, News, About 4OH, and Support.
-- Added Palace, Thumb Command, and View All Games to the accessible Games disclosure.
+- Added Palace, Commander Thum-B, and View All Games to the accessible Games disclosure.
 - Restored `/palace.html` as a real overview while retaining all older `.html` routes.
 - Rebuilt `/` as a Four of Hearts Interactive homepage.
 - Rendered the Games page from `scripts/game-catalog.mjs`.
-- Rebuilt Thumb Command as a shorter original 1970s-inspired promotion with one title, accurate Coming Soon status, no planet diagram, and three public development articles.
-- Removed the obsolete unpublished release draft during the Thumb Command replacement.
+- Rebuilt Commander Thum-B as a shorter original 1970s-inspired promotion with one title, accurate Coming Soon status, no planet diagram, and three public development articles.
+- Removed the obsolete unpublished release draft during the Commander Thum-B replacement.
 - Limited “THIS TABLE CALLS IT” and its alternate names to `/palace-play.html`.
 - Removed leaked `game=` state from every non-Palace route.
 - Added company News filters and accurate per-game availability text.

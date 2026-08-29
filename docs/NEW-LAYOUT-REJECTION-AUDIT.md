@@ -35,7 +35,7 @@ The replacement is a playable studio marquee followed by an editorial world trac
 2. Four major worlds appear as an interlocking editorial sequence, not equal cards or hidden slides.
 3. Bobby and Evil Doom receive dedicated full-width visual moments with mobile-specific crops.
 4. Palace gets a compact playable strip instead of dominating the portfolio.
-5. Seven games appear in a variable-width studio reel whose entire links are interactive.
+5. Ten games appear in a variable-width studio reel whose entire links are interactive.
 6. Three compact news links and one short studio statement finish the page.
 
 Every game artwork region is a normal semantic link. No nested anchors or nonsemantic click handlers are used.

@@ -43,4 +43,4 @@ The future section uses a blue-purple-ruby mystery-card treatment and does not n
 
 ## Seven-world portfolio update — 2026-08-29
 
-The homepage portfolio is generated from `scripts/game-catalog.mjs` and presents all seven games as distinct full-width worlds. Add future games to the catalog with approved local artwork, honest status, description, and canonical link; do not hand-code a homepage-only entry.
+The homepage portfolio is generated from `scripts/game-catalog.mjs` and presents all ten games as distinct full-width worlds. Add future games to the catalog with approved local artwork, honest status, description, and canonical link; do not hand-code a homepage-only entry.

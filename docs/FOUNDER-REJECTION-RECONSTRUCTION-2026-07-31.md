@@ -13,7 +13,7 @@ scripts/game-catalog.mjs is the single source of truth for the seven public game
 1. Palace — Interactive Preview — /palace.html
 2. Bobby the Breadasaurus — In Development — /bobby-the-breadasaurus.html
 3. Evil Doom Adventures: Shadow Run — In Development — /evil-doom-adventures.html
-4. Thumb Command — Coming Soon — /thumb-command.html
+4. Commander Thum-B — Coming Soon — /thumb-command.html
 5. Hearts — Internal Alpha — /hearts-play.html
 6. Spades — Internal Alpha — /spades-play.html
 7. Euchre — Internal Alpha — /euchre-play.html
@@ -42,7 +42,7 @@ The system defines:
 
 - Shared spacing, typography, containers, buttons, focus rings, status badges, cards, menus, dialogs, footer, and responsive breakpoints.
 - An art-led, game-first homepage with layered featured artwork instead of a corporate mission hero.
-- Distinct world treatments: bright bread adventure, Northwestern-purple shadow action, modern city-defense Thumb Command editorial art, and app-like Palace table presentation.
+- Distinct world treatments: bright bread adventure, Northwestern-purple shadow action, modern city-defense Commander Thum-B editorial art, and app-like Palace table presentation.
 - Motion limited to short hover/reveal transitions, with complete prefers-reduced-motion handling.
 - Minimum 44-pixel interactive targets.
 
@@ -114,7 +114,7 @@ scripts/verify-reconstruction.mjs checks:
 
 - 16 key routes at 320×568, 375×812, 430×932, 768×1024, 1024×768, 1440×900, 1920×1080, and 844×390.
 - HTTP status, one H1, main landmark, broken images, runtime errors, horizontal overflow, cookies, local storage, and session storage.
-- Desktop and mobile Games navigation with all seven games.
+- Desktop and mobile Games navigation with all ten games.
 - Escape handling, touch behavior, keyboard focus, all game destinations, mobile navigation, hover state, and exact Evil Doom purple.
 - Required desktop and mobile screenshot evidence.
 
