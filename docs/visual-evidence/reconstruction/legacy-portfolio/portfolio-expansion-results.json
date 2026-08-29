@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-01T13:37:09.929Z",
+  "checkedAt": "2026-08-29T18:48:38.687Z",
   "base": "http://127.0.0.1:4173",
   "pages": [
     {
@@ -597,8 +597,8 @@
       "play": 0
     },
     {
-      "key": "commander",
-      "title": "Commander Thum-B",
+      "key": "thumb-command",
+      "title": "Thumb Command",
       "play": 0
     },
     {

@@ -529,13 +529,13 @@
   font-weight: 900;
 }
 
-/* Original 1970s-inspired Commander promotion */
-.commander-promo {
+/* Original 1970s-inspired Thumb Command promotion */
+.thumb-command-promo {
   color: #f9eac6;
   background: #130e21;
 }
 
-.commander-promo .game-subnav {
+.thumb-command-promo .game-subnav {
   border-bottom-color: #d96324;
   background: #26133c;
 }
@@ -735,7 +735,7 @@
   letter-spacing: .12em;
 }
 
-.retro-commander-card {
+.retro-command-card {
   margin: 0;
   padding: 1rem 1rem 0;
   border: 4px solid #f2c257;
@@ -744,11 +744,11 @@
   transform: rotate(2deg);
 }
 
-.retro-commander-card img {
+.retro-command-card img {
   width: 100%;
 }
 
-.retro-commander-card figcaption {
+.retro-command-card figcaption {
   padding: 1rem;
   color: #fff5cf;
   font-size: 1.3rem;
@@ -1077,7 +1077,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .company-hero-art,
-  .retro-commander-card,
+  .retro-command-card,
   .games-menu > summary::after {
     transition: none !important;
     transform: none;

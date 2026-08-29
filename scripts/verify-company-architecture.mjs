@@ -11,9 +11,9 @@ mkdirSync(evidence, { recursive: true });
 
 const routes = [
   "index.html", "games.html", "palace.html", "palace-play.html", "palace-story.html", "palace-faq.html",
-  "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "commander-thumb.html", "news.html",
-  "news-bobby-the-breadasaurus-joins-the-family.html", "news-shadow-run-enters-development.html", "news-commander-thumb-is-coming.html",
-  "news-welcome-to-the-thum-system.html", "news-building-commander-thumb.html",
+  "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "thumb-command.html", "news.html",
+  "news-bobby-the-breadasaurus-joins-the-family.html", "news-shadow-run-enters-development.html", "news-thumb-command-save-planet-earth.html",
+  "news-the-city-is-the-base.html", "news-meet-the-blueguard.html", "news-designing-the-alien-invasion.html", "news-thumb-command-world-tour.html",
   "news-why-were-building-palace.html", "news-palace-enters-founder-testing.html",
   "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html", "404.html"
 ];
@@ -21,7 +21,7 @@ const matrix = [
   [320, 568], [375, 812], [430, 932], [768, 1024],
   [1024, 768], [1366, 768], [1920, 1080]
 ];
-const keyRoutes = ["index.html", "games.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "palace-play.html", "commander-thumb.html", "news.html", "about.html"];
+const keyRoutes = ["index.html", "games.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "palace-play.html", "thumb-command.html", "news.html", "about.html"];
 const results = { base, checkedAt: new Date().toISOString(), pages: [], viewports: [], interactions: {}, failures: [] };
 const fail = (message) => results.failures.push(message);
 
@@ -52,7 +52,7 @@ for (const route of routes) {
   results.pages.push({ route, status: response?.status(), ...data, errors });
   if (response?.status() !== 200 || data.h1Count !== 1 || !data.skip || !data.main || data.overflow || data.imagesBroken.length || errors.length) fail(`${route}: route, structure, image, overflow, or runtime failure`);
   if (data.nav.join("|") !== "Games|News|About|Play Palace") fail(`${route}: company navigation hierarchy is incorrect`);
-  if (!["Palace", "Bobby the Breadasaurus", "Evil Doom Adventures: Shadow Run", "Commander Thum-B", "Hearts", "Spades", "Euchre"].every((title) => data.gameLinks.some((item) => item.startsWith(title))) || !data.gameLinks.some((item) => item.startsWith("View All Games"))) fail(route + ": Games menu is incomplete");
+  if (!["Palace", "Bobby the Breadasaurus", "Evil Doom Adventures: Shadow Run", "Thumb Command", "Hearts", "Spades", "Euchre"].every((title) => data.gameLinks.some((item) => item.startsWith(title))) || !data.gameLinks.some((item) => item.startsWith("View All Games"))) fail(route + ": Games menu is incomplete");
   if (data.tableSelector !== (route === "palace-play.html" ? 1 : 0)) fail(`${route}: Palace table selector scope is incorrect`);
   if (data.externalScripts.length || data.tracking) fail(`${route}: external script or tracking detected`);
   await page.close();
@@ -78,7 +78,7 @@ for (const route of keyRoutes) {
     results.viewports.push({ route, width, height, ...state, errors });
     if (state.overflow || !state.heroVisible || errors.length) fail(`${route} at ${width}x${height}: responsive runtime failed`);
     if (width <= 430 && state.tinyTargets.length) fail(`${route} at ${width}x${height}: undersized targets ${state.tinyTargets.join(", ")}`);
-    if ([320, 430, 768, 1366].includes(width) && ["index.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "commander-thumb.html", "games.html", "palace-play.html"].includes(route)) {
+    if ([320, 430, 768, 1366].includes(width) && ["index.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "thumb-command.html", "games.html", "palace-play.html"].includes(route)) {
       await page.screenshot({ path: resolve(evidence, `company-${route.replace(".html", "")}-${width}x${height}.png`), fullPage: true });
     }
     await page.close();
@@ -93,11 +93,11 @@ await mobile.locator(".games-menu > summary").click();
 results.interactions.mobile = {
   menuExpanded: await mobile.locator(".menu-toggle").getAttribute("aria-expanded"),
   gamesOpen: await mobile.locator(".games-menu").getAttribute("open"),
-  commanderVisible: await mobile.locator('.games-menu-panel a[href^="commander-thumb.html"]').isVisible(),
+  thumbCommandVisible: await mobile.locator('.games-menu-panel a[href^="thumb-command.html"]').isVisible(),
   bobbyVisible: await mobile.locator('.games-menu-panel a[href^="bobby-the-breadasaurus.html"]').isVisible(),
   evilVisible: await mobile.locator('.games-menu-panel a[href^="evil-doom-adventures.html"]').isVisible()
 };
-if (results.interactions.mobile.menuExpanded !== "true" || results.interactions.mobile.gamesOpen === null || !results.interactions.mobile.commanderVisible || !results.interactions.mobile.bobbyVisible || !results.interactions.mobile.evilVisible) fail("Mobile company/Games navigation failed");
+if (results.interactions.mobile.menuExpanded !== "true" || results.interactions.mobile.gamesOpen === null || !results.interactions.mobile.thumbCommandVisible || !results.interactions.mobile.bobbyVisible || !results.interactions.mobile.evilVisible) fail("Mobile company/Games navigation failed");
 await mobile.keyboard.press("Escape");
 if (await mobile.locator(".games-menu").getAttribute("open") !== null) fail("Games menu did not close on Escape");
 await mobile.close();
@@ -109,38 +109,38 @@ await palace.locator('[data-name-choice="Shed"]').first().click();
 const palaceState = await palace.evaluate(() => ({
   label: document.querySelector("[data-current-game]")?.textContent.trim(),
   url: location.search,
-  commanderLink: document.querySelector('.games-menu-panel a[href^="commander-thumb"]')?.getAttribute("href")
+  thumbCommandLink: document.querySelector('.games-menu-panel a[href^="thumb-command"]')?.getAttribute("href")
 }));
 results.interactions.palaceSelector = palaceState;
-if (palaceState.label !== "Shed" || !palaceState.url.includes("game=shed") || palaceState.commanderLink?.includes("game=")) fail("Palace table selector changed the wrong scope or failed to update");
+if (palaceState.label !== "Shed" || !palaceState.url.includes("game=shed") || palaceState.thumbCommandLink?.includes("game=")) fail("Palace table selector changed the wrong scope or failed to update");
 await palace.close();
 
-const commander = await context.newPage();
-await commander.goto(`${base}/commander-thumb.html?game=shed`, { waitUntil: "networkidle" });
-const commanderState = await commander.evaluate(() => {
+const thumbCommand = await context.newPage();
+await thumbCommand.goto(`${base}/thumb-command.html?game=shed`, { waitUntil: "networkidle" });
+const thumbCommandState = await thumbCommand.evaluate(() => {
   const text = document.body.innerText;
   return {
     title: document.title,
     h1: [...document.querySelectorAll("h1")].map((node) => node.textContent.replace(/\s+/g, " ").trim()),
     status: /In Development/i.test(text),
-    wrong: text.includes("Commander Thum" + String.fromCharCode(98)) || text.includes("Commander " + "TH" + "UMB") || text.includes("COMMANDER " + "TH" + "UMB"),
-    newsLinks: document.querySelectorAll('.retro-news-grid a[href^="news-"]').length,
+    wrong: /Commander\\s+Thum|Commander\\s+Thumb|Thum\\s+System/i.test(text),
+    cities: document.querySelectorAll(".tc-city-grid figure").length, upgrades: document.querySelectorAll(".tc-upgrades article").length,
     planetDiagram: Boolean(document.querySelector(".ct-system-map"))
   };
 });
-results.interactions.commander = commanderState;
-if (commanderState.title !== "Commander Thum-B | Four of Hearts Interactive" || commanderState.h1.length !== 1 || commanderState.h1[0] !== "Commander Thum-B" || !commanderState.status || commanderState.wrong || commanderState.newsLinks !== 3 || commanderState.planetDiagram) fail("Commander Thum-B identity, status, title, News, or story treatment failed");
-await commander.close();
+results.interactions.thumbCommand = thumbCommandState;
+if (thumbCommandState.title !== "Thumb Command | Save Planet Earth | Four of Hearts Interactive" || thumbCommandState.h1.length !== 1 || thumbCommandState.h1[0] !== "Thumb Command" || !thumbCommandState.status || thumbCommandState.wrong || thumbCommandState.cities !== 5 || thumbCommandState.upgrades !== 3 || thumbCommandState.planetDiagram) fail("Thumb Command identity, status, world tour, or upgrade treatment failed");
+await thumbCommand.close();
 
 const news = await context.newPage();
-await news.goto(`${base}/news.html?tag=commander`, { waitUntil: "networkidle" });
+await news.goto(`${base}/news.html?tag=thumb-command`, { waitUntil: "networkidle" });
 const newsState = await news.evaluate(() => ({
   selected: document.querySelector('[data-news-filter][aria-pressed="true"]')?.dataset.newsFilter,
   visible: [...document.querySelectorAll("[data-news-tags]")].filter((node) => !node.hidden).length,
-  allCommander: [...document.querySelectorAll("[data-news-tags]")].filter((node) => !node.hidden).every((node) => node.dataset.newsTags.includes("commander"))
+  allThumbCommand: [...document.querySelectorAll("[data-news-tags]")].filter((node) => !node.hidden).every((node) => node.dataset.newsTags.includes("thumb-command"))
 }));
 results.interactions.news = newsState;
-if (newsState.selected !== "commander" || newsState.visible !== 3 || !newsState.allCommander) fail("Commander Thum-B News filter failed");
+if (newsState.selected !== "thumb-command" || newsState.visible !== 5 || !newsState.allThumbCommand) fail("Thumb Command News filter failed");
 await news.close();
 
 const tutorial = await context.newPage();
@@ -180,7 +180,7 @@ for (const game of ["hearts", "spades", "euchre"]) {
 for (const localeCase of [{ lang: "he", dir: "rtl" }, { lang: "en-CA-fun", dir: "ltr" }]) {
   const localized = await context.newPage();
   await localized.setViewportSize({ width: 375, height: 812 });
-  await localized.goto(`${base}/commander-thumb.html?lang=${localeCase.lang}&game=shed`, { waitUntil: "networkidle" });
+  await localized.goto(`${base}/thumb-command.html?lang=${localeCase.lang}&game=shed`, { waitUntil: "networkidle" });
   const state = await localized.evaluate(() => ({
     lang: document.documentElement.lang,
     dir: document.documentElement.dir,
@@ -190,7 +190,7 @@ for (const localeCase of [{ lang: "he", dir: "rtl" }, { lang: "en-CA-fun", dir: 
     selected: document.querySelector("[data-locale]")?.value
   }));
   results.interactions[`locale-${localeCase.lang}`] = state;
-  if (state.lang !== localeCase.lang || state.dir !== localeCase.dir || state.title !== "Commander Thum-B | Four of Hearts Interactive" || state.overflow || state.gameQuery || state.selected !== localeCase.lang) fail(`${localeCase.lang}: language control layout or game-state isolation failed`);
+  if (state.lang !== localeCase.lang || state.dir !== localeCase.dir || state.title !== "Thumb Command | Save Planet Earth | Four of Hearts Interactive" || state.overflow || state.gameQuery || state.selected !== localeCase.lang) fail(`${localeCase.lang}: language control layout or game-state isolation failed`);
   await localized.close();
 }
 const privacy = await context.newPage();

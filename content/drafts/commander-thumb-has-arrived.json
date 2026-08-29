@@ -1,8 +1,0 @@
-{
-  "status": "draft",
-  "publishWhen": "A working public version of Commander Thum-B is genuinely available.",
-  "slug": "commander-thumb-has-arrived",
-  "title": "Commander Thum-B Has Arrived",
-  "gameKey": "commander",
-  "notes": "Do not add this record to content/news.json, the RSS feed, sitemap, or public pages before verified public release."
-}

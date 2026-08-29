@@ -1,5 +1,16 @@
 # Visual evidence index
 
+## Thumb Command production launch — August 29, 2026
+
+- `thumb-command/thumb-command-results.json` — rendered route, interaction, redirect, metadata, and responsive acceptance record.
+- `thumb-command/thumb-command-320x568.png` — narrow Android-phone acceptance capture.
+- `thumb-command/thumb-command-768x1024.png` — tablet portrait acceptance capture.
+- `thumb-command/thumb-command-1366x768.png` — laptop acceptance capture.
+- `thumb-command/thumb-command-1920x1080.png` — large-desktop acceptance capture.
+- `company-thumb-command-*` — company-architecture regression captures at 320, 430, 768, and 1366 pixels.
+
+The launch suite covers the canonical game route, homepage integration, all five new articles, the five-city world tour, accessible gallery dialog, approved artwork, legacy redirects, keyboard interaction, and absence of horizontal overflow.
+
 ## Portfolio expansion — July 31, 2026
 
 - portfolio-expansion-results.json — authoritative rendered portfolio acceptance record.
@@ -15,7 +26,7 @@ The portfolio suite also checks 375×812, 1024×768, 1920×1080, and 844×390. F
 
 ## Earlier evidence
 
-Earlier app, Palace, Commander Thum-B, public-launch, and company-architecture evidence remains in this folder as historical release material. Current DOM, status, route, and viewport assertions come from portfolio-expansion-results.json and company-architecture-results.json.
+Earlier app, Palace, Thumb Command, public-launch, and company-architecture evidence remains in this folder as historical release material. Current DOM, status, route, and viewport assertions come from portfolio-expansion-results.json and company-architecture-results.json.
 ## 2026-07-31 game-first reconstruction
 
 See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the architecture, validation record, evidence manifest, and founder review status. Evidence is under `docs/visual-evidence/reconstruction/`.
@@ -27,10 +38,10 @@ Current founder-review evidence is in `docs/visual-evidence/reconstruction/`:
 - `desktop-home-feature-palace.png`
 - `desktop-home-feature-bobby.png`
 - `desktop-home-feature-shadow-run.png`
-- `desktop-home-feature-commander.png`
+- the historical fourth-game homepage feature capture
 - `desktop-games-menu-open.png`
 - `desktop-games-index.png`
-- desktop pages for Palace, Bobby, Shadow Run, Commander Thum-B, News, and About
+- desktop pages for Palace, Bobby, Shadow Run, Thumb Command, News, and About
 - mobile Home, Games, Bobby, Shadow Run, Play Palace, and navigation-open states
 - `evil-doom-girl-purple.png` and `game-card-hover.png`
 - `founder-review-walkthrough.gif`

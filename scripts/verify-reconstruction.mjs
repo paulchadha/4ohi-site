@@ -13,14 +13,14 @@ const games = [
   ["Palace", "palace.html"],
   ["Bobby the Breadasaurus", "bobby-the-breadasaurus.html"],
   ["Evil Doom Adventures: Shadow Run", "evil-doom-adventures.html"],
-  ["Commander Thum-B", "commander-thumb.html"],
+  ["Thumb Command", "thumb-command.html"],
   ["Hearts", "hearts-play.html"],
   ["Spades", "spades-play.html"],
   ["Euchre", "euchre-play.html"]
 ];
 const routes = [
   "index.html", "games.html", "palace.html", "palace-play.html",
-  "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "commander-thumb.html",
+  "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "thumb-command.html",
   "hearts-play.html", "spades-play.html", "euchre-play.html", "news.html",
   "about.html", "support.html", "privacy.html", "security.html", "terms.html"
 ];
@@ -117,7 +117,7 @@ const shots = [
   ["palace.html", "desktop-palace.png", 1440, 900, false],
   ["bobby-the-breadasaurus.html", "desktop-bobby.png", 1440, 900, false],
   ["evil-doom-adventures.html", "desktop-evil-doom.png", 1440, 900, false],
-  ["commander-thumb.html", "desktop-commander-thumb.png", 1440, 900, false],
+  ["thumb-command.html", "desktop-commander-thumb.png", 1440, 900, false],
   ["news.html", "desktop-news.png", 1440, 900, false],
   ["about.html", "desktop-about.png", 1440, 900, false],
   ["index.html", "mobile-home.png", 375, 812, false],

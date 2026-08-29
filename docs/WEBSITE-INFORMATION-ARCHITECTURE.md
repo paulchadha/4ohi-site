@@ -9,7 +9,7 @@ The current catalog has seven peer game properties:
 1. Palace — flagship card game; Interactive Preview.
 2. Bobby the Breadasaurus — family adventure; In Development.
 3. Evil Doom Adventures: Shadow Run — action platformer; In Development.
-4. Commander Thum-B — arcade defense; In Development.
+4. Thumb Command — arcade defense; In Development.
 5. Hearts — card game; Internal Alpha teaching lesson.
 6. Spades — card game; Internal Alpha teaching lesson.
 7. Euchre — card game; Internal Alpha teaching lesson.
@@ -32,7 +32,7 @@ Support remains in the footer and at /support.html. The Games disclosure is keyb
 
 The table-name control, “This table calls it,” exists only on /palace-play.html. It never renames the company or another game.
 
-Commander Thum-B retains local navigation. Bobby and Shadow Run are cinematic overview pages without false play controls.
+Thumb Command uses an immersive in-page mission navigation. Bobby and Shadow Run are cinematic overview pages without false play controls.
 
 ## Canonical routes
 
@@ -41,7 +41,7 @@ Commander Thum-B retains local navigation. Bobby and Shadow Run are cinematic ov
 - /palace.html, /palace-play.html, /palace-story.html, /palace-faq.html.
 - /bobby-the-breadasaurus.html.
 - /evil-doom-adventures.html.
-- /commander-thumb.html.
+- /games/thumb-command/ (canonical), with /thumb-command.html as the static implementation.
 - /hearts-play.html, /spades-play.html, /euchre-play.html.
 - /news.html and generated article routes, including Bobby and Shadow Run.
 - /about.html, /support.html, and legal/safety routes.
@@ -52,11 +52,11 @@ The generator owns HTML, metadata, JSON-LD, sitemap, and RSS. Existing public UR
 ## Content and status rules
 
 - Bobby and Shadow Run may say In Development or concept development; no platform, date, rating, level, download, or public-availability claims.
-- Commander Thum-B is In Development with no false play or release claim.
+- Thumb Command is In Development with no false play or release claim.
 - Palace may link to its website teaching preview, which is not a public app release.
 - Hearts, Spades, and Euchre may link to their two-step teaching lessons.
 - Concept-board embedded labels are not canonical content. Bobby friend names are not published.
-- The only approved Commander product title is **Commander Thum-B**.
+- The approved game title is **Thumb Command** and the tagline is **Save Planet Earth**.
 
 ## Responsive and accessibility contract
 
@@ -78,9 +78,9 @@ Founder physical visual acceptance remains a separate human approval gate.
 
 The public information architecture now begins with Four of Hearts Interactive as the studio and a manifest-driven catalog of seven peer products. Global navigation is Home via the 4OH mark, Games (graphical mega menu), News, About, and Play Palace. Game-specific controls never appear globally.
 
-Canonical clean destinations are `/games`, `/games/palace`, `/games/bobby-the-breadasaurus`, `/games/evil-doom-adventures-shadow-run`, `/games/commander-thum-b`, `/games/hearts`, `/games/spades`, `/games/euchre`, `/play`, `/news`, `/about`, `/support`, and `/privacy`. Static `.html` routes remain the implementation and backward-compatible public URLs; generated directory indexes provide redirects for the clean destinations.
+Canonical clean destinations are `/games`, `/games/palace`, `/games/bobby-the-breadasaurus`, `/games/evil-doom-adventures-shadow-run`, `/games/thumb-command`, `/games/hearts`, `/games/spades`, `/games/euchre`, `/play`, `/news`, `/about`, `/support`, and `/privacy`. Static `.html` routes remain the implementation and backward-compatible public URLs; generated directory indexes provide redirects for the clean destinations.
 
 The single source of catalog truth is `scripts/game-catalog.mjs`. See `docs/GAME-FIRST-RECONSTRUCTION-REVIEW.md` and `docs/GAME-STUDIO-WEBSITE-REFERENCE-AUDIT.md`.
 ## 2026-08-01 playable studio homepage
 
-The homepage is company-first and portfolio-led: compact studio marquee, four major editorial worlds, compact Palace play band, all-seven portfolio reel, no more than three news items, and a compact studio signoff. Palace remains one game; Bobby, Evil Doom, Commander Thum-B, Hearts, Spades, and Euchre are peers in the manifest-backed portfolio. Full game regions are semantic links. Canadian-fun mode is query-driven and route-persistent without storage.
+The homepage is company-first and portfolio-led: compact studio marquee, four major editorial worlds, compact Palace play band, all-seven portfolio reel, no more than three news items, and a compact studio signoff. Palace remains one game; Bobby, Evil Doom, Thumb Command, Hearts, Spades, and Euchre are peers in the manifest-backed portfolio. Full game regions are semantic links. Canadian-fun mode is query-driven and route-persistent without storage.

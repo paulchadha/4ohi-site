@@ -1,6 +1,6 @@
 {
   "base": "http://127.0.0.1:4173",
-  "checkedAt": "2026-08-01T13:46:23.045Z",
+  "checkedAt": "2026-08-29T18:46:18.949Z",
   "pages": [
     {
       "route": "index.html",
@@ -19,7 +19,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -49,7 +49,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -79,7 +79,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -109,7 +109,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -139,7 +139,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -169,7 +169,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -199,7 +199,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -229,7 +229,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -243,9 +243,9 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "status": 200,
-      "title": "Commander Thum-B | Four of Hearts Interactive",
+      "title": "Thumb Command | Save Planet Earth | Four of Hearts Interactive",
       "h1Count": 1,
       "skip": true,
       "main": true,
@@ -259,7 +259,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -289,7 +289,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -319,7 +319,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -349,7 +349,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -363,9 +363,9 @@
       "errors": []
     },
     {
-      "route": "news-commander-thumb-is-coming.html",
+      "route": "news-thumb-command-save-planet-earth.html",
       "status": 200,
-      "title": "Commander Thum-B Is Coming to Four of Hearts Interactive | Four of Hearts News",
+      "title": "Introducing Thumb Command: Save Planet Earth | Four of Hearts News",
       "h1Count": 1,
       "skip": true,
       "main": true,
@@ -379,7 +379,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -393,9 +393,9 @@
       "errors": []
     },
     {
-      "route": "news-welcome-to-the-thum-system.html",
+      "route": "news-the-city-is-the-base.html",
       "status": 200,
-      "title": "Welcome to the Thum System | Four of Hearts News",
+      "title": "The City Is the Base: Building Thumb Command’s New Battlefields | Four of Hearts News",
       "h1Count": 1,
       "skip": true,
       "main": true,
@@ -409,7 +409,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -423,9 +423,9 @@
       "errors": []
     },
     {
-      "route": "news-building-commander-thumb.html",
+      "route": "news-meet-the-blueguard.html",
       "status": 200,
-      "title": "Building Commander Thum-B: One Thumb, One Ship, One Big Defense | Four of Hearts News",
+      "title": "Meet the Blueguard: Earth’s Last Interceptor | Four of Hearts News",
       "h1Count": 1,
       "skip": true,
       "main": true,
@@ -439,7 +439,67 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-designing-the-alien-invasion.html",
+      "status": 200,
+      "title": "Designing the Alien Invasion of Thumb Command | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "tableSelector": 0,
+      "externalScripts": [],
+      "tracking": false,
+      "imagesBroken": [],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-world-tour.html",
+      "status": 200,
+      "title": "From Chicago to Tokyo: The Thumb Command World Tour | Four of Hearts News",
+      "h1Count": 1,
+      "skip": true,
+      "main": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -469,7 +529,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -499,7 +559,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -529,7 +589,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -559,7 +619,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -589,7 +649,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -619,7 +679,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -649,7 +709,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -679,7 +739,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -709,7 +769,7 @@
         "PalaceInteractive Preview",
         "Bobby the BreadasaurusIn Development",
         "Evil Doom Adventures: Shadow RunIn Development",
-        "Commander Thum-BIn Development",
+        "Thumb CommandIn Development",
         "HeartsInternal Alpha",
         "SpadesInternal Alpha",
         "EuchreInternal Alpha",
@@ -1110,7 +1170,7 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 320,
       "height": 568,
       "overflow": false,
@@ -1121,7 +1181,7 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 375,
       "height": 812,
       "overflow": false,
@@ -1132,7 +1192,7 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 430,
       "height": 932,
       "overflow": false,
@@ -1143,7 +1203,7 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 768,
       "height": 1024,
       "overflow": false,
@@ -1154,7 +1214,7 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 1024,
       "height": 768,
       "overflow": false,
@@ -1165,7 +1225,7 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 1366,
       "height": 768,
       "overflow": false,
@@ -1176,7 +1236,7 @@
       "errors": []
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 1920,
       "height": 1080,
       "overflow": false,
@@ -1345,29 +1405,30 @@
     "mobile": {
       "menuExpanded": "true",
       "gamesOpen": "",
-      "commanderVisible": true,
+      "thumbCommandVisible": true,
       "bobbyVisible": true,
       "evilVisible": true
     },
     "palaceSelector": {
       "label": "Shed",
       "url": "?game=shed&lang=en",
-      "commanderLink": "commander-thumb.html?lang=en"
+      "thumbCommandLink": "thumb-command.html?lang=en"
     },
-    "commander": {
-      "title": "Commander Thum-B | Four of Hearts Interactive",
+    "thumbCommand": {
+      "title": "Thumb Command | Save Planet Earth | Four of Hearts Interactive",
       "h1": [
-        "Commander Thum-B"
+        "Thumb Command"
       ],
       "status": true,
       "wrong": false,
-      "newsLinks": 3,
+      "cities": 5,
+      "upgrades": 3,
       "planetDiagram": false
     },
     "news": {
-      "selected": "commander",
-      "visible": 3,
-      "allCommander": true
+      "selected": "thumb-command",
+      "visible": 5,
+      "allThumbCommand": true
     },
     "palaceTutorial": {
       "recoverable": true,
@@ -1390,7 +1451,7 @@
     "locale-he": {
       "lang": "he",
       "dir": "rtl",
-      "title": "Commander Thum-B | Four of Hearts Interactive",
+      "title": "Thumb Command | Save Planet Earth | Four of Hearts Interactive",
       "overflow": false,
       "gameQuery": false,
       "selected": "he"
@@ -1398,7 +1459,7 @@
     "locale-en-CA-fun": {
       "lang": "en-CA-fun",
       "dir": "ltr",
-      "title": "Commander Thum-B | Four of Hearts Interactive",
+      "title": "Thumb Command | Save Planet Earth | Four of Hearts Interactive",
       "overflow": false,
       "gameQuery": false,
       "selected": "en-CA-fun"

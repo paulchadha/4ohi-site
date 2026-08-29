@@ -49,14 +49,14 @@ const mobile = await page.evaluate(() => ({
   focus:parseFloat(getComputedStyle(document.activeElement).outlineWidth) > 0,
   storage:[document.cookie,localStorage.length,sessionStorage.length]
 }));
-if (!skip || !mobile.skip || mobile.h1 !== "Palace" || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
+if (!skip || !mobile.skip || mobile.h1 !== "Four of Hearts Interactive" || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
 await page.close();
 const games = await browser.newPage({ viewport:{ width:1366, height:768 } });
 await games.goto(base + "/games.html", { waitUntil:"networkidle" });
 const catalog = await games.evaluate(() => [...document.querySelectorAll(".catalog-card")].map((card) => ({ key:card.dataset.gameKey,title:card.querySelector("h2")?.textContent.trim(),play:card.querySelectorAll('.actions a[href*="play"]').length })));
-const expected = ["Palace","Bobby the Breadasaurus","Evil Doom Adventures: Shadow Run","Commander Thum-B","Hearts","Spades","Euchre"];
+const expected = ["Palace","Bobby the Breadasaurus","Evil Doom Adventures: Shadow Run","Thumb Command","Hearts","Spades","Euchre"];
 if (catalog.length !== 7 || expected.some((title) => !catalog.some((game) => game.title === title))) failures.push("Seven-game catalog gate failed");
-if (catalog.filter((game) => ["bobby","evil-doom","commander"].includes(game.key)).some((game) => game.play)) failures.push("Unavailable game exposes a false play link");
+if (catalog.filter((game) => ["bobby","evil-doom","thumb-command"].includes(game.key)).some((game) => game.play)) failures.push("Unavailable game exposes a false play link");
 results.catalog = catalog;
 await games.close();
 const bobby = await browser.newPage({ viewport:{ width:430,height:932 } });

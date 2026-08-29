@@ -43,10 +43,10 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
     "doom.action": "Enter Shadow Run, carefully",
     "doom.detail": "Trust is dangerous. Leaving your partner behind would also be extremely poor manners.",
 
-    "commander.status": "In development. The launch pad has a block heater now.",
-    "commander.short": "Defend the base, warn the aliens politely, and make absolutely no fuss about saving the galaxy.",
-    "commander.action": "Enter the Thum System, boots off please",
-    "commander.detail": "One thumb. One ship. Several frozen launch procedures nobody read until this morning.",
+    "thumb-command.status": "In development. The launch pad has a block heater now.",
+    "thumb-command.short": "Defend Earth, warn the aliens politely, and make absolutely no fuss about saving the planet.",
+    "thumb-command.action": "Enter Thumb Command, boots off please",
+    "thumb-command.detail": "One interceptor. One planet. Several frozen launch procedures nobody read until this morning.",
 
     "hearts.status": "Internal alpha. Feelings remain strategically complicated.",
     "hearts.short": "Avoid the points—or take every one with the calm confidence of someone who brought mittens.",
@@ -71,7 +71,7 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
     "games.html": [[".page-hero .lede", "games.intro"]],
     "bobby-the-breadasaurus.html": [[".world-lede", "bobby.detail"], [".world-status", "bobby.status"]],
     "evil-doom-adventures.html": [[".world-lede", "doom.detail"], [".world-status", "doom.status"]],
-    "commander-thumb.html": [[".retro-hero p", "commander.detail"]],
+    "thumb-command.html": [[".retro-hero p", "thumb-command.detail"]],
     "hearts-play.html": [[".page-hero .lede", "hearts.short"]],
     "spades-play.html": [[".page-hero .lede", "spades.short"]],
     "euchre-play.html": [[".page-hero .lede", "euchre.short"]],
