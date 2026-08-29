@@ -137,12 +137,12 @@ await home.locator(".menu-toggle").click();
 await home.locator(".games-menu > summary").click();
 await home.locator('.games-menu-panel a[href*="games/thumb-command/"]').waitFor({ state: "visible" });
 results.interactions.home = {
-  tileVisible: await home.locator(".art-thumb-command").isVisible(),
-  featureVisible: await home.locator(".world-spread--thumb-command").isVisible(),
+  portfolioVisible: await home.locator(".portfolio-link.thumb-command").isVisible(),
+  campaignVisible: await home.locator(".palace-campaign-hero").isVisible(),
   menuLinkVisible: await home.locator('.games-menu-panel a[href*="games/thumb-command/"]').isVisible(),
   menuExpanded: await home.locator(".menu-toggle").getAttribute("aria-expanded")
 };
-if (!results.interactions.home.tileVisible || !results.interactions.home.featureVisible || !results.interactions.home.menuLinkVisible || results.interactions.home.menuExpanded !== "true") fail("Homepage tile, feature, or mobile navigation failed");
+if (!results.interactions.home.portfolioVisible || !results.interactions.home.campaignVisible || !results.interactions.home.menuLinkVisible || results.interactions.home.menuExpanded !== "true") fail("Homepage tile, feature, or mobile navigation failed");
 
 await home.close();
 

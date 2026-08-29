@@ -11,20 +11,20 @@ mkdirSync(evidence, { recursive: true });
 
 const regularRoutes = [
   "index.html", "games.html", "palace.html", "palace-play.html", "palace-story.html", "palace-faq.html",
-  "thumb-command.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "news.html",
+  "games/thumb-command/", "thumb-command.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "news.html",
   "news-thumb-command-save-planet-earth.html", "news-the-city-is-the-base.html", "news-meet-the-blueguard.html",
   "news-designing-the-alien-invasion.html", "news-thumb-command-world-tour.html",
   "hearts-play.html", "spades-play.html", "euchre-play.html", "about.html", "support.html",
   "privacy.html", "security.html", "terms.html", "contact.html", "404.html"
 ];
 const redirects = new Map([
-  ["commander-thumb.html", "thumb-command.html"],
+  ["commander-thumb.html", "games/thumb-command/"],
   ["news-commander-thumb-is-coming.html", "news-thumb-command-save-planet-earth.html"],
   ["news-welcome-to-the-thum-system.html", "news-the-city-is-the-base.html"],
   ["news-building-commander-thumb.html", "news-meet-the-blueguard.html"]
 ]);
 const viewports = [[320, 568], [390, 844], [768, 1024], [1366, 768], [1920, 1080]];
-const responsiveRoutes = ["index.html", "games.html", "thumb-command.html", "news.html", "news-thumb-command-save-planet-earth.html"];
+const responsiveRoutes = ["index.html", "games.html", "games/thumb-command/", "news.html", "news-thumb-command-save-planet-earth.html"];
 const failures = [];
 const results = { checkedAt: new Date().toISOString(), base, routes: [], responsive: [], interactions: {}, redirects: [], failures };
 const fail = (message) => failures.push(message);
@@ -104,7 +104,7 @@ for (const route of responsiveRoutes) {
 
 const thumb = await context.newPage();
 await thumb.setViewportSize({ width: 1440, height: 900 });
-await thumb.goto(`${base}/thumb-command.html`, { waitUntil: "networkidle" });
+await thumb.goto(`${base}/games/thumb-command/`, { waitUntil: "networkidle" });
 results.interactions.thumbCommand = await thumb.evaluate(() => ({
   h1: document.querySelector("h1")?.textContent.replace(/\s+/g, " ").trim(),
   tagline: document.querySelector(".tc-tagline")?.textContent.trim(),
@@ -130,14 +130,14 @@ await home.setViewportSize({ width: 390, height: 844 });
 await home.goto(`${base}/index.html`, { waitUntil: "networkidle" });
 await home.locator(".menu-toggle").click();
 await home.locator(".games-menu > summary").click();
-await home.locator('.games-menu-panel a[href^="thumb-command.html"]').waitFor({ state: "visible" });
+await home.locator('.games-menu-panel a[href*="games/thumb-command/"]').waitFor({ state: "visible" });
 results.interactions.home = {
-  tileVisible: await home.locator(".art-thumb-command").isVisible(),
-  featureVisible: await home.locator(".world-spread--thumb-command").isVisible(),
-  menuLinkVisible: await home.locator('.games-menu-panel a[href^="thumb-command.html"]').isVisible(),
+  portfolioVisible: await home.locator(".portfolio-link.thumb-command").isVisible(),
+  campaignVisible: await home.locator(".palace-campaign-hero").isVisible(),
+  menuLinkVisible: await home.locator('.games-menu-panel a[href*="games/thumb-command/"]').isVisible(),
   menuExpanded: await home.locator(".menu-toggle").getAttribute("aria-expanded")
 };
-if (!results.interactions.home.tileVisible || !results.interactions.home.featureVisible || !results.interactions.home.menuLinkVisible || results.interactions.home.menuExpanded !== "true") fail("Homepage tile, feature, or mobile navigation failed");
+if (!results.interactions.home.portfolioVisible || !results.interactions.home.campaignVisible || !results.interactions.home.menuLinkVisible || results.interactions.home.menuExpanded !== "true") fail("Homepage tile, feature, or mobile navigation failed");
 await home.close();
 
 const news = await context.newPage();
@@ -152,7 +152,7 @@ await news.close();
 
 const reduced = await browser.newContext({ reducedMotion: "reduce" });
 const reducedPage = await reduced.newPage();
-await reducedPage.goto(`${base}/thumb-command.html`, { waitUntil: "networkidle" });
+await reducedPage.goto(`${base}/games/thumb-command/`, { waitUntil: "networkidle" });
 results.interactions.reducedMotion = await reducedPage.locator(".tc-stars").evaluate((node) => getComputedStyle(node).animationName);
 if (results.interactions.reducedMotion !== "none") fail("Reduced-motion preference did not disable star movement");
 await reduced.close();

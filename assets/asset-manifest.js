@@ -34,7 +34,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/palace-tutorial-v3.js": "assets/palace-tutorial-v3.js?v=8a8c9278b846",
   "assets/palace-tutorial.js": "assets/palace-tutorial.js?v=272dea16ae9e",
   "assets/play.js": "assets/play.js?v=b499799d932d",
-  "assets/playable-studio.css": "assets/playable-studio.css?v=a43d9333bc0e",
+  "assets/playable-studio.css": "assets/playable-studio.css?v=8a64bee6a957",
   "assets/playable-studio.js": "assets/playable-studio.js?v=169cbd4585d9",
   "assets/portfolio-worlds.css": "assets/portfolio-worlds.css?v=58e388b3023e",
   "assets/power-cards.js": "assets/power-cards.js?v=eaed8f0f7e0b",
@@ -55,7 +55,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/spatial-gallery.css": "assets/spatial-gallery.css?v=5eaf65266433",
   "assets/spatial-gallery.js": "assets/spatial-gallery.js?v=4730262f9a5c",
   "assets/studio-reconstruction.css": "assets/studio-reconstruction.css?v=59dd790a5142",
-  "assets/studio-reconstruction.js": "assets/studio-reconstruction.js?v=378f2c8d2678",
+  "assets/studio-reconstruction.js": "assets/studio-reconstruction.js?v=d3fd17540218",
   "assets/styles.css": "assets/styles.css?v=b64e2fa93a75",
   "assets/thumb-command.css": "assets/thumb-command.css?v=78f59cf96671"
 });

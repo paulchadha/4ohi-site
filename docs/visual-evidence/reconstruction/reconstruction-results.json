@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-01T13:30:44.416Z",
+  "checkedAt": "2026-08-29T20:34:05.061Z",
   "base": "http://127.0.0.1:4173",
   "routes": [
     {
@@ -675,7 +675,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 320,
       "height": 568,
       "status": 200,
@@ -689,7 +689,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 375,
       "height": 812,
       "status": 200,
@@ -703,7 +703,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 430,
       "height": 932,
       "status": 200,
@@ -717,7 +717,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 768,
       "height": 1024,
       "status": 200,
@@ -731,7 +731,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 1024,
       "height": 768,
       "status": 200,
@@ -745,7 +745,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 1440,
       "height": 900,
       "status": 200,
@@ -759,7 +759,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 1920,
       "height": 1080,
       "status": 200,
@@ -773,7 +773,7 @@
       "session": 0
     },
     {
-      "route": "commander-thumb.html",
+      "route": "thumb-command.html",
       "width": 844,
       "height": 390,
       "status": 200,
@@ -1807,5 +1807,20 @@
       "items": 7
     }
   },
-  "failures": []
+  "failures": [
+    "Palace homepage portfolio target is /palace-play.html?lang=en, expected palace.html.",
+    "Bobby the Breadasaurus homepage portfolio target is /bobby-the-breadasaurus.html?lang=en, expected bobby-the-breadasaurus.html.",
+    "Evil Doom Adventures: Shadow Run homepage portfolio target is /evil-doom-adventures.html?lang=en, expected evil-doom-adventures.html.",
+    "Thumb Command homepage portfolio target is /games/thumb-command/?lang=en, expected thumb-command.html.",
+    "Hearts homepage portfolio target is /hearts-play.html?lang=en, expected hearts-play.html.",
+    "Spades homepage portfolio target is /spades-play.html?lang=en, expected spades-play.html.",
+    "Euchre homepage portfolio target is /euchre-play.html?lang=en, expected euchre-play.html.",
+    "Missing menu destination for Palace.",
+    "Missing menu destination for Bobby the Breadasaurus.",
+    "Missing menu destination for Evil Doom Adventures: Shadow Run.",
+    "Missing menu destination for Thumb Command.",
+    "Missing menu destination for Hearts.",
+    "Missing menu destination for Spades.",
+    "Missing menu destination for Euchre."
+  ]
 }

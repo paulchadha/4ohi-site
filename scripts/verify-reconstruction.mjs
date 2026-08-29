@@ -6,17 +6,17 @@ const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const base = process.env.SITE_URL || "http://127.0.0.1:4173";
 const chrome = process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
-const evidence = resolve("docs", "visual-evidence", "reconstruction");
+const evidence = resolve("docs", "visual-evidence", "reconstruction-2026-08-29");
 mkdirSync(evidence, { recursive: true });
 
 const games = [
-  ["Palace", "palace.html"],
-  ["Bobby the Breadasaurus", "bobby-the-breadasaurus.html"],
-  ["Evil Doom Adventures: Shadow Run", "evil-doom-adventures.html"],
-  ["Thumb Command", "thumb-command.html"],
-  ["Hearts", "hearts-play.html"],
-  ["Spades", "spades-play.html"],
-  ["Euchre", "euchre-play.html"]
+  ["Palace", "/palace-play.html"],
+  ["Bobby the Breadasaurus", "/bobby-the-breadasaurus.html"],
+  ["Evil Doom Adventures: Shadow Run", "/evil-doom-adventures.html"],
+  ["Thumb Command", "/games/thumb-command/"],
+  ["Hearts", "/hearts-play.html"],
+  ["Spades", "/spades-play.html"],
+  ["Euchre", "/euchre-play.html"]
 ];
 const routes = [
   "index.html", "games.html", "palace.html", "palace-play.html",
@@ -55,36 +55,35 @@ for (const route of routes) {
 
 const desktop = await browser.newPage({ viewport: { width: 1440, height: 900 } });
 await desktop.goto(`${base}/index.html`, { waitUntil: "networkidle" });
-const featureEvidence = [
-  ["palace", "desktop-home-feature-palace.png"],
-  ["bobby", "desktop-home-feature-bobby.png"],
-  ["evil-doom", "desktop-home-feature-shadow-run.png"],
-  ["commander", "desktop-home-feature-commander.png"]
-];
-for (let index = 0; index < featureEvidence.length; index += 1) {
-  const [key, file] = featureEvidence[index];
-  const selector = desktop.locator("[data-feature-selector]").nth(index);
-  await selector.click();
-  const selected = await selector.getAttribute("aria-selected");
-  const visibleKey = await desktop.locator("[data-feature-panel]:not([hidden])").getAttribute("data-game-key");
-  if (selected !== "true" || visibleKey !== key) failures.push(`Feature selector ${key} did not activate its panel.`);
-  await desktop.screenshot({ path: resolve(evidence, file) });
+const portfolioLinks = desktop.locator("[data-portfolio-game]");
+if (await portfolioLinks.count() !== games.length) failures.push("Homepage portfolio does not expose all seven canonical games.");
+for (const [title, href] of games) {
+  const link = portfolioLinks.filter({ hasText: title });
+  if (await link.count() !== 1) failures.push(`Homepage portfolio is missing ${title}.`);
+  const target = await link.first().getAttribute("href");
+  if (new URL(target, base).pathname !== href) failures.push(`${title} homepage portfolio target is ${target}, expected ${href}.`);
 }
-await desktop.locator("[data-feature-selector]").first().focus();
-await desktop.keyboard.press("ArrowRight");
-if (await desktop.locator("[data-feature-selector]").nth(1).getAttribute("aria-selected") !== "true") failures.push("Feature selector keyboard navigation failed.");
+await portfolioLinks.first().scrollIntoViewIfNeeded();
+await portfolioLinks.first().focus();
+const portfolioFocus = await portfolioLinks.first().evaluate((node) => getComputedStyle(node).outlineWidth);
+if (parseFloat(portfolioFocus) < 2) failures.push("Homepage portfolio focus is not visibly outlined.");
+await desktop.screenshot({ path: resolve(evidence, "desktop-home-seven-worlds.png") });
 await desktop.locator(".games-menu > summary").click();
 const desktopItems = await desktop.locator(".games-menu-panel a:not(.view-all-games)").allTextContents();
 if (desktopItems.length !== 7 || games.some(([title]) => !desktopItems.some((text) => text.includes(title)))) failures.push("Desktop Games menu does not expose all seven canonical titles.");
 await desktop.screenshot({ path: resolve(evidence, "desktop-games-menu-open.png") });
 await desktop.keyboard.press("Escape");
 if (await desktop.locator(".games-menu").evaluate((node) => node.open)) failures.push("Escape did not close desktop Games menu.");
-for (const [title, href] of games) {
+for (const [title] of games) {
   await desktop.locator(".games-menu > summary").click();
-  const link = desktop.locator(`.games-menu-panel a[href^="${href}"]`);
-  if (await link.count() !== 1) failures.push(`Missing menu destination for ${title}.`);
-  const response = await desktop.request.get(`${base}/${href}`);
-  if (!response.ok()) failures.push(`${title} destination returned ${response.status()}.`);
+  const link = desktop.locator(".games-menu-panel a:not(.view-all-games)").filter({ hasText: title });
+  if (await link.count() !== 1) {
+    failures.push(`Missing menu destination for ${title}.`);
+  } else {
+    const href = await link.getAttribute("href");
+    const response = await desktop.request.get(new URL(href, base).href);
+    if (!response.ok()) failures.push(`${title} destination returned ${response.status()}.`);
+  }
   await desktop.keyboard.press("Escape");
 }
 await desktop.keyboard.press("Tab");
@@ -129,7 +128,7 @@ const shots = [
 for (const [route, name, width, height, featured] of shots) {
   const page = await browser.newPage({ viewport: { width, height } });
   await page.goto(`${base}/${route}`, { waitUntil: "networkidle" });
-  if (featured) await page.locator(".all-games-stage").scrollIntoViewIfNeeded();
+  if (featured) await page.locator(".home-portfolio").scrollIntoViewIfNeeded();
   await page.screenshot({ path: resolve(evidence, name), fullPage: false });
   await page.close();
 }

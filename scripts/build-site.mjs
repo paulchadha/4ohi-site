@@ -248,7 +248,7 @@ write("news.html", page({
         <button type="button" data-news-filter="thumb-command" aria-pressed="false">Thumb Command</button>
         <button type="button" data-news-filter="development" aria-pressed="false">Development</button>
       </div>
-      <div class="news-grid company-news-grid">${news.map(newsCard).join("")}</div>
+      <div class="news-grid company-news-grid">${[featured, ...otherNews].map(newsCard).join("")}</div>
       <p data-news-empty hidden>No stories match this filter.</p>
       <div class="actions"><a class="text-link" href="feed.xml">Subscribe via RSS</a></div>
     </div></section>`
@@ -366,13 +366,13 @@ write("about.html", page({
   title: "About Four of Hearts Interactive | Independent Game Studio",
   description: "Meet the independent studio creating Palace, Bobby the Breadasaurus, Evil Doom Adventures, Thumb Command, Hearts, Spades, and Euchre.",
   path: "/about.html", current: "about", bodyClass: "about-page",
-  content: `${pageHero("Independent game studio", "We make worlds worth playing.", "Four of Hearts Interactive creates original card, arcade, platform, puzzle, and family-adventure games with clear rules, strong characters, and honest development updates.")}
+  content: `${pageHero("One family. Many games.", "Four daughters. Four hearts. One wonderfully serious case of game night.", "This did not begin in a boardroom. It began around a family table—with four daughters, plenty of opinions, and the kind of laughter that makes everyone stay for one more hand.")}
   <section class="section"><div class="shell about-beats" aria-label="How Four of Hearts works">
     <article class="about-beat"><b aria-hidden="true">01</b><h2>Start with play.</h2><p>A good idea earns attention by becoming fun in someone’s hands.</p></article>
     <article class="about-beat"><b aria-hidden="true">02</b><h2>Give it a world.</h2><p>Artwork, motion, sound, and rules should tell the same story.</p></article>
     <article class="about-beat"><b aria-hidden="true">03</b><h2>Show the work.</h2><p>Development updates say what is real, what is changing, and what is not ready yet.</p></article>
   </div></section>
-  <section class="section navy founder-feature"><div class="shell founder-story-grid"><div><p class="eyebrow">The studio point of view</p><h2>Rules create the possibility. Players create the story.</h2><p class="lede">Four of Hearts studies what makes a game immediately readable, strategically interesting, and memorable enough to bring people back.</p><p>That curiosity reaches from the final hidden card in Palace to the movement of Shadow Run, the warm exploration of Bobby, and the escalating pressure of Thumb Command.</p><p class="origin-note">The name Four of Hearts was inspired by the founder’s four daughters.</p><div class="founder-notes"><div class="founder-note"><b>7 worlds</b><span>across card, arcade, platform, puzzle, and adventure genres</span></div><div class="founder-note"><b>1 standard</b><span>make every interaction earn its place</span></div></div></div><img data-game-art src="assets/brand-board.webp" alt="Four of Hearts Interactive portfolio artwork" width="1536" height="1024" loading="lazy"></div></section>
+  <section class="section navy founder-feature" id="founder"><div class="shell founder-story-grid"><div><p class="eyebrow">A lifetime at the table</p><h2>Rules create the possibility. Players create the story.</h2><p class="lede">The founder has spent a lifetime watching what happens when rules meet people—playing, teaching, testing, arguing, laughing, and asking why a good game makes everyone stay.</p><p>That curiosity reaches from the final hidden card in Palace to the movement of Shadow Run, the warm exploration of Bobby, and the escalating pressure of Thumb Command.</p><p class="origin-note">The name Four of Hearts was inspired by the founder’s four daughters.</p><div class="founder-notes"><div class="founder-note"><b>7 worlds</b><span>across card, arcade, platform, puzzle, and adventure genres</span></div><div class="founder-note"><b>1 standard</b><span>make every interaction earn its place</span></div></div></div><img data-game-art src="assets/brand-board.webp" alt="Four of Hearts Interactive portfolio artwork" width="1536" height="1024" loading="lazy"></div></section>
   <section class="section family-story portfolio-family-story"><div class="shell">
     <div class="section-heading"><div><p class="eyebrow">Explore the work</p><h2>Different genres.<br>Distinct visual worlds.</h2></div><p class="lede">Each game has its own identity, status, and destination. Nothing here pretends to be released before it is ready.</p></div>
     <div class="about-worlds">

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-29T19:52:15.701Z",
+  "checkedAt": "2026-08-29T20:52:04.226Z",
   "base": "http://127.0.0.1:4173",
   "routes": [
     {
@@ -808,7 +808,9 @@
       "height": 1024,
       "overflow": 0,
       "h1Visible": true,
-      "tinyTargets": [],
+      "tinyTargets": [
+        "Scroll to play"
+      ],
       "errors": []
     },
     {
@@ -817,7 +819,9 @@
       "height": 768,
       "overflow": 0,
       "h1Visible": true,
-      "tinyTargets": [],
+      "tinyTargets": [
+        "Scroll to play"
+      ],
       "errors": []
     },
     {
@@ -826,7 +830,9 @@
       "height": 1080,
       "overflow": 0,
       "h1Visible": true,
-      "tinyTargets": [],
+      "tinyTargets": [
+        "Scroll to play"
+      ],
       "errors": []
     },
     {
@@ -1034,8 +1040,8 @@
       "outline": "3px"
     },
     "home": {
-      "tileVisible": true,
-      "featureVisible": true,
+      "portfolioVisible": true,
+      "campaignVisible": true,
       "menuLinkVisible": true,
       "menuExpanded": "true"
     },
@@ -1053,13 +1059,6 @@
     "reducedMotion": "none"
   },
   "redirects": [
-    {
-      "from": "games/commander-thum-b/",
-      "to": "games/thumb-command/",
-      "status": 200,
-      "canonical": true,
-      "finalUrl": "http://127.0.0.1:4173/games/thumb-command/"
-    },
     {
       "from": "commander-thumb.html",
       "to": "games/thumb-command/",

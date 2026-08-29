@@ -49,7 +49,7 @@ const mobile = await page.evaluate(() => ({
   focus:parseFloat(getComputedStyle(document.activeElement).outlineWidth) > 0,
   storage:[document.cookie,localStorage.length,sessionStorage.length]
 }));
-if (!skip || !mobile.skip || mobile.h1 !== "Four of Hearts Interactive" || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
+if (!skip || !mobile.skip || mobile.h1 !== "Palace is finally coming home." || mobile.links !== 8 || !mobile.focus || mobile.storage.some(Boolean)) failures.push("Homepage keyboard, mobile menu, studio title, or privacy gate failed");
 await page.close();
 const games = await browser.newPage({ viewport:{ width:1366, height:768 } });
 await games.goto(base + "/games.html", { waitUntil:"networkidle" });
