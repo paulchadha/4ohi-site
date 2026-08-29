@@ -117,7 +117,7 @@
       const url = new URL(raw, location.href);
       url.searchParams.set("lang", locale);
       if (game !== "palace") url.searchParams.set("game", game); else url.searchParams.delete("game");
-      link.href = `${url.pathname.split("/").pop() || "index.html"}${url.search}${url.hash}`;
+      link.href = `${url.pathname}${url.search}${url.hash}`;
     });
   };
   const applyGame = () => {

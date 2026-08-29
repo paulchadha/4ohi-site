@@ -25,7 +25,7 @@
       if (!raw || raw.startsWith("#") || /^(?:mailto:|tel:|https?:)/i.test(raw)) return;
       const next = new URL(raw, location.href);
       next.searchParams.set("lang", system.locale);
-      link.href = `${next.pathname.split("/").pop() || "index.html"}${next.search}${next.hash}`;
+      link.href = `${next.pathname}${next.search}${next.hash}`;
     });
   }
   document.dispatchEvent(new CustomEvent("fourOfHearts:canadianReady", { detail: { active } }));

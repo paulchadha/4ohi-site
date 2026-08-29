@@ -164,7 +164,7 @@
       next.searchParams.set("lang", locale);
       const palaceRoute = /^(palace(?:-play|-story|-faq)?\.html)$/.test(next.pathname.split("/").pop() || "index.html");
       if (!palaceContext || !palaceRoute || mode === "palace") next.searchParams.delete("game"); else next.searchParams.set("game", mode);
-      link.href = `${next.pathname.split("/").pop() || "index.html"}${next.search}${next.hash}`;
+      link.href = `${next.pathname}${next.search}${next.hash}`;
     });
   };
 

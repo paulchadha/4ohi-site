@@ -7,9 +7,10 @@ const { chromium } = require("playwright");
 const base = process.env.SITE_URL || "http://127.0.0.1:4173";
 const chrome = process.env.CHROME_PATH || "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const evidence = resolve("docs", "visual-evidence", "thumb-command");
+const writeEvidence = process.env.WRITE_EVIDENCE !== "0";
 mkdirSync(evidence, { recursive: true });
 const routes = [
-  "index.html", "games.html", "thumb-command.html", "news.html",
+  "index.html", "games.html", "games/thumb-command/", "thumb-command.html", "news.html",
   "news-thumb-command-save-planet-earth.html", "news-the-city-is-the-base.html",
   "news-meet-the-blueguard.html", "news-designing-the-alien-invasion.html",
   "news-thumb-command-world-tour.html"
@@ -38,13 +39,13 @@ for (const route of routes) {
     }));
     results.pages.push({ route, width, height, status: response?.status(), ...state, errors });
     if (response?.status() !== 200 || state.h1 !== 1 || state.overflow > 1 || state.broken || state.legacy || !state.main || errors.length) failures.push(`${route} ${width}x${height} failed rendered gate`);
-    if (route === "thumb-command.html" && [320,768,1366,1920].includes(width)) await page.screenshot({ path: resolve(evidence, `thumb-command-${width}x${height}.png`), fullPage: true });
+    if (writeEvidence && route === "games/thumb-command/" && [320,768,1366,1920].includes(width)) await page.screenshot({ path: resolve(evidence, `thumb-command-${width}x${height}.png`), fullPage: true });
     await page.close();
   }
 }
 
 const command = await browser.newPage({ viewport: { width: 375, height: 812 } });
-await command.goto(`${base}/thumb-command.html`, { waitUntil: "networkidle" });
+await command.goto(`${base}/games/thumb-command/`, { waitUntil: "networkidle" });
 const commandState = await command.evaluate(() => ({
   title: document.title,
   canonical: document.querySelector('link[rel="canonical"]')?.href,
@@ -74,11 +75,11 @@ const tile = await home.evaluate(() => {
   const link = document.querySelector('[data-home-game="thumb-command"]');
   return { href: link?.getAttribute("href"), name: link?.querySelector("h3")?.textContent.trim(), copy: link?.innerText, image: link?.querySelector("img")?.getAttribute("src") };
 });
-if (!tile.href?.startsWith("thumb-command.html") || tile.name !== "Thumb Command" || !/Save Planet Earth/i.test(tile.copy) || !tile.image?.includes("thumb-command")) failures.push("Homepage Thumb Command feature gate failed");
+if (!tile.href?.includes("games/thumb-command/") || tile.name !== "Thumb Command" || !/Save Planet Earth/i.test(tile.copy) || !tile.image?.includes("thumb-command")) failures.push(`Homepage Thumb Command feature gate failed: ${JSON.stringify(tile)}`);
 await home.locator(".menu-toggle").click();
 await home.locator(".games-menu > summary").focus();
 await home.keyboard.press("Enter");
-if ((await home.locator('.games-menu-panel a[href^="thumb-command.html"]').count()) !== 1) failures.push("Mobile Games navigation gate failed");
+if ((await home.locator('.games-menu-panel a[href*="games/thumb-command/"]').count()) !== 1) failures.push("Mobile Games navigation gate failed");
 await home.close();
 
 const news = await browser.newPage({ viewport: { width: 1366, height: 768 } });
@@ -87,7 +88,7 @@ const articleTitles = await news.locator('[data-news-tags*="thumb-command"] h2')
 if (articleTitles.length < 5) failures.push("Thumb Command news collection gate failed");
 await news.close();
 
-for (const [oldRoute, expected] of [["games/commander-thum-b/","thumb-command.html"],["commander-thumb.html","thumb-command.html"],["news-commander-thumb-is-coming.html","news-thumb-command-save-planet-earth.html"],["news-welcome-to-the-thum-system.html","news-the-city-is-the-base.html"],["news-building-commander-thumb.html","news-meet-the-blueguard.html"]]) {
+for (const [oldRoute, expected] of [["games/commander-thum-b/","games/thumb-command/"],["commander-thumb.html","games/thumb-command/"],["news-commander-thumb-is-coming.html","news-thumb-command-save-planet-earth.html"],["news-welcome-to-the-thum-system.html","news-the-city-is-the-base.html"],["news-building-commander-thumb.html","news-meet-the-blueguard.html"]]) {
   const page = await browser.newPage();
   await page.goto(`${base}/${oldRoute}`, { waitUntil: "networkidle" });
   await page.waitForURL(new RegExp(`${expected.replaceAll(".", "\\.")}(?:[?#].*)?$`));
@@ -97,7 +98,7 @@ for (const [oldRoute, expected] of [["games/commander-thum-b/","thumb-command.ht
 
 await browser.close();
 if (legacy.test(JSON.stringify(results))) failures.push("Legacy product name leaked into results");
-writeFileSync(resolve(evidence, "thumb-command-results.json"), `${JSON.stringify({ ...results, command: commandState }, null, 2)}\n`, "utf8");
+if (writeEvidence) writeFileSync(resolve(evidence, "thumb-command-results.json"), `${JSON.stringify({ ...results, command: commandState }, null, 2)}\n`, "utf8");
 if (!existsSync(resolve("assets/thumb-command/source/thumb-command-app-icon-source.png"))) failures.push("Approved source-art preservation gate failed");
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
 console.log(`Thumb Command QA passed: ${routes.length} routes, ${viewports.length} viewports, five articles, world tour, gallery, metadata, navigation, redirects, responsive layout, and source-art provenance.`);
