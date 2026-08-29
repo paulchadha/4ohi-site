@@ -16,7 +16,13 @@ Date: 2026-08-29
 - Repository: \`paulchadha/4ohi-site\`
 - Branch: \`main\`
 - Host: GitHub Pages with custom domain \`4ohi.com\`
-- Pre-release rollback commit: \`766653f76d2fbbd25baf238cc17ca03399ee5c12\`
+- Pre-release rollback commit: \`e47513ca0a797c2df60b3c55680f210e4304d92f\`
+
+## Deployment record
+
+- Implementation commit: \`ed5bbb47b2e9a9a27e2638152a15003c41e90c73\`
+- GitHub Pages workflow: \`33270937191\`
+- GitHub Pages deployment: \`6159295320\`
 
 ## Required release gate
 
