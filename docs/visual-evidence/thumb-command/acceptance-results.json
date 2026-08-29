@@ -1,0 +1,1056 @@
+{
+  "checkedAt": "2026-08-29T19:23:39.147Z",
+  "base": "http://127.0.0.1:4187",
+  "routes": [
+    {
+      "route": "index.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Four of Hearts Interactive | Original Game Worlds",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Games | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "palace.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Palace | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "palace-play.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Play Palace | Interactive Mini-Match",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "palace-story.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Palace: Fact, Folklore & Legend | Four of Hearts",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "palace-faq.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Palace Card Game Rules, Power Cards & FAQ | Four of Hearts",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "thumb-command.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Thumb Command — Save Planet Earth | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Bobby the Breadasaurus | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Evil Doom Adventures: Shadow Run | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "News | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Introducing Thumb Command: Save Planet Earth | Four of Hearts News",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "news-the-city-is-the-base.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "The City Is the Base: Building Thumb Command’s New Battlefields | Four of Hearts News",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "news-meet-the-blueguard.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Meet the Blueguard: Earth’s Last Interceptor | Four of Hearts News",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "news-designing-the-alien-invasion.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Designing the Alien Invasion of Thumb Command | Four of Hearts News",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-world-tour.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "From Chicago to Tokyo: The Thumb Command World Tour | Four of Hearts News",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "hearts-play.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Hearts Quick Play | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "spades-play.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Spades Quick Play | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "euchre-play.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Euchre Quick Play | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "about.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "About Four of Hearts Interactive | Independent Game Studio",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "support.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Support | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "privacy.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Privacy Choices & Policy | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "security.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Security | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "terms.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Internal Alpha Terms | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "contact.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Contact | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    },
+    {
+      "route": "404.html",
+      "status": 200,
+      "h1": 1,
+      "main": true,
+      "skip": true,
+      "nav": [
+        "Games",
+        "News",
+        "About",
+        "Play Palace"
+      ],
+      "gameLinks": [
+        "PalaceInteractive Preview",
+        "Bobby the BreadasaurusIn Development",
+        "Evil Doom Adventures: Shadow RunIn Development",
+        "Thumb CommandIn Development",
+        "HeartsInternal Alpha",
+        "SpadesInternal Alpha",
+        "EuchreInternal Alpha",
+        "View All Games →"
+      ],
+      "brokenImages": [],
+      "overflow": 0,
+      "title": "Page Not Found | Four of Hearts Interactive",
+      "metadata": true,
+      "tracking": false,
+      "storage": 0,
+      "errors": []
+    }
+  ],
+  "responsive": [
+    {
+      "route": "index.html",
+      "width": 320,
+      "height": 568,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "index.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 320,
+      "height": 568,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "games.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "thumb-command.html",
+      "width": 320,
+      "height": 568,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "thumb-command.html",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "thumb-command.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "thumb-command.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "thumb-command.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 320,
+      "height": 568,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "width": 320,
+      "height": 568,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "width": 1366,
+      "height": 768,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "width": 1920,
+      "height": 1080,
+      "overflow": 0,
+      "h1Visible": true,
+      "tinyTargets": [],
+      "errors": []
+    }
+  ],
+  "interactions": {
+    "thumbCommand": {
+      "h1": "Thumb Command",
+      "tagline": "Save Planet Earth",
+      "cityNames": [
+        "Chicago",
+        "San Francisco",
+        "New York City",
+        "London",
+        "Tokyo"
+      ],
+      "galleryItems": 6,
+      "blueguard": true,
+      "mothership": true,
+      "appIcon": "assets/thumb-command/thumb-command-app-icon-768.webp?v=d93855b560b8",
+      "hero": "http://127.0.0.1:4187/assets/thumb-command/thumb-command-chicago-gameplay-1600.webp",
+      "sections": true,
+      "jsonLd": true
+    },
+    "firstFocus": {
+      "className": "skip-link",
+      "outline": "3px"
+    },
+    "home": {
+      "tileVisible": true,
+      "featureVisible": true,
+      "menuLinkVisible": true,
+      "menuExpanded": "true"
+    },
+    "news": {
+      "selected": "thumb-command",
+      "visible": 5,
+      "titles": [
+        "Introducing Thumb Command: Save Planet Earth",
+        "The City Is the Base: Building Thumb Command’s New Battlefields",
+        "Meet the Blueguard: Earth’s Last Interceptor",
+        "Designing the Alien Invasion of Thumb Command",
+        "From Chicago to Tokyo: The Thumb Command World Tour"
+      ]
+    },
+    "reducedMotion": "none"
+  },
+  "redirects": [
+    {
+      "from": "commander-thumb.html",
+      "to": "thumb-command.html",
+      "status": 200,
+      "canonical": true,
+      "finalUrl": "http://127.0.0.1:4187/thumb-command.html?source=legacy#mission"
+    },
+    {
+      "from": "news-commander-thumb-is-coming.html",
+      "to": "news-thumb-command-save-planet-earth.html",
+      "status": 200,
+      "canonical": true,
+      "finalUrl": "http://127.0.0.1:4187/news-thumb-command-save-planet-earth.html?source=legacy#mission"
+    },
+    {
+      "from": "news-welcome-to-the-thum-system.html",
+      "to": "news-the-city-is-the-base.html",
+      "status": 200,
+      "canonical": true,
+      "finalUrl": "http://127.0.0.1:4187/news-the-city-is-the-base.html?source=legacy#mission"
+    },
+    {
+      "from": "news-building-commander-thumb.html",
+      "to": "news-meet-the-blueguard.html",
+      "status": 200,
+      "canonical": true,
+      "finalUrl": "http://127.0.0.1:4187/news-meet-the-blueguard.html?source=legacy#mission"
+    }
+  ],
+  "failures": []
+}

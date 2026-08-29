@@ -12,7 +12,7 @@
       "World Campaign"
     ],
     "featured": true,
-    "image": "assets/thumb-command/og-thumb-command.jpg",
+    "image": "assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg",
     "imageAlt": "Blueguard interceptor defending Chicago from a purple alien invasion",
     "body": [
       {
@@ -44,7 +44,7 @@
       "Design"
     ],
     "featured": false,
-    "image": "assets/thumb-command/thumb-command-chicago-1440.webp",
+    "image": "assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg",
     "imageAlt": "Thumb Command battle above Chicago with the city shield active",
     "body": [
       {
@@ -76,7 +76,7 @@
       "Upgrades"
     ],
     "featured": false,
-    "image": "assets/thumb-command/thumb-command-blueguard-960.webp",
+    "image": "assets/thumb-command/thumb-command-blueguard-upgrades-news-1200.jpg",
     "imageAlt": "Blueguard interceptor and its Vanguard, Sentinel, and Paladin upgrade forms",
     "body": [
       {
@@ -108,7 +108,7 @@
       "Bosses"
     ],
     "featured": false,
-    "image": "assets/thumb-command/thumb-command-mothership-960.webp",
+    "image": "assets/thumb-command/thumb-command-alien-fleet-news-1200.jpg",
     "imageAlt": "Purple and magenta Mothership boss from Thumb Command",
     "body": [
       {
@@ -140,7 +140,7 @@
       "Cities"
     ],
     "featured": false,
-    "image": "assets/thumb-command/source/thumb-command-city-board-source.png",
+    "image": "assets/thumb-command/thumb-command-city-tokyo-news-1200.jpg",
     "imageAlt": "San Francisco, New York City, London, and Tokyo campaign environments from Thumb Command",
     "body": [
       {

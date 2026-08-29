@@ -11,6 +11,7 @@ for (const page of pages) {
   check(existsSync(file), `${page}: file is missing`);
   if (!existsSync(file)) continue;
   const html = readFileSync(file, "utf8");
+  const legacyRedirect = /data-route-target=/i.test(html);
   check((html.match(/<h1\b/gi) || []).length === 1, `${page}: expected exactly one h1`);
   const headingLevels = [...html.matchAll(/<h([1-6])\b/gi)].map((match) => Number(match[1]));
   for (let i = 1; i < headingLevels.length; i += 1) {
@@ -27,6 +28,8 @@ for (const page of pages) {
   check(!/Shithead/i.test(html.split("</head>")[0]), `${page}: private traditional name leaked into metadata`);
   check(/<link\s+rel="icon"/i.test(html), `${page}: favicon is missing`);
   check(!/[�]|â€”|â€™|Â©/.test(html), `${page}: text contains encoding artifacts`);
+  if (legacyRedirect) check(/name="robots"\s+content="noindex/i.test(html), `${page}: noindex is missing from compatibility route`);
+  else check(!/Commander\s+(?:Thum|Thumb)|\bThum[-‑ ]B\b|Thum System/i.test(html), `${page}: retired arcade branding remains visible`);
   const unsafeForms = [...html.matchAll(/<form\b([^>]*)>/gi)].filter(([, attrs]) => !/\bmethod="dialog"/i.test(attrs));
   check(unsafeForms.length === 0, `${page}: unexpected non-dialog form found`);
   check(!/(google-analytics|googletagmanager|facebook\.net|doubleclick|segment\.com)/i.test(html), `${page}: tracking code found`);

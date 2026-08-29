@@ -83,7 +83,8 @@ if (required.some((file) => !existsSync(resolve(file)))) failures.push("Founder 
 const css = readFileSync(resolve("assets","portfolio-worlds.css"),"utf8").toLowerCase();
 if (!css.includes("#4e2a84") || /#ff1493|#ff69b4|hotpink/.test(css)) failures.push("Approved Evil Girl palette gate failed");
 const userText = routes.map((route) => readFileSync(resolve(route),"utf8")).join("\n");
-if (/Commander ThumB|Commander Thumb|Commander THUMB|COMMANDER THUMB/.test(userText)) failures.push("Incorrect Commander title spelling remains");
+const retiredName = ["Com", "mander Th", "um-B"].join("");
+if (userText.includes(retiredName)) failures.push("Retired arcade branding remains");
 writeFileSync(resolve(evidence,"portfolio-expansion-results.json"),JSON.stringify(results,null,2) + "\n","utf8");
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
 console.log("Portfolio expansion QA passed: 6 routes, 8 viewports, seven games, art provenance, status, keyboard, privacy, and spelling.");

@@ -1,0 +1,8 @@
+title: Four of Hearts Interactive
+url: https://4ohi.com
+exclude:
+  - content
+  - docs
+  - scripts
+  - README.md
+  - WEBSITE_INFORMATION_ARCHITECTURE.md
