@@ -48,7 +48,7 @@ The CNAME is 4ohi.com. Never alter Proton MX, SPF, DKIM, DMARC, provider verific
 - [Website information architecture](WEBSITE_INFORMATION_ARCHITECTURE.md)
 - [Portfolio expansion](docs/PORTFOLIO-EXPANSION-2026-07-31.md)
 - [Portfolio art provenance](docs/PORTFOLIO-ART-PROVENANCE.md)
-- [Thumb Command website](THUMB_COMMAND_WEBSITE.md)
+- [Thumb Command website](docs/THUMB-COMMAND-WEBSITE.md)
 - [Website deployment](docs/WEBSITE-DEPLOYMENT.md)
 - [Accessibility](docs/ACCESSIBILITY.md)
 - [News authoring](docs/NEWS-AUTHORING.md)

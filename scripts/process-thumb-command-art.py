@@ -1,50 +1,96 @@
+"""Build reproducible, responsive Thumb Command website artwork derivatives."""
+
+from __future__ import annotations
+
+import hashlib
+import json
 from pathlib import Path
-from PIL import Image
+
+from PIL import Image, ImageOps
+
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSETS = ROOT / "assets" / "thumb-command"
-SOURCE = ASSETS / "source"
-ASSETS.mkdir(parents=True, exist_ok=True)
-SOURCE.mkdir(parents=True, exist_ok=True)
+SOURCE = ROOT / "docs" / "source-assets" / "thumb-command"
+OUTPUT = ROOT / "assets" / "thumb-command"
 
-def webp(image, name, width, quality=88):
-    ratio = width / image.width
-    resized = image.resize((width, round(image.height * ratio)), Image.Resampling.LANCZOS)
-    resized.save(ASSETS / name, "WEBP", quality=quality, method=6)
-
-icon = Image.open(SOURCE / "thumb-command-app-icon-source.png").convert("RGB")
-for width in (480, 960, 1254):
-    webp(icon, f"thumb-command-app-icon-{width}.webp", width, 90)
-
-gameplay = Image.open(SOURCE / "thumb-command-chicago-gameplay-source.png").convert("RGB")
-for width in (640, 960, 1440):
-    webp(gameplay, f"thumb-command-chicago-{width}.webp", width)
-
-cities = Image.open(SOURCE / "thumb-command-city-board-source.png").convert("RGB")
-city_boxes = {
-    "san-francisco": (0, 0, 768, 512),
-    "new-york-city": (768, 0, 1536, 512),
-    "london": (0, 512, 768, 1024),
-    "tokyo": (768, 512, 1536, 1024),
+SCENES = {
+    "thumb-command-chicago-gameplay": "thumb-command-chicago-gameplay-source.png",
+    "thumb-command-city-san-francisco": "thumb-command-city-san-francisco-source.png",
+    "thumb-command-city-new-york": "thumb-command-city-new-york-source.png",
+    "thumb-command-city-london": "thumb-command-city-london-source.png",
+    "thumb-command-city-tokyo": "thumb-command-city-tokyo-source.png",
+    "thumb-command-blueguard-upgrades": "thumb-command-blueguard-upgrades-source.png",
+    "thumb-command-alien-fleet": "thumb-command-alien-fleet-source.png",
 }
-for city, box in city_boxes.items():
-    crop = cities.crop(box)
-    for width in (640, 960):
-        webp(crop, f"thumb-command-city-{city}-{width}.webp", width)
 
-units = Image.open(SOURCE / "thumb-command-units-board-source.png").convert("RGB")
-unit_boxes = {
-    "blueguard": (185, 0, 990, 320),
-    "alien-fleet": (0, 310, 990, 600),
-    "mothership": (990, 320, 1536, 760),
-    "defense-systems": (0, 590, 1536, 1024),
-}
-for feature, box in unit_boxes.items():
-    crop = units.crop(box)
-    for width in (640, 960):
-        webp(crop, f"thumb-command-{feature}-{width}.webp", width)
 
-og = gameplay.crop((80, 105, 1456, 827)).resize((1200, 630), Image.Resampling.LANCZOS)
-og.save(ASSETS / "og-thumb-command.jpg", "JPEG", quality=91, optimize=True, progressive=True)
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
-print("Processed Thumb Command source art into responsive derivatives.")
+
+def fit(image: Image.Image, size: tuple[int, int]) -> Image.Image:
+    return ImageOps.fit(image, size, Image.Resampling.LANCZOS, centering=(0.5, 0.5))
+
+
+def save_webp(image: Image.Image, path: Path) -> None:
+    image.save(path, "WEBP", quality=84, method=6)
+
+
+def save_jpeg(image: Image.Image, path: Path) -> None:
+    image.convert("RGB").save(path, "JPEG", quality=88, optimize=True, progressive=True)
+
+
+def main() -> None:
+    OUTPUT.mkdir(parents=True, exist_ok=True)
+    report: dict[str, object] = {"sources": {}, "outputs": []}
+
+    icon_path = SOURCE / "thumb-command-approved-app-icon.png"
+    with Image.open(icon_path) as icon:
+        icon = icon.convert("RGBA")
+        for edge in (384, 768):
+            derivative = icon.resize((edge, edge), Image.Resampling.LANCZOS)
+            target = OUTPUT / f"thumb-command-app-icon-{edge}.webp"
+            save_webp(derivative, target)
+            report["outputs"].append(str(target.relative_to(ROOT)).replace("\\", "/"))
+        fallback = icon.resize((512, 512), Image.Resampling.LANCZOS)
+        fallback_path = OUTPUT / "thumb-command-app-icon-512.png"
+        fallback.save(fallback_path, "PNG", optimize=True)
+        report["outputs"].append(str(fallback_path.relative_to(ROOT)).replace("\\", "/"))
+    report["sources"][icon_path.name] = sha256(icon_path)
+
+    for stem, filename in SCENES.items():
+        source_path = SOURCE / filename
+        with Image.open(source_path) as source:
+            source = source.convert("RGB")
+            for width in (720, 1280, 1600):
+                height = round(width * 9 / 16)
+                derivative = fit(source, (width, height))
+                target = OUTPUT / f"{stem}-{width}.webp"
+                save_webp(derivative, target)
+                report["outputs"].append(str(target.relative_to(ROOT)).replace("\\", "/"))
+
+            fallback = fit(source, (1600, 900))
+            fallback_path = OUTPUT / f"{stem}-1600.jpg"
+            save_jpeg(fallback, fallback_path)
+            report["outputs"].append(str(fallback_path.relative_to(ROOT)).replace("\\", "/"))
+
+            news = fit(source, (1200, 630))
+            news_path = OUTPUT / f"{stem}-news-1200.jpg"
+            save_jpeg(news, news_path)
+            report["outputs"].append(str(news_path.relative_to(ROOT)).replace("\\", "/"))
+        report["sources"][source_path.name] = sha256(source_path)
+
+    social_source = SOURCE / "thumb-command-chicago-gameplay-source.png"
+    with Image.open(social_source) as source:
+        social = fit(source.convert("RGB"), (1200, 630))
+        social_path = OUTPUT / "thumb-command-social-1200x630.jpg"
+        save_jpeg(social, social_path)
+        report["outputs"].append(str(social_path.relative_to(ROOT)).replace("\\", "/"))
+
+    report_path = OUTPUT / "provenance.json"
+    report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    print(f"Built {len(report['outputs'])} Thumb Command derivatives in {OUTPUT}")
+
+
+if __name__ == "__main__":
+    main()

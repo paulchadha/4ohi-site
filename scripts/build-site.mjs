@@ -55,7 +55,7 @@ const palaceDialogs = () => `
 const gameNav = (game, section) => {
   const links = game === "palace"
     ? [["overview", "palace.html", "Overview"], ["rules", "palace-faq.html", "How to Play"], ["play", "palace-play.html", "Play Palace"], ["news", "news.html?tag=palace", "Palace News"]]
-    : [["overview", "games/thumb-command/", "Overview"], ["story", "games/thumb-command/#story", "Planet Earth"], ["mission", "games/thumb-command/#mission", "Gameplay"], ["news", "news.html?tag=thumb-command", "News"]];
+    : [["overview", "games/thumb-command/", "Overview"], ["mission", "games/thumb-command/#mission", "Mission"], ["gameplay", "games/thumb-command/#gameplay", "Gameplay"], ["cities", "games/thumb-command/#cities", "World Tour"], ["gallery", "games/thumb-command/#gallery", "Gallery"], ["news", "news.html?tag=thumb-command", "News"]];
   return `<nav class="game-subnav" aria-label="${game === "palace" ? "Palace" : "Thumb Command"}">
     <div class="shell"><strong>${game === "palace" ? "Palace" : "Thumb Command"}</strong>
       <div>${links.map(([key, href, label]) => `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("")}${game === "thumb-command" ? '<span class="status-badge">In Development</span>' : ""}</div>
@@ -219,7 +219,7 @@ write("palace.html", page({
     </div></section>
     <section class="section navy"><div class="shell story-split"><div><p class="eyebrow">Same game. Different tables.</p><h2>What do you call it?</h2><p class="lede">Palace and Shed are names used for the same wider game family. Change the displayed name for this page session; nothing is stored.</p></div><div class="name-console"><h3>Table name</h3><div class="name-options" role="group" aria-label="Choose the displayed game name"><button type="button" data-name-choice="Palace" aria-pressed="true">Palace</button><button type="button" data-name-choice="Shed" aria-pressed="false">Shed</button></div><p data-name-status role="status">Palace is used at this table. This choice resets when you refresh.</p><p class="name-secret" data-name-secret tabindex="-1" hidden>You found the name some tables whisper. Welcome to the founder’s table.</p></div></div></section>
     <section class="section"><div class="shell story-split"><img src="assets/icon-palace-4hearts.webp" alt="Palace castle with blue towers" width="512" height="512" loading="lazy"><div><p class="eyebrow">A game built to travel</p><h2>Passed hand to hand.</h2><p class="lede">Palace belongs to a folk shedding-game family with many regional names and house rules. The exact origin remains uncertain. The Four of Hearts edition gives that living tradition one clear rule set and a world of its own.</p><div class="actions"><a class="button" href="palace-play.html">Take your seat</a><a class="text-link" href="palace-story.html">Fact, folklore & legend</a></div></div></div></section>
-    <section class="section ct-home-feature"><div class="shell story-split"><picture><source media="(max-width:600px)" srcset="assets/thumb-command/thumb-command-app-icon-480.webp"><img src="assets/thumb-command/thumb-command-app-icon-960.webp" alt="Thumb Command Blueguard interceptor defending Planet Earth" width="960" height="960" loading="lazy"></picture><div><p class="ct-kicker">In development at Four of Hearts</p><h2>Thumb Command</h2><p class="lede">Take command of Earth's last interceptor. Defend Chicago, San Francisco, New York, London, Tokyo, and cities around the world from a relentless alien invasion.</p><a class="ct-button" href="games/thumb-command/">Enter Thumb Command</a></div></div></section>`
+    <section class="section ct-home-feature"><div class="shell story-split"><picture><source media="(max-width:600px)" srcset="assets/thumb-command/thumb-command-app-icon-384.webp"><img src="assets/thumb-command/thumb-command-app-icon-768.webp" alt="Thumb Command Blueguard interceptor defending Planet Earth" width="768" height="768" loading="lazy"></picture><div><p class="ct-kicker">In development at Four of Hearts</p><h2>Thumb Command</h2><p class="lede">Take command of Earth's last interceptor. Defend Chicago, San Francisco, New York, London, Tokyo, and cities around the world from a relentless alien invasion.</p><a class="ct-button" href="games/thumb-command/">Enter Thumb Command</a></div></div></section>`
 }));
 write("palace-play.html", page({
   title: "Play Palace | Interactive Mini-Match",
@@ -305,12 +305,12 @@ write("games.html", page({
     <section class="section"><div class="shell"><div class="catalog-grid">${gameCatalog.map((game) => gameCard(game)).join("")}</div></div></section>`
 }));
 
-const thumbCommandMarkup = thumbCommandPage({ page, company, siteUrl });
+const thumbCommandMarkup = thumbCommandPage({ page, company, siteUrl, gameNav });
 write("thumb-command.html", thumbCommandMarkup);
-write("games/thumb-command/index.html", thumbCommandMarkup.replace("<head>", '<head><base href="../../">'));
+write("games/thumb-command/index.html", thumbCommandMarkup.replace("<head>", '<head><base href="../../">') );
 const legacyRedirectPage = (title, target) => page({
   title: `${title} | Moved`, description: "This Four of Hearts Interactive page has moved to Thumb Command.",
-  path: "/games/thumb-command/", current: "thumb-command", noindex: true,
+  path: `/${target}`, current: "thumb-command", noindex: true,
   script: '<script src="assets/route-redirect.js" defer></script>',
   content: `<section class="page-hero"><div class="shell" data-route-target="${target}"><p class="eyebrow">Mission rerouted</p><h1>This page has moved.</h1><p class="lede">Continue to the new Thumb Command destination.</p><a class="button" href="${target}">Continue</a></div></section>`
 });
@@ -357,7 +357,7 @@ write("play.html", page({
       <div class="game-grid">
         <article class="panel game-tile hearts"><img src="assets/icon-hearts-4hearts.webp" alt="Hearts ruby artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Hearts</h3><a class="text-link" href="hearts-play.html">Follow suit</a></div></article>
         <article class="panel game-tile spades"><img src="assets/icon-spades-4hearts.webp" alt="Spades purple artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Spades</h3><a class="text-link" href="spades-play.html">Play trump</a></div></article>
-        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Find the bowers</a></div></article><article class="panel game-tile thumb-command-tile"><picture><source media="(max-width:600px)" srcset="assets/thumb-command/thumb-command-app-icon-480.webp"><img src="assets/thumb-command/thumb-command-app-icon-960.webp" alt="Thumb Command Blueguard interceptor defending Planet Earth" width="960" height="960" loading="lazy"></picture><div class="game-tile-content"><h3>Thumb Command</h3><a class="text-link" href="games/thumb-command/">Follow the mission</a></div></article>
+        <article class="panel game-tile euchre"><img src="assets/icon-euchre-4hearts.webp" alt="Euchre green artwork" width="512" height="512" loading="lazy"><div class="game-tile-content"><h3>Euchre</h3><a class="text-link" href="euchre-play.html">Find the bowers</a></div></article><article class="panel game-tile thumb-command-tile"><picture><source media="(max-width:600px)" srcset="assets/thumb-command/thumb-command-app-icon-384.webp"><img src="assets/thumb-command/thumb-command-app-icon-768.webp" alt="Thumb Command Blueguard interceptor defending Planet Earth" width="768" height="768" loading="lazy"></picture><div class="game-tile-content"><h3>Thumb Command</h3><a class="text-link" href="games/thumb-command/">Follow the mission</a></div></article>
       </div>
     </div></section>`
 }));
