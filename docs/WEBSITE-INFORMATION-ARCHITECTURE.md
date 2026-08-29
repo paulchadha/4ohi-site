@@ -84,3 +84,7 @@ The single source of catalog truth is `scripts/game-catalog.mjs`. See `docs/GAME
 ## 2026-08-01 playable studio homepage
 
 The homepage is company-first and portfolio-led: compact studio marquee, four major editorial worlds, compact Palace play band, all-seven portfolio reel, no more than three news items, and a compact studio signoff. Palace remains one game; Bobby, Evil Doom, Thumb Command, Hearts, Spades, and Euchre are peers in the manifest-backed portfolio. Full game regions are semantic links. Canadian-fun mode is query-driven and route-persistent without storage.
+
+## Palace-first editorial entry — 2026-08-29
+
+The homepage now leads with Palace as the flagship campaign while retaining Four of Hearts Interactive as the parent identity and all seven games as catalog-backed offerings. Global navigation remains company-level; Palace table-name controls remain isolated to the Palace play context. See `IMMERSIVE-EDITORIAL-EXPERIENCE-2026-08-29.md`.

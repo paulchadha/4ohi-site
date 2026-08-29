@@ -129,3 +129,7 @@ Local browser gates passed for eight opening viewport sizes and 28 route/viewpor
 - DNS: four GitHub Pages A records, four GitHub Pages AAAA records, and `www` CNAME to `paulchadha.github.io` confirmed.
 - Public browser gates: 20 routes × 7 viewport profiles; eight opening viewports; 28 immersive route/viewports; gallery keyboard/touch-equivalent controls; localization; Palace scope; privacy; and overflow all passed.
 - Runtime payload observed by the public immersive gate: 275,777 bytes of local CSS and JavaScript.
+
+## Immersive reconstruction release gate — 2026-08-29
+
+Before declaring this visual release public, run all local generators and validators, commit, push `main`, wait for GitHub Pages success on the exact commit SHA, then repeat public route, asset, metadata, privacy, responsive, and interaction checks at `https://4ohi.com`. Founder visual approval remains separate from technical deployment success.

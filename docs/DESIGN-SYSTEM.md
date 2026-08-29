@@ -44,3 +44,7 @@ The website now follows the app-world table system: royal/navy blues, gold rails
 ## Immersive world layer — 2026-07-31
 
 The current production authority is `assets/immersive-world.css`, documented in `IMMERSIVE-DIGITAL-EXPERIENCE-2026-07-31.md`. It introduces organic masks, spatial depth, cyan/gold focus, restrained display-serif hierarchy, and connected scene rhythm while preserving the semantic company system. New work must extend these tokens and avoid returning to repetitive rectangular panels or page-filling type without a content reason.
+
+## Current immersive editorial authority — 2026-08-29
+
+`assets/playable-studio.css` is the final visual layer. It replaces repetitive panels with Palace-scale campaign art, warm editorial breathing room, asymmetric News, a physical power-card river, and seven full-width game worlds. Gold remains an action/focus signal; ivory sections must keep navy body text at accessible contrast. See `IMMERSIVE-EDITORIAL-EXPERIENCE-2026-08-29.md`.

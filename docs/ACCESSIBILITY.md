@@ -27,3 +27,7 @@ Cards and actions remain semantic buttons with visible focus, live status, 44-pi
 ## Immersive experience audit — 2026-07-31
 
 The spatial gallery retains standard links, buttons, one H1, one main landmark, skip navigation, `aria-current`, and keyboard control with Arrow keys plus Home/End. Non-active worlds leave the tab order. Power Cards now support arrow-key selection with `aria-pressed` and a live explanation. The Palace table-name disclosure is keyboard operable; focus uses a three-pixel cyan outline. Reduced-motion behavior is enforced in the final CSS layer.
+
+## Immersive layer acceptance — 2026-08-29
+
+The Palace-first redesign preserves one H1, skip navigation, landmarks, visible focus, keyboard and mobile menus, current-page state, useful alt text, reduced-motion behavior, and 44-pixel interactive targets. Automated responsive gates cover 320 through 1920 CSS pixels and reject horizontal overflow.

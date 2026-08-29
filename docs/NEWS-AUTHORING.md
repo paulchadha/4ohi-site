@@ -22,3 +22,7 @@ After editing:
     node scripts/verify-portfolio-expansion.mjs
 
 Confirm a second generator run changes nothing, direct article routes load, filters work, dates and tags are accurate, metadata and JSON-LD are truthful, and images and links work from phone through desktop.
+
+## Editorial presentation update — 2026-08-29
+
+The News index renders the designated feature first, followed by the remaining honest-status stories in editorial sequence. Preserve canonical dates, categories, and destinations; never imply a public build or release that does not exist.

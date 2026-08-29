@@ -57,3 +57,7 @@ The walkthrough is an animated sequence of browser-verified states, not a claim 
 - Bobby and Evil Doom default/Canadian mobile captures
 - visual-evidence/second-stage/canadian-route-flow.gif
 - visual-evidence/second-stage/second-stage-results.json — 35/35 rendered-browser acceptance tests
+
+## Immersive editorial reconstruction — 2026-08-29
+
+Current responsive screenshots and machine-readable results are in `docs/visual-evidence/reconstruction-2026-08-29/`. The dated directory avoids overwriting historical founder-review evidence and includes homepage, portfolio, navigation, game, News, About, and Palace mobile views.

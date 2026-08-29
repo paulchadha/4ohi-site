@@ -6,3 +6,7 @@ Phone layouts are composed, not scaled. At 320–430 pixels Power Cards use two 
 ## Immersive motion gate — 2026-07-31
 
 Scene reveals, spatial gallery transitions, and page arrival are enhancement-only. Reduced-motion mode removes them. The mobile opening was tested at 320×568, 360×800, 390×844, 412×915, and 430×932; tablet at 768×1024; desktop at 1366×768 and 1920×1080. The Palace controls use a two-row mobile utility layout and all tested visible targets meet the 44px gate.
+
+## Editorial motion update — 2026-08-29
+
+`assets/studio-reconstruction.js` now limits enhancement to scroll-aware header state and viewport reveals. Content and navigation work without it. Reduced-motion users receive immediate, static content; no animation is required to understand or operate the site.

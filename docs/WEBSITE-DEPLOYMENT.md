@@ -50,3 +50,7 @@ The sitemap includes `/` and excludes the noindex `/palace.html` compatibility r
 ## Immersive release procedure — 2026-07-31
 
 Build with `node scripts/build-site.mjs`, then run `validate-site.mjs`, `verify-company-architecture.mjs`, `verify-spatial-gallery.mjs`, and `verify-immersive-experience.mjs`. Capture `immersive-after-*` evidence before committing. After pushing main, wait for the exact SHA GitHub Pages deployment, rerun the public browser gates with `SITE_URL=https://4ohi.com`, and confirm the worktree is clean and synchronized.
+
+## Immersive editorial release — 2026-08-29
+
+Build and validate the generator, static pages, responsive browser suites, privacy gates, and evidence before committing. After pushing `main`, accept only a GitHub Pages deployment tied to the exact local SHA, then validate `https://4ohi.com`; use a revert commit for rollback.

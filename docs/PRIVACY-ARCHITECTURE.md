@@ -19,3 +19,7 @@ The app-parity release keeps locale and product-name state exclusively in the UR
 ## Local website game boundary
 
 Reconstructed game state remains page-memory only. There are no accounts, backend sessions, persistence, cookies, localStorage, sessionStorage, analytics, ads, trackers, third-party fonts, embeds, or post-load game requests.
+
+## Editorial enhancement privacy review — 2026-08-29
+
+The new reveal/header script uses no cookies, storage, identifiers, analytics, advertising, social widgets, or remote fonts. Palace naming and language remain query/page-session behavior and are not persisted.

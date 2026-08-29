@@ -31,3 +31,7 @@ The prior five-scene Field Training implementation is retired. `assets/palace-tu
 ## App-world correction
 
 The mini-match now uses blue felt, gold table rails, garden/castle framing, named seats, and a compact game HUD. Its five chapters still teach match/beat, burn, pickup, powers, and three levels. The displayed name and art follow **This Table Calls It**.
+
+## Homepage teaching bridge — 2026-08-29
+
+The campaign introduces Palace with “Match. Beat. Burn. Win.” and a physical 2/7/8/10 power-card river, then sends players to the canonical interactive mini-match. This is an orientation layer, not a substitute for the accessible tutorial route; rule wording and legal-move behavior remain controlled by the Palace product implementation and its verifier.

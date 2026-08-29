@@ -38,3 +38,7 @@ Generated pages now reference CSS, JavaScript, and images with content hashes. R
 ## Immersive release measurement — 2026-07-31
 
 The generated homepage loads 275,939 bytes of local CSS and JavaScript before transfer compression, below the 450 KB release gate. The redesign reuses optimized WebP assets and adds no runtime bitmap. Organic geometry and atmosphere are CSS-native. Images keep explicit dimensions, and full-viewport regions reserve layout space to limit CLS.
+
+## Homepage measurement — 2026-08-29
+
+A fresh local Chromium load used 25 same-origin requests and no third-party hosts. Declared payload was approximately 838 KB at 375×812 and 903 KB at 1440×900; DOM content loaded near 221 ms and 217 ms respectively. These local diagnostics are regression baselines, not public-network guarantees.
