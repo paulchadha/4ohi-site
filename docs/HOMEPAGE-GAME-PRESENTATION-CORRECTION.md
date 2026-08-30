@@ -2,6 +2,8 @@
 
 Date: 2026-08-29
 
+Updated: 2026-08-30
+
 The rejected repeated game-world treatment was replaced with a varied editorial lineup. Four of Hearts Interactive is the company; the games are individual products.
 
 ## Current presentation
@@ -15,6 +17,14 @@ The rejected repeated game-world treatment was replaced with a varied editorial 
 - The games menu mirrors the same hierarchy: Featured games, More from the studio, and The card table.
 
 The production source is `scripts/homepage-studio-portfolio.mjs`; focused responsive corrections are in `assets/founder-corrections.css`.
+
+## Founder-approved portfolio board
+
+The homepage hero now uses the exact founder-approved portfolio board as the company-level visual introduction. The lossless production asset is `assets/portfolio-2026/four-of-hearts-studio-portfolio-board.webp`; the untouched source is retained under `docs/source-artwork/`.
+
+The board complements rather than replaces the accessible editorial lineup. Product titles, honest development states, direct links, and semantic structure remain available as HTML instead of being trapped inside one image.
+
+The homepage now also identifies Four of Hearts as an independent software studio offering practical software solutions and fast, focused custom-application work.
 
 ## Review status
 

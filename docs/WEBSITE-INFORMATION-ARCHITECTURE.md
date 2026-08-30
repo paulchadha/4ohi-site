@@ -1,5 +1,33 @@
 # Four of Hearts Interactive website information architecture
 
+> **Current source of truth — 2026-08-30:** Four of Hearts Interactive, LLC is the parent independent software studio. The public site presents original games, classic card games, practical software solutions, and custom-application capability. The homepage uses the founder-approved portfolio board documented in `FOUNDER-APPROVED-PORTFOLIO-BOARD-2026-08-30.md`, followed by semantic product and service sections. The current product manifest is `scripts/studio-product-manifest.mjs`. Older dated sections below are retained as implementation history and are not current naming or positioning authority.
+
+## Current company architecture
+
+- Parent brand: Four of Hearts Interactive, LLC.
+- Compact mark: 4OH.
+- Company navigation: Home, Games, News, About, and Support.
+- Games: Palace, Thumb Command, Bobby the Breadasaurus: Tower Defense Adventures, Evil Doom Girl Adventures, HeartStack Unicorn Blast, Princess Land Adventures, Unicorn Land Adventures, Hearts, Spades, and Euchre.
+- Evil Doom Boy is a playable hero inside Evil Doom Girl Adventures, not a separate canonical product.
+- Software practice: custom applications, interactive prototypes, product and UX design, and creative technology.
+- People Lens appears on the approved portfolio board as an application concept; the website makes no public-release claim.
+- Palace-only table-name controls remain isolated to Palace routes.
+- Future games and software products can be added through the manifest-backed catalog without changing the parent-company architecture.
+
+## Current homepage sequence
+
+1. Company statement and founder-approved portfolio board.
+2. Current product ticker.
+3. Palace interactive-preview feature and power-card explainer.
+4. Independent-studio positioning.
+5. Varied editorial game lineup.
+6. Classic card-game table.
+7. Software-solutions and custom-app capability.
+8. Workbench news.
+9. Founder/company close.
+
+The detailed board remains one visual artifact. Every core game and service remains represented as semantic HTML with keyboard-reachable links and responsive text.
+
 ## Brand hierarchy
 
 Four of Hearts Interactive, LLC is the parent company. 4OH is the approved compact mark. The studio line is **One Family. Many Games.**

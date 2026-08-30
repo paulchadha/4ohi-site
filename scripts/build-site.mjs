@@ -197,14 +197,14 @@ const featured = news.find((item) => item.featured) ?? news[0];
 const otherNews = news.filter((item) => item !== featured);
 
 write("index.html", page({
-  title: "Four of Hearts Interactive | Independent Games and Playful Software",
-  description: "Meet Four of Hearts Interactive, an independent studio making original card games, arcade action, family adventures, and playful software.",
+  title: "Four of Hearts Interactive | Games, Software Solutions & Custom Apps",
+  description: "Four of Hearts Interactive is an independent South Dakota software studio building original games, practical software solutions, and custom applications.",
   path: "/",
   current: "home",
   bodyClass: "company-home playable-studio-home",
-  image: "assets/brand-board.webp",
-  imageAlt: "Games and playful software from Four of Hearts Interactive",
-  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"One Family. Many Games.", url:siteUrl + "/", logo:siteUrl + "/assets/brand-mark-4oh.webp", email:"support@4ohi.com", description:"An independent studio creating original card, arcade, platform, and family-adventure games." },
+  image: "assets/portfolio-2026/four-of-hearts-studio-portfolio-board.webp",
+  imageAlt: "Four of Hearts Interactive game and application portfolio",
+  jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"Games we love. Code we trust.", url:siteUrl + "/", logo:siteUrl + "/assets/brand-mark-4oh.webp", email:"support@4ohi.com", description:"An independent South Dakota software studio creating original games, practical software solutions, and custom applications." },
   content: studioPortfolioHomepage({ gameCatalog, gameByKey, news, articleFile, formatDate, productCopy })
 }));
 
@@ -370,7 +370,7 @@ write("play.html", page({
     </div></section>`
 }));
 
-write("about.html", page({ title: "About Four of Hearts Interactive | Independent Software Studio", description: "Meet the independent South Dakota studio making original games and playful software.", path: "/about.html", current: "about", bodyClass: "about-page", content: `<section class="studio-bridge about-studio-hero"><div class="shell bridge-grid"><h1>Four hearts.<br><em>Plenty in progress.</em></h1><div><p class="lede">Four of Hearts Interactive is an independent software studio making original games and playful software.</p><p>The name came from the founder’s four daughters. The work comes from a lifetime of playing, teaching, testing, arguing about, and laughing over games—then asking the useful question: why did everybody stay for one more?</p></div></div></section><section class="product-notes" id="founder"><div class="shell"><p class="eyebrow">The founder’s philosophy</p><h2>Rules make the possibility.<br><em>People make the story.</em></h2><p class="lede">The goal is not to make every product look alike. It is to make every interaction earn its place: clear enough to welcome a newcomer, deep enough to reward a regular, and human enough to create a story.</p><p class="honesty-note">Four daughters inspired the 4OH name. That is the whole family-origin story—and the site only needs to tell it once.</p><a class="button" href="games.html">See what we’re making</a></div></section>` }));write("support.html", page({
+write("about.html", page({ title: "About Four of Hearts Interactive | Independent Software Studio", description: "Meet the independent South Dakota studio building original games, software solutions, and custom applications.", path: "/about.html", current: "about", bodyClass: "about-page", content: `<section class="studio-bridge about-studio-hero"><div class="shell bridge-grid"><h1>Four hearts.<br><em>Plenty in progress.</em></h1><div><p class="lede">Four of Hearts Interactive is an independent South Dakota software studio making original games, practical solutions, and custom applications.</p><p>The name came from the founder’s four daughters. The work comes from a lifetime of playing, teaching, testing, arguing about, and laughing over games—then asking the useful question: why did everybody stay for one more?</p></div></div></section><section class="product-notes" id="founder"><div class="shell"><p class="eyebrow">The founder’s philosophy</p><h2>Rules make the possibility.<br><em>People make the story.</em></h2><p class="lede">The goal is not to make every product look alike. It is to make every interaction earn its place: clear enough to welcome a newcomer, deep enough to reward a regular, and useful enough to justify the work.</p><p class="honesty-note">Four daughters inspired the 4OH name. That is the whole family-origin story—and the site only needs to tell it once.</p><a class="button" href="games.html">See what we’re making</a></div></section><section class="studio-services" aria-labelledby="about-services-title"><div class="shell services-grid"><div><p class="eyebrow">Creative technology studio</p><h2 id="about-services-title">Strong idea.<br><em>Working software.</em></h2></div><div class="services-copy"><p class="lede">We help turn product ideas into custom applications, interactive prototypes, and polished digital experiences.</p><p>Small teams move quickly when the people making decisions can talk directly to the people making the product. That is how 4OH works.</p><div class="actions"><a class="button" href="mailto:support@4ohi.com?subject=Custom%20application%20project">Talk about a project</a></div></div></div></section>` }));write("support.html", page({
   title: "Support | Four of Hearts Interactive",
   description: "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
   path: "/support.html",
@@ -458,7 +458,7 @@ write("404.html", page({
   path: "/404.html",
   current: "",
   noindex: true,
-  content: `<section class="page-hero"><div class="shell"><p class="eyebrow">404 · Card not found</p><h1>${brandMessage("notFound", "This card fell under the table.")}</h1><p class="lede">The page may have moved, but ten Four of Hearts worlds are still waiting.</p><div class="actions"><a class="button" href="index.html">Return home</a><a class="button secondary" href="games.html">Explore the games</a></div></div></section>`
+  content: `<section class="page-hero"><div class="shell"><p class="eyebrow">404 · Card not found</p><h1>${brandMessage("notFound", "This card fell under the table.")}</h1><p class="lede">The page may have moved, but the Four of Hearts lineup is still here.</p><div class="actions"><a class="button" href="index.html">Return home</a><a class="button secondary" href="games.html">Explore the games</a></div></div></section>`
 }));
 
 

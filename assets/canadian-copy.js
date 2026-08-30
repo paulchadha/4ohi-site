@@ -20,7 +20,7 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
     "home.explore": "Explore the games. We kept the good chair open.",
     "home.play": "Pull up a chair and play Palace",
     "home.worldsEyebrow": "A polite amount of danger",
-    "home.worldsTitle": "Pick a world. We’ll hold the door.",
+    "home.worldsTitle": "Pick a game. We’ll hold the door.",
     "home.worldsIntro": "Card tables, shadow rescues, bread logistics, and space defense—organized with suspicious efficiency.",
     "home.portfolioTitle": "The complete game shelf",
     "home.portfolioIntro": "All seven are here. Nobody was left waiting in the car.",
