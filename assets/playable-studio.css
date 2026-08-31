@@ -88,7 +88,7 @@
 .enhanced [data-reveal].revealed{opacity:1;transform:none}
 .site-header.is-scrolled{box-shadow:0 10px 34px rgba(2,10,25,.18)}
 
-html[data-locale="en-CA-fun"] .canadian-only{display:block}html:not([data-locale="en-CA-fun"]) .canadian-only{display:none}
+html[data-locale="en-CA"] .canadian-only{display:block}html:not([data-locale="en-CA"]) .canadian-only{display:none}
 
 @media(max-width:980px){
   .palace-campaign-grid{grid-template-columns:1fr;align-items:end}.palace-countdown-wrap{max-width:680px}

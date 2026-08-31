@@ -71,7 +71,7 @@ const robots = readFileSync(join(root, "robots.txt"), "utf8");
 check(robots.includes("https://4ohi.com/sitemap.xml"), "robots.txt: sitemap URL is missing");
 const sitemap = readFileSync(join(root, "sitemap.xml"), "utf8");
 const sitemapExcluded = new Set(["404.html", "palace.html", "thumb-command.html", "commander-thumb.html", "news-building-commander-thumb.html", "news-commander-thumb-is-coming.html", "news-welcome-to-the-thum-system.html", "news-shadow-run-enters-development.html"]);
-for (const page of pages.filter((page) => !sitemapExcluded.has(page))) {
+for (const page of pages.filter((page) => !sitemapExcluded.has(page) && !/data-route-target=|name="robots"\s+content="noindex/i.test(readFileSync(join(root, page), "utf8")))) {
   const url = page === "index.html" ? "https://4ohi.com/" : `https://4ohi.com/${page}`;
   check(sitemap.includes(`<loc>${url}</loc>`), `sitemap.xml: missing ${url}`);
 }

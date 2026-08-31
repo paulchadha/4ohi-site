@@ -28,21 +28,28 @@
     });
   }
 
-  const gamesMenu = document.querySelector(".games-menu");
-  if (gamesMenu) {
-    gamesMenu.addEventListener("click", (event) => {
-      if (event.target.closest("a")) gamesMenu.open = false;
+  const disclosureMenus = [...document.querySelectorAll(".games-menu, .nav-lifestyle")];
+  disclosureMenus.forEach((menu) => {
+    menu.addEventListener("toggle", () => {
+      if (!menu.open) return;
+      disclosureMenus.filter((other) => other !== menu).forEach((other) => { other.open = false; });
     });
-    document.addEventListener("click", (event) => {
-      if (gamesMenu.open && !gamesMenu.contains(event.target)) gamesMenu.open = false;
+    menu.addEventListener("click", (event) => {
+      if (event.target.closest("a")) menu.open = false;
     });
-    document.addEventListener("keydown", (event) => {
-      if (event.key !== "Escape" || !gamesMenu.open) return;
-      gamesMenu.open = false;
-      gamesMenu.querySelector("summary")?.focus();
+  });
+  document.addEventListener("click", (event) => {
+    disclosureMenus.forEach((menu) => {
+      if (menu.open && !menu.contains(event.target)) menu.open = false;
     });
-  }
-
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const openMenu = disclosureMenus.find((menu) => menu.open);
+    if (!openMenu) return;
+    openMenu.open = false;
+    openMenu.querySelector("summary")?.focus();
+  });
   const newsFilters = [...document.querySelectorAll("[data-news-filter]")];
   const newsCards = [...document.querySelectorAll("[data-news-tags]")];
   if (newsFilters.length && newsCards.length) {

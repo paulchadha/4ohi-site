@@ -8,7 +8,7 @@ The official Accenture Song site was used only as a quality benchmark for pacing
 
 ## Homepage and hierarchy
 
-Four of Hearts Interactive remains the parent company and 4OH the compact mark. Palace deliberately dominates the homepage campaign because it is the flagship and the only featured playable mini-match. Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Commander Thum-B, Hearts, Spades, and Euchre follow as seven distinct portfolio worlds sourced from `scripts/game-catalog.mjs`.
+Four of Hearts Interactive remains the parent company and 4OH the compact mark. Palace deliberately dominates the homepage campaign because it is the flagship and the only featured playable mini-match. Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Thumb Command, Hearts, Spades, and Euchre follow as seven distinct portfolio worlds sourced from `scripts/game-catalog.mjs`.
 
 The page sequence is: Palace campaign hero; one honest October 17, 2026 countdown; mini-match action; Match/Beat/Burn/Win teaching scene; 2/7/8/10 power-card river; responsible folk-history transition; four-story News edit; seven-world portfolio; Four daughters/Four hearts family story; founder signoff.
 

@@ -1,4 +1,4 @@
-# Commander Thum-B asset provenance
+# Thumb Command asset provenance
 
 ## Approved source
 

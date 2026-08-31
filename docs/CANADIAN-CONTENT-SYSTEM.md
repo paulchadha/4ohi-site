@@ -4,7 +4,7 @@ Canadian-fun mode is a deliberate site-wide editorial layer, not a pile of one-o
 
 ## Architecture
 
-- Locale authority remains the existing ?lang=en-CA-fun query parameter.
+- Locale authority remains the existing ?lang=en-CA query parameter.
 - assets/canadian-copy.js is the centralized, reviewable copy registry.
 - assets/canadian-mode.js applies keyed and route-scoped variants and carries the locale across internal navigation.
 - Nothing is written to cookies, local storage, session storage, or analytics.

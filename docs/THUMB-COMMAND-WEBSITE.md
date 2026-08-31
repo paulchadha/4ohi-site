@@ -1,34 +1,7 @@
-# Commander Thum-B website authority
+# Thumb Command Website Authority
 
-Commander Thum-B is the Four of Hearts Interactive arcade-defense property at `/thumb-command.html`. The company remains the parent brand; Commander Thum-B is one of seven current game worlds.
+**Thumb Command** is the canonical visible title of the Four of Hearts Interactive arcade-defense game. The canonical route is `/games/thumb-command/`; `/thumb-command.html` is a compatibility page and older Commander routes redirect with `noindex`.
 
-## Product identity
+Public status: **In Development**. No public build, store availability, launch date, player count, partnership, or platform claim is made. The current page uses the shared product-detail architecture, links to the August 29 studio dispatch, includes accurate metadata/structured data, and keeps Four of Hearts Interactive as the parent company.
 
-- Title: **Commander Thum-B**
-- Tagline: **Save Planet Earth**
-- Hero craft: the blue-white-gold Blueguard interceptor
-- Threat palette: purple, magenta, violet, coral, and black
-- Core premise: the city is the base
-- Flagship environment: Chicago
-- Current world-tour environments: Chicago, San Francisco, New York City, London, and Tokyo
-- Status: In Development; no store, platform, download, or release-date claim is authorized
-
-The page sequence is hero, mission, gameplay, Blueguard progression, alien forces, world tour, defense systems, gallery, news, and a truthful final mission-information call to action.
-
-## Routes and compatibility
-
-The canonical game route is `/thumb-command.html`. Retired public game and article routes are compatibility documents with `noindex`, canonical metadata, meta refresh, and same-origin JavaScript replacement that preserves query and hash. GitHub Pages cannot emit custom HTTP 301 responses from a root-branch static site, so these are the strongest redirects available without changing the established host.
-
-## Build and acceptance
-
-Run:
-
-```text
-python scripts/process-thumb-command-art.py
-node scripts/build-site.mjs
-node scripts/build-site.mjs
-node scripts/validate-site.mjs
-node scripts/verify-company-architecture.mjs
-```
-
-The browser gate covers the homepage tile, ten-product navigation, five-city page, five new articles, metadata, broken images, overflow, touch targets, reduced motion, keyboard focus, console errors, and all compatibility routes at phone, tablet, laptop, and desktop sizes.
+Legacy titles may appear only in clearly historical documentation or technical compatibility paths—not in current navigation, headings, metadata, alt text, or product datasets.

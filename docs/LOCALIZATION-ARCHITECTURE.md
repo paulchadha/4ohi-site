@@ -4,7 +4,7 @@
 
 The public site is static. Language and displayed Palace-family name are URL state:
 
-- `?lang=en|fr|es|hi|zh-Hans|he|ar|en-CA-fun`
+- `?lang=en|fr|es|hi|zh-Hans|he|ar|en-CA`
 - `?game=palace|shed|shithead`
 
 No cookie, local storage, session storage, account, translation API, analytics service, or remote content request is used. Internal links are rewritten locally so the current language and table name travel between pages. A fresh URL without `game` returns to canonical Palace.
@@ -26,7 +26,7 @@ No cookie, local storage, session storage, account, translation API, analytics s
 | Locale | Status | Notes |
 |---|---|---|
 | `en` | Founder approved | Canonical source |
-| `en-CA-fun` | Founder approved playful variant | “Sorry, eh?”, “Give ’er”, and similarly light table language |
+| `en-CA` | Founder approved playful variant | “Sorry, eh?”, “Give ’er”, and similarly light table language |
 | `fr` | Machine-assisted; human review required | Interface and core page identity |
 | `es` | Machine-assisted; human review required | Interface and core page identity |
 | `hi` | Machine-assisted; human review required | Interface and core page identity |
@@ -43,4 +43,4 @@ Legal, privacy, terms, history, and founder-biography translations require quali
 
 ## Canadian voice mode
 
-`en-CA-fun` is presented to visitors as **Canadian**. It changes material page copy as well as navigation and game prompts. See [Brand Voice and Canadian](BRAND-VOICE-AND-CANADIAN.md).
+`en-CA` is presented to visitors as **Canadian**. It changes material page copy as well as navigation and game prompts. See [Brand Voice and Canadian](BRAND-VOICE-AND-CANADIAN.md).

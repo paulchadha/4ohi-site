@@ -7,7 +7,7 @@
 - Default: `Palace`, no `game` query parameter required.
 - Family-friendly alternate: `?game=shed`.
 - Confirmed traditional alternate: `?game=shithead` after the ten-tap confirmation.
-- Locale: `?lang=<locale>`; `en-CA-fun` displays as Canadian.
+- Locale: `?lang=<locale>`; `en-CA` displays as Canadian.
 
 No state is written to cookies, localStorage, or sessionStorage. Internal links preserve active URL state. Canonical links and public metadata remain Palace.
 

@@ -86,7 +86,7 @@
         status: (n) => `نسمي اللعبة ${n} على هذه الطاولة. لا يتم حفظ أي شيء.`
       }
     },
-    "en-CA-fun": {
+    "en-CA": {
       label: "Canadian", dir: "ltr", tableLabel: "This table calls it", languageLabel: "Language",
       templates: {
         playGame: (n) => `Give ${n} a go, eh?`, gameNews: (n) => `${n} News from the table`,
@@ -137,8 +137,8 @@
     return Object.freeze({
       mode, locale, canonicalName,
       gameName: name,
-      gameNameUpper: name.toLocaleUpperCase(locale === "en-CA-fun" ? "en-CA" : locale),
-      gameNameLower: name.toLocaleLowerCase(locale === "en-CA-fun" ? "en-CA" : locale),
+      gameNameUpper: name.toLocaleUpperCase(locale === "en-CA" ? "en-CA" : locale),
+      gameNameLower: name.toLocaleLowerCase(locale === "en-CA" ? "en-CA" : locale),
       gameNamePossessive: locale.startsWith("en") ? `${name}’s` : templates.aboutGame(name),
       playGameLabel: templates.playGame(name),
       aboutGameLabel: templates.aboutGame(name),
@@ -276,7 +276,7 @@
   });
   window.PALACE_EXPERIENCE = Object.freeze({
     get locale() { return locale; },
-    get t() { return { launch: resolve().message("gameCountdown"), rival: "RIVAL", pile: "TOP OF PILE", hand: "YOUR HAND", match: "MATCH OR BEAT", prompt: locale === "en-CA-fun" ? "Match the rank, play higher, or use a power card, bud." : "Match the rank, play higher, or use a power card.", pickup: locale === "en-CA-fun" ? "PICK IT UP. SORRY." : "PICK UP", replay: locale === "en-CA-fun" ? "One more hand, eh?" : "Replay mini-match", won: locale === "en-CA-fun" ? `BEAUTY. YOU RULE ${resolve().gameNameUpper}` : `YOU RULE ${resolve().gameNameUpper}`, levelHand: "HAND", levelUp: "FACE-UP", levelDown: "FACE-DOWN" }; },
+    get t() { return { launch: resolve().message("gameCountdown"), rival: "RIVAL", pile: "TOP OF PILE", hand: "YOUR HAND", match: "MATCH OR BEAT", prompt: locale === "en-CA" ? "Match the rank, play higher, or use a power card, bud." : "Match the rank, play higher, or use a power card.", pickup: locale === "en-CA" ? "PICK IT UP. SORRY." : "PICK UP", replay: locale === "en-CA" ? "One more hand, eh?" : "Replay mini-match", won: locale === "en-CA" ? `BEAUTY. YOU RULE ${resolve().gameNameUpper}` : `YOU RULE ${resolve().gameNameUpper}`, levelHand: "HAND", levelUp: "FACE-UP", levelDown: "FACE-DOWN" }; },
     get game() { return mode; },
     displayName: () => resolve().gameName,
     applyGame: render

@@ -1,6 +1,6 @@
 # Visual evidence index
 
-## Commander Thum-B production launch — August 29, 2026
+## Thumb Command production launch — August 29, 2026
 
 - `thumb-command/thumb-command-results.json` — rendered route, interaction, redirect, metadata, and responsive acceptance record.
 - `thumb-command/thumb-command-320x568.png` — narrow Android-phone acceptance capture.
@@ -26,7 +26,7 @@ The portfolio suite also checks 375×812, 1024×768, 1920×1080, and 844×390. F
 
 ## Earlier evidence
 
-Earlier app, Palace, Commander Thum-B, public-launch, and company-architecture evidence remains in this folder as historical release material. Current DOM, status, route, and viewport assertions come from portfolio-expansion-results.json and company-architecture-results.json.
+Earlier app, Palace, Thumb Command, public-launch, and company-architecture evidence remains in this folder as historical release material. Current DOM, status, route, and viewport assertions come from portfolio-expansion-results.json and company-architecture-results.json.
 ## 2026-07-31 game-first reconstruction
 
 See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the architecture, validation record, evidence manifest, and founder review status. Evidence is under `docs/visual-evidence/reconstruction/`.
@@ -41,7 +41,7 @@ Current founder-review evidence is in `docs/visual-evidence/reconstruction/`:
 - the historical fourth-game homepage feature capture
 - `desktop-games-menu-open.png`
 - `desktop-games-index.png`
-- desktop pages for Palace, Bobby, Shadow Run, Commander Thum-B, News, and About
+- desktop pages for Palace, Bobby, Shadow Run, Thumb Command, News, and About
 - mobile Home, Games, Bobby, Shadow Run, Play Palace, and navigation-open states
 - `evil-doom-girl-purple.png` and `game-card-hover.png`
 - `founder-review-walkthrough.gif`

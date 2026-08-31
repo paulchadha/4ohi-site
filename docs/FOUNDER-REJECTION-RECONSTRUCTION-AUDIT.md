@@ -33,7 +33,7 @@ The site evolved through additive redesigns. New CSS and JavaScript were layered
 
 - `scripts/game-catalog.mjs` as the canonical portfolio and route source.
 - The Palace mini-match logic, power-card interaction, rules, naming context, and history pages.
-- Existing Bobby, Evil Doom, Commander Thum-B, Palace, Hearts, Spades, and Euchre artwork.
+- Existing Bobby, Evil Doom, Thumb Command, Palace, Hearts, Spades, and Euchre artwork.
 - The verified Northwestern purple treatment for Evil Doom Girl (`#4E2A84`).
 - News data and honest development-status language.
 - Privacy, security, support, terms, sitemap, metadata, localization, and no-tracking principles.
@@ -46,7 +46,7 @@ The site evolved through additive redesigns. New CSS and JavaScript were layered
 - Palace rules, power cards, history, table-name context, and playable tutorial.
 - Bobby's collect/explore/reunite direction without treating exploratory board names as canon.
 - Evil Doom Adventures' two-hero rescue story and movement vocabulary.
-- Commander Thum-B's modern city-defense mission framing and explicitly in-development status.
+- Thumb Command's modern city-defense mission framing and explicitly in-development status.
 - Published newsroom entries whose claims and dates remain accurate.
 
 ### Functional code worth preserving

@@ -1,5 +1,5 @@
 window.FOUR_HEARTS_CANADIAN_COPY=Object.freeze({
- locale:"en-CA-fun",
+ locale:"en-CA",
  copy:Object.freeze({
   "nav.games":"Games, if you’ve got a minute","nav.news":"News from indoors","nav.about":"About the crew","nav.playPalace":"Pull up a chair: Play Palace","nav.viewAll":"Have a look at the full lineup. No rush.",
   "global.statusDevelopment":"In development. We measured twice.","global.statusAlpha":"Internal alpha. Boots are still by the door.","global.loading":"Loading. The machine wore layers.","global.empty":"Nothing here yet. Very tidy, though.","global.error":"That went sideways. We apologized to the server.","global.retry":"Try again, whenever you’re ready","global.back":"Head back carefully","global.forward":"Carry on, then","global.saved":"Saved. Nobody made a scene.","global.unsaved":"Not saved. We kept an eye on it.","global.menu":"Menu, sensibly arranged","global.close":"Close this up","global.next":"Next, if conditions permit","global.previous":"The one before","global.play":"Give it a go","global.status":"Current conditions",

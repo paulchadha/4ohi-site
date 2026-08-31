@@ -1,10 +1,10 @@
-# Commander Thum-B production release
+# Thumb Command production release
 
 Date: 2026-08-29
 
 ## Release scope
 
-- Replaced the retired arcade identity with **Commander Thum-B** across the company site.
+- Replaced the retired arcade identity with **Thumb Command** across the company site.
 - Added the canonical \`/thumb-command.html\` landing page and five substantive newsroom articles.
 - Added the approved app icon unchanged, seven original campaign illustrations, responsive derivatives, and provenance hashes.
 - Added a prominent homepage feature and clickable catalog tile.

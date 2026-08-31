@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-08-31T02:01:42.762Z",
+  "base": "http://127.0.0.1:4173",
+  "passed": 30,
+  "failed": 0,
+  "results": [
+    {
+      "name": "1 primary navigation destinations return successfully",
+      "status": "pass"
+    },
+    {
+      "name": "2 visible product tiles have valid hrefs",
+      "status": "pass"
+    },
+    {
+      "name": "3 no placeholder product links",
+      "status": "pass"
+    },
+    {
+      "name": "4 every game has an information page",
+      "status": "pass"
+    },
+    {
+      "name": "5 every lifestyle app has an information page",
+      "status": "pass"
+    },
+    {
+      "name": "6 People Lens excluded from game dataset",
+      "status": "pass"
+    },
+    {
+      "name": "7 Sleep Amigo excluded from game dataset",
+      "status": "pass"
+    },
+    {
+      "name": "8 Solitaire is a Card Game",
+      "status": "pass"
+    },
+    {
+      "name": "9 War is a Card Game",
+      "status": "pass"
+    },
+    {
+      "name": "10 Thumb Command is canonical",
+      "status": "pass"
+    },
+    {
+      "name": "11 obsolete Commander title absent",
+      "status": "pass"
+    },
+    {
+      "name": "12 Evil Doom is one product",
+      "status": "pass"
+    },
+    {
+      "name": "13 Canadian mode loads",
+      "status": "pass"
+    },
+    {
+      "name": "14 Canadian locale persists",
+      "status": "pass"
+    },
+    {
+      "name": "15 Canadian interface coverage",
+      "status": "pass"
+    },
+    {
+      "name": "16 English mode remains English",
+      "status": "pass"
+    },
+    {
+      "name": "17 August news chronology is distributed",
+      "status": "pass"
+    },
+    {
+      "name": "18 no accidental September news date",
+      "status": "pass"
+    },
+    {
+      "name": "19 game titles do not overflow cards",
+      "status": "pass"
+    },
+    {
+      "name": "20 mobile navigation works",
+      "status": "pass"
+    },
+    {
+      "name": "21 dropdown navigation works by keyboard",
+      "status": "pass"
+    },
+    {
+      "name": "22 reduced motion is respected",
+      "status": "pass"
+    },
+    {
+      "name": "23 production build output exists",
+      "status": "pass"
+    },
+    {
+      "name": "24 deployment base path works",
+      "status": "pass"
+    },
+    {
+      "name": "25 Palace links still work",
+      "status": "pass"
+    },
+    {
+      "name": "26 legacy routes redirect",
+      "status": "pass"
+    },
+    {
+      "name": "27 no console errors",
+      "status": "pass"
+    },
+    {
+      "name": "28 local images resolve",
+      "status": "pass"
+    },
+    {
+      "name": "29 Solitaire and War art renders",
+      "status": "pass"
+    },
+    {
+      "name": "30 sitemap includes new routes",
+      "status": "pass"
+    }
+  ],
+  "screenshots": [
+    "english-homepage-desktop.png",
+    "english-games-desktop.png",
+    "english-lifestyle-desktop.png",
+    "english-games-mobile.png",
+    "english-lifestyle-mobile.png",
+    "english-red-4oh-section.png",
+    "english-what-were-making.png",
+    "english-card-table.png",
+    "english-solitaire-detail.png",
+    "english-war-detail.png",
+    "canadian-homepage-desktop.png",
+    "canadian-games-desktop.png",
+    "canadian-lifestyle-desktop.png",
+    "canadian-games-mobile.png",
+    "canadian-thumb-command-detail.png",
+    "canadian-news.png",
+    "canadian-404.png"
+  ]
+}

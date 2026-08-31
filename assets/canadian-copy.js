@@ -1,5 +1,5 @@
 window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
-  locale: "en-CA-fun",
+  locale: "en-CA",
   copy: Object.freeze({
     "nav.games": "Games, if you’ve got a minute",
     "nav.news": "News from indoors",

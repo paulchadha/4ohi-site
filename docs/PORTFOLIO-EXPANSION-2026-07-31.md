@@ -9,7 +9,7 @@
 - Palace remains the flagship and the only game with a full website mini-match.
 - Bobby the Breadasaurus receives a warm, cinematic development page centered on adventure, collecting, and returning to the herd.
 - Evil Doom Adventures: Shadow Run receives a dark, kinetic development page centered on two heroes, rescue, movement, and trust.
-- Commander Thum-B, Hearts, Spades, and Euchre remain visible peers in the wider catalog.
+- Thumb Command, Hearts, Spades, and Euchre remain visible peers in the wider catalog.
 - The Games page and shared Games menu render from a reusable seven-record catalog.
 - The homepage, About page, News page, RSS, sitemap, metadata, and structured data all reflect the studio portfolio.
 
@@ -17,7 +17,7 @@
 
 Bobby and Shadow Run are labeled In Development. Their pages contain no unsupported platform, release-date, store, rating, player-count, public-build, or level-count claims. Names embedded in founder concept boards are not treated as canonical copy, and unpublished Bobby friend names do not appear in HTML.
 
-The arcade-defense game uses the canonical title Commander Thum-B throughout user-facing HTML, metadata, localization sources, news, alt text, structured data, and documentation. The automated portfolio gate intentionally contains incorrect variants only as negative test patterns.
+The arcade-defense game uses the canonical title Thumb Command throughout user-facing HTML, metadata, localization sources, news, alt text, structured data, and documentation. The automated portfolio gate intentionally contains incorrect variants only as negative test patterns.
 
 ## Navigation and Palace isolation
 

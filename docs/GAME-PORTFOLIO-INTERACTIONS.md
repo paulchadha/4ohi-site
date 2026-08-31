@@ -3,7 +3,7 @@
 ## Homepage hierarchy
 
 1. Compact Four of Hearts studio marquee with four linked artwork layers.
-2. Editorial world spread: Palace, Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Commander Thum-B.
+2. Editorial world spread: Palace, Bobby the Breadasaurus, Evil Doom Adventures: Shadow Run, Thumb Command.
 3. Compact playable Palace band.
 4. Seven-game portfolio reel including Hearts, Spades, and Euchre.
 5. Three-item studio news module.

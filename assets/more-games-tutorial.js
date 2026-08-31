@@ -4,7 +4,7 @@
   const mount = document.querySelector("[data-secondary-tutorial]");
   if (!mount) return;
 
-  const canadian = document.documentElement.dataset.locale === "en-CA-fun";
+  const canadian = document.documentElement.dataset.locale === "en-CA";
   const lessons = {
     hearts: {
       name: "Hearts",

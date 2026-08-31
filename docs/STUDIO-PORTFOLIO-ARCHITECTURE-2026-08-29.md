@@ -6,4 +6,4 @@ Homepage sequence: studio hero → Palace feature → compact four-card rail →
 
 The Games page uses the same three semantic groups without a card-grid template. The global header is company-level. Palace table-name controls remain isolated to Palace playing context. The footer and Games disclosure are manifest-generated and therefore accept additional future products without hand-editing every page.
 
-Compatibility routes remain for older Commander URLs. Canonical public presentation uses Commander Thum-B.
+Compatibility routes remain for older Commander URLs. Canonical public presentation uses Thumb Command.

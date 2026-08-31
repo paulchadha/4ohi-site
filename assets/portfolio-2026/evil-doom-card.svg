@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Evil Doom Adventures dual-hero artwork</title>
+  <desc id="desc">Evil Doom Girl and Evil Doom Boy presented together as one game.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#170b2c"/><stop offset="1" stop-color="#070a18"/></linearGradient></defs>
+  <rect width="1200" height="750" rx="42" fill="url(#bg)"/>
+  <svg x="84" y="25" width="498" height="700" viewBox="540 135 250 355" preserveAspectRatio="xMidYMid slice">
+    <image href="four-of-hearts-studio-portfolio-board.webp" width="1536" height="1024"/>
+  </svg>
+  <svg x="618" y="25" width="498" height="700" viewBox="790 135 250 355" preserveAspectRatio="xMidYMid slice">
+    <image href="four-of-hearts-studio-portfolio-board.webp" width="1536" height="1024"/>
+  </svg>
+  <path d="M600 35v680" stroke="#7450c8" stroke-width="5" opacity=".7"/>
+</svg>

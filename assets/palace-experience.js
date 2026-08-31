@@ -9,7 +9,7 @@
     "zh-Hans": { label: "简体中文", dir: "ltr", status: "Machine-assisted · review required" },
     he: { label: "עברית", dir: "rtl", status: "Machine-assisted · review required" },
     ar: { label: "العربية", dir: "rtl", status: "Machine-assisted · review required" },
-    "en-CA-fun": { label: "Canadian fun", dir: "ltr", status: "Founder-approved playful variant" }
+    "en-CA": { label: "Canadian 🇨🇦", dir: "ltr", status: "Founder-approved playful variant" }
   });
 
   const COPY = Object.freeze({
@@ -83,7 +83,7 @@
       prompt: "طابق الرتبة أو العب أعلى أو استخدم ورقة قوة.", replay: "العب من جديد", won: "أنت تحكم القصر",
       levelHand: "اليد", levelUp: "مكشوف", levelDown: "مخفي"
     },
-    "en-CA-fun": {
+    "en-CA": {
       settings: "Settings, eh?", language: "Language", tableName: "What d’you call it?", close: "All good",
       palace: "Palace", shed: "Shed", launch: "Give ’er—the gates open in", days: "Days", hours: "Hours", minutes: "Min", seconds: "Sec",
       privacy: "Sorry, eh? Nothing’s stored. These choices just ride along in the URL.",
@@ -213,7 +213,7 @@
       "/news.html":["غرفة أخبار Four of Hearts","الطاولة تتشكل.","القصر يتصدر الأخبار مع تحديثات صادقة من عائلة Four of Hearts."],
       "/about.html":["الاستوديو وراء القصر","أربع بنات. أربعة قلوب. شغف مرح وجاد بالألعاب.","بدأ كل شيء حول طاولة عائلية، مع آراء كثيرة وضحكات تكفي لجولة أخرى."],
       "/privacy.html":["الخصوصية في التصميم","خيارات الخصوصية","لا حساب ولا إعلانات ولا تحليلات ولا ملفات تعريف ارتباط ولا بيع لبيانات الزوار."]} },
-    "en-CA-fun": { nav:["Palace","Give ’er","News, eh?","More Games","About 4OH","Help, please"], pages:{
+    "en-CA": { nav:["Palace","Give ’er","News, eh?","More Games","About 4OH","Help, please"], pages:{
       "/palace.html":["The Four of Hearts flagship","Palace is calling, eh?","Match it. Beat it. Burn it. Beauty—the table legend is finally becoming an app."],
       "/news.html":["News from the table","Things are taking shape, bud.","Honest Palace updates from the whole Four of Hearts family. No tall tales, promise."],
       "/about.html":["The folks behind Palace","Four daughters. Four hearts. One beauty of a game night.","It started at the family table: lots of opinions, plenty of laughs, and one more hand before we call ’er."],
@@ -227,7 +227,7 @@
       const hero = document.querySelector(".page-hero");
       if (hero) {
         const eyebrow = hero.querySelector(".eyebrow"); const title = hero.querySelector("h1"); const lede = hero.querySelector(".lede");
-        if (eyebrow) eyebrow.textContent = pageCopy[0]; if (title) { const gameToken = title.querySelector("[data-game-name]"); if (gameToken) { const tail = { fr:" vous appelle.", ar:" يناديك.", "en-CA-fun":" is calling, eh?" }[locale] || " is calling."; title.innerHTML = `<span data-game-name>${displayName()}</span>${tail}`; } else title.textContent = pageCopy[1]; } if (lede) lede.textContent = pageCopy[2];
+        if (eyebrow) eyebrow.textContent = pageCopy[0]; if (title) { const gameToken = title.querySelector("[data-game-name]"); if (gameToken) { const tail = { fr:" vous appelle.", ar:" يناديك.", "en-CA":" is calling, eh?" }[locale] || " is calling."; title.innerHTML = `<span data-game-name>${displayName()}</span>${tail}`; } else title.textContent = pageCopy[1]; } if (lede) lede.textContent = pageCopy[2];
       }
     }
     document.querySelectorAll("[data-game-name]").forEach((node) => { node.textContent = displayName(); });

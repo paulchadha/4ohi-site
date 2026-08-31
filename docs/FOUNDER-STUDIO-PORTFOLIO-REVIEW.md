@@ -12,7 +12,7 @@ Fresh evidence lives in `docs/visual-evidence/studio-portfolio-2026-08-29/`, inc
 2. Compact mark is 4OH.
 3. Exactly ten products appear in the manifest.
 4. Palace is one product.
-5. Commander Thum-B spelling is approved in current public output.
+5. Thumb Command spelling is approved in current public output.
 6. Bobby uses tower-defense positioning.
 7. Evil Doom uses one umbrella identity.
 8. Evil Doom Boy is represented.
