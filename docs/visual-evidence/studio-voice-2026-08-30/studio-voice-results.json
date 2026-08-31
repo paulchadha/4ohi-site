@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-31T04:12:13.703Z",
+  "base": "http://127.0.0.1:4197",
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "name": "1 homepage uses the core studio line",
+      "status": "pass"
+    },
+    {
+      "name": "2 homepage identifies independent South Dakota studio",
+      "status": "pass"
+    },
+    {
+      "name": "3 homepage includes games and apps",
+      "status": "pass"
+    },
+    {
+      "name": "4 origin story is concise and specific",
+      "status": "pass"
+    },
+    {
+      "name": "5 craft message is present",
+      "status": "pass"
+    },
+    {
+      "name": "6 privacy message is strong and scoped",
+      "status": "pass"
+    },
+    {
+      "name": "7 privacy joke appears once site-wide in core pages",
+      "status": "pass"
+    },
+    {
+      "name": "8 games page speaks as a games portfolio",
+      "status": "pass"
+    },
+    {
+      "name": "9 apps page speaks as useful software",
+      "status": "pass"
+    },
+    {
+      "name": "10 About covers six studio questions",
+      "status": "pass"
+    },
+    {
+      "name": "11 About presents custom application work",
+      "status": "pass"
+    },
+    {
+      "name": "12 product summaries and calls to action are distinct",
+      "status": "pass"
+    },
+    {
+      "name": "13 no generic new-worlds positioning",
+      "status": "pass"
+    },
+    {
+      "name": "14 grouped footer has no duplicate Palace",
+      "status": "pass"
+    },
+    {
+      "name": "15 Canadian mode is dry while consent stays literal",
+      "status": "pass"
+    },
+    {
+      "name": "16 primary landmarks and one h1 exist",
+      "status": "pass"
+    },
+    {
+      "name": "17 keyboard navigation and focus work",
+      "status": "pass"
+    },
+    {
+      "name": "18 no horizontal overflow at target widths",
+      "status": "pass"
+    },
+    {
+      "name": "19 reduced motion and runtime are clean",
+      "status": "pass"
+    }
+  ],
+  "screenshots": [
+    "homepage-1440x900.png",
+    "homepage-375x812.png",
+    "games-1440x900.png",
+    "games-375x812.png",
+    "apps-1440x900.png",
+    "apps-375x812.png",
+    "about-1440x900.png",
+    "about-375x812.png",
+    "privacy-1440x900.png",
+    "privacy-375x812.png",
+    "thumb-command-1440x900.png",
+    "bobby-375x812.png",
+    "people-lens-1440x900.png",
+    "homepage-canadian-375x812.png"
+  ]
+}

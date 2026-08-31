@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T02:58:37.590Z",
+  "generatedAt": "2026-08-31T04:14:08.341Z",
   "base": "http://127.0.0.1:4196",
   "passed": 22,
   "failed": 0,
@@ -25,7 +25,7 @@
       "status": "pass"
     },
     {
-      "name": "6 homepage names four trust principles",
+      "name": "6 homepage names three trust principles",
       "status": "pass"
     },
     {

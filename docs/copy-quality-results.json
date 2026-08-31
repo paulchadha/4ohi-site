@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T02:51:13.443Z",
+  "generatedAt": "2026-08-31T04:15:47.284Z",
   "filesReviewed": [
     "index.html",
     "games.html",
@@ -13,132 +13,39 @@
     "heartstack-unicorn-blast.html",
     "princess-land-adventures.html",
     "unicorn-land-adventures.html",
-    "people-lens.html"
+    "people-lens.html",
+    "sleep-amigo.html"
   ],
-  "headingCount": 234,
-  "sentenceCount": 490,
+  "headingCount": 98,
+  "sentenceCount": 333,
   "duplicateMarketingSentences": [
     {
-      "text": "meet people lens and sleep amigo",
+      "text": "a development process that labels concepts honestly and avoids invented release promises",
       "locations": [
-        "index.html",
-        "games.html"
-      ]
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
     },
     {
-      "text": "four of hearts makes paid software",
+      "text": "an accessible family friendly presentation with no dark pattern design",
       "locations": [
-        "index.html",
-        "privacy.html"
-      ]
-    },
-    {
-      "text": "our business is not built around watching what you do or selling what we learn",
-      "locations": [
-        "index.html",
-        "privacy.html"
-      ]
-    },
-    {
-      "text": "we collect as little information as a product actually needs keep data ondevice whenever practical and stay away from behavioral advertising and crossapp profiling",
-      "locations": [
-        "index.html",
-        "privacy.html"
-      ]
-    },
-    {
-      "text": "original titles familiar card tables creative play and useful applications",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "arcade defense  adventure fast reflexes",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "arcade  defense thumb command alien fleets",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "enter thumb command  tower defense  adventure bobby the breadasaurus a bread dinosaur",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "meet bobby and the herd  action  adventure evil doom girl adventures two heroes",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "entirely too many supernatural enemies",
-      "locations": [
-        "index.html",
-        "games.html",
-        "evil-doom-adventures.html"
-      ]
-    },
-    {
-      "text": "choose your hero  puzzle  creative play make something worth keeping",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "puzzle  adventure heartstack unicorn blast match suits",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "set off ridiculous chain reactions",
-      "locations": [
-        "index.html",
-        "games.html",
-        "heartstack-unicorn-blast.html"
-      ]
-    },
-    {
-      "text": "see heartstack  creative simulation princess land adventures design the castle style the princesses cook decorate then rearrange all of it",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "explore princess land  creative simulation unicorn land adventures meet the unicorn",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "add way too many flowers",
-      "locations": [
-        "index.html",
-        "games.html",
-        "unicorn-land-adventures.html"
-      ]
-    },
-    {
-      "text": "explore unicorn land  the card table one more hand",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
     },
     {
       "text": "card game palace the table game of resets burns transparent eights and generations of house rules",
@@ -151,10 +58,25 @@
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
         "unicorn-land-adventures.html"
-      ]
+      ],
+      "count": 8
     },
     {
-      "text": "play palace  card game hearts avoid the points",
+      "text": "current status in development in development no public release date or store availability announced",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "learn hearts card game spades bid it",
       "locations": [
         "index.html",
         "games.html",
@@ -164,10 +86,11 @@
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
         "unicorn-land-adventures.html"
-      ]
+      ],
+      "count": 8
     },
     {
-      "text": "unless youre taking every last one",
+      "text": "play palace card game hearts avoid the points",
       "locations": [
         "index.html",
         "games.html",
@@ -177,20 +100,22 @@
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
         "unicorn-land-adventures.html"
-      ]
+      ],
+      "count": 8
     },
     {
-      "text": "meet hearts  card game spades bid it",
+      "text": "read the related studio dispatch related products also on the workbench",
       "locations": [
-        "index.html",
-        "games.html",
         "thumb-command.html",
         "bobby-the-breadasaurus.html",
         "evil-doom-adventures.html",
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
-        "unicorn-land-adventures.html"
-      ]
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
     },
     {
       "text": "try not to blame your partner",
@@ -203,284 +128,22 @@
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
         "unicorn-land-adventures.html"
-      ]
+      ],
+      "count": 8
     },
     {
-      "text": "meet spades  card game euchre five cards",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "approximately twelve regional arguments about the rules",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "meet euchre  card game solitaire a clean satisfying solo card table built for one more deal",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "meet solitaire  card game war flip clash and settle the deck with simple rules and dramatic moments",
-      "locations": [
-        "index.html",
-        "games.html"
-      ]
-    },
-    {
-      "text": "lifestyle  people people lens describe who youre looking for",
-      "locations": [
-        "index.html",
-        "lifestyle-apps.html"
-      ]
-    },
-    {
-      "text": "people lens narrows public evidence to the handful of people worth reviewing",
-      "locations": [
-        "index.html",
-        "lifestyle-apps.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "see people lens  lifestyle  sleep sleep amigo a friendlier place for sleep questions daily insights and a personal history you can actually use",
-      "locations": [
-        "index.html",
-        "lifestyle-apps.html"
-      ]
-    },
-    {
-      "text": "support4ohicom original games thumb command bobby the breadasaurus evil doom girl adventures heartstack unicorn blast princess land unicorn land card table palace hearts spades euchre solitaire war apps all apps people lens sleep amigo company about news support contact trust privacy approach your privacy choices do not sell or share security terms  2026 four of hearts interactive llc",
+      "text": "unless you’re taking every last one",
       "locations": [
         "index.html",
         "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "site settings make the site comfortable",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "language language and game preferences are not stored",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "a privacychoice cookie is used only if you ask us to remember that optional cookies must stay off",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "your privacy choices optional cookies are off",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "4oh does not load analytics advertising or crosssite tracking",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "you can ask us to remember that choice with one strictly necessary preference cookie",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "reject optional cookies review choices continue without saving  privacy control center your privacy choices strictly necessary site delivery and only when requested your optout preference",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "analytics no analytics service is installed",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "advertising and crosssite tracking no advertising pixels profiling sale or sharing are used",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "personalization game and language choices remain in the page or url not a cookie",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "save optional cookies off cancel read the california privacy policy and notice at collection",
-      "locations": [
-        "index.html",
-        "games.html",
-        "lifestyle-apps.html",
-        "about.html",
-        "privacy.html",
-        "news.html",
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "in development in development no public release date or store availability announced back to games current product artwork  visual direction may evolve during development the core idea clear enough to begin",
-      "locations": [
         "thumb-command.html",
         "bobby-the-breadasaurus.html",
         "evil-doom-adventures.html",
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
         "unicorn-land-adventures.html"
-      ]
+      ],
+      "count": 8
     },
     {
       "text": "what we are building a focused product loop with readable choices and responsive feedback",
@@ -491,32 +154,10 @@
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
         "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "an accessible familyfriendly presentation with no darkpattern design",
-      "locations": [
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "a development process that labels concepts honestly and avoids invented release promises",
-      "locations": [
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
     },
     {
       "text": "product privacy status not yet verified distributed product architecture and sdk inventory require verification before release",
@@ -526,35 +167,13 @@
         "evil-doom-adventures.html",
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
-        "unicorn-land-adventures.html"
-      ]
-    },
-    {
-      "text": "current status in development in development no public release date or store availability announced",
-      "locations": [
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
         "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
+        "sleep-amigo.html"
+      ],
+      "count": 7
     },
     {
-      "text": "read the related studio dispatch  related products keep exploring",
-      "locations": [
-        "thumb-command.html",
-        "bobby-the-breadasaurus.html",
-        "evil-doom-adventures.html",
-        "heartstack-unicorn-blast.html",
-        "princess-land-adventures.html",
-        "unicorn-land-adventures.html",
-        "people-lens.html"
-      ]
-    },
-    {
-      "text": "meet spades   four of hearts interactive llc independent software from south dakota",
+      "text": "in development in development no public release date or store availability announced back to games current product artwork visual direction may evolve during development the core idea clear enough to begin",
       "locations": [
         "thumb-command.html",
         "bobby-the-breadasaurus.html",
@@ -562,11 +181,2011 @@
         "heartstack-unicorn-blast.html",
         "princess-land-adventures.html",
         "unicorn-land-adventures.html"
+      ],
+      "count": 6
+    },
+    {
+      "text": "lifestyle people people lens describe who you’re looking for",
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 4
+    },
+    {
+      "text": "people lens narrows public evidence to the handful of people worth reviewing",
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 4
+    },
+    {
+      "text": "add way too many flowers",
+      "locations": [
+        "index.html",
+        "games.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 3
+    },
+    {
+      "text": "arcade defense thumb command alien fleets",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html"
+      ],
+      "count": 3
+    },
+    {
+      "text": "puzzle adventure heartstack unicorn blast match suits",
+      "locations": [
+        "index.html",
+        "games.html",
+        "heartstack-unicorn-blast.html"
+      ],
+      "count": 3
+    },
+    {
+      "text": "set off ridiculous chain reactions",
+      "locations": [
+        "index.html",
+        "games.html",
+        "heartstack-unicorn-blast.html"
+      ],
+      "count": 3
+    },
+    {
+      "text": "we just do not think all of yours belongs to us",
+      "locations": [
+        "index.html",
+        "privacy.html"
+      ],
+      "count": 3
+    },
+    {
+      "text": "at least twelve regional arguments about the rules",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "call trump card game solitaire a clean satisfying solo card table built for one more deal",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "deal solitaire card game war flip clash and settle the deck with simple rules and dramatic moments",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "enter thumb command tower defense adventure bobby the breadasaurus a bread dinosaur a herd to protect and a suspicious number of defensive towers",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "four of hearts makes paid software not dossiers no behavioral advertising no cross app profiling and as little collection as the product actually needs",
+      "locations": [
+        "index.html",
+        "privacy.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "in development in development no public release date or store availability announced back to lifestyle apps current product artwork visual direction may evolve during development the core idea clear enough to begin",
+      "locations": [
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "independent companies should still be allowed to make wonderfully strange things",
+      "locations": [
+        "index.html",
+        "about.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "lifestyle sleep sleep amigo a friendlier place for sleep questions daily insights and a personal history you can actually use",
+      "locations": [
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "meet people lens and sleep amigo",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "meet the unicorns classic card games deal us in",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "read the table card game euchre five cards",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "see bobby’s defenses action adventure evil doom girl adventures two tiny agents of darkness",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "see heartstack creative simulation princess land adventures design the castle style the princesses cook decorate then rearrange all of it",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "see people lens lifestyle sleep sleep amigo a friendlier place for sleep questions daily insights and a personal history you can actually use",
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "visit princess land creative simulation unicorn land adventures meet the unicorn",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    }
+  ],
+  "duplicateTaglines": [
+    {
+      "text": "also on the workbench",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "clear enough to begin interesting enough to continue",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "in development",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "what we are building",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "deal us in",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "fun games great apps",
+      "locations": [
+        "index.html",
+        "about.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "personal information should remain personal",
+      "locations": [
+        "index.html",
+        "privacy.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "useful software less nonsense",
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html"
+      ],
+      "count": 2
+    }
+  ],
+  "repeatedOpeningVerbs": [
+    {
+      "text": "read",
+      "count": 32,
+      "locations": [
+        "index.html",
+        "games.html",
+        "about.html",
+        "news.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "we",
+      "count": 31,
+      "locations": [
+        "index.html",
+        "games.html",
+        "about.html",
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "a",
+      "count": 18,
+      "locations": [
+        "games.html",
+        "about.html",
+        "privacy.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "what",
+      "count": 11,
+      "locations": [
+        "about.html",
+        "privacy.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "one",
+      "count": 9,
+      "locations": [
+        "index.html",
+        "games.html",
+        "privacy.html",
+        "thumb-command.html",
+        "evil-doom-adventures.html"
+      ]
+    },
+    {
+      "text": "the",
+      "count": 8,
+      "locations": [
+        "index.html",
+        "games.html",
+        "about.html",
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "card",
+      "count": 8,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "play",
+      "count": 8,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "unless",
+      "count": 8,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "learn",
+      "count": 8,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "make",
+      "count": 8,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "try",
+      "count": 8,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "in",
+      "count": 8,
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "interesting",
+      "count": 8,
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "an",
+      "count": 8,
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "product",
+      "count": 8,
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "current",
+      "count": 8,
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "meet",
+      "count": 7,
+      "locations": [
+        "index.html",
+        "games.html",
+        "lifestyle-apps.html",
+        "people-lens.html"
+      ]
+    },
+    {
+      "text": "see",
+      "count": 7,
+      "locations": [
+        "index.html",
+        "games.html",
+        "lifestyle-apps.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "four",
+      "count": 6,
+      "locations": [
+        "index.html",
+        "about.html",
+        "privacy.html",
+        "news.html"
+      ]
+    },
+    {
+      "text": "lifestyle",
+      "count": 6,
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "people",
+      "count": 6,
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html",
+        "privacy.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ]
+    },
+    {
+      "text": "arcade",
+      "count": 5,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html"
+      ]
+    },
+    {
+      "text": "how",
+      "count": 5,
+      "locations": [
+        "about.html",
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "it",
+      "count": 5,
+      "locations": [
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "if",
+      "count": 5,
+      "locations": [
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "privacy",
+      "count": 4,
+      "locations": [
+        "index.html",
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "no",
+      "count": 4,
+      "locations": [
+        "about.html",
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "apps",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html",
+        "about.html"
+      ]
+    },
+    {
+      "text": "independent",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "about.html"
+      ]
+    },
+    {
+      "text": "two",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html"
+      ]
+    },
+    {
+      "text": "real",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html"
+      ]
+    },
+    {
+      "text": "entirely",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "evil-doom-adventures.html"
+      ]
+    },
+    {
+      "text": "choose",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "evil-doom-adventures.html"
+      ]
+    },
+    {
+      "text": "puzzle",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "heartstack-unicorn-blast.html"
+      ]
+    },
+    {
+      "text": "set",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "heartstack-unicorn-blast.html"
+      ]
+    },
+    {
+      "text": "free",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "heartstack-unicorn-blast.html"
+      ]
+    },
+    {
+      "text": "fix",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "shape",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "add",
+      "count": 3,
+      "locations": [
+        "index.html",
+        "games.html",
+        "unicorn-land-adventures.html"
+      ]
+    },
+    {
+      "text": "do",
+      "count": 3,
+      "locations": [
+        "about.html",
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "not",
+      "count": 3,
+      "locations": [
+        "privacy.html"
+      ]
+    },
+    {
+      "text": "california",
+      "count": 3,
+      "locations": [
+        "privacy.html"
       ]
     }
   ],
+  "repeatedCallToActionText": [
+    {
+      "text": "learn hearts",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "play palace",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "read the related studio dispatch",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "read the table",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "back to games",
+      "locations": [
+        "lifestyle-apps.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 7
+    },
+    {
+      "text": "meet sleep amigo",
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html",
+        "people-lens.html"
+      ],
+      "count": 3
+    },
+    {
+      "text": "see people lens",
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html",
+        "sleep-amigo.html"
+      ],
+      "count": 3
+    },
+    {
+      "text": "back to lifestyle apps",
+      "locations": [
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "call trump",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "choose your hero",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "deal solitaire",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "enter thumb command",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "flip a card",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "less nonsense",
+      "locations": [
+        "index.html",
+        "lifestyle-apps.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "meet the unicorns",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "read our privacy approach",
+      "locations": [
+        "index.html",
+        "about.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "see bobby’s defenses",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "see heartstack",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    },
+    {
+      "text": "visit princess land",
+      "locations": [
+        "index.html",
+        "games.html"
+      ],
+      "count": 2
+    }
+  ],
+  "repeatedThreeToSixWordPhrases": [
+    {
+      "text": "date or store",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "date or store availability",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "date or store availability announced",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development in development",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development in development no",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development in development no public",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development in development no public release",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development no public",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development no public release",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development no public release date",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "development no public release date or",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "in development in",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "in development in development",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "in development in development no",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "in development in development no public",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "in development no public",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "in development no public release",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "in development no public release date",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "no public release",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "no public release date",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "no public release date or",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "no public release date or store",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "or store availability",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "or store availability announced",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "public release date",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "public release date or",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "public release date or store",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "public release date or store availability",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "release date or",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "release date or store",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "release date or store availability",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "release date or store availability announced",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "store availability announced",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 16
+    },
+    {
+      "text": "hearts card game",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 10
+    },
+    {
+      "text": "palace card game",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 10
+    },
+    {
+      "text": "we do not",
+      "locations": [
+        "index.html",
+        "privacy.html"
+      ],
+      "count": 10
+    },
+    {
+      "text": "a development process",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "a development process that",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "a development process that labels",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "a development process that labels concepts",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "a focused product",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "a focused product loop",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "a focused product loop with",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "a focused product loop with readable",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "accessible family friendly",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "accessible family friendly presentation",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "accessible family friendly presentation with",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "accessible family friendly presentation with no",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "also on the",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "also on the workbench",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "an accessible family",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "an accessible family friendly",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "an accessible family friendly presentation",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "an accessible family friendly presentation with",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "and avoids invented",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "and avoids invented release",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "and avoids invented release promises",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "and generations of",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "and generations of house",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "and generations of house rules",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "and responsive feedback",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "announced back to",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "are building a",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "are building a focused",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "are building a focused product",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "are building a focused product loop",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "artwork visual direction",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "artwork visual direction may",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "artwork visual direction may evolve",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "artwork visual direction may evolve during",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "availability announced back",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "availability announced back to",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "avoid the points",
+      "locations": [
+        "index.html",
+        "games.html",
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "avoids invented release",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    },
+    {
+      "text": "avoids invented release promises",
+      "locations": [
+        "thumb-command.html",
+        "bobby-the-breadasaurus.html",
+        "evil-doom-adventures.html",
+        "heartstack-unicorn-blast.html",
+        "princess-land-adventures.html",
+        "unicorn-land-adventures.html",
+        "people-lens.html",
+        "sleep-amigo.html"
+      ],
+      "count": 8
+    }
+  ],
+  "overusedAdjectives": [
+    {
+      "text": "creative",
+      "count": 16
+    },
+    {
+      "text": "clear",
+      "count": 14
+    },
+    {
+      "text": "useful",
+      "count": 11
+    },
+    {
+      "text": "focused",
+      "count": 9
+    },
+    {
+      "text": "fun",
+      "count": 6
+    },
+    {
+      "text": "independent",
+      "count": 5
+    },
+    {
+      "text": "thoughtful",
+      "count": 4
+    }
+  ],
   "notes": [
-    "Shared navigation, footer, availability, and legal disclosures are intentionally excluded from enforcement.",
-    "This is a warning tool; editorial review decides whether repetition is purposeful."
+    "Main marketing content is scanned; shared navigation and footer copy are excluded.",
+    "This is a warning tool. Editorial review decides whether repetition is purposeful, especially for legal and availability language."
   ]
 }
