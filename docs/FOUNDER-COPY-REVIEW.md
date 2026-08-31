@@ -6,7 +6,7 @@ Review date: August 30, 2026
 
 - Lead with “Games with heart. Apps with purpose.”
 - Describe 4OH as an independent South Dakota software company making games and useful applications.
-- Explain the origin plainly: four kids, a house full of games, and the company came later.
+- Explain the approved origin plainly: Four of Hearts became 4OH when somebody said it out loud and the name worked.
 - Show the craft: careful engineering, thoughtful design, physical-device testing, accessibility, iteration, and privacy by design.
 - State the independent point of view: wonderfully strange things are still worth making.
 - Give every game and app its own premise, sentence rhythm, and call to action.

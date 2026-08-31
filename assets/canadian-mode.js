@@ -11,7 +11,8 @@
     node.textContent = active ? system.copy[key] : node.dataset.defaultCopy;
   };
   document.querySelectorAll("[data-canadian-key]").forEach((node) => apply(node, node.dataset.canadianKey));
-  const page = location.pathname.split("/").pop() || "index.html";
+  const trimmed = location.pathname.replace(/^\/+|\/+$/g, "");
+  const page = !trimmed ? "index.html" : location.pathname.endsWith("/") ? `${trimmed.split("/").pop()}/` : trimmed.split("/").pop();
   (system.routes[page] || []).forEach(([selector, key]) => document.querySelectorAll(selector).forEach((node) => apply(node, key)));
   if (active) {
     const metadata = system.metadata[page];

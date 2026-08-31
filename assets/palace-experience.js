@@ -216,7 +216,7 @@
     "en-CA": { nav:["Palace","Give ’er","News, eh?","More Games","About 4OH","Help, please"], pages:{
       "/palace.html":["The Four of Hearts flagship","Palace is calling, eh?","Match it. Beat it. Burn it. Beauty—the table legend is finally becoming an app."],
       "/news.html":["News from the table","Things are taking shape, bud.","Honest Palace updates from the whole Four of Hearts family. No tall tales, promise."],
-      "/about.html":["The folks behind Palace","Four daughters. Four hearts. One beauty of a game night.","It started at the family table: lots of opinions, plenty of laughs, and one more hand before we call ’er."],
+      "/about.html":["The folks behind Palace","Four of Hearts became 4OH when somebody said it out loud.","The name stuck. Then the studio kept building games and useful apps in South Dakota."],
       "/privacy.html":["Privacy by design","Privacy choices, eh?","Sorry—nothing creepy here. No account, ads, analytics, cookies, or visitor-data sales."]} }
   };
   const localizeShell = () => {

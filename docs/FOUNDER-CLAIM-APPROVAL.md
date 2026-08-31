@@ -2,7 +2,7 @@
 
 | Statement | Classification | Public treatment | Status |
 |---|---|---|---|
-| Four daughters inspired Four of Hearts | Founder-supplied fact | About and homepage family story | Founder confirmation required before commercial reliance |
+| Earlier private origin explanation | Superseded | Removed from current public copy | Use the approved spoken-name 4OH origin instead |
 | Success measured in smiles | Founder-supplied philosophy | Clearly presented as studio philosophy | Approved direction; legal/editorial review remains |
 | 50+ years around games | Founder-supplied fact | Qualified “founder-supplied biography” | Factual confirmation required |
 | 20+ years examining strategic interaction in a university environment | Founder-supplied fact | Qualified; no institution, degree, employer, or professor claim | Factual confirmation required |

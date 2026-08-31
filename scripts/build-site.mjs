@@ -28,6 +28,7 @@ const gameToken = (key = "gameName", fallback = "Palace") => `<span data-game-to
 const gameMessage = (key, fallback) => `<span data-game-message="${key}">${fallback}</span>`;
 const productCopy = (value) => String(value).replaceAll("Palace", gameToken("gameName", "Palace"));
 const brandMessage = (key, fallback) => `<span data-brand-message="${key}">${fallback}</span>`;
+const localeCopy = (en, ca) => `<span data-copy-en="${en.replaceAll('"','&quot;')}" data-copy-ca="${ca.replaceAll('"','&quot;')}">${en}</span>`;
 const assetManifest = Object.fromEntries(readdirSync(resolve(root, "assets"), { withFileTypes: true }).filter((entry) => entry.isFile() && entry.name !== "asset-manifest.js").map((entry) => [`assets/${entry.name}`, assetVersion(`assets/${entry.name}`)]));
 write("assets/asset-manifest.js", `window.FOUR_HEARTS_ASSETS = Object.freeze(${JSON.stringify(assetManifest, null, 2)});`);
 
@@ -98,7 +99,7 @@ const palaceTableTools = () => `<aside class="palace-table-tools" data-palace-co
 const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid footer-grid-editorial">
     <div class="footer-brand"><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-promise">Games with heart. Apps with purpose.</p><p class="footer-copy">Independent software from South Dakota.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
-    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="evil-doom-adventures.html">Evil Doom Girl Adventures</a><a href="heartstack-unicorn-blast.html">HeartStack Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a></nav>
+    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">HeartStack Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a></nav>
     <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2><a href="palace.html">Palace</a><a href="hearts-play.html">Hearts</a><a href="spades-play.html">Spades</a><a href="euchre-play.html">Euchre</a><a href="solitaire.html">Solitaire</a><a href="war.html">War</a></nav>
     <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a><a href="people-lens.html">People Lens</a><a href="sleep-amigo.html">Sleep Amigo</a></nav>
     <nav class="footer-group" aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="about.html#south-dakota">South Dakota</a><a href="news.html">News</a><a href="support.html">Support</a><a href="contact.html">Contact</a></nav>
@@ -186,7 +187,7 @@ const availabilityCopy = (item) => {
   if (item.gameKey === "palace") return "Palace has an interactive website preview and remains in development.";
   if (item.gameKey === "thumb-command") return "Thumb Command is in development with no public build or announced release date. This article documents the current creative direction.";
   if (item.gameKey === "bobby") return "Bobby the Breadasaurus is in concept development and is not publicly playable. No release date or platform has been announced.";
-  if (item.gameKey === "evil-doom") return "Evil Doom Girl Adventures is in development and is not publicly playable. No release date or platform has been announced.";
+  if (item.gameKey === "evil-doom") return "Evil Doom Boy is one action-adventure game with two selectable heroes. It is in development and is not publicly playable. No release date or platform has been announced.";
   return "This article reports current company work and does not announce public availability.";
 };
 
@@ -356,9 +357,10 @@ write("commander-thumb.html", legacyRedirectPage("Game page", "games/thumb-comma
 write("news-commander-thumb-is-coming.html", legacyRedirectPage("Game announcement", "news-thumb-command-save-planet-earth.html"));
 write("news-welcome-to-the-thum-system.html", legacyRedirectPage("World story", "news-the-city-is-the-base.html"));
 write("news-building-commander-thumb.html", legacyRedirectPage("Development story", "news-meet-the-blueguard.html"));
-write("news-shadow-run-enters-development.html", legacyRedirectPage("Development story", "news-evil-doom-girl-enters-development.html"));
-write("evil-doom-boy-adventures.html", legacyRedirectPage("Legacy Evil Doom Boy route", "evil-doom-adventures.html"));
-write("evil-doom-girl-adventures.html", legacyRedirectPage("Legacy Evil Doom Girl route", "evil-doom-adventures.html"));
+write("news-shadow-run-enters-development.html", legacyRedirectPage("Development story", "news-evil-doom-two-heroes-one-route.html"));
+write("evil-doom-adventures.html", legacyRedirectPage("Legacy Evil Doom route", "games/evil-doom-boy/"));
+write("evil-doom-boy-adventures.html", legacyRedirectPage("Legacy Evil Doom Boy route", "games/evil-doom-boy/"));
+write("evil-doom-girl-adventures.html", legacyRedirectPage("Legacy Evil Doom Girl route", "games/evil-doom-boy/"));
 write("news-bobby-the-breadasaurus-joins-the-family.html", legacyRedirectPage("Bobby story", "news-bobby-and-the-breadstone.html"));
 write("news-bobby-tower-defense-takes-shape.html", legacyRedirectPage("Bobby development story", "news-bobby-and-the-breadstone.html"));
 write("news-building-a-safer-card-table.html", legacyRedirectPage("Card-table story", "news-card-table-adds-solitaire-war.html"));
@@ -375,7 +377,10 @@ write("news-thumb-command-world-tour.html", legacyRedirectPage("Thumb Command st
 write("news-unicorn-land-adventures-development.html", legacyRedirectPage("Unicorn Land story", "news-building-unicorn-land-adventures.html"));
 write("news-welcome-to-four-of-hearts.html", legacyRedirectPage("Studio news", "news.html"));
 write("news-why-were-building-palace.html", legacyRedirectPage("Palace story", "news-palace-019-founder-review.html"));
-["bobby","evil-doom","heartstack","princess-land","unicorn-land","solitaire","war"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
+["bobby","heartstack","princess-land","unicorn-land","solitaire","war"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
+const evilDoomMarkup = evilDoomPage({ page, company, siteUrl, game: gameByKey["evil-doom"] });
+mkdirSync(resolve(root, "games/evil-doom-boy"), { recursive: true });
+write("games/evil-doom-boy/index.html", evilDoomMarkup.replace("<head>", '<head><base href="../../">'));
 write("lifestyle-apps.html", page({
   title:"Lifestyle Apps | 4OH Interactive",
   description:"People Lens and Sleep Amigo are practical lifestyle applications in development at Four of Hearts Interactive.",
@@ -425,7 +430,7 @@ write("play.html", page({
     </div></section>`
 }));
 
-write("about.html", page({ title: "About Four of Hearts Interactive | Independent Software Studio", description: "Four of Hearts Interactive is an independent South Dakota studio building games with heart, apps with purpose, and custom software.", path: "/about.html", current: "about", bodyClass: "about-page", content: `<section class="studio-bridge about-studio-hero" id="south-dakota"><div class="shell bridge-grid"><h1>Four of Hearts<br><em>Interactive.</em></h1><div><p class="eyebrow">Independent software from South Dakota.</p><p class="lede">Games with heart. Apps with purpose. Custom software built by a small studio that answers directly for the work.</p></div></div></section><section class="about-editorial"><div class="shell about-editorial-grid"><div><p class="eyebrow">What we make</p><h2>Fun games. Great apps.</h2><p>Original games, familiar card tables, productivity and lifestyle applications, plus fast custom builds for clients with a clear problem to solve.</p></div><div><p class="eyebrow">What we believe</p><h2>Care is part of the code.</h2><p>Customers deserve respect. Personal information should remain personal. Independent companies should still be allowed to make wonderfully strange things.</p></div><div><p class="eyebrow">How we work</p><h2>Make it. Test it. Improve it.</h2><p>Careful engineering, thoughtful design, documentation, physical-device testing, accessibility, direct feedback, iteration, and privacy by design.</p></div><div id="the-name"><p class="eyebrow">Why Four of Hearts</p><h2>Four kids. A house full of games.</h2><p>The name came from four kids and a house where something was always being played. The company came later. The useful rule stayed: make products we want to use and games we want to play.</p></div><div><p class="eyebrow">How we make money</p><h2>Customers pay for software.</h2><p>Good products cost money to build and maintain. We would rather charge clearly for useful work than let advertisers pay us to study the people using it.</p><a class="text-link" href="privacy.html#how-we-make-money">Read the business model →</a></div><div><p class="eyebrow">Old-school values</p><h2>Modern ambitions.</h2><p>Do the work carefully. Tell the truth about what is ready. Respect people’s time. Build for the long haul without losing the fun.</p><a class="text-link" href="privacy.html">Read our privacy approach →</a></div></div></section><section class="studio-services" aria-labelledby="about-services-title"><div class="shell services-grid"><div><p class="eyebrow">Creative technology studio</p><h2 id="about-services-title">Strong idea.<br><em>Working software.</em></h2></div><div class="services-copy"><p class="lede">Need a custom application or interactive prototype? We can move from a useful problem to working software quickly.</p><p>Clear scope. Direct communication. No inflated process theatre.</p><div class="actions"><a class="button" href="mailto:support@4ohi.com?subject=Custom%20application%20project">Talk about a project</a></div></div></div></section>` }));write("support.html", page({
+write("about.html", page({ title: "About Four of Hearts Interactive | Independent Software Studio", description: "Four of Hearts Interactive is an independent software studio in South Dakota making original games and useful lifestyle apps.", path: "/about.html", current: "about", bodyClass: "about-page", content: `<section class="studio-bridge about-studio-hero" id="south-dakota"><div class="shell bridge-grid"><h1>Four of Hearts<br><em>Interactive.</em></h1><div><p class="eyebrow">Independent software from South Dakota.</p><p class="lede">${localeCopy("Four of Hearts Interactive is an independent software studio in South Dakota. We make original games and useful lifestyle apps with strong ideas, careful code, and respect for the people using them.","Four of Hearts Interactive is an independent software studio in South Dakota. We make original games and useful lifestyle apps with strong ideas, careful code, and respect for the people using them. Beauty.")}</p></div></div></section><section class="about-editorial"><div class="shell about-editorial-grid"><div><p class="eyebrow">What we make</p><h2>Fun games. Great apps.</h2><p>Original games, familiar card tables, productivity and lifestyle applications, plus fast custom builds for clients with a clear problem to solve.</p></div><div><p class="eyebrow">What we believe</p><h2>Care is part of the code.</h2><p>Customers deserve respect. Independent companies should still be allowed to make wonderfully strange things.</p><p>${localeCopy("Useful software does not need to know everything about you. We design for usefulness, not surveillance.","Useful software does not need to know everything about you. We design for usefulness, not surveillance. Seems fair.")}</p></div><div><p class="eyebrow">How we work</p><h2>Make it. Test it. Improve it.</h2><p>Careful engineering, thoughtful design, documentation, physical-device testing, accessibility, direct feedback, iteration, and privacy by design.</p></div><div id="the-name"><p class="eyebrow">Why Four of Hearts</p><h2>${localeCopy("4. Ohhh. I get it.","4. Ohhh. Beauty.")}</h2><p>${localeCopy("Four of Hearts became 4OH when somebody said it out loud and the name worked. No secret acronym. No corporate mythology. Just Four of Hearts said out loud.","Four of Hearts became 4OH when somebody said it out loud. We gave a polite little nod and kept the name. No secret acronym, bud.")}</p></div><div><p class="eyebrow">How we make money</p><h2>Customers pay for software.</h2><p>Good products cost money to build and maintain. We would rather charge clearly for useful work than let advertisers pay us to study the people using it.</p><a class="text-link" href="privacy.html#how-we-make-money">Read the business model →</a></div><div><p class="eyebrow">Old-school values</p><h2>Modern ambitions.</h2><p>Do the work carefully. Tell the truth about what is ready. Respect people’s time. Build for the long haul without losing the fun.</p><a class="text-link" href="privacy.html">Read our privacy approach →</a></div></div></section><section class="studio-services" aria-labelledby="about-services-title"><div class="shell services-grid"><div><p class="eyebrow">Creative technology studio</p><h2 id="about-services-title">Strong idea.<br><em>Working software.</em></h2></div><div class="services-copy"><p class="lede">Need a custom application or interactive prototype? We can move from a useful problem to working software quickly.</p><p>Clear scope. Direct communication. No inflated process theatre.</p><div class="actions"><a class="button" href="mailto:support@4ohi.com?subject=Custom%20application%20project">Talk about a project</a></div></div></div></section>` }));write("support.html", page({
   title: "Support | Four of Hearts Interactive",
   description: "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
   path: "/support.html",
@@ -485,7 +490,7 @@ write("terms.html", page({
   content: `
     ${pageHero("Internal Alpha", "Terms of Use", "Last technically reviewed July 25, 2026. These plain-language terms describe a testing-stage website and game family, not a public commercial release.")}
     <section class="section"><div class="narrow prose">
-      <h2>Current availability</h2><p>Palace, Hearts, Spades, and Euchre are in internal testing. Thumb Command, Bobby the Breadasaurus, and Evil Doom Girl Adventures are in development and are not publicly playable. Access may be limited, changed, interrupted, or withdrawn. The website tutorials are short teaching previews, not complete matches and not gambling.</p>
+      <h2>Current availability</h2><p>Palace, Hearts, Spades, and Euchre are in internal testing. Thumb Command, Bobby the Breadasaurus, and Evil Doom Boy are in development and are not publicly playable. Access may be limited, changed, interrupted, or withdrawn. The website tutorials are short teaching previews, not complete matches and not gambling.</p>
       <h2>Use the products responsibly</h2><p>Do not interfere with service, attempt unauthorized access, misuse reconnect or ranking behavior, reverse engineer where prohibited by law, harass other testers, or use the products for unlawful activity.</p>
       <h2>Testing information</h2><p>Feedback may be used to improve the games. Do not include confidential information, passwords, or third-party material you lack permission to share.</p>
       <h2>No promise of release</h2><p>Features, rules, visual design, rankings, data behavior, and availability may change. Participation in testing does not guarantee a future download, account, entitlement, purchase, or permanent record.</p>
@@ -537,14 +542,16 @@ const routeAliases = {
   "games/index.html": "../games.html",
   "games/palace/index.html": "../../palace.html",
   "games/bobby-the-breadasaurus/index.html": "../../bobby-the-breadasaurus.html",
-  "games/evil-doom-adventures-shadow-run/index.html": "../../evil-doom-adventures.html",
+  "games/evil-doom-adventures-shadow-run/index.html": "../evil-doom-boy/",
+  "games/evil-doom-adventures/index.html": "../evil-doom-boy/",
+  "games/evil-doom-boy-adventures/index.html": "../evil-doom-boy/",
+  "games/evil-doom-girl-adventures/index.html": "../evil-doom-boy/",
   "games/hearts/index.html": "../../hearts-play.html",
   "games/spades/index.html": "../../spades-play.html",
   "games/euchre/index.html": "../../euchre-play.html",
   "games/solitaire/index.html": "../../solitaire.html",
   "games/war/index.html": "../../war.html",
-  "games/evil-doom-boy/index.html": "../../evil-doom-adventures.html",
-  "games/evil-doom-girl/index.html": "../../evil-doom-adventures.html",
+  "games/evil-doom-girl/index.html": "../evil-doom-boy/",
   "lifestyle-apps/index.html": "../lifestyle-apps.html",
   "lifestyle-apps/people-lens/index.html": "../../people-lens.html",
   "lifestyle-apps/sleep-amigo/index.html": "../../sleep-amigo.html",
@@ -558,14 +565,16 @@ const routeAliases = {
 Object.entries(routeAliases).forEach(([file, target]) => {
   mkdirSync(resolve(root, file, ".."), { recursive: true });
   const isRetiredThumbCommandRoute = file === "games/commander-thum-b/index.html";
-  const canonicalPath = isRetiredThumbCommandRoute
-    ? "games/thumb-command/"
-    : `${file.replace(/\/index\.html$/, "")}/`;
-  const robots = isRetiredThumbCommandRoute ? '<meta name="robots" content="noindex,follow">' : "";
+  const canonicalPath = file.startsWith("games/evil-doom")
+    ? "games/evil-doom-boy/"
+    : isRetiredThumbCommandRoute
+      ? "games/thumb-command/"
+      : `${file.replace(/\/index\.html$/, "")}/`;
+  const robots = '<meta name="robots" content="noindex,follow">';
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
-  "index.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "bobby-the-breadasaurus.html", "evil-doom-adventures.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "people-lens.html", "sleep-amigo.html", "news.html",
+  "index.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "people-lens.html", "sleep-amigo.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"
@@ -573,7 +582,7 @@ const sitemapFiles = [
 
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapFiles.map((file) => `  <url><loc>${siteUrl}/${file === "index.html" ? "" : file === "thumb-command.html" ? "games/thumb-command/" : file}</loc></url>`).join("\n")}
+${sitemapFiles.map((file) => `  <url><loc>${siteUrl}/${file === "index.html" ? "" : file === "thumb-command.html" ? "games/thumb-command/" : file === "games/evil-doom-boy/index.html" ? "games/evil-doom-boy/" : file}</loc></url>`).join("\n")}
 </urlset>`);
 
 write("feed.xml", `<?xml version="1.0" encoding="UTF-8"?>

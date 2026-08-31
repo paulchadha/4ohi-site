@@ -5,13 +5,12 @@ Public portfolio website for Four of Hearts Interactive, LLC and 4ohi.com.
 ## Company and games
 
 - Four of Hearts Interactive is the parent brand; 4OH is the approved compact mark.
-- Studio line: **One Family. Many Games.**
 - Palace is the flagship card game and has an interactive website preview.
 - Bobby the Breadasaurus is a family adventure in concept development.
-- Evil Doom Girl Adventures is a two-hero action platformer in concept development, led by Evil Doom Girl with Evil Doom Boy as the other playable hero.
+- Evil Doom Boy is one action-adventure game in development. Evil Doom Boy is the default playable hero; Evil Doom Girl is the alternate playable hero; Evil Doom is the antagonist.
 - Thumb Command is an arcade-defense game in development with no announced release date or public build.
 - Hearts, Spades, and Euchre remain in internal testing and each has a website lesson.
-- The reusable ten-product source of truth is scripts/game-catalog.mjs.
+- The reusable product source of truth is `scripts/studio-product-manifest.mjs`.
 
 No page claims an unverified release date, platform, rating, store listing, player count, or public build.
 
@@ -31,9 +30,9 @@ The site uses no account, backend form, cookie, browser storage, analytics, adve
     python -m http.server 4173 --bind 127.0.0.1
     node scripts/validate-site.mjs
     node scripts/verify-company-architecture.mjs
-    node scripts/verify-founder-product-cleanup.mjs
+    node scripts/verify-evil-doom-origin.mjs
 
-Rendered gates cover phone, tablet, laptop, desktop, and mobile landscape. They check keyboard navigation, the complete game lineup, honest statuses, Palace isolation, four tutorials, images, overflow, metadata, spelling, artwork provenance, the deep-purple Evil Girl treatment, and zero tracking.
+Rendered gates cover phone, tablet, laptop, desktop, and mobile landscape. They check keyboard navigation, the complete game lineup, honest statuses, Palace isolation, four tutorials, images, overflow, metadata, spelling, artwork provenance, the one-game Evil Doom identity and accessible hero selector, and zero tracking.
 
 There is no package manifest, so no separate framework lint, type-check, or bundler command exists. Syntax checks, the generator, static validation, and rendered Chromium suites are the production build gates.
 
@@ -57,7 +56,7 @@ Never commit credentials, tokens, recovery codes, private keys, private correspo
 
 ## Immersive editorial release (August 29, 2026)
 
-The production homepage is generated from `scripts/homepage-studio-portfolio.mjs`, styled by the studio experience stylesheets, and progressively enhanced by `assets/studio-reconstruction.js`. It combines a direct company introduction, an editorial game lineup, the Palace teaching path, company news, and the Four daughters/Four hearts founder story.
+The production homepage is generated from `scripts/homepage-studio-portfolio.mjs`, styled by the studio experience stylesheets, and progressively enhanced by `assets/studio-reconstruction.js`. It combines a direct company introduction, an editorial product lineup, the Palace teaching path, company news, and the public 4OH name story: Four of Hearts said out loud.
 
 ## Production portfolio architecture
 

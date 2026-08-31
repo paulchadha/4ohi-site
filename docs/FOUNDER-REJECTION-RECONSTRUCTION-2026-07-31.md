@@ -106,7 +106,7 @@ News routes are generated from content/news.json as /news-{slug}.html.
 
 The homepage contains no four-daughters, four-kids, founder-children, family-origin, family-story, or “smiles” pitch. “One Family. Many Games.” remains only as a sparse studio slogan in structured brand data where appropriate.
 
-About contains one origin sentence: “The name Four of Hearts was inspired by the founder’s four daughters.” It is not repeated elsewhere in the reconstructed homepage or navigation.
+Historical note: an earlier private-family origin explanation appeared here. It is superseded and removed from the current site; the public origin is that Four of Hearts became 4OH when somebody said it out loud and the name worked.
 
 ## Interaction and physical QA
 

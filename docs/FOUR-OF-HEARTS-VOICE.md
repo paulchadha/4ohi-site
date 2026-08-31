@@ -1,6 +1,6 @@
 # Four of Hearts Studio Voice
 
-Reviewed: August 30, 2026
+Reviewed: August 31, 2026
 
 ## Core position
 
@@ -18,7 +18,8 @@ The voice is independent, clever, warm, technically serious, privacy-minded, sli
 - Let one strong idea own each section. Do not stack slogans.
 - Be honest about development status, pricing, architecture, and uncertainty.
 - Explain the craft through careful engineering, thoughtful design, physical-device testing, accessibility, iteration, documentation, and privacy by design.
-- Keep the origin simple: four kids, a house full of games, and a company that came later.
+- Keep the public name story simple: Four of Hearts became 4OH when somebody said it out loud. The name stuck.
+- Do not connect the company name to the founder’s children or other private family details.
 - State the point of view when it matters: independent companies should still be allowed to make wonderfully strange things.
 - Humor is seasoning, never camouflage.
 
@@ -26,7 +27,7 @@ The voice is independent, clever, warm, technically serious, privacy-minded, sli
 
 - Thumb Command is urgent and cinematic.
 - Bobby the Breadasaurus is tactically absurd.
-- Evil Doom Adventures is brisk, dark, and mischievous.
+- Evil Doom Boy is brisk, dark, and mischievous: one game, two selectable heroes, and Evil Doom as the antagonist.
 - HeartStack is sparkling and kinetic.
 - Princess Land and Unicorn Land are inviting and creative, but distinct from each other.
 - Card games are concise, familiar, and table-specific.
@@ -41,4 +42,4 @@ Approved positioning includes “We love data. We just do not think all of yours
 
 ## Canadian mode
 
-Canadian copy may be warm, dry, and lightly regional. It may add a toque, prairie weather, or an understated “bud.” Formal legal policy, prices, release status, safety information, and privacy/consent controls stay literal.
+Canadian copy may be warm, dry, and lightly regional. It may add a toque, prairie weather, or an understated “bud.” Formal legal policy, prices, release status, safety information, and privacy/consent controls stay literal. Product names remain canonical.

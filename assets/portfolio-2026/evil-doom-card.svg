@@ -1,13 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
-  <title id="title">Evil Doom Adventures dual-hero artwork</title>
-  <desc id="desc">Evil Doom Girl and Evil Doom Boy presented together as one game.</desc>
-  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#170b2c"/><stop offset="1" stop-color="#070a18"/></linearGradient></defs>
-  <rect width="1200" height="750" rx="42" fill="url(#bg)"/>
-  <svg x="84" y="25" width="498" height="700" viewBox="540 135 250 355" preserveAspectRatio="xMidYMid slice">
-    <image href="four-of-hearts-studio-portfolio-board.webp" width="1536" height="1024"/>
+  <title id="title">Evil Doom Boy choose-your-hero artwork</title>
+  <desc id="desc">Evil Doom Boy, the default playable hero, and Evil Doom Girl, the alternate playable hero, standing together in one shared moonlit scene.</desc>
+  <defs>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08070f" stop-opacity=".05"/><stop offset=".72" stop-color="#301648" stop-opacity=".18"/><stop offset="1" stop-color="#4e2a84" stop-opacity=".48"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop offset=".68" stop-color="#08070f" stop-opacity="0"/><stop offset="1" stop-color="#08070f" stop-opacity=".82"/></linearGradient>
+  </defs>
+  <rect width="1200" height="750" rx="42" fill="#08070f"/>
+  <svg width="1200" height="750" viewBox="150 320 768 480" preserveAspectRatio="xMidYMid slice">
+    <image href="../evil-doom/evil-doom-hero-purple-1200.webp" width="1200" height="800"/>
   </svg>
-  <svg x="618" y="25" width="498" height="700" viewBox="790 135 250 355" preserveAspectRatio="xMidYMid slice">
-    <image href="four-of-hearts-studio-portfolio-board.webp" width="1536" height="1024"/>
-  </svg>
-  <path d="M600 35v680" stroke="#7450c8" stroke-width="5" opacity=".7"/>
+  <rect width="1200" height="750" rx="42" fill="url(#shade)"/>
+  <rect width="1200" height="750" rx="42" fill="url(#edge)"/>
+  <path d="M600 90v540" stroke="#8c63d5" stroke-width="3" opacity=".16"/>
 </svg>

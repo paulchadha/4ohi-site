@@ -1,5 +1,14 @@
-# Evil Doom Adventures website identity
+# Evil Doom Boy website identity
 
-Evil Doom Adventures is the umbrella product. Evil Doom Boy and Evil Doom Girl share one route and alternate as the lead state. Desktop auto-rotation uses an 8.5-second interval, pauses after manual choice or keyboard focus, and is disabled under reduced-motion preference. Both hero buttons remain available at all sizes.
+Evil Doom Boy is one Action Adventure game and one public product record. Evil Doom Boy is the default playable hero, Evil Doom Girl is the alternate playable hero, and Evil Doom is the antagonist.
 
-Evil Doom Girl uses the approved interface accent `#4E2A84`. The accent is applied directly; no global image filter is used. “Shadow Run” survives only in explicitly historical material, not as the current public product title.
+- Canonical title: **Evil Doom Boy**
+- Canonical slug: `evil-doom-boy`
+- Canonical route: `/games/evil-doom-boy/`
+- Status: **In Development**
+- Publisher: **Four of Hearts Interactive, LLC**
+- Repository mapping: **NEEDS CONFIRMATION**
+
+The detail-page selector previews either playable hero without navigating to another product. Boy is the initial state; Girl is a selectable alternate state. A `hero` query may preserve preview state, while the canonical link and structured data always identify `/games/evil-doom-boy/`.
+
+The combined catalog composition at `assets/portfolio-2026/evil-doom-card.svg/.png` shows both heroes in one frame. The visible DOM label says “Choose Your Hero,” and the product title remains “Evil Doom Boy.” Legacy names survive only in redirect data or accurately labeled historical records.

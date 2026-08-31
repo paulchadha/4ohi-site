@@ -105,7 +105,7 @@
         powerIntro: "Four cards change everything. The ten clears the pile very responsibly.",
         newsIntro: "News from the table. Some of it is even useful, bud.",
         gamesIntro: (n) => `${n} gets the crown. Hearts, Spades, and Euchre brought snacks.`,
-        aboutIntro: "Four daughters. Four hearts. Enough opinions for one excellent game studio.",
+        aboutIntro: "Four of Hearts became 4OH when somebody said it out loud. The name stuck.",
         supportIntro: "Something broke? Blame the dealer politely for thirty seconds, then tell us.",
         notFound: "This card fell under the table. We checked near the toque.",
         footer: "Built for long winters, warm tables, and one more game."

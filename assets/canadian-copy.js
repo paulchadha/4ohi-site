@@ -39,8 +39,8 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
     "bobby.detail": "Small dinosaur. Big heart. Warm bread. Outdoor conditions subject to change without notice.",
 
     "doom.status": "In development. Purple respected. Shadows winterized.",
-    "doom.short": "Two heroes cross dangerous shadows and apologize only when it won’t slow the rescue.",
-    "doom.action": "Enter Evil Doom Girl Adventures, carefully",
+    "doom.short": "Evil Doom is closing in, which is awfully rude. Start as Evil Doom Boy or switch to Evil Doom Girl and send it packing, bud.",
+    "doom.action": "Meet both heroes, carefully",
     "doom.detail": "Trust is dangerous. Leaving your partner behind would also be extremely poor manners.",
 
     "thumb-command.status": "In development. The launch pad has a block heater now.",
@@ -57,7 +57,7 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
 
     "games.intro": "Ten games, each with its own weather system. Have a look around; we labelled everything.",
     "news.intro": "Studio news with facts, dates, and almost no speculation about road conditions.",
-    "about.intro": "Four daughters, four hearts, and enough opinions to keep a game studio honest and the group chat lively.",
+    "about.intro": "Four of Hearts became 4OH when somebody said it out loud. Beauty.",
     "about.point": "We study what makes people stay for one more hand—then make sure somebody starts the car.",
     "support.intro": "Something went sideways? Tell us what happened. We’ll be helpful without standing awkwardly in the doorway.",
     "privacy.intro": "A plain-language privacy overview. The jokes stop before anything legally important gets unclear.",
@@ -70,7 +70,7 @@ window.FOUR_HEARTS_CANADIAN_COPY = Object.freeze({
   routes: Object.freeze({
     "games.html": [[".page-hero .lede", "games.intro"]],
     "bobby-the-breadasaurus.html": [[".world-lede", "bobby.detail"], [".world-status", "bobby.status"]],
-    "evil-doom-adventures.html": [[".world-lede", "doom.detail"], [".world-status", "doom.status"]],
+    "evil-doom-boy/": [[".honesty-note", "doom.status"]],
     "thumb-command.html": [[".retro-hero p", "thumb-command.detail"]],
     "hearts-play.html": [[".page-hero .lede", "hearts.short"]],
     "spades-play.html": [[".page-hero .lede", "spades.short"]],

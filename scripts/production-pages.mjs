@@ -1,14 +1,14 @@
 import { privacyCopy } from "./privacy-copy.mjs";
 const text=(en,ca)=>`<span data-copy-en="${en.replaceAll('"','&quot;')}" data-copy-ca="${ca.replaceAll('"','&quot;')}">${en}</span>`;
 const canadianStatus={"Interactive Preview":"Interactive preview. Pull up a chair.","Internal Alpha":"Internal alpha. Still wearing work boots.","In Development":"In development. We measured twice."};
-const canadianCta={palace:"Play Palace, bud",hearts:"Meet Hearts",spades:"Meet Spades",euchre:"Meet Euchre",solitaire:"Meet Solitaire",war:"Meet War","thumb-command":"Save Earth, bud",bobby:"See Bobby’s defences","evil-doom":"Choose your hero, carefully",heartstack:"See HeartStack","princess-land":"Visit Princess Land","unicorn-land":"Meet the unicorns","people-lens":"See People Lens","sleep-amigo":"Meet Sleep Amigo"};
+const canadianCta={palace:"Play Palace, bud",hearts:"Meet Hearts",spades:"Meet Spades",euchre:"Meet Euchre",solitaire:"Meet Solitaire",war:"Meet War","thumb-command":"Save Earth, bud",bobby:"See Bobby’s defences","evil-doom":"Meet both heroes",heartstack:"See HeartStack","princess-land":"Visit Princess Land","unicorn-land":"Meet the unicorns","people-lens":"See People Lens","sleep-amigo":"Meet Sleep Amigo"};
 const status=(product)=>`<span class="production-status"><span aria-hidden="true">●</span> ${text(product.status,canadianStatus[product.status]||product.status)}</span>`;
 const picture=(product,eager=false)=>`<img src="${product.artwork}" alt="${product.alt}" width="1024" height="1024" ${eager?'fetchpriority="high"':'loading="lazy"'}>`;
 
 const canadianSummary={
  "thumb-command":"Aliens are dropping in uninvited. Very rude. Save Earth, bud.",
  bobby:"A bread dinosaur, a herd to protect, and a suspicious number of defensive towers. Beauty.",
- "evil-doom":"Two tiny agents of darkness, one Doom Keep, and far too many monsters.",
+ "evil-doom":"Evil Doom is closing in, which is awfully rude. Start as Evil Doom Boy or switch to Evil Doom Girl and send it packing, bud.",
  heartstack:"Match the suits, make a ridiculous combo, and free the unicorns. Beauty.",
  "princess-land":"Style the princesses, decorate the castle, make lunch, then rearrange everything.",
  "unicorn-land":"Meet the unicorn, fix the mane, shape the habitat, and add a sensible excess of flowers.",
@@ -23,18 +23,18 @@ const canadianSummary={
 };
 
 export const productTile=(product,{eager=false,compact=false}={})=>`<a class="production-tile ${compact?'compact':''}" href="${product.infoUrl}" aria-label="${product.title}: ${product.type}" style="--tile-accent:${product.theme.accent}">
-  <span class="production-tile-art">${picture(product,eager)}</span>
+  <span class="production-tile-art">${picture(product,eager)}${product.key==="evil-doom"?`<span class="production-art-badge">Choose Your Hero</span>`:""}</span>
   <span class="production-tile-copy"><strong>${product.shortTitle}</strong><small>${product.type}</small>${status(product)}</span>
 </a>`;
 
 export const productCard=(product)=>`<a class="production-card" href="${product.infoUrl}" style="--card-accent:${product.theme.accent}">
-  <span class="production-card-art">${picture(product)}</span>
+  <span class="production-card-art">${picture(product)}${product.key==="evil-doom"?`<span class="production-art-badge">Choose Your Hero</span>`:""}</span>
   <span class="production-card-copy"><span class="production-kicker">${product.genre}</span><strong>${product.title}</strong><span>${text(product.summary,canadianSummary[product.key]||product.summary)}</span><em>${text(`${product.cta} ↗`,`${canadianCta[product.key]||product.cta} ↗`)}</em></span>
 </a>`;
 
 const productPanel=(games)=>`<div class="production-product-panel" aria-label="Games from Four of Hearts Interactive">${games.map((p,i)=>productTile(p,{eager:i<2,compact:true})).join("")}<a class="production-app-link" href="lifestyle-apps.html">${text("Looking for useful apps? Meet People Lens and Sleep Amigo. ↗","Looking for useful apps? People Lens and Sleep Amigo are over here, bud. ↗")}</a></div>`;
 
-export const nameStory=()=>`<section class="production-name-story" aria-labelledby="name-story-title"><div class="name-motif" aria-hidden="true">4OH</div><div class="production-shell production-name-grid"><div><p class="production-eyebrow">${text("THE NAME","THE NAME, EH")}</p><h2 id="name-story-title">${text("Four kids. One house full of games.","Four kids. One house full of games, bud.")}</h2></div><div><h3>${text("The company came later.","The company came later. We checked.")}</h3><p>${text("Four of Hearts began with four kids, a house full of games, and a habit of making things together. The studio kept the useful part: make products we want to use, make games we want to play, and treat the people using both with respect.","Four of Hearts began with four kids, a house full of games, and a habit of making things together. The studio kept the useful bit: good products, good games, and respect for the people using both.")}</p><a href="about.html#the-name">${text("Why Four of Hearts ↗","Why Four of Hearts, eh? ↗")}</a></div></div></section>`;
+export const nameStory=()=>`<section class="production-name-story" aria-labelledby="name-story-title"><div class="name-motif" aria-hidden="true">4OH</div><div class="production-shell production-name-grid"><div><p class="production-eyebrow">${text("THE NAME","THE NAME, EH")}</p><h2 id="name-story-title">${text("4. Ohhh. I get it.","4. Ohhh. Beauty.")}</h2></div><div><h3>${text("Four of Hearts. Somebody said it out loud. The name stuck.","Four of Hearts. Somebody said it out loud. We gave a polite little nod and kept the name.")}</h3><p>${text("That is the whole story: Four of Hearts became 4OH. We began at the card table and kept building—original games, strange little worlds, and useful apps made independently in South Dakota.","No secret acronym, bud. Just Four of Hearts shortened into a tiny prairie revelation. We started at the card table and kept going—original games, strange little worlds, and useful apps made with care and a responsible amount of coffee.")}</p><p class="production-name-aside">${text("No secret acronym. No corporate mythology. Just Four of Hearts said out loud.","No corporate mythology. Just the full yarn, told politely.")}</p><a href="about.html#the-name">${text("The unnecessarily complete explanation ↗","The full yarn ↗")}</a></div></div></section>`;
 export const privacySection=()=>`<section class="production-privacy" aria-labelledby="privacy-promise-title"><div class="production-shell production-privacy-grid"><div><p class="production-eyebrow">PRIVACY IS PART OF THE PRODUCT</p><h2 id="privacy-promise-title">${text(privacyCopy.headline,privacyCopy.headlineCanadian)}</h2><p>${text(privacyCopy.shortStatement,privacyCopy.shortStatementCanadian)}</p><p class="production-privacy-aside">${text("We do not need to know what kind of toilet paper you buy. We are sure it is fine.","We do not need to know what kind of toilet paper you buy. We trust your judgment, bud.")}</p><a class="text-link" href="privacy.html">${privacyCopy.learnMore}</a></div><ul class="production-trust-list"><li><span aria-hidden="true">↛</span>${privacyCopy.noAds}</li><li><span aria-hidden="true">◇</span>${privacyCopy.noSale}</li><li><span aria-hidden="true">⌂</span>${privacyCopy.localFirst}</li></ul></div></section>`;
 const collection=(id,eyebrow,title,products)=>`<section class="production-collection" id="${id}"><div class="production-shell"><header><p class="production-eyebrow">${eyebrow}</p><h2>${title}</h2></header><div class="production-card-grid">${products.map(productCard).join("")}</div></div></section>`;
 

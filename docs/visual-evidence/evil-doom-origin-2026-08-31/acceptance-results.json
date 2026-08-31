@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-08-31T23:18:44.449Z",
+  "base": "http://127.0.0.1:4201",
+  "passed": 20,
+  "failed": 0,
+  "results": [
+    {
+      "name": "1 one current Evil Doom record",
+      "status": "pass"
+    },
+    {
+      "name": "2 canonical product fields",
+      "status": "pass"
+    },
+    {
+      "name": "3 playable hero relationship",
+      "status": "pass"
+    },
+    {
+      "name": "4 Games page has one Evil Doom card",
+      "status": "pass"
+    },
+    {
+      "name": "5 homepage lineup has one Evil Doom tile and one catalogue card",
+      "status": "pass"
+    },
+    {
+      "name": "6 combined tile communicates one product",
+      "status": "pass"
+    },
+    {
+      "name": "7 canonical detail copy and one h1",
+      "status": "pass"
+    },
+    {
+      "name": "8 pointer selector changes preview without changing product",
+      "status": "pass"
+    },
+    {
+      "name": "9 keyboard selector returns to Boy",
+      "status": "pass"
+    },
+    {
+      "name": "10 canonical metadata remains canonical after switching",
+      "status": "pass"
+    },
+    {
+      "name": "11 legacy routes resolve to canonical page",
+      "status": "pass"
+    },
+    {
+      "name": "12 current headings use canonical identity",
+      "status": "pass"
+    },
+    {
+      "name": "13 public pages contain no founder-child story",
+      "status": "pass"
+    },
+    {
+      "name": "14 exact English 4OH story",
+      "status": "pass"
+    },
+    {
+      "name": "15 exact Canadian 4OH story",
+      "status": "pass"
+    },
+    {
+      "name": "16 exact About and privacy-forward copy",
+      "status": "pass"
+    },
+    {
+      "name": "17 Canadian Evil Doom copy and canonical name",
+      "status": "pass"
+    },
+    {
+      "name": "18 non-Canadian locales still build",
+      "status": "pass"
+    },
+    {
+      "name": "19 sitemap has one Evil Doom product URL",
+      "status": "pass"
+    },
+    {
+      "name": "20 responsive, focus, motion, and runtime",
+      "status": "pass"
+    }
+  ],
+  "screenshots": [
+    "about-desktop.png",
+    "evil-doom-boy-selected-desktop.png",
+    "evil-doom-canadian.png",
+    "evil-doom-girl-selected-desktop.png",
+    "evil-doom-mobile-375.png",
+    "evil-doom-product-tile.png",
+    "games-desktop.png",
+    "games-mobile-375.png",
+    "homepage-lineup-desktop.png",
+    "origin-story-canadian.png",
+    "origin-story-english.png"
+  ]
+}

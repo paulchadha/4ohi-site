@@ -37,5 +37,5 @@ export const studioPortfolioHomepage=({gameCatalog,gameByKey,news,articleFile,fo
 
  <section class="studio-news-workbench" aria-labelledby="news-title"><div class="shell"><header class="editorial-head" data-reveal><p class="eyebrow">From the workbench</p><h2 id="news-title">What moved this week.</h2><a href="news.html">Open the newsroom ${arrow}</a></header><div class="workbench-list">${news.slice(0,5).map((item,index)=>`<a href="${articleFile(item.slug)}" data-reveal><span>0${index+1}</span><div><small>${item.category} · ${formatDate(item.date)}</small><h3>${item.title}</h3></div>${arrow}</a>`).join("")}</div></div></section>
 
- <section class="home-about-short"><div class="shell" data-reveal><p class="eyebrow">About 4OH</p><h2>Games made with care. Software built to solve something.</h2><p>Four daughters inspired the name. Curiosity, craft, and a refusal to waste people’s time keep the studio moving.</p><a class="button" href="about.html">The human story</a></div></section>`;
+ <section class="home-about-short"><div class="shell" data-reveal><p class="eyebrow">About 4OH</p><h2>Games made with care. Software built to solve something.</h2><p>Four of Hearts became 4OH when somebody said it out loud. The name stuck. Curiosity, craft, and respect for people keep the studio moving.</p><a class="button" href="about.html">The human story</a></div></section>`;
 };

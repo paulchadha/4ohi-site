@@ -8,7 +8,9 @@ Source of truth: `scripts/studio-product-manifest.mjs`.
 Palace (interactive website preview; app in development), Hearts (internal alpha), Spades (internal alpha), Euchre (internal alpha), Solitaire (in development), and War (in development).
 
 ### Arcade, Defense & Adventure
-Thumb Command, Bobby the Breadasaurus, and Evil Doom Adventures: Shadow Run. All are in development. Evil Doom is one dual-hero product; legacy Boy/Girl URLs redirect to its canonical page.
+Thumb Command, Bobby the Breadasaurus, and Evil Doom Boy. All are in development.
+
+Evil Doom Boy is one Action Adventure game published by Four of Hearts Interactive, LLC. Its canonical route is `/games/evil-doom-boy/`. Evil Doom Boy is the default playable hero, Evil Doom Girl is the alternate playable hero, and Evil Doom is the antagonist. The product record carries legacy names and routes only for compatibility redirects. No canonical game repository has been verified; the registry marks that mapping `NEEDS CONFIRMATION`.
 
 ### Puzzle & Creative
 HeartStack Unicorn Blast, Princess Land Adventures, and Unicorn Land Adventures. All are in development.
