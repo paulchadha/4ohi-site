@@ -23,3 +23,6 @@ Reconstructed game state remains page-memory only. There are no accounts, backen
 ## Editorial enhancement privacy review — 2026-08-29
 
 The new reveal/header script uses no cookies, storage, identifiers, analytics, advertising, social widgets, or remote fonts. Palace naming and language remain query/page-session behavior and are not persisted.
+## Privacy-first editorial update — August 30, 2026
+
+The public information architecture now treats privacy and the business model as company-level content: a concise homepage promise, a human-readable privacy explanation, a detailed California operational policy, product-scoped privacy profiles, and grouped Trust links in the global footer. Product privacy status is intentionally not inherited from the website. The custom application service remains a company capability on About.

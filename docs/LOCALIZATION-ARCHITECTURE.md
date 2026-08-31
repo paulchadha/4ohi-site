@@ -44,3 +44,7 @@ Legal, privacy, terms, history, and founder-biography translations require quali
 ## Canadian voice mode
 
 `en-CA` is presented to visitors as **Canadian**. It changes material page copy as well as navigation and game prompts. See [Brand Voice and Canadian](BRAND-VOICE-AND-CANADIAN.md).
+
+## Privacy-first editorial update — August 30, 2026
+
+The public information architecture now treats privacy and the business model as company-level content: a concise homepage promise, a human-readable privacy explanation, a detailed California operational policy, product-scoped privacy profiles, and grouped Trust links in the global footer. Product privacy status is intentionally not inherited from the website. The custom application service remains a company capability on About.

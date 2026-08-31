@@ -14,3 +14,6 @@ The public hierarchy is company-first:
 Product detail routes are declared in `scripts/studio-product-manifest.mjs`. Palace remains the only playable product preview; its table-name selector appears only in the Palace playing context. Legacy Commander and separate Evil Doom hero routes are noindex compatibility redirects.
 
 The site is static and generated at repository root for GitHub Pages. `CNAME` remains `4ohi.com`; relative URLs work at the deployment base path.
+## Privacy-first editorial update — August 30, 2026
+
+The public information architecture now treats privacy and the business model as company-level content: a concise homepage promise, a human-readable privacy explanation, a detailed California operational policy, product-scoped privacy profiles, and grouped Trust links in the global footer. Product privacy status is intentionally not inherited from the website. The custom application service remains a company capability on About.

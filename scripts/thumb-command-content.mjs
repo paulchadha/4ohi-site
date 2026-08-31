@@ -14,7 +14,7 @@ const gameplay = [
 ];
 
 const cities = [
-  ["chicago-gameplay", "Chicago", "Hold the line over Lake Michigan as alien forces descend on the Chicago skyline.", "The Blueguard interceptor flies toward a purple alien fleet above Chicago while a cyan shield protects the city."],
+  ["chicago-gameplay", "Chicago", "Protect the city over Lake Michigan as alien forces descend on the Chicago skyline.", "The Blueguard interceptor flies toward a purple alien fleet above Chicago while a cyan shield protects the city."],
   ["city-san-francisco", "San Francisco", "Protect the bay and the Golden Gate as the invasion arrives at sunset.", "The Blueguard interceptor defends San Francisco and the Golden Gate Bridge beneath a glowing city shield at sunset."],
   ["city-new-york", "New York City", "Defend Manhattan through lightning, rain, and a full-scale aerial assault.", "The Blueguard interceptor crosses New York Harbor in a rainstorm while alien ships attack Manhattan's shield."],
   ["city-london", "London", "Keep the shield alive over the Thames as alien forces close in from the storm.", "The Blueguard interceptor protects London, Tower Bridge, and the Thames from alien ships in a storm."],
@@ -26,7 +26,7 @@ const defenses = ["Energy core", "Repair module", "Shield power-up", "Weapon spr
 
 export const thumbCommandPage = ({ page, company, siteUrl, gameNav }) => page({
   title: "Thumb Command — Save Planet Earth | Four of Hearts Interactive",
-  description: "Command the Blueguard interceptor, defend cities around the world, and stop a massive alien invasion in Thumb Command from Four of Hearts Interactive.",
+  description: "Command the Blueguard interceptor, defend five real cities, and stop a massive alien invasion in Thumb Command from Four of Hearts Interactive.",
   path: "/games/thumb-command/",
   current: "thumb-command",
   image: "assets/thumb-command/thumb-command-social-1200x630.jpg",
@@ -55,7 +55,7 @@ export const thumbCommandPage = ({ page, company, siteUrl, gameNav }) => page({
           <h1 id="thumb-command-title"><span>Thumb</span> Command</h1>
           <p class="tc-tagline">Save Planet Earth</p>
           <p class="tc-lede">Alien forces are descending on the cities of Earth. Take control of the Blueguard interceptor, hold the defensive line, and stop the invasion before it reaches the people below.</p>
-          <div class="tc-actions"><a class="tc-button" href="#mission">See the Mission</a><a class="tc-button ghost" href="#cities">Explore the Cities</a></div>
+          <div class="tc-actions"><a class="tc-button" href="#mission">See the Mission</a><a class="tc-button ghost" href="#cities">See the Cities</a></div>
           <p class="tc-status">In development · mission briefing available now</p>
         </div>
         <img class="tc-app-icon" src="assets/thumb-command/thumb-command-app-icon-768.webp" alt="Thumb Command app artwork showing the Blueguard interceptor rising toward a purple alien fleet" width="768" height="768">
@@ -90,7 +90,7 @@ export const thumbCommandPage = ({ page, company, siteUrl, gameNav }) => page({
     </section>
 
     <section class="tc-section tc-cities" id="cities" aria-labelledby="cities-title">
-      <div class="shell"><header class="tc-section-head"><p class="tc-kicker">Worldwide campaign</p><h2 id="cities-title">Defend the world.</h2><p>Every city changes the atmosphere of the fight while keeping the stakes unmistakable: protect the people below.</p></header>
+      <div class="shell"><header class="tc-section-head"><p class="tc-kicker">Five-city campaign</p><h2 id="cities-title">Five cities. One invasion.</h2><p>Every city changes the atmosphere of the fight while keeping the stakes unmistakable: protect the people below.</p></header>
         <div class="tc-city-grid">${cities.map(([slug, city, copy, alt], index) => `<article class="tc-city-card${index === 0 ? " flagship" : ""}">${art(`thumb-command-${slug}`, alt)}<div><span>${index === 0 ? "Flagship mission" : `Mission 0${index + 1}`}</span><h3>${city}</h3><p>${copy}</p></div></article>`).join("")}</div>
       </div>
     </section>
