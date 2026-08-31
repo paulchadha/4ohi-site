@@ -4,14 +4,17 @@ Review date: August 30, 2026
 
 ## Decisions reflected
 
-- Lead with: “You’re the customer. Not the product.”
-- Explain the company plainly: Four kids, a house full of games, and the company came later.
-- State the model: software is sold for money, not paid for with personal data.
-- Allow a modest subscription only when continued value genuinely exists and terms are clear before purchase.
-- Keep the South Dakota identity factual and confident.
-- Present custom application work as a serious studio capability.
-- Remove generic “new worlds” positioning.
-- Preserve product-specific fun without turning privacy, children, pricing, or release status into a joke.
+- Lead with “Games with heart. Apps with purpose.”
+- Describe 4OH as an independent South Dakota software company making games and useful applications.
+- Explain the origin plainly: four kids, a house full of games, and the company came later.
+- Show the craft: careful engineering, thoughtful design, physical-device testing, accessibility, iteration, and privacy by design.
+- State the independent point of view: wonderfully strange things are still worth making.
+- Give every game and app its own premise, sentence rhythm, and call to action.
+- Use “Personal information should remain personal” as the privacy center.
+- Keep one memorable privacy joke on the homepage and keep formal legal/consent language literal.
+- State the model: customers pay for software; advertisers do not pay to study customers.
+- Keep custom application work as a serious studio capability.
+- Remove generic “new worlds” positioning and avoid lazy “explore” repetition.
 
 ## Counsel note
 
