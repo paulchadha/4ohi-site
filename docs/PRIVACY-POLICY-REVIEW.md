@@ -1,6 +1,6 @@
 # Privacy policy review
 
-Last technical review: 2026-07-25
+Last technical review: 2026-08-30
 
 ## Current publication basis
 
@@ -42,3 +42,19 @@ Any new SDK, account feature, storage, durable database, payment, advertising, a
 ## Founder redesign privacy review
 
 The new Privacy Choices center accurately reports eight categories: infrastructure-only strictly necessary behavior; no analytics; no advertising; no personalization tracking; no cross-site tracking; no sale/sharing for advertising; no stored tutorial progress; and no persisted Palace name. GPC/DNT behavior, rights contact, normal GitHub Pages metadata handling, and future opt-in requirements are documented. California/EU/UK applicability and final legal language remain open for qualified counsel; no certification is claimed.
+
+## California privacy implementation — 2026-08-30
+
+The generated public policy now includes a California Notice at Collection, category/source/purpose/retention disclosures, sale/share statement, service-provider disclosures, consumer rights, request and verification instructions, authorized-agent process, GPC handling, children language, security, retention criteria, change notice, accessibility, and contact method.
+
+The first-visit interface defaults every optional category off. It writes no storage before a choice. Remembered rejection creates only `4oh_privacy_choice=optional_off` for 180 days with Secure, SameSite=Lax, and first-party scope; “Continue without saving” creates nothing. GPC is honored without storage. `scripts/verify-california-privacy.mjs` verifies these claims and phone widths.
+
+Open gates before counsel approval:
+
+- [ ] Counsel confirms whether CCPA applies under current thresholds and approves the public text.
+- [ ] Management approves mailbox retention criteria and request-record procedure.
+- [ ] Vendor/data-flow terms for GitHub Pages and the email provider are confirmed.
+- [ ] Children/COPPA positioning is confirmed for the company website and each distributed product.
+- [ ] Counsel approval owner, date, version, and review cadence are recorded.
+
+The site must not claim that the policy was written or approved by a lawyer until those gates are completed.

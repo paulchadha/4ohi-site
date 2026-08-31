@@ -62,7 +62,7 @@ The generator owns HTML, metadata, JSON-LD, sitemap, and RSS. Existing public UR
 
 Rendered QA covers 320×568, 375×812, 430×932, 768×1024, 1024×768, 1366×768, 1920×1080, and 844×390.
 
-Every route must retain one H1, semantic landmarks, a skip link, visible focus, a usable mobile menu, readable targets, no horizontal overflow, reduced-motion support, meaningful alt text, local assets, and no cookies, storage, analytics, advertising, or tracking.
+Every route must retain one H1, semantic landmarks, a skip link, visible focus, a usable mobile menu, readable targets, no horizontal overflow, reduced-motion support, meaningful alt text, local assets, and no optional cookies, game-state storage, analytics, advertising, or tracking. The only first-party cookie is an explicit 180-day `optional_off` privacy preference created after the visitor asks the site to remember rejection.
 
 Validation commands:
 
@@ -70,6 +70,7 @@ Validation commands:
     node scripts/validate-site.mjs
     node scripts/verify-company-architecture.mjs
     node scripts/verify-portfolio-expansion.mjs
+    node scripts/verify-california-privacy.mjs
 
 Founder physical visual acceptance remains a separate human approval gate.
 > **Current architecture (2026-07-31):** The founder-rejection reconstruction replaces the stacked presentation system with `assets/studio-reconstruction.css`, retains `scripts/game-catalog.mjs` as the ten-product source of truth, and validates the global shell with `scripts/verify-reconstruction.mjs`. See `docs/FOUNDER-REJECTION-RECONSTRUCTION-2026-07-31.md` for the current route map, status rules, visual system, evidence, and acceptance requirements.

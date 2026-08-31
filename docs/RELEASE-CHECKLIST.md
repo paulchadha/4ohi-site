@@ -123,3 +123,15 @@ Require one canonical homepage/countdown, a state-preserving legacy redirect, no
 - [x] Reduced motion, privacy, metadata, routes, and payload budgets pass locally.
 - [ ] Founder exploration review on production.
 - [ ] Physical iOS/Android feel review when devices are available.
+
+## California website privacy gate — 2026-08-30
+
+- [x] Optional cookies, analytics, advertising, sale/sharing, and cross-site tracking default off.
+- [x] First-visit notice offers remembered rejection, review, and continuation without storage.
+- [x] Footer exposes Privacy, Your Privacy Choices, and Do Not Sell or Share paths on every generated page.
+- [x] GPC is honored without writing storage.
+- [x] The only website cookie is the explicit `optional_off` preference after visitor action; Secure, SameSite=Lax, host-only, and 180-day retention are browser-verified.
+- [x] California Privacy Policy and Notice at Collection cover categories, sources, purposes, retention, disclosures, rights, verification, agents, children, security, changes, accessibility, and contact.
+- [x] Static validation and focused Chromium privacy verification pass.
+- [ ] Qualified California privacy counsel confirms applicability, vendor facts, operational retention, children/COPPA posture, and final public language.
+- [ ] Management records counsel approval owner, date, policy version, and annual review date before calling the policy lawyer-written or attorney-approved.

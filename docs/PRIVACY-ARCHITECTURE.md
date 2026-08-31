@@ -2,9 +2,9 @@
 
 Principle: collect nothing the website does not need.
 
-The public site is static and uses no analytics, advertising, pixels, third-party fonts, third-party embeds, social widgets, visitor accounts, contact-form backend, cookies, localStorage, sessionStorage, fingerprinting, location collection, or tutorial persistence. Palace name choice and tutorial state exist only in page memory. Facebook and X links render only when a valid approved HTTPS profile is configured.
+The public site is static and uses no analytics, advertising, pixels, third-party fonts, third-party embeds, social widgets, visitor accounts, contact-form backend, optional cookies, localStorage, sessionStorage, fingerprinting, location collection, or tutorial persistence. One first-party privacy-choice cookie is created only after a visitor asks the site to remember that optional cookies must stay off. Palace name choice and tutorial state exist only in page memory. Facebook and X links render only when a valid approved HTTPS profile is configured.
 
-`privacy.html` is the Privacy Choices center and policy. It reports the actual state instead of displaying a fake consent banner. GPC and DNT do not need to disable optional tracking because no optional tracking loads. Any future nonessential storage must remain off by default, receive applicable affirmative consent before loading, offer equally easy rejection/withdrawal, and trigger policy and QA updates.
+`privacy.html` is the California Privacy Policy, Notice at Collection, and Privacy Choices center. The first-visit banner reports that optional cookies are off, offers remembered rejection or no-storage continuation, and exposes the same controls in every footer. GPC is treated as an opt-out signal and suppresses the prompt without writing a cookie. Any future nonessential storage must remain off by default, receive applicable affirmative consent before loading, offer equally easy rejection/withdrawal, and trigger policy and QA updates.
 
 GitHub Pages and normal network infrastructure may process request metadata needed to deliver and protect the site. Support email receives only information a sender chooses to provide. California, European, UK, children/family, retention, and applicability questions remain marked for qualified legal review; the site claims no legal certification.
 ## Language and naming state
@@ -18,7 +18,7 @@ The app-parity release keeps locale and product-name state exclusively in the UR
 
 ## Local website game boundary
 
-Reconstructed game state remains page-memory only. There are no accounts, backend sessions, persistence, cookies, localStorage, sessionStorage, analytics, ads, trackers, third-party fonts, embeds, or post-load game requests.
+Reconstructed game state remains page-memory only. There are no accounts, backend sessions, persisted game state, optional cookies, localStorage, sessionStorage, analytics, ads, trackers, third-party fonts, embeds, or post-load game requests. The independent privacy-choice cookie does not contain game state.
 
 ## Editorial enhancement privacy review — 2026-08-29
 

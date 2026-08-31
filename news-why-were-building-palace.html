@@ -34,9 +34,11 @@
   <link rel="stylesheet" href="assets/studio-fixes.css?v=6dfe87f863bd">
   <link rel="stylesheet" href="assets/founder-corrections.css?v=a2c276c9c428">
   <link rel="stylesheet" href="assets/thumb-command.css?v=78f59cf96671">
-  <script src="assets/asset-manifest.js?v=e20f15c10e96" defer></script>
+  <link rel="stylesheet" href="assets/privacy-center.css?v=ab8955745d4f">
+  <script src="assets/asset-manifest.js?v=9c0d4a9c10d6" defer></script>
   <script src="assets/site-config.js?v=f848f836f75c" defer></script>
   <script src="assets/site.js?v=dea01b0b9ec9" defer></script>
+  <script src="assets/privacy-center.js?v=1da431e92d16" defer></script>
   <script src="assets/canadian-copy.js?v=47cf135a2233" defer></script>
   <script src="assets/canadian-copy-v2.js?v=84a546db18e6" defer></script>
   <script src="assets/launch-countdown.js?v=29d266bb9d1b" defer></script>
@@ -75,7 +77,7 @@
     <div><div class="footer-title"><span aria-hidden="true">♥</span><strong>Four of Hearts Interactive, LLC</strong></div><p class="footer-copy" data-canadian-key="footer.statement">Independent software, original games, classic cards, and strong opinions.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
     <nav class="footer-group" aria-label="Four of Hearts Interactive"><h2>Four of Hearts Interactive</h2><a href="index.html">Home</a><a href="about.html">About 4OH</a><a href="news.html">News</a><a href="support.html">Support</a></nav>
     <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="palace.html">Palace</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus: Tower Defense Adventures</a><a href="evil-doom-adventures.html">Evil Doom Girl Adventures</a><a href="heartstack-unicorn-blast.html">HeartStack Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land Adventures</a><a href="unicorn-land-adventures.html">Unicorn Land Adventures</a><a href="hearts-play.html">Hearts</a><a href="spades-play.html">Spades</a><a href="euchre-play.html">Euchre</a><a href="games.html">All Games</a></nav>
-    <nav class="footer-group" aria-label="Legal"><h2>Legal & Safety</h2><a href="privacy.html">Privacy</a><a href="security.html">Security</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></nav>
+    <nav class="footer-group" aria-label="Legal"><h2>Legal & Safety</h2><a href="privacy.html">Privacy</a><button class="footer-privacy-button" type="button" data-open-privacy>Your Privacy Choices</button><a href="privacy.html#do-not-sell">Do Not Sell or Share My Personal Information</a><a href="security.html">Security</a><a href="terms.html">Terms</a><a href="contact.html">Contact</a></nav>
   </div><div class="footer-bottom"><span>© 2026 Four of Hearts Interactive, LLC. All rights reserved.</span><span>4OH is the compact mark of Four of Hearts Interactive.</span></div></div>
 </footer>
 
@@ -83,7 +85,26 @@
     <form method="dialog"><button class="dialog-close" value="cancel" aria-label="Close settings">×</button>
       <p class="eyebrow">Site settings</p><h2 id="settings-title">Make the site comfortable.</h2>
       <label class="dialog-language"><span data-language-label>Language</span><select data-locale></select></label>
-      <p>No preference is stored. This site uses no cookies or tracking.</p>
+      <p>Language and game preferences are not stored. A privacy-choice cookie is used only if you ask us to remember that optional cookies must stay off.</p>
+    </form>
+  </dialog>
+  <section class="privacy-banner" data-privacy-banner aria-labelledby="privacy-banner-title" hidden>
+    <div><p class="eyebrow">Your privacy choices</p><h2 id="privacy-banner-title">Optional cookies are off.</h2><p>4OH does not load analytics, advertising, or cross-site tracking. You can ask us to remember that choice with one strictly necessary preference cookie.</p></div>
+    <div class="privacy-banner-actions"><button class="button" type="button" data-reject-optional>Reject optional cookies</button><button class="button secondary" type="button" data-open-privacy>Review choices</button><button class="privacy-continue" type="button" data-continue-without-saving>Continue without saving</button></div>
+  </section>
+  <dialog class="site-dialog privacy-dialog" data-privacy-dialog aria-labelledby="privacy-dialog-title">
+    <form method="dialog"><button class="dialog-close" value="cancel" aria-label="Close privacy choices">×</button>
+      <p class="eyebrow">Privacy control center</p><h2 id="privacy-dialog-title">Your privacy choices</h2>
+      <p data-gpc-status class="gpc-status" role="status"></p>
+      <div class="privacy-choice-list">
+        <label><span><strong>Strictly necessary</strong><small>Site delivery and, only when requested, your opt-out preference.</small></span><input type="checkbox" checked disabled aria-label="Strictly necessary cookies always active"></label>
+        <label><span><strong>Analytics</strong><small>No analytics service is installed.</small></span><input type="checkbox" disabled aria-label="Analytics cookies off"></label>
+        <label><span><strong>Advertising and cross-site tracking</strong><small>No advertising pixels, profiling, sale, or sharing are used.</small></span><input type="checkbox" disabled aria-label="Advertising cookies off"></label>
+        <label><span><strong>Personalization</strong><small>Game and language choices remain in the page or URL, not a cookie.</small></span><input type="checkbox" disabled aria-label="Personalization cookies off"></label>
+      </div>
+      <p class="privacy-current" data-privacy-current aria-live="polite"></p>
+      <div class="actions"><button class="button" value="save" data-reject-optional>Save optional cookies off</button><button class="button secondary" value="cancel">Cancel</button></div>
+      <p><a href="privacy.html#california-notice">Read the California Privacy Policy and Notice at Collection</a></p>
     </form>
   </dialog>
 </body>
