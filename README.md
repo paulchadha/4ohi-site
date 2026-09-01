@@ -5,7 +5,7 @@ Public portfolio website for Four of Hearts Interactive, LLC and 4ohi.com.
 ## Company and games
 
 - Four of Hearts Interactive is the parent brand; 4OH is the approved compact mark.
-- Palace is the flagship card game and has an interactive website preview.
+- Palace is the flagship card game and has a complete, single-game browser edition powered by the production Palace rules engine.
 - Bobby the Breadasaurus is a family adventure in concept development.
 - Evil Doom Boy is one action-adventure game in development. Evil Doom Boy is the default playable hero; Evil Doom Girl is the alternate playable hero; Evil Doom is the antagonist.
 - Thumb Command is an arcade-defense game in development with no announced release date or public build.
@@ -22,7 +22,7 @@ The root route is a Palace-first editorial campaign inside the Four of Hearts In
 
 Artwork derivatives are built by scripts/process-portfolio-art.py and scripts/process-thumb-command-art.py. Founder source boards remain untouched. See [Portfolio art provenance](docs/PORTFOLIO-ART-PROVENANCE.md).
 
-The site uses no account, backend form, cookie, browser storage, analytics, advertising, tracking pixel, social widget, or remote font.
+The site uses no account, backend form, analytics, advertising, tracking pixel, social widget, or remote font. Palace stores one versioned game and sound/motion preferences on the visitor device; the privacy control creates one opt-out cookie only when requested.
 
 ## Local preview and validation
 
@@ -32,7 +32,7 @@ The site uses no account, backend form, cookie, browser storage, analytics, adve
     node scripts/verify-company-architecture.mjs
     node scripts/verify-evil-doom-origin.mjs
 
-Rendered gates cover phone, tablet, laptop, desktop, and mobile landscape. They check keyboard navigation, the complete game lineup, honest statuses, Palace isolation, four tutorials, images, overflow, metadata, spelling, artwork provenance, the one-game Evil Doom identity and accessible hero selector, and zero tracking.
+Rendered gates cover phone, tablet, laptop, desktop, and mobile landscape. They check keyboard navigation, the complete game lineup, honest statuses, Palace isolation, the complete Palace browser game, three card-game lessons, images, overflow, metadata, spelling, artwork provenance, the one-game Evil Doom identity and accessible hero selector, and zero tracking.
 
 There is no package manifest, so no separate framework lint, type-check, or bundler command exists. Syntax checks, the generator, static validation, and rendered Chromium suites are the production build gates.
 

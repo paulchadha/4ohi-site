@@ -1,3 +1,9 @@
+# Superseded Palace website tutorial
+
+As of September 1, 2026, the complete one-game Palace browser edition supersedes the five-scene tutorial described below. `palace-play.html` no longer loads `assets/palace-tutorial-v3.js`. Current implementation and acceptance records are in `docs/PALACE_WEB_SOURCE.md` and `docs/PALACE_WEB_VISUAL_ACCEPTANCE.md`.
+
+---
+
 # Palace tutorial specification
 
 ## Public scope

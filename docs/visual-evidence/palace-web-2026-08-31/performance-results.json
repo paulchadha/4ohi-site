@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-09-01T05:36:37.990Z",
+  "viewport": "390x844",
+  "network": "local no-store server",
+  "timingsMs": {
+    "entryToInteractive": 649.8,
+    "dealToSetup": 66.5,
+    "cardSelection": 20.3,
+    "playResponse": 24.2,
+    "botTurn": 498.2
+  },
+  "fileBytes": {
+    "assets/palace-web.js": 26083,
+    "assets/palace-web.css": 17890,
+    "assets/palace-web/shared/palaceEngine.js": 42141,
+    "assets/palace-web/shared/palaceRules.js": 1557,
+    "assets/palace-web/shared/palacePresentation.js": 3577,
+    "assets/palace-web/shared/palaceTiming.js": 2542,
+    "assets/palace-web/table-garden.png": 2529948,
+    "assets/palace-web/palace-app-icon.png": 1153977
+  },
+  "totals": {
+    "codeAndCss": 93790,
+    "art": 3683925
+  },
+  "resources": [
+    {
+      "name": "/assets/palace-web.css",
+      "durationMs": 4.6,
+      "transferSize": 18190,
+      "decodedBodySize": 17890
+    },
+    {
+      "name": "/assets/palace-web.js",
+      "durationMs": 4.6,
+      "transferSize": 26383,
+      "decodedBodySize": 26083
+    },
+    {
+      "name": "/assets/palace-web/shared/palaceTiming.js",
+      "durationMs": 3.9,
+      "transferSize": 2842,
+      "decodedBodySize": 2542
+    },
+    {
+      "name": "/assets/palace-web/shared/palaceEngine.js",
+      "durationMs": 3.7,
+      "transferSize": 42441,
+      "decodedBodySize": 42141
+    },
+    {
+      "name": "/assets/palace-web/shared/palaceRules.js",
+      "durationMs": 1.1,
+      "transferSize": 1857,
+      "decodedBodySize": 1557
+    },
+    {
+      "name": "/assets/palace-web/palace-app-icon.png",
+      "durationMs": 2.9,
+      "transferSize": 1154277,
+      "decodedBodySize": 1153977
+    },
+    {
+      "name": "/assets/palace-web/table-garden.png",
+      "durationMs": 30.8,
+      "transferSize": 2530248,
+      "decodedBodySize": 2529948
+    }
+  ]
+}

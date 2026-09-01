@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-09-01T06:07:55.235Z",
+  "sourceCommit": "31c7578a3a15db6d3ac78a3c5d332d73a9353afd",
+  "passed": 9,
+  "failed": 0,
+  "results": [
+    {
+      "name": "English entry copy and primary navigation",
+      "status": "pass"
+    },
+    {
+      "name": "Canadian entry copy",
+      "status": "pass"
+    },
+    {
+      "name": "Corrupt-save recovery is bounded",
+      "status": "pass"
+    },
+    {
+      "name": "In-progress game resumes after tab closure",
+      "status": "pass"
+    },
+    {
+      "name": "Keyboard operation, dialog escape, and visible focus",
+      "status": "pass"
+    },
+    {
+      "name": "Reduced motion is honored",
+      "status": "pass"
+    },
+    {
+      "name": "Responsive entry and setup at seven required viewports",
+      "status": "pass"
+    },
+    {
+      "name": "One complete game through rendered public controls",
+      "status": "pass"
+    },
+    {
+      "name": "Production interface does not expose QA reset",
+      "status": "pass"
+    }
+  ]
+}

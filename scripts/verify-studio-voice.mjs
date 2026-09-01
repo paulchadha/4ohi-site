@@ -5,7 +5,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { extname, join, normalize, resolve } from "node:path";
 import { productCatalog } from "./studio-product-manifest.mjs";
 const require=createRequire(import.meta.url); const {chromium}=require("playwright");
-const root=resolve(import.meta.dirname,".."); const out=resolve("docs/visual-evidence/studio-voice-2026-08-30"); mkdirSync(out,{recursive:true});
+const root=resolve(import.meta.dirname,".."); const out=resolve(process.env.STUDIO_VOICE_OUT || "docs/visual-evidence/studio-voice-2026-08-30"); mkdirSync(out,{recursive:true});
 const types={".html":"text/html",".js":"text/javascript",".css":"text/css",".webp":"image/webp",".png":"image/png",".jpg":"image/jpeg",".svg":"image/svg+xml",".xml":"application/xml"};
 const server=createServer(async(req,res)=>{try{const pathname=decodeURIComponent(new URL(req.url,"http://local").pathname);const raw=pathname==="/"?"index.html":pathname.replace(/^\//,"");const rel=raw.endsWith("/")?raw+"index.html":raw;const file=normalize(join(root,rel));if(!file.startsWith(root))throw 0;const data=await readFile(file);res.writeHead(200,{"Content-Type":types[extname(file)]||"application/octet-stream"});res.end(data)}catch{res.writeHead(404);res.end("Not found")}}); await new Promise(ok=>server.listen(4197,"127.0.0.1",ok));
 const base="http://127.0.0.1:4197"; const browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH||"C:/Program Files/Google/Chrome/Application/chrome.exe"}); const results=[]; const failures=[];

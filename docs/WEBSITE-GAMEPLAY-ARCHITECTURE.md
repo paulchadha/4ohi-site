@@ -1,6 +1,6 @@
 # Website Gameplay Architecture
 
-All website game moments are deterministic, local, privacy-preserving teaching scenarios. They use semantic buttons, live status, keyboard activation, touch targets, and reduced-motion fallbacks. They make no network request after load and write no browser storage.
+Website game experiences are local and privacy-preserving. They use semantic buttons, live status, keyboard activation, touch targets, and reduced-motion fallbacks. They make no post-load game request. Palace stores one versioned game and sound/motion preferences in the browser; the three secondary card lessons remain page-memory only.
 
 ## Shared table family
 
@@ -8,7 +8,7 @@ Blue felt, gold/wood framing, garden/sky atmosphere, four named seats, physical 
 
 ## Palace mapping
 
-Setup includes three face-down cards, three face-up cards, hand, opponent, pile, and draw deck. Chapters cover ordinary legal play, burn, pickup, all four powers, then hand, face-up, and face-down levels. Completion exposes replay, full rules, history, and development News.
+The complete Palace browser edition imports the byte-identical PalaceApp engine and rules. Setup includes three face-down cards, three face-up cards, a hand, one to three bots, pile, and draw deck. It runs legal play, jump-ins, burn, pickup, all app-defined powers, draw exhaustion, hand, face-up, and face-down phases until the engine declares a winner. Completion is persisted and exposes no second public game. See `docs/PALACE_WEB_SOURCE.md`.
 
 ## Secondary games
 

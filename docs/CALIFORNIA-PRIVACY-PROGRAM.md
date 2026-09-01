@@ -23,7 +23,8 @@ Official sources:
 | Static website delivery | Provider-level IP, browser/device, requested URL, time, referrer, and security metadata | Deliver and protect 4ohi.com | GitHub Pages/network provider practices; no 4OH analytics database |
 | Support/privacy/security email | Sender address, message, and voluntary attachments/details | Respond, investigate, verify appropriate requests, defend claims | Email provider and company mailbox; retain only as necessary under documented operations |
 | Privacy choice | `4oh_privacy_choice=optional_off` | Remember rejection of optional cookies | First-party Secure, SameSite=Lax cookie; 180-day maximum |
-| Website tutorials/settings | Current page state and URL parameters | Provide interaction and localization | Page memory/URL only; no cookie or browser storage |
+| Website lessons/settings | Current page state and URL parameters | Provide interaction and localization | Page memory/URL only |
+| Palace browser game | One game state and sound/motion preferences | Resume the same game, remember completion, and honor preferences | Versioned first-party localStorage only; no upload |
 
 No analytics, advertising, pixels, cross-context behavioral advertising, fingerprinting, third-party embeds, account system, payment flow, or form backend is installed.
 
@@ -53,7 +54,7 @@ No analytics, advertising, pixels, cross-context behavioral advertising, fingerp
 
 ## Change-control gate
 
-Before adding an SDK, analytics, advertising, personalization cookie, social embed, account, payment flow, form backend, durable game state, or new vendor:
+Before adding an SDK, analytics, advertising, personalization cookie, social embed, account, payment flow, form backend, any persistence beyond the documented local Palace state, or a new vendor:
 
 - complete a data inventory and purpose/necessity review;
 - determine whether the technology creates sale, sharing, targeted advertising, sensitive-information, or profiling obligations;
@@ -77,4 +78,4 @@ Before adding an SDK, analytics, advertising, personalization cookie, social emb
 
 ## Verification
 
-Focused browser QA covers: zero storage before choice; no storage when continuing without saving; one correctly scoped opt-out cookie after rejection; 180-day expiry; choice clearing; GPC recognition without storage; dialog operation; runtime errors; and 320, 375, and 430 pixel layouts.
+Focused privacy-control QA covers ordinary pages before Palace play: zero storage before choice; no storage when continuing without saving; one correctly scoped opt-out cookie after rejection; 180-day expiry; choice clearing; GPC recognition without storage; dialog operation; runtime errors; and 320, 375, and 430 pixel layouts. Palace-specific QA separately verifies bounded local save, tab/refresh resume, completion persistence, and corrupt-state recovery.

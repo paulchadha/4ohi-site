@@ -1,0 +1,25 @@
+{
+  "actions": 98,
+  "observed": [
+    "initial-hand",
+    "human-turn",
+    "bot-turn",
+    "pickup",
+    "special",
+    "draw-low",
+    "face-up",
+    "face-down"
+  ],
+  "completed": {
+    "gameId": "game-mti9mssd-j26cut",
+    "winnerIndex": 0,
+    "winnerName": "You",
+    "loserIndex": 1,
+    "placementOrder": [
+      0,
+      1
+    ],
+    "playerCount": 2,
+    "finalMessage": "You wins the match. Remaining bot places were resolved instantly."
+  }
+}

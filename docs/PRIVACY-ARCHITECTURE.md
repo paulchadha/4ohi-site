@@ -2,7 +2,7 @@
 
 Principle: collect nothing the website does not need.
 
-The public site is static and uses no analytics, advertising, pixels, third-party fonts, third-party embeds, social widgets, visitor accounts, contact-form backend, optional cookies, localStorage, sessionStorage, fingerprinting, location collection, or tutorial persistence. One first-party privacy-choice cookie is created only after a visitor asks the site to remember that optional cookies must stay off. Palace name choice and tutorial state exist only in page memory. Facebook and X links render only when a valid approved HTTPS profile is configured.
+The public site is static and uses no analytics, advertising, pixels, third-party fonts, third-party embeds, social widgets, visitor accounts, contact-form backend, optional tracking cookies, fingerprinting, or location collection. One first-party privacy-choice cookie is created only after a visitor asks the site to remember that optional cookies must stay off. The complete Palace browser game stores one versioned game plus sound and motion preferences in localStorage so it can resume; the page never uploads that state. Palace table-name and language choices remain URL/page state. Facebook and X links render only when a valid approved HTTPS profile is configured.
 
 `privacy.html` is the California Privacy Policy, Notice at Collection, and Privacy Choices center. The first-visit banner reports that optional cookies are off, offers remembered rejection or no-storage continuation, and exposes the same controls in every footer. GPC is treated as an opt-out signal and suppresses the prompt without writing a cookie. Any future nonessential storage must remain off by default, receive applicable affirmative consent before loading, offer equally easy rejection/withdrawal, and trigger policy and QA updates.
 
@@ -18,7 +18,7 @@ The app-parity release keeps locale and product-name state exclusively in the UR
 
 ## Local website game boundary
 
-Reconstructed game state remains page-memory only. There are no accounts, backend sessions, persisted game state, optional cookies, localStorage, sessionStorage, analytics, ads, trackers, third-party fonts, embeds, or post-load game requests. The independent privacy-choice cookie does not contain game state.
+Hearts, Spades, and Euchre lessons remain page-memory only. Palace now stores exactly one in-progress or completed browser game under `4oh_palace_web_v1` and sound/motion choices under `4oh_palace_web_preferences_v1`. There are no accounts, backend sessions, uploads, analytics, ads, trackers, third-party fonts, embeds, or post-load game requests. The independent privacy-choice cookie does not contain game state.
 
 ## Editorial enhancement privacy review — 2026-08-29
 

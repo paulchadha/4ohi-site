@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-09-01T05:24:12.6205557Z",
+  "sourceCommit": "31c7578a3a15db6d3ac78a3c5d332d73a9353afd",
+  "captureAuthority": "Unmodified PalaceApp Expo web rendering",
+  "referenceViewport": "844x390 landscape",
+  "websiteViewport": "390x844 portrait",
+  "states": [
+    "game-setup",
+    "initial-hand",
+    "human-turn",
+    "bot-turn",
+    "special",
+    "pickup",
+    "draw-nearly-exhausted",
+    "face-up",
+    "face-down",
+    "game-over"
+  ],
+  "note": "Frames match state categories. The authentic completed result reference was captured in a separate deterministic app run."
+}

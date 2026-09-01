@@ -12,8 +12,8 @@ The policy describes the present Internal Alpha state documented before this web
 - no production account or authentication system currently exists;
 - no dedicated advertising or behavioral-analytics SDK is represented as present;
 - operational logging is described conservatively and hosting/platform providers may process standard request or diagnostic data;
-- the static website has no analytics, advertising, forms, first-party cookies, or third-party requests;
-- Quick Play uses dependency-free client JavaScript and keeps tutorial progress only in page memory; it does not use local storage, session storage, an account, or a backend;
+- the static website has no analytics, advertising, forms, tracking cookies, or third-party requests;
+- Hearts, Spades, and Euchre lessons remain page-memory only; the complete Palace browser game stores one versioned game and sound/motion preferences in first-party local storage, with no account, backend, or upload;
 - support communications are received by email and may contain details and attachments provided by the sender.
 
 Privacy questions currently route to `support@4ohi.com`. Credentials and private correspondence must not be stored in Git.
@@ -41,7 +41,7 @@ Any new SDK, account feature, storage, durable database, payment, advertising, a
 
 ## Founder redesign privacy review
 
-The new Privacy Choices center accurately reports eight categories: infrastructure-only strictly necessary behavior; no analytics; no advertising; no personalization tracking; no cross-site tracking; no sale/sharing for advertising; no stored tutorial progress; and no persisted Palace name. GPC/DNT behavior, rights contact, normal GitHub Pages metadata handling, and future opt-in requirements are documented. California/EU/UK applicability and final legal language remain open for qualified counsel; no certification is claimed.
+The Privacy Choices center accurately reports infrastructure-only strictly necessary behavior; no analytics; no advertising; no personalization tracking; no cross-site tracking; no sale/sharing for advertising; local-only Palace progress and sound/motion preferences; and no persisted Palace table name. GPC/DNT behavior, rights contact, normal GitHub Pages metadata handling, and future opt-in requirements are documented. California/EU/UK applicability and final legal language remain open for qualified counsel; no certification is claimed.
 
 ## California privacy implementation — 2026-08-30
 
