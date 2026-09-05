@@ -109,6 +109,71 @@
     ]
   },
   {
+    "slug": "from-search-to-opportunity-building-whomly",
+    "title": "From Search to Opportunity: Building Whomly",
+    "description": "How a search-first interface can turn public professional research into useful context and a thoughtful next step.",
+    "date": "2026-09-03",
+    "category": "Lifestyle Apps",
+    "gameKey": "whomly",
+    "tags": [
+      "lifestyle-apps",
+      "development",
+      "whomly",
+      "privacy"
+    ],
+    "featured": false,
+    "image": "assets/studio-expansion/whomly-social-1200.webp",
+    "imageAlt": "Whomly interface showing public professional search, profiles, AI-assisted context, and outreach preparation",
+    "body": [
+      {
+        "heading": "Start with the question",
+        "paragraphs": [
+          "Whomly begins with the person you are trying to find: a general counsel in Chicago, a healthcare innovation leader, a potential board member, or a specialist whose public work fits the problem in front of you.",
+          "The search interface is being designed to accept useful professional criteria without turning research into an endless directory."
+        ]
+      },
+      {
+        "heading": "Public research, organized",
+        "paragraphs": [
+          "The hard part is rarely finding one more public page. It is understanding why a person may be relevant. Whomly is designed to organize publicly available professional information into readable context, saved people, and lists the user controls.",
+          "AI-assisted summaries and outreach drafts may help with the work, but the boundary matters: public professional context in, user-reviewed preparation out. No private-profile access, automatic contact, or release date is being claimed."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "welcome-to-booyang-city",
+    "title": "Welcome to BooYang City",
+    "description": "A connected city gives us room for a zoo, bakery, boutique, school, hospital, and almost anything fun that might open next.",
+    "date": "2026-08-31",
+    "category": "Games",
+    "gameKey": "booyang-city",
+    "tags": [
+      "games",
+      "development",
+      "booyang-city"
+    ],
+    "featured": false,
+    "image": "assets/studio-expansion/booyang-city-social-1200.webp",
+    "imageAlt": "BooYang City artwork featuring a cheerful character and a colorful city of destinations",
+    "body": [
+      {
+        "heading": "A city is better than a menu",
+        "paragraphs": [
+          "BooYang City is our framework for putting many different kinds of play inside one connected place. You look across the map, choose somewhere interesting, and enter a destination that has its own activity, characters, and progression.",
+          "The first destination ideas include the Zoo, Bakery, Boutique, School, and Hospital. Each should feel different, but every visit should make the larger city feel more alive."
+        ]
+      },
+      {
+        "heading": "Begin with a tiny bakery",
+        "paragraphs": [
+          "The Bakery captures the wider loop. Start small, learn recipes, serve customers, improve the kitchen, decorate the room, and gradually grow toward a café or restaurant. The place should visibly change because the player spent time there.",
+          "Opening a new destination should feel like opening a new toy box. BooYang City is in development, with no public build, platform, or release date announced."
+        ]
+      }
+    ]
+  },
+  {
     "slug": "thumb-command-save-planet-earth",
     "title": "Introducing Thumb Command: Save Planet Earth",
     "description": "Meet Blueguard and the worldwide arcade-defense campaign taking shape at Four of Hearts Interactive.",
@@ -133,49 +198,67 @@
     ]
   },
   {
-    "slug": "meet-sleep-amigo",
-    "title": "Meet Sleep Amigo",
-    "description": "A private, calm sleep companion joins the Four of Hearts lifestyle application line.",
+    "slug": "making-sleep-data-feel-human",
+    "title": "Making Sleep Data Feel Human",
+    "description": "Sleep Readiness, Tonight’s Game Plan, Ask Amigo, Wind Down, and a small celestial companion give the numbers some warmth.",
     "date": "2026-08-28",
     "category": "Lifestyle Apps",
     "gameKey": "sleep-amigo",
     "tags": [
       "lifestyle-apps",
-      "company"
+      "development",
+      "sleep-amigo",
+      "design"
     ],
     "featured": false,
-    "image": "assets/lifestyle/sleep-amigo.svg",
-    "imageAlt": "Sleep Amigo moon and night-sky application artwork",
+    "image": "assets/studio-expansion/sleep-amigo-social-1200.webp",
+    "imageAlt": "Sleep Amigo celestial companion and dark premium sleep guidance interface",
     "body": [
       {
-        "heading": "Quiet software with a practical purpose",
+        "heading": "A score needs an explanation",
         "paragraphs": [
-          "Sleep Amigo is an early lifestyle-app concept focused on calm routines and clear, private interactions.",
-          "It is in concept development. No public build, medical claim, platform availability, or release date has been announced."
+          "A sleep score can be tidy and still leave a person wondering what to do next. Sleep Amigo is being built around that next question.",
+          "Sleep Readiness offers a quick assessment. Tonight’s Game Plan turns available information into a few things worth considering. Ask Amigo makes the experience a conversation instead of a spreadsheet."
+        ]
+      },
+      {
+        "heading": "Sophisticated software can still have warmth",
+        "paragraphs": [
+          "The new visual direction brings together midnight blues, aurora colour, clear glassy panels, and a small celestial Amigo who feels calm rather than clinical. Wind Down and Trends complete the current product idea.",
+          "Sleep Amigo remains in development. It is wellness software, not a medical device, and supported wearables or health sources will be named only after implementation is verified."
         ]
       }
     ]
   },
   {
-    "slug": "people-lens-joins-the-lifestyle-line",
-    "title": "People Lens Joins the Lifestyle Line",
-    "description": "A people-search utility concept extends the studio beyond games.",
-    "date": "2026-08-27",
-    "category": "Lifestyle Apps",
-    "gameKey": "people-lens",
+    "slug": "building-a-town-that-refuses-to-look-normal",
+    "title": "Building a Town That Refuses to Look Normal",
+    "description": "Funky Town treats buildings as canvases and progression as a chance to make every neighborhood more expressive.",
+    "date": "2026-08-25",
+    "category": "Games",
+    "gameKey": "funky-town",
     "tags": [
-      "lifestyle-apps",
-      "company"
+      "games",
+      "development",
+      "funky-town",
+      "design"
     ],
     "featured": false,
-    "image": "assets/lifestyle/people-lens.svg",
-    "imageAlt": "People Lens search and profile application artwork",
+    "image": "assets/studio-expansion/funky-town-social-1200.webp",
+    "imageAlt": "Funky Town artwork showing a bold neighborhood transformed by murals, color, music, and street art",
     "body": [
       {
-        "heading": "Software for a clearer search",
+        "heading": "Buildings can become canvases",
         "paragraphs": [
-          "People Lens tests a focused, privacy-conscious way to organize people-search work.",
-          "It is in concept development. No public service, customer database, or release date has been announced."
+          "Many city builders begin with different intentions and slowly converge on the same neat grid. Funky Town begins with the opposite question: what if progress made the place stranger, louder, and more personal?",
+          "Murals, graffiti, sculpture, music, unusual architecture, parks, studios, cafés, rooftop gardens, and gathering places can give each district a different identity."
+        ]
+      },
+      {
+        "heading": "Progress should change the view",
+        "paragraphs": [
+          "The goal is not simply to make every building larger. It is to let players transform neighborhoods through creative decisions until two long-running Funky Towns could look dramatically different.",
+          "Community matters as much as colour. People and the places where they meet are what make the art feel alive. Funky Town is in development, with no public build or release date announced."
         ]
       }
     ]
@@ -222,6 +305,39 @@
         "paragraphs": [
           "Princess Land explores character styling, castle building, room decoration, cooking, and approachable mini-games.",
           "No public build, store availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "people-lens-is-becoming-whomly",
+    "title": "People Lens Is Becoming Whomly",
+    "description": "The working name is retiring. Whomly better fits the journey from discovery to context to possible opportunity.",
+    "date": "2026-08-19",
+    "category": "Lifestyle Apps",
+    "gameKey": "whomly",
+    "tags": [
+      "lifestyle-apps",
+      "development",
+      "whomly",
+      "company"
+    ],
+    "featured": false,
+    "image": "assets/studio-expansion/whomly-social-1200.webp",
+    "imageAlt": "Whomly product identity and public-information people discovery interface",
+    "body": [
+      {
+        "heading": "A name that fits the whole idea",
+        "paragraphs": [
+          "People Lens was a useful working name for a search concept. As the product grew toward profiles, context, lists, and outreach preparation, the name stopped describing the complete job.",
+          "The permanent product identity is Whomly. The old public route will keep forwarding here, but current navigation, metadata, product pages, and artwork now use the new name."
+        ]
+      },
+      {
+        "heading": "Discover. Understand. Connect.",
+        "paragraphs": [
+          "Whomly is about finding relevant people in publicly available professional sources, understanding why they may matter to a search, and organizing a possible next step.",
+          "That also means respecting the line between public research and private information. We are building the useful side of the line."
         ]
       }
     ]
@@ -291,6 +407,38 @@
         "paragraphs": [
           "Bobby the Breadasaurus is a tower-defense adventure about placing bread-powered towers and protecting the Breadstone.",
           "The project remains in development. No public build, store availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "why-were-building-sleep-amigo",
+    "title": "Why We’re Building Sleep Amigo",
+    "description": "The harder sleep problem is not collecting another number. It is understanding what may matter tonight.",
+    "date": "2026-08-08",
+    "category": "Lifestyle Apps",
+    "gameKey": "sleep-amigo",
+    "tags": [
+      "lifestyle-apps",
+      "development",
+      "sleep-amigo"
+    ],
+    "featured": false,
+    "image": "assets/studio-expansion/sleep-amigo-board-1024.webp",
+    "imageAlt": "Sleep Amigo concept board with its celestial guide and nightly sleep interfaces",
+    "body": [
+      {
+        "heading": "A nightly conversation, not another dashboard",
+        "paragraphs": [
+          "Sleep apps can produce a remarkable amount of data. The harder problem is deciding what deserves attention before bed.",
+          "We are building Sleep Amigo to help turn available sleep information into a simple nightly conversation: what may have mattered, what seems to be changing, and what is worth considering tonight."
+        ]
+      },
+      {
+        "heading": "Why an Amigo?",
+        "paragraphs": [
+          "The idea needs more warmth than a chart. A small celestial companion gives the product a voice without making the interface childish. The goal is premium sleep technology with someone friendly waiting inside it.",
+          "Sleep Amigo remains an in-development wellness concept. It does not diagnose conditions, replace professional advice, or claim unverified device compatibility."
         ]
       }
     ]

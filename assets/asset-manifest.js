@@ -64,6 +64,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/spatial-gallery.css": "assets/spatial-gallery.css?v=5eaf65266433",
   "assets/spatial-gallery.js": "assets/spatial-gallery.js?v=4730262f9a5c",
   "assets/studio-catalog.css": "assets/studio-catalog.css?v=5816f34e003e",
+  "assets/studio-expansion.css": "assets/studio-expansion.css?v=870c7ccd6406",
   "assets/studio-fixes.css": "assets/studio-fixes.css?v=6dfe87f863bd",
   "assets/studio-portfolio.css": "assets/studio-portfolio.css?v=d66aac638e3e",
   "assets/studio-portfolio.js": "assets/studio-portfolio.js?v=ed2b14bb89c2",

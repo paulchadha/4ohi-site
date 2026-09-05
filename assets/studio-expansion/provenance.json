@@ -1,0 +1,106 @@
+{
+  "generatedFrom": "founder-supplied artwork boards",
+  "date": "2026-09-05",
+  "outputs": [
+    {
+      "path": "assets/studio-expansion/booyang-city-tile-960.webp",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "path": "assets/studio-expansion/booyang-city-tile-480.webp",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "path": "assets/studio-expansion/booyang-city-hero-1600.webp",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "assets/studio-expansion/booyang-city-social-1200.webp",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "assets/studio-expansion/funky-town-tile-960.webp",
+      "width": 960,
+      "height": 720
+    },
+    {
+      "path": "assets/studio-expansion/funky-town-tile-480.webp",
+      "width": 480,
+      "height": 360
+    },
+    {
+      "path": "assets/studio-expansion/funky-town-hero-1600.webp",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "assets/studio-expansion/funky-town-social-1200.webp",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "assets/studio-expansion/booyang-city-play-960.webp",
+      "width": 960,
+      "height": 1080
+    },
+    {
+      "path": "assets/studio-expansion/funky-town-play-960.webp",
+      "width": 960,
+      "height": 1080
+    },
+    {
+      "path": "assets/studio-expansion/whomly-tile-720.webp",
+      "width": 720,
+      "height": 720
+    },
+    {
+      "path": "assets/studio-expansion/whomly-board-1200.webp",
+      "width": 1200,
+      "height": 1210
+    },
+    {
+      "path": "assets/studio-expansion/whomly-search-720.webp",
+      "width": 490,
+      "height": 1025
+    },
+    {
+      "path": "assets/studio-expansion/whomly-context-640.webp",
+      "width": 399,
+      "height": 1020
+    },
+    {
+      "path": "assets/studio-expansion/whomly-social-1200.webp",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+      "width": 720,
+      "height": 720
+    },
+    {
+      "path": "assets/studio-expansion/sleep-amigo-board-1024.webp",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "path": "assets/studio-expansion/sleep-amigo-night-720.webp",
+      "width": 720,
+      "height": 1200
+    },
+    {
+      "path": "assets/studio-expansion/sleep-amigo-features-1200.webp",
+      "width": 1004,
+      "height": 525
+    },
+    {
+      "path": "assets/studio-expansion/sleep-amigo-social-1200.webp",
+      "width": 1200,
+      "height": 630
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-09-05T16:43:57.705Z",
+  "base": "http://127.0.0.1:4196",
+  "passed": 22,
+  "failed": 0,
+  "results": [
+    {
+      "name": "1 no cross-origin network requests",
+      "status": "pass"
+    },
+    {
+      "name": "2 no cookies during ordinary browsing",
+      "status": "pass"
+    },
+    {
+      "name": "3 no local or session storage",
+      "status": "pass"
+    },
+    {
+      "name": "4 no IndexedDB databases",
+      "status": "pass"
+    },
+    {
+      "name": "5 privacy promise is prominent",
+      "status": "pass"
+    },
+    {
+      "name": "6 homepage names three trust principles",
+      "status": "pass"
+    },
+    {
+      "name": "7 human and formal privacy layers exist",
+      "status": "pass"
+    },
+    {
+      "name": "8 business model and pricing disclosure exist",
+      "status": "pass"
+    },
+    {
+      "name": "9 lawyer-ready limitation remains",
+      "status": "pass"
+    },
+    {
+      "name": "10 grouped footer exists",
+      "status": "pass"
+    },
+    {
+      "name": "11 product privacy profiles are complete",
+      "status": "pass"
+    },
+    {
+      "name": "12 product summaries are differentiated",
+      "status": "pass"
+    },
+    {
+      "name": "13 Whomly is qualified",
+      "status": "pass"
+    },
+    {
+      "name": "14 Palace browser game is scoped",
+      "status": "pass"
+    },
+    {
+      "name": "15 no current worlds branding",
+      "status": "pass"
+    },
+    {
+      "name": "16 About presents company model and services",
+      "status": "pass"
+    },
+    {
+      "name": "17 Canadian privacy voice is restrained",
+      "status": "pass"
+    },
+    {
+      "name": "18 no horizontal overflow at acceptance widths",
+      "status": "pass"
+    },
+    {
+      "name": "19 keyboard mobile navigation works",
+      "status": "pass"
+    },
+    {
+      "name": "20 reduced motion is honored",
+      "status": "pass"
+    },
+    {
+      "name": "21 no runtime console errors",
+      "status": "pass"
+    },
+    {
+      "name": "22 privacy documentation is linked",
+      "status": "pass"
+    }
+  ],
+  "screenshots": [
+    "homepage-privacy-desktop.png",
+    "homepage-privacy-canadian-desktop.png",
+    "privacy-page-desktop.png",
+    "about-page-desktop.png",
+    "homepage-mobile.png",
+    "privacy-page-mobile.png",
+    "about-page-mobile.png"
+  ]
+}

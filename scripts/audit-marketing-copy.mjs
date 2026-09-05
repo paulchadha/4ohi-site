@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-const files = ["index.html","games.html","lifestyle-apps.html","about.html","privacy.html","news.html","thumb-command.html","bobby-the-breadasaurus.html","evil-doom-adventures.html","heartstack-unicorn-blast.html","princess-land-adventures.html","unicorn-land-adventures.html","people-lens.html","sleep-amigo.html"];
+const files = ["index.html","games.html","lifestyle-apps.html","about.html","privacy.html","news.html","thumb-command.html","bobby-the-breadasaurus.html","evil-doom-adventures.html","heartstack-unicorn-blast.html","princess-land-adventures.html","unicorn-land-adventures.html","booyang-city.html","funky-town.html","whomly.html","sleep-amigo.html"];
 const decode = (value) => value.replace(/&rsquo;/g,"’").replace(/&amp;/g,"&").replace(/&#39;/g,"'").replace(/&[a-z#0-9]+;/gi," ");
 const clean = (value) => decode(value.replace(/<script[\s\S]*?<\/script>/gi," ").replace(/<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ")).replace(/\s+/g," ").trim();
 const norm = (value) => value.toLowerCase().replace(/[^a-z0-9'’ ]/g," ").replace(/\s+/g," ").trim();

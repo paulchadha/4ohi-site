@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-09-05T16:40:45.183Z",
+  "base": "http://127.0.0.1:4210",
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "catalog contains 15 games and two first-class apps",
+      "status": "pass"
+    },
+    {
+      "name": "all canonical routes and news articles load",
+      "status": "pass"
+    },
+    {
+      "name": "legacy People Lens routes redirect to Whomly",
+      "status": "pass"
+    },
+    {
+      "name": "product pages have one clear title and required story",
+      "status": "pass"
+    },
+    {
+      "name": "metadata and structured data are product-specific",
+      "status": "pass"
+    },
+    {
+      "name": "home games apps news navigation and footer expose products",
+      "status": "pass"
+    },
+    {
+      "name": "news records have exact dates and development framing",
+      "status": "pass"
+    },
+    {
+      "name": "production artwork loads at useful resolution",
+      "status": "pass"
+    },
+    {
+      "name": "no horizontal overflow at phone tablet laptop and desktop widths",
+      "status": "pass"
+    },
+    {
+      "name": "mobile keyboard navigation exposes all four products",
+      "status": "pass"
+    },
+    {
+      "name": "pages render without browser console errors",
+      "status": "pass"
+    }
+  ],
+  "screenshots": [
+    "home-1440x900.png",
+    "games-1440x900.png",
+    "apps-1440x900.png",
+    "booyang-390x844.png",
+    "funky-1440x900.png",
+    "whomly-1440x900.png",
+    "sleep-390x844.png",
+    "news-1440x900.png"
+  ]
+}
