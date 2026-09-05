@@ -6,6 +6,7 @@ Public portfolio website for Four of Hearts Interactive, LLC and 4ohi.com.
 
 - Four of Hearts Interactive is the parent brand; 4OH is the approved compact mark.
 - Palace is the flagship card game and has a complete, single-game browser edition powered by the production Palace rules engine.
+- GildenSpire is a dragon flight adventure in development with no announced release date or public build.
 - Bobby the Breadasaurus is a family adventure in concept development.
 - Evil Doom Boy is one action-adventure game in development. Evil Doom Boy is the default playable hero; Evil Doom Girl is the alternate playable hero; Evil Doom is the antagonist.
 - Thumb Command is an arcade-defense game in development with no announced release date or public build.

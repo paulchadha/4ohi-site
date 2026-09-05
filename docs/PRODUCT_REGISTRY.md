@@ -8,7 +8,7 @@ Source of truth: `scripts/studio-product-manifest.mjs`.
 Palace (interactive website preview; app in development), Hearts (internal alpha), Spades (internal alpha), Euchre (internal alpha), Solitaire (in development), and War (in development).
 
 ### Arcade, Defense & Adventure
-Thumb Command, Bobby the Breadasaurus, and Evil Doom Boy. All are in development.
+GildenSpire, Thumb Command, Bobby the Breadasaurus, and Evil Doom Boy. All are in development. GildenSpire is the studio's dragon flight adventure: raise a dragon, direct its flight through a large world, and fight in aerial combat while pursuing the Golden Egg. Its canonical route is `/gildenspire.html`, with `/games/gildenspire/` retained as a compatible route.
 
 Evil Doom Boy is one Action Adventure game published by Four of Hearts Interactive, LLC. Its canonical route is `/games/evil-doom-boy/`. Evil Doom Boy is the default playable hero, Evil Doom Girl is the alternate playable hero, and Evil Doom is the antagonist. The product record carries legacy names and routes only for compatibility redirects. No canonical game repository has been verified; the registry marks that mapping `NEEDS CONFIRMATION`.
 

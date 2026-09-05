@@ -1,0 +1,117 @@
+:root{--gilden-ink:#06101e;--gilden-navy:#07162b;--gilden-blue:#163d68;--gilden-gold:#e2b65b;--gilden-paper:#f5efe1;--gilden-red:#a73322}
+.gildenspire-home-feature,.gildenspire-games-feature{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#050b16 0%,#0c223d 58%,#29160f 100%);color:#fff;padding:clamp(3.5rem,7vw,7rem) 0;border-block:1px solid rgba(226,182,91,.35)}
+.gildenspire-games-feature{background:linear-gradient(135deg,#17110a,#07162b 55%,#102f4e)}
+.gildenspire-feature-grid{display:grid;grid-template-columns:minmax(280px,.68fr) minmax(0,1.32fr);gap:clamp(1.5rem,4vw,4.5rem);align-items:center}
+.gildenspire-games-feature .gildenspire-feature-grid{grid-template-columns:minmax(0,1.32fr) minmax(280px,.68fr)}
+.gildenspire-feature-copy h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.3rem,7vw,7.5rem);font-weight:600;line-height:.86;letter-spacing:-.06em;margin:.35rem 0 1.1rem;color:#fff;text-wrap:balance}
+.gildenspire-feature-copy>strong,.gildenspire-hero-copy>strong{display:block;color:var(--gilden-gold);font-size:clamp(1rem,2vw,1.45rem);font-weight:900;letter-spacing:.2em}
+.gildenspire-feature-copy>p:not(.production-eyebrow){max-width:31rem;color:#d9e5f2;font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.55;margin:1.2rem 0 1.6rem}
+.gildenspire-picture{display:block;overflow:hidden;border-radius:28px;background:#07162b;box-shadow:0 35px 90px rgba(0,0,0,.38)}
+.gildenspire-picture img{display:block;width:100%;height:100%;object-fit:cover}
+.gildenspire-feature-grid>.gildenspire-picture{aspect-ratio:16/9}
+.gildenspire-button{background:var(--gilden-gold)!important;border-color:var(--gilden-gold)!important;color:#07111f!important}
+.gildenspire-button:hover,.gildenspire-button:focus-visible{background:#f2cf7e!important;border-color:#f2cf7e!important}
+.production-tile[style*='#d6a449'] .production-tile-art img,.production-card[style*='#d6a449'] .production-card-art img{object-position:48% 54%}
+.gildenspire-page{background:var(--gilden-navy);color:#fff}
+.gildenspire-hero{position:relative;min-height:min(820px,calc(100svh - 84px));display:grid;align-items:end;overflow:hidden;background:#07162b}
+.gildenspire-hero>.gildenspire-picture{position:absolute;inset:0;border-radius:0;box-shadow:none}
+.gildenspire-hero>.gildenspire-picture img{object-position:52% 52%}
+.gildenspire-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,7,15,.96) 0%,rgba(2,7,15,.74) 37%,rgba(2,7,15,.17) 67%,rgba(2,7,15,.05)),linear-gradient(0deg,rgba(2,7,15,.94),transparent 43%)}
+.gildenspire-hero-copy{position:relative;z-index:2;padding-block:clamp(4rem,9vw,8rem)}
+.gildenspire-hero-copy h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(4.5rem,11vw,10rem);font-weight:600;line-height:.78;letter-spacing:-.07em;margin:.7rem 0 1.5rem;max-width:8ch;color:#fff;text-shadow:0 5px 30px rgba(0,0,0,.45)}
+.gildenspire-hero-copy>p:not(.production-eyebrow){max-width:43rem;color:#e7edf5;font-size:clamp(1.08rem,1.65vw,1.42rem);line-height:1.55;margin:1.5rem 0}
+.gildenspire-status{display:block;margin-top:1.3rem;color:#d7e0ea;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.gildenspire-subnav{position:sticky;top:0;z-index:20;background:rgba(5,12,24,.94);border-block:1px solid rgba(226,182,91,.35);backdrop-filter:blur(14px)}
+.gildenspire-subnav>.production-shell{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:58px}
+.gildenspire-subnav strong{font-family:Georgia,'Times New Roman',serif;color:var(--gilden-gold);font-size:1.2rem}
+.gildenspire-subnav div div{display:flex;align-items:center;gap:1.2rem;overflow-x:auto;scrollbar-width:none}
+.gildenspire-subnav a{color:#fff;text-decoration:none;font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
+.gildenspire-subnav a:hover,.gildenspire-subnav a:focus-visible{color:var(--gilden-gold)}
+.gildenspire-flight-manifesto{padding:clamp(5rem,11vw,10rem) 0;background:radial-gradient(circle at 78% 24%,rgba(41,117,180,.48),transparent 35%),#07162b}
+.gildenspire-flight-manifesto h2{font-size:clamp(3.9rem,10vw,9rem);letter-spacing:-.075em;line-height:.78;margin:.7rem 0 2.2rem;max-width:9ch}
+.gildenspire-flight-manifesto h2 em{color:var(--gilden-gold);font-style:normal}
+.gildenspire-flight-manifesto p:last-child{max-width:48rem;color:#c7d5e4;font-size:clamp(1.08rem,1.6vw,1.42rem);line-height:1.65}
+.gildenspire-core{padding:0 0 clamp(5rem,10vw,9rem);background:#07162b}
+.gildenspire-core-grid{display:grid;gap:1.5rem}
+.gildenspire-core article{display:grid;grid-template-columns:1.15fr .85fr;min-height:470px;background:#f5efe1;color:var(--gilden-ink);border:1px solid rgba(226,182,91,.4);border-radius:28px;overflow:hidden}
+.gildenspire-core article:nth-child(even){grid-template-columns:.85fr 1.15fr}
+.gildenspire-core article:nth-child(even) img{order:2}
+.gildenspire-core article img{width:100%;height:100%;object-fit:cover}
+.gildenspire-core article>div{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,5vw,4.5rem)}
+.gildenspire-core article>div>span{font-size:.72rem;font-weight:900;letter-spacing:.15em;color:#835a19}
+.gildenspire-core h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.5rem,5vw,5.2rem);line-height:.9;letter-spacing:-.055em;margin:.7rem 0 1.4rem}
+.gildenspire-core p{font-size:1.05rem;line-height:1.62;color:#394454}
+.gildenspire-combat-line{font-weight:900;color:var(--gilden-red)!important;letter-spacing:.05em}
+.gildenspire-dragons{padding:clamp(5rem,10vw,9rem) 0;background:linear-gradient(140deg,#102b46,#07101f 65%);color:#fff}
+.gildenspire-section-heading{max-width:62rem;margin-bottom:3rem}
+.gildenspire-section-heading h2,.gildenspire-golden h2,.gildenspire-development h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.2rem,7vw,7rem);line-height:.88;letter-spacing:-.06em;margin:.5rem 0 1.4rem}
+.gildenspire-section-heading>p:not(.production-eyebrow){font-size:clamp(1.06rem,1.55vw,1.3rem);line-height:1.65;color:#d5e0ec}
+.gildenspire-development-note{font-size:.9rem!important;color:#aebed0!important}
+.gildenspire-dragons-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(1.5rem,4vw,4rem);align-items:start}
+.gildenspire-dragons-layout>img{width:100%;border-radius:24px;border:1px solid rgba(226,182,91,.4)}
+.gildenspire-dragons-layout ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.gildenspire-dragons-layout li{min-height:120px;padding:1rem;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:rgba(255,255,255,.055)}
+.gildenspire-dragons-layout li strong{display:block;color:var(--gilden-gold);font-family:Georgia,'Times New Roman',serif;font-size:1.2rem;margin-bottom:.45rem}
+.gildenspire-dragons-layout li span{color:#c3d1df;font-size:.86rem;line-height:1.4}
+.gildenspire-golden{padding:clamp(5rem,10vw,9rem) 0;background:radial-gradient(circle at 24% 45%,rgba(226,182,91,.25),transparent 28%),linear-gradient(135deg,#160e08,#07162b);color:#fff}
+.gildenspire-golden-grid{display:grid;grid-template-columns:1fr .86fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.gildenspire-golden img{width:100%;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.44)}
+.gildenspire-golden h2{color:var(--gilden-gold)}
+.gildenspire-golden p:not(.production-eyebrow){font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.35rem,2.2vw,2rem);margin:.55rem 0}
+.gildenspire-golden .gildenspire-golden-reveal{font-family:inherit;font-size:1.05rem;line-height:1.65;color:#d5dfeb;margin-top:2rem;max-width:35rem}
+.gildenspire-development{padding:clamp(5rem,10vw,9rem) 0;background:#f5efe1;color:var(--gilden-ink)}
+.gildenspire-development header{max-width:55rem}
+.gildenspire-development header>p:last-child{font-size:1.15rem;color:#4d5969}
+.gildenspire-news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2.5rem 0}
+.gildenspire-news-grid a{display:flex;min-height:240px;flex-direction:column;gap:1rem;padding:1.5rem;border-radius:20px;background:#07162b;color:#fff;text-decoration:none;border:1px solid transparent;transition:transform .2s ease,border-color .2s ease}
+.gildenspire-news-grid a:hover,.gildenspire-news-grid a:focus-visible{transform:translateY(-5px);border-color:var(--gilden-gold)}
+.gildenspire-news-grid span{font-size:.7rem;font-weight:900;letter-spacing:.14em;color:var(--gilden-gold)}
+.gildenspire-news-grid strong{font-family:Georgia,'Times New Roman',serif;font-size:1.65rem;line-height:1.08}
+.gildenspire-news-grid em{margin-top:auto;color:#b9d8ef;font-style:normal;font-weight:800}
+.gildenspire-status-card{display:flex;flex-wrap:wrap;gap:.7rem 1.5rem;align-items:center;padding:1.25rem 1.5rem;border:1px solid #d4c7ac;border-radius:16px;background:#fff}
+.gildenspire-status-card strong{color:#835a19}.gildenspire-status-card span{color:#526071}
+.product-gildenspire .production-card-art img{object-position:center}
+@media(max-width:1000px){
+  .gildenspire-feature-grid,.gildenspire-games-feature .gildenspire-feature-grid,.gildenspire-core article,.gildenspire-core article:nth-child(even),.gildenspire-dragons-layout,.gildenspire-golden-grid{grid-template-columns:1fr}
+  .gildenspire-games-feature .gildenspire-picture,.gildenspire-core article:nth-child(even) img{order:0}
+  .gildenspire-core article img{height:auto;aspect-ratio:16/9}
+  .gildenspire-dragons-layout{grid-template-columns:minmax(250px,.7fr) 1.3fr}
+  .gildenspire-dragons-layout ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .gildenspire-home-feature,.gildenspire-games-feature{padding:3.5rem 0}
+  .gildenspire-feature-copy h2{font-size:clamp(3.4rem,17vw,5.2rem)}
+  .gildenspire-feature-grid>.gildenspire-picture{aspect-ratio:4/3}
+  .gildenspire-hero{min-height:760px;align-items:end}
+  .gildenspire-hero>.gildenspire-picture{height:54%;inset:0 0 auto}
+  .gildenspire-hero-shade{background:linear-gradient(0deg,#06101e 0%,#06101e 48%,rgba(6,16,30,.2) 72%,rgba(6,16,30,.05))}
+  .gildenspire-hero-copy{padding-top:320px;padding-bottom:3.5rem}
+  .gildenspire-hero-copy h1{font-size:clamp(4rem,20vw,6.2rem)}
+  .gildenspire-hero-copy .actions{display:grid;grid-template-columns:1fr}
+  .gildenspire-hero-copy .button{width:100%;justify-content:center;text-align:center;min-height:48px}
+  .gildenspire-subnav>.production-shell{align-items:flex-start;flex-direction:column;padding-block:.7rem}
+  .gildenspire-subnav div div{width:100%}
+  .gildenspire-flight-manifesto h2{font-size:clamp(3.7rem,17vw,6rem)}
+  .gildenspire-core article{min-height:0}
+  .gildenspire-core article>div{padding:2rem 1.4rem 2.4rem}
+  .gildenspire-core article img{aspect-ratio:4/3}
+  .gildenspire-dragons-layout{grid-template-columns:1fr}
+  .gildenspire-dragons-layout>img{max-height:480px;object-fit:cover}
+  .gildenspire-dragons-layout ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gildenspire-dragons-layout li{min-height:112px}
+  .gildenspire-news-grid{grid-template-columns:1fr}
+  .gildenspire-news-grid a{min-height:190px}
+}
+@media(max-width:380px){
+  .gildenspire-dragons-layout ul{grid-template-columns:1fr}
+  .gildenspire-dragons-layout li{min-height:0}
+  .gildenspire-hero-copy{padding-top:290px}
+  .gildenspire-hero-copy h1{font-size:3.7rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .gildenspire-news-grid a{transition:none}
+  .gildenspire-news-grid a:hover{transform:none}
+}
+@media(forced-colors:active){
+  .gildenspire-news-grid a,.gildenspire-core article{border:2px solid ButtonText}
+}

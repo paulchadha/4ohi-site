@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-05T15:42:18.197Z",
+  "base": "http://127.0.0.1:4207",
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "name": "exact catalog identity and status",
+      "status": "pass"
+    },
+    {
+      "name": "all public routes load",
+      "status": "pass"
+    },
+    {
+      "name": "complete dedicated page story",
+      "status": "pass"
+    },
+    {
+      "name": "accurate metadata and structured data",
+      "status": "pass"
+    },
+    {
+      "name": "homepage Games News menu and footer integration",
+      "status": "pass"
+    },
+    {
+      "name": "production artwork loads",
+      "status": "pass"
+    },
+    {
+      "name": "no horizontal overflow across required breakpoints",
+      "status": "pass"
+    },
+    {
+      "name": "mobile and keyboard navigation",
+      "status": "pass"
+    },
+    {
+      "name": "reduced motion",
+      "status": "pass"
+    },
+    {
+      "name": "no browser console errors",
+      "status": "pass"
+    }
+  ],
+  "screenshots": [
+    "homepage-feature-1440x900.png",
+    "games-feature-1440x900.png",
+    "gildenspire-hero-1440x900.png",
+    "gildenspire-mobile-390x844.png",
+    "gildenspire-news-1440x900.png"
+  ]
+}

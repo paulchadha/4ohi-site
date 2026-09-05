@@ -57,7 +57,7 @@ for (const page of pages) {
   for (const match of html.matchAll(/<img\b([^>]*)>/gi)) {
     const attrs = match[1];
     const src = attrs.match(/src="([^"]+)"/i)?.[1];
-    check(/\balt="[^"]*"/i.test(attrs), `${page}: image is missing alt text`);
+    check(/\balt\s*=\s*(?:"[^"]*"|'[^']*')/i.test(attrs), `${page}: image is missing alt text`);
     if (src && !src.startsWith("https://")) check(existsSync(join(root, src.split(/[?#]/)[0])), `${page}: missing image ${src}`);
   }
 }

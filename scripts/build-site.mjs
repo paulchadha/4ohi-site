@@ -6,6 +6,7 @@ import { appCatalog, featuredGames, gameByKey, gameCatalog, primaryGames, produc
 import { gamesPage, homepage, lifestylePage, productPage } from "./production-pages.mjs";
 import { privacyCopy } from "./privacy-copy.mjs";
 import { bobbyPage, evilDoomPage, heartStackPage, princessLandPage, unicornLandPage } from "./studio-world-pages.mjs";
+import { gildenspirePageContent } from "./gildenspire-content.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const assetVersion = (assetPath) => {
@@ -99,7 +100,7 @@ const palaceTableTools = () => `<aside class="palace-table-tools" data-palace-co
 const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid footer-grid-editorial">
     <div class="footer-brand"><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-promise">Games with heart. Apps with purpose.</p><p class="footer-copy">Independent software from South Dakota.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
-    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">HeartStack Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a></nav>
+    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="gildenspire.html">GildenSpire</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">HeartStack Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a></nav>
     <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2><a href="palace.html">Palace</a><a href="hearts-play.html">Hearts</a><a href="spades-play.html">Spades</a><a href="euchre-play.html">Euchre</a><a href="solitaire.html">Solitaire</a><a href="war.html">War</a></nav>
     <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a><a href="people-lens.html">People Lens</a><a href="sleep-amigo.html">Sleep Amigo</a></nav>
     <nav class="footer-group" aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="about.html#south-dakota">South Dakota</a><a href="news.html">News</a><a href="support.html">Support</a><a href="contact.html">Contact</a></nav>
@@ -143,6 +144,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/thumb-command.css">
   <link rel="stylesheet" href="assets/privacy-center.css">
   <link rel="stylesheet" href="assets/production-2026.css">
+  <link rel="stylesheet" href="assets/gildenspire.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -185,6 +187,7 @@ const pageHero = (eyebrow, title, lede, actions = "") => `<header class="page-he
 
 const availabilityCopy = (item) => {
   if (item.gameKey === "palace") return "Palace has a complete, single-game browser edition and remains in founder review.";
+  if (item.gameKey === "gildenspire") return "GildenSpire is in development and is not publicly downloadable. No release date or platform has been announced.";
   if (item.gameKey === "thumb-command") return "Thumb Command is in development with no public build or announced release date. This article documents the current creative direction.";
   if (item.gameKey === "bobby") return "Bobby the Breadasaurus is in concept development and is not publicly playable. No release date or platform has been announced.";
   if (item.gameKey === "evil-doom") return "Evil Doom Boy is one action-adventure game with two selectable heroes. It is in development and is not publicly playable. No release date or platform has been announced.";
@@ -326,7 +329,7 @@ news.forEach((item, index) => {
 
 write("games.html", page({
   title: "Games | Four of Hearts Interactive",
-  description: "Explore twelve independent card, arcade, defense, adventure, puzzle, and creative games from 4OH Interactive.",
+  description: "Explore thirteen independent card, arcade, defense, adventure, puzzle, and creative games from 4OH Interactive.",
   path: "/games.html", current: "games", bodyClass: "production-page games-page",
   content: gamesPage({groups:productGroups})
 }));
@@ -342,6 +345,16 @@ const productMarkup = (product) => page({
   jsonLd:{"@context":"https://schema.org","@type":product.category === "game" ? "VideoGame" : "SoftwareApplication",name:product.title,description:product.description,applicationCategory:product.type,operatingSystem:"In development",publisher:{"@type":"Organization",name:company},url:`${siteUrl}/${product.infoUrl}`},
   content:productPage({product,related:relatedFor(product),newsHref:product.secondaryAction})
 });
+const gildenspire = gameByKey.gildenspire;
+const gildenspireMarkup = page({
+  title:"GildenSpire | Flight or Fight | Four of Hearts Interactive",
+  description:"GildenSpire is a new dragon flight-and-fight adventure from Four of Hearts Interactive. Raise your dragon, explore an enormous fantasy world, take to the skies, and fight your way toward legendary dragons.",
+  path:"/gildenspire.html", current:"gildenspire", bodyClass:"production-page product-gildenspire",
+  image:"assets/gildenspire/gildenspire-social-1200x630.jpg", imageAlt:gildenspire.alt,
+  jsonLd:{"@context":"https://schema.org","@type":"VideoGame",name:"GildenSpire",description:gildenspire.description,genre:["Flight","Combat","Adventure"],gamePlatform:"In development",publisher:{"@type":"Organization",name:company},url:siteUrl+"/gildenspire.html"},
+  content:gildenspirePageContent()
+});
+write("gildenspire.html", gildenspireMarkup);
 const thumbCommandMarkup = productMarkup(gameByKey["thumb-command"]);
 write("thumb-command.html", thumbCommandMarkup);
 write("games/thumb-command/index.html", thumbCommandMarkup.replace("<head>", '<head><base href="../../">'));
@@ -490,7 +503,7 @@ write("terms.html", page({
   content: `
     ${pageHero("Internal Alpha", "Terms of Use", "Last technically reviewed July 25, 2026. These plain-language terms describe a testing-stage website and game family, not a public commercial release.")}
     <section class="section"><div class="narrow prose">
-      <h2>Current availability</h2><p>Palace, Hearts, Spades, and Euchre are in internal testing. The Palace website includes one complete local browser game; it is not a public app-store release. The Hearts, Spades, and Euchre website lessons are short teaching previews, not complete matches. Thumb Command, Bobby the Breadasaurus, and Evil Doom Boy are in development and are not publicly playable. Access may be limited, changed, interrupted, or withdrawn. None of these experiences involves gambling.</p>
+      <h2>Current availability</h2><p>GildenSpire is in development with no public build or announced release date. Palace, Hearts, Spades, and Euchre are in internal testing. The Palace website includes one complete local browser game; it is not a public app-store release. The Hearts, Spades, and Euchre website lessons are short teaching previews, not complete matches. Thumb Command, Bobby the Breadasaurus, and Evil Doom Boy are in development and are not publicly playable. Access may be limited, changed, interrupted, or withdrawn. None of these experiences involves gambling.</p>
       <h2>Use the products responsibly</h2><p>Do not interfere with service, attempt unauthorized access, misuse reconnect or ranking behavior, reverse engineer where prohibited by law, harass other testers, or use the products for unlawful activity.</p>
       <h2>Testing information</h2><p>Feedback may be used to improve the games. Do not include confidential information, passwords, or third-party material you lack permission to share.</p>
       <h2>No promise of release</h2><p>Features, rules, visual design, rankings, data behavior, and availability may change. Participation in testing does not guarantee a future download, account, entitlement, purchase, or permanent record.</p>
@@ -541,6 +554,7 @@ write("404.html", page({
 const routeAliases = {
   "games/index.html": "../games.html",
   "games/palace/index.html": "../../palace.html",
+  "games/gildenspire/index.html": "../../gildenspire.html",
   "games/bobby-the-breadasaurus/index.html": "../../bobby-the-breadasaurus.html",
   "games/evil-doom-adventures-shadow-run/index.html": "../evil-doom-boy/",
   "games/evil-doom-adventures/index.html": "../evil-doom-boy/",
@@ -574,7 +588,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
-  "index.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "people-lens.html", "sleep-amigo.html", "news.html",
+  "index.html", "gildenspire.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "people-lens.html", "sleep-amigo.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"

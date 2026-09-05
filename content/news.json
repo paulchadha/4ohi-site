@@ -1,12 +1,346 @@
 [
-{"slug":"thumb-command-save-planet-earth","title":"Introducing Thumb Command: Save Planet Earth","description":"Meet Blueguard and the worldwide arcade-defense campaign taking shape at Four of Hearts Interactive.","date":"2026-08-29","category":"Games","gameKey":"thumb-command","tags":["games","company"],"featured":true,"image":"assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg","imageAlt":"Blueguard interceptor defending Chicago from a purple alien invasion","body":[{"heading":"The city is the base","paragraphs":["Thumb Command is a fast, colourful arcade-defense game in development around one clear mission: save Planet Earth.","Chicago, San Francisco, New York, London, and Tokyo establish the current campaign direction. No public build, store listing, or release date has been announced."]}]},
-{"slug":"meet-sleep-amigo","title":"Meet Sleep Amigo","description":"A private, calm sleep companion joins the Four of Hearts lifestyle application line.","date":"2026-08-28","category":"Lifestyle Apps","gameKey":"sleep-amigo","tags":["lifestyle-apps","company"],"featured":false,"image":"assets/lifestyle/sleep-amigo.svg","imageAlt":"Sleep Amigo moon and night-sky application artwork","body":[{"heading":"Quiet software with a practical purpose","paragraphs":["Sleep Amigo is an early lifestyle-app concept focused on calm routines and clear, private interactions.","It is in concept development. No public build, medical claim, platform availability, or release date has been announced."]}]},
-{"slug":"people-lens-joins-the-lifestyle-line","title":"People Lens Joins the Lifestyle Line","description":"A people-search utility concept extends the studio beyond games.","date":"2026-08-27","category":"Lifestyle Apps","gameKey":"people-lens","tags":["lifestyle-apps","company"],"featured":false,"image":"assets/lifestyle/people-lens.svg","imageAlt":"People Lens search and profile application artwork","body":[{"heading":"Software for a clearer search","paragraphs":["People Lens tests a focused, privacy-conscious way to organize people-search work.","It is in concept development. No public service, customer database, or release date has been announced."]}]},
-{"slug":"building-unicorn-land-adventures","title":"Building Unicorn Land Adventures","description":"Unicorn creation, magical habitats, decorating, discovery, and mini-games define a distinct creative game.","date":"2026-08-24","category":"Games","gameKey":"unicorn-land","tags":["games"],"featured":false,"image":"assets/portfolio-2026/unicorn-land-world.webp","imageAlt":"Unicorn Land Adventures habitat","body":[{"heading":"Current development direction","paragraphs":["Unicorn Land begins with character creation and grows into habitats, gardens, discoveries, and mini-games.","No public build, store availability, or release date has been announced."]}]},
-{"slug":"inside-princess-land-adventures","title":"Inside Princess Land Adventures","description":"Character style, castle rooms, cooking, decorating, and mini-games begin forming one creative game.","date":"2026-08-21","category":"Games","gameKey":"princess-land","tags":["games"],"featured":false,"image":"assets/portfolio-2026/princess-land-world.webp","imageAlt":"Princess Land Adventures castle world","body":[{"heading":"Current development direction","paragraphs":["Princess Land explores character styling, castle building, room decoration, cooking, and approachable mini-games.","No public build, store availability, or release date has been announced."]}]},
-{"slug":"heartstack-joins-the-workbench","title":"HeartStack Unicorn Blast Joins the Workbench","description":"A first look at colourful combos, crystal cages, boosters, and unicorn rescue.","date":"2026-08-18","category":"Games","gameKey":"heartstack","tags":["games"],"featured":false,"image":"assets/heartstack-2026/heartstack-gameplay.webp","imageAlt":"HeartStack Unicorn Blast colourful match board","body":[{"heading":"Current build direction","paragraphs":["HeartStack combines colourful matching with cascading combos, boosters, crystal cages, and unicorn rescue sequences.","No public build, store availability, or release date has been announced."]}]},
-{"slug":"evil-doom-two-heroes-one-route","title":"Evil Doom Boy: Two Heroes, One Fight","description":"Evil Doom Boy is one action-adventure game with Evil Doom Boy as the default hero and Evil Doom Girl as the alternate hero.","date":"2026-08-14","category":"Games","gameKey":"evil-doom","tags":["games"],"featured":false,"image":"assets/evil-doom/evil-doom-heroes-purple-1200.webp","imageAlt":"Evil Doom Boy and alternate playable hero Evil Doom Girl facing Evil Doom","body":[{"heading":"Choose who stands up to Evil Doom","paragraphs":["Evil Doom is closing in. Begin as Evil Doom Boy or switch to Evil Doom Girl, then run, fight, swing, and survive long enough to stop it.","Evil Doom Boy is one game with two selectable heroes. The project remains in development; no public build, store availability, or release date has been announced."]}]},
-{"slug":"bobby-and-the-breadstone","title":"Bobby and the Breadstone","description":"Bread-powered towers, branching paths, cheerful enemies, and one heroic dinosaur define Bobby’s direction.","date":"2026-08-11","category":"Games","gameKey":"bobby","tags":["games"],"featured":false,"image":"assets/portfolio-2026/bobby-gameplay.webp","imageAlt":"Bobby the Breadasaurus tower-defense gameplay","body":[{"heading":"A small hero holds a very busy path","paragraphs":["Bobby the Breadasaurus is a tower-defense adventure about placing bread-powered towers and protecting the Breadstone.","The project remains in development. No public build, store availability, or release date has been announced."]}]},
-{"slug":"card-table-adds-solitaire-war","title":"The 4OH Card Table Adds Solitaire and War","description":"Two familiar card games join Palace, Hearts, Spades, and Euchre in the Four of Hearts lineup.","date":"2026-08-07","category":"Card Table","gameKey":"solitaire","tags":["games","card-table"],"featured":false,"image":"assets/card-games/solitaire-tile.webp","imageAlt":"Original Four of Hearts Solitaire card-table artwork","body":[{"heading":"More seats at the card table","paragraphs":["Solitaire and War join the Four of Hearts card-table lineup as separate products with their own clear identities.","Both are in development. Neither has a public playable build or announced release date."]}]},
-{"slug":"palace-019-founder-review","title":"Palace 0.1.9 Enters Founder Review","description":"The flagship card-table build advances through hands-on founder testing.","date":"2026-08-04","category":"Card Table","gameKey":"palace","tags":["games","card-table"],"featured":false,"image":"assets/icon-palace-4hearts.webp","imageAlt":"Palace castle artwork from Four of Hearts Interactive","body":[{"heading":"Testing the whole table journey","paragraphs":["Founder review is focused on clarity, rules, accessibility, reconnect behaviour, and the journey from hand to hidden finale.","Palace remains an internal alpha. The website tutorial is a teaching preview, not a public production match."]}]}
+  {
+    "slug": "introducing-gildenspire-flight-or-fight",
+    "title": "Introducing GildenSpire: Flight or Fight",
+    "description": "Raise a dragon, take direct control in the sky, and discover what happens when flying becomes fighting.",
+    "date": "2026-09-05",
+    "category": "Games",
+    "gameKey": "gildenspire",
+    "tags": [
+      "games",
+      "development",
+      "gildenspire"
+    ],
+    "featured": true,
+    "image": "assets/gildenspire/gildenspire-social-1200x630.jpg",
+    "imageAlt": "A red GildenSpire dragon and rider flying toward a vast fantasy world as a rival approaches",
+    "body": [
+      {
+        "heading": "Considerably bigger wings",
+        "paragraphs": [
+          "Four of Hearts Interactive is building something with considerably bigger wings.",
+          "GildenSpire begins with a simple idea: raise a dragon, climb onto its back, and discover what happens when the world stops being something you walk through and becomes something you fly over."
+        ]
+      },
+      {
+        "heading": "Flying is gameplay",
+        "paragraphs": [
+          "Raising your dragon matters. Training matters. Discovering new dragons matters. But the heart of GildenSpire is what happens once you take off.",
+          "You will climb, dive, bank through mountain passes, cross enormous landscapes, discover places hidden from the ground, and eventually encounter other creatures that are not particularly interested in sharing the sky.",
+          "Then flying becomes fighting.",
+          "That is GildenSpire.",
+          "Flight or fight.",
+          "And we are only beginning to build the world."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "why-flying-has-to-be-fun",
+    "title": "Why Flying Has to Be Fun",
+    "description": "The journey should be gameplay: direct flight, enormous terrain, curiosity, and combat that rewards control.",
+    "date": "2026-09-04",
+    "category": "Games",
+    "gameKey": "gildenspire",
+    "tags": [
+      "games",
+      "development",
+      "gildenspire",
+      "design"
+    ],
+    "featured": false,
+    "image": "assets/gildenspire/gildenspire-fly-960.webp",
+    "imageAlt": "A rider directly controlling a red dragon over islands, castles, mountains, and waterfalls",
+    "body": [
+      {
+        "heading": "Getting somewhere should be part of the fun",
+        "paragraphs": [
+          "There is a simple rule behind GildenSpire: getting somewhere should be part of the fun.",
+          "We do not want players to press a destination button and watch a dragon animation while the next screen loads.",
+          "We want you flying the dragon."
+        ]
+      },
+      {
+        "heading": "Stay in the sky",
+        "paragraphs": [
+          "We want mountains to feel enormous when you skim past them. We want diving toward an island to feel fast. We want you banking around towers, threading through ruins, climbing through clouds, and spotting something in the distance that makes you change direction just to see what it is.",
+          "And when combat begins, those same flying skills should matter.",
+          "A great dragon game should make you want to stay in the sky even when there is nowhere you are required to go.",
+          "That is one of the standards we are building GildenSpire around."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "building-dragons-that-actually-feel-different",
+    "title": "Building Dragons That Actually Feel Different",
+    "description": "GildenSpire dragons are being designed as different creatures—not one model wearing different colors.",
+    "date": "2026-09-03",
+    "category": "Games",
+    "gameKey": "gildenspire",
+    "tags": [
+      "games",
+      "development",
+      "gildenspire",
+      "dragons"
+    ],
+    "featured": false,
+    "image": "assets/gildenspire/gildenspire-dragons-960.webp",
+    "imageAlt": "A collection of substantially different dragon species planned for GildenSpire",
+    "body": [
+      {
+        "heading": "Another dragon, not another skin",
+        "paragraphs": [
+          "One red dragon, one blue dragon, one green dragon.",
+          "That is not enough.",
+          "GildenSpire is being designed around dragons that should actually feel different.",
+          "Different bodies. Different wings. Different movement. Different strengths. Different abilities. Different personalities."
+        ]
+      },
+      {
+        "heading": "Different ways to fly and fight",
+        "paragraphs": [
+          "A powerful fire dragon might feel heavy and aggressive in the air. A smaller air dragon might turn faster and climb differently. An ice dragon might completely change how a team approaches a fight.",
+          "The goal is not simply to collect another skin.",
+          "The goal is to discover another dragon.",
+          "And somewhere beyond all of them is the Golden Egg."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "thumb-command-save-planet-earth",
+    "title": "Introducing Thumb Command: Save Planet Earth",
+    "description": "Meet Blueguard and the worldwide arcade-defense campaign taking shape at Four of Hearts Interactive.",
+    "date": "2026-08-29",
+    "category": "Games",
+    "gameKey": "thumb-command",
+    "tags": [
+      "games",
+      "company"
+    ],
+    "featured": false,
+    "image": "assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg",
+    "imageAlt": "Blueguard interceptor defending Chicago from a purple alien invasion",
+    "body": [
+      {
+        "heading": "The city is the base",
+        "paragraphs": [
+          "Thumb Command is a fast, colourful arcade-defense game in development around one clear mission: save Planet Earth.",
+          "Chicago, San Francisco, New York, London, and Tokyo establish the current campaign direction. No public build, store listing, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "meet-sleep-amigo",
+    "title": "Meet Sleep Amigo",
+    "description": "A private, calm sleep companion joins the Four of Hearts lifestyle application line.",
+    "date": "2026-08-28",
+    "category": "Lifestyle Apps",
+    "gameKey": "sleep-amigo",
+    "tags": [
+      "lifestyle-apps",
+      "company"
+    ],
+    "featured": false,
+    "image": "assets/lifestyle/sleep-amigo.svg",
+    "imageAlt": "Sleep Amigo moon and night-sky application artwork",
+    "body": [
+      {
+        "heading": "Quiet software with a practical purpose",
+        "paragraphs": [
+          "Sleep Amigo is an early lifestyle-app concept focused on calm routines and clear, private interactions.",
+          "It is in concept development. No public build, medical claim, platform availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "people-lens-joins-the-lifestyle-line",
+    "title": "People Lens Joins the Lifestyle Line",
+    "description": "A people-search utility concept extends the studio beyond games.",
+    "date": "2026-08-27",
+    "category": "Lifestyle Apps",
+    "gameKey": "people-lens",
+    "tags": [
+      "lifestyle-apps",
+      "company"
+    ],
+    "featured": false,
+    "image": "assets/lifestyle/people-lens.svg",
+    "imageAlt": "People Lens search and profile application artwork",
+    "body": [
+      {
+        "heading": "Software for a clearer search",
+        "paragraphs": [
+          "People Lens tests a focused, privacy-conscious way to organize people-search work.",
+          "It is in concept development. No public service, customer database, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "building-unicorn-land-adventures",
+    "title": "Building Unicorn Land Adventures",
+    "description": "Unicorn creation, magical habitats, decorating, discovery, and mini-games define a distinct creative game.",
+    "date": "2026-08-24",
+    "category": "Games",
+    "gameKey": "unicorn-land",
+    "tags": [
+      "games"
+    ],
+    "featured": false,
+    "image": "assets/portfolio-2026/unicorn-land-world.webp",
+    "imageAlt": "Unicorn Land Adventures habitat",
+    "body": [
+      {
+        "heading": "Current development direction",
+        "paragraphs": [
+          "Unicorn Land begins with character creation and grows into habitats, gardens, discoveries, and mini-games.",
+          "No public build, store availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "inside-princess-land-adventures",
+    "title": "Inside Princess Land Adventures",
+    "description": "Character style, castle rooms, cooking, decorating, and mini-games begin forming one creative game.",
+    "date": "2026-08-21",
+    "category": "Games",
+    "gameKey": "princess-land",
+    "tags": [
+      "games"
+    ],
+    "featured": false,
+    "image": "assets/portfolio-2026/princess-land-world.webp",
+    "imageAlt": "Princess Land Adventures castle world",
+    "body": [
+      {
+        "heading": "Current development direction",
+        "paragraphs": [
+          "Princess Land explores character styling, castle building, room decoration, cooking, and approachable mini-games.",
+          "No public build, store availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "heartstack-joins-the-workbench",
+    "title": "HeartStack Unicorn Blast Joins the Workbench",
+    "description": "A first look at colourful combos, crystal cages, boosters, and unicorn rescue.",
+    "date": "2026-08-18",
+    "category": "Games",
+    "gameKey": "heartstack",
+    "tags": [
+      "games"
+    ],
+    "featured": false,
+    "image": "assets/heartstack-2026/heartstack-gameplay.webp",
+    "imageAlt": "HeartStack Unicorn Blast colourful match board",
+    "body": [
+      {
+        "heading": "Current build direction",
+        "paragraphs": [
+          "HeartStack combines colourful matching with cascading combos, boosters, crystal cages, and unicorn rescue sequences.",
+          "No public build, store availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "evil-doom-two-heroes-one-route",
+    "title": "Evil Doom Boy: Two Heroes, One Fight",
+    "description": "Evil Doom Boy is one action-adventure game with Evil Doom Boy as the default hero and Evil Doom Girl as the alternate hero.",
+    "date": "2026-08-14",
+    "category": "Games",
+    "gameKey": "evil-doom",
+    "tags": [
+      "games"
+    ],
+    "featured": false,
+    "image": "assets/evil-doom/evil-doom-heroes-purple-1200.webp",
+    "imageAlt": "Evil Doom Boy and alternate playable hero Evil Doom Girl facing Evil Doom",
+    "body": [
+      {
+        "heading": "Choose who stands up to Evil Doom",
+        "paragraphs": [
+          "Evil Doom is closing in. Begin as Evil Doom Boy or switch to Evil Doom Girl, then run, fight, swing, and survive long enough to stop it.",
+          "Evil Doom Boy is one game with two selectable heroes. The project remains in development; no public build, store availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bobby-and-the-breadstone",
+    "title": "Bobby and the Breadstone",
+    "description": "Bread-powered towers, branching paths, cheerful enemies, and one heroic dinosaur define Bobby’s direction.",
+    "date": "2026-08-11",
+    "category": "Games",
+    "gameKey": "bobby",
+    "tags": [
+      "games"
+    ],
+    "featured": false,
+    "image": "assets/portfolio-2026/bobby-gameplay.webp",
+    "imageAlt": "Bobby the Breadasaurus tower-defense gameplay",
+    "body": [
+      {
+        "heading": "A small hero holds a very busy path",
+        "paragraphs": [
+          "Bobby the Breadasaurus is a tower-defense adventure about placing bread-powered towers and protecting the Breadstone.",
+          "The project remains in development. No public build, store availability, or release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "card-table-adds-solitaire-war",
+    "title": "The 4OH Card Table Adds Solitaire and War",
+    "description": "Two familiar card games join Palace, Hearts, Spades, and Euchre in the Four of Hearts lineup.",
+    "date": "2026-08-07",
+    "category": "Card Table",
+    "gameKey": "solitaire",
+    "tags": [
+      "games",
+      "card-table"
+    ],
+    "featured": false,
+    "image": "assets/card-games/solitaire-tile.webp",
+    "imageAlt": "Original Four of Hearts Solitaire card-table artwork",
+    "body": [
+      {
+        "heading": "More seats at the card table",
+        "paragraphs": [
+          "Solitaire and War join the Four of Hearts card-table lineup as separate products with their own clear identities.",
+          "Both are in development. Neither has a public playable build or announced release date."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "palace-019-founder-review",
+    "title": "Palace 0.1.9 Enters Founder Review",
+    "description": "The flagship card-table build advances through hands-on founder testing.",
+    "date": "2026-08-04",
+    "category": "Card Table",
+    "gameKey": "palace",
+    "tags": [
+      "games",
+      "card-table"
+    ],
+    "featured": false,
+    "image": "assets/icon-palace-4hearts.webp",
+    "imageAlt": "Palace castle artwork from Four of Hearts Interactive",
+    "body": [
+      {
+        "heading": "Testing the whole table journey",
+        "paragraphs": [
+          "Founder review is focused on clarity, rules, accessibility, reconnect behaviour, and the journey from hand to hidden finale.",
+          "Palace remains an internal alpha. The website tutorial is a teaching preview, not a public production match."
+        ]
+      }
+    ]
+  }
 ]

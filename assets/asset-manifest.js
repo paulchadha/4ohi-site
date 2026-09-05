@@ -9,6 +9,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/favicon.png": "assets/favicon.png?v=e3eeb5210a2e",
   "assets/founder-corrections.css": "assets/founder-corrections.css?v=a2c276c9c428",
   "assets/founder-redesign.css": "assets/founder-redesign.css?v=961f20b95df5",
+  "assets/gildenspire.css": "assets/gildenspire.css?v=73f3d8363bd5",
   "assets/icon-euchre-4hearts.png": "assets/icon-euchre-4hearts.png?v=34cecc883495",
   "assets/icon-euchre-4hearts.webp": "assets/icon-euchre-4hearts.webp?v=979e7126b08d",
   "assets/icon-hearts-4hearts.png": "assets/icon-hearts-4hearts.png?v=7f9f66db1dd9",
