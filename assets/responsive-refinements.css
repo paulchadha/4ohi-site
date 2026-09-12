@@ -52,3 +52,4 @@ main :is(h1,h2,h3,h4){overflow-wrap:anywhere}
 @media(max-width:980px){.app-three-steps,.sleep-capabilities,.production-related .production-card-grid{grid-template-columns:minmax(0,1fr)}}
 .privacy-banner .button.secondary{color:#fff;border-color:#9faec2;background:rgba(255,255,255,.08)}
 @media(max-width:680px){.site-header .brand,.site-header .menu-toggle,.site-header .header-tools{grid-row:1}}
+.header-language select{width:7.5em;max-width:40vw}
