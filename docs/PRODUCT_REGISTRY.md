@@ -16,6 +16,6 @@ Evil Doom Boy is one Action Adventure game published by Four of Hearts Interacti
 BooYang City, Funky Town, HeartStack Unicorn Blast, Princess Land Adventures, and Unicorn Land Adventures. All are in development. BooYang City is a connected city of mini-adventures; Funky Town is a creative city builder where progression transforms neighborhoods through art, music, and player expression.
 
 ## Lifestyle Apps
-Whomly and Sleep Amigo are lifestyle applications in development. Whomly organizes publicly available professional information for user-directed research; Sleep Amigo turns available sleep information into general wellness guidance. They are deliberately excluded from `gameCatalog` and have separate pages and navigation.
+SOVINTO, Whomly, and Sleep Amigo are lifestyle applications in development. SOVINTO supports negotiation preparation, with practice, tools and live coaching still in development; its canonical page is `/sovinto.html`. Whomly organizes publicly available professional information for user-directed research; Sleep Amigo turns available sleep information into general wellness guidance. They are deliberately excluded from `gameCatalog` and have separate pages and navigation.
 
 Every registry item declares a stable key, canonical title, route, product type, status, availability language, artwork, alt text, CTA, grouping, and visual theme. Add future products here first; the homepage, Games page, Lifestyle Apps page, navigation, footer, related-product blocks, structured data, sitemap, and tests consume this data.

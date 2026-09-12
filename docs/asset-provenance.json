@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-05",
+  "updated": "2026-09-12",
   "owner": "Four of Hearts Interactive, LLC",
   "assets": [
     {
@@ -56,6 +56,16 @@
       ],
       "source": "Founder-supplied product boards with deterministic web crops and responsive derivatives",
       "created": "2026-09-05",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary"
+    },
+    {
+      "paths": [
+        "assets/sovinto/sovinto-tile-1024.png"
+      ],
+      "source": "SOVINTO specification assets/sovinto_app_tile_1024.png; approved user-facing icon reference in sovinto-spec/START_HERE.md",
+      "created": "2026-09-12",
       "commercialUse": "approved",
       "thirdParty": false,
       "license": "Proprietary"

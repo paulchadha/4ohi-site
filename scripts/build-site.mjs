@@ -103,7 +103,7 @@ const footer = () => `<footer class="site-footer">
     <div class="footer-brand"><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-promise">Games with heart. Apps with purpose.</p><p class="footer-copy">Independent software from South Dakota.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
     <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="gildenspire.html">GildenSpire</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">HeartStack Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a><a href="booyang-city.html">BooYang City</a><a href="funky-town.html">Funky Town</a></nav>
     <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2><a href="palace.html">Palace</a><a href="hearts-play.html">Hearts</a><a href="spades-play.html">Spades</a><a href="euchre-play.html">Euchre</a><a href="solitaire.html">Solitaire</a><a href="war.html">War</a></nav>
-    <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a><a href="whomly.html">Whomly</a><a href="sleep-amigo.html">Sleep Amigo</a></nav>
+    <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a>${appCatalog.map(app=>`<a href="${app.infoUrl}">${app.title}</a>`).join("")}</nav>
     <nav class="footer-group" aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="about.html#south-dakota">South Dakota</a><a href="news.html">News</a><a href="support.html">Support</a><a href="contact.html">Contact</a></nav>
     <nav class="footer-group footer-trust" aria-label="Trust"><h2>Trust</h2><a href="privacy.html">Privacy Approach</a><button class="footer-privacy-button" type="button" data-open-privacy>Your Privacy Choices</button><a href="privacy.html#do-not-sell">Do Not Sell or Share</a><a href="security.html">Security</a><a href="terms.html">Terms</a></nav>
   </div><div class="footer-bottom"><span>© 2026 ${company}. All rights reserved.</span><span>Thanks for playing.</span></div></div>
@@ -147,6 +147,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/production-2026.css">
   <link rel="stylesheet" href="assets/gildenspire.css">
   <link rel="stylesheet" href="assets/studio-expansion.css">
+  <link rel="stylesheet" href="assets/responsive-refinements.css">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -395,7 +396,7 @@ write("news-thumb-command-world-tour.html", legacyRedirectPage("Thumb Command st
 write("news-unicorn-land-adventures-development.html", legacyRedirectPage("Unicorn Land story", "news-building-unicorn-land-adventures.html"));
 write("news-welcome-to-four-of-hearts.html", legacyRedirectPage("Studio news", "news.html"));
 write("news-why-were-building-palace.html", legacyRedirectPage("Palace story", "news-palace-019-founder-review.html"));
-["bobby","heartstack","princess-land","unicorn-land","solitaire","war"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
+["bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
 write("booyang-city.html", booyangCityPage({page,company,siteUrl,game:gameByKey["booyang-city"]}));
 write("funky-town.html", funkyTownPage({page,company,siteUrl,game:gameByKey["funky-town"]}));
 const evilDoomMarkup = evilDoomPage({ page, company, siteUrl, game: gameByKey["evil-doom"] });
@@ -403,7 +404,7 @@ mkdirSync(resolve(root, "games/evil-doom-boy"), { recursive: true });
 write("games/evil-doom-boy/index.html", evilDoomMarkup.replace("<head>", '<head><base href="../../">'));
 write("lifestyle-apps.html", page({
   title:"Lifestyle Apps | 4OH Interactive",
-  description:"Whomly and Sleep Amigo are purposeful lifestyle applications in development at Four of Hearts Interactive.",
+  description:"SOVINTO, Whomly, and Sleep Amigo are purposeful lifestyle applications in development at Four of Hearts Interactive.",
   path:"/lifestyle-apps.html", current:"lifestyle", bodyClass:"production-page lifestyle-page",
   content:lifestylePage({apps:appCatalog})
 }));
@@ -454,7 +455,7 @@ write("play.html", page({
 write("about.html", page({ title: "About Four of Hearts Interactive | Independent Software Studio", description: "Four of Hearts Interactive is an independent software studio in South Dakota making original games and useful lifestyle apps.", path: "/about.html", current: "about", bodyClass: "about-page", content: `<section class="studio-bridge about-studio-hero" id="south-dakota"><div class="shell bridge-grid"><h1>Four of Hearts<br><em>Interactive.</em></h1><div><p class="eyebrow">Independent software from South Dakota.</p><p class="lede">${localeCopy("Four of Hearts Interactive is an independent software studio in South Dakota. We make original games and useful lifestyle apps with strong ideas, careful code, and respect for the people using them.","Four of Hearts Interactive is an independent software studio in South Dakota. We make original games and useful lifestyle apps with strong ideas, careful code, and respect for the people using them. Beauty.")}</p></div></div></section><section class="about-editorial"><div class="shell about-editorial-grid"><div><p class="eyebrow">What we make</p><h2>Fun games. Great apps.</h2><p>Original games, familiar card tables, productivity and lifestyle applications, plus fast custom builds for clients with a clear problem to solve.</p></div><div><p class="eyebrow">What we believe</p><h2>Care is part of the code.</h2><p>Customers deserve respect. Independent companies should still be allowed to make wonderfully strange things.</p><p>${localeCopy("Useful software does not need to know everything about you. We design for usefulness, not surveillance.","Useful software does not need to know everything about you. We design for usefulness, not surveillance. Seems fair.")}</p></div><div><p class="eyebrow">How we work</p><h2>Make it. Test it. Improve it.</h2><p>Careful engineering, thoughtful design, documentation, physical-device testing, accessibility, direct feedback, iteration, and privacy by design.</p></div><div id="the-name"><p class="eyebrow">Why Four of Hearts</p><h2>${localeCopy("4. Ohhh. I get it.","4. Ohhh. Beauty.")}</h2><p>${localeCopy("Four of Hearts became 4OH when somebody said it out loud and the name worked. No secret acronym. No corporate mythology. Just Four of Hearts said out loud.","Four of Hearts became 4OH when somebody said it out loud. We gave a polite little nod and kept the name. No secret acronym, bud.")}</p></div><div><p class="eyebrow">How we make money</p><h2>Customers pay for software.</h2><p>Good products cost money to build and maintain. We would rather charge clearly for useful work than let advertisers pay us to study the people using it.</p><a class="text-link" href="privacy.html#how-we-make-money">Read the business model →</a></div><div><p class="eyebrow">Old-school values</p><h2>Modern ambitions.</h2><p>Do the work carefully. Tell the truth about what is ready. Respect people’s time. Build for the long haul without losing the fun.</p><a class="text-link" href="privacy.html">Read our privacy approach →</a></div></div></section><section class="studio-services" aria-labelledby="about-services-title"><div class="shell services-grid"><div><p class="eyebrow">Creative technology studio</p><h2 id="about-services-title">Strong idea.<br><em>Working software.</em></h2></div><div class="services-copy"><p class="lede">Need a custom application or interactive prototype? We can move from a useful problem to working software quickly.</p><p>Clear scope. Direct communication. No inflated process theatre.</p><div class="actions"><a class="button" href="mailto:support@4ohi.com?subject=Custom%20application%20project">Talk about a project</a></div></div></div></section>` }));write("support.html", page({
   title: "Support | Four of Hearts Interactive",
   description: "Contact Four of Hearts Interactive support and learn what to include in a useful Internal Alpha test report.",
-  path: "/support.html",
+  path: "/support.html", bodyClass: "support-page",
   current: "support",
   content: `
     ${pageHero("Player support", "Let’s get you back to the table.", brandMessage("supportIntro", "Something broke? Blame the dealer for thirty seconds, then tell us what happened."))}
@@ -579,6 +580,7 @@ const routeAliases = {
   "lifestyle-apps/index.html": "../lifestyle-apps.html",
   "lifestyle-apps/people-lens/index.html": "../../whomly.html",
   "lifestyle-apps/whomly/index.html": "../../whomly.html",
+  "lifestyle-apps/sovinto/index.html": "../../sovinto.html",
   "lifestyle-apps/sleep-amigo/index.html": "../../sleep-amigo.html",
   "play/index.html": "../palace-play.html",
   "news/index.html": "../news.html",
@@ -601,7 +603,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
-  "index.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "news.html",
+  "index.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"

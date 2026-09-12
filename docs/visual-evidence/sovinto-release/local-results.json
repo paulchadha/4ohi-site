@@ -1,0 +1,912 @@
+[
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1100,
+    "height": 900,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 900,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "zoom": 1,
+    "route": "sovinto.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "index.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "lifestyle-apps.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "whomly.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "sleep-amigo.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "booyang-city.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "funky-town.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "gildenspire.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "about.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "news.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "support.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "zoom": 2,
+    "route": "sovinto.html",
+    "issues": []
+  }
+]
