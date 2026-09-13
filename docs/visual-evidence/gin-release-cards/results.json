@@ -1,0 +1,420 @@
+[
+  {
+    "width": 320,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 900,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 1280,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "games.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "palace.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "hearts-play.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "spades-play.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "euchre-play.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "solitaire.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "war.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "route": "gin-rummy.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 740,
+    "bots": 1,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 320,
+    "height": 740,
+    "bots": 3,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "bots": 1,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "bots": 3,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "bots": 1,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "bots": 3,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "bots": 1,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "bots": 3,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "bots": 1,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "bots": 3,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "bots": 1,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "bots": 3,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "bots": 1,
+    "route": "palace-play.html",
+    "issues": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "bots": 3,
+    "route": "palace-play.html",
+    "issues": []
+  }
+]

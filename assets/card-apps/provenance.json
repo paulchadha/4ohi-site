@@ -76,5 +76,18 @@
     ],
     "width": 1600,
     "height": 900
+  },
+  {
+    "product": "gin-rummy",
+    "path": "assets/card-apps/gin-rummy.webp",
+    "sourceName": "concept-source.png",
+    "sourceSHA256": "c577218515fa3548e8e22b6d3cb8d695793c61a9d3b68a386c5a42f62173564d",
+    "kind": "Original AI-generated Gin Rummy concept artwork; not a gameplay screenshot",
+    "originalSize": [
+      1536,
+      1024
+    ],
+    "width": 1536,
+    "height": 1024
   }
 ]

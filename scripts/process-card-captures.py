@@ -14,6 +14,8 @@ for key,(src,kind) in items.items():
  if key=='palace': im=im.crop((0,48,im.width,im.height-40))
  im.thumbnail((1600,1200)); target=Path('assets/card-apps')/(key+'.webp'); im.save(target,quality=90,method=6)
  records.append(dict(product=key,path=str(target).replace('\\','/'),sourceName=p.name,sourceSHA256=hashlib.sha256(p.read_bytes()).hexdigest(),kind=kind,originalSize=original,width=im.width,height=im.height))
+existing=json.loads(Path('assets/card-apps/provenance.json').read_text())
+records.extend(record for record in existing if record['product'] not in items)
 Path('assets/card-apps/provenance.json').write_text(json.dumps(records,indent=2))
 canvas=Image.new('RGB',(900,1000));y=0
 for key in ['hearts','solitaire','war']:

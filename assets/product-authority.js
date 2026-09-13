@@ -156,10 +156,13 @@
     history[replace ? "replaceState" : "pushState"]({}, "", `${next.pathname}${next.search}${next.hash}`);
   };
 
+  const localFragments = new WeakMap();
   const updateLinks = () => {
     document.querySelectorAll("a[href]").forEach((link) => {
       const raw = link.getAttribute("href");
-      if (raw?.startsWith("#")) { link.href = `${location.pathname}${location.search}${raw}`; return; }
+      if (raw?.startsWith("#")) localFragments.set(link, raw);
+      const fragment = localFragments.get(link);
+      if (fragment) { link.href = `${location.pathname}${location.search}${fragment}`; return; }
       if (!raw || raw.startsWith("mailto:") || raw.startsWith("tel:") || /^https?:/i.test(raw)) return;
       // Nested product pages declare a site-root base for navigation and assets.
       const next = new URL(raw, document.baseURI);

@@ -1,0 +1,2844 @@
+{
+  "target": "http://127.0.0.1:54906",
+  "pages": 111,
+  "linksAndAssets": 237,
+  "failures": [],
+  "results": [
+    {
+      "route": "games/gin-rummy/index.html",
+      "issues": []
+    },
+    {
+      "route": "404.html",
+      "issues": []
+    },
+    {
+      "route": "gin-rummy.html",
+      "issues": []
+    },
+    {
+      "route": "about.html",
+      "issues": []
+    },
+    {
+      "route": "about/index.html",
+      "issues": []
+    },
+    {
+      "route": "booyang-city.html",
+      "issues": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "issues": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "issues": []
+    },
+    {
+      "route": "contact.html",
+      "issues": []
+    },
+    {
+      "route": "euchre-play.html",
+      "issues": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "evil-doom-boy-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "evil-doom-girl-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "funky-town.html",
+      "issues": []
+    },
+    {
+      "route": "games/bobby-the-breadasaurus/index.html",
+      "issues": []
+    },
+    {
+      "route": "games.html",
+      "issues": []
+    },
+    {
+      "route": "games/booyang-city/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/commander-thum-b/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-adventures-shadow-run/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/euchre/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-adventures/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-boy-adventures/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-boy/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-girl-adventures/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-girl/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/funky-town/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/hearts/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/gildenspire/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/palace/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/spades/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/solitaire/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/thumb-command/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/war/index.html",
+      "issues": []
+    },
+    {
+      "route": "hearts-play.html",
+      "issues": []
+    },
+    {
+      "route": "gildenspire.html",
+      "issues": []
+    },
+    {
+      "route": "heartstack-unicorn-blast.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps.html",
+      "issues": []
+    },
+    {
+      "route": "index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/people-lens/index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/sovinto/index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/sleep-amigo/index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/whomly/index.html",
+      "issues": []
+    },
+    {
+      "route": "news-ai-in-the-workshop-and-the-product.html",
+      "issues": []
+    },
+    {
+      "route": "news-bobby-and-the-breadstone.html",
+      "issues": []
+    },
+    {
+      "route": "news-bobby-the-breadasaurus-joins-the-family.html",
+      "issues": []
+    },
+    {
+      "route": "news-bobby-tower-defense-takes-shape.html",
+      "issues": []
+    },
+    {
+      "route": "news-booyang-a-town-that-grows-with-play.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-a-safer-card-table.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-a-town-that-refuses-to-look-normal.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-commander-thumb.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-dragons-that-actually-feel-different.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-unicorn-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "news-card-table-adds-solitaire-war.html",
+      "issues": []
+    },
+    {
+      "route": "news-commander-thumb-is-coming.html",
+      "issues": []
+    },
+    {
+      "route": "news-designing-the-alien-invasion.html",
+      "issues": []
+    },
+    {
+      "route": "news-evil-doom-girl-enters-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-evil-doom-two-heroes-one-adventure.html",
+      "issues": []
+    },
+    {
+      "route": "news-evil-doom-two-heroes-one-route.html",
+      "issues": []
+    },
+    {
+      "route": "news-from-search-to-opportunity-building-whomly.html",
+      "issues": []
+    },
+    {
+      "route": "news-gildenspire-a-dragon-built-to-move.html",
+      "issues": []
+    },
+    {
+      "route": "news-heartstack-joins-the-workbench.html",
+      "issues": []
+    },
+    {
+      "route": "news-inside-princess-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "news-heartstack-unicorn-blast-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-introducing-gildenspire-flight-or-fight.html",
+      "issues": []
+    },
+    {
+      "route": "news-making-sleep-data-feel-human.html",
+      "issues": []
+    },
+    {
+      "route": "news-meet-sleep-amigo.html",
+      "issues": []
+    },
+    {
+      "route": "news-meet-the-blueguard.html",
+      "issues": []
+    },
+    {
+      "route": "news-palace-019-founder-review.html",
+      "issues": []
+    },
+    {
+      "route": "news-meet-the-four-games.html",
+      "issues": []
+    },
+    {
+      "route": "news-people-lens-is-becoming-whomly.html",
+      "issues": []
+    },
+    {
+      "route": "news-palace-enters-founder-testing.html",
+      "issues": []
+    },
+    {
+      "route": "news-people-lens-joins-the-lifestyle-line.html",
+      "issues": []
+    },
+    {
+      "route": "news-princess-land-adventures-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-shadow-run-enters-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-small-fixes-that-change-the-feel.html",
+      "issues": []
+    },
+    {
+      "route": "news-the-city-is-the-base.html",
+      "issues": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "issues": []
+    },
+    {
+      "route": "news-thumb-command-world-tour.html",
+      "issues": []
+    },
+    {
+      "route": "news-unicorn-land-adventures-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-welcome-to-booyang-city.html",
+      "issues": []
+    },
+    {
+      "route": "news-welcome-to-four-of-hearts.html",
+      "issues": []
+    },
+    {
+      "route": "news-why-flying-has-to-be-fun.html",
+      "issues": []
+    },
+    {
+      "route": "news-welcome-to-the-thum-system.html",
+      "issues": []
+    },
+    {
+      "route": "news-why-were-building-palace.html",
+      "issues": []
+    },
+    {
+      "route": "news-why-were-building-sleep-amigo.html",
+      "issues": []
+    },
+    {
+      "route": "news.html",
+      "issues": []
+    },
+    {
+      "route": "news/index.html",
+      "issues": []
+    },
+    {
+      "route": "palace-faq.html",
+      "issues": []
+    },
+    {
+      "route": "palace-play.html",
+      "issues": []
+    },
+    {
+      "route": "palace-story.html",
+      "issues": []
+    },
+    {
+      "route": "palace.html",
+      "issues": []
+    },
+    {
+      "route": "people-lens.html",
+      "issues": []
+    },
+    {
+      "route": "play.html",
+      "issues": []
+    },
+    {
+      "route": "play/index.html",
+      "issues": []
+    },
+    {
+      "route": "princess-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "privacy.html",
+      "issues": []
+    },
+    {
+      "route": "privacy/index.html",
+      "issues": []
+    },
+    {
+      "route": "security.html",
+      "issues": []
+    },
+    {
+      "route": "sleep-amigo.html",
+      "issues": []
+    },
+    {
+      "route": "solitaire.html",
+      "issues": []
+    },
+    {
+      "route": "sovinto.html",
+      "issues": []
+    },
+    {
+      "route": "spades-play.html",
+      "issues": []
+    },
+    {
+      "route": "support.html",
+      "issues": []
+    },
+    {
+      "route": "support/index.html",
+      "issues": []
+    },
+    {
+      "route": "terms.html",
+      "issues": []
+    },
+    {
+      "route": "thumb-command.html",
+      "issues": []
+    },
+    {
+      "route": "unicorn-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "war.html",
+      "issues": []
+    },
+    {
+      "route": "whomly.html",
+      "issues": []
+    }
+  ],
+  "checked": [
+    {
+      "url": "http://127.0.0.1:54906/assets/favicon.png?v=e3eeb5210a2e",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-reconstruction.css?v=59dd790a5142",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/playable-studio.css?v=9b62c9d345f8",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-portfolio.css?v=88889295c857",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-catalog.css?v=472c9c6571ea",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-fixes.css?v=bd1e38e6b40e",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/founder-corrections.css?v=e9c4d7cfa7ab",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/thumb-command.css?v=78f59cf96671",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/privacy-center.css?v=54d4cd656e94",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/production-2026.css?v=0635686baaa1",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire.css?v=a2a84c6ae3fb",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion.css?v=b0a88189a382",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/responsive-refinements.css?v=406caf6271f4",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-game-stories.css?v=659954c9d7c0",
+      "kind": "LINK",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/asset-manifest.js?v=8415a6aae16f",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/site-config.js?v=40d0f6221a9f",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/site.js?v=c0345e44f62b",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/privacy-center.js?v=eaabd9a69b38",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/canadian-copy.js?v=96b90eedf1e7",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/canadian-copy-v2.js?v=1dd6e1ac9889",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/launch-countdown.js?v=e12b73d95f5b",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/product-authority.js?v=58dd1c24c546",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/release-strip.js?v=30895a559a29",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/power-cards.js?v=29ce0e87398a",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-reconstruction.js?v=1a77a8a891ba",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/playable-studio.js?v=169cbd4585d9",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-portfolio.js?v=88825544c776",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/canadian-mode.js?v=7c46f3c87bf1",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/production-locales.js?v=fed630ed1b4d",
+      "kind": "SCRIPT",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/index.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/brand-mark-4oh.webp?v=f884669fed67",
+      "kind": "IMG",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gin-rummy.html#main",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gin-rummy.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/hearts-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/spades-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/euchre-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/solitaire.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/war.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/thumb-command/?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/bobby-the-breadasaurus.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/evil-doom-boy/?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/booyang-city.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/funky-town.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/heartstack-unicorn-blast.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/princess-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/unicorn-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/sovinto.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/whomly.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/sleep-amigo.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/lifestyle-apps.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/about.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/support.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html",
+        "404.html",
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/gin-rummy.webp?v=e613a42280a9",
+      "kind": "IMG",
+      "from": [
+        "games/gin-rummy/index.html",
+        "gin-rummy.html",
+        "bobby-the-breadasaurus.html",
+        "commander-thumb.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/gin-rummy.webp?v=e613a42280a9&lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/contact.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gin-rummy.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games.html?lang=en#card-table",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "gin-rummy.html",
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/about.html?lang=en#south-dakota",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/privacy.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/security.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/terms.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/privacy.html?lang=en#do-not-sell",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/privacy.html?lang=en#california-notice",
+      "kind": "A",
+      "from": [
+        "games/gin-rummy/index.html",
+        "404.html",
+        "gin-rummy.html",
+        "about.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/404.html#main",
+      "kind": "A",
+      "from": [
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/about.html#main",
+      "kind": "A",
+      "from": [
+        "about.html",
+        "about/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/privacy.html?lang=en#how-we-make-money",
+      "kind": "A",
+      "from": [
+        "about.html",
+        "about/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/booyang-city.html#main",
+      "kind": "A",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/booyang-city-hero-1600.webp?v=989d19fcbfc8",
+      "kind": "IMG",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html",
+        "news-booyang-a-town-that-grows-with-play.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/booyang-city.html#experience",
+      "kind": "A",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-welcome-to-booyang-city.html?lang=en",
+      "kind": "A",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html",
+        "news-building-commander-thumb.html",
+        "news-commander-thumb-is-coming.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/booyang-city-play-960.webp?v=2d5c3c39cdb6",
+      "kind": "IMG",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/bobby/bobby-hero-1200.webp?v=7596405fa048",
+      "kind": "IMG",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "games/bobby-the-breadasaurus/index.html",
+        "games.html",
+        "games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-bobby-and-the-breadstone.html?lang=en",
+      "kind": "A",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "games/bobby-the-breadasaurus/index.html",
+        "news-evil-doom-girl-enters-development.html",
+        "news-evil-doom-two-heroes-one-adventure.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/icon-palace-4hearts.webp?v=f82b9541bfdb",
+      "kind": "IMG",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "commander-thumb.html",
+        "games/bobby-the-breadasaurus/index.html",
+        "games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/icon-hearts-4hearts.webp?v=dafa2aeb00de",
+      "kind": "IMG",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "commander-thumb.html",
+        "games/bobby-the-breadasaurus/index.html",
+        "games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/bobby-the-breadasaurus.html#main",
+      "kind": "A",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "games/bobby-the-breadasaurus/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/thumb-command/thumb-command-chicago-gameplay-1600.webp?v=545754dab230",
+      "kind": "IMG",
+      "from": [
+        "commander-thumb.html",
+        "games/thumb-command/index.html",
+        "thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-thumb-command-save-planet-earth.html?lang=en",
+      "kind": "A",
+      "from": [
+        "commander-thumb.html",
+        "games/thumb-command/index.html",
+        "news-making-sleep-data-feel-human.html",
+        "news-meet-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/thumb-command/#main",
+      "kind": "A",
+      "from": [
+        "commander-thumb.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/euchre.webp?v=673b38609ed8",
+      "kind": "IMG",
+      "from": [
+        "euchre-play.html",
+        "games.html",
+        "games/euchre/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/contact.html#main",
+      "kind": "A",
+      "from": [
+        "contact.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/euchre-play.html#main",
+      "kind": "A",
+      "from": [
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/euchre-play.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/euchre.webp?v=673b38609ed8&lang=en",
+      "kind": "A",
+      "from": [
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/evil-doom-boy/#main",
+      "kind": "A",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/evil-doom/evil-doom-boy-preview.png?v=f68bf85ff10a",
+      "kind": "IMG",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/evil-doom-boy/#choose-hero",
+      "kind": "A",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/evil-doom/evil-doom-girl-preview.png?v=464226804a1d",
+      "kind": "IMG",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/evil-doom/evil-doom-worlds-purple-1440.webp?v=190c4b45992c",
+      "kind": "IMG",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/funky-town-hero-1600.webp?v=131ac55ffe92",
+      "kind": "IMG",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/funky-town.html#main",
+      "kind": "A",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/funky-town.html#experience",
+      "kind": "A",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-building-a-town-that-refuses-to-look-normal.html?lang=en",
+      "kind": "A",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html",
+        "news-building-unicorn-land-adventures.html",
+        "news-making-sleep-data-feel-human.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/funky-town-play-960.webp?v=b840e6e08393",
+      "kind": "IMG",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-tile-960.webp?v=e90e3af8b6f4",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games.html#main",
+      "kind": "A",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/thumb-command/thumb-command-app-icon-768.webp?v=d93855b560b8",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/portfolio-2026/evil-doom-card.png?v=60fc6c020b83",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/booyang-city-tile-960.webp?v=a0db100d8303",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/funky-town-tile-960.webp?v=4b6961cd84e7",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/heartstack-2026/heartstack-key-art.webp?v=8fd346b48375",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/portfolio-2026/princess-land-card.png?v=41e305773c0d",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/portfolio-2026/unicorn-land-card.png?v=03773f1b1498",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/icon-spades-4hearts.webp?v=0cd7bb027061",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/icon-euchre-4hearts.webp?v=979e7126b08d",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-games/solitaire-tile.webp?v=60deb102d44b",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-building-a-safer-card-table.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-games/war-tile.webp?v=dd0f868b4d33",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-hero-1600.webp",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/gildenspire/index.html",
+        "games/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/palace.webp?v=d878543dc82f",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "games/palace/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/hearts.webp?v=d69f6547515b",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/hearts/index.html",
+        "games/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/spades.webp?v=398e92d6367e",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "games/spades/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/solitaire.webp?v=b2a5449ecab6",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "games/solitaire/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/war.webp?v=39dfe2c373d1",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "games/war/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/evil-doom-boy/index.html#main",
+      "kind": "A",
+      "from": [
+        "games/evil-doom-boy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/hearts.webp?v=d69f6547515b&lang=en",
+      "kind": "A",
+      "from": [
+        "games/hearts/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/evil-doom-boy/index.html#choose-hero",
+      "kind": "A",
+      "from": [
+        "games/evil-doom-boy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/hearts-play.html#main",
+      "kind": "A",
+      "from": [
+        "games/hearts/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/hearts-play.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/hearts/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html#main",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-introducing-gildenspire-flight-or-fight.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "games/gildenspire/index.html",
+        "gildenspire.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html#raise",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "games/gildenspire/index.html",
+        "gildenspire.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html#fly",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html#fight",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-raise-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-fly-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html#dragons",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html#golden-egg",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/gildenspire.html#development",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-fight-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-dragons-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-golden-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-why-flying-has-to-be-fun.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html",
+        "news-building-dragons-that-actually-feel-different.html",
+        "news-introducing-gildenspire-flight-or-fight.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-building-dragons-that-actually-feel-different.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html",
+        "news-from-search-to-opportunity-building-whomly.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/palace.webp?v=d878543dc82f&lang=en",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace-faq.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace-faq.html",
+        "palace-play.html",
+        "palace-story.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace.html#main",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/spades.webp?v=398e92d6367e&lang=en",
+      "kind": "A",
+      "from": [
+        "games/spades/index.html",
+        "spades-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/spades-play.html#main",
+      "kind": "A",
+      "from": [
+        "games/spades/index.html",
+        "spades-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/spades-play.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/spades/index.html",
+        "spades-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/solitaire.html#main",
+      "kind": "A",
+      "from": [
+        "games/solitaire/index.html",
+        "solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/solitaire.webp?v=b2a5449ecab6&lang=en",
+      "kind": "A",
+      "from": [
+        "games/solitaire/index.html",
+        "solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/solitaire.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/solitaire/index.html",
+        "solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/games/thumb-command/index.html#main",
+      "kind": "A",
+      "from": [
+        "games/thumb-command/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/war.html#main",
+      "kind": "A",
+      "from": [
+        "games/war/index.html",
+        "war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/war.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/war/index.html",
+        "war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/card-apps/war.webp?v=39dfe2c373d1&lang=en",
+      "kind": "A",
+      "from": [
+        "games/war/index.html",
+        "war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/heartstack-2026/heartstack-gameplay.webp?v=96de3950143d",
+      "kind": "IMG",
+      "from": [
+        "heartstack-unicorn-blast.html",
+        "news-heartstack-joins-the-workbench.html",
+        "news-heartstack-unicorn-blast-development.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-heartstack-joins-the-workbench.html?lang=en",
+      "kind": "A",
+      "from": [
+        "heartstack-unicorn-blast.html",
+        "news-evil-doom-girl-enters-development.html",
+        "news-evil-doom-two-heroes-one-adventure.html",
+        "news-evil-doom-two-heroes-one-route.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/heartstack-unicorn-blast.html#main",
+      "kind": "A",
+      "from": [
+        "heartstack-unicorn-blast.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/lifestyle-apps.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/index.html",
+        "lifestyle-apps.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/sovinto/sovinto-tile-1024.png?v=efcf30fc55ae",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/index.html",
+        "lifestyle-apps/index.html",
+        "lifestyle-apps.html",
+        "lifestyle-apps.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/whomly-tile-720.webp?v=ceab096dfa21",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/index.html",
+        "lifestyle-apps/index.html",
+        "lifestyle-apps.html",
+        "lifestyle-apps.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/sleep-amigo-tile-720.webp?v=a24e3d7b5e7d",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/index.html",
+        "lifestyle-apps/index.html",
+        "lifestyle-apps.html",
+        "lifestyle-apps.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-booyang-a-town-that-grows-with-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "index.html",
+        "news-gildenspire-a-dragon-built-to-move.html",
+        "news-palace-019-founder-review.html",
+        "news-palace-enters-founder-testing.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/index.html#main",
+      "kind": "A",
+      "from": [
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/about.html?lang=en#the-name",
+      "kind": "A",
+      "from": [
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-gildenspire-a-dragon-built-to-move.html?lang=en",
+      "kind": "A",
+      "from": [
+        "index.html",
+        "news-booyang-a-town-that-grows-with-play.html",
+        "news-small-fixes-that-change-the-feel.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-small-fixes-that-change-the-feel.html?lang=en",
+      "kind": "A",
+      "from": [
+        "index.html",
+        "news-ai-in-the-workshop-and-the-product.html",
+        "news-gildenspire-a-dragon-built-to-move.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-from-search-to-opportunity-building-whomly.html?lang=en",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "news-building-dragons-that-actually-feel-different.html",
+        "news-welcome-to-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/whomly-board-1200.webp?v=49dc093b904d",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/whomly.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/whomly.html#discover",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/whomly-search-720.webp?v=a384c284faf7",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/sovinto.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sovinto/index.html",
+        "sovinto.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/sleep-amigo.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-making-sleep-data-feel-human.html?lang=en",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "news-building-a-town-that-refuses-to-look-normal.html",
+        "news-building-commander-thumb.html",
+        "news-commander-thumb-is-coming.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/sleep-amigo-board-1024.webp?v=4498080782f7",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news-why-were-building-sleep-amigo.html",
+        "news.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/sleep-amigo.html#night",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/sleep-amigo-night-720.webp?v=399f3ebf55af",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/sleep-amigo-features-1200.webp?v=8d0021ee0026",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-ai-in-the-workshop-and-the-product.html#main",
+      "kind": "A",
+      "from": [
+        "news-ai-in-the-workshop-and-the-product.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/portfolio-2026/bobby-gameplay.webp?v=a3b553a6b056",
+      "kind": "IMG",
+      "from": [
+        "news-bobby-and-the-breadstone.html",
+        "news-bobby-the-breadasaurus-joins-the-family.html",
+        "news-bobby-tower-defense-takes-shape.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-evil-doom-two-heroes-one-route.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-bobby-and-the-breadstone.html",
+        "news-bobby-the-breadasaurus-joins-the-family.html",
+        "news-bobby-tower-defense-takes-shape.html",
+        "news-heartstack-joins-the-workbench.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-why-were-building-sleep-amigo.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-bobby-and-the-breadstone.html",
+        "news-bobby-the-breadasaurus-joins-the-family.html",
+        "news-bobby-tower-defense-takes-shape.html",
+        "news-building-a-safer-card-table.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-bobby-and-the-breadstone.html#main",
+      "kind": "A",
+      "from": [
+        "news-bobby-and-the-breadstone.html",
+        "news-bobby-the-breadasaurus-joins-the-family.html",
+        "news-bobby-tower-defense-takes-shape.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-palace-019-founder-review.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-booyang-a-town-that-grows-with-play.html",
+        "news-building-a-safer-card-table.html",
+        "news-card-table-adds-solitaire-war.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-booyang-a-town-that-grows-with-play.html#main",
+      "kind": "A",
+      "from": [
+        "news-booyang-a-town-that-grows-with-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-card-table-adds-solitaire-war.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-a-safer-card-table.html",
+        "news-card-table-adds-solitaire-war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/funky-town-social-1200.webp?v=261423a87f26",
+      "kind": "IMG",
+      "from": [
+        "news-building-a-town-that-refuses-to-look-normal.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html",
+        "news/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-building-unicorn-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-building-a-town-that-refuses-to-look-normal.html",
+        "news-inside-princess-land-adventures.html",
+        "news-princess-land-adventures-development.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-building-a-town-that-refuses-to-look-normal.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-a-town-that-refuses-to-look-normal.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-thumb-command-save-planet-earth.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-commander-thumb.html",
+        "news-commander-thumb-is-coming.html",
+        "news-designing-the-alien-invasion.html",
+        "news-meet-the-blueguard.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg?v=7695fc68b5e4",
+      "kind": "IMG",
+      "from": [
+        "news-building-commander-thumb.html",
+        "news-commander-thumb-is-coming.html",
+        "news-designing-the-alien-invasion.html",
+        "news-meet-the-blueguard.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-building-dragons-that-actually-feel-different.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-dragons-that-actually-feel-different.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-dragons-960.webp?v=397ed986db05",
+      "kind": "IMG",
+      "from": [
+        "news-building-dragons-that-actually-feel-different.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html",
+        "news/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/portfolio-2026/unicorn-land-world.webp?v=59eb44db364a",
+      "kind": "IMG",
+      "from": [
+        "news-building-unicorn-land-adventures.html",
+        "news-unicorn-land-adventures-development.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-inside-princess-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-building-unicorn-land-adventures.html",
+        "news-people-lens-is-becoming-whomly.html",
+        "news-people-lens-joins-the-lifestyle-line.html",
+        "news-unicorn-land-adventures-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-building-unicorn-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-unicorn-land-adventures.html",
+        "news-unicorn-land-adventures-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/evil-doom/evil-doom-heroes-purple-1200.webp?v=d7eaea8d308f",
+      "kind": "IMG",
+      "from": [
+        "news-evil-doom-girl-enters-development.html",
+        "news-evil-doom-two-heroes-one-adventure.html",
+        "news-evil-doom-two-heroes-one-route.html",
+        "news-shadow-run-enters-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-evil-doom-two-heroes-one-route.html#main",
+      "kind": "A",
+      "from": [
+        "news-evil-doom-girl-enters-development.html",
+        "news-evil-doom-two-heroes-one-adventure.html",
+        "news-evil-doom-two-heroes-one-route.html",
+        "news-shadow-run-enters-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-from-search-to-opportunity-building-whomly.html#main",
+      "kind": "A",
+      "from": [
+        "news-from-search-to-opportunity-building-whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/whomly-social-1200.webp?v=d55c1053f040",
+      "kind": "IMG",
+      "from": [
+        "news-from-search-to-opportunity-building-whomly.html",
+        "news-people-lens-is-becoming-whomly.html",
+        "news-people-lens-joins-the-lifestyle-line.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-fly-960.webp?v=edfa05008e12",
+      "kind": "IMG",
+      "from": [
+        "news-gildenspire-a-dragon-built-to-move.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news-why-flying-has-to-be-fun.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-gildenspire-a-dragon-built-to-move.html#main",
+      "kind": "A",
+      "from": [
+        "news-gildenspire-a-dragon-built-to-move.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-people-lens-is-becoming-whomly.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-heartstack-joins-the-workbench.html",
+        "news-inside-princess-land-adventures.html",
+        "news-heartstack-unicorn-blast-development.html",
+        "news-princess-land-adventures-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-heartstack-joins-the-workbench.html#main",
+      "kind": "A",
+      "from": [
+        "news-heartstack-joins-the-workbench.html",
+        "news-heartstack-unicorn-blast-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-inside-princess-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "news-inside-princess-land-adventures.html",
+        "news-princess-land-adventures-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/portfolio-2026/princess-land-world.webp?v=8e6f94ba964a",
+      "kind": "IMG",
+      "from": [
+        "news-inside-princess-land-adventures.html",
+        "news-princess-land-adventures-development.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/gildenspire/gildenspire-social-1200x630.jpg?v=cc77d808650d",
+      "kind": "IMG",
+      "from": [
+        "news-introducing-gildenspire-flight-or-fight.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html",
+        "news/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-ai-in-the-workshop-and-the-product.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-introducing-gildenspire-flight-or-fight.html",
+        "news-small-fixes-that-change-the-feel.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-introducing-gildenspire-flight-or-fight.html#main",
+      "kind": "A",
+      "from": [
+        "news-introducing-gildenspire-flight-or-fight.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/sleep-amigo-social-1200.webp?v=3aa186dcffde",
+      "kind": "IMG",
+      "from": [
+        "news-making-sleep-data-feel-human.html",
+        "news-meet-sleep-amigo.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-making-sleep-data-feel-human.html#main",
+      "kind": "A",
+      "from": [
+        "news-making-sleep-data-feel-human.html",
+        "news-meet-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-palace-019-founder-review.html#main",
+      "kind": "A",
+      "from": [
+        "news-palace-019-founder-review.html",
+        "news-palace-enters-founder-testing.html",
+        "news-why-were-building-palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-card-table-adds-solitaire-war.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-palace-019-founder-review.html",
+        "news-palace-enters-founder-testing.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news-why-were-building-palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-people-lens-is-becoming-whomly.html#main",
+      "kind": "A",
+      "from": [
+        "news-people-lens-is-becoming-whomly.html",
+        "news-people-lens-joins-the-lifestyle-line.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-small-fixes-that-change-the-feel.html#main",
+      "kind": "A",
+      "from": [
+        "news-small-fixes-that-change-the-feel.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-welcome-to-booyang-city.html#main",
+      "kind": "A",
+      "from": [
+        "news-welcome-to-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/studio-expansion/booyang-city-social-1200.webp?v=4eb89db72f3d",
+      "kind": "IMG",
+      "from": [
+        "news-welcome-to-booyang-city.html",
+        "news-welcome-to-four-of-hearts.html",
+        "news.html",
+        "news/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news.html#main",
+      "kind": "A",
+      "from": [
+        "news-welcome-to-four-of-hearts.html",
+        "news.html",
+        "news/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/feed.xml?lang=en",
+      "kind": "A",
+      "from": [
+        "news-welcome-to-four-of-hearts.html",
+        "news.html",
+        "news/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-why-flying-has-to-be-fun.html#main",
+      "kind": "A",
+      "from": [
+        "news-why-flying-has-to-be-fun.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news-why-were-building-sleep-amigo.html#main",
+      "kind": "A",
+      "from": [
+        "news-why-were-building-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/news.html?tag=palace&lang=en",
+      "kind": "A",
+      "from": [
+        "palace-faq.html",
+        "palace-play.html",
+        "palace-story.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/palace-web.css?v=2ea02f700dc0",
+      "kind": "LINK",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace-faq.html#main",
+      "kind": "A",
+      "from": [
+        "palace-faq.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace-faq.html#faq",
+      "kind": "A",
+      "from": [
+        "palace-faq.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/palace-web.js?v=6a65d75f8ed2",
+      "kind": "SCRIPT",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace-play.html#main",
+      "kind": "A",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/assets/palace-web/palace-app-icon.png",
+      "kind": "IMG",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace-faq.html",
+      "kind": "A",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/palace-story.html#main",
+      "kind": "A",
+      "from": [
+        "palace-story.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/play.html#main",
+      "kind": "A",
+      "from": [
+        "play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/princess-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "princess-land-adventures.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/privacy.html#main",
+      "kind": "A",
+      "from": [
+        "privacy.html",
+        "privacy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/privacy.html#formal-policy",
+      "kind": "A",
+      "from": [
+        "privacy.html",
+        "privacy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/security.html#main",
+      "kind": "A",
+      "from": [
+        "security.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/support.html#main",
+      "kind": "A",
+      "from": [
+        "support.html",
+        "support/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/terms.html#main",
+      "kind": "A",
+      "from": [
+        "terms.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/thumb-command.html#main",
+      "kind": "A",
+      "from": [
+        "thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:54906/unicorn-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "unicorn-land-adventures.html"
+      ],
+      "issues": []
+    }
+  ]
+}

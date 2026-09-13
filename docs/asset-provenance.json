@@ -141,6 +141,29 @@
       "thirdParty": false,
       "license": "Proprietary",
       "notes": "Existing Four of Hearts app material supplied through local project evidence; see assets/card-apps/provenance.json and docs/CARD-GAMES-2026-09-12.md."
+    },
+    {
+      "paths": [
+        "assets/card-apps/gin-rummy.webp",
+        "assets/gin-rummy/concept-source.png"
+      ],
+      "source": "Original AI-generated concept artwork created with built-in ImageGen for this user-authorized project.",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Illustration only; not an app capture. Original output retained. See assets/card-apps/provenance.json."
+    },
+    {
+      "paths": [
+        "assets/gin-rummy/development-phone.webp"
+      ],
+      "source": "Actual development-build screenshot supplied by the Gin Rummy game owner, phone-game.png.",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Test players only. Public HTTPS hosting and native packaging were not yet configured; see assets/gin-rummy/development-capture.json."
     }
   ]
 }
