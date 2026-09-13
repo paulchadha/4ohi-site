@@ -21,6 +21,7 @@ const { chromium } = require('playwright');
     const menu=async()=>{const b=p.locator('.menu-toggle');if(await b.isVisible()&&await b.getAttribute('aria-expanded')!=='true')await b.click();};
     const check=(value,message)=>{if(!value)issues.push(message);};
     try {
+      if(game==='thumb-command'){await p.goto(base+'/games/commander-thum-b/index.html?lang='+lang,{waitUntil:'networkidle'});await p.waitForURL(u=>u.pathname==='/games/thumb-command/'&&u.searchParams.get('lang')===lang);}
       await p.goto(base+'/games.html?lang='+lang,{waitUntil:'networkidle'});await dismiss();
       await p.locator('#arcade-adventure a.production-card').filter({hasText:game==='evil-doom-boy'?'Evil Doom Boy':'Thumb Command'}).click();
       await p.waitForURL(u=>u.pathname==='/games/'+game+'/');
