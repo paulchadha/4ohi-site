@@ -1,5 +1,163 @@
 [
   {
+    "slug": "booyang-a-town-that-grows-with-play",
+    "title": "BooYang City: a town that grows with play",
+    "description": "Animal friends, pastry inventions, go-karts, and new places to explore are taking shape in the development build.",
+    "date": "2026-09-12",
+    "category": "Development",
+    "gameKey": "booyang-city",
+    "tags": [
+      "development",
+      "booyang-city",
+      "games"
+    ],
+    "featured": true,
+    "image": "assets/studio-expansion/booyang-city-hero-1600.webp",
+    "imageAlt": "BooYang City development artwork",
+    "body": [
+      {
+        "heading": "September 11–12: from feeding fixes to new adventures",
+        "paragraphs": [
+          "Published September 12, 2026. A September 11 checkpoint repaired animal feeding. The September 12 development build extends that everyday play into a growing toy town."
+        ]
+      },
+      {
+        "heading": "A small beginning, a bigger world",
+        "paragraphs": [
+          "The animal center can grow into a zoo and nature reserve, opening go-kart trails and helicopter exploration. The bakery grows through pastry inventions into a restaurant and a five-star rooftop tasting party. Familiar care, recipes, and placement activities remain available."
+        ]
+      },
+      {
+        "heading": "What we have checked",
+        "paragraphs": [
+          "The full growth paths and saved progress were exercised in the browser. On a Samsung phone, the latest build passed feeding and play, the first expansion, recipe saving, and return after a cold launch. Higher-stage kart, helicopter, and restaurant play still needs further device testing. This is development progress, not a public app release."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "gildenspire-a-dragon-built-to-move",
+    "title": "GildenSpire: a dragon built to move",
+    "description": "An original animated dragon, richer terrain, and a completed native campaign check move the world forward.",
+    "date": "2026-09-12",
+    "category": "Development",
+    "gameKey": "gildenspire",
+    "tags": [
+      "development",
+      "gildenspire",
+      "games"
+    ],
+    "featured": false,
+    "image": "assets/gildenspire/gildenspire-fly-960.webp",
+    "imageAlt": "GildenSpire dragon-flight concept artwork",
+    "body": [
+      {
+        "heading": "September 12: movement, models, and a world to fly through",
+        "paragraphs": [
+          "Published September 12, 2026. The latest development checkpoint brings an original rigged dragon with 17 animation clips, leafy trees, a more detailed tower, and reworked islands and alpine terrain."
+        ]
+      },
+      {
+        "heading": "Making movement belong to the creature",
+        "paragraphs": [
+          "This pass repaired flight poses, animation transitions, species ornaments, and effects attached to the dragon. It also addressed floating terrain details and an obstruction in the practice area."
+        ]
+      },
+      {
+        "heading": "Progress with work still ahead",
+        "paragraphs": [
+          "The candidate build passed its fresh-player and campaign checks on a Samsung phone, including victories, defeat, retry, and saved-game reload. Art polish, more distinct species anatomy, and sustained performance testing remain unfinished. The images here show the established visual direction; they are not screenshots of every new asset. No public release date has been announced."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "small-fixes-that-change-the-feel",
+    "title": "Small fixes that change the feel",
+    "description": "Battle speed, sleep refreshes, saved progress, and creative tools received focused attention in the latest audit.",
+    "date": "2026-09-12",
+    "category": "Studio",
+    "tags": [
+      "development",
+      "studio",
+      "company",
+      "games",
+      "card-table",
+      "lifestyle-apps"
+    ],
+    "featured": false,
+    "image": "assets/brand-mark-4oh.webp",
+    "imageAlt": "Four of Hearts Interactive studio mark",
+    "body": [
+      {
+        "heading": "September 12: careful engineering in practice",
+        "paragraphs": [
+          "Published September 12, 2026. Recent work focused on how the apps behave when you actually use them: changing a setting, returning to a game, refreshing information, or saving something you made."
+        ]
+      },
+      {
+        "heading": "A battle at your pace",
+        "paragraphs": [
+          "Evil Doom Boy’s development build now offers 0.5×, 1×, 2×, and 4× battle speed. Changing speed while paused keeps the battle paused. The controls and combat behavior were checked in the browser and on a Samsung phone."
+        ]
+      },
+      {
+        "heading": "A refresh that finishes",
+        "paragraphs": [
+          "Sleep Amigo received fixes for refresh completion and an unnecessary write that could leave a finished refresh waiting. Repeated refreshes and a process restart passed on the tested Samsung. Broader device and provider testing remains to be done."
+        ]
+      },
+      {
+        "heading": "The details deserve attention",
+        "paragraphs": [
+          "The same audit addressed card-game timing and controls, Princess Land room-photo readiness, and Unicorn Land photo and landscape-entry issues. These were focused development checks—not certification that every app or feature is ready for release."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "ai-in-the-workshop-and-the-product",
+    "title": "AI in the workshop—and in useful products",
+    "description": "How AI-assisted development and carefully chosen product capabilities fit our old-school values.",
+    "date": "2026-09-12",
+    "category": "Studio",
+    "tags": [
+      "development",
+      "studio",
+      "company",
+      "lifestyle-apps"
+    ],
+    "featured": false,
+    "image": "assets/sovinto/sovinto-tile-1024.png",
+    "imageAlt": "SOVINTO negotiation app emblem",
+    "body": [
+      {
+        "heading": "September 12: a note from the workbench",
+        "paragraphs": [
+          "Published September 12, 2026. We use AI to help explore ideas, write and review software, and test our work. It expands what an independent studio can attempt; human judgment still sets the direction."
+        ]
+      },
+      {
+        "heading": "Two different roles",
+        "paragraphs": [
+          "AI-assisted development does not mean every product contains an AI engine. Whomly includes an optional AI-assisted public research and briefing workflow. SOVINTO’s live negotiation guidance engine is being developed, with preparation and general prewritten help as its current foundation."
+        ]
+      },
+      {
+        "heading": "Useful before impressive",
+        "paragraphs": [
+          "SOVINTO’s aim is practical: prepare for conversations such as a new job offer or buying a house, then find useful guidance when you need it. Its live AI guidance and interactive practice remain under development. We consider privacy and data flow alongside usefulness, and describe capabilities product by product."
+        ]
+      },
+      {
+        "heading": "Still on the workbench",
+        "paragraphs": [
+          "Funky Town’s next city-building and creativity-pressure redesign is also in progress. We will share completed milestones as they are verified. Old-school values, modern ambitions, and careful engineering remain the thread through the work."
+        ]
+      }
+    ]
+  },
+  {
     "slug": "introducing-gildenspire-flight-or-fight",
     "title": "Introducing GildenSpire: Flight or Fight",
     "description": "Raise a dragon, take direct control in the sky, and discover what happens when flying becomes fighting.",
@@ -11,7 +169,7 @@
       "development",
       "gildenspire"
     ],
-    "featured": true,
+    "featured": false,
     "image": "assets/gildenspire/gildenspire-social-1200x630.jpg",
     "imageAlt": "A red GildenSpire dragon and rider flying toward a vast fantasy world as a rival approaches",
     "body": [
