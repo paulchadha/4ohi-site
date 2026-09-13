@@ -59,3 +59,7 @@ main :is(h1,h2,h3,h4){overflow-wrap:anywhere}
 .production-detail-columns aside{min-width:0;container-type:inline-size}
 .production-detail-columns aside h2{font-size:min(2rem,11cqi);line-height:1.2;overflow-wrap:normal;word-break:normal;hyphens:none}
 .production-detail-status .production-status{flex-shrink:0;white-space:nowrap;line-height:1.5}
+.doom-official-story{max-width:54rem;font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.7;color:#ded9ee}
+.doom-official-story p{margin-block:1.3rem}.doom-official-story strong{color:#fff}
+.doom-story-rally{color:#dbcaff}.doom-dual{scroll-margin-top:85px}
+.doom-title-lockup .product-detail-status{display:flex;align-items:center;flex-wrap:wrap;gap:.75rem}

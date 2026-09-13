@@ -69,6 +69,78 @@
       "commercialUse": "approved",
       "thirdParty": false,
       "license": "Proprietary"
+    },
+    {
+      "paths": [
+        "assets/card-apps/palace.webp"
+      ],
+      "source": "Actual Samsung app screenshot; system bars cropped; portfolio-native-table.png",
+      "sourceSHA256": "82de982419528584db0e61acb73b872cfc6444a67703d3cda473ea8bb8070090",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Existing Four of Hearts app material supplied through local project evidence; see assets/card-apps/provenance.json and docs/CARD-GAMES-2026-09-12.md."
+    },
+    {
+      "paths": [
+        "assets/card-apps/hearts.webp"
+      ],
+      "source": "Actual Hearts web render from unchanged mobile-app source; local bot table; hearts-table.png",
+      "sourceSHA256": "41b1fb3965e7b75e23197b82d5ca5638977607e358c0ec08a2c6621ed2342f71",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Existing Four of Hearts app material supplied through local project evidence; see assets/card-apps/provenance.json and docs/CARD-GAMES-2026-09-12.md."
+    },
+    {
+      "paths": [
+        "assets/card-apps/spades.webp"
+      ],
+      "source": "Actual app web render from September 12 audit; local bot bidding; spades-phone.png",
+      "sourceSHA256": "db74bc7a19212a756ac8fdf6d2f41b0686b3b369719f43c08686722642c8d55a",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Existing Four of Hearts app material supplied through local project evidence; see assets/card-apps/provenance.json and docs/CARD-GAMES-2026-09-12.md."
+    },
+    {
+      "paths": [
+        "assets/card-apps/euchre.webp"
+      ],
+      "source": "Actual app web render from September 12 audit; local bot calling; table-844x390.png",
+      "sourceSHA256": "520d0c76c0a591e4ba211387aa3d65a2ab9b944c99ab04734201953d5e7938e5",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Existing Four of Hearts app material supplied through local project evidence; see assets/card-apps/provenance.json and docs/CARD-GAMES-2026-09-12.md."
+    },
+    {
+      "paths": [
+        "assets/card-apps/solitaire.webp"
+      ],
+      "source": "Artwork used in the Solitaire app; not a gameplay screenshot; home-garden-v2.png",
+      "sourceSHA256": "b03facd2cb02ac254d5c3a279859c005acfe8d343027e8d83c237c47868e35e4",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Existing Four of Hearts app material supplied through local project evidence; see assets/card-apps/provenance.json and docs/CARD-GAMES-2026-09-12.md."
+    },
+    {
+      "paths": [
+        "assets/card-apps/war.webp"
+      ],
+      "source": "Artwork used in the War app; not a gameplay screenshot; four-hearts-palace-garden.png",
+      "sourceSHA256": "c3a1dd8d13c774d0543d605d0c4f41b182cdec1fc4c2fbbaaa73751ed6bea746",
+      "created": "2026-09-12",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "notes": "Existing Four of Hearts app material supplied through local project evidence; see assets/card-apps/provenance.json and docs/CARD-GAMES-2026-09-12.md."
     }
   ]
 }

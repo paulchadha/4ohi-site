@@ -1,0 +1,77 @@
+{
+  "target": "http://127.0.0.1:64145",
+  "results": [
+    {
+      "width": 390,
+      "lang": "en",
+      "game": "evil-doom-boy",
+      "issues": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "game": "thumb-command",
+      "issues": []
+    },
+    {
+      "width": 390,
+      "lang": "en-CA",
+      "game": "evil-doom-boy",
+      "issues": []
+    },
+    {
+      "width": 390,
+      "lang": "en-CA",
+      "game": "thumb-command",
+      "issues": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "game": "evil-doom-boy",
+      "issues": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "game": "thumb-command",
+      "issues": []
+    },
+    {
+      "width": 768,
+      "lang": "en-CA",
+      "game": "evil-doom-boy",
+      "issues": []
+    },
+    {
+      "width": 768,
+      "lang": "en-CA",
+      "game": "thumb-command",
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "game": "evil-doom-boy",
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "game": "thumb-command",
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "lang": "en-CA",
+      "game": "evil-doom-boy",
+      "issues": []
+    },
+    {
+      "width": 1440,
+      "lang": "en-CA",
+      "game": "thumb-command",
+      "issues": []
+    }
+  ]
+}

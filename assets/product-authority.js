@@ -159,8 +159,10 @@
   const updateLinks = () => {
     document.querySelectorAll("a[href]").forEach((link) => {
       const raw = link.getAttribute("href");
-      if (!raw || raw.startsWith("#") || raw.startsWith("mailto:") || raw.startsWith("tel:") || /^https?:/i.test(raw)) return;
-      const next = new URL(raw, location.href);
+      if (raw?.startsWith("#")) { link.href = `${location.pathname}${location.search}${raw}`; return; }
+      if (!raw || raw.startsWith("mailto:") || raw.startsWith("tel:") || /^https?:/i.test(raw)) return;
+      // Nested product pages declare a site-root base for navigation and assets.
+      const next = new URL(raw, document.baseURI);
       next.searchParams.set("lang", locale);
       const palaceRoute = /^(palace(?:-play|-story|-faq)?\.html)$/.test(next.pathname.split("/").pop() || "index.html");
       if (!palaceContext || !palaceRoute || mode === "palace") next.searchParams.delete("game"); else next.searchParams.set("game", mode);
