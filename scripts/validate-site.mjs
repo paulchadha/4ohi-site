@@ -77,9 +77,13 @@ for (const page of pages.filter((page) => !sitemapExcluded.has(page) && !/data-r
 }
 check(sitemap.includes("<loc>https://4ohi.com/games/thumb-command/</loc>"), "sitemap.xml: missing canonical Thumb Command route");
 
-const allFiles = readdirSync(root, { recursive: true, withFileTypes: true })
-  .filter((entry) => entry.isFile() && !entry.parentPath.includes(`${join(root, ".git")}`))
-  .map((entry) => join(entry.parentPath, entry.name));
+// The account package has its own lint/type/security tests. Do not scan dependencies or private build output as website assets.
+const staticFiles = (directory) => readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
+  if ([".git", "node_modules", "account-app"].includes(entry.name)) return [];
+  const path = join(directory, entry.name);
+  return entry.isDirectory() ? staticFiles(path) : [path];
+});
+const allFiles = staticFiles(root);
 for (const file of allFiles) {
   if (!/\.(?:html|css|js|mjs|md|txt|xml)$/i.test(file)) continue;
   const text = readFileSync(file, "utf8");

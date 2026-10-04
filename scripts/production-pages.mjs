@@ -1,12 +1,13 @@
 import { cardTableCollection } from "./card-game-pages.mjs";
 import { sovintoStory } from "./sovinto-content.mjs";
+import { slingFeature, slingTreatment } from "./workbench-content.mjs";
 import { privacyCopy } from "./privacy-copy.mjs";
 import { gildenspireGamesFeature, gildenspireHomeFeature } from "./gildenspire-content.mjs";
 const text=(en,ca)=>`<span data-copy-en="${en.replaceAll('"','&quot;')}" data-copy-ca="${ca.replaceAll('"','&quot;')}">${en}</span>`;
 const canadianStatus={"Interactive Preview":"Interactive preview. Pull up a chair.","Internal Alpha":"Internal alpha. Still wearing work boots.","In Development":"In development. We measured twice."};
-const canadianCta={gildenspire:"Discover GildenSpire",palace:"Play Palace, bud",hearts:"Meet Hearts",spades:"Meet Spades",euchre:"Meet Euchre",solitaire:"Meet Solitaire",war:"Meet War","thumb-command":"Save Earth, bud",bobby:"See Bobby’s defences","evil-doom":"Meet both heroes",heartstack:"See HeartStack","princess-land":"Visit Princess Land","unicorn-land":"Meet the unicorns",whomly:"Discover Whomly","sleep-amigo":"Meet Sleep Amigo"};
+const canadianCta={gildenspire:"Discover GildenSpire",palace:"Play Palace, bud",hearts:"Meet Hearts",spades:"Meet Spades",euchre:"Meet Euchre",solitaire:"Meet Solitaire",war:"Meet War","thumb-command":"Save Earth, bud",bobby:"See Bobby’s defences","evil-doom":"Meet both heroes",heartstack:"See Unicorn Blast","princess-land":"Visit Princess Land","unicorn-land":"Meet the unicorns",whomly:"Discover Whomly","sleep-amigo":"Meet Sleep Amigo"};
 const status=(product)=>`<span class="production-status"><span aria-hidden="true">●</span> ${text(product.status,canadianStatus[product.status]||product.status)}</span>`;
-const picture=(product,eager=false)=>`<img src="${product.artwork}" alt="${product.alt}" width="1024" height="1024" ${eager?'fetchpriority="high"':'loading="lazy"'}>`;
+const picture=(product,eager=false)=>product.key === "sling-nouveau" ? slingTreatment(true) : `<img src="${product.artwork}" alt="${product.alt}" width="1024" height="1024" ${eager?'fetchpriority="high"':'loading="lazy"'}>`;
 
 const canadianSummary={
  gildenspire:"Raise your dragon, take to the skies, and politely inform anything hostile that the sky is already occupied.",
@@ -46,6 +47,7 @@ const collection=(id,eyebrow,title,products)=>`<section class="production-collec
 
 export const homepage=({groups,apps,news,articleFile,formatDate})=>`<section class="production-hero production-home-hero"><div class="production-shell production-hero-grid"><div class="production-hero-copy"><p class="production-eyebrow">${text("FOUR OF HEARTS INTERACTIVE","FOUR OF HEARTS INTERACTIVE · HELLO FROM THE PRAIRIE")}</p><h1>${text("Games with heart.","Games with heart.")}<em>${text("Apps with purpose.","Apps with purpose. Beauty.")}</em></h1><p>${text("Fun, useful, privacy-minded software from an independent South Dakota studio that loves the craft.","Fun, useful, privacy-minded software from an independent South Dakota studio. Practically next door, by Canadian standards.")}</p><div class="actions"><a class="button" href="games.html">Explore games</a><a class="button secondary" href="lifestyle-apps.html">Explore apps</a></div></div>${productPanel([...groups["arcade-adventure"],...groups["puzzle-creative"],...groups["card-games"]])}</div></section>
 ${gildenspireHomeFeature()}
+${slingFeature()}
 ${nameStory()}
 <section class="production-craft"><div class="production-shell production-craft-grid"><div><p class="production-eyebrow">THE CRAFT</p><h2>Old-school values.<br><em>Modern ambitions.</em></h2></div><div><p>Careful engineering. Thoughtful design. Testing on physical devices. Accessible defaults. Privacy considered before the first line ships.</p><p>Independent companies should have room to build inventive products that make life more useful and play more joyful.</p><p>AI helps us explore ideas, build, and test. We also use it within products where it serves a clear purpose. Human judgment and careful engineering guide the work.</p></div></div></section>
 ${privacySection()}
@@ -57,6 +59,7 @@ ${cardTableCollection()}
 <section class="production-news"><div class="production-shell"><header><p class="production-eyebrow">LATEST FROM 4OH</p><h2>Notes from the workbench.</h2></header><div class="production-news-grid">${news.slice(0,3).map(item=>`<a href="${articleFile(item.slug)}"><time datetime="${item.date}">${formatDate(item.date)}</time><strong>${item.title}</strong><span>${item.description}</span><em>Read dispatch ↗</em></a>`).join("")}</div></div></section>`;
 export const gamesPage=({groups})=>`<section class="production-hero production-games-hero"><div class="production-shell production-hero-grid"><div class="production-hero-copy"><p class="production-eyebrow">${text("GAMES WITH HEART · BUILT IN SOUTH DAKOTA","GAMES WITH HEART · BUILT ON THE PRAIRIE")}</p><h1>${text("Fun is serious work.","Fun is serious work.")}<em>${text("We brought snacks.","We brought snacks. And a toque.")}</em></h1><p>${text("Arcade battles, tactical bread dinosaurs, creative play, and card-table arguments worth having.","Arcade battles, tactical bread dinosaurs, creative play, and card-table arguments settled with excellent manners.")}</p></div>${productPanel([...groups["arcade-adventure"],...groups["puzzle-creative"],...groups["card-games"]])}</div></section>
 ${gildenspireGamesFeature()}
+${slingFeature()}
 <section class="production-lineup-intro"><div class="production-shell"><p class="production-eyebrow">THE CURRENT 4OH LINEUP</p><h2>Games with a point of view.</h2><p>A little strategy. A little silliness. A lot of heart.</p></div></section>
 ${collection("arcade-adventure","ARCADE, DEFENSE & ADVENTURE","Fast reflexes. Specific trouble.",groups["arcade-adventure"])}
 ${collection("puzzle-creative","PUZZLE & CREATIVE PLAY","Make something worth keeping.",groups["puzzle-creative"])}

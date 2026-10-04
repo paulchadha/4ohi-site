@@ -1,0 +1,15 @@
+{
+  "id": "choose-a-permanent-article-id",
+  "slug": "choose-a-permanent-route-slug",
+  "title": "Write the article title",
+  "description": "Write a useful, specific excerpt.",
+  "author": "The 4OH Workshop",
+  "articleType": "developer-diary",
+  "productIds": [],
+  "tags": ["development"],
+  "status": "draft",
+  "date": null,
+  "language": "en",
+  "featured": false,
+  "body": [{"heading": "Write the opening heading", "paragraphs": ["Write the article here. Describe verified progress and clearly identify unfinished design goals."]}]
+}

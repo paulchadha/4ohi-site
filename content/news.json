@@ -1,5 +1,815 @@
 [
   {
+    "id": "sling-nouveau-workbench-october-2026",
+    "slug": "sling-nouveau-workbench-october-2026",
+    "title": "Modern art has been informed about gravity.",
+    "description": "Sling Nouveau begins with a pleasingly unreasonable idea: what if a sculptural playground also invited you to knock things down?",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "sling-nouveau",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": true,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Sling Nouveau begins with a pleasingly unreasonable idea: what if a sculptural playground also invited you to knock things down?",
+          "The immediate priority is the slingshot. It should be easy to grab, satisfying to pull, and simple to position. Your thumb should be planning the shot, not negotiating access to the controls.",
+          "We’re also exploring tougher materials and specialized balls, so choosing how to hit something becomes part of the fun.",
+          "First comes the feeling of a great shot. Then we give you increasingly interesting reasons to take another."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "sling-nouveau"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "palace-workbench-october-2026",
+    "slug": "palace-workbench-october-2026",
+    "title": "The rematch should not require technical support.",
+    "description": "The website table has a deliberately simple brief: one fixed deal, as many attempts as you like.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "palace",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "The website table has a deliberately simple brief: one fixed deal, as many attempts as you like.",
+          "Same starting cards. Same challenge. Different decisions—and, ideally, an increasingly suspicious look at the move you made three turns ago.",
+          "The browser work is focused on reliable play, readable cards, and a restart that takes you cleanly back to the beginning. We’re keeping the demo distinct from the broader Palace app.",
+          "A rematch should begin with a button, not a troubleshooting expedition."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "palace"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "euchre-workbench-october-2026",
+    "slug": "euchre-workbench-october-2026",
+    "title": "Five cards. Plenty of opinions.",
+    "description": "Euchre already provides enough uncertainty through the cards. The interface does not need to contribute.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "euchre",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Euchre already provides enough uncertainty through the cards. The interface does not need to contribute.",
+          "Our current design direction is a clearer table, easier-to-read information, and indicators that explain the game without parking themselves on top of it.",
+          "Trump should be obvious. Your partner’s role should be obvious. A mysterious floating letter should not become an unofficial fifth player.",
+          "Online play and rankings belong in the development conversation, not in the list of promises we casually declare finished."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "euchre"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "hearts-workbench-october-2026",
+    "slug": "hearts-workbench-october-2026",
+    "title": "Friendship, with penalty points.",
+    "description": "Hearts has a lovely ability to make an innocent-looking card feel like a personal statement.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "hearts",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Hearts has a lovely ability to make an innocent-looking card feel like a personal statement.",
+          "The design brief is to keep that drama at the table: readable hands, understandable turns, and enough visual clarity to follow what is happening without wrestling the screen.",
+          "The interface should help you enjoy the decisions, not make them for you.",
+          "We can aim for a friendlier experience. We cannot promise your friends will appreciate the queen of spades."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "design-diary",
+    "status": "published",
+    "productIds": [
+      "hearts"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "spades-workbench-october-2026",
+    "slug": "spades-workbench-october-2026",
+    "title": "Confidence is not a bidding strategy. Apparently.",
+    "description": "Spades deserves a table that respects the partnership.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "spades",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Spades deserves a table that respects the partnership.",
+          "The bid, the score, the current trick, and your next action should be easy to understand. Everything else needs a good reason to occupy the screen.",
+          "Our design target is the rhythm of a satisfying card game: read the situation, make the decision, watch it unfold, and quietly reconsider how confident you sounded earlier.",
+          "The cards should provide the suspense. Finding the right button should not."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "design-diary",
+    "status": "published",
+    "productIds": [
+      "spades"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "solitaire-workbench-october-2026",
+    "slug": "solitaire-workbench-october-2026",
+    "title": "One more deal. Entirely your own idea.",
+    "description": "Solitaire should feel pleasantly inevitable: see the move, move the card, enjoy the little moment when everything starts to line up.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "solitaire",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Solitaire should feel pleasantly inevitable: see the move, move the card, enjoy the little moment when everything starts to line up.",
+          "The current direction is cleaner presentation, more comfortable card sizes, and smoother movement. The board should feel calm without looking asleep.",
+          "We’re giving the classic its own polished place in the 4OH family.",
+          "No motivational speech required. Sometimes the reward is simply a tidy column and the deeply unreasonable conviction that you have time for another game."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "solitaire"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "war-workbench-october-2026",
+    "slug": "war-workbench-october-2026",
+    "title": "Let the cards cause the trouble.",
+    "description": "War does not need a complicated introduction. It needs a dependable entrance, a clear table, and a satisfying flip.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "war",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "War does not need a complicated introduction. It needs a dependable entrance, a clear table, and a satisfying flip.",
+          "The development priority is getting that basic rhythm right: stable play, readable cards, and battles that feel lively rather than sluggish.",
+          "The competition should come from what turns over—not from whether the interface cooperates.",
+          "Broader online ambitions remain development work unless verified. For now, the brief is wonderfully direct: make the familiar game feel good."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "war"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "gildenspire-workbench-october-2026",
+    "slug": "gildenspire-workbench-october-2026",
+    "title": "A dragon is not a chore-management app.",
+    "description": "A dragon should make you want to take off.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "gildenspire",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "A dragon should make you want to take off.",
+          "The current direction puts the emphasis on easier flight, clearer combat controls, a world worth moving through, and fire that deserves the name.",
+          "We’re pushing away from crowded controls and routine busywork toward the pleasure of going somewhere spectacular and doing something distinctly dragon-shaped when you arrive.",
+          "Progression should support that experience, not bury it under errands.",
+          "Online dragon-versus-dragon combat remains an ambition to develop—not a feature to announce before it works."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "gildenspire"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "thumb-command-workbench-october-2026",
+    "slug": "thumb-command-workbench-october-2026",
+    "title": "Your thumb has declined additional paperwork.",
+    "description": "Thumb Command has a very clear staffing arrangement: one thumb, quite a lot of responsibility.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "thumb-command",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Thumb Command has a very clear staffing arrangement: one thumb, quite a lot of responsibility.",
+          "The interface needs to respect that. We’re aiming for a brighter, cleaner presentation, stronger ship selection, more distinctive enemies and bases, and less clutter between the player and the action.",
+          "The exciting decisions should happen in the defense of the world, not in an overcrowded strip of controls.",
+          "A busy spaceship is good. A busy interface needs to make its case."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "thumb-command"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "bobby-workbench-october-2026",
+    "slug": "bobby-workbench-october-2026",
+    "title": "A dinosaur needs room to make an entrance.",
+    "description": "Bobby’s world should feel lively before the first enemy arrives.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "bobby",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Bobby’s world should feel lively before the first enemy arrives.",
+          "The current direction includes a more expressive home screen, stronger battlefield artwork, easier zooming, and more interesting approaches for incoming enemies.",
+          "We also want the scene to stay composed when players move around it. Objects wandering away from the visible play area are not an advanced enemy strategy.",
+          "The goal is cheerful spectacle with a readable battlefield: enough personality to make you smile, enough clarity to help you defend it."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "bobby"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "evil-doom-boy-workbench-october-2026",
+    "slug": "evil-doom-boy-workbench-october-2026",
+    "title": "We would like the towers to be a little less normal.",
+    "description": "The blade tower has set an inconveniently entertaining standard.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "evil-doom-boy",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "The blade tower has set an inconveniently entertaining standard.",
+          "That is the creative direction we want more of: towers with distinct behavior and personality, not a row of interchangeable objects politely firing at things.",
+          "The workbench priorities include richer battlefield detail, useful close-up zoom, more expressive placement areas, and a cleaner way to choose and understand upgrades.",
+          "We want players thinking, “What does that one do?”",
+          "Preferably followed by, “Oh, that is ridiculous. I need it.”"
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "evil-doom-boy"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "booyang-city-workbench-october-2026",
+    "slug": "booyang-city-workbench-october-2026",
+    "title": "A city, not a directory of buttons.",
+    "description": "BooYang City should invite you to look around and choose somewhere to go.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "booyang-city",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "BooYang City should invite you to look around and choose somewhere to go.",
+          "The direction is a connected, full-screen place with destinations that feel like part of a neighborhood: the bakery, boutique, school, zoo, and the next interesting door.",
+          "We’re aiming for better visual scale, clearer interactions, and more personality in the places themselves.",
+          "The enjoyable question is “Where shall we go?”",
+          "It should not be “Which of these nearly identical rectangles contains the city?”"
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "booyang-city"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "funky-town-workbench-october-2026",
+    "slug": "funky-town-workbench-october-2026",
+    "title": "The planning department has rejected beige.",
+    "description": "Funky Town needs room to be itself.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "funky-town",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Funky Town needs room to be itself.",
+          "The current design push is toward a less cramped play space, more expressive buildings, and a town that feels like somewhere you are making—not a control panel you are filling out.",
+          "The visual ambition is playful and distinctive. The interaction still needs to be clear.",
+          "We want the neighborhood to develop a personality as you work on it.",
+          "Respectable urban planning is welcome. Excessive normality may require a permit."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "funky-town"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "heartstack-workbench-october-2026",
+    "slug": "heartstack-workbench-october-2026",
+    "title": "Shorter name. Unreasonably enthusiastic explosions.",
+    "description": "The name going forward is Unicorn Blast.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "heartstack",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "The name going forward is Unicorn Blast.",
+          "The development direction is brighter, smoother, and easier to understand: stronger home and campaign screens, satisfying effects, and tools that explain what they do before you have to guess.",
+          "Bombs and boosters should be fun because you understand the opportunity—not because you accidentally discover what that sparkling object was for.",
+          "We’re chasing the moment when a good move becomes a glorious chain reaction.",
+          "The unicorns deserve a rescue with a little production value."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "heartstack"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "princess-land-workbench-october-2026",
+    "slug": "princess-land-workbench-october-2026",
+    "title": "The shoes have been asked to remain on the feet.",
+    "description": "A beautiful dress-up game depends on details that cannot be negotiated away: fit, scale, layering, and characters who feel alive.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "princess-land",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "A beautiful dress-up game depends on details that cannot be negotiated away: fit, scale, layering, and characters who feel alive.",
+          "The current priorities include better-aligned outfits, a stronger wardrobe, more expressive princess presentation, and a home screen where the surrounding world actually surrounds her.",
+          "The bakery and decorating experiences need the same care. A cake should look worth decorating. A ballroom should feel worth filling.",
+          "The ambition is an inviting creative world—not a collection of pretty pieces that cannot quite agree where to stand."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "princess-land"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "unicorn-land-workbench-october-2026",
+    "slug": "unicorn-land-workbench-october-2026",
+    "title": "We have not established a maximum number of flowers.",
+    "description": "Unicorn Land Adventures has its own creative brief: unicorns to personalize, habitats to shape, details to discover, and room to make something wonderfully yours.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "unicorn-land",
+    "tags": [
+      "development",
+      "games"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Unicorn Land Adventures has its own creative brief: unicorns to personalize, habitats to shape, details to discover, and room to make something wonderfully yours.",
+          "It is a separate game from Unicorn Blast, with a different pace and a different kind of play.",
+          "The design challenge is making creation feel inviting rather than complicated. Choosing a look or decorating a space should lead naturally to another enjoyable idea.",
+          "The flower limit remains an artistic question, not an engineering recommendation."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "design-diary",
+    "status": "published",
+    "productIds": [
+      "unicorn-land"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "sleep-amigo-workbench-october-2026",
+    "slug": "sleep-amigo-workbench-october-2026",
+    "title": "Less spreadsheet. More bedside manner.",
+    "description": "The Amigo is the point.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "sleep-amigo",
+    "tags": [
+      "development",
+      "lifestyle-apps"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "The Amigo is the point.",
+          "We’re shaping a sleep companion that can react to the information actually available, offer a useful observation, and sound like someone you would willingly hear from in the morning.",
+          "That means clearer presentation, a more expressive pillow character, and commentary that can be warm and cheeky without making things up.",
+          "Available sleep-stage information should not be ignored just because a long-term pattern is still developing. Missing data should be acknowledged, not invented.",
+          "The aim is better understanding—not a diagnosis delivered by a pillow."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "sleep-amigo"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "sovinto-workbench-october-2026",
+    "slug": "sovinto-workbench-october-2026",
+    "title": "Your next counteroffer deserves better than “Um.”",
+    "description": "SOVINTO is built around an understandable ambition: help people prepare for conversations that matter.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "sovinto",
+    "tags": [
+      "development",
+      "lifestyle-apps"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "SOVINTO is built around an understandable ambition: help people prepare for conversations that matter.",
+          "The current foundation includes local preparation and general prewritten help. Richer practice and live AI guidance remain development work unless a newer build verifies otherwise.",
+          "We want the experience to make priorities clearer and the next step less intimidating.",
+          "Not every negotiation needs a dramatic boardroom. Sometimes it begins with a difficult question and a moment to collect your thoughts.",
+          "That moment deserves a useful tool."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "workbench-brief",
+    "status": "published",
+    "productIds": [
+      "sovinto"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "whomly-workbench-october-2026",
+    "slug": "whomly-workbench-october-2026",
+    "title": "Twenty open tabs is not a research strategy.",
+    "description": "Whomly’s direction is to turn scattered public professional information into useful context.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "whomly",
+    "tags": [
+      "development",
+      "lifestyle-apps"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Whomly’s direction is to turn scattered public professional information into useful context.",
+          "Who is relevant? What supports that conclusion? What would make a thoughtful next conversation?",
+          "We’re interested in a clearer path from discovery to understanding—not an impressive-looking pile of unexplained results.",
+          "The product should help people organize evidence and prepare, while respecting the difference between public professional research and someone’s private life.",
+          "A useful briefing should leave you better informed, not merely in possession of several more tabs."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "workbench-brief",
+    "status": "published",
+    "productIds": [
+      "whomly"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "gin-rummy-a-table-with-room-to-think",
+    "slug": "gin-rummy-a-table-with-room-to-think",
+    "title": "A table with room to think.",
+    "description": "Gin Rummy is a two-player game. The interface should leave room for the decisions.",
+    "date": "2026-10-04",
+    "category": "Development",
+    "gameKey": "gin-rummy",
+    "tags": [
+      "development",
+      "games",
+      "card-table"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "On the workbench",
+        "paragraphs": [
+          "Gin Rummy is a two-player game. The interface should leave room for the decisions: read the hand, spot the sets and runs, draw, and choose what to let go.",
+          "The website now shows a real development-build preview alongside the separately labeled concept artwork. Development testing covers joining a table, drawing, discarding, and recovering a match after a restart. That is evidence from development testing, not a public online launch.",
+          "Our brief is a clear table and reliable recovery, with the cards doing the interesting work. Public hosting and downloadable builds still need their own checks before we offer them."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "workbench-brief",
+    "status": "published",
+    "productIds": [
+      "gin-rummy"
+    ],
+    "language": "en"
+  },
+  {
+    "id": "before-the-dragons-there-were-cards",
+    "slug": "before-the-dragons-there-were-cards",
+    "title": "Before the dragons, there were cards.",
+    "description": "Before there were dragons to steer, cities to build, or unicorns requiring an unreasonable amount of creative attention, there were cards.",
+    "date": "2026-10-04",
+    "category": "Studio",
+    "gameKey": "palace",
+    "tags": [
+      "company"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "Before there were dragons to steer, cities to build, or unicorns requiring an unreasonable amount of creative attention, there were cards.",
+          "Palace, Hearts, Spades, and Euchre gave Four of Hearts its starting table. Familiar games. Different personalities. Plenty of opportunities to discover that “just make the cards work” is not, technically speaking, a development plan.",
+          "The important questions were wonderfully ordinary. Can you read your hand? Do you know whose turn it is? Does the game explain itself without delivering a lecture? Can you get to the enjoyable part before your tea becomes a historical artifact?",
+          "Those questions still follow us into every new project.",
+          "Four of Hearts became 4OH when the name was said out loud. No encrypted founder prophecy. No seventeen-slide branding revelation. Just a name that sounded right.",
+          "The ambitions have grown considerably. The basic test has not: does this feel good to use, and is it worth coming back for?",
+          "Pull up a chair. This is where the workbench story begins."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "retrospective",
+    "status": "published",
+    "productIds": [
+      "palace",
+      "hearts",
+      "spades",
+      "euchre"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 1,
+    "historicalPeriod": "Early card-table roots"
+  },
+  {
+    "id": "the-card-table-got-a-little-out-of-hand",
+    "slug": "the-card-table-got-a-little-out-of-hand",
+    "title": "The card table got a little out of hand.",
+    "description": "A sensible studio might add another card game and call it a productive afternoon.",
+    "date": "2026-10-04",
+    "category": "Studio",
+    "gameKey": "gildenspire",
+    "tags": [
+      "company"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "A sensible studio might add another card game and call it a productive afternoon.",
+          "Our workbench now includes dragons, defensive towers, a heroic dinosaur, princess wardrobes, entire towns, and several unicorn-related responsibilities.",
+          "The card table did not disappear. It acquired some very unusual neighbors.",
+          "The expanding lineup has brought different design problems with it. A card game needs clarity and rhythm. A flying dragon needs convincing movement. A creative world needs room to explore. A princess wardrobe needs the shoes to maintain a professional relationship with the feet.",
+          "These are not interchangeable problems, and the games should not feel like the same template wearing different hats.",
+          "What connects them is the aim: make the interaction inviting, the personality memorable, and the next thing you want to do obvious.",
+          "We are building a family of games, not a warehouse of icons.",
+          "Somewhere along the way, the workbench became a neighborhood. Apparently we are responsible for the zoning now."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "retrospective",
+    "status": "published",
+    "productIds": [
+      "gildenspire",
+      "thumb-command",
+      "bobby",
+      "evil-doom-boy",
+      "booyang-city",
+      "funky-town",
+      "heartstack",
+      "princess-land",
+      "unicorn-land"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 2,
+    "historicalPeriod": "From the card table to original worlds"
+  },
+  {
+    "id": "a-u-has-entered-the-chat",
+    "slug": "a-u-has-entered-the-chat",
+    "title": "A U has entered the chat.",
+    "description": "A brief developer detour into Canadian English, where “colour” brings an extra letter and “centre” rearranges the furniture.",
+    "date": "2026-10-04",
+    "category": "Studio",
+    "gameKey": "company",
+    "tags": [
+      "company"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "A brief developer detour into Canadian English, where “colour” brings an extra letter and “centre” rearranges the furniture.",
+          "We like this. Even the spelling gets a little customization.",
+          "Canadian English often keeps the U in words such as “colour” and “favour,” while favoring endings such as “centre” and “theatre.” That does not make it a separate language, and it certainly does not mean every Canadian writes exactly the same way.",
+          "It does give a software studio something entertaining to think about between moving buttons three pixels to the left.",
+          "There is a real design point hiding under the extra vowel: words should feel natural to the people reading them. A label is not finished merely because it fits in a rectangle.",
+          "Our preferred international policy is straightforward: make people welcome, make the instructions clear, and never charge extra for the U.",
+          "That would be a microtransactioun."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "studio-story",
+    "status": "published",
+    "productIds": [],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 3,
+    "seriesRole": "Editorial interlude"
+  },
+  {
+    "id": "fewer-buttons-more-one-more-go",
+    "slug": "fewer-buttons-more-one-more-go",
+    "title": "Fewer buttons. More “one more go.”",
+    "description": "The workbench has a recurring request: give the enjoyable part more room.",
+    "date": "2026-10-04",
+    "category": "Studio",
+    "gameKey": "palace",
+    "tags": [
+      "company"
+    ],
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the workshop",
+        "paragraphs": [
+          "The workbench has a recurring request: give the enjoyable part more room.",
+          "More room for the dragon to fly. More room for the city to feel like a city. More room to see the cards. More room to pull back a slingshot without conducting a delicate archaeological excavation with your thumb.",
+          "This is not a campaign against useful features. It is a campaign against making every useful feature stand in the doorway at once.",
+          "Across the projects, the direction is clearer controls, calmer screens, more expressive artwork, and interactions that make sense before an instruction panel starts clearing its throat.",
+          "The same principle applies to our apps. Sleep information should feel understandable. Research should become useful context. Preparation should make a difficult conversation less difficult.",
+          "A screen does not earn its keep by containing more things.",
+          "It earns its keep when you know what to do next—and actually want to do it."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "palace",
+      "gildenspire",
+      "booyang-city",
+      "funky-town",
+      "sling-nouveau",
+      "sleep-amigo",
+      "whomly",
+      "sovinto"
+    ],
+    "language": "en"
+  },
+  {
     "slug": "booyang-a-town-that-grows-with-play",
     "title": "BooYang City: a town that grows with play",
     "description": "Animal friends, pastry inventions, go-karts, and new places to explore are taking shape in the development build.",
@@ -11,7 +821,7 @@
       "booyang-city",
       "games"
     ],
-    "featured": true,
+    "featured": false,
     "image": "assets/studio-expansion/booyang-city-hero-1600.webp",
     "imageAlt": "BooYang City development artwork",
     "body": [
@@ -33,7 +843,15 @@
           "The full growth paths and saved progress were exercised in the browser. On a Samsung phone, the latest build passed feeding and play, the first expansion, recipe saving, and return after a cold launch. Higher-stage kart, helicopter, and restaurant play still needs further device testing. This is development progress, not a public app release."
         ]
       }
-    ]
+    ],
+    "id": "booyang-a-town-that-grows-with-play",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "booyang-city"
+    ],
+    "language": "en"
   },
   {
     "slug": "gildenspire-a-dragon-built-to-move",
@@ -69,7 +887,15 @@
           "The candidate build passed its fresh-player and campaign checks on a Samsung phone, including victories, defeat, retry, and saved-game reload. Art polish, more distinct species anatomy, and sustained performance testing remain unfinished. The images here show the established visual direction; they are not screenshots of every new asset. No public release date has been announced."
         ]
       }
-    ]
+    ],
+    "id": "gildenspire-a-dragon-built-to-move",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "gildenspire"
+    ],
+    "language": "en"
   },
   {
     "slug": "small-fixes-that-change-the-feel",
@@ -113,7 +939,22 @@
           "The same audit addressed card-game timing and controls, Princess Land room-photo readiness, and Unicorn Land photo and landscape-entry issues. These were focused development checks—not certification that every app or feature is ready for release."
         ]
       }
-    ]
+    ],
+    "id": "small-fixes-that-change-the-feel",
+    "author": "The 4OH Workshop",
+    "articleType": "studio-story",
+    "status": "published",
+    "productIds": [
+      "evil-doom-boy",
+      "sleep-amigo",
+      "palace",
+      "hearts",
+      "spades",
+      "euchre",
+      "princess-land",
+      "unicorn-land"
+    ],
+    "language": "en"
   },
   {
     "slug": "ai-in-the-workshop-and-the-product",
@@ -155,7 +996,17 @@
           "Funky Town’s next city-building and creativity-pressure redesign is also in progress. We will share completed milestones as they are verified. Old-school values, modern ambitions, and careful engineering remain the thread through the work."
         ]
       }
-    ]
+    ],
+    "id": "ai-in-the-workshop-and-the-product",
+    "author": "The 4OH Workshop",
+    "articleType": "studio-story",
+    "status": "published",
+    "productIds": [
+      "whomly",
+      "sovinto",
+      "funky-town"
+    ],
+    "language": "en"
   },
   {
     "slug": "introducing-gildenspire-flight-or-fight",
@@ -191,7 +1042,17 @@
           "And we are only beginning to build the world."
         ]
       }
-    ]
+    ],
+    "id": "introducing-gildenspire-flight-or-fight",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "gildenspire"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 12
   },
   {
     "slug": "why-flying-has-to-be-fun",
@@ -227,7 +1088,15 @@
           "That is one of the standards we are building GildenSpire around."
         ]
       }
-    ]
+    ],
+    "id": "why-flying-has-to-be-fun",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "gildenspire"
+    ],
+    "language": "en"
   },
   {
     "slug": "building-dragons-that-actually-feel-different",
@@ -264,7 +1133,15 @@
           "And somewhere beyond all of them is the Golden Egg."
         ]
       }
-    ]
+    ],
+    "id": "building-dragons-that-actually-feel-different",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "gildenspire"
+    ],
+    "language": "en"
   },
   {
     "slug": "from-search-to-opportunity-building-whomly",
@@ -297,7 +1174,15 @@
           "AI-assisted summaries and outreach drafts may help with the work, but the boundary matters: public professional context in, user-reviewed preparation out. No private-profile access, automatic contact, or release date is being claimed."
         ]
       }
-    ]
+    ],
+    "id": "from-search-to-opportunity-building-whomly",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "whomly"
+    ],
+    "language": "en"
   },
   {
     "slug": "welcome-to-booyang-city",
@@ -329,7 +1214,17 @@
           "Opening a new destination should feel like opening a new toy box. BooYang City is in development, with no public build, platform, or release date announced."
         ]
       }
-    ]
+    ],
+    "id": "welcome-to-booyang-city",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "booyang-city"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 11
   },
   {
     "slug": "thumb-command-save-planet-earth",
@@ -353,7 +1248,15 @@
           "Chicago, San Francisco, New York, London, and Tokyo establish the current campaign direction. No public build, store listing, or release date has been announced."
         ]
       }
-    ]
+    ],
+    "id": "thumb-command-save-planet-earth",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "thumb-command"
+    ],
+    "language": "en"
   },
   {
     "slug": "making-sleep-data-feel-human",
@@ -386,7 +1289,15 @@
           "Sleep Amigo remains in development. It is wellness software, not a medical device, and supported wearables or health sources will be named only after implementation is verified."
         ]
       }
-    ]
+    ],
+    "id": "making-sleep-data-feel-human",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "sleep-amigo"
+    ],
+    "language": "en"
   },
   {
     "slug": "building-a-town-that-refuses-to-look-normal",
@@ -419,7 +1330,15 @@
           "Community matters as much as colour. People and the places where they meet are what make the art feel alive. Funky Town is in development, with no public build or release date announced."
         ]
       }
-    ]
+    ],
+    "id": "building-a-town-that-refuses-to-look-normal",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "funky-town"
+    ],
+    "language": "en"
   },
   {
     "slug": "building-unicorn-land-adventures",
@@ -442,7 +1361,17 @@
           "No public build, store availability, or release date has been announced."
         ]
       }
-    ]
+    ],
+    "id": "building-unicorn-land-adventures",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "unicorn-land"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 10
   },
   {
     "slug": "inside-princess-land-adventures",
@@ -465,7 +1394,17 @@
           "No public build, store availability, or release date has been announced."
         ]
       }
-    ]
+    ],
+    "id": "inside-princess-land-adventures",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "princess-land"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 9
   },
   {
     "slug": "people-lens-is-becoming-whomly",
@@ -498,7 +1437,17 @@
           "That also means respecting the line between public research and private information. We are building the useful side of the line."
         ]
       }
-    ]
+    ],
+    "id": "people-lens-is-becoming-whomly",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "whomly"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 8
   },
   {
     "slug": "heartstack-joins-the-workbench",
@@ -521,7 +1470,17 @@
           "No public build, store availability, or release date has been announced."
         ]
       }
-    ]
+    ],
+    "id": "heartstack-joins-the-workbench",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "heartstack"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 7
   },
   {
     "slug": "evil-doom-two-heroes-one-route",
@@ -544,7 +1503,17 @@
           "Evil Doom Boy is one game with two selectable heroes. The project remains in development; no public build, store availability, or release date has been announced."
         ]
       }
-    ]
+    ],
+    "id": "evil-doom-two-heroes-one-route",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "evil-doom-boy"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 6
   },
   {
     "slug": "bobby-and-the-breadstone",
@@ -567,7 +1536,17 @@
           "The project remains in development. No public build, store availability, or release date has been announced."
         ]
       }
-    ]
+    ],
+    "id": "bobby-and-the-breadstone",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "bobby"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 5
   },
   {
     "slug": "why-were-building-sleep-amigo",
@@ -599,7 +1578,15 @@
           "Sleep Amigo remains an in-development wellness concept. It does not diagnose conditions, replace professional advice, or claim unverified device compatibility."
         ]
       }
-    ]
+    ],
+    "id": "why-were-building-sleep-amigo",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "sleep-amigo"
+    ],
+    "language": "en"
   },
   {
     "slug": "card-table-adds-solitaire-war",
@@ -623,7 +1610,18 @@
           "Both are in development. Neither has a public playable build or announced release date."
         ]
       }
-    ]
+    ],
+    "id": "card-table-adds-solitaire-war",
+    "author": "The 4OH Workshop",
+    "articleType": "studio-story",
+    "status": "published",
+    "productIds": [
+      "solitaire",
+      "war"
+    ],
+    "language": "en",
+    "seriesId": "product-origins",
+    "seriesOrder": 4
   },
   {
     "slug": "palace-019-founder-review",
@@ -647,6 +1645,14 @@
           "Palace remains an internal alpha. The website tutorial is a teaching preview, not a public production match."
         ]
       }
-    ]
+    ],
+    "id": "palace-019-founder-review",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "status": "published",
+    "productIds": [
+      "palace"
+    ],
+    "language": "en"
   }
 ]

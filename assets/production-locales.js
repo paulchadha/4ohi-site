@@ -18,7 +18,7 @@
   ]);
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   const nodes = []; while (walker.nextNode()) nodes.push(walker.currentNode);
-  nodes.forEach((node) => { if (["SCRIPT","STYLE"].includes(node.parentElement?.tagName)) return; const value=node.nodeValue.trim(); if(phrases.has(value)) node.nodeValue=node.nodeValue.replace(value,phrases.get(value)); });
+  nodes.forEach((node) => { if (["SCRIPT","STYLE"].includes(node.parentElement?.tagName) || node.parentElement?.closest('[translate="no"]')) return; const value=node.nodeValue.trim(); if(phrases.has(value)) node.nodeValue=node.nodeValue.replace(value,phrases.get(value)); });
   const labels=new Map([["Primary","Primary navigation"],["Language","Language"],["Open settings","Open site settings"],["Close settings","Close site settings"],["Filter news","Filter newsroom dispatches"],["Company","Company links"],["Products","Product links"],["Legal","Legal and safety links"]]);
   document.querySelectorAll("[aria-label]").forEach(node=>{const value=node.getAttribute("aria-label");if(labels.has(value))node.setAttribute("aria-label",labels.get(value));});
   // Query propagation remains owned by product-authority.js; no preference cookie is used.

@@ -1,0 +1,3951 @@
+{
+  "target": "http://127.0.0.1:64736",
+  "pages": 158,
+  "linksAndAssets": 337,
+  "failures": [],
+  "results": [
+    {
+      "route": "news-a-u-has-entered-the-chat.html",
+      "issues": []
+    },
+    {
+      "route": "gin-rummy.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/sovinto/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/gin-rummy/index.html",
+      "issues": []
+    },
+    {
+      "route": "news-ai-in-the-workshop-and-the-product.html",
+      "issues": []
+    },
+    {
+      "route": "news-archive.html",
+      "issues": []
+    },
+    {
+      "route": "news-before-the-dragons-there-were-cards.html",
+      "issues": []
+    },
+    {
+      "route": "news-bobby-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-booyang-a-town-that-grows-with-play.html",
+      "issues": []
+    },
+    {
+      "route": "news-euchre-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-booyang-city-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-evil-doom-boy-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-fewer-buttons-more-one-more-go.html",
+      "issues": []
+    },
+    {
+      "route": "news-funky-town-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-gildenspire-a-dragon-built-to-move.html",
+      "issues": []
+    },
+    {
+      "route": "news-gildenspire-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-gin-rummy-a-table-with-room-to-think.html",
+      "issues": []
+    },
+    {
+      "route": "news-hearts-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-heartstack-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-origins.html",
+      "issues": []
+    },
+    {
+      "route": "news-palace-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-princess-land-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-bobby.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-booyang-city.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-evil-doom-boy.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-euchre.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-funky-town.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-gildenspire.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-gin-rummy.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-hearts.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-heartstack.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-palace.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-princess-land.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-sleep-amigo.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-solitaire.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-sling-nouveau.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-sovinto.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-spades.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-unicorn-land.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-thumb-command.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-war.html",
+      "issues": []
+    },
+    {
+      "route": "news-product-whomly.html",
+      "issues": []
+    },
+    {
+      "route": "news-sling-nouveau-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-sleep-amigo-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-small-fixes-that-change-the-feel.html",
+      "issues": []
+    },
+    {
+      "route": "news-solitaire-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-spades-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-sovinto-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-the-card-table-got-a-little-out-of-hand.html",
+      "issues": []
+    },
+    {
+      "route": "news-thumb-command-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-war-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-unicorn-land-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "news-whomly-workbench-october-2026.html",
+      "issues": []
+    },
+    {
+      "route": "sling-nouveau.html",
+      "issues": []
+    },
+    {
+      "route": "404.html",
+      "issues": []
+    },
+    {
+      "route": "sovinto.html",
+      "issues": []
+    },
+    {
+      "route": "about.html",
+      "issues": []
+    },
+    {
+      "route": "about/index.html",
+      "issues": []
+    },
+    {
+      "route": "booyang-city.html",
+      "issues": []
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "issues": []
+    },
+    {
+      "route": "commander-thumb.html",
+      "issues": []
+    },
+    {
+      "route": "contact.html",
+      "issues": []
+    },
+    {
+      "route": "euchre-play.html",
+      "issues": []
+    },
+    {
+      "route": "evil-doom-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "evil-doom-boy-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "evil-doom-girl-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "funky-town.html",
+      "issues": []
+    },
+    {
+      "route": "games.html",
+      "issues": []
+    },
+    {
+      "route": "games/bobby-the-breadasaurus/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/booyang-city/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/commander-thum-b/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/euchre/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-adventures-shadow-run/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-adventures/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-boy-adventures/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-boy/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-girl-adventures/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/evil-doom-girl/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/funky-town/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/gildenspire/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/hearts/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/palace/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/solitaire/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/spades/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/thumb-command/index.html",
+      "issues": []
+    },
+    {
+      "route": "games/war/index.html",
+      "issues": []
+    },
+    {
+      "route": "gildenspire.html",
+      "issues": []
+    },
+    {
+      "route": "hearts-play.html",
+      "issues": []
+    },
+    {
+      "route": "heartstack-unicorn-blast.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps.html",
+      "issues": []
+    },
+    {
+      "route": "index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/people-lens/index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/sleep-amigo/index.html",
+      "issues": []
+    },
+    {
+      "route": "lifestyle-apps/whomly/index.html",
+      "issues": []
+    },
+    {
+      "route": "news-bobby-and-the-breadstone.html",
+      "issues": []
+    },
+    {
+      "route": "news-bobby-the-breadasaurus-joins-the-family.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-a-safer-card-table.html",
+      "issues": []
+    },
+    {
+      "route": "news-bobby-tower-defense-takes-shape.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-a-town-that-refuses-to-look-normal.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-commander-thumb.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-dragons-that-actually-feel-different.html",
+      "issues": []
+    },
+    {
+      "route": "news-building-unicorn-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "news-card-table-adds-solitaire-war.html",
+      "issues": []
+    },
+    {
+      "route": "news-commander-thumb-is-coming.html",
+      "issues": []
+    },
+    {
+      "route": "news-designing-the-alien-invasion.html",
+      "issues": []
+    },
+    {
+      "route": "news-evil-doom-girl-enters-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-evil-doom-two-heroes-one-adventure.html",
+      "issues": []
+    },
+    {
+      "route": "news-evil-doom-two-heroes-one-route.html",
+      "issues": []
+    },
+    {
+      "route": "news-from-search-to-opportunity-building-whomly.html",
+      "issues": []
+    },
+    {
+      "route": "news-heartstack-joins-the-workbench.html",
+      "issues": []
+    },
+    {
+      "route": "news-heartstack-unicorn-blast-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-inside-princess-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "news-introducing-gildenspire-flight-or-fight.html",
+      "issues": []
+    },
+    {
+      "route": "news-making-sleep-data-feel-human.html",
+      "issues": []
+    },
+    {
+      "route": "news-meet-sleep-amigo.html",
+      "issues": []
+    },
+    {
+      "route": "news-meet-the-blueguard.html",
+      "issues": []
+    },
+    {
+      "route": "news-palace-019-founder-review.html",
+      "issues": []
+    },
+    {
+      "route": "news-meet-the-four-games.html",
+      "issues": []
+    },
+    {
+      "route": "news-palace-enters-founder-testing.html",
+      "issues": []
+    },
+    {
+      "route": "news-people-lens-is-becoming-whomly.html",
+      "issues": []
+    },
+    {
+      "route": "news-people-lens-joins-the-lifestyle-line.html",
+      "issues": []
+    },
+    {
+      "route": "news-princess-land-adventures-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-shadow-run-enters-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-the-city-is-the-base.html",
+      "issues": []
+    },
+    {
+      "route": "news-thumb-command-save-planet-earth.html",
+      "issues": []
+    },
+    {
+      "route": "news-thumb-command-world-tour.html",
+      "issues": []
+    },
+    {
+      "route": "news-unicorn-land-adventures-development.html",
+      "issues": []
+    },
+    {
+      "route": "news-welcome-to-booyang-city.html",
+      "issues": []
+    },
+    {
+      "route": "news-welcome-to-four-of-hearts.html",
+      "issues": []
+    },
+    {
+      "route": "news-why-flying-has-to-be-fun.html",
+      "issues": []
+    },
+    {
+      "route": "news-welcome-to-the-thum-system.html",
+      "issues": []
+    },
+    {
+      "route": "news-why-were-building-palace.html",
+      "issues": []
+    },
+    {
+      "route": "news-why-were-building-sleep-amigo.html",
+      "issues": []
+    },
+    {
+      "route": "news.html",
+      "issues": []
+    },
+    {
+      "route": "news/index.html",
+      "issues": []
+    },
+    {
+      "route": "palace-faq.html",
+      "issues": []
+    },
+    {
+      "route": "palace-play.html",
+      "issues": []
+    },
+    {
+      "route": "palace-story.html",
+      "issues": []
+    },
+    {
+      "route": "palace.html",
+      "issues": []
+    },
+    {
+      "route": "people-lens.html",
+      "issues": []
+    },
+    {
+      "route": "play.html",
+      "issues": []
+    },
+    {
+      "route": "play/index.html",
+      "issues": []
+    },
+    {
+      "route": "princess-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "privacy.html",
+      "issues": []
+    },
+    {
+      "route": "privacy/index.html",
+      "issues": []
+    },
+    {
+      "route": "security.html",
+      "issues": []
+    },
+    {
+      "route": "sleep-amigo.html",
+      "issues": []
+    },
+    {
+      "route": "solitaire.html",
+      "issues": []
+    },
+    {
+      "route": "spades-play.html",
+      "issues": []
+    },
+    {
+      "route": "support.html",
+      "issues": []
+    },
+    {
+      "route": "support/index.html",
+      "issues": []
+    },
+    {
+      "route": "terms.html",
+      "issues": []
+    },
+    {
+      "route": "thumb-command.html",
+      "issues": []
+    },
+    {
+      "route": "unicorn-land-adventures.html",
+      "issues": []
+    },
+    {
+      "route": "war.html",
+      "issues": []
+    },
+    {
+      "route": "whomly.html",
+      "issues": []
+    }
+  ],
+  "checked": [
+    {
+      "url": "http://127.0.0.1:64736/assets/favicon.png?v=e3eeb5210a2e",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-reconstruction.css?v=59dd790a5142",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/playable-studio.css?v=1ec8fdf64567",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-portfolio.css?v=d66aac638e3e",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-catalog.css?v=5816f34e003e",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-fixes.css?v=6dfe87f863bd",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/founder-corrections.css?v=a2c276c9c428",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/thumb-command.css?v=78f59cf96671",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/privacy-center.css?v=ab8955745d4f",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/production-2026.css?v=ff53ac86d424",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire.css?v=73f3d8363bd5",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion.css?v=870c7ccd6406",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/responsive-refinements.css?v=406caf6271f4",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-game-stories.css?v=97fbfd93f2a0",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/workbench.css?v=7f1f34cfad09",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/feed.xml",
+      "kind": "LINK",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/asset-manifest.js?v=37bfe2edfad9",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/site-config.js?v=f848f836f75c",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/site.js?v=bc639918ee71",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/privacy-center.js?v=1da431e92d16",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/canadian-copy.js?v=1e7d50056581",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/canadian-copy-v2.js?v=ff8b9d9fe9ed",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/launch-countdown.js?v=29d266bb9d1b",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/product-authority.js?v=58dd1c24c546",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/release-strip.js?v=826d71a86fb5",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/power-cards.js?v=eaed8f0f7e0b",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-reconstruction.js?v=d3fd17540218",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/playable-studio.js?v=169cbd4585d9",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-portfolio.js?v=ed2b14bb89c2",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/canadian-mode.js?v=3e484f209ad1",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/production-locales.js?v=e19163844664",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/workbench-products.js?v=31b316fc99c7",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/workbench.js?v=313ac33a2ca9",
+      "kind": "SCRIPT",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/index.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/brand-mark-4oh.webp?v=f884669fed67",
+      "kind": "IMG",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gin-rummy.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/hearts-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/spades-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-a-u-has-entered-the-chat.html#main",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/euchre-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/solitaire.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/war.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/thumb-command/?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/bobby-the-breadasaurus.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/evil-doom-boy/?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sling-nouveau.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/booyang-city.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/funky-town.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/heartstack-unicorn-blast.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/princess-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/unicorn-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sovinto.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/whomly.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sleep-amigo.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/lifestyle-apps.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/about.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/support.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-card-table-adds-solitaire-war.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-origins.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-archive.html",
+        "news-before-the-dragons-there-were-cards.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-fewer-buttons-more-one-more-go.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-archive.html",
+        "news-booyang-a-town-that-grows-with-play.html",
+        "news-product-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-the-card-table-got-a-little-out-of-hand.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "news-archive.html",
+        "news-before-the-dragons-there-were-cards.html",
+        "news-before-the-dragons-there-were-cards.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/contact.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/privacy.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/security.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/terms.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/about.html?lang=en#south-dakota",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/privacy.html?lang=en#do-not-sell",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/privacy.html?lang=en#california-notice",
+      "kind": "A",
+      "from": [
+        "news-a-u-has-entered-the-chat.html",
+        "gin-rummy.html",
+        "lifestyle-apps/sovinto/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gin-rummy.html#main",
+      "kind": "A",
+      "from": [
+        "gin-rummy.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/gin-rummy.webp?v=e613a42280a9",
+      "kind": "IMG",
+      "from": [
+        "gin-rummy.html",
+        "games/gin-rummy/index.html",
+        "games.html",
+        "games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/gin-rummy.webp?v=e613a42280a9&lang=en",
+      "kind": "A",
+      "from": [
+        "gin-rummy.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gin-rummy/development-phone.webp?v=5e818d8014fb",
+      "kind": "IMG",
+      "from": [
+        "gin-rummy.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gin-rummy.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "gin-rummy.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-gin-rummy-a-table-with-room-to-think.html?lang=en",
+      "kind": "A",
+      "from": [
+        "gin-rummy.html",
+        "gin-rummy.html",
+        "games/gin-rummy/index.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games.html?lang=en#card-table",
+      "kind": "A",
+      "from": [
+        "gin-rummy.html",
+        "games/gin-rummy/index.html",
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-gin-rummy.html?lang=en",
+      "kind": "A",
+      "from": [
+        "gin-rummy.html",
+        "games/gin-rummy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/sovinto/sovinto-tile-1024.png?v=efcf30fc55ae",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sovinto/index.html",
+        "news-ai-in-the-workshop-and-the-product.html",
+        "news-archive.html",
+        "news-product-funky-town.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-sovinto-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sovinto/index.html",
+        "lifestyle-apps/sovinto/index.html",
+        "lifestyle-apps/sovinto/index.html",
+        "news-archive.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/whomly-tile-720.webp?v=ceab096dfa21",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sovinto/index.html",
+        "sovinto.html",
+        "lifestyle-apps.html",
+        "lifestyle-apps.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sovinto.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sovinto/index.html",
+        "sovinto.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/sleep-amigo-tile-720.webp?v=a24e3d7b5e7d",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sovinto/index.html",
+        "sovinto.html",
+        "lifestyle-apps.html",
+        "lifestyle-apps.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-sovinto.html?lang=en",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sovinto/index.html",
+        "sovinto.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-introducing-gildenspire-flight-or-fight.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-ai-in-the-workshop-and-the-product.html",
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-small-fixes-that-change-the-feel.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-ai-in-the-workshop-and-the-product.html",
+        "news-archive.html",
+        "news-archive.html",
+        "news-gildenspire-a-dragon-built-to-move.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-ai-in-the-workshop-and-the-product.html#main",
+      "kind": "A",
+      "from": [
+        "news-ai-in-the-workshop-and-the-product.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-archive.html#main",
+      "kind": "A",
+      "from": [
+        "news-archive.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-archive.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-bobby.html",
+        "news-product-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/feed.xml?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-bobby.html",
+        "news-product-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-palace-019-founder-review.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-palace.html",
+        "news-product-palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/icon-palace-4hearts.webp?v=f82b9541bfdb",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-product-palace.html",
+        "games.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-games/solitaire-tile.webp?v=60deb102d44b",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-solitaire.html",
+        "news-product-war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-why-were-building-sleep-amigo.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-sleep-amigo.html",
+        "news-product-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/sleep-amigo-board-1024.webp?v=4498080782f7",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-product-sleep-amigo.html",
+        "lifestyle-apps/sleep-amigo/index.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-bobby-and-the-breadstone.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/portfolio-2026/bobby-gameplay.webp?v=a3b553a6b056",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-bobby.html",
+        "news-bobby-and-the-breadstone.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-evil-doom-two-heroes-one-route.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/evil-doom/evil-doom-heroes-purple-1200.webp?v=d7eaea8d308f",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-evil-doom-boy.html",
+        "news-evil-doom-girl-enters-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-heartstack-joins-the-workbench.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/heartstack-2026/heartstack-gameplay.webp?v=96de3950143d",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-heartstack.html",
+        "heartstack-unicorn-blast.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-people-lens-is-becoming-whomly.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/whomly-social-1200.webp?v=d55c1053f040",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-inside-princess-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/portfolio-2026/princess-land-world.webp?v=8e6f94ba964a",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-princess-land.html",
+        "news-inside-princess-land-adventures.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-building-unicorn-land-adventures.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/portfolio-2026/unicorn-land-world.webp?v=59eb44db364a",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-unicorn-land.html",
+        "news-building-unicorn-land-adventures.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-building-a-town-that-refuses-to-look-normal.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-funky-town.html",
+        "news-product-funky-town.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/funky-town-social-1200.webp?v=261423a87f26",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-product-funky-town.html",
+        "news-building-a-town-that-refuses-to-look-normal.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-making-sleep-data-feel-human.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-sleep-amigo.html",
+        "news-product-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/sleep-amigo-social-1200.webp?v=3aa186dcffde",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-product-sleep-amigo.html",
+        "news-making-sleep-data-feel-human.html",
+        "news-meet-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-thumb-command-save-planet-earth.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-thumb-command.html",
+        "news-product-thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg?v=7695fc68b5e4",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-product-thumb-command.html",
+        "news-building-commander-thumb.html",
+        "news-commander-thumb-is-coming.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-welcome-to-booyang-city.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-origins.html",
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/booyang-city-social-1200.webp?v=4eb89db72f3d",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-booyang-city.html",
+        "news-welcome-to-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-from-search-to-opportunity-building-whomly.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-whomly.html",
+        "news-product-whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-building-dragons-that-actually-feel-different.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-gildenspire.html",
+        "news-product-gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-dragons-960.webp?v=397ed986db05",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-product-gildenspire.html",
+        "news-building-dragons-that-actually-feel-different.html",
+        "news-welcome-to-four-of-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-why-flying-has-to-be-fun.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-gildenspire.html",
+        "news-product-gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-fly-960.webp?v=edfa05008e12",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-gildenspire-a-dragon-built-to-move.html",
+        "news-product-gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-social-1200x630.jpg?v=cc77d808650d",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-origins.html",
+        "news-product-gildenspire.html",
+        "news-introducing-gildenspire-flight-or-fight.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-ai-in-the-workshop-and-the-product.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-product-funky-town.html",
+        "news-product-funky-town.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-gildenspire-a-dragon-built-to-move.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-booyang-a-town-that-grows-with-play.html",
+        "news-product-gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-booyang-a-town-that-grows-with-play.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-archive.html",
+        "news-fewer-buttons-more-one-more-go.html",
+        "news-gildenspire-a-dragon-built-to-move.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/booyang-city-hero-1600.webp?v=989d19fcbfc8",
+      "kind": "IMG",
+      "from": [
+        "news-archive.html",
+        "news-booyang-a-town-that-grows-with-play.html",
+        "news-product-booyang-city.html",
+        "booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-a-u-has-entered-the-chat.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-fewer-buttons-more-one-more-go.html",
+        "news-origins.html",
+        "news-the-card-table-got-a-little-out-of-hand.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-before-the-dragons-there-were-cards.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-gin-rummy-a-table-with-room-to-think.html",
+        "news-origins.html",
+        "news-product-euchre.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-whomly-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-gin-rummy-a-table-with-room-to-think.html",
+        "news-product-whomly.html",
+        "news-sovinto-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-sleep-amigo-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-product-sleep-amigo.html",
+        "news-sovinto-workbench-october-2026.html",
+        "news-unicorn-land-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-unicorn-land-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-princess-land-workbench-october-2026.html",
+        "news-product-unicorn-land.html",
+        "news-sleep-amigo-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-princess-land-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-heartstack-workbench-october-2026.html",
+        "news-product-princess-land.html",
+        "news-unicorn-land-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-heartstack-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-funky-town-workbench-october-2026.html",
+        "news-princess-land-workbench-october-2026.html",
+        "news-product-heartstack.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-funky-town-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-booyang-city-workbench-october-2026.html",
+        "news-heartstack-workbench-october-2026.html",
+        "news-product-funky-town.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-booyang-city-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-evil-doom-boy-workbench-october-2026.html",
+        "news-funky-town-workbench-october-2026.html",
+        "news-product-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-evil-doom-boy-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-bobby-workbench-october-2026.html",
+        "news-booyang-city-workbench-october-2026.html",
+        "news-product-evil-doom-boy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-bobby-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-evil-doom-boy-workbench-october-2026.html",
+        "news-product-bobby.html",
+        "news-thumb-command-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-thumb-command-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-bobby-workbench-october-2026.html",
+        "news-gildenspire-workbench-october-2026.html",
+        "news-product-thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-gildenspire-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-product-gildenspire.html",
+        "news-thumb-command-workbench-october-2026.html",
+        "news-war-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-war-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-gildenspire-workbench-october-2026.html",
+        "news-product-war.html",
+        "news-solitaire-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-solitaire-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-product-solitaire.html",
+        "news-spades-workbench-october-2026.html",
+        "news-war-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-spades-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-hearts-workbench-october-2026.html",
+        "news-product-spades.html",
+        "news-solitaire-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-hearts-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-euchre-workbench-october-2026.html",
+        "news-product-hearts.html",
+        "news-spades-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-euchre-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-hearts-workbench-october-2026.html",
+        "news-palace-workbench-october-2026.html",
+        "news-product-euchre.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-palace-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-euchre-workbench-october-2026.html",
+        "news-product-palace.html",
+        "news-sling-nouveau-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-sling-nouveau-workbench-october-2026.html?lang=en",
+      "kind": "A",
+      "from": [
+        "news-archive.html",
+        "news-palace-workbench-october-2026.html",
+        "news-product-sling-nouveau.html",
+        "sling-nouveau.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-before-the-dragons-there-were-cards.html#main",
+      "kind": "A",
+      "from": [
+        "news-before-the-dragons-there-were-cards.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-bobby-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-bobby-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-booyang-a-town-that-grows-with-play.html#main",
+      "kind": "A",
+      "from": [
+        "news-booyang-a-town-that-grows-with-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-euchre-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-euchre-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-booyang-city-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-booyang-city-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-evil-doom-boy-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-evil-doom-boy-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-fewer-buttons-more-one-more-go.html#main",
+      "kind": "A",
+      "from": [
+        "news-fewer-buttons-more-one-more-go.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-funky-town-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-funky-town-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-gildenspire-a-dragon-built-to-move.html#main",
+      "kind": "A",
+      "from": [
+        "news-gildenspire-a-dragon-built-to-move.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-gildenspire-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-gildenspire-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-gin-rummy-a-table-with-room-to-think.html#main",
+      "kind": "A",
+      "from": [
+        "news-gin-rummy-a-table-with-room-to-think.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-hearts-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-hearts-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-heartstack-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-heartstack-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-origins.html#main",
+      "kind": "A",
+      "from": [
+        "news-origins.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-palace-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-palace-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-princess-land-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-princess-land-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-bobby.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-bobby.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-booyang-city.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-evil-doom-boy.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-evil-doom-boy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-euchre.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-euchre.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-funky-town.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-funky-town.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-gildenspire.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-gin-rummy.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-gin-rummy.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-hearts.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-hearts.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-heartstack.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-heartstack.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-palace.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-princess-land.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-princess-land.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-sleep-amigo.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-solitaire.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-sling-nouveau.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-sling-nouveau.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-sovinto.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-sovinto.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-spades.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-spades.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-unicorn-land.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-unicorn-land.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-thumb-command.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-war.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-whomly.html#main",
+      "kind": "A",
+      "from": [
+        "news-product-whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-sling-nouveau-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-sling-nouveau-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-sleep-amigo-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-sleep-amigo-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-small-fixes-that-change-the-feel.html#main",
+      "kind": "A",
+      "from": [
+        "news-small-fixes-that-change-the-feel.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-solitaire-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-solitaire-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-spades-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-spades-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-sovinto-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-sovinto-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-the-card-table-got-a-little-out-of-hand.html#main",
+      "kind": "A",
+      "from": [
+        "news-the-card-table-got-a-little-out-of-hand.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-thumb-command-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-thumb-command-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-war-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-war-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-unicorn-land-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-unicorn-land-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-whomly-workbench-october-2026.html#main",
+      "kind": "A",
+      "from": [
+        "news-whomly-workbench-october-2026.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sling-nouveau.html#main",
+      "kind": "A",
+      "from": [
+        "sling-nouveau.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-sling-nouveau.html?lang=en",
+      "kind": "A",
+      "from": [
+        "sling-nouveau.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sling-nouveau.html#from-the-developers",
+      "kind": "A",
+      "from": [
+        "sling-nouveau.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/404.html#main",
+      "kind": "A",
+      "from": [
+        "404.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/about.html#main",
+      "kind": "A",
+      "from": [
+        "about.html",
+        "about/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/privacy.html?lang=en#how-we-make-money",
+      "kind": "A",
+      "from": [
+        "about.html",
+        "about/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/booyang-city-play-960.webp?v=2d5c3c39cdb6",
+      "kind": "IMG",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-booyang-city.html?lang=en",
+      "kind": "A",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/booyang-city.html#main",
+      "kind": "A",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/booyang-city.html#experience",
+      "kind": "A",
+      "from": [
+        "booyang-city.html",
+        "games/booyang-city/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/bobby/bobby-hero-1200.webp?v=7596405fa048",
+      "kind": "IMG",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "commander-thumb.html",
+        "games.html",
+        "games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/bobby-the-breadasaurus.html#main",
+      "kind": "A",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "games/bobby-the-breadasaurus/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-tile-960.webp?v=e90e3af8b6f4",
+      "kind": "IMG",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "commander-thumb.html",
+        "games.html",
+        "games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/thumb-command/thumb-command-app-icon-768.webp?v=d93855b560b8",
+      "kind": "IMG",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "games.html",
+        "games.html",
+        "games/bobby-the-breadasaurus/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/portfolio-2026/evil-doom-card.png?v=60fc6c020b83",
+      "kind": "IMG",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "commander-thumb.html",
+        "games.html",
+        "games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-bobby.html?lang=en",
+      "kind": "A",
+      "from": [
+        "bobby-the-breadasaurus.html",
+        "games/bobby-the-breadasaurus/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/thumb-command/thumb-command-chicago-gameplay-1600.webp?v=545754dab230",
+      "kind": "IMG",
+      "from": [
+        "commander-thumb.html",
+        "games/commander-thum-b/index.html",
+        "games/thumb-command/index.html",
+        "thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-thumb-command.html?lang=en",
+      "kind": "A",
+      "from": [
+        "commander-thumb.html",
+        "games/commander-thum-b/index.html",
+        "games/thumb-command/index.html",
+        "thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/thumb-command/#main",
+      "kind": "A",
+      "from": [
+        "commander-thumb.html",
+        "games/commander-thum-b/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/euchre.webp?v=673b38609ed8",
+      "kind": "IMG",
+      "from": [
+        "euchre-play.html",
+        "games.html",
+        "games/euchre/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/euchre.webp?v=673b38609ed8&lang=en",
+      "kind": "A",
+      "from": [
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/contact.html#main",
+      "kind": "A",
+      "from": [
+        "contact.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/euchre-play.html#main",
+      "kind": "A",
+      "from": [
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/euchre-play.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-euchre.html?lang=en",
+      "kind": "A",
+      "from": [
+        "euchre-play.html",
+        "games/euchre/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/evil-doom/evil-doom-boy-preview.png?v=f68bf85ff10a",
+      "kind": "IMG",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/evil-doom/evil-doom-girl-preview.png?v=464226804a1d",
+      "kind": "IMG",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/evil-doom-boy/#main",
+      "kind": "A",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/evil-doom-boy/#choose-hero",
+      "kind": "A",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/evil-doom/evil-doom-worlds-purple-1440.webp?v=190c4b45992c",
+      "kind": "IMG",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-evil-doom-boy.html?lang=en",
+      "kind": "A",
+      "from": [
+        "evil-doom-adventures.html",
+        "evil-doom-boy-adventures.html",
+        "evil-doom-girl-adventures.html",
+        "games/evil-doom-adventures-shadow-run/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/funky-town-hero-1600.webp?v=131ac55ffe92",
+      "kind": "IMG",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/funky-town.html#main",
+      "kind": "A",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/funky-town-play-960.webp?v=b840e6e08393",
+      "kind": "IMG",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-funky-town.html?lang=en",
+      "kind": "A",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/funky-town.html#experience",
+      "kind": "A",
+      "from": [
+        "funky-town.html",
+        "games/funky-town/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/booyang-city-tile-960.webp?v=a0db100d8303",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/funky-town-tile-960.webp?v=4b6961cd84e7",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/heartstack-2026/heartstack-key-art.webp?v=8fd346b48375",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games.html#main",
+      "kind": "A",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/portfolio-2026/princess-land-card.png?v=41e305773c0d",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/portfolio-2026/unicorn-land-card.png?v=03773f1b1498",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games.html",
+        "games/index.html",
+        "games/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/icon-hearts-4hearts.webp?v=dafa2aeb00de",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/icon-spades-4hearts.webp?v=0cd7bb027061",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/icon-euchre-4hearts.webp?v=979e7126b08d",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-games/war-tile.webp?v=dd0f868b4d33",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "index.html",
+        "news-meet-the-four-games.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-hero-1600.webp",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/gildenspire/index.html",
+        "games/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/palace.webp?v=d878543dc82f",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/palace/index.html",
+        "games/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/hearts.webp?v=d69f6547515b",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/hearts/index.html",
+        "games/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/spades.webp?v=398e92d6367e",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "games/spades/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/solitaire.webp?v=b2a5449ecab6",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "games/solitaire/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/war.webp?v=39dfe2c373d1",
+      "kind": "IMG",
+      "from": [
+        "games.html",
+        "games/index.html",
+        "games/war/index.html",
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/evil-doom-boy/index.html#main",
+      "kind": "A",
+      "from": [
+        "games/evil-doom-boy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/evil-doom-boy/index.html#choose-hero",
+      "kind": "A",
+      "from": [
+        "games/evil-doom-boy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html#main",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html#raise",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "games/gildenspire/index.html",
+        "gildenspire.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html#fly",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html#fight",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html#dragons",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html#golden-egg",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-raise-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-fly-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/gildenspire.html#development",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-fight-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-dragons-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/gildenspire/gildenspire-golden-960.webp",
+      "kind": "IMG",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-gildenspire.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/gildenspire/index.html",
+        "gildenspire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/hearts.webp?v=d69f6547515b&lang=en",
+      "kind": "A",
+      "from": [
+        "games/hearts/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/hearts-play.html#main",
+      "kind": "A",
+      "from": [
+        "games/hearts/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-hearts.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/hearts/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/hearts-play.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/hearts/index.html",
+        "hearts-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/palace.webp?v=d878543dc82f&lang=en",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace.html#main",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace-faq.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace-faq.html",
+        "palace-play.html",
+        "palace-story.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-palace.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/palace/index.html",
+        "palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/solitaire.webp?v=b2a5449ecab6&lang=en",
+      "kind": "A",
+      "from": [
+        "games/solitaire/index.html",
+        "solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-solitaire.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/solitaire/index.html",
+        "solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/solitaire.html#main",
+      "kind": "A",
+      "from": [
+        "games/solitaire/index.html",
+        "solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/solitaire.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/solitaire/index.html",
+        "solitaire.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/spades.webp?v=398e92d6367e&lang=en",
+      "kind": "A",
+      "from": [
+        "games/spades/index.html",
+        "spades-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/spades-play.html#main",
+      "kind": "A",
+      "from": [
+        "games/spades/index.html",
+        "spades-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/spades-play.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/spades/index.html",
+        "spades-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-spades.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/spades/index.html",
+        "spades-play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/card-apps/war.webp?v=39dfe2c373d1&lang=en",
+      "kind": "A",
+      "from": [
+        "games/war/index.html",
+        "war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/games/thumb-command/index.html#main",
+      "kind": "A",
+      "from": [
+        "games/thumb-command/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/war.html#main",
+      "kind": "A",
+      "from": [
+        "games/war/index.html",
+        "war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/war.html#how-to-play",
+      "kind": "A",
+      "from": [
+        "games/war/index.html",
+        "war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-war.html?lang=en",
+      "kind": "A",
+      "from": [
+        "games/war/index.html",
+        "war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-heartstack.html?lang=en",
+      "kind": "A",
+      "from": [
+        "heartstack-unicorn-blast.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/heartstack-unicorn-blast.html#main",
+      "kind": "A",
+      "from": [
+        "heartstack-unicorn-blast.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/lifestyle-apps.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps.html",
+        "lifestyle-apps/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/index.html#main",
+      "kind": "A",
+      "from": [
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/whomly-board-1200.webp?v=49dc093b904d",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/whomly-search-720.webp?v=a384c284faf7",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/about.html?lang=en#the-name",
+      "kind": "A",
+      "from": [
+        "index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/whomly.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/whomly.html#discover",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-whomly.html?lang=en",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/people-lens/index.html",
+        "lifestyle-apps/whomly/index.html",
+        "people-lens.html",
+        "whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sleep-amigo.html#main",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/sleep-amigo-night-720.webp?v=399f3ebf55af",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/studio-expansion/sleep-amigo-features-1200.webp?v=8d0021ee0026",
+      "kind": "IMG",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/sleep-amigo.html#night",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-sleep-amigo.html?lang=en",
+      "kind": "A",
+      "from": [
+        "lifestyle-apps/sleep-amigo/index.html",
+        "sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-bobby-and-the-breadstone.html#main",
+      "kind": "A",
+      "from": [
+        "news-bobby-and-the-breadstone.html",
+        "news-bobby-the-breadasaurus-joins-the-family.html",
+        "news-bobby-tower-defense-takes-shape.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-card-table-adds-solitaire-war.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-a-safer-card-table.html",
+        "news-card-table-adds-solitaire-war.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-building-a-town-that-refuses-to-look-normal.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-a-town-that-refuses-to-look-normal.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-thumb-command-save-planet-earth.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-commander-thumb.html",
+        "news-commander-thumb-is-coming.html",
+        "news-designing-the-alien-invasion.html",
+        "news-meet-the-blueguard.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-building-dragons-that-actually-feel-different.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-dragons-that-actually-feel-different.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-building-unicorn-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "news-building-unicorn-land-adventures.html",
+        "news-unicorn-land-adventures-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-evil-doom-two-heroes-one-route.html#main",
+      "kind": "A",
+      "from": [
+        "news-evil-doom-girl-enters-development.html",
+        "news-evil-doom-two-heroes-one-adventure.html",
+        "news-evil-doom-two-heroes-one-route.html",
+        "news-shadow-run-enters-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-from-search-to-opportunity-building-whomly.html#main",
+      "kind": "A",
+      "from": [
+        "news-from-search-to-opportunity-building-whomly.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-heartstack-joins-the-workbench.html#main",
+      "kind": "A",
+      "from": [
+        "news-heartstack-joins-the-workbench.html",
+        "news-heartstack-unicorn-blast-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-inside-princess-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "news-inside-princess-land-adventures.html",
+        "news-princess-land-adventures-development.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-introducing-gildenspire-flight-or-fight.html#main",
+      "kind": "A",
+      "from": [
+        "news-introducing-gildenspire-flight-or-fight.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-making-sleep-data-feel-human.html#main",
+      "kind": "A",
+      "from": [
+        "news-making-sleep-data-feel-human.html",
+        "news-meet-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-palace-019-founder-review.html#main",
+      "kind": "A",
+      "from": [
+        "news-palace-019-founder-review.html",
+        "news-palace-enters-founder-testing.html",
+        "news-why-were-building-palace.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-people-lens-is-becoming-whomly.html#main",
+      "kind": "A",
+      "from": [
+        "news-people-lens-is-becoming-whomly.html",
+        "news-people-lens-joins-the-lifestyle-line.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-welcome-to-booyang-city.html#main",
+      "kind": "A",
+      "from": [
+        "news-welcome-to-booyang-city.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news.html#main",
+      "kind": "A",
+      "from": [
+        "news-welcome-to-four-of-hearts.html",
+        "news.html",
+        "news/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-why-flying-has-to-be-fun.html#main",
+      "kind": "A",
+      "from": [
+        "news-why-flying-has-to-be-fun.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-why-were-building-sleep-amigo.html#main",
+      "kind": "A",
+      "from": [
+        "news-why-were-building-sleep-amigo.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace-faq.html#main",
+      "kind": "A",
+      "from": [
+        "palace-faq.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news.html?tag=palace&lang=en",
+      "kind": "A",
+      "from": [
+        "palace-faq.html",
+        "palace-play.html",
+        "palace-story.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/palace-web.css?v=66bfa9cf999f",
+      "kind": "LINK",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace-faq.html#faq",
+      "kind": "A",
+      "from": [
+        "palace-faq.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/palace-web.js?v=9e1b9aac01fd",
+      "kind": "SCRIPT",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace-play.html#main",
+      "kind": "A",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/assets/palace-web/palace-app-icon.png",
+      "kind": "IMG",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace-faq.html",
+      "kind": "A",
+      "from": [
+        "palace-play.html",
+        "play/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/palace-story.html#main",
+      "kind": "A",
+      "from": [
+        "palace-story.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/play.html#main",
+      "kind": "A",
+      "from": [
+        "play.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/princess-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "princess-land-adventures.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-princess-land.html?lang=en",
+      "kind": "A",
+      "from": [
+        "princess-land-adventures.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/privacy.html#main",
+      "kind": "A",
+      "from": [
+        "privacy.html",
+        "privacy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/privacy.html#formal-policy",
+      "kind": "A",
+      "from": [
+        "privacy.html",
+        "privacy/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/security.html#main",
+      "kind": "A",
+      "from": [
+        "security.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/support.html#main",
+      "kind": "A",
+      "from": [
+        "support.html",
+        "support/index.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/news-product-unicorn-land.html?lang=en",
+      "kind": "A",
+      "from": [
+        "unicorn-land-adventures.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/terms.html#main",
+      "kind": "A",
+      "from": [
+        "terms.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/thumb-command.html#main",
+      "kind": "A",
+      "from": [
+        "thumb-command.html"
+      ],
+      "issues": []
+    },
+    {
+      "url": "http://127.0.0.1:64736/unicorn-land-adventures.html#main",
+      "kind": "A",
+      "from": [
+        "unicorn-land-adventures.html"
+      ],
+      "issues": []
+    }
+  ]
+}

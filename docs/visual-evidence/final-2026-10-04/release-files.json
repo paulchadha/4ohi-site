@@ -1,0 +1,10 @@
+{
+  "baseArticles": 21,
+  "preservedOriginalBodies": true,
+  "changed": [
+    "scripts/verify-palace-demo-browser.mjs",
+    "docs/NEWS-AUTHORING.md",
+    "docs/PRODUCT_REGISTRY.md",
+    "docs/WORKBENCH-IMPLEMENTATION-2026-10-04.md"
+  ]
+}

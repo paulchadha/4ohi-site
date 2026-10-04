@@ -1,34 +1,37 @@
 import {
-  CLASSIC_RULES,
   PALACE_JUMP_IN_POLICY,
-  botTakeTurn,
-  createInitialGame,
   describeCard,
-  finishSetup,
   getJumpInMoveAt,
   getPalacePlacementOrder,
   getPalaceWinnerIndex,
   getPlayableCards,
   isMagicCard,
   isOptionalMultiPlayRank,
-  maybeBotJumpIn,
-  playCard,
-  playJumpIn,
-  swapSetupCards
 } from "./palace-web/shared/palaceEngine.js";
 import { palaceBotActionDelay } from "./palace-web/shared/palaceTiming.js";
 
 const ROOT = document.querySelector("#palace-web-game");
-const STORAGE_KEY = "4oh_palace_web_v1";
+const LEGACY_STORAGE_KEY = "4oh_palace_web_v1";
 const PREFERENCES_KEY = "4oh_palace_web_preferences_v1";
-const SCHEMA_VERSION = 1;
-const SOURCE_COMMIT = "31c7578a3a15db6d3ac78a3c5d332d73a9353afd";
-const RULES = CLASSIC_RULES;
+
+
 const params = new URLSearchParams(location.search);
 const canadian = params.get("lang") === "en-CA";
 const qaAllowed = ["127.0.0.1", "localhost"].includes(location.hostname) && params.get("palaceQa") === "1";
 const fastMode = qaAllowed && params.get("fast") === "1";
-const qaSeed = qaAllowed ? Number(params.get("seed") || 5) : null;
+import { STORAGE_KEY, FIXTURE_ID, RULES, freshSession, applyDemoAction, restoreSession } from "./palace-web/demo-session.js";
+let session = null;
+let generation = 0;
+let notice = "";
+let storageAvailable = true;
+const pending = new Set();
+const oscillators = new Set();
+const restart = document.querySelector('[data-restart-demo]');
+restart?.addEventListener('click', resetDemo);
+const recoveryBar = document.querySelector('.palace-demo-recovery');
+if(recoveryBar && typeof ResizeObserver !== 'undefined') new ResizeObserver(()=>{
+  recoveryBar.parentElement.style.setProperty('--palace-recovery-height', `${recoveryBar.getBoundingClientRect().height}px`);
+}).observe(recoveryBar);
 let game = null;
 let record = null;
 let selection = [];
@@ -42,7 +45,7 @@ const copy = canadian ? {
   eyebrow: "PLAY PALACE, BUD",
   heading: "One table. One full game.",
   body: "The real 4OH rules, the real table, and no need to bring chips. Different kind of card game, eh.",
-  privacy: "No account. Your game stays on this device, where it belongs.",
+  privacy: "One fixed deal, unlimited attempts. No account needed, bud.",
   deal: "Deal ’em out",
   how: "How this thing works ↗",
   completeEyebrow: "GAME COMPLETE",
@@ -53,8 +56,8 @@ const copy = canadian ? {
 } : {
   eyebrow: "PLAY PALACE",
   heading: "Play one complete game of Palace.",
-  body: "The real 4OH rules, the real table, and the real Palace presentation—right in your browser.",
-  privacy: "One complete web game. No account. Progress stays on this device.",
+  body: "The real 4OH rules and one complete, replayable challenge—right in your browser.",
+  privacy: "One fixed deal, unlimited attempts. No account required.",
   deal: "Deal the cards",
   how: "How Palace works ↗",
   completeEyebrow: "GAME COMPLETE",
@@ -77,76 +80,67 @@ function loadPreferences() {
 }
 
 function savePreferences() {
-  localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ schemaVersion: 1, ...preferences }));
+  try { localStorage.setItem(PREFERENCES_KEY, JSON.stringify({ schemaVersion: 1, ...preferences })); }
+  catch { storageAvailable = false; }
 }
-
-function validRecord(value) {
-  if (!value || value.schemaVersion !== SCHEMA_VERSION || !["inProgress", "completed"].includes(value.status)) return false;
-  if (value.status === "completed") return Boolean(value.result && Number.isInteger(value.result.winnerIndex));
-  return Boolean(value.game && ["setup", "playing"].includes(value.game.status) && Array.isArray(value.game.players));
-}
-
 function loadRecord() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if (!raw) return null;
   try {
-    const parsed = JSON.parse(raw);
-    if (!validRecord(parsed)) throw new Error("obsolete-or-invalid");
-    return parsed;
-  } catch {
-    return { status: "recovery", corrupt: true };
+    const raw=localStorage.getItem(STORAGE_KEY);
+    if(raw) { session=restoreSession(JSON.parse(raw));game=session.game;return session; }
+    if(localStorage.getItem(LEGACY_STORAGE_KEY)) {
+      notice="That older table uses a different deal. The fixed demo is ready to try again.";
+      session=freshSession();game=session.game;saveGame();
+      try { localStorage.removeItem(LEGACY_STORAGE_KEY); } catch {}
+    }
+  } catch(error) {
+    if(error.name==='SecurityError' || error.name==='QuotaExceededError') storageAvailable=false;
+    else {notice="That saved table could not be restored. The original fixed deal is ready again.";session=freshSession();game=session.game;saveGame();}
   }
+  return session;
 }
-
 function saveGame() {
-  if (!game) return;
-  if (game.status === "finished") {
-    const winnerIndex = getPalaceWinnerIndex(game);
-    record = {
-      schemaVersion: SCHEMA_VERSION,
-      sourceCommit: SOURCE_COMMIT,
-      status: "completed",
-      completedAt: new Date().toISOString(),
-      result: {
-        gameId: game.id,
-        winnerIndex,
-        winnerName: game.players[winnerIndex]?.name || "Player",
-        loserIndex: game.loserIndex,
-        placementOrder: getPalacePlacementOrder(game),
-        playerCount: game.players.length,
-        finalMessage: game.message
-      }
-    };
-  } else {
-    record = {
-      schemaVersion: SCHEMA_VERSION,
-      sourceCommit: SOURCE_COMMIT,
-      status: "inProgress",
-      updatedAt: new Date().toISOString(),
-      playerCount: game.players.length,
-      game
-    };
-  }
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
+  if(!session) return;
+  game=session.game;
+  record={...session,status:game.status==='finished'?'completed':'inProgress',result:game.status==='finished'?{
+    winnerIndex:getPalaceWinnerIndex(game),winnerName:game.players[getPalaceWinnerIndex(game)]?.name,
+    loserIndex:game.loserIndex,placementOrder:getPalacePlacementOrder(game),finalMessage:game.message
+  }:null};
+  try {localStorage.setItem(STORAGE_KEY,JSON.stringify(record));storageAvailable=true;}
+  catch {storageAvailable=false;}
 }
-
-function seededRandom(seed) {
-  let value = seed >>> 0;
-  return () => {
-    value += 0x6D2B79F5;
-    let t = value;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
+function cancelSession() {
+  generation++;
+  pending.forEach(timer=>clearTimeout(timer));pending.clear();clearTimeout(botTimer);botTimer=null;
+  oscillators.forEach(o=>{try{o.stop();o.disconnect();}catch{}});oscillators.clear();
+  ROOT.getAnimations?.({subtree:true}).forEach(a=>a.cancel());
+  selection=[];setupPick=null;busy=false;
 }
-
-function withRandom(random, callback) {
-  if (!random) return callback();
-  const original = Math.random;
-  Math.random = random;
-  try { return callback(); } finally { Math.random = original; }
+function resetDemo() {
+  cancelSession();notice="";session=freshSession();game=session.game;record=null;
+  saveGame();render({announce:true});
+  ROOT.querySelector('[data-start-hand]')?.focus({preventScroll:true});
 }
+function later(callback,delay) {
+  const token=generation, revision=game?.revision;
+  const timer=setTimeout(()=>{pending.delete(timer);if(token!==generation || revision!==game?.revision)return;try{callback();}catch{showError();}},delay);
+  pending.add(timer);return timer;
+}
+function showError() {
+  cancelSession();notice="The table stopped unexpectedly. Restart this demo to return to the original deal.";
+  ROOT.innerHTML='<div class="palace-session-error" role="alert">'+escapeHtml(notice)+'</div>';
+  ROOT.removeAttribute('aria-busy');updateNotice();
+}
+function updateNotice() {
+  const message=document.querySelector('[data-palace-notice]');
+  if(message)message.textContent=notice || (storageAvailable ? "Progress saves on this device when browser storage is available." : "Storage is unavailable. You can play and restart here; progress will not survive a reload.");
+}
+function commit(action) {
+  try {session=applyDemoAction(session,action);game=session.game;saveGame();}
+  catch {showError();return false;}
+  finally {busy=false;}
+  return true;
+}
+const jumpNow=()=>Number(game?.jumpInWindow?.openedAt || 0)+1000;
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[character]);
@@ -158,7 +152,7 @@ const cardRank = (card) => card?.rank === "Joker" ? "★" : card?.rank;
 
 function cardMarkup(card, options = {}) {
   const blind = options.blind || card?.blind;
-  const selected = selection.includes(card?.id);
+  const selected = selection.includes(card?.id) || setupPick?.cardId === card?.id;
   const legal = options.legal !== false;
   const disabled = options.disabled === true;
   const label = blind ? "Face-down card. Activate to reveal and play it blind." : `${describeCard(card)}${legal ? ". Legal play." : ". Not currently playable."}${selected ? " Selected." : ""}`;
@@ -171,14 +165,10 @@ function introMarkup() {
   return `<section class="palace-entry" aria-labelledby="palace-entry-title">
     <div class="palace-entry-art"><img src="assets/palace-web/palace-app-icon.png" alt="Palace castle under the Four of Hearts mark" width="1024" height="1024"></div>
     <div class="palace-entry-copy"><p class="palace-kicker">${copy.eyebrow}</p><h2 id="palace-entry-title">${copy.heading}</h2><p>${copy.body}</p><p class="palace-privacy-line">${copy.privacy}</p>
-      <fieldset class="palace-player-count"><legend>Choose the table</legend><label><input type="radio" name="palace-players" value="2" checked><span>1 bot</span></label><label><input type="radio" name="palace-players" value="3"><span>2 bots</span></label><label><input type="radio" name="palace-players" value="4"><span>3 bots</span></label></fieldset>
+      <p class="palace-fixed-opponent">You and Oner. The same two-seat table on every attempt.</p>
       <div class="palace-entry-actions"><button class="palace-primary" type="button" data-deal>${copy.deal}</button><a href="palace-faq.html">${copy.how}</a></div>
     </div>
   </section>`;
-}
-
-function recoveryMarkup() {
-  return `<section class="palace-entry palace-recovery" aria-labelledby="palace-recovery-title"><div class="palace-entry-copy"><p class="palace-kicker">TABLE RECOVERY</p><h2 id="palace-recovery-title">This saved table cannot be opened.</h2><p>The saved game is damaged or belongs to an older incompatible build. Clear only this Palace game and deal your one web game.</p><button class="palace-primary" type="button" data-recover>Clear invalid save</button></div></section>`;
 }
 
 function completionMarkup() {
@@ -186,7 +176,7 @@ function completionMarkup() {
   const won = result.winnerIndex === 0;
   return `<section class="palace-complete" aria-labelledby="palace-complete-title">
     <div class="palace-complete-art"><img src="assets/palace-web/palace-app-icon.png" alt="Palace castle and Four of Hearts game mark" width="1024" height="1024"></div>
-    <div class="palace-complete-copy"><p class="palace-kicker">${copy.completeEyebrow}</p><h2 id="palace-complete-title">${copy.completeHeading}</h2><p>${copy.completeBody}</p><p class="palace-result-line"><strong>${won ? "You were first out." : `${escapeHtml(result.winnerName || "A rival")} was first out.`}</strong> ${escapeHtml(result.finalMessage || "The game reached its legal result.")}</p><div class="palace-entry-actions"><a class="palace-primary" href="palace.html">${copy.explore}</a><a href="games.html">${copy.games}</a></div></div>
+    <div class="palace-complete-copy"><p class="palace-kicker">${copy.completeEyebrow}</p><h2 id="palace-complete-title">${copy.completeHeading}</h2><p>${copy.completeBody}</p><p class="palace-result-line"><strong>${won ? "You were first out." : `${escapeHtml(result.winnerName || "A rival")} was first out.`}</strong> ${escapeHtml(result.finalMessage || "The game reached its legal result.")}</p><div class="palace-entry-actions"><button class="palace-primary" type="button" data-replay>Play this same deal again</button><a href="palace.html">${copy.explore}</a><a href="games.html">${copy.games}</a></div></div>
   </section>`;
 }
 
@@ -221,10 +211,11 @@ function tableCardsMarkup(player, interactive) {
 function handMarkup() {
   const human = game.players[0];
   const playableIds = new Set(getPlayableCards(game, RULES, 0).map((card) => card.id));
+  const jumpIds = new Set(getJumpInMoveAt(game, RULES, 0, jumpNow())?.cards.map(c => c.id) || []);
   return human.hand.map((card, index) => cardMarkup(card, {
     zone: "hand",
-    legal: game.status === "setup" || playableIds.has(card.id),
-    disabled: game.status !== "setup" && (game.currentPlayer !== 0 || !playableIds.has(card.id))
+    legal: game.status === "setup" || playableIds.has(card.id) || jumpIds.has(card.id),
+    disabled: game.status !== "setup" && !jumpIds.has(card.id) && (game.currentPlayer !== 0 || !playableIds.has(card.id))
   })).join("");
 }
 
@@ -247,7 +238,7 @@ function actionPrompt() {
 
 function commandMarkup() {
   if (game.status === "setup") return `<button class="palace-primary palace-command" type="button" data-start-hand>Start hand</button>`;
-  const jump = getJumpInMoveAt(game, RULES, 0, Date.now());
+  const jump = getJumpInMoveAt(game, RULES, 0, jumpNow());
   if (jump) return `<button class="palace-primary palace-command" type="button" data-jump ${selection.length && selection.length < 2 ? "disabled" : ""}>Jump in${selection.length ? ` × ${selection.length}` : ""}</button>`;
   if (game.currentPlayer !== 0) return "";
   const human = game.players[0];
@@ -282,65 +273,30 @@ function tableMarkup() {
   <dialog class="palace-log-dialog" data-log-dialog aria-labelledby="palace-log-title"><div><button type="button" data-close-log aria-label="Close round history">×</button><h2 id="palace-log-title">Round history</h2><ol>${(game.log || []).map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ol></div></dialog>`;
 }
 
-function render({ announce = false } = {}) {
-  clearTimeout(botTimer);
-  record = record || loadRecord();
-  if (record?.status === "recovery") ROOT.innerHTML = recoveryMarkup();
-  else if (record?.status === "completed") ROOT.innerHTML = completionMarkup();
-  else if (!game && record?.status === "inProgress") {
-    game = record.game;
-    ROOT.innerHTML = tableMarkup();
-  } else if (!game) ROOT.innerHTML = introMarkup();
-  else if (game.status === "finished") {
-    saveGame();
-    ROOT.innerHTML = completionMarkup();
-  } else ROOT.innerHTML = tableMarkup();
-  ROOT.removeAttribute("aria-busy");
-  document.body.classList.toggle("palace-game-active", Boolean(game && game.status !== "finished"));
-  if (game && game.status !== "finished") window.scrollTo({ top: 0, behavior: "instant" });
-  bindEvents();
-  if (announce) ROOT.focus({ preventScroll: true });
-  if (game?.status === "playing" && game.currentPlayer > 0) scheduleBot();
-  else if (game?.status === "playing" && game.currentPlayer === 0 && game.jumpInWindow) {
-    const expiresIn = Math.max(0, Number(game.jumpInWindow.deadlineAt || 0) - Date.now() + 20);
-    botTimer = setTimeout(() => {
-      if (!game?.jumpInWindow || game.currentPlayer !== 0 || getJumpInMoveAt(game, RULES, 0, Date.now())) return;
-      game = { ...game, jumpInWindow: null };
-      saveGame();
-      render();
-    }, expiresIn);
-  }
+function render({announce=false}={}) {
+  clearTimeout(botTimer);pending.delete(botTimer);
+  const focusedCard = ROOT.contains(document.activeElement) ? document.activeElement?.dataset.cardId : null;
+  try {
+    ROOT.getAnimations?.({subtree:true}).forEach(a=>a.cancel());
+    ROOT.innerHTML=!game?introMarkup():game.status==='finished'?completionMarkup():tableMarkup();
+    ROOT.removeAttribute('aria-busy');
+    document.body.classList.toggle('palace-game-active',Boolean(game && game.status!=='finished'));
+    updateNotice();bindEvents();if(announce)ROOT.focus({preventScroll:true});
+    else if(focusedCard) ROOT.querySelector(`[data-card-id="${CSS.escape(focusedCard)}"]:not(:disabled)`)?.focus({preventScroll:true});
+    if(game?.status==='playing' && game.currentPlayer>0)scheduleBot();
+    else if(game?.status==='playing' && game.jumpInWindow)botTimer=later(()=>{if(commit({type:'close-window'}))render();},fastMode?8:Math.max(0,game.jumpInWindow.deadlineAt-game.jumpInWindow.openedAt));
+  } catch {showError();}
 }
-
 function bindEvents() {
-  ROOT.querySelector("[data-deal]")?.addEventListener("click", startGame);
-  ROOT.querySelector("[data-recover]")?.addEventListener("click", () => { localStorage.removeItem(STORAGE_KEY); record = null; game = null; render({ announce: true }); });
-  ROOT.querySelector("[data-start-hand]")?.addEventListener("click", startHand);
-  ROOT.querySelector("[data-pickup]")?.addEventListener("click", () => humanPlay(null));
-  ROOT.querySelector("[data-play-selected]")?.addEventListener("click", playSelected);
-  ROOT.querySelector("[data-jump]")?.addEventListener("click", jumpIn);
-  ROOT.querySelectorAll("[data-card-id]").forEach((button) => button.addEventListener("click", () => chooseCard(button.dataset.cardId, button.dataset.zone)));
-  ROOT.querySelector("[data-sound]")?.addEventListener("click", () => { preferences.sound = !preferences.sound; savePreferences(); if (preferences.sound) tone(520, 0.06); render(); });
-  ROOT.querySelector("[data-motion]")?.addEventListener("click", () => { preferences.reducedMotion = !preferences.reducedMotion; savePreferences(); render(); });
-  ROOT.querySelector("[data-fullscreen]")?.addEventListener("click", () => ROOT.querySelector(".palace-app-frame")?.requestFullscreen?.());
-  const dialog = ROOT.querySelector("[data-log-dialog]");
-  ROOT.querySelector("[data-log]")?.addEventListener("click", () => dialog?.showModal());
-  ROOT.querySelector("[data-close-log]")?.addEventListener("click", () => dialog?.close());
-}
-
-function startGame() {
-  if (record?.status === "completed" || busy) return;
-  busy = true;
-  const playerCount = Number(ROOT.querySelector('input[name="palace-players"]:checked')?.value || 2);
-  const random = qaSeed == null ? null : seededRandom(qaSeed);
-  game = withRandom(random, () => createInitialGame(RULES, playerCount, { name: "You", avatar: "🙂" }));
-  record = null;
-  selection = [];
-  setupPick = null;
-  saveGame();
-  tone(392, 0.08);
-  busy = false;
-  render({ announce: true });
+ const token=generation;
+ const on=(selector,callback)=>ROOT.querySelectorAll(selector).forEach(node=>node.addEventListener('click',()=>{if(token!==generation)return;try{callback(node);}catch{showError();}}));
+ on('[data-deal]',resetDemo);on('[data-replay]',resetDemo);on('[data-start-hand]',startHand);
+ on('[data-pickup]',()=>humanPlay(null));on('[data-play-selected]',playSelected);on('[data-jump]',jumpIn);
+ on('[data-card-id]',node=>chooseCard(node.dataset.cardId,node.dataset.zone));
+ on('[data-sound]',()=>{preferences.sound=!preferences.sound;savePreferences();if(preferences.sound)tone(520,.06);render();});
+ on('[data-motion]',()=>{preferences.reducedMotion=!preferences.reducedMotion;savePreferences();render();});
+ on('[data-fullscreen]',()=>{const token=generation;ROOT.querySelector('.palace-app-frame')?.requestFullscreen?.()?.catch(()=>{if(token===generation){notice='Full screen is unavailable in this browser.';updateNotice();}});});
+ const dialog=ROOT.querySelector('[data-log-dialog]');on('[data-log]',()=>dialog?.showModal());on('[data-close-log]',()=>dialog?.close());
 }
 
 function chooseCard(cardId, zone) {
@@ -364,14 +320,14 @@ function chooseCard(cardId, zone) {
     }
     const handId = zone === "hand" ? cardId : setupPick.cardId;
     const faceUpId = zone === "faceUp" ? cardId : setupPick.cardId;
-    game = swapSetupCards(game, handId, faceUpId, RULES);
+    if(!commit({type:"swap",handId,faceUpId}))return;
     setupPick = null;
     saveGame();
     tone(460, 0.04);
     render();
     return;
   }
-  const jumpMove = getJumpInMoveAt(game, RULES, 0, Date.now());
+  const jumpMove = getJumpInMoveAt(game, RULES, 0, jumpNow());
   if (jumpMove && jumpMove.cards.some((item) => item.id === cardId)) {
     if (selection.includes(cardId)) selection = selection.filter((id) => id !== cardId);
     else selection = selection.filter((id) => jumpMove.cards.some((item) => item.id === id)).concat(cardId);
@@ -398,7 +354,7 @@ function chooseCard(cardId, zone) {
 function startHand() {
   if (!game || game.status !== "setup" || busy) return;
   busy = true;
-  game = finishSetup(game, RULES);
+  if(!commit({type:"start"}))return;
   selection = [];
   setupPick = null;
   saveGame();
@@ -422,7 +378,7 @@ function humanPlay(cardId, selectedIds = null) {
   if (!game || game.status !== "playing" || game.currentPlayer !== 0 || busy) return;
   busy = true;
   const before = game;
-  game = playCard(game, RULES, 0, cardId, selectedIds, { now: Date.now() });
+  if(!commit({type:"play",cardId,selectedIds}))return;
   selection = [];
   if (game.revision === before.revision && game.message === before.message) {
     busy = false;
@@ -437,11 +393,11 @@ function humanPlay(cardId, selectedIds = null) {
 
 function jumpIn() {
   if (!game || busy) return;
-  const move = getJumpInMoveAt(game, RULES, 0, Date.now());
+  const move = getJumpInMoveAt(game, RULES, 0, jumpNow());
   if (!move) return;
   const ids = selection.length ? selection : move.cards.map((card) => card.id);
   if (ids.length < PALACE_JUMP_IN_POLICY.minimumCards) return;
-  game = playJumpIn(game, RULES, 0, ids, { now: Date.now() });
+  if(!commit({type:"jump",cardIds:ids}))return;
   selection = [];
   saveGame();
   tone(880, 0.09);
@@ -449,24 +405,15 @@ function jumpIn() {
 }
 
 function scheduleBot() {
-  if (!game || game.status !== "playing" || game.currentPlayer <= 0 || document.hidden) return;
-  const waitForJump = game.jumpInWindow ? Math.max(0, Number(game.jumpInWindow.deadlineAt || 0) - Date.now()) : 0;
-  const delay = fastMode ? 8 : Math.max(waitForJump, palaceBotActionDelay({ bot: game.players[game.currentPlayer], reducedMotion: preferences.reducedMotion, previousAction: game.lastEvent?.type || "play" }));
-  botTimer = setTimeout(runBot, delay);
+ if(!game || game.status!=='playing' || game.currentPlayer<=0 || document.hidden)return;
+ const waitForJump=game.jumpInWindow?game.jumpInWindow.deadlineAt-game.jumpInWindow.openedAt:0;
+ const delay=fastMode?8:Math.max(waitForJump,palaceBotActionDelay({bot:game.players[game.currentPlayer],reducedMotion:preferences.reducedMotion,previousAction:game.lastEvent?.type || 'play'}));
+ botTimer=later(runBot,delay);
 }
-
 function runBot() {
-  if (!game || busy || document.hidden || game.status !== "playing" || game.currentPlayer <= 0) return;
-  busy = true;
-  if (game.jumpInWindow) {
-    const jumped = maybeBotJumpIn(game, RULES, game.jumpInWindow.playedBy, { now: Math.max(Date.now(), Number(game.jumpInWindow.openedAt || 0) + 1000), random: qaSeed == null ? Math.random : seededRandom(qaSeed + Number(game.revision || 0)) });
-    if (jumped !== game) game = jumped;
-    else game = { ...game, jumpInWindow: null };
-  } else game = botTakeTurn(game, RULES);
-  saveGame();
-  tone(game.lastEvent?.type === "pickup" ? 180 : game.lastEvent?.type === "clear" ? 760 : 330, 0.04);
-  busy = false;
-  render();
+ if(!game || busy || document.hidden || game.status!=='playing' || game.currentPlayer<=0)return;
+ busy=true;if(!commit({type:'bot'}))return;
+ tone(game.lastEvent?.type==='pickup'?180:game.lastEvent?.type==='clear'?760:330,.04);render();
 }
 
 function tone(frequency, duration) {
@@ -480,33 +427,16 @@ function tone(frequency, duration) {
     gain.gain.exponentialRampToValueAtTime(0.045, audioContext.currentTime + 0.01);
     gain.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + duration);
     oscillator.connect(gain).connect(audioContext.destination);
+    oscillators.add(oscillator);oscillator.onended=()=>oscillators.delete(oscillator);
     oscillator.start();
     oscillator.stop(audioContext.currentTime + duration + 0.02);
   } catch { /* Sound remains optional. */ }
 }
 
-document.addEventListener("visibilitychange", () => {
-  clearTimeout(botTimer);
-  if (!document.hidden && game?.status === "playing" && game.currentPlayer > 0) scheduleBot();
+document.addEventListener('visibilitychange',()=>{clearTimeout(botTimer);pending.delete(botTimer);if(!document.hidden)render();});
+window.addEventListener('storage',event=>{
+ if(event.key!==STORAGE_KEY)return;
+ cancelSession();session=null;record=null;game=null;record=loadRecord();if(session)saveGame();render();
 });
-
-window.addEventListener("storage", (event) => {
-  if (event.key !== STORAGE_KEY) return;
-  record = loadRecord();
-  game = record?.status === "inProgress" ? record.game : null;
-  selection = [];
-  render();
-});
-
-if (qaAllowed) {
-  window.__PALACE_WEB_QA__ = Object.freeze({
-    storageKey: STORAGE_KEY,
-    preferencesKey: PREFERENCES_KEY,
-    reset() { localStorage.removeItem(STORAGE_KEY); record = null; game = null; selection = []; render(); },
-    snapshot() { return JSON.parse(JSON.stringify({ record, game })); }
-  });
-}
-
-record = loadRecord();
-if (record?.status === "inProgress") game = record.game;
-render();
+if(qaAllowed)window.__PALACE_WEB_QA__=Object.freeze({storageKey:STORAGE_KEY,preferencesKey:PREFERENCES_KEY,fixtureId:FIXTURE_ID,snapshot(){return JSON.parse(JSON.stringify({record,game,session,generation,pending:pending.size}));}});
+record=loadRecord();if(session)saveGame();render();

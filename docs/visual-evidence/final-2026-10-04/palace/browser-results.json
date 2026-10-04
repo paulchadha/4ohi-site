@@ -1,0 +1,45 @@
+{
+  "target": "http://127.0.0.1:4173",
+  "engine": "Installed Google Chrome (Chromium)",
+  "passed": 9,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Fixed initial allocation; URL seed, language and name cannot select another deal",
+      "status": "pass"
+    },
+    {
+      "name": "Legal moves, exact restart, preferences, and valid progress reload",
+      "status": "pass"
+    },
+    {
+      "name": "Pending bot callbacks, detached actions, animation cancellation and twenty rapid resets",
+      "status": "pass"
+    },
+    {
+      "name": "Corrupt, incompatible, invalid and legacy saves recover automatically",
+      "status": "pass"
+    },
+    {
+      "name": "Storage blocked and quota exhausted: playable in memory with truthful notice",
+      "status": "pass"
+    },
+    {
+      "name": "Recovery control remains usable after a controller render error",
+      "status": "pass"
+    },
+    {
+      "name": "Complete legal game, completion reload, same-deal replay and matching result",
+      "status": "pass"
+    },
+    {
+      "name": "Phone, tablet and desktop; keyboard, log dialog, focus and reduced motion",
+      "status": "pass"
+    },
+    {
+      "name": "No console errors and no QA control on public hostname",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

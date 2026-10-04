@@ -6,11 +6,204 @@
     <description>Company and game news from Four of Hearts Interactive.</description>
     <language>en-us</language>
     <item>
+      <title>Modern art has been informed about gravity.</title>
+      <link>https://4ohi.com/news-sling-nouveau-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-sling-nouveau-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Sling Nouveau begins with a pleasingly unreasonable idea: what if a sculptural playground also invited you to knock things down?</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>The rematch should not require technical support.</title>
+      <link>https://4ohi.com/news-palace-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-palace-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>The website table has a deliberately simple brief: one fixed deal, as many attempts as you like.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>Five cards. Plenty of opinions.</title>
+      <link>https://4ohi.com/news-euchre-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-euchre-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Euchre already provides enough uncertainty through the cards. The interface does not need to contribute.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>Friendship, with penalty points.</title>
+      <link>https://4ohi.com/news-hearts-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-hearts-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Hearts has a lovely ability to make an innocent-looking card feel like a personal statement.</description>
+      <category>Design diary</category>
+    </item>
+    <item>
+      <title>Confidence is not a bidding strategy. Apparently.</title>
+      <link>https://4ohi.com/news-spades-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-spades-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Spades deserves a table that respects the partnership.</description>
+      <category>Design diary</category>
+    </item>
+    <item>
+      <title>One more deal. Entirely your own idea.</title>
+      <link>https://4ohi.com/news-solitaire-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-solitaire-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Solitaire should feel pleasantly inevitable: see the move, move the card, enjoy the little moment when everything starts to line up.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>Let the cards cause the trouble.</title>
+      <link>https://4ohi.com/news-war-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-war-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>War does not need a complicated introduction. It needs a dependable entrance, a clear table, and a satisfying flip.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>A dragon is not a chore-management app.</title>
+      <link>https://4ohi.com/news-gildenspire-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-gildenspire-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>A dragon should make you want to take off.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>Your thumb has declined additional paperwork.</title>
+      <link>https://4ohi.com/news-thumb-command-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-thumb-command-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Thumb Command has a very clear staffing arrangement: one thumb, quite a lot of responsibility.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>A dinosaur needs room to make an entrance.</title>
+      <link>https://4ohi.com/news-bobby-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-bobby-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Bobby’s world should feel lively before the first enemy arrives.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>We would like the towers to be a little less normal.</title>
+      <link>https://4ohi.com/news-evil-doom-boy-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-evil-doom-boy-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>The blade tower has set an inconveniently entertaining standard.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>A city, not a directory of buttons.</title>
+      <link>https://4ohi.com/news-booyang-city-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-booyang-city-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>BooYang City should invite you to look around and choose somewhere to go.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>The planning department has rejected beige.</title>
+      <link>https://4ohi.com/news-funky-town-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-funky-town-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Funky Town needs room to be itself.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>Shorter name. Unreasonably enthusiastic explosions.</title>
+      <link>https://4ohi.com/news-heartstack-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-heartstack-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>The name going forward is Unicorn Blast.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>The shoes have been asked to remain on the feet.</title>
+      <link>https://4ohi.com/news-princess-land-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-princess-land-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>A beautiful dress-up game depends on details that cannot be negotiated away: fit, scale, layering, and characters who feel alive.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>We have not established a maximum number of flowers.</title>
+      <link>https://4ohi.com/news-unicorn-land-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-unicorn-land-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Unicorn Land Adventures has its own creative brief: unicorns to personalize, habitats to shape, details to discover, and room to make something wonderfully yours.</description>
+      <category>Design diary</category>
+    </item>
+    <item>
+      <title>Less spreadsheet. More bedside manner.</title>
+      <link>https://4ohi.com/news-sleep-amigo-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-sleep-amigo-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>The Amigo is the point.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
+      <title>Your next counteroffer deserves better than “Um.”</title>
+      <link>https://4ohi.com/news-sovinto-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-sovinto-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>SOVINTO is built around an understandable ambition: help people prepare for conversations that matter.</description>
+      <category>Workbench brief</category>
+    </item>
+    <item>
+      <title>Twenty open tabs is not a research strategy.</title>
+      <link>https://4ohi.com/news-whomly-workbench-october-2026.html</link>
+      <guid>https://4ohi.com/news-whomly-workbench-october-2026.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Whomly’s direction is to turn scattered public professional information into useful context.</description>
+      <category>Workbench brief</category>
+    </item>
+    <item>
+      <title>A table with room to think.</title>
+      <link>https://4ohi.com/news-gin-rummy-a-table-with-room-to-think.html</link>
+      <guid>https://4ohi.com/news-gin-rummy-a-table-with-room-to-think.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Gin Rummy is a two-player game. The interface should leave room for the decisions.</description>
+      <category>Workbench brief</category>
+    </item>
+    <item>
+      <title>Before the dragons, there were cards.</title>
+      <link>https://4ohi.com/news-before-the-dragons-there-were-cards.html</link>
+      <guid>https://4ohi.com/news-before-the-dragons-there-were-cards.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Before there were dragons to steer, cities to build, or unicorns requiring an unreasonable amount of creative attention, there were cards.</description>
+      <category>Retrospective</category>
+    </item>
+    <item>
+      <title>The card table got a little out of hand.</title>
+      <link>https://4ohi.com/news-the-card-table-got-a-little-out-of-hand.html</link>
+      <guid>https://4ohi.com/news-the-card-table-got-a-little-out-of-hand.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>A sensible studio might add another card game and call it a productive afternoon.</description>
+      <category>Retrospective</category>
+    </item>
+    <item>
+      <title>A U has entered the chat.</title>
+      <link>https://4ohi.com/news-a-u-has-entered-the-chat.html</link>
+      <guid>https://4ohi.com/news-a-u-has-entered-the-chat.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>A brief developer detour into Canadian English, where “colour” brings an extra letter and “centre” rearranges the furniture.</description>
+      <category>Studio story</category>
+    </item>
+    <item>
+      <title>Fewer buttons. More “one more go.”</title>
+      <link>https://4ohi.com/news-fewer-buttons-more-one-more-go.html</link>
+      <guid>https://4ohi.com/news-fewer-buttons-more-one-more-go.html</guid>
+      <pubDate>Sun, 04 Oct 2026 12:00:00 GMT</pubDate>
+      <description>The workbench has a recurring request: give the enjoyable part more room.</description>
+      <category>Developer diary</category>
+    </item>
+    <item>
       <title>BooYang City: a town that grows with play</title>
       <link>https://4ohi.com/news-booyang-a-town-that-grows-with-play.html</link>
       <guid>https://4ohi.com/news-booyang-a-town-that-grows-with-play.html</guid>
       <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
       <description>Animal friends, pastry inventions, go-karts, and new places to explore are taking shape in the development build.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>GildenSpire: a dragon built to move</title>
@@ -18,6 +211,7 @@
       <guid>https://4ohi.com/news-gildenspire-a-dragon-built-to-move.html</guid>
       <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
       <description>An original animated dragon, richer terrain, and a completed native campaign check move the world forward.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Small fixes that change the feel</title>
@@ -25,6 +219,7 @@
       <guid>https://4ohi.com/news-small-fixes-that-change-the-feel.html</guid>
       <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
       <description>Battle speed, sleep refreshes, saved progress, and creative tools received focused attention in the latest audit.</description>
+      <category>Studio story</category>
     </item>
     <item>
       <title>AI in the workshop—and in useful products</title>
@@ -32,6 +227,7 @@
       <guid>https://4ohi.com/news-ai-in-the-workshop-and-the-product.html</guid>
       <pubDate>Sat, 12 Sep 2026 12:00:00 GMT</pubDate>
       <description>How AI-assisted development and carefully chosen product capabilities fit our old-school values.</description>
+      <category>Studio story</category>
     </item>
     <item>
       <title>Introducing GildenSpire: Flight or Fight</title>
@@ -39,6 +235,7 @@
       <guid>https://4ohi.com/news-introducing-gildenspire-flight-or-fight.html</guid>
       <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
       <description>Raise a dragon, take direct control in the sky, and discover what happens when flying becomes fighting.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Why Flying Has to Be Fun</title>
@@ -46,6 +243,7 @@
       <guid>https://4ohi.com/news-why-flying-has-to-be-fun.html</guid>
       <pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate>
       <description>The journey should be gameplay: direct flight, enormous terrain, curiosity, and combat that rewards control.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Building Dragons That Actually Feel Different</title>
@@ -53,6 +251,7 @@
       <guid>https://4ohi.com/news-building-dragons-that-actually-feel-different.html</guid>
       <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <description>GildenSpire dragons are being designed as different creatures—not one model wearing different colors.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>From Search to Opportunity: Building Whomly</title>
@@ -60,6 +259,7 @@
       <guid>https://4ohi.com/news-from-search-to-opportunity-building-whomly.html</guid>
       <pubDate>Thu, 03 Sep 2026 12:00:00 GMT</pubDate>
       <description>How a search-first interface can turn public professional research into useful context and a thoughtful next step.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Welcome to BooYang City</title>
@@ -67,6 +267,7 @@
       <guid>https://4ohi.com/news-welcome-to-booyang-city.html</guid>
       <pubDate>Mon, 31 Aug 2026 12:00:00 GMT</pubDate>
       <description>A connected city gives us room for a zoo, bakery, boutique, school, hospital, and almost anything fun that might open next.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Introducing Thumb Command: Save Planet Earth</title>
@@ -74,6 +275,7 @@
       <guid>https://4ohi.com/news-thumb-command-save-planet-earth.html</guid>
       <pubDate>Sat, 29 Aug 2026 12:00:00 GMT</pubDate>
       <description>Meet Blueguard and the worldwide arcade-defense campaign taking shape at Four of Hearts Interactive.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Making Sleep Data Feel Human</title>
@@ -81,6 +283,7 @@
       <guid>https://4ohi.com/news-making-sleep-data-feel-human.html</guid>
       <pubDate>Fri, 28 Aug 2026 12:00:00 GMT</pubDate>
       <description>Sleep Readiness, Tonight’s Game Plan, Ask Amigo, Wind Down, and a small celestial companion give the numbers some warmth.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Building a Town That Refuses to Look Normal</title>
@@ -88,6 +291,7 @@
       <guid>https://4ohi.com/news-building-a-town-that-refuses-to-look-normal.html</guid>
       <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
       <description>Funky Town treats buildings as canvases and progression as a chance to make every neighborhood more expressive.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Building Unicorn Land Adventures</title>
@@ -95,6 +299,7 @@
       <guid>https://4ohi.com/news-building-unicorn-land-adventures.html</guid>
       <pubDate>Mon, 24 Aug 2026 12:00:00 GMT</pubDate>
       <description>Unicorn creation, magical habitats, decorating, discovery, and mini-games define a distinct creative game.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Inside Princess Land Adventures</title>
@@ -102,6 +307,7 @@
       <guid>https://4ohi.com/news-inside-princess-land-adventures.html</guid>
       <pubDate>Fri, 21 Aug 2026 12:00:00 GMT</pubDate>
       <description>Character style, castle rooms, cooking, decorating, and mini-games begin forming one creative game.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>People Lens Is Becoming Whomly</title>
@@ -109,6 +315,7 @@
       <guid>https://4ohi.com/news-people-lens-is-becoming-whomly.html</guid>
       <pubDate>Wed, 19 Aug 2026 12:00:00 GMT</pubDate>
       <description>The working name is retiring. Whomly better fits the journey from discovery to context to possible opportunity.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>HeartStack Unicorn Blast Joins the Workbench</title>
@@ -116,6 +323,7 @@
       <guid>https://4ohi.com/news-heartstack-joins-the-workbench.html</guid>
       <pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
       <description>A first look at colourful combos, crystal cages, boosters, and unicorn rescue.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Evil Doom Boy: Two Heroes, One Fight</title>
@@ -123,6 +331,7 @@
       <guid>https://4ohi.com/news-evil-doom-two-heroes-one-route.html</guid>
       <pubDate>Fri, 14 Aug 2026 12:00:00 GMT</pubDate>
       <description>Evil Doom Boy is one action-adventure game with Evil Doom Boy as the default hero and Evil Doom Girl as the alternate hero.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Bobby and the Breadstone</title>
@@ -130,6 +339,7 @@
       <guid>https://4ohi.com/news-bobby-and-the-breadstone.html</guid>
       <pubDate>Tue, 11 Aug 2026 12:00:00 GMT</pubDate>
       <description>Bread-powered towers, branching paths, cheerful enemies, and one heroic dinosaur define Bobby’s direction.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>Why We’re Building Sleep Amigo</title>
@@ -137,6 +347,7 @@
       <guid>https://4ohi.com/news-why-were-building-sleep-amigo.html</guid>
       <pubDate>Sat, 08 Aug 2026 12:00:00 GMT</pubDate>
       <description>The harder sleep problem is not collecting another number. It is understanding what may matter tonight.</description>
+      <category>Developer diary</category>
     </item>
     <item>
       <title>The 4OH Card Table Adds Solitaire and War</title>
@@ -144,6 +355,7 @@
       <guid>https://4ohi.com/news-card-table-adds-solitaire-war.html</guid>
       <pubDate>Fri, 07 Aug 2026 12:00:00 GMT</pubDate>
       <description>Two familiar card games join Palace, Hearts, Spades, and Euchre in the Four of Hearts lineup.</description>
+      <category>Studio story</category>
     </item>
     <item>
       <title>Palace 0.1.9 Enters Founder Review</title>
@@ -151,6 +363,7 @@
       <guid>https://4ohi.com/news-palace-019-founder-review.html</guid>
       <pubDate>Tue, 04 Aug 2026 12:00:00 GMT</pubDate>
       <description>The flagship card-table build advances through hands-on founder testing.</description>
+      <category>Developer diary</category>
     </item>
   </channel>
 </rss>

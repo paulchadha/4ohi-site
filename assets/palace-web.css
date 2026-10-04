@@ -45,3 +45,20 @@
 .palace-deck-counter span{font-size:9px}.palace-center-pile>p{font-size:9px}
 .human-seat-label{font-size:10px}
 }
+
+/* Recovery lives outside the controller and remains available in every state. */
+.palace-demo-recovery{width:min(1120px,100%);margin:auto;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;background:#071b32;color:#fff8e8}
+.palace-demo-recovery p{margin:0;font-size:14px}.palace-demo-recovery button{min-height:44px;padding:8px 14px;border:2px solid #f7c941;border-radius:8px;color:#071b32;background:#f7c941;font-weight:800;cursor:pointer}
+.palace-demo-recovery small{width:100%;font-size:12px;line-height:1.4;color:#dfebf7}
+.palace-session-error{padding:32px;color:#fff8e8}
+.palace-web-page.palace-game-active .palace-web-shell{display:block;min-height:100svh}
+.palace-web-page.palace-game-active .palace-app-frame{height:calc(100svh - 102px);min-height:520px}
+.palace-web-page.palace-game-active .palace-web-game{min-height:0}
+.palace-fixed-opponent{font-weight:700}
+@media(max-width:600px){.palace-demo-recovery{padding:8px 10px}.palace-demo-recovery p{max-width:155px;font-size:12px}.palace-demo-recovery button{padding:7px 10px;font-size:12px}.palace-demo-recovery small{font-size:11px}.palace-web-page.palace-game-active .palace-app-frame{height:calc(100svh - 112px);min-height:560px}}
+@media(max-height:500px) and (orientation:landscape){
+.palace-demo-recovery{display:grid;grid-template-columns:1fr auto 1.2fr;padding:5px 10px;gap:12px}.palace-demo-recovery p{font-size:12px;max-width:none}.palace-demo-recovery small{width:auto;font-size:11px}
+.palace-web-page.palace-game-active .palace-app-frame{height:calc(100svh - var(--palace-recovery-height,64px));min-height:0;grid-template-rows:40px 24px minmax(0,1fr)}
+.palace-app-identity img{width:34px;height:34px}.palace-app-tools button{min-height:34px}.palace-latest,.palace-prompt{font-size:11px}.palace-action-dock{padding:5px}
+.palace-table-cards,.palace-app-frame.is-setup .palace-table-cards{left:-50px}.palace-hand .palace-card{width:52px}
+}

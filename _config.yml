@@ -6,3 +6,5 @@ exclude:
   - scripts
   - README.md
   - WEBSITE_INFORMATION_ARCHITECTURE.md
+
+  - account-app

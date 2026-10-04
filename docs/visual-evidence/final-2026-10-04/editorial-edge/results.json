@@ -1,0 +1,238 @@
+{
+  "target": "http://127.0.0.1:4173",
+  "engine": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+  "articles": 45,
+  "preservedIdentifiers": 21,
+  "parsedRss": true,
+  "parsedSitemap": true,
+  "history": true,
+  "privateOutputsExcluded": true,
+  "errors": [],
+  "inspected": [
+    {
+      "slug": "sling-nouveau-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "palace-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "euchre-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "hearts-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "spades-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "solitaire-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "war-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "gildenspire-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "thumb-command-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "bobby-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "evil-doom-boy-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "booyang-city-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "funky-town-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "heartstack-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "princess-land-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "unicorn-land-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 4
+    },
+    {
+      "slug": "sleep-amigo-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "sovinto-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "whomly-workbench-october-2026",
+      "date": "2026-10-04",
+      "paragraphs": 5
+    },
+    {
+      "slug": "gin-rummy-a-table-with-room-to-think",
+      "date": "2026-10-04",
+      "paragraphs": 3
+    },
+    {
+      "slug": "before-the-dragons-there-were-cards",
+      "date": "2026-10-04",
+      "paragraphs": 7
+    },
+    {
+      "slug": "the-card-table-got-a-little-out-of-hand",
+      "date": "2026-10-04",
+      "paragraphs": 8
+    },
+    {
+      "slug": "a-u-has-entered-the-chat",
+      "date": "2026-10-04",
+      "paragraphs": 7
+    },
+    {
+      "slug": "fewer-buttons-more-one-more-go",
+      "date": "2026-10-04",
+      "paragraphs": 7
+    },
+    {
+      "slug": "booyang-a-town-that-grows-with-play",
+      "date": "2026-09-12",
+      "paragraphs": 3
+    },
+    {
+      "slug": "gildenspire-a-dragon-built-to-move",
+      "date": "2026-09-12",
+      "paragraphs": 3
+    },
+    {
+      "slug": "small-fixes-that-change-the-feel",
+      "date": "2026-09-12",
+      "paragraphs": 4
+    },
+    {
+      "slug": "ai-in-the-workshop-and-the-product",
+      "date": "2026-09-12",
+      "paragraphs": 4
+    },
+    {
+      "slug": "introducing-gildenspire-flight-or-fight",
+      "date": "2026-09-05",
+      "paragraphs": 8
+    },
+    {
+      "slug": "why-flying-has-to-be-fun",
+      "date": "2026-09-04",
+      "paragraphs": 7
+    },
+    {
+      "slug": "building-dragons-that-actually-feel-different",
+      "date": "2026-09-03",
+      "paragraphs": 8
+    },
+    {
+      "slug": "from-search-to-opportunity-building-whomly",
+      "date": "2026-09-03",
+      "paragraphs": 4
+    },
+    {
+      "slug": "welcome-to-booyang-city",
+      "date": "2026-08-31",
+      "paragraphs": 4
+    },
+    {
+      "slug": "thumb-command-save-planet-earth",
+      "date": "2026-08-29",
+      "paragraphs": 2
+    },
+    {
+      "slug": "making-sleep-data-feel-human",
+      "date": "2026-08-28",
+      "paragraphs": 4
+    },
+    {
+      "slug": "building-a-town-that-refuses-to-look-normal",
+      "date": "2026-08-25",
+      "paragraphs": 4
+    },
+    {
+      "slug": "building-unicorn-land-adventures",
+      "date": "2026-08-24",
+      "paragraphs": 2
+    },
+    {
+      "slug": "inside-princess-land-adventures",
+      "date": "2026-08-21",
+      "paragraphs": 2
+    },
+    {
+      "slug": "people-lens-is-becoming-whomly",
+      "date": "2026-08-19",
+      "paragraphs": 4
+    },
+    {
+      "slug": "heartstack-joins-the-workbench",
+      "date": "2026-08-18",
+      "paragraphs": 2
+    },
+    {
+      "slug": "evil-doom-two-heroes-one-route",
+      "date": "2026-08-14",
+      "paragraphs": 2
+    },
+    {
+      "slug": "bobby-and-the-breadstone",
+      "date": "2026-08-11",
+      "paragraphs": 2
+    },
+    {
+      "slug": "why-were-building-sleep-amigo",
+      "date": "2026-08-08",
+      "paragraphs": 4
+    },
+    {
+      "slug": "card-table-adds-solitaire-war",
+      "date": "2026-08-07",
+      "paragraphs": 2
+    },
+    {
+      "slug": "palace-019-founder-review",
+      "date": "2026-08-04",
+      "paragraphs": 2
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "engines": {
+    "chromium": {
+      "path": "C:\\Users\\paulc\\AppData\\Local\\ms-playwright\\chromium-1234\\chrome-win64\\chrome.exe",
+      "installed": true
+    },
+    "firefox": {
+      "path": "C:\\Users\\paulc\\AppData\\Local\\ms-playwright\\firefox-1538\\firefox\\firefox.exe",
+      "installed": false
+    },
+    "webkit": {
+      "path": "C:\\Users\\paulc\\AppData\\Local\\ms-playwright\\webkit-2336\\Playwright.exe",
+      "installed": false
+    }
+  },
+  "dealsIdentical": false,
+  "restartControls": 0,
+  "storageDenial": {
+    "errors": [
+      "Storage denied"
+    ],
+    "startControlRemains": 1,
+    "tableRendered": 0
+  }
+}

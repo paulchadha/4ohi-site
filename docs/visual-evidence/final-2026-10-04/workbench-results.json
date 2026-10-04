@@ -1,0 +1,48 @@
+{
+  "target": "http://127.0.0.1:62550",
+  "products": 20,
+  "articles": 45,
+  "results": [
+    {
+      "name": "All products show the latest shared note and static archive",
+      "status": "pass"
+    },
+    {
+      "name": "Every product filter returns exactly its associated articles",
+      "status": "pass"
+    },
+    {
+      "name": "Article types, collection filters and combined filters",
+      "status": "pass"
+    },
+    {
+      "name": "Reading order, load more, keyboard focus and reload state",
+      "status": "pass"
+    },
+    {
+      "name": "Historical name aliases preserve one product feed",
+      "status": "pass"
+    },
+    {
+      "name": "English articles remain honest under French, Canadian and Arabic controls",
+      "status": "pass"
+    },
+    {
+      "name": "Static reading and mobile native navigation work with JavaScript disabled",
+      "status": "pass"
+    },
+    {
+      "name": "Sling is in desktop and mobile navigation with no playable CTA",
+      "status": "pass"
+    },
+    {
+      "name": "Responsive text and keyboard focus at 320 through 1920 pixels",
+      "status": "pass"
+    },
+    {
+      "name": "All new reading routes and published article references return successfully",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

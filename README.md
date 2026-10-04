@@ -14,8 +14,11 @@ Public portfolio website for Four of Hearts Interactive, LLC and 4ohi.com.
 - Hearts, Spades, and Euchre remain in internal testing; each has a product page with verified app captures and rules. Solitaire is solo, and War offers local shared-device play.
 - SOVINTO, Whomly, and Sleep Amigo are first-class lifestyle applications in development and are intentionally excluded from the game catalog.
 - The reusable product source of truth is `scripts/studio-product-manifest.mjs`.
+- Sling Nouveau is a physics playground in development, with typography-led artwork and no public playable build. Unicorn Blast keeps the stable `heartstack` ID and existing product route.
 
 No page claims an unverified release date, platform, rating, store listing, player count, or public build.
+
+News is now **Notes from the Workbench**. The single `content/news.json` collection feeds listings, articles, homepage previews and every product journal, with static archive/origin/product reading routes, progressive filters and draft isolation. The 45 full articles include 21 preserved originals and 24 October 4 posts. See [News authoring](docs/NEWS-AUTHORING.md) and `content/article-template.json`; preview a draft with `node scripts/preview-post.mjs YOUR-SLUG`.
 
 ## Architecture
 

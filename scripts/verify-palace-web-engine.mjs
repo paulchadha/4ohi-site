@@ -13,6 +13,7 @@ import {
   playJumpIn,
   swapSetupCards
 } from "../assets/palace-web/shared/palaceEngine.js";
+import { freshSession, applyDemoAction, restoreSession } from "../assets/palace-web/demo-session.js";
 
 const RULES = CLASSIC_RULES;
 const results = [];
@@ -55,14 +56,18 @@ test("bot performs a forced pickup", () => { const game = state({ human: player(
 test("legal final card produces a winner", () => { const game = state({ human: player("You", { hand: [card("6")] }), bot: player("Bot", { bot: true, hand: [card("9")] }), pile: [card("5", "spades")] }); const next = playCard(game, RULES, 0, "6-clubs"); assert.equal(next.status, "finished"); assert.equal(getPalaceWinnerIndex(next), 0); });
 const webSource = readFileSync(new URL("../assets/palace-web.js", import.meta.url), "utf8");
 test("authoritative action writes an in-progress save", () => assert.match(webSource, /saveGame\(\)/));
-test("refresh restores the in-progress engine state", () => assert.match(webSource, /record\.game/));
-test("completion persists only after engine finished", () => assert.match(webSource, /game\.status === "finished"/));
-test("completed state has no public second-deal path", () => { assert.match(webSource, /status: "completed"/); assert(!/Play Again/i.test(webSource)); });
-test("development reset is localhost and query gated", () => assert.match(webSource, /qaAllowed[\s\S]+__PALACE_WEB_QA__/));
-test("corrupt save presents a bounded recovery path", () => assert.match(webSource, /status: "recovery"/));
+test("refresh replays and validates the exact fixed session", () => {const s=applyDemoAction(freshSession(),{type:'start'});assert.deepEqual(restoreSession(s),s);});
+test("completion derives from authoritative engine state", () => assert.ok(webSource.includes("game.status==='finished'")));
+test("completion and recovery share the public fixed-deal reset", () => {assert.ok(webSource.includes('Play this same deal again'));assert.ok(webSource.includes("on('[data-replay]',resetDemo)"));assert.ok(webSource.includes("restart?.addEventListener('click', resetDemo)"));});
+test("QA snapshot is localhost and query gated", () => assert.match(webSource, /qaAllowed[\s\S]+__PALACE_WEB_QA__/));
+test("corrupt and incompatible states cannot bypass fixed-deal validation", () => {assert.throws(()=>restoreSession({schemaVersion:1}));assert.throws(()=>restoreSession({...freshSession(),fixtureId:'random'}));});
 test("Canadian entry and completion copy is exact", () => { for (const phrase of ["PLAY PALACE, BUD", "One table. One full game.", "Deal ’em out", "Good game, bud.", "Back to the games"]) assert(webSource.includes(phrase), phrase); });
 test("keyboard, mobile, and reduced-motion contracts are present", () => { const html = readFileSync(new URL("../palace-play.html", import.meta.url), "utf8"); const css = readFileSync(new URL("../assets/palace-web.css", import.meta.url), "utf8"); assert(html.includes("palace-web.js")); assert(css.includes("@media(max-width:600px)")); assert(css.includes("prefers-reduced-motion")); assert(css.includes(":focus-visible")); });
-test("vendored engine is byte-identical to PalaceApp", () => { assert.equal(hash(new URL("../assets/palace-web/shared/palaceEngine.js", import.meta.url)), hash(new URL("../../PalaceApp/src/game/palaceEngine.js", import.meta.url))); assert.equal(hash(new URL("../assets/palace-web/shared/palaceRules.js", import.meta.url)), hash(new URL("../../PalaceApp/src/game/palaceRules.js", import.meta.url))); });
+// Verify the reviewed integration commit, not an independently changing sibling worktree.
+test("vendored engine matches reviewed PalaceApp commit 31c7578", () => {
+  assert.equal(hash(new URL("../assets/palace-web/shared/palaceEngine.js", import.meta.url)), "8bf95a18de3ca56f0c6b5128e71ef19294d14ab81e35aab6eef4db4b23e2966a");
+  assert.equal(hash(new URL("../assets/palace-web/shared/palaceRules.js", import.meta.url)), "259bbdc7c57111b8d39b4667e743b0a3277b9fa5b7fde9eca52211aa6905f8ad");
+});
 
 const simulationFailures = [];
 for (let seed = 1; seed <= 100; seed += 1) {

@@ -1,5 +1,6 @@
+import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
 import { thumbCommandPage } from "./thumb-command-content.mjs";
@@ -9,6 +10,7 @@ import { privacyCopy } from "./privacy-copy.mjs";
 import { bobbyPage, evilDoomPage, heartStackPage, princessLandPage, unicornLandPage } from "./studio-world-pages.mjs";
 import { gildenspirePageContent } from "./gildenspire-content.mjs";
 import { booyangCityPage, funkyTownPage, sleepAmigoPage, whomlyPage } from "./studio-expansion-pages.mjs";
+import { loadArticles, articleTypes, escapeHtml, newsListing, productJournal, productArchive, productAliases, notesFor, slingPage } from "./workbench-content.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const assetVersion = (assetPath) => {
@@ -19,19 +21,37 @@ const assetVersion = (assetPath) => {
   return `${clean}?v=${hash}`;
 };
 const fingerprintMarkup = (content) => content.replace(/\b(src|href)="(assets\/[^"?]+\.(?:css|js|png|webp|jpg|svg))"/g, (_, attribute, path) => `${attribute}="${assetVersion(path)}"`);
-const news = JSON.parse(readFileSync(resolve(root, "content", "news.json"), "utf8"));
+// Only published records enter any public HTML, preview, RSS or metadata.
+const news = loadArticles(root);
 const siteUrl = "https://4ohi.com";
 const company = "Four of Hearts Interactive, LLC";
 const locales = ["en", "fr", "es", "hi", "zh-Hans", "he", "ar", "en-CA"];
 
-const write = (file, content) => writeFileSync(resolve(root, file), `${(file.endsWith(".html") ? fingerprintMarkup(content) : content).trim().replace(/[ \t]+$/gm, "")}\n`, "utf8");
+const write = (file, content) => {
+  const target=resolve(root,file), bytes=`${(file.endsWith(".html") ? fingerprintMarkup(content) : content).trim().replace(/[ \t]+$/gm, "")}\n`;
+  if(existsSync(target) && readFileSync(target,"utf8")===bytes)return;
+  const temporary=`${target}.build-${process.pid}.tmp`;
+  try {writeFileSync(temporary,bytes,"utf8");renameSync(temporary,target);}
+  finally {if(existsSync(temporary))unlinkSync(temporary);}
+};
 const formatDate = (date) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
 const articleFile = (slug) => `news-${slug}.html`;
+// Retired generated journal routes cannot leave a newly private draft on disk.
+const journalOutputPath = resolve(root,"content/journal-output-manifest.json");
+const journalOutputs = [...news.map(a => articleFile(a.slug)), "news-archive.html", "news-origins.html", ...productCatalog.map(productArchive)];
+if (existsSync(journalOutputPath)) {
+  const previousOutputs = JSON.parse(readFileSync(journalOutputPath,"utf8"));
+  for (const file of previousOutputs) {
+    if (!/^news-[a-z0-9-]+\.html$/.test(file)) throw new Error("Invalid managed journal output path");
+    if (!journalOutputs.includes(file) && existsSync(resolve(root,file))) unlinkSync(resolve(root,file));
+  }
+}
 const gameToken = (key = "gameName", fallback = "Palace") => `<span data-game-token="${key}">${fallback}</span>`;
 const gameMessage = (key, fallback) => `<span data-game-message="${key}">${fallback}</span>`;
 const productCopy = (value) => String(value).replaceAll("Palace", gameToken("gameName", "Palace"));
 const brandMessage = (key, fallback) => `<span data-brand-message="${key}">${fallback}</span>`;
 const localeCopy = (en, ca) => `<span data-copy-en="${en.replaceAll('"','&quot;')}" data-copy-ca="${ca.replaceAll('"','&quot;')}">${en}</span>`;
+write("assets/workbench-products.js", `window.FOUR_HEARTS_WORKBENCH_PRODUCT_ALIASES = Object.freeze(${JSON.stringify(productAliases,null,2)});`);
 const assetManifest = Object.fromEntries(readdirSync(resolve(root, "assets"), { withFileTypes: true }).filter((entry) => entry.isFile() && entry.name !== "asset-manifest.js").map((entry) => [`assets/${entry.name}`, assetVersion(`assets/${entry.name}`)]));
 write("assets/asset-manifest.js", `window.FOUR_HEARTS_ASSETS = Object.freeze(${JSON.stringify(assetManifest, null, 2)});`);
 
@@ -40,7 +60,7 @@ const nav = (current) => {
   const group = (label, key) => `<section class="games-menu-section menu-${key}"><h2>${label}</h2><div>${productGroups[key].map(navItem).join("")}</div></section>`;
   const gamesMenu = `${group("Card Games","card-games")}${group("Arcade, Defense & Adventure","arcade-adventure")}${group("Puzzle & Creative Play","puzzle-creative")}<a class="view-all-games" href="games.html">View All Games →</a>`;
   const appsMenu = appCatalog.map(navItem).join("");
-  return `<header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}><img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="" width="76" height="58"><span class="brand-copy">Four of Hearts<small>Interactive</small></span><span class="sr-only">Four of Hearts Interactive home</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button><nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary"><details class="games-menu"${current === "games" ? " data-current=true" : ""}><summary>Games <span aria-hidden="true">+</span></summary><div class="games-menu-panel">${gamesMenu}</div></details><details class="nav-lifestyle"${current === "lifestyle" ? " data-current=true" : ""}><summary>Lifestyle Apps</summary><div class="nav-lifestyle-panel">${appsMenu}<a href="lifestyle-apps.html"><strong>View Lifestyle Apps</strong></a></div></details><a href="news.html"${current === "news" ? ' aria-current="page"' : ""}>News</a><a href="about.html"${current === "about" ? ' aria-current="page"' : ""}>About</a><a href="support.html"${current === "support" ? ' aria-current="page"' : ""}>Support</a><a class="nav-play-palace" href="palace-play.html"${current === "play" ? ' aria-current="page"' : ""}>Play Palace</a></nav><div class="header-tools" aria-label="Site preferences"><label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label><button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button></div></div></header>`;
+  return `<header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}><img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="" width="76" height="58"><span class="brand-copy">Four of Hearts<small>Interactive</small></span><span class="sr-only">Four of Hearts Interactive home</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button><nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary"><details class="games-menu"${current === "games" ? " data-current=true" : ""}><summary>Games <span aria-hidden="true">+</span></summary><div class="games-menu-panel">${gamesMenu}</div></details><details class="nav-lifestyle"${current === "lifestyle" ? " data-current=true" : ""}><summary>Lifestyle Apps</summary><div class="nav-lifestyle-panel">${appsMenu}<a href="lifestyle-apps.html"><strong>View Lifestyle Apps</strong></a></div></details><a href="news.html"${current === "news" ? ' aria-current="page"' : ""}>News</a><a href="about.html"${current === "about" ? ' aria-current="page"' : ""}>About</a><a href="support.html"${current === "support" ? ' aria-current="page"' : ""}>Support</a><a class="nav-play-palace" href="palace-play.html"${current === "play" ? ' aria-current="page"' : ""}>Play Palace</a>${accountNavigation()}</nav><div class="header-tools" aria-label="Site preferences"><label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label><button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button></div></div></header>`;
 };
 const globalDialogs = () => `
   <dialog class="site-dialog" data-settings-dialog aria-labelledby="settings-title">
@@ -102,7 +122,7 @@ const palaceTableTools = () => `<aside class="palace-table-tools" data-palace-co
 const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid footer-grid-editorial">
     <div class="footer-brand"><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-promise">Games with heart. Apps with purpose.</p><p class="footer-copy">Independent software from South Dakota.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
-    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="gildenspire.html">GildenSpire</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">HeartStack Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a><a href="booyang-city.html">BooYang City</a><a href="funky-town.html">Funky Town</a></nav>
+    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="sling-nouveau.html">Sling Nouveau</a><a href="gildenspire.html">GildenSpire</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a><a href="booyang-city.html">BooYang City</a><a href="funky-town.html">Funky Town</a></nav>
     <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2><a href="palace.html">Palace</a><a href="hearts-play.html">Hearts</a><a href="spades-play.html">Spades</a><a href="euchre-play.html">Euchre</a><a href="solitaire.html">Solitaire</a><a href="war.html">War</a><a href="gin-rummy.html">Gin Rummy</a></nav>
     <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a>${appCatalog.map(app=>`<a href="${app.infoUrl}">${app.title}</a>`).join("")}</nav>
     <nav class="footer-group" aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="about.html#south-dakota">South Dakota</a><a href="news.html">News</a><a href="support.html">Support</a><a href="contact.html">Contact</a></nav>
@@ -110,8 +130,8 @@ const footer = () => `<footer class="site-footer">
   </div><div class="footer-bottom"><span>© 2026 ${company}. All rights reserved.</span><span>Thanks for playing.</span></div></div>
 </footer>`;
 
-const head = ({ title, description, path, image = "assets/og-palace-app-world.jpg", imageAlt = "Four of Hearts Interactive", type = "website", jsonLd, noindex = false, script = "" }) => {
-  const structuredData = jsonLd ? JSON.stringify(jsonLd) : "";
+const head = ({ title, description, path, image = "assets/og-palace-app-world.jpg", imageAlt = "Four of Hearts Interactive", type = "website", jsonLd, noindex = false, script = "", originalLanguage = false }) => {
+  const structuredData = jsonLd ? JSON.stringify(jsonLd).replaceAll("<", "\\u003c") : "";
   const structuredDataHash = structuredData ? createHash("sha256").update(structuredData).digest("base64") : "";
   const contentPolicy = `default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'${structuredDataHash ? ` 'sha256-${structuredDataHash}'` : ""}; connect-src 'self'; media-src 'self'; font-src 'self'; upgrade-insecure-requests`;
   const canonical = `${siteUrl}${path}`;
@@ -120,19 +140,19 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${title}</title>
+  <title>${escapeHtml(title)}</title>
   <meta http-equiv="Content-Security-Policy" content="${contentPolicy}">
-  <meta name="description" content="${description}">
+  <meta name="description" content="${escapeHtml(description)}">
   ${noindex ? '<meta name="robots" content="noindex">' : ""}
   <link rel="canonical" href="${canonical}">
-  ${locales.map((locale) => `<link rel="alternate" hreflang="${locale}" href="${canonical}?lang=${locale}">`).join("\n  ")}
+  ${(originalLanguage ? ["en"] : locales).map((locale) => `<link rel="alternate" hreflang="${locale}" href="${canonical}?lang=${locale}">`).join("\n  ")}
   <link rel="alternate" hreflang="x-default" href="${canonical}">
-  <meta property="og:title" content="${title}">
-  <meta property="og:description" content="${description}">
+  <meta property="og:title" content="${escapeHtml(title)}">
+  <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:type" content="${type}">
   <meta property="og:url" content="${canonical}">
   <meta property="og:image" content="${siteUrl}/${image}">
-  <meta property="og:image:alt" content="${imageAlt}">
+  <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#26b7f2">
   <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -150,6 +170,9 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/studio-expansion.css">
   <link rel="stylesheet" href="assets/responsive-refinements.css">
   <link rel="stylesheet" href="assets/card-game-stories.css">
+  <link rel="stylesheet" href="assets/workbench.css">
+  <noscript><link rel="stylesheet" href="assets/workbench-nojs.css"></noscript>
+  <link rel="alternate" type="application/rss+xml" title="Notes from the Workbench" href="feed.xml">
   <script src="assets/asset-manifest.js" defer></script>
   <script src="assets/site-config.js" defer></script>
   <script src="assets/site.js" defer></script>
@@ -165,21 +188,26 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <script src="assets/studio-portfolio.js" defer></script>
   <script src="assets/canadian-mode.js" defer></script>
   <script src="assets/production-locales.js" defer></script>
+  <script src="assets/workbench-products.js" defer></script>
+  <script src="assets/workbench.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
 };
 
-const page = ({ title, description, path, current, content, image, imageAlt, type, jsonLd, noindex, script, bodyClass = "" }) => `${head({ title, description, path, image, imageAlt, type, jsonLd, noindex, script })}
+const page = ({ title, description, path, current, content, image, imageAlt, type, jsonLd, noindex, script, bodyClass = "" }) => {
+  const journalProduct = !noindex && productCatalog.find(product => path === `/${product.infoUrl.replace(/index\.html$/, "")}`);
+  return `${head({ title, description, path, image, imageAlt, type, jsonLd, noindex, script, originalLanguage: current === "news" })}
 <body class="${bodyClass}">
   <a class="skip-link" href="#main">Skip to content</a>
   ${nav(current)}
   ${["palace", "play"].includes(current) ? `<div class="release-strip" data-release-strip role="timer"></div>` : ""}
-  <main id="main">${content}</main>
+  <main id="main">${content}${journalProduct ? productJournal(journalProduct,news) : ""}</main>
   ${footer()}
   ${globalDialogs()}
 </body>
 </html>`;
+};
 
 const pageHero = (eyebrow, title, lede, actions = "") => `<header class="page-hero">
   <div class="shell">
@@ -189,25 +217,6 @@ const pageHero = (eyebrow, title, lede, actions = "") => `<header class="page-he
     ${actions}
   </div>
 </header>`;
-
-const availabilityCopy = (item) => {
-  if (item.gameKey === "palace") return "Palace has a complete, single-game browser edition and remains in founder review.";
-  if (item.gameKey === "gildenspire") return "GildenSpire is in development and is not publicly downloadable. No release date or platform has been announced.";
-  if (item.gameKey === "thumb-command") return "Thumb Command is in development with no public build or announced release date. This article documents the current creative direction.";
-  if (item.gameKey === "bobby") return "Bobby the Breadasaurus is in concept development and is not publicly playable. No release date or platform has been announced.";
-  if (item.gameKey === "evil-doom") return "Evil Doom Boy is one action-adventure game with two selectable heroes. It is in development and is not publicly playable. No release date or platform has been announced.";
-  return "This article reports current company work and does not announce public availability.";
-};
-
-const newsCard = (item) => `<a class="panel news-card" href="${articleFile(item.slug)}" data-news-tags="${[item.category, item.gameKey, ...(item.tags ?? [])].filter(Boolean).join(" ").toLowerCase()}" data-reveal>
-  <div class="news-art"><img src="${item.image}" alt="${item.imageAlt}" width="512" height="512" loading="lazy"></div>
-  <div class="news-body">
-    <div class="news-meta"><span>${item.category}${item.gameKey ? ` · ${gameByKey[item.gameKey]?.title ?? item.gameKey}` : ""}</span><time datetime="${item.date}">${formatDate(item.date)}</time></div>
-    <h2>${productCopy(item.title)}</h2>
-    <p>${productCopy(item.description)}</p>
-    <span class="read-more">Read story →</span>
-  </div>
-</a>`;
 
 const gameCard = (game, heading = "h2") => `<article class="catalog-card ${game.key}" data-game-key="${game.key}">
   <a class="catalog-art" href="${game.infoUrl}"><img src="${game.artwork}" alt="${game.alt}" width="960" height="${960}" loading="lazy"></a>
@@ -225,9 +234,6 @@ const spatialWorld = (game, index) => `<article class="spatial-world ${game.key}
 
 const worldIndexRow = (game, index) => `<a class="world-index-row" href="${game.infoUrl}" data-game-key="${game.key}"><span>0${index + 1}</span><strong>${game.title}</strong><em>${game.genre}</em><small>${game.status}</small><img src="${game.artwork}" alt="" width="240" height="240" loading="lazy"></a>`;
 
-const featured = news.find((item) => item.featured) ?? news[0];
-const otherNews = news.filter((item) => item !== featured);
-
 write("index.html", page({
   title: "Four of Hearts Interactive | Games, Software Solutions & Custom Apps",
   description: "Four of Hearts Interactive is an independent South Dakota software studio building original games, practical software solutions, and custom applications.",
@@ -241,11 +247,11 @@ write("index.html", page({
 }));
 
 write("palace-play.html", page({
-  title: "Play Palace | Complete Browser Game | Four of Hearts Interactive",
-  description: "Play one complete game of Palace in your browser using the real Four of Hearts rules engine, local bots, and on-device progress saving.",
+  title: "Play Palace | One Fixed Deal, Unlimited Attempts | Four of Hearts Interactive",
+  description: "Play the complete fixed Palace demo with the real Four of Hearts rules, one local opponent, and unlimited attempts at the same deal.",
   path: "/palace-play.html", current: "play", image: "assets/icon-palace-4hearts.webp", imageAlt: "Palace castle and card-game artwork", bodyClass: "palace-play-page palace-web-page",
   script: '<link rel="stylesheet" href="assets/palace-web.css"><script type="module" src="assets/palace-web.js"></script>',
-  content: `${gameNav("palace", "play")}${palaceTableTools()}<h1 class="sr-only">Play one complete game of Palace</h1><section class="palace-web-shell" aria-label="Palace browser game"><div id="palace-web-game" class="palace-web-game" tabindex="-1" aria-busy="true"><p class="palace-web-loading" role="status">Preparing the Palace table…</p></div><noscript><div class="notice">JavaScript is required for the complete Palace browser game. The full rules remain available on the Palace page.</div></noscript></section>`
+  content: `${gameNav("palace", "play")}${palaceTableTools()}<h1 class="sr-only">Play one complete game of Palace</h1><section class="palace-web-shell" aria-label="Palace browser game"><div class="palace-demo-recovery"><p>One fixed deal. As many attempts as you like.</p><button type="button" data-restart-demo>Restart this demo</button><small data-palace-notice role="status" aria-live="polite"></small></div><div id="palace-web-game" class="palace-web-game" tabindex="-1" aria-busy="true"><p class="palace-web-loading" role="status">Preparing the Palace table…</p></div><noscript><div class="notice">JavaScript is required for the complete Palace browser game. The full rules remain available on the Palace page.</div></noscript></section>`
 }));write("palace-story.html", page({
   title: "Palace: Fact, Folklore & Legend | Four of Hearts",
   description: "Explore what is documented about Palace, what players pass along, and the clearly labeled legends that travel with the game.",
@@ -253,22 +259,28 @@ write("palace-play.html", page({
   content: `${gameNav("palace", "story")}${pageHero("Fact · folklore · legend", "A game carried by memory.", "Palace has no single box, rulebook, or universally proven origin. Its history lives in sources, table tradition, and the stories players tell.")}<section class="history-triad"><article><p class="eyebrow">What we know</p><h2>A shedding game with many names.</h2><p>Published rules references describe a beating or shedding game usually played through cards in hand, face-up cards, and face-down cards. Names include Palace, Shed, Karma, China Hand, and regional variants. One traditional adult alternate name remains behind the site's opt-in Easter egg.</p><p><a class="text-link" href="https://www.pagat.com/beating/shithead.html" rel="noopener noreferrer">Read the Pagat source notes</a></p></article><article><p class="eyebrow">What players tell</p><h2>Every table changes it.</h2><p>House rules—especially the effects of special ranks—are part of the tradition. Players teach the game from memory, adapt it locally, and pass it to the next table. Exact origins remain uncertain.</p></article><article><p class="eyebrow">The legend of Palace</p><h2>A deck fits anywhere.</h2><p>In a barracks before dawn. Below deck, weeks from shore. Between flights. In a hostel, a dorm, a kitchen, or the last table still awake.</p><p><em>This is founder-supplied table lore and atmospheric storytelling—not verified historical reporting.</em></p></article></section><section class="section navy"><div class="narrow prose"><h2>The Four of Hearts rule set</h2><p>Four of Hearts uses a documented product rule set: 2 resets, 7 requires lower, 8 is transparent, and 10 burns. That consistency belongs to this adaptation; it is not presented as the only traditional way to play.</p><p class="notice">History and founder-biography language remain marked for founder and qualified editorial/legal review before commercial reliance.</p></div></section>`
 }));
 write("news.html", page({
-  title: "News | Four of Hearts Interactive",
-  description: "Company and game news from Four of Hearts Interactive, with accurate development and availability status.",
+  title: "Notes from the Workbench | Four of Hearts Interactive News",
+  description: "Games, glitches, and the occasional international spelling incident. Studio stories and developer diaries from the 4OH Workshop.",
   path: "/news.html", current: "news", bodyClass: "news-page",
-  content: `
-    <section class="news-page-intro"><div class="shell"><header class="compact-page-heading"><p class="eyebrow">Four of Hearts Interactive newsroom</p><h1>News from the studio.</h1><p class="lede">Honest company and product updates—without invented dates, releases, player counts, or partnerships.</p></header>
-      <div class="news-filters" role="group" aria-label="Filter news"><button type="button" data-news-filter="all" aria-pressed="true">All</button><button type="button" data-news-filter="games" aria-pressed="false">Games</button><button type="button" data-news-filter="card-table" aria-pressed="false">Card Table</button><button type="button" data-news-filter="lifestyle-apps" aria-pressed="false">Lifestyle Apps</button><button type="button" data-news-filter="company" aria-pressed="false">Company</button></div>
-      <div class="news-grid company-news-grid">${[featured, ...otherNews].map(newsCard).join("")}</div>
-      <p data-news-empty hidden>No stories match this filter.</p>
-      <div class="actions"><a class="text-link" href="feed.xml">Subscribe via RSS</a></div>
-    </div></section>`
+  content: newsListing(news)
 }));
+for (const [file,options] of [["news-archive.html",{oldest:true}],["news-origins.html",{origins:true}]]) {
+  write(file,page({title:`${options.origins ? "Start at the beginning" : "The workbench archive"} | Four of Hearts News`,description:"Read the preserved Four of Hearts development archive from the beginning.",path:`/${file}`,current:"news",bodyClass:"news-page",content:newsListing(news,options)}));
+}
+for (const product of productCatalog) {
+  const file = productArchive(product);
+  write(file,page({title:`${product.title} Development Journal | Four of Hearts News`,description:`Development notes and design goals for ${product.title} from the 4OH Workshop.`,path:`/${file}`,current:"news",bodyClass:"news-page",content:newsListing(news,{product})}));
+}
 
 news.forEach((item, index) => {
-  const previous = news[(index - 1 + news.length) % news.length];
-  const next = news[(index + 1) % news.length];
-  const body = item.body.map((section) => `<h2>${productCopy(section.heading)}</h2>${section.paragraphs.map((paragraph) => `<p>${productCopy(paragraph)}</p>`).join("")}`).join("");
+  const newer = news[index - 1];
+  const older = news[index + 1];
+  const series = item.seriesId ? news.filter(a => a.seriesId === item.seriesId).sort((a,b) => a.seriesOrder-b.seriesOrder) : [];
+  const seriesIndex = series.findIndex(a => a.id === item.id);
+  const seriesNext = series[seriesIndex+1];
+  const body = item.body.map(section => `<h2>${escapeHtml(section.heading)}</h2>${section.paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}`).join("");
+  const products = item.productIds.map(id => productCatalog.find(p => p.id === id));
+  const latestAvailability = products.length ? products.map(p => `<p><strong>${escapeHtml(p.title)}:</strong> ${escapeHtml(p.availability)}.</p><a href="${p.infoUrl}">Meet ${escapeHtml(p.title)} →</a>`).join("") : "<p>This studio note does not announce a public product release.</p>";
   write(articleFile(item.slug), page({
     title: `${item.title} | Four of Hearts News`,
     description: item.description,
@@ -277,54 +289,58 @@ news.forEach((item, index) => {
     image: item.image,
     imageAlt: item.imageAlt,
     type: "article",
+    bodyClass: "workbench-article-page",
     jsonLd: {
       "@context": "https://schema.org",
-      "@type": "NewsArticle",
+      "@type": "BlogPosting",
       headline: item.title,
       description: item.description,
       datePublished: item.date,
-      dateModified: item.date,
-      image: `${siteUrl}/${item.image}`,
-      author: { "@type": "Organization", name: company },
+      ...(item.revisedDate ? {dateModified:item.revisedDate} : {}),
+      ...(item.image ? {image:`${siteUrl}/${item.image}`} : {}),
+      inLanguage: "en",
+      articleSection: articleTypes[item.articleType],
+      author: { "@type": "Organization", name: item.author },
       publisher: { "@type": "Organization", name: company, logo: { "@type": "ImageObject", url: `${siteUrl}/assets/brand-mark-4oh.webp` } },
       mainEntityOfPage: `${siteUrl}/${articleFile(item.slug)}`
     },
     content: `
-      <article>
+      <article class="workbench-article" lang="en" dir="ltr" translate="no" data-original-language>
         <header class="article-header shell">
-          <div class="news-meta"><span>${item.category}</span><time datetime="${item.date}">${formatDate(item.date)}</time></div>
-          <h1>${productCopy(item.title)}</h1><p class="lede">${productCopy(item.description)}</p>
+          <div class="workbench-meta"><span>${articleTypes[item.articleType]}</span><time datetime="${item.date}">${formatDate(item.date)}</time></div>
+          <h1>${escapeHtml(item.title)}</h1><p class="lede">${escapeHtml(item.description)}</p>
+          <p>By ${escapeHtml(item.author)}${item.revisedDate ? ` · Revised <time datetime="${item.revisedDate}">${formatDate(item.revisedDate)}</time>` : ""}</p>
+          ${item.historicalPeriod ? `<p>Looking back at: ${escapeHtml(item.historicalPeriod)}</p>` : ""}
+          <p class="workbench-language" data-workbench-language hidden>This article is available in English. Your selected language still applies to the site controls.</p>
         </header>
-        <div class="shell"><img class="article-art" src="${item.image}" alt="${item.imageAlt}" width="1200" height="630"></div>
+        ${item.image ? `<div class="shell"><img class="article-art" src="${item.image}" alt="${escapeHtml(item.imageAlt)}" width="1200" height="630"></div>` : ""}
         <section class="section"><div class="shell article-layout">
           <div class="prose">${body}</div>
-          <aside class="article-aside"><strong>Availability</strong><p>${availabilityCopy(item)}</p>${item.gameKey ? `<a class="text-link" href="${gameByKey[item.gameKey]?.infoUrl ?? "games.html"}">Visit ${gameByKey[item.gameKey]?.title ?? "the game"} →</a>` : ""}</aside>
+          <aside class="article-aside">${item.historicalPeriod ? `<h2>Period covered</h2><p>${escapeHtml(item.historicalPeriod)}</p>` : ""}<h2>Current availability</h2>${latestAvailability}<p>The article text records its original publication context.</p>${series.length ? `<h2>From the beginning</h2><p>${item.seriesRole ? escapeHtml(item.seriesRole) : `Part ${item.seriesOrder} of the origin stories.`}</p>${seriesNext ? `<a href="${articleFile(seriesNext.slug)}">Next origin story: ${escapeHtml(seriesNext.title)} →</a>` : ""}<a href="news-origins.html">All origin stories →</a>` : ""}</aside>
         </div></section>
+        <nav class="shell workbench-article-nav" aria-label="Read through the journal">${older ? `<a href="${articleFile(older.slug)}">← Older: ${escapeHtml(older.title)}</a>` : ""}${newer ? `<a href="${articleFile(newer.slug)}">Newer: ${escapeHtml(newer.title)} →</a>` : ""}<a href="news.html">All notes from the workbench</a></nav>
       </article>
-      <section class="section navy"><div class="shell"><p class="eyebrow">Keep reading</p><div class="related-grid">
-        <a class="panel feature-card text-link" href="${articleFile(previous.slug)}">${productCopy(previous.title)}</a>
-        <a class="panel feature-card text-link" href="${articleFile(next.slug)}">${productCopy(next.title)}</a>
-      </div></div></section>`
+      `
   }));
 });
 
 write("games.html", page({
   title: "Games | Four of Hearts Interactive",
-  description: "Explore thirteen independent card, arcade, defense, adventure, puzzle, and creative games from 4OH Interactive.",
+  description: "Explore independent card, arcade, defense, adventure, puzzle, and creative games from 4OH Interactive, including Sling Nouveau.",
   path: "/games.html", current: "games", bodyClass: "production-page games-page",
   content: gamesPage({groups:productGroups})
 }));
 
-const relatedFor = (product) => productCatalog.filter((candidate) => candidate.key !== product.key && candidate.category === product.category).slice(0,3);
+const relatedFor = product => product.relatedProducts ? product.relatedProducts.map(key => gameByKey[key]) : productCatalog.filter(candidate => candidate.key !== product.key && candidate.category === product.category && candidate.group === product.group).slice(0,3);
 const productMarkup = (product) => page({
   title:`${product.title} | 4OH Interactive`,
   description:product.description,
   path:`/${product.infoUrl.replace(/index\.html$/,"")}`,
   current:product.category === "game" ? product.key : "lifestyle",
   bodyClass:`production-page product-${product.key}`,
-  image:product.artwork, imageAlt:product.alt,
+  image:product.artwork || "assets/brand-mark-4oh.webp", imageAlt:product.alt || "Four of Hearts Interactive studio mark",
   jsonLd:{"@context":"https://schema.org","@type":product.category === "game" ? "VideoGame" : "SoftwareApplication",name:product.title,description:product.description,applicationCategory:product.type,operatingSystem:"In development",publisher:{"@type":"Organization",name:company},url:`${siteUrl}/${product.infoUrl}`},
-  content:productPage({product,related:relatedFor(product),newsHref:product.secondaryAction})
+  content:product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
 });
 const gildenspire = gameByKey.gildenspire;
 const gildenspireMarkup = page({
@@ -374,7 +390,7 @@ write("news-thumb-command-world-tour.html", legacyRedirectPage("Thumb Command st
 write("news-unicorn-land-adventures-development.html", legacyRedirectPage("Unicorn Land story", "news-building-unicorn-land-adventures.html"));
 write("news-welcome-to-four-of-hearts.html", legacyRedirectPage("Studio news", "news.html"));
 write("news-why-were-building-palace.html", legacyRedirectPage("Palace story", "news-palace-019-founder-review.html"));
-["bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
+["sling-nouveau","bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
 write("booyang-city.html", booyangCityPage({page,company,siteUrl,game:gameByKey["booyang-city"]}));
 write("funky-town.html", funkyTownPage({page,company,siteUrl,game:gameByKey["funky-town"]}));
 const evilDoomMarkup = evilDoomPage({ page, company, siteUrl, game: gameByKey["evil-doom"] });
@@ -565,6 +581,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
 const sitemapFiles = [
   "index.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
+  "sling-nouveau.html", "news-archive.html", "news-origins.html", ...productCatalog.map(productArchive),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"
 ];
@@ -582,13 +599,15 @@ write("feed.xml", `<?xml version="1.0" encoding="UTF-8"?>
     <description>Company and game news from Four of Hearts Interactive.</description>
     <language>en-us</language>
 ${news.map((item) => `    <item>
-      <title>${item.title.replaceAll("&", "&amp;")}</title>
+      <title>${escapeHtml(item.title)}</title>
       <link>${siteUrl}/${articleFile(item.slug)}</link>
-      <guid>${siteUrl}/${articleFile(item.slug)}</guid>
+      <guid>${escapeHtml(item.rssGuid || `${siteUrl}/${articleFile(item.slug)}`)}</guid>
       <pubDate>${new Date(`${item.date}T12:00:00Z`).toUTCString()}</pubDate>
-      <description>${item.description.replaceAll("&", "&amp;")}</description>
+      <description>${escapeHtml(item.description)}</description>
+      <category>${articleTypes[item.articleType]}</category>
     </item>`).join("\n")}
   </channel>
 </rss>`);
+writeFileSync(journalOutputPath, JSON.stringify(journalOutputs,null,2)+"\n");
 
 console.log(`Generated ${sitemapFiles.length + 2} public documents from shared templates and ${news.length} news records.`);
