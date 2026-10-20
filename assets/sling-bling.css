@@ -1,0 +1,36 @@
+/* Sling Bling art direction, inside the existing 4OH shell. */
+.sling-workbench-feature{background:#102e32;color:#fff8e9;border-block:1px solid #b58e49}
+.sling-workbench-feature .production-eyebrow{color:#edd29b}
+.sling-workbench-feature .button,.sling-product .button{background:#f0d396;color:#102e32;border-color:#f0d396}
+.sling-product-hero{background:radial-gradient(ellipse at 85% 30%,#23494a,#102b30 60%);color:#fff8e9}
+.sling-product-hero .sling-tagline{color:#edcf8e}
+.bling-art{display:flex;flex-direction:column;justify-content:center;position:relative;isolation:isolate;aspect-ratio:1;min-width:0;margin:0;padding:8% 6% 5%;overflow:hidden;background:radial-gradient(ellipse at 50% 36%,#345757,#102c30 73%);border:1px solid #bb9655;border-radius:3px}
+.bling-art::before{content:"";position:absolute;inset:4%;border:1px solid #c7a46155;border-radius:50%;z-index:-1}
+.bling-logo{display:block!important;position:relative;width:100%!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;z-index:1}
+.bling-creatures{display:flex;justify-content:center;align-items:end;margin:-3% -4% -2%}
+.bling-creatures img{display:block;width:36%;height:auto;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 12px 10px #0005)}
+.bling-creatures img:nth-child(2){width:41%;margin-inline:-6%;z-index:1}
+.bling-art figcaption{position:relative;display:block;color:#ecdcb8;text-align:center;font-size:.7rem;line-height:1.5;letter-spacing:.07em;margin-top:.4rem}
+.production-tile-art .bling-tile,.production-card-art .bling-tile{width:100%;height:100%;object-fit:cover;display:block}
+.bling-section{background:#f6f1e7;color:#112e32;padding:clamp(3rem,7vw,6rem) 0}
+.bling-section.alt{background:#e9e3d5}
+.bling-section .production-eyebrow{color:#755820}
+.bling-section h2{font-size:clamp(2rem,4.5vw,4rem);line-height:1.05;letter-spacing:-.04em;max-width:17ch;margin:.7rem 0 1.4rem}
+.bling-section .lede{max-width:65ch;font-size:1.15rem;line-height:1.75;color:#405658}
+.bling-section figure{margin:0;min-width:0}
+.bling-worlds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:2.5rem}
+.bling-worlds img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border:1px solid #ae945d}
+.bling-worlds figcaption{font-size:1.05rem;font-weight:750;padding:.8rem 0}
+.bling-specimens{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:2rem}
+.bling-specimens figure{background:#18383b;border:1px solid #a8894f;padding:1.2rem;text-align:center;color:#f8edda}
+.bling-specimens img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;display:block}
+.bling-specimens figcaption{font-weight:700;padding-top:.7rem;line-height:1.4}
+.bling-caption{font-size:.85rem;line-height:1.6;color:#4b5b5b;max-width:78ch;margin-top:1.5rem}
+.bling-progress{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;border-top:1px solid #b6a681;padding-top:2rem;margin-top:2.5rem}
+.bling-progress h3{font-size:1.3rem;line-height:1.2;margin:0 0 .8rem}
+.bling-progress p{font-size:1rem;line-height:1.75;margin:0}
+.sling-product-direction{background:#102e32;color:#fff8e9}
+.sling-product-direction .production-eyebrow{color:#edd29b}
+.sling-product-direction a{color:#f0d396}
+@media(max-width:760px){.bling-worlds,.bling-specimens{grid-template-columns:repeat(2,minmax(0,1fr))}.bling-progress{grid-template-columns:1fr;gap:1.8rem}.bling-art{max-width:620px;width:100%;box-sizing:border-box}.bling-section h2{max-width:20ch}}
+@media(prefers-reduced-motion:reduce){.sling-product *{animation:none!important;transition:none!important}}

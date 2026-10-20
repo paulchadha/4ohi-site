@@ -36,8 +36,8 @@ assert.equal(resolveProductId("People Lens"),"whomly");
 assert.equal(resolveProductId("Evil Doom Girl Adventures"),"evil-doom-boy");
 assert.equal(resolveProductId("Commander Thumb"),"thumb-command");
 const sling = productCatalog.find(p => p.id === "sling-nouveau");
-assert.equal(sling.playable,false); assert.equal(sling.playUrl,null); assert.equal(sling.artwork,null);
-for (const file of ["index.html","games.html","news.html","sling-nouveau.html"]) assert.ok(readFileSync(join(root,file),"utf8").includes("Sling Nouveau"));
+assert.equal(sling.playable,false); assert.equal(sling.playUrl,null); assert.equal(sling.artwork,"assets/sling-bling/tile-768.webp");
+for (const file of ["index.html","games.html","news.html","sling-nouveau.html"]) assert.ok(readFileSync(join(root,file),"utf8").includes("Sling Bling"));
 assert.ok(!readFileSync(join(root,"sling-nouveau.html"),"utf8").includes("Play Sling"));
 assert.ok(readFileSync(join(root,"_config.yml"),"utf8").includes("  - content"));
 
@@ -71,7 +71,7 @@ try {
     assert.equal((await fetch(preview.url.replace(/news-private-workbench-canary.html/,"content/news.json"))).status,404);
     assert.equal(JSON.parse(readFileSync(join(scratch,"content/news.json"),"utf8"))[0].status,"draft");
   } finally {await preview.close();}
-  canary.status="published"; canary.date="2026-10-04"; save(); build();
+  canary.status="published"; canary.date=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago'}).format(new Date()); save(); build();
   for (const file of [articleFile(canary.slug),"news.html","index.html","sling-nouveau.html","gin-rummy.html","feed.xml",productArchive(sling)]) assert.ok(readFileSync(join(scratch,file),"utf8").includes("PRIVATE_WORKBENCH_CANARY"),`Shared article missing from ${file}`);
   canary.title='A title with "quotes" & <angle brackets>';
   canary.body=[{heading:"Literal text",paragraphs:['<img src="x" onerror="alert(1)">']}];

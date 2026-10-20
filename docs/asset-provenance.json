@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-09-12",
+  "updated": "2026-10-20",
   "owner": "Four of Hearts Interactive, LLC",
   "assets": [
     {
@@ -164,6 +164,33 @@
       "thirdParty": false,
       "license": "Proprietary",
       "notes": "Test players only. Public HTTPS hosting and native packaging were not yet configured; see assets/gin-rummy/development-capture.json."
+    },
+    {
+      "paths": [
+        "assets/sling-bling/bull.webp",
+        "assets/sling-bling/coin.webp",
+        "assets/sling-bling/dragon.webp",
+        "assets/sling-bling/dubai.webp",
+        "assets/sling-bling/eagle.webp",
+        "assets/sling-bling/kyoto.webp",
+        "assets/sling-bling/lion.webp",
+        "assets/sling-bling/logo.webp",
+        "assets/sling-bling/london.webp",
+        "assets/sling-bling/paris.webp",
+        "assets/sling-bling/portal.webp",
+        "assets/sling-bling/ruby.webp",
+        "assets/sling-bling/santorini.webp",
+        "assets/sling-bling/sapphire.webp",
+        "assets/sling-bling/tile-768.webp",
+        "assets/sling-bling/tuscany.webp"
+      ],
+      "source": "Founder-approved Sling Bling development artwork: logo.png, icon-1024.png, creatures.png, environments.png, tokens.png",
+      "created": "2026-10-20",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "treatment": "Non-destructive WebP resizing and focused atlas crops; source artwork unchanged. Development artwork, not gameplay screenshots.",
+      "generator": "scripts/process-sling-bling-art.cjs"
     }
   ]
 }

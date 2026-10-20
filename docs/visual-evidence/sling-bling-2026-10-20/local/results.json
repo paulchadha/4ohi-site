@@ -1,0 +1,56 @@
+{
+  "target": "http://127.0.0.1:50417",
+  "checks": [
+    {
+      "route": "sling-nouveau.html",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "sling-nouveau.html",
+      "width": 390,
+      "status": 200
+    },
+    {
+      "route": "sling-nouveau.html",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "sling-nouveau.html",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": 200
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": 200
+    },
+    {
+      "route": "news.html",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "news-sling-bling-gold-jewels-and-gravity.html",
+      "width": 390,
+      "status": 200
+    },
+    {
+      "route": "news-sling-bling-gold-jewels-and-gravity.html",
+      "width": 1440,
+      "status": 200
+    }
+  ],
+  "errors": []
+}

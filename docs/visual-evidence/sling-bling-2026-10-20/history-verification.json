@@ -1,0 +1,279 @@
+{
+  "baseline": "0410b456d6e5c67324ce8faeb3688fa705e9bd22",
+  "preserved": 45,
+  "excludedMutableFields": [
+    "featured"
+  ],
+  "history": [
+    {
+      "id": "sling-nouveau-workbench-october-2026",
+      "slug": "sling-nouveau-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "ac9d647265762f7c38388a397b5ca6aca816fe760682e370eaa7c209dbc75d15"
+    },
+    {
+      "id": "palace-workbench-october-2026",
+      "slug": "palace-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "475b8236ab6b535c11960f75ba3b8caa65d7f001f2aa224cff5c6896a5c37a2e"
+    },
+    {
+      "id": "euchre-workbench-october-2026",
+      "slug": "euchre-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "49a7f85f186420064d137374d4e1a2df0bc41f59ce39a23e976f72c91a37c1f0"
+    },
+    {
+      "id": "hearts-workbench-october-2026",
+      "slug": "hearts-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "61443838d43088f9cc0da8aa3d5f743274bb627d3f6df409a893a5b750a08f18"
+    },
+    {
+      "id": "spades-workbench-october-2026",
+      "slug": "spades-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "cd6be5bf96269c5e10ca1a9331a8994eac707d24f192800ff539f295136f0e41"
+    },
+    {
+      "id": "solitaire-workbench-october-2026",
+      "slug": "solitaire-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "cf5b1c02e8c0c8dba1a3b605d7a7ed8d08457120d421166a17771b4e4e39a3e9"
+    },
+    {
+      "id": "war-workbench-october-2026",
+      "slug": "war-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "1010cf627316d56e968dde279f337c9ff3b8a57b1c612158e82aa36332092371"
+    },
+    {
+      "id": "gildenspire-workbench-october-2026",
+      "slug": "gildenspire-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "d06bf28717f0bf648ad659851a555711fee158e95e4af2236780c6cc3a11941b"
+    },
+    {
+      "id": "thumb-command-workbench-october-2026",
+      "slug": "thumb-command-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "287bd1b71accd01ae671219352a39e26e510ee6cd844542e7fadefe0bce8d4b8"
+    },
+    {
+      "id": "bobby-workbench-october-2026",
+      "slug": "bobby-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "293b3f219530434c2c782bed8947a84b9faf22ef3fcad5e9ff6ded3fc2feb45a"
+    },
+    {
+      "id": "evil-doom-boy-workbench-october-2026",
+      "slug": "evil-doom-boy-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "7373cd9fb409ab3d8e09334c7f4419b95c6227fa0452f789ccfd983cffb0fb32"
+    },
+    {
+      "id": "booyang-city-workbench-october-2026",
+      "slug": "booyang-city-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "9c38f9b7a9f2d4afb067081b35bfd5efdf0ca5d68df5eb4de0d2e0e5550d0321"
+    },
+    {
+      "id": "funky-town-workbench-october-2026",
+      "slug": "funky-town-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "eacf5b55bb75d508056db31309c3eb1832a025b8232d6d0552d02d0b381005d4"
+    },
+    {
+      "id": "heartstack-workbench-october-2026",
+      "slug": "heartstack-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "5effffc87351190da19ccfb6f34d7b8d7598ddc66e9fb7128b4f8eae9cd980ed"
+    },
+    {
+      "id": "princess-land-workbench-october-2026",
+      "slug": "princess-land-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "636cf65f1ac38ba1569ec877a2d584093d5828c32f9e345a360772f3fa560d6e"
+    },
+    {
+      "id": "unicorn-land-workbench-october-2026",
+      "slug": "unicorn-land-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "906f64457f5a1088afd23be28f2d4faa408998366cc5f490d4ee7205f6901823"
+    },
+    {
+      "id": "sleep-amigo-workbench-october-2026",
+      "slug": "sleep-amigo-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "7b9a85e745f627aa10ed32ccd1dc00288da79b7dc5e84fe5c1ab6d36b54b7230"
+    },
+    {
+      "id": "sovinto-workbench-october-2026",
+      "slug": "sovinto-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "d81eded2341e8aea5e62e4ff2b596b12a0e63c1b664df4dc4bbeca29c73ebe7a"
+    },
+    {
+      "id": "whomly-workbench-october-2026",
+      "slug": "whomly-workbench-october-2026",
+      "date": "2026-10-04",
+      "sha256": "f08737c027fb601768c19672d03867478a2904e7c29c75f000224f391797914e"
+    },
+    {
+      "id": "gin-rummy-a-table-with-room-to-think",
+      "slug": "gin-rummy-a-table-with-room-to-think",
+      "date": "2026-10-04",
+      "sha256": "1793452d6e9c5df524124648a0bbb90b7a2c1ca5e1251e8410f802ba770c1425"
+    },
+    {
+      "id": "before-the-dragons-there-were-cards",
+      "slug": "before-the-dragons-there-were-cards",
+      "date": "2026-10-04",
+      "sha256": "82ad885d519bbe92597e924e2611bc5efe5ca56822ab3ca60fe88ac327032fae"
+    },
+    {
+      "id": "the-card-table-got-a-little-out-of-hand",
+      "slug": "the-card-table-got-a-little-out-of-hand",
+      "date": "2026-10-04",
+      "sha256": "f1548d13f93320ea22e18b41de9bf077f973e9e62780b4ab6b6f82e1b091ec20"
+    },
+    {
+      "id": "a-u-has-entered-the-chat",
+      "slug": "a-u-has-entered-the-chat",
+      "date": "2026-10-04",
+      "sha256": "f70f4216eca4de35eccb8c02e76d089db6430ca1350264bbf4ae28d02dd75588"
+    },
+    {
+      "id": "fewer-buttons-more-one-more-go",
+      "slug": "fewer-buttons-more-one-more-go",
+      "date": "2026-10-04",
+      "sha256": "fc59d039f51dd72e8376a0b3ad6afac0e175560b5c1e839e4fbaf467629e8de7"
+    },
+    {
+      "id": "booyang-a-town-that-grows-with-play",
+      "slug": "booyang-a-town-that-grows-with-play",
+      "date": "2026-09-12",
+      "sha256": "546cf4bc19007a7a34f5aa8734eccc875d6624a0c39c9f9770595375e911eab8"
+    },
+    {
+      "id": "gildenspire-a-dragon-built-to-move",
+      "slug": "gildenspire-a-dragon-built-to-move",
+      "date": "2026-09-12",
+      "sha256": "67ee4b6460781059a3d86e82283bf1ba1d28a6f12f4a3ad11ec055d9fae81e57"
+    },
+    {
+      "id": "small-fixes-that-change-the-feel",
+      "slug": "small-fixes-that-change-the-feel",
+      "date": "2026-09-12",
+      "sha256": "a50e31836d7637155dee373e7d4148d250639b6f1125debb8d3883878493363b"
+    },
+    {
+      "id": "ai-in-the-workshop-and-the-product",
+      "slug": "ai-in-the-workshop-and-the-product",
+      "date": "2026-09-12",
+      "sha256": "d1136b687975dc100d93d7aa9a8f58b969f83f1ce15e61d146bd70f1cd7bc4c1"
+    },
+    {
+      "id": "introducing-gildenspire-flight-or-fight",
+      "slug": "introducing-gildenspire-flight-or-fight",
+      "date": "2026-09-05",
+      "sha256": "24bdc307d14556762f9d1db3b6f6da49dd5f863e33f9f2a9b63b08c739d22cbb"
+    },
+    {
+      "id": "why-flying-has-to-be-fun",
+      "slug": "why-flying-has-to-be-fun",
+      "date": "2026-09-04",
+      "sha256": "10eb4cf9850ccc7a996f21ee3f6e9d571561a5f0dd10cee67ade5ab4e8ffb9c7"
+    },
+    {
+      "id": "building-dragons-that-actually-feel-different",
+      "slug": "building-dragons-that-actually-feel-different",
+      "date": "2026-09-03",
+      "sha256": "73f286137845efaf69dbb7116ad60296b035268d16afb82b3802b2743101be83"
+    },
+    {
+      "id": "from-search-to-opportunity-building-whomly",
+      "slug": "from-search-to-opportunity-building-whomly",
+      "date": "2026-09-03",
+      "sha256": "d12fe138bed28d2214ef11f03cbb5673bc7c30369f9107d0309093be6f62f4d2"
+    },
+    {
+      "id": "welcome-to-booyang-city",
+      "slug": "welcome-to-booyang-city",
+      "date": "2026-08-31",
+      "sha256": "2ac34f708cd6f8cd6b5697de03a3fa81edf486e503963dae22e8272ed3e88e3f"
+    },
+    {
+      "id": "thumb-command-save-planet-earth",
+      "slug": "thumb-command-save-planet-earth",
+      "date": "2026-08-29",
+      "sha256": "a9d4a961ac62ebd571d44d052b95140b62a9fb3b8add63f3d722574c95510c53"
+    },
+    {
+      "id": "making-sleep-data-feel-human",
+      "slug": "making-sleep-data-feel-human",
+      "date": "2026-08-28",
+      "sha256": "3cd6f50bcb881532bbf6648c4a2916fe166091370a0f3024b9c96482712b3cbf"
+    },
+    {
+      "id": "building-a-town-that-refuses-to-look-normal",
+      "slug": "building-a-town-that-refuses-to-look-normal",
+      "date": "2026-08-25",
+      "sha256": "53b5597c850efd177c4be693de8ca873262704dd25d6f5335ceaf6a8776d47b5"
+    },
+    {
+      "id": "building-unicorn-land-adventures",
+      "slug": "building-unicorn-land-adventures",
+      "date": "2026-08-24",
+      "sha256": "85658956625310a6a47244c677ab96ca17f08045aa311aa0e5ba97571104ae20"
+    },
+    {
+      "id": "inside-princess-land-adventures",
+      "slug": "inside-princess-land-adventures",
+      "date": "2026-08-21",
+      "sha256": "5eeebacab966ee89e7cb33525f66401adb2901ef915d17fd09b896afeaf0e19d"
+    },
+    {
+      "id": "people-lens-is-becoming-whomly",
+      "slug": "people-lens-is-becoming-whomly",
+      "date": "2026-08-19",
+      "sha256": "bfad4881c158747b5792bc58b681ff2189b2e0e62fb1729351e66a3d78569857"
+    },
+    {
+      "id": "heartstack-joins-the-workbench",
+      "slug": "heartstack-joins-the-workbench",
+      "date": "2026-08-18",
+      "sha256": "6cf3223d4bbd316ed9cdcf9949c93ed4e34f413ba3e1b3cbc782743dcdfcc2b7"
+    },
+    {
+      "id": "evil-doom-two-heroes-one-route",
+      "slug": "evil-doom-two-heroes-one-route",
+      "date": "2026-08-14",
+      "sha256": "c0eb3273e5d2c38fb0aabb5abefa8d94ab8394ef0d44204b901a527fc277b0a6"
+    },
+    {
+      "id": "bobby-and-the-breadstone",
+      "slug": "bobby-and-the-breadstone",
+      "date": "2026-08-11",
+      "sha256": "f1b55d3d185fdba61cb3477cc54235faa4e33a48ac65d3af0b3ff600964e3b99"
+    },
+    {
+      "id": "why-were-building-sleep-amigo",
+      "slug": "why-were-building-sleep-amigo",
+      "date": "2026-08-08",
+      "sha256": "7fdf7848cd744717a43216575c840df515455aeea95fa75be8e74cfee22f491c"
+    },
+    {
+      "id": "card-table-adds-solitaire-war",
+      "slug": "card-table-adds-solitaire-war",
+      "date": "2026-08-07",
+      "sha256": "f59aaac9043f3c2b679e521c73b6e48044ba33814d76fbfd86647fcd92449551"
+    },
+    {
+      "id": "palace-019-founder-review",
+      "slug": "palace-019-founder-review",
+      "date": "2026-08-04",
+      "sha256": "105550d60386ed2cbf1ef0db5fcbcf9013cee05d47e63c98c415a785ad68f4ca"
+    }
+  ]
+}

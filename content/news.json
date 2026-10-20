@@ -1,5 +1,607 @@
 [
   {
+    "id": "sling-bling-gold-jewels-and-gravity",
+    "slug": "sling-bling-gold-jewels-and-gravity",
+    "title": "Gravity is getting a more expensive-looking wardrobe.",
+    "description": "Sling Nouveau is becoming Sling Bling. New artwork, twenty world paintings, and an ambitious campaign are on the workbench.",
+    "author": "The 4OH Workshop",
+    "articleType": "development-update",
+    "productIds": [
+      "sling-nouveau"
+    ],
+    "tags": [
+      "development",
+      "development-update"
+    ],
+    "status": "published",
+    "date": "2026-10-20",
+    "scheduledFor": "2026-10-20",
+    "language": "en",
+    "featured": true,
+    "body": [
+      {
+        "heading": "On the workbench",
+        "paragraphs": [
+          "Sling Nouveau is becoming Sling Bling. The overhaul is aiming for 1,000 levels, gold-and-jewel animal-inspired currency creatures, coins, special balls, and elegant city backdrops. Apparently knocking things over can have excellent taste.",
+          "Twenty background paintings and new creature artwork have been created. The artwork is ready for a look; the game still has work to do. Physics testing is incomplete, and the overhaul has not been released.",
+          "We want the shot to feel as good as the scenery looks. Gravity remains a demanding collaborator."
+        ]
+      }
+    ],
+    "image": "assets/sling-bling/tile-768.webp",
+    "imageAlt": "Sling Bling gold and diamond logo; development artwork, not a gameplay screenshot"
+  },
+  {
+    "id": "gin-rummy-gold-trim",
+    "slug": "gin-rummy-gold-trim",
+    "title": "A little gold trim. The same difficult discard.",
+    "description": "Gin Rummy has a new glossy 4OH calling card. Better tailoring does not guarantee better decisions.",
+    "author": "The 4OH Workshop",
+    "articleType": "development-update",
+    "productIds": [
+      "gin-rummy"
+    ],
+    "tags": [
+      "development",
+      "development-update"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-21",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "On the workbench",
+        "paragraphs": [
+          "Gin Rummy has a new calling card: a glossy 4OH badge, gold trim, and the five, six, and seven of hearts. The tile has been built and checked in the development version. Those three cards have coordinated their appearance rather better than some of our hands.",
+          "The game’s appeal remains the quiet contest between two players: build useful combinations, watch the discards, and decide when to knock.",
+          "This is a visual development update, not a public launch. Better tailoring does not guarantee better decisions. We checked."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sleep-amigo-notification-home",
+    "slug": "sleep-amigo-notification-home",
+    "title": "A bedtime notification should know the way home.",
+    "description": "A notification-to-Home navigation fix is in development testing. Fewer detours at the end of the day.",
+    "author": "The 4OH Workshop",
+    "articleType": "development-update",
+    "productIds": [
+      "sleep-amigo"
+    ],
+    "tags": [
+      "development",
+      "development-update"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-22",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "On the workbench",
+        "paragraphs": [
+          "Sleep Amigo’s notification-to-Home fix has been built and installed in development testing. A tap should take you where you meant to go, especially when your remaining enthusiasm for navigation is approximately zero.",
+          "It is a small piece of a bigger goal: make available sleep information easier to understand and offer a useful starting point for the evening.",
+          "Sleep Amigo remains in development. It is a wellness companion, not medical care. The navigation is allowed to improve without acquiring a medical degree."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gildenspire-scenic-route",
+    "slug": "gildenspire-scenic-route",
+    "title": "The scenic route has teeth.",
+    "description": "A dragon worth raising and a world worth flying through. The scenery may develop territorial opinions.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "gildenspire"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-23",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "GildenSpire’s design starts with a dragon worth raising and a world worth flying through. Climbing, banking, diving, and exploring are meant to be part of the pleasure, well before another dragon develops territorial opinions.",
+          "Different dragon shapes, movement, and abilities are part of the creative direction. Choosing a creature should matter beyond its paintwork.",
+          "This is a look at the game we are building, not a launch announcement. The sky is ambitious. The release date remains unannounced."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "palace-last-card",
+    "slug": "palace-last-card",
+    "title": "The last card has declined to comment.",
+    "description": "Three layers of cards, one hidden finish, and a deck with its own views on your plan.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "palace"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-24",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Palace asks you to clear your hand, work through the face-up reserve, and then confront the cards you cannot see. An excellent arrangement for anyone who enjoys making a plan and having the deck review it.",
+          "The complete website game offers local play against a bot. The separate app remains in private testing, with online development work distinct from that browser table.",
+          "Readable choices, useful power cards, and a finish that refuses to reveal its references in advance. The website table is available to play; this spotlight does not announce a standalone app release."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "booyang-bakery-eventually",
+    "slug": "booyang-bakery-eventually",
+    "title": "Just popping to the bakery. Eventually.",
+    "description": "BooYang City is being built around a neighborhood full of reasons to wander. The short errand is negotiable.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "booyang-city"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-25",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "BooYang City’s premise is a neighborhood full of different reasons to wander. The bakery, zoo, boutique, school, and hospital each give the city another kind of activity.",
+          "Explore somewhere, play, improve it, and discover another destination. A short errand can develop a remarkably flexible itinerary.",
+          "Development continues; no public release is announced. The bakery is not accepting complaints about how long you spent at the zoo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "thumb-command-earth-assignment",
+    "slug": "thumb-command-earth-assignment",
+    "title": "Earth has assigned this to your thumb.",
+    "description": "A small spacecraft, a large responsibility, and presumably a very interesting insurance renewal.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "thumb-command"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-26",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Thumb Command puts the Blueguard interceptor between an alien invasion and the city below. A small spacecraft, a large responsibility, and presumably a very interesting insurance renewal.",
+          "The design favors readable action, distinctive enemies, and an interface that leaves room for the fighting. If the city needs defending, the controls should not demand a separate briefing.",
+          "This is a spotlight on its arcade-defense premise, not a report of newly released missions or features. Thumb Command remains in development."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sovinto-prepare-a-position",
+    "slug": "sovinto-prepare-a-position",
+    "title": "Prepare a position before inventing one aloud.",
+    "description": "A look at negotiation preparation, with fewer important thoughts arriving in the parking lot afterward.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "sovinto"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-27",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "SOVINTO is being developed around negotiation preparation: what you want, what matters most, and where you have room to move. Remembering these things before the conversation is generally more convenient than remembering them in the parking lot afterward.",
+          "The current foundation includes local case preparation and general, prewritten help. Interactive practice, a broader toolset, and live AI coaching remain development work.",
+          "Preparation cannot guarantee agreement. It can at least give “let me think” something useful to do. SOVINTO remains in development."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hearts-some-gifts",
+    "slug": "hearts-some-gifts",
+    "title": "Some gifts come with thirteen points.",
+    "description": "Four players. No partners. The queen of spades already supplies enough tension without help from the interface.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "hearts"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-28",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Four players. No partners. Plenty to notice. Hearts makes a passing decision feel generous right up until the recipient examines it.",
+          "The current app supports complete local games with three bots and remains in internal testing. Online tables are still being developed.",
+          "A readable hand, clear turns, and an understandable table matter. The queen of spades already supplies enough tension. She does not need help from the interface."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "funky-town-buildings-express-themselves",
+    "slug": "funky-town-buildings-express-themselves",
+    "title": "The buildings would like to express themselves.",
+    "description": "Murals, music, gardens, and architecture with opinions. Sensible buildings are negotiable.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "funky-town"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-29",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Funky Town’s creative direction gives ordinary buildings rather extraordinary prospects. Murals, gardens, music, sculpture, and unusual architecture belong in a town shaped by the player.",
+          "Grow a neighborhood, change its character, and zoom out to see your choices add up. Sensible shoes may be advisable. Sensible buildings are negotiable.",
+          "Development continues; this is not an announcement that new building tools or public community features have shipped."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bobby-defensive-perimeter",
+    "slug": "bobby-defensive-perimeter",
+    "title": "The bread has established a defensive perimeter.",
+    "description": "A herd, a Breadstone, and considerably more military preparation than most baked goods receive.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "bobby"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-30",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Bobby has a herd to protect and a Breadstone to defend. The proposed solution involves upgraded towers, thoughtful placement, and considerably more military preparation than most baked goods receive.",
+          "The artwork and battlefield should make the world inviting while keeping the action easy to follow.",
+          "Bobby remains in development, with no public release date announced. This is a closer look at the idea, not a claim that a fresh batch of levels has shipped."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "evil-doom-village-objections",
+    "slug": "evil-doom-village-objections",
+    "title": "Doom has arrived. The village has objections.",
+    "description": "Two siblings, one game, and a village with a firm view on being overrun.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "evil-doom-boy"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-10-31",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "A brother and sister defend the village that shelters them. Choose a sibling, build and upgrade defenses, and stand against Girmat’s advancing monsters.",
+          "The two heroes belong to one game. Distinctive towers give a village facing Doom options beyond “another slightly different cannon.”",
+          "Development continues; no public release is announced. Girmat’s alarming presentation should not be mistaken for an approved launch schedule."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "unicorn-blast-rescue-operation",
+    "slug": "unicorn-blast-rescue-operation",
+    "title": "A rescue operation with very little subtlety.",
+    "description": "Suit matching, crystal cages, and chain reactions that appear to have missed the meeting about restraint.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "heartstack"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-01",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Suit matching, combos, crystal cages, and unicorn rescue make a successful chain reaction both useful and agreeably excessive.",
+          "Clarity matters underneath the spectacle: understand the board and tools, then enjoy what happens when a good decision sets everything moving.",
+          "The game remains in development. Unicorn Blast is the current name; older pages may still mention HeartStack. This spotlight introduces no new release. The unicorns are simply receiving their allotted editorial attention."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "spades-bid-noted",
+    "slug": "spades-bid-noted",
+    "title": "Your bid has been noted by another person.",
+    "description": "Count the tricks, watch the bags, and consider how impressive your confidence will sound later.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "spades"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-02",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Two partners must turn their bids into a result. Count the tricks, watch the bags, and consider how impressive your confidence will sound if someone else has to rescue it.",
+          "Local bot play, including a bot partner, is implemented in the app under internal testing. Public multiplayer is not yet available.",
+          "Partnership strategy should provide the complexity. Finding the score should not. This is a developer spotlight, rather than a new release announcement."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "princess-land-royal-duties",
+    "slug": "princess-land-royal-duties",
+    "title": "Royal duties include moving that chair again.",
+    "description": "Style, cook, decorate, rearrange. The royal calendar makes room for reconsidering the furniture.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "princess-land"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-03",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Character styling, castle rooms, cooking, and decorating share one creative-simulation premise. Choose how things look, try another arrangement, and decide the first arrangement was right after all.",
+          "Outfit fit, layering, and expressive characters matter when making choices is the main event.",
+          "This is a spotlight, not a newly released wardrobe or room collection. Development continues, and the royal calendar contains no public launch date."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "whomly-before-hello",
+    "slug": "whomly-before-hello",
+    "title": "A useful introduction starts before “Hello.”",
+    "description": "Public professional research, useful context, and a thoughtful beginning to the conversation.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "whomly"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-04",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Whomly is being designed to turn public professional information into context you can actually use: who fits a search, what supports that fit, and what might make a thoughtful introduction.",
+          "The proposed flow moves from discovery to understanding to preparation. It is user-directed research, not private-profile access or an imaginary dossier on somebody’s inner life.",
+          "Whomly remains in development; no public service or automated contact feature is announced. Research should improve the conversation, not give everyone a reason to leave it."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "solitaire-excellent-attendance",
+    "slug": "solitaire-excellent-attendance",
+    "title": "A meeting for one. Excellent attendance.",
+    "description": "One useful move, one saved deal, and remarkably little scheduling administration.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "solitaire"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-05",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Uncover a card, find a useful move, and bring a little order to the deal. The development app includes different ways to play and a locally saved deal.",
+          "Its personal challenge rating stays on the device; it is not a public leaderboard. Comfortable card sizes, clear presentation, and smooth movement set the direction.",
+          "The standalone app remains in development. No need to schedule a rematch with anyone, which does simplify the administration."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "unicorn-land-another-opinion",
+    "slug": "unicorn-land-another-opinion",
+    "title": "The habitat is ready for another opinion.",
+    "description": "Make a place feel yours. Reconsidering the mane after finishing the garden is entirely reasonable.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "unicorn-land"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-06",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Personalize unicorns, shape habitats, decorate, discover, and enjoy mini-games along the way.",
+          "This is separate from Unicorn Blast: make a place feel yours, with the entirely reasonable possibility of reconsidering the mane after finishing the garden.",
+          "The game remains in development, with no public release date announced. Landscaping expertise is optional. Opinions about flowers will probably emerge naturally."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "euchre-large-opinion",
+    "slug": "euchre-large-opinion",
+    "title": "Five cards can support a very large opinion.",
+    "description": "Trump, bowers, and the occasional brave conclusion drawn from a small handful of evidence.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "euchre"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-07",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "Calling trump, recognizing the bowers, trusting a partner, and occasionally deciding you can manage without one. A brave conclusion for such a small handful of evidence.",
+          "Complete local bot matches are implemented in the app under internal testing; online tables remain development work.",
+          "Keep trump, the caller, partners, and scores easy to follow. The cards may surprise you; the controls should make an effort not to."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "war-random-strategy",
+    "slug": "war-random-strategy",
+    "title": "An excellent result for your entirely random strategy.",
+    "description": "Flip, settle the ties, and enjoy the result. The deck has not been given a management title.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-spotlight",
+    "productIds": [
+      "war"
+    ],
+    "tags": [
+      "development",
+      "developer-spotlight"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": "2026-11-08",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "From the developers",
+        "paragraphs": [
+          "War is a game of chance, and we see no reason to give the deck a management title. Flip the cards, settle the ties, and enjoy the result.",
+          "The development app offers Classic, Quick, and Family Table play, including two to four people sharing one device. Match history and progress stay local; they are not an online skill ranking.",
+          "The standalone app remains in development. A good run is still worth enjoying, even if your strategic contribution was turning the card over."
+        ]
+      }
+    ]
+  },
+  {
     "id": "sling-nouveau-workbench-october-2026",
     "slug": "sling-nouveau-workbench-october-2026",
     "title": "Modern art has been informed about gravity.",
@@ -11,7 +613,7 @@
       "development",
       "games"
     ],
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the workshop",

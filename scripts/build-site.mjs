@@ -122,7 +122,7 @@ const palaceTableTools = () => `<aside class="palace-table-tools" data-palace-co
 const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid footer-grid-editorial">
     <div class="footer-brand"><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-promise">Games with heart. Apps with purpose.</p><p class="footer-copy">Independent software from South Dakota.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
-    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="sling-nouveau.html">Sling Nouveau</a><a href="gildenspire.html">GildenSpire</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a><a href="booyang-city.html">BooYang City</a><a href="funky-town.html">Funky Town</a></nav>
+    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="sling-nouveau.html">Sling Bling</a><a href="gildenspire.html">GildenSpire</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a><a href="booyang-city.html">BooYang City</a><a href="funky-town.html">Funky Town</a></nav>
     <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2><a href="palace.html">Palace</a><a href="hearts-play.html">Hearts</a><a href="spades-play.html">Spades</a><a href="euchre-play.html">Euchre</a><a href="solitaire.html">Solitaire</a><a href="war.html">War</a><a href="gin-rummy.html">Gin Rummy</a></nav>
     <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a>${appCatalog.map(app=>`<a href="${app.infoUrl}">${app.title}</a>`).join("")}</nav>
     <nav class="footer-group" aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="about.html#south-dakota">South Dakota</a><a href="news.html">News</a><a href="support.html">Support</a><a href="contact.html">Contact</a></nav>
@@ -171,6 +171,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/responsive-refinements.css">
   <link rel="stylesheet" href="assets/card-game-stories.css">
   <link rel="stylesheet" href="assets/workbench.css">
+  <link rel="stylesheet" href="assets/sling-bling.css">
   <noscript><link rel="stylesheet" href="assets/workbench-nojs.css"></noscript>
   <link rel="alternate" type="application/rss+xml" title="Notes from the Workbench" href="feed.xml">
   <script src="assets/asset-manifest.js" defer></script>
@@ -326,7 +327,7 @@ news.forEach((item, index) => {
 
 write("games.html", page({
   title: "Games | Four of Hearts Interactive",
-  description: "Explore independent card, arcade, defense, adventure, puzzle, and creative games from 4OH Interactive, including Sling Nouveau.",
+  description: "Explore independent card, arcade, defense, adventure, puzzle, and creative games from 4OH Interactive, including Sling Bling.",
   path: "/games.html", current: "games", bodyClass: "production-page games-page",
   content: gamesPage({groups:productGroups})
 }));

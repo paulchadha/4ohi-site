@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { productCatalog } from "./studio-product-manifest.mjs";
 
 export const articleTypes = Object.freeze({
+  "development-update": "Development update", "developer-spotlight": "Developer spotlight",
   "studio-story": "Studio story", "developer-diary": "Developer diary",
   retrospective: "Retrospective", "release-notes": "Release notes",
   "design-diary": "Design diary", "workbench-brief": "Workbench brief"
@@ -56,7 +57,7 @@ export const notePreview = (a, heading = "h3") => `<article class="workbench-not
 export const workbenchGoals = Object.freeze({
   "sling-nouveau": [
     "Design direction",
-    "The immediate priority is the slingshot. It should be easy to grab, satisfying to pull, and simple to position. Your thumb should be planning the shot, not negotiating access to the controls."
+    "The new gold-and-jewel artwork is ready to explore. The campaign is aiming for 1,000 levels, while physics testing and the overhaul remain unfinished. Your thumb should be planning the shot, not negotiating access to the controls."
   ],
   "palace": [
     "Design direction",
@@ -142,11 +143,7 @@ export function productJournal(product, articles) {
   return `<section class="product-journal" id="from-the-developers" data-product-journal="${product.id}" lang="en" dir="ltr" translate="no"><div class="production-shell"><header><p class="production-eyebrow">THE WORKSHOP · ${escapeHtml(product.title)}</p><h2>From the developers</h2><p>What we’re building, what we’re improving, and what made us laugh.</p></header><div class="product-journal-grid"><div class="workbench-goal"><h3>On the workbench</h3><p class="workbench-meta">${label}</p><p>${escapeHtml(goal)}</p><p class="workbench-availability"><strong>Availability:</strong> ${escapeHtml(product.availability)}.</p></div>${latest ? notePreview(latest) : ""}</div>${latest ? `<a class="workbench-archive-link" href="${productArchive(product)}">Older updates for ${escapeHtml(product.title)} <span aria-hidden="true">→</span></a>` : ""}</div></section>`;
 }
 
-export const slingTreatment = (compact = false) => `<span class="sling-type-art${compact ? " compact" : ""}" aria-hidden="true"><span>SLING</span><span>NOUVEAU<span class="sling-dot">.</span></span><small>Modern art. Meet gravity.</small></span>`;
-export const slingFeature = () => `<section class="sling-workbench-feature" aria-labelledby="sling-feature-title" lang="en"><div class="production-shell sling-feature-grid"><div><p class="production-eyebrow">NEW ON THE WORKBENCH · IN DEVELOPMENT</p><h2 id="sling-feature-title">Sling Nouveau</h2><p>Modern art. Meet gravity.</p><p>A colorful physics playground where a better angle makes all the difference.</p><a class="button" href="sling-nouveau.html">Meet Sling Nouveau</a></div>${slingTreatment()}</div></section>`;
-export function slingPage(product) {
-  return `<article class="sling-product"><header class="sling-product-hero"><div class="production-shell sling-feature-grid"><div><p class="production-eyebrow">PHYSICS PLAYGROUND · IN DEVELOPMENT</p><h1>Sling Nouveau</h1><p class="sling-tagline">Modern art. Meet gravity.</p><p>${escapeHtml(product.description)}</p><div class="actions"><a class="button" href="#from-the-developers">Follow development</a><a class="button secondary" href="games.html">Explore all games</a></div><p>No public build or release date has been announced.</p></div>${slingTreatment()}</div></header><section class="sling-product-direction"><div class="production-shell"><p class="production-eyebrow">THE DESIGN DIRECTION</p><h2>A shot worth lining up.</h2><p>Expressive art, responsive slingshot controls, and the pleasure of finding a better angle. The priorities below describe what we’re building.</p><a class="text-link" href="funky-town.html">Also exploring art and play: Funky Town →</a></div></section></article>`;
-}
+export { slingTreatment, slingFeature, slingPage } from "./sling-bling-content.mjs";
 
 export function newsListing(articles, {oldest = false, origins = false, product = null} = {}) {
   let items = product ? notesFor(articles,product) : origins ? articles.filter(a => a.seriesId === "product-origins") : articles;

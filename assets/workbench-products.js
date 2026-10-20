@@ -1,6 +1,8 @@
 window.FOUR_HEARTS_WORKBENCH_PRODUCT_ALIASES = Object.freeze({
   "sling-nouveau": "sling-nouveau",
+  "sling bling": "sling-nouveau",
   "sling nouveau": "sling-nouveau",
+  "sling-bling": "sling-nouveau",
   "gin-rummy": "gin-rummy",
   "gin rummy": "gin-rummy",
   "sovinto": "sovinto",

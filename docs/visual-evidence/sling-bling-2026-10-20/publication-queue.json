@@ -1,0 +1,185 @@
+{
+  "automaticSchedulerConfigured": false,
+  "queue": [
+    {
+      "slug": "sling-bling-gold-jewels-and-gravity",
+      "productIds": [
+        "sling-nouveau"
+      ],
+      "status": "published",
+      "date": "2026-10-20",
+      "scheduledFor": "2026-10-20"
+    },
+    {
+      "slug": "gin-rummy-gold-trim",
+      "productIds": [
+        "gin-rummy"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-21"
+    },
+    {
+      "slug": "sleep-amigo-notification-home",
+      "productIds": [
+        "sleep-amigo"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-22"
+    },
+    {
+      "slug": "gildenspire-scenic-route",
+      "productIds": [
+        "gildenspire"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-23"
+    },
+    {
+      "slug": "palace-last-card",
+      "productIds": [
+        "palace"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-24"
+    },
+    {
+      "slug": "booyang-bakery-eventually",
+      "productIds": [
+        "booyang-city"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-25"
+    },
+    {
+      "slug": "thumb-command-earth-assignment",
+      "productIds": [
+        "thumb-command"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-26"
+    },
+    {
+      "slug": "sovinto-prepare-a-position",
+      "productIds": [
+        "sovinto"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-27"
+    },
+    {
+      "slug": "hearts-some-gifts",
+      "productIds": [
+        "hearts"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-28"
+    },
+    {
+      "slug": "funky-town-buildings-express-themselves",
+      "productIds": [
+        "funky-town"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-29"
+    },
+    {
+      "slug": "bobby-defensive-perimeter",
+      "productIds": [
+        "bobby"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-30"
+    },
+    {
+      "slug": "evil-doom-village-objections",
+      "productIds": [
+        "evil-doom-boy"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-10-31"
+    },
+    {
+      "slug": "unicorn-blast-rescue-operation",
+      "productIds": [
+        "heartstack"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-01"
+    },
+    {
+      "slug": "spades-bid-noted",
+      "productIds": [
+        "spades"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-02"
+    },
+    {
+      "slug": "princess-land-royal-duties",
+      "productIds": [
+        "princess-land"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-03"
+    },
+    {
+      "slug": "whomly-before-hello",
+      "productIds": [
+        "whomly"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-04"
+    },
+    {
+      "slug": "solitaire-excellent-attendance",
+      "productIds": [
+        "solitaire"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-05"
+    },
+    {
+      "slug": "unicorn-land-another-opinion",
+      "productIds": [
+        "unicorn-land"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-06"
+    },
+    {
+      "slug": "euchre-large-opinion",
+      "productIds": [
+        "euchre"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-07"
+    },
+    {
+      "slug": "war-random-strategy",
+      "productIds": [
+        "war"
+      ],
+      "status": "draft",
+      "date": null,
+      "scheduledFor": "2026-11-08"
+    }
+  ]
+}
