@@ -1,0 +1,20 @@
+{
+  "status": "proposed; not activated",
+  "draftId": "press-ahead-a-little-head-start",
+  "proposedLocalPublicationDay": "2026-10-23",
+  "timeZone": "America/Chicago",
+  "existingSlot": "gildenspire-scenic-route",
+  "suggestedAction": "Use the Press Ahead draft in the October 23 slot and defer the generic GildenSpire spotlight to an unscheduled backlog. Activate only after parent confirms the slot reassignment; do not add a second daily post or silently extend the 19-post campaign.",
+  "requiresParentSlotDecision": true,
+  "requiresNewUserAcceptanceForCurrentWebsiteRefresh": false,
+  "activationNotes": "The original campaign remains unchanged. When a Press Ahead slot is activated, update the queue coverage check deliberately: this studio story has no existing catalog product ID, and must not be falsely tagged as GildenSpire or Unicorn Blast.",
+  "classicLookup": {
+    "threadId": "01a1646d-968b-714c-b14d-7f47decb20ec",
+    "outcome": "Unavailable through thread reader (including explicit host lookup); personal context unavailable. No exact Classic text claimed as read.",
+    "verifiedAlternatives": [
+      "User supplied the press-a-head/move-ahead wordplay.",
+      "Read recovered PRESS_AHEAD_MASTER_DIRECTIVE.txt and current Press Ahead README/menu source.",
+      "Read current active Press Ahead task. No public 400-level/native-complete or live-Auth0 claim made."
+    ]
+  }
+}

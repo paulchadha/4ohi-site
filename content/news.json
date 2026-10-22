@@ -28,8 +28,8 @@
         ]
       }
     ],
-    "image": "assets/sling-bling/tile-768.webp",
-    "imageAlt": "Sling Bling gold and diamond logo; development artwork, not a gameplay screenshot"
+    "image": "assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp",
+    "imageAlt": "Sling Bling gold dollar and blue euro money monsters with a jeweled slingshot; development artwork, not a gameplay screenshot"
   },
   {
     "id": "gin-rummy-gold-trim",
@@ -95,7 +95,7 @@
     "id": "gildenspire-scenic-route",
     "slug": "gildenspire-scenic-route",
     "title": "The scenic route has teeth.",
-    "description": "A dragon worth raising and a world worth flying through. The scenery may develop territorial opinions.",
+    "description": "A dragon to raise, a world to explore, and a travelling companion who should not sit beside the picnic basket.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -114,9 +114,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "GildenSpire’s design starts with a dragon worth raising and a world worth flying through. Climbing, banking, diving, and exploring are meant to be part of the pleasure, well before another dragon develops territorial opinions.",
+          "GildenSpire’s design starts with a dragon worth raising and a world worth flying through. Climbing, banking, diving, and exploring are meant to be part of the pleasure, well before another dragon develops territorial opinions. Our route planning is very confident for a group with this many teeth.",
           "Different dragon shapes, movement, and abilities are part of the creative direction. Choosing a creature should matter beyond its paintwork.",
-          "This is a look at the game we are building, not a launch announcement. The sky is ambitious. The release date remains unannounced."
+          "This is a look at the game we are building, not a launch announcement. The sky is ambitious. The release date remains unannounced. We are packing optimism. It is lighter than spare wings."
         ]
       }
     ]
@@ -125,7 +125,7 @@
     "id": "palace-last-card",
     "slug": "palace-last-card",
     "title": "The last card has declined to comment.",
-    "description": "Three layers of cards, one hidden finish, and a deck with its own views on your plan.",
+    "description": "Three layers of cards. One very good plan. We should probably have told the deck about the plan.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -144,9 +144,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Palace asks you to clear your hand, work through the face-up reserve, and then confront the cards you cannot see. An excellent arrangement for anyone who enjoys making a plan and having the deck review it.",
+          "Palace asks you to clear your hand, work through the face-up reserve, and then confront the cards you cannot see. An excellent arrangement for anyone who enjoys making a plan and having the deck review it. We usually have a splendid strategy right up until the cards arrive.",
           "The complete website game offers local play against a bot. The separate app remains in private testing, with online development work distinct from that browser table.",
-          "Readable choices, useful power cards, and a finish that refuses to reveal its references in advance. The website table is available to play; this spotlight does not announce a standalone app release."
+          "Readable choices, useful power cards, and a finish that refuses to reveal its references in advance. The website table is available to play; this spotlight does not announce a standalone app release. Our confidence is coming along beautifully. The deck has requested a second opinion."
         ]
       }
     ]
@@ -155,7 +155,7 @@
     "id": "booyang-bakery-eventually",
     "slug": "booyang-bakery-eventually",
     "title": "Just popping to the bakery. Eventually.",
-    "description": "BooYang City is being built around a neighborhood full of reasons to wander. The short errand is negotiable.",
+    "description": "A quick trip to the bakery, with just a small detour through the rest of the entire town.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -174,9 +174,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "BooYang City’s premise is a neighborhood full of different reasons to wander. The bakery, zoo, boutique, school, and hospital each give the city another kind of activity.",
+          "BooYang City’s premise is a neighborhood full of different reasons to wander. The bakery, zoo, boutique, school, and hospital each give the city another kind of activity. We only meant to collect a loaf. We seem to have become emotionally invested in the zoo.",
           "Explore somewhere, play, improve it, and discover another destination. A short errand can develop a remarkably flexible itinerary.",
-          "Development continues; no public release is announced. The bakery is not accepting complaints about how long you spent at the zoo."
+          "Development continues; no public release is announced. The bakery is not accepting complaints about how long you spent at the zoo. You can explain the three-hour bread run when you get home. We will be very sympathetic."
         ]
       }
     ]
@@ -185,7 +185,7 @@
     "id": "thumb-command-earth-assignment",
     "slug": "thumb-command-earth-assignment",
     "title": "Earth has assigned this to your thumb.",
-    "description": "A small spacecraft, a large responsibility, and presumably a very interesting insurance renewal.",
+    "description": "One small interceptor, an entire planet, and a thumb that was hoping for a quieter afternoon.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -204,9 +204,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Thumb Command puts the Blueguard interceptor between an alien invasion and the city below. A small spacecraft, a large responsibility, and presumably a very interesting insurance renewal.",
+          "Thumb Command puts the Blueguard interceptor between an alien invasion and the city below. A small spacecraft, a large responsibility, and presumably a very interesting insurance renewal. We would have sent a larger committee, but the spacecraft has limited seating.",
           "The design favors readable action, distinctive enemies, and an interface that leaves room for the fighting. If the city needs defending, the controls should not demand a separate briefing.",
-          "This is a spotlight on its arcade-defense premise, not a report of newly released missions or features. Thumb Command remains in development."
+          "This is a spotlight on its arcade-defense premise, not a report of newly released missions or features. Thumb Command remains in development. We appreciate your help. The planet is a little difficult to replace."
         ]
       }
     ]
@@ -215,7 +215,7 @@
     "id": "sovinto-prepare-a-position",
     "slug": "sovinto-prepare-a-position",
     "title": "Prepare a position before inventing one aloud.",
-    "description": "A look at negotiation preparation, with fewer important thoughts arriving in the parking lot afterward.",
+    "description": "A little preparation now. Fewer brilliant things to say arriving on the drive home.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -234,9 +234,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "SOVINTO is being developed around negotiation preparation: what you want, what matters most, and where you have room to move. Remembering these things before the conversation is generally more convenient than remembering them in the parking lot afterward.",
+          "SOVINTO is being developed around negotiation preparation: what you want, what matters most, and where you have room to move. Remembering these things before the conversation is generally more convenient than remembering them in the parking lot afterward. Our best arguments have a terrible habit of turning up when the meeting is over.",
           "The current foundation includes local case preparation and general, prewritten help. Interactive practice, a broader toolset, and live AI coaching remain development work.",
-          "Preparation cannot guarantee agreement. It can at least give “let me think” something useful to do. SOVINTO remains in development."
+          "Preparation cannot guarantee agreement. It can at least give “let me think” something useful to do. SOVINTO remains in development. We are very persuasive in the car afterward. We would like to move some of that talent into the meeting."
         ]
       }
     ]
@@ -245,7 +245,7 @@
     "id": "hearts-some-gifts",
     "slug": "hearts-some-gifts",
     "title": "Some gifts come with thirteen points.",
-    "description": "Four players. No partners. The queen of spades already supplies enough tension without help from the interface.",
+    "description": "Passing cards with a lovely smile. Letting the recipient discover the problem in their own time.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -264,9 +264,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Four players. No partners. Plenty to notice. Hearts makes a passing decision feel generous right up until the recipient examines it.",
+          "Four players. No partners. Plenty to notice. Hearts makes a passing decision feel generous right up until the recipient examines it. We like to include a smile with the three cards. It is the least we can do under the circumstances.",
           "The current app supports complete local games with three bots and remains in internal testing. Online tables are still being developed.",
-          "A readable hand, clear turns, and an understandable table matter. The queen of spades already supplies enough tension. She does not need help from the interface."
+          "A readable hand, clear turns, and an understandable table matter. The queen of spades already supplies enough tension. She does not need help from the interface. We are working on being gracious. We would also very much like to win."
         ]
       }
     ]
@@ -275,7 +275,7 @@
     "id": "funky-town-buildings-express-themselves",
     "slug": "funky-town-buildings-express-themselves",
     "title": "The buildings would like to express themselves.",
-    "description": "Murals, music, gardens, and architecture with opinions. Sensible buildings are negotiable.",
+    "description": "A town with room for your ideas. Even the one that requires moving the bakery again.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -294,9 +294,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Funky Town’s creative direction gives ordinary buildings rather extraordinary prospects. Murals, gardens, music, sculpture, and unusual architecture belong in a town shaped by the player.",
+          "Funky Town’s creative direction gives ordinary buildings rather extraordinary prospects. Murals, gardens, music, sculpture, and unusual architecture belong in a town shaped by the player. Our city planning is coming along nicely, provided nobody asks why the bakery has moved three times.",
           "Grow a neighborhood, change its character, and zoom out to see your choices add up. Sensible shoes may be advisable. Sensible buildings are negotiable.",
-          "Development continues; this is not an announcement that new building tools or public community features have shipped."
+          "Development continues; this is not an announcement that new building tools or public community features have shipped. There is room for a sensible neighborhood. We have also made room for your other idea."
         ]
       }
     ]
@@ -305,7 +305,7 @@
     "id": "bobby-defensive-perimeter",
     "slug": "bobby-defensive-perimeter",
     "title": "The bread has established a defensive perimeter.",
-    "description": "A herd, a Breadstone, and considerably more military preparation than most baked goods receive.",
+    "description": "One determined bread dinosaur. One Breadstone. A defense plan that has risen to the occasion.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -324,9 +324,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Bobby has a herd to protect and a Breadstone to defend. The proposed solution involves upgraded towers, thoughtful placement, and considerably more military preparation than most baked goods receive.",
+          "Bobby has a herd to protect and a Breadstone to defend. The proposed solution involves upgraded towers, thoughtful placement, and considerably more military preparation than most baked goods receive. Most bread is happy with a basket. Bobby has opted for a more comprehensive security arrangement.",
           "The artwork and battlefield should make the world inviting while keeping the action easy to follow.",
-          "Bobby remains in development, with no public release date announced. This is a closer look at the idea, not a claim that a fresh batch of levels has shipped."
+          "Bobby remains in development, with no public release date announced. This is a closer look at the idea, not a claim that a fresh batch of levels has shipped. Please admire the fortifications. Someone has put a lot of heart into this loaf."
         ]
       }
     ]
@@ -335,7 +335,7 @@
     "id": "evil-doom-village-objections",
     "slug": "evil-doom-village-objections",
     "title": "Doom has arrived. The village has objections.",
-    "description": "Two siblings, one game, and a village with a firm view on being overrun.",
+    "description": "Two siblings, a village to protect, and an intruder who has clearly ignored the welcome mat.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -354,9 +354,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "A brother and sister defend the village that shelters them. Choose a sibling, build and upgrade defenses, and stand against Girmat’s advancing monsters.",
+          "A brother and sister defend the village that shelters them. Choose a sibling, build and upgrade defenses, and stand against Girmat’s advancing monsters. The village is usually quite welcoming. It is making an exception for the advancing monsters.",
           "The two heroes belong to one game. Distinctive towers give a village facing Doom options beyond “another slightly different cannon.”",
-          "Development continues; no public release is announced. Girmat’s alarming presentation should not be mistaken for an approved launch schedule."
+          "Development continues; no public release is announced. Girmat’s alarming presentation should not be mistaken for an approved launch schedule. We have tried being hospitable. The towers are handling the follow-up."
         ]
       }
     ]
@@ -365,7 +365,7 @@
     "id": "unicorn-blast-rescue-operation",
     "slug": "unicorn-blast-rescue-operation",
     "title": "A rescue operation with very little subtlety.",
-    "description": "Suit matching, crystal cages, and chain reactions that appear to have missed the meeting about restraint.",
+    "description": "A rescue plan with sparkles. Our sensible little match has invited half the board.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -384,9 +384,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Suit matching, combos, crystal cages, and unicorn rescue make a successful chain reaction both useful and agreeably excessive.",
+          "Suit matching, combos, crystal cages, and unicorn rescue make a successful chain reaction both useful and agreeably excessive. We had intended a modest little combo. Apparently it invited its relatives.",
           "Clarity matters underneath the spectacle: understand the board and tools, then enjoy what happens when a good decision sets everything moving.",
-          "The game remains in development. Unicorn Blast is the current name; older pages may still mention HeartStack. This spotlight introduces no new release. The unicorns are simply receiving their allotted editorial attention."
+          "The game remains in development. Unicorn Blast is the current name; older pages may still mention HeartStack. This spotlight introduces no new release. The unicorns are simply receiving their allotted editorial attention. Restraint was discussed. The unicorns voted for the sparkling option."
         ]
       }
     ]
@@ -395,7 +395,7 @@
     "id": "spades-bid-noted",
     "slug": "spades-bid-noted",
     "title": "Your bid has been noted by another person.",
-    "description": "Count the tricks, watch the bags, and consider how impressive your confidence will sound later.",
+    "description": "Your partner believes in you. A touching development, considering what you just bid.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -414,9 +414,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Two partners must turn their bids into a result. Count the tricks, watch the bags, and consider how impressive your confidence will sound if someone else has to rescue it.",
+          "Two partners must turn their bids into a result. Count the tricks, watch the bags, and consider how impressive your confidence will sound if someone else has to rescue it. We said it with such confidence. We would now appreciate a little cooperation from the hand.",
           "Local bot play, including a bot partner, is implemented in the app under internal testing. Public multiplayer is not yet available.",
-          "Partnership strategy should provide the complexity. Finding the score should not. This is a developer spotlight, rather than a new release announcement."
+          "Partnership strategy should provide the complexity. Finding the score should not. This is a developer spotlight, rather than a new release announcement. We bring optimism to the partnership. Our partner would quite reasonably prefer tricks."
         ]
       }
     ]
@@ -425,7 +425,7 @@
     "id": "princess-land-royal-duties",
     "slug": "princess-land-royal-duties",
     "title": "Royal duties include moving that chair again.",
-    "description": "Style, cook, decorate, rearrange. The royal calendar makes room for reconsidering the furniture.",
+    "description": "Style, cook, decorate, and move that chair again. The royal household is being very patient.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -444,9 +444,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Character styling, castle rooms, cooking, and decorating share one creative-simulation premise. Choose how things look, try another arrangement, and decide the first arrangement was right after all.",
+          "Character styling, castle rooms, cooking, and decorating share one creative-simulation premise. Choose how things look, try another arrangement, and decide the first arrangement was right after all. We were certain about that chair five minutes ago. The royal household has kindly agreed not to mention it.",
           "Outfit fit, layering, and expressive characters matter when making choices is the main event.",
-          "This is a spotlight, not a newly released wardrobe or room collection. Development continues, and the royal calendar contains no public launch date."
+          "This is a spotlight, not a newly released wardrobe or room collection. Development continues, and the royal calendar contains no public launch date. The crown confers many privileges. Instant certainty about curtains is, sadly, not one of them."
         ]
       }
     ]
@@ -455,7 +455,7 @@
     "id": "whomly-before-hello",
     "slug": "whomly-before-hello",
     "title": "A useful introduction starts before “Hello.”",
-    "description": "Public professional research, useful context, and a thoughtful beginning to the conversation.",
+    "description": "A little useful context before hello. We recommend learning the name before practising the handshake.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -474,9 +474,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Whomly is being designed to turn public professional information into context you can actually use: who fits a search, what supports that fit, and what might make a thoughtful introduction.",
+          "Whomly is being designed to turn public professional information into context you can actually use: who fits a search, what supports that fit, and what might make a thoughtful introduction. We are aiming for a thoughtful introduction, rather than the spectacular panic of realizing we have forgotten the name.",
           "The proposed flow moves from discovery to understanding to preparation. It is user-directed research, not private-profile access or an imaginary dossier on somebody’s inner life.",
-          "Whomly remains in development; no public service or automated contact feature is announced. Research should improve the conversation, not give everyone a reason to leave it."
+          "Whomly remains in development; no public service or automated contact feature is announced. Research should improve the conversation, not give everyone a reason to leave it. A little preparation can do wonders. We still recommend checking for spinach before the meeting."
         ]
       }
     ]
@@ -485,7 +485,7 @@
     "id": "solitaire-excellent-attendance",
     "slug": "solitaire-excellent-attendance",
     "title": "A meeting for one. Excellent attendance.",
-    "description": "One useful move, one saved deal, and remarkably little scheduling administration.",
+    "description": "A table for one. Your opponent has cancelled, which is awkward, because it's also you.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -504,9 +504,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Uncover a card, find a useful move, and bring a little order to the deal. The development app includes different ways to play and a locally saved deal.",
+          "Uncover a card, find a useful move, and bring a little order to the deal. The development app includes different ways to play and a locally saved deal. We have cleared our schedule and asked everyone to keep the interruptions down. There is nobody else here.",
           "Its personal challenge rating stays on the device; it is not a public leaderboard. Comfortable card sizes, clear presentation, and smooth movement set the direction.",
-          "The standalone app remains in development. No need to schedule a rematch with anyone, which does simplify the administration."
+          "The standalone app remains in development. No need to schedule a rematch with anyone, which does simplify the administration. If you need another deal, we understand. We were just about to suggest the same thing."
         ]
       }
     ]
@@ -515,7 +515,7 @@
     "id": "unicorn-land-another-opinion",
     "slug": "unicorn-land-another-opinion",
     "title": "The habitat is ready for another opinion.",
-    "description": "Make a place feel yours. Reconsidering the mane after finishing the garden is entirely reasonable.",
+    "description": "A home for your unicorn and your latest decorating idea. The last latest idea was also very good.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -534,9 +534,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Personalize unicorns, shape habitats, decorate, discover, and enjoy mini-games along the way.",
+          "Personalize unicorns, shape habitats, decorate, discover, and enjoy mini-games along the way. The garden was finished. Then we saw another flower. You understand.",
           "This is separate from Unicorn Blast: make a place feel yours, with the entirely reasonable possibility of reconsidering the mane after finishing the garden.",
-          "The game remains in development, with no public release date announced. Landscaping expertise is optional. Opinions about flowers will probably emerge naturally."
+          "The game remains in development, with no public release date announced. Landscaping expertise is optional. Opinions about flowers will probably emerge naturally. We will be delighted to see what you make. We may ask where you found that particularly nice shrub."
         ]
       }
     ]
@@ -545,7 +545,7 @@
     "id": "euchre-large-opinion",
     "slug": "euchre-large-opinion",
     "title": "Five cards can support a very large opinion.",
-    "description": "Trump, bowers, and the occasional brave conclusion drawn from a small handful of evidence.",
+    "description": "Five cards and a brave decision. We have made longer speeches with considerably less evidence.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -564,9 +564,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Calling trump, recognizing the bowers, trusting a partner, and occasionally deciding you can manage without one. A brave conclusion for such a small handful of evidence.",
+          "Calling trump, recognizing the bowers, trusting a partner, and occasionally deciding you can manage without one. A brave conclusion for such a small handful of evidence. We are very sure about calling trump. This confidence is available in advance of the results.",
           "Complete local bot matches are implemented in the app under internal testing; online tables remain development work.",
-          "Keep trump, the caller, partners, and scores easy to follow. The cards may surprise you; the controls should make an effort not to."
+          "Keep trump, the caller, partners, and scores easy to follow. The cards may surprise you; the controls should make an effort not to. If the brave plan works, we will be modest about it. We have been practising our expression."
         ]
       }
     ]
@@ -575,7 +575,7 @@
     "id": "war-random-strategy",
     "slug": "war-random-strategy",
     "title": "An excellent result for your entirely random strategy.",
-    "description": "Flip, settle the ties, and enjoy the result. The deck has not been given a management title.",
+    "description": "Flip a card, enjoy a win, and accept the credit with modesty. The deck did quite a lot of the work.",
     "author": "The 4OH Workshop",
     "articleType": "developer-spotlight",
     "productIds": [
@@ -594,9 +594,9 @@
       {
         "heading": "From the developers",
         "paragraphs": [
-          "War is a game of chance, and we see no reason to give the deck a management title. Flip the cards, settle the ties, and enjoy the result.",
+          "War is a game of chance, and we see no reason to give the deck a management title. Flip the cards, settle the ties, and enjoy the result. We like a game where everyone can join in, including the person who has brought enthusiasm instead of a strategy.",
           "The development app offers Classic, Quick, and Family Table play, including two to four people sharing one device. Match history and progress stay local; they are not an online skill ranking.",
-          "The standalone app remains in development. A good run is still worth enjoying, even if your strategic contribution was turning the card over."
+          "The standalone app remains in development. A good run is still worth enjoying, even if your strategic contribution was turning the card over. Please enjoy your good run. We will admire your technique and avoid asking too many questions."
         ]
       }
     ]
@@ -2256,5 +2256,36 @@
       "palace"
     ],
     "language": "en"
+  },
+  {
+    "id": "press-ahead-a-little-head-start",
+    "slug": "press-ahead-a-little-head-start",
+    "title": "Press Ahead: a little head start.",
+    "description": "A new expedition-inspired match-three game, with a name we could not possibly leave alone.",
+    "author": "The 4OH Workshop",
+    "articleType": "development-update",
+    "productIds": [],
+    "tags": [
+      "games",
+      "company",
+      "development"
+    ],
+    "status": "draft",
+    "date": null,
+    "scheduledFor": null,
+    "proposedPublicationDay": "2026-10-23",
+    "editorialQueueState": "pending-slot-reassignment",
+    "language": "en",
+    "featured": false,
+    "body": [
+      {
+        "heading": "On the workbench",
+        "paragraphs": [
+          "Press Ahead is a new, separate match-three game in development, inspired by the Lewis and Clark expedition. It uses the Unicorn Blast project as its technical foundation; Unicorn Blast remains its own game.",
+          "The name comes with a small invitation: “press a head” and move ahead. We are trying to keep the wordplay under control. It has already packed a bag.",
+          "A private development version is taking shape. The wider campaign and hands-on phone testing still need their checks. There is no public launch announcement here. We have plenty of trail ahead and a sensible amount of enthusiasm."
+        ]
+      }
+    ]
   }
 ]

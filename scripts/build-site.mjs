@@ -10,7 +10,7 @@ import { privacyCopy } from "./privacy-copy.mjs";
 import { bobbyPage, evilDoomPage, heartStackPage, princessLandPage, unicornLandPage } from "./studio-world-pages.mjs";
 import { gildenspirePageContent } from "./gildenspire-content.mjs";
 import { booyangCityPage, funkyTownPage, sleepAmigoPage, whomlyPage } from "./studio-expansion-pages.mjs";
-import { loadArticles, articleTypes, escapeHtml, newsListing, productJournal, productArchive, productAliases, notesFor, slingPage } from "./workbench-content.mjs";
+import { loadArticles, articleTypes, escapeHtml, newsListing, productJournal, productArchive, productAliases, notesFor, slingPage, articleArtworkAttributes } from "./workbench-content.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const assetVersion = (assetPath) => {
@@ -314,7 +314,7 @@ news.forEach((item, index) => {
           ${item.historicalPeriod ? `<p>Looking back at: ${escapeHtml(item.historicalPeriod)}</p>` : ""}
           <p class="workbench-language" data-workbench-language hidden>This article is available in English. Your selected language still applies to the site controls.</p>
         </header>
-        ${item.image ? `<div class="shell"><img class="article-art" src="${item.image}" alt="${escapeHtml(item.imageAlt)}" width="1200" height="630"></div>` : ""}
+        ${item.image ? `<div class="shell"><img class="article-art" src="${item.image}"${articleArtworkAttributes(item.image)} alt="${escapeHtml(item.imageAlt)}" width="1200" height="630"></div>` : ""}
         <section class="section"><div class="shell article-layout">
           <div class="prose">${body}</div>
           <aside class="article-aside">${item.historicalPeriod ? `<h2>Period covered</h2><p>${escapeHtml(item.historicalPeriod)}</p>` : ""}<h2>Current availability</h2>${latestAvailability}<p>The article text records its original publication context.</p>${series.length ? `<h2>From the beginning</h2><p>${item.seriesRole ? escapeHtml(item.seriesRole) : `Part ${item.seriesOrder} of the origin stories.`}</p>${seriesNext ? `<a href="${articleFile(seriesNext.slug)}">Next origin story: ${escapeHtml(seriesNext.title)} →</a>` : ""}<a href="news-origins.html">All origin stories →</a>` : ""}</aside>
