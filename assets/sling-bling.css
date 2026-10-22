@@ -11,6 +11,7 @@
 .bling-creatures img{display:block;width:36%;height:auto;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 12px 10px #0005)}
 .bling-creatures img:nth-child(2){width:41%;margin-inline:-6%;z-index:1}
 .bling-art figcaption{position:relative;display:block;color:#ecdcb8;text-align:center;font-size:.7rem;line-height:1.5;letter-spacing:.07em;margin-top:.4rem}
+.bling-current-art{padding:0 0 1rem;background:#122338;border-radius:1rem;aspect-ratio:auto;max-width:512px;width:100%;justify-self:center}.bling-current-art::before{display:none}.bling-current-art .bling-money-monsters{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}.bling-current-art figcaption{padding:.5rem .7rem 0}.bling-money-crew{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);align-items:center;margin-top:2rem}.bling-money-crew figure{max-width:512px}.bling-money-crew img{display:block;width:100%;height:auto;border-radius:1rem}.bling-money-crew figcaption{font-size:.82rem;line-height:1.5;padding-top:.7rem}.bling-money-crew h3{font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.15;margin:0 0 1.4rem}.bling-money-crew p{font-size:1.05rem;line-height:1.7}@media(max-width:760px){.bling-money-crew{grid-template-columns:1fr}.bling-money-crew figure{margin-inline:auto}}
 .production-tile-art .bling-tile,.production-card-art .bling-tile{width:100%;height:100%;object-fit:cover;display:block}
 .bling-section{background:#f6f1e7;color:#112e32;padding:clamp(3rem,7vw,6rem) 0}
 .bling-section.alt{background:#e9e3d5}

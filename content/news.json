@@ -2266,7 +2266,9 @@
     "description": "A new expedition-inspired match-three game, with a name we could not possibly leave alone.",
     "author": "The 4OH Workshop",
     "articleType": "development-update",
-    "productIds": [],
+    "productIds": [
+      "press-ahead"
+    ],
     "tags": [
       "games",
       "company",
@@ -2285,9 +2287,11 @@
         "paragraphs": [
           "Press Ahead is a new, separate match-three game in development, inspired by the Lewis and Clark expedition. It uses the Unicorn Blast project as its technical foundation; Unicorn Blast remains its own game.",
           "The name comes with a small invitation: “press a head” and move ahead. We are trying to keep the wordplay under control. It has already packed a bag.",
-          "A private development version is taking shape. The wider campaign and hands-on phone testing still need their checks. There is no public launch announcement here. We have plenty of trail ahead and a sensible amount of enthusiasm."
+          "The private 0.2.0 developer-test candidate has 400 existing authored boards and 670 passing automated source tests. A standalone Android test package has been built and checked. Physical-phone testing and live sign-in/cloud checks still need their turn, and the newer recipe revision is not fully verified. This is progress from the workbench, not a public launch. We have plenty of trail ahead and a sensible amount of enthusiasm."
         ]
       }
-    ]
+    ],
+    "image": "assets/press-ahead/scout-icon-512.webp",
+    "imageAlt": "Original Press Ahead scout artwork, with a finger pressing the explorer hat"
   }
 ]

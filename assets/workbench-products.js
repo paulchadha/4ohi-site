@@ -1,4 +1,6 @@
 window.FOUR_HEARTS_WORKBENCH_PRODUCT_ALIASES = Object.freeze({
+  "press-ahead": "press-ahead",
+  "press ahead": "press-ahead",
   "sling-nouveau": "sling-nouveau",
   "sling bling": "sling-nouveau",
   "sling nouveau": "sling-nouveau",

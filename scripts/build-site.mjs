@@ -1,3 +1,4 @@
+import { pressAheadPage, pressAheadStyles } from "./press-ahead-content.mjs";
 import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
@@ -122,8 +123,8 @@ const palaceTableTools = () => `<aside class="palace-table-tools" data-palace-co
 const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid footer-grid-editorial">
     <div class="footer-brand"><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-promise">Games with heart. Apps with purpose.</p><p class="footer-copy">Independent software from South Dakota.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
-    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="sling-nouveau.html">Sling Bling</a><a href="gildenspire.html">GildenSpire</a><a href="games/thumb-command/">Thumb Command</a><a href="bobby-the-breadasaurus.html">Bobby the Breadasaurus</a><a href="games/evil-doom-boy/">Evil Doom Boy</a><a href="heartstack-unicorn-blast.html">Unicorn Blast</a><a href="princess-land-adventures.html">Princess Land</a><a href="unicorn-land-adventures.html">Unicorn Land</a><a href="booyang-city.html">BooYang City</a><a href="funky-town.html">Funky Town</a></nav>
-    <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2><a href="palace.html">Palace</a><a href="hearts-play.html">Hearts</a><a href="spades-play.html">Spades</a><a href="euchre-play.html">Euchre</a><a href="solitaire.html">Solitaire</a><a href="war.html">War</a><a href="gin-rummy.html">Gin Rummy</a></nav>
+    <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="games.html">All Games</a>${gameCatalog.filter(game=>game.group!=="card-games").map(game=>`<a href="${game.infoUrl}">${game.title}</a>`).join("")}</nav>
+    <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2>${productGroups["card-games"].map(game=>`<a href="${game.infoUrl}">${game.title}</a>`).join("")}</nav>
     <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a>${appCatalog.map(app=>`<a href="${app.infoUrl}">${app.title}</a>`).join("")}</nav>
     <nav class="footer-group" aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="about.html#south-dakota">South Dakota</a><a href="news.html">News</a><a href="support.html">Support</a><a href="contact.html">Contact</a></nav>
     <nav class="footer-group footer-trust" aria-label="Trust"><h2>Trust</h2><a href="privacy.html">Privacy Approach</a><button class="footer-privacy-button" type="button" data-open-privacy>Your Privacy Choices</button><a href="privacy.html#do-not-sell">Do Not Sell or Share</a><a href="security.html">Security</a><a href="terms.html">Terms</a></nav>
@@ -244,6 +245,7 @@ write("index.html", page({
   image: "assets/portfolio-2026/four-of-hearts-studio-portfolio-board.webp",
   imageAlt: "Four of Hearts Interactive game and application portfolio",
   jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"Independent software. Built with a point of view.", url:siteUrl + "/", logo:siteUrl + "/assets/brand-mark-4oh.webp", email:"support@4ohi.com", description:"An independent South Dakota software studio creating original games, practical software solutions, and custom applications." },
+  script: pressAheadStyles,
   content: homepage({ groups:productGroups, apps:appCatalog, news, articleFile, formatDate })
 }));
 
@@ -329,6 +331,7 @@ write("games.html", page({
   title: "Games | Four of Hearts Interactive",
   description: "Explore independent card, arcade, defense, adventure, puzzle, and creative games from 4OH Interactive, including Sling Bling.",
   path: "/games.html", current: "games", bodyClass: "production-page games-page",
+  script: pressAheadStyles,
   content: gamesPage({groups:productGroups})
 }));
 
@@ -341,7 +344,8 @@ const productMarkup = (product) => page({
   bodyClass:`production-page product-${product.key}`,
   image:product.artwork || "assets/brand-mark-4oh.webp", imageAlt:product.alt || "Four of Hearts Interactive studio mark",
   jsonLd:{"@context":"https://schema.org","@type":product.category === "game" ? "VideoGame" : "SoftwareApplication",name:product.title,description:product.description,applicationCategory:product.type,operatingSystem:"In development",publisher:{"@type":"Organization",name:company},url:`${siteUrl}/${product.infoUrl}`},
-  content:product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
+  script: product.key === "press-ahead" ? pressAheadStyles : undefined,
+  content:product.key === "press-ahead" ? pressAheadPage() : product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
 });
 const gildenspire = gameByKey.gildenspire;
 const gildenspireMarkup = page({
@@ -391,7 +395,7 @@ write("news-thumb-command-world-tour.html", legacyRedirectPage("Thumb Command st
 write("news-unicorn-land-adventures-development.html", legacyRedirectPage("Unicorn Land story", "news-building-unicorn-land-adventures.html"));
 write("news-welcome-to-four-of-hearts.html", legacyRedirectPage("Studio news", "news.html"));
 write("news-why-were-building-palace.html", legacyRedirectPage("Palace story", "news-palace-019-founder-review.html"));
-["sling-nouveau","bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
+["press-ahead","sling-nouveau","bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
 write("booyang-city.html", booyangCityPage({page,company,siteUrl,game:gameByKey["booyang-city"]}));
 write("funky-town.html", funkyTownPage({page,company,siteUrl,game:gameByKey["funky-town"]}));
 const evilDoomMarkup = evilDoomPage({ page, company, siteUrl, game: gameByKey["evil-doom"] });
@@ -580,7 +584,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
-  "index.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
+  "index.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "sling-nouveau.html", "news-archive.html", "news-origins.html", ...productCatalog.map(productArchive),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",

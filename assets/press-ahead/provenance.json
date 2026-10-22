@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-22",
+  "project": "Press Ahead",
+  "sourceRevision": "30d42f46949f403ddc5ad59c851c787322277b8f",
+  "scope": "Website listing and static previews only; no app/game runtime, binary or private download",
+  "artwork": [
+    {
+      "sourceFile": "assets/press-ahead/v2-icon-512.png",
+      "sourceSha256": "f82ac56119d52152fafaf907c6ea39ffa676ced08f088f6957096a49cb6de03d",
+      "file": "assets/press-ahead/scout-icon-512.webp",
+      "sha256": "432cd8694ef59149395a01aca6b59c5399c6f6de220e9f91d98a81e7b1d1b228",
+      "width": 512,
+      "height": 512,
+      "scope": "Current original app artwork; faithful WebP export"
+    },
+    {
+      "sourceFile": "assets/press-ahead/v2-missouri.jpg",
+      "sourceSha256": "36e29d0432d84ade2aa70bbb34c422cc8160d68ca5fedebcba9dddd6f2d0ae68",
+      "file": "assets/press-ahead/missouri-scenery.webp",
+      "sha256": "f47ee95fdf1cd2396fb0aeef02ace3e2e0ac001cb804a9bee58063dcdeada5f3",
+      "width": 800,
+      "height": 1600,
+      "scope": "Current original regional artwork; scenic background, not a screenshot"
+    },
+    {
+      "sourceFile": "docs/press-ahead/web-final-gameplay.jpg",
+      "sourceSha256": "17ff5343914032b720f5f8ca33cf511616223694aae5e76582113cbd16ab3c91",
+      "file": "assets/press-ahead/board-browser.webp",
+      "sha256": "68747f1e577d8cb8114d8204a1d8f67168536be572371c03c0559f47bfb3bdd7",
+      "width": 390,
+      "height": 844,
+      "scope": "Earlier own-app browser development capture; not physical-device evidence"
+    },
+    {
+      "sourceFile": "validation/scout-map-mobile.png",
+      "sourceSha256": "f7c1385879153b1353e649736a9f294656c0eb5001185e101a9e861f6df360fc",
+      "file": "assets/press-ahead/map-browser.webp",
+      "sha256": "caae1759e5592b1d452e9555cb5fc5a4ddaf11a49e047b3f54a74998175a17fc",
+      "width": 390,
+      "height": 844,
+      "scope": "Current own-app browser development capture of chapter map; not physical-device evidence"
+    },
+    {
+      "sourceFile": "validation/scout-victory-desktop.png",
+      "sourceSha256": "30e6b406f7f24e4cc7f568545ecc372b2a955309625db67ea950f02f4c280d19",
+      "file": "assets/press-ahead/scout-browser.webp",
+      "sha256": "cac3d6440463b2013ac88ddd7a71553c2c5aed7846ff6d96f7eec11fdac94975",
+      "width": 1280,
+      "height": 720,
+      "scope": "Current own-app browser development capture of stage completion; not physical-device evidence"
+    }
+  ],
+  "verifiedCandidate": {
+    "version": "0.2.0",
+    "versionCode": 2,
+    "existingBoards": 400,
+    "automatedSourceTestsPassed": 670,
+    "physicalDeviceTested": false,
+    "liveSignInCloudConfigured": false,
+    "publicRelease": false
+  },
+  "evidenceFiles": [
+    "docs/press-ahead/NATIVE_BUILD_EVIDENCE_V2.md",
+    "docs/press-ahead/SCOUT_BROWSER_QA_V2.md",
+    "build-artifacts/android-release-0.2.0-manifest.json",
+    "validation/REV2_JEST_RESULTS.json"
+  ],
+  "limits": "Existing version-1 boards; newer rich recipe revision not fully verified. Earlier board screenshot is explicitly labeled earlier; current map/scout screenshots are browser QA."
+}

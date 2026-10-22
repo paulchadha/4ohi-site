@@ -57,6 +57,7 @@ export const articleArtworkAttributes = image => image === "assets/sling-bling/m
 export const notePreview = (a, heading = "h3") => `<article class="workbench-note" lang="en" data-original-language translate="no">${meta(a)}<${heading}><a href="${articleFile(a.slug)}">${escapeHtml(a.title)}</a></${heading}><p>${escapeHtml(a.description)}</p><a class="text-link" href="${articleFile(a.slug)}">Read the development diary <span aria-hidden="true">→</span></a></article>`;
 
 export const workbenchGoals = Object.freeze({
+  "press-ahead": ["Developer testing", "A private 0.2.0 candidate brings 400 existing boards and a cheerful scout. Physical-phone testing and live sign-in/cloud checks remain incomplete. We are pressing ahead; the hat has been very patient."],
   "sling-nouveau": [
     "Design direction",
     "The new gold-and-jewel artwork is ready to explore. The campaign is aiming for 1,000 levels, while physics testing and the overhaul remain unfinished. Your thumb should be planning the shot, not negotiating access to the controls."
@@ -147,7 +148,7 @@ export function productJournal(product, articles) {
 
 export { slingTreatment, slingFeature, slingPage } from "./sling-bling-content.mjs";
 
-const pressAheadWorkbenchNote = "<aside class=\"workbench-goal\" id=\"press-ahead\" aria-labelledby=\"press-ahead-heading\"><p class=\"workbench-meta\">ALSO ON THE WORKBENCH · IN DEVELOPMENT</p><h2 id=\"press-ahead-heading\">Press Ahead</h2><p>A separate expedition-inspired match-three game following the Lewis and Clark journey, built from the Unicorn Blast foundation. Unicorn Blast remains its own game.</p><p>“Press a head” and move ahead. A little wordplay for a long journey. We are trying not to let it go to our heads.</p><p>Press Ahead is still in development, with no public release date announced. A little head start and a well-packed lunch seem sensible.</p></aside>";
+const pressAheadWorkbenchNote = "<aside class=\"workbench-goal\" id=\"press-ahead\" aria-labelledby=\"press-ahead-heading\"><p class=\"workbench-meta\">ALSO ON THE WORKBENCH · IN DEVELOPMENT</p><h2 id=\"press-ahead-heading\">Press Ahead</h2><p>A separate expedition-inspired match-three game following the Lewis and Clark journey, built from the Unicorn Blast foundation. Unicorn Blast remains its own game.</p><p>“Press a head” and move ahead. A little wordplay for a long journey. We are trying not to let it go to our heads.</p><p>Press Ahead is still in development, with no public release date announced. A little head start and a well-packed lunch seem sensible.</p><p><a href=\"press-ahead.html\">Meet Press Ahead and see the development preview</a></p></aside>";
 
 export function newsListing(articles, {oldest = false, origins = false, product = null} = {}) {
   let items = product ? notesFor(articles,product) : origins ? articles.filter(a => a.seriesId === "product-origins") : articles;

@@ -7,7 +7,7 @@ import { loadArticles } from './workbench-content.mjs';
 const root=resolve(import.meta.dirname,'..'), records=JSON.parse(readFileSync(join(root,'content/news.json'),'utf8'));
 const campaign=records.filter(a=>a.scheduledFor).sort((a,b)=>a.scheduledFor.localeCompare(b.scheduledFor)), today=utcToday(), publicArticles=loadArticles(root);
 // Press Ahead takes the October 23 studio-note slot; GildenSpire is retained as unscheduled backlog.
-assert.equal(campaign.length,20);assert.equal(new Set(campaign.flatMap(a=>a.productIds)).size,19);
+assert.equal(campaign.length,20);assert.equal(new Set(campaign.flatMap(a=>a.productIds)).size,20);
 assert.equal(records.find(a=>a.id==="press-ahead-a-little-head-start").scheduledFor,"2026-10-23");
 assert.equal(records.find(a=>a.id==="gildenspire-scenic-route").scheduledFor,null);
 assert.deepEqual(new Set(campaign.flatMap(a=>a.productIds)),new Set(productCatalog.filter(p=>p.id!=="gildenspire").map(p=>p.id)));

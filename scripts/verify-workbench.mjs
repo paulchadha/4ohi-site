@@ -11,7 +11,7 @@ const articles = loadArticles(root);
 const original = JSON.parse(readFileSync(join(root,"content/publication-history.json"),"utf8"));
 const feed = readFileSync(join(root,"feed.xml"),"utf8");
 const sitemap = readFileSync(join(root,"sitemap.xml"),"utf8");
-assert.equal(productCatalog.length,20);
+assert.equal(productCatalog.length,21);
 for (const old of original) {
   const a = articles.find(a => a.id === old.id);
   assert.ok(a, `Historical article missing: ${old.id}`);
