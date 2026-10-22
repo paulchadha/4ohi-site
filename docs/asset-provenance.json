@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "owner": "Four of Hearts Interactive, LLC",
   "assets": [
     {
@@ -191,6 +191,21 @@
       "license": "Proprietary",
       "treatment": "Non-destructive WebP resizing and focused atlas crops; source artwork unchanged. Development artwork, not gameplay screenshots.",
       "generator": "scripts/process-sling-bling-art.cjs"
+    },
+    {
+      "paths": [
+        "assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp"
+      ],
+      "source": "Owner-approved shared phone launcher and website money-monster icon, supplied October 22, 2026 by the existing Sling artwork task",
+      "created": "2026-10-22",
+      "commercialUse": "approved",
+      "thirdParty": false,
+      "license": "Proprietary",
+      "treatment": "Byte-identical copy of the supplied 512px WebP. No crop, regeneration, or changes to the composition. The original October 20 tile remains for historical article imagery.",
+      "sourceFile": "sling-bling-money-monsters-512.webp",
+      "sha256": "b1b77b7ed32c27d8fe6cab5ef9586be6474fdbba8c9b68f8e16210f5ceb59ecc",
+      "masterFile": "sling-bling-money-monsters-1024.png",
+      "masterSha256": "e5fc6b3219dfa233210a01b1e43fe1beca6d1580e43621c41c9fa6593afb09ad"
     }
   ]
 }

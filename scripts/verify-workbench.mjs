@@ -36,7 +36,7 @@ assert.equal(resolveProductId("People Lens"),"whomly");
 assert.equal(resolveProductId("Evil Doom Girl Adventures"),"evil-doom-boy");
 assert.equal(resolveProductId("Commander Thumb"),"thumb-command");
 const sling = productCatalog.find(p => p.id === "sling-nouveau");
-assert.equal(sling.playable,false); assert.equal(sling.playUrl,null); assert.equal(sling.artwork,"assets/sling-bling/tile-768.webp");
+assert.equal(sling.playable,false); assert.equal(sling.playUrl,null); assert.equal(sling.artwork,"assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp");
 for (const file of ["index.html","games.html","news.html","sling-nouveau.html"]) assert.ok(readFileSync(join(root,file),"utf8").includes("Sling Bling"));
 assert.ok(!readFileSync(join(root,"sling-nouveau.html"),"utf8").includes("Play Sling"));
 assert.ok(readFileSync(join(root,"_config.yml"),"utf8").includes("  - content"));
