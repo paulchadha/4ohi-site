@@ -49,7 +49,7 @@
     "date": "2026-10-21",
     "scheduledFor": "2026-10-21",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "On the workbench",
@@ -75,11 +75,11 @@
       "development",
       "development-update"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-22",
     "scheduledFor": "2026-10-22",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "On the workbench",
