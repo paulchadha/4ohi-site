@@ -1,0 +1,33 @@
+(() => {
+ 'use strict';
+ const motion=matchMedia('(prefers-reduced-motion: reduce)');
+ document.querySelectorAll('[data-carousel]').forEach(root=>{
+  const track=root.querySelector('[data-carousel-track]'),slides=[...track.querySelectorAll(':scope > [data-carousel-slide]')],controls=root.querySelector('[data-carousel-controls]'),pause=root.querySelector('[data-carousel-pause]'),counter=root.querySelector('[data-carousel-counter]'),dots=[...root.querySelectorAll('[data-carousel-dot]')];
+  if(slides.length<2)return;
+  const interval=Number(root.dataset.carouselInterval)||15000;
+  let index=0,timer=null,scrollTimer=null,userPaused=false,hovered=false,focused=false,visible=!document.hidden,inView=false,gesture=null,suppressClick=false;
+  const offset=i=>slides[i].offsetLeft-slides[0].offsetLeft;
+  const blocked=()=>userPaused||motion.matches||hovered||focused||!visible||!inView||Boolean(gesture);
+  const schedule=()=>{clearTimeout(timer);timer=null;root.dataset.carouselPlaying=String(!blocked());if(!blocked())timer=setTimeout(()=>go((index+1)%slides.length,{manual:false}),interval);};
+  const update=()=>{root.dataset.carouselIndex=String(index);counter.textContent=`${index+1} / ${slides.length}`;counter.setAttribute('aria-live',blocked()?'polite':'off');dots.forEach((d,i)=>{d.setAttribute('aria-pressed',String(i===index));d.tabIndex=i===index?0:-1;});slides.forEach((s,i)=>{s.inert=i!==index;s.setAttribute('aria-hidden',String(i!==index));});pause.disabled=motion.matches;pause.textContent=motion.matches?'Automatic rotation off: reduced motion':userPaused?'Resume automatic rotation':'Pause automatic rotation';pause.setAttribute('aria-pressed',String(userPaused||motion.matches));};
+  const go=(next,{manual=true,instant=false}={})=>{const previous=index;index=(next+slides.length)%slides.length;track.scrollTo({left:offset(index),behavior:instant||motion.matches||Math.abs(previous-index)>1?'instant':'smooth'});update();schedule();if(manual)counter.setAttribute('aria-live','polite');};
+  root.querySelector('[data-carousel-prev]').addEventListener('click',()=>go(index-1));root.querySelector('[data-carousel-next]').addEventListener('click',()=>go(index+1));
+  pause.addEventListener('click',()=>{userPaused=!userPaused;update();schedule();});
+  dots.forEach((d,i)=>d.addEventListener('click',()=>go(i)));
+  root.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key)||/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;e.preventDefault();const next=e.key==='Home'?0:e.key==='End'?slides.length-1:index+(e.key==='ArrowRight'?1:-1);go(next);if(e.target.hasAttribute('data-carousel-dot'))dots[index].focus({preventScroll:true});});
+  root.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen'){hovered=true;update();schedule();}});root.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen'){hovered=false;update();schedule();}});
+  root.addEventListener('focusin',()=>{focused=true;update();schedule();});root.addEventListener('focusout',()=>requestAnimationFrame(()=>{focused=root.contains(document.activeElement);update();schedule();}));
+  document.addEventListener('visibilitychange',()=>{visible=!document.hidden;update();schedule();});motion.addEventListener('change',()=>{update();schedule();});
+  new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;update();schedule();},{threshold:.15}).observe(root);
+  new ResizeObserver(()=>{track.scrollTo({left:offset(index),behavior:'instant'});}).observe(track);
+  track.addEventListener('dragstart',e=>e.preventDefault());track.querySelectorAll('img').forEach(img=>img.draggable=false);
+  track.addEventListener('pointerdown',e=>{if(!e.isPrimary||e.button!==0)return;gesture={id:e.pointerId,x:e.clientX,y:e.clientY,left:track.scrollLeft,start:index,dragging:false};schedule();});
+  track.addEventListener('pointermove',e=>{if(!gesture||gesture.id!==e.pointerId)return;const dx=e.clientX-gesture.x,dy=e.clientY-gesture.y;if(!gesture.dragging&&Math.abs(dx)>8&&Math.abs(dx)>Math.abs(dy)*1.15){gesture.dragging=true;track.classList.add('is-dragging');track.setPointerCapture(e.pointerId);}if(gesture.dragging){e.preventDefault();track.scrollLeft=gesture.left-dx;}},{passive:false});
+  const finish=(e,cancel=false)=>{if(!gesture||gesture.id!==e.pointerId)return;const g=gesture,dx=e.clientX-g.x;gesture=null;track.classList.remove('is-dragging');if(track.hasPointerCapture(e.pointerId))track.releasePointerCapture(e.pointerId);if(g.dragging){suppressClick=true;setTimeout(()=>suppressClick=false,0);const step=!cancel&&Math.abs(dx)>Math.max(35,track.clientWidth*.08)?(dx<0?1:-1):0;go(g.start+step);}else schedule();};
+  track.addEventListener('pointerup',e=>finish(e));track.addEventListener('pointercancel',e=>finish(e,true));
+  track.addEventListener('click',e=>{if(suppressClick){e.preventDefault();e.stopImmediatePropagation();}},{capture:true});
+  track.addEventListener('wheel',()=>{clearTimeout(timer);clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{index=slides.reduce((best,_,i)=>Math.abs(offset(i)-track.scrollLeft)<Math.abs(offset(best)-track.scrollLeft)?i:best,0);update();schedule();},180);},{passive:true});
+  track.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{if(gesture)return;index=slides.reduce((best,_,i)=>Math.abs(offset(i)-track.scrollLeft)<Math.abs(offset(best)-track.scrollLeft)?i:best,0);update();schedule();},150);},{passive:true});
+  controls.hidden=false;root.dataset.carouselReady='true';update();schedule();
+ });
+})();

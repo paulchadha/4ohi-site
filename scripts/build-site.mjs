@@ -1,3 +1,4 @@
+import { withProductGallery } from "./carousel-content.mjs";
 import { pressAheadPage, pressAheadStyles } from "./press-ahead-content.mjs";
 import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
@@ -173,6 +174,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/card-game-stories.css">
   <link rel="stylesheet" href="assets/workbench.css">
   <link rel="stylesheet" href="assets/sling-bling.css">
+  <link rel="stylesheet" href="assets/swipe-carousel.css">
   <noscript><link rel="stylesheet" href="assets/workbench-nojs.css"></noscript>
   <link rel="alternate" type="application/rss+xml" title="Notes from the Workbench" href="feed.xml">
   <script src="assets/asset-manifest.js" defer></script>
@@ -192,6 +194,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <script src="assets/production-locales.js" defer></script>
   <script src="assets/workbench-products.js" defer></script>
   <script src="assets/workbench.js" defer></script>
+  <script src="assets/swipe-carousel.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}
 </head>`;
@@ -204,7 +207,7 @@ const page = ({ title, description, path, current, content, image, imageAlt, typ
   <a class="skip-link" href="#main">Skip to content</a>
   ${nav(current)}
   ${["palace", "play"].includes(current) ? `<div class="release-strip" data-release-strip role="timer"></div>` : ""}
-  <main id="main">${content}${journalProduct ? productJournal(journalProduct,news) : ""}</main>
+  <main id="main">${journalProduct ? withProductGallery(journalProduct,content) : content}${journalProduct ? productJournal(journalProduct,news) : ""}</main>
   ${footer()}
   ${globalDialogs()}
 </body>
