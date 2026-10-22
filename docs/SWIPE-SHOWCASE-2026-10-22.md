@@ -1,5 +1,7 @@
 # Swipeable showcases and game galleries
 
+The homepage portion of this release was subsequently superseded at the user's request by [Tile-first homepage restoration](HOME-TILE-RESTORATION-2026-10-22.md). The Games showcase and game-page galleries remain; the current homepage exposes all 21 product tiles directly.
+
 The homepage and Games page share a native-scroll game showcase containing all 18 verified games. Palace, Press Ahead, Sling Bling and GildenSpire lead. The homepage has a separate lower lifestyle showcase, led by Sleep Amigo, followed by SOVINTO and Whomly. The static catalog, complete shared navigation and 21-product footer remain available.
 
 `scripts/carousel-content.mjs` generates semantic slide markup and galleries from approved images already in the repository. Related-product cards are excluded from each game's gallery. Existing actual-capture provenance is preserved in captions; concept artwork is not described as gameplay. Press Ahead retains its 0.2.0 developer-testing status, browser-capture labels and incomplete phone/cloud gates. Sling uses the current approved money-monster artwork.

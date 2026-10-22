@@ -248,7 +248,7 @@ write("index.html", page({
   image: "assets/portfolio-2026/four-of-hearts-studio-portfolio-board.webp",
   imageAlt: "Four of Hearts Interactive game and application portfolio",
   jsonLd: { "@context":"https://schema.org", "@type":"Organization", name:company, alternateName:"4OH", slogan:"Independent software. Built with a point of view.", url:siteUrl + "/", logo:siteUrl + "/assets/brand-mark-4oh.webp", email:"support@4ohi.com", description:"An independent South Dakota software studio creating original games, practical software solutions, and custom applications." },
-  script: pressAheadStyles,
+  script: pressAheadStyles + '<link rel="stylesheet" href="assets/home-tile-refinements.css">',
   content: homepage({ groups:productGroups, apps:appCatalog, news, articleFile, formatDate })
 }));
 
