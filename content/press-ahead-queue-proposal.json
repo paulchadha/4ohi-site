@@ -1,13 +1,13 @@
 {
-  "status": "proposed; not activated",
+  "status": "active one-for-one slot reassignment",
   "draftId": "press-ahead-a-little-head-start",
   "proposedLocalPublicationDay": "2026-10-23",
   "timeZone": "America/Chicago",
   "existingSlot": "gildenspire-scenic-route",
-  "suggestedAction": "Use the Press Ahead draft in the October 23 slot and defer the generic GildenSpire spotlight to an unscheduled backlog. Activate only after parent confirms the slot reassignment; do not add a second daily post or silently extend the 19-post campaign.",
-  "requiresParentSlotDecision": true,
+  "suggestedAction": "Press Ahead now takes October 23. GildenSpire remains an unpublished, unscheduled backlog draft. The existing daily campaign count and cadence are unchanged.",
+  "requiresParentSlotDecision": false,
   "requiresNewUserAcceptanceForCurrentWebsiteRefresh": false,
-  "activationNotes": "The original campaign remains unchanged. When a Press Ahead slot is activated, update the queue coverage check deliberately: this studio story has no existing catalog product ID, and must not be falsely tagged as GildenSpire or Unicorn Blast.",
+  "activationNotes": "Activated under the explicit request for ongoing Press Ahead news coverage and standing publication authorization. No extra campaign day or second daily post was added. The queue coverage check explicitly records Press Ahead as a studio note rather than inventing a catalog product ID.",
   "classicLookup": {
     "threadId": "01a1646d-968b-714c-b14d-7f47decb20ec",
     "outcome": "Unavailable through thread reader (including explicit host lookup); personal context unavailable. No exact Classic text claimed as read.",
@@ -16,5 +16,7 @@
       "Read recovered PRESS_AHEAD_MASTER_DIRECTIVE.txt and current Press Ahead README/menu source.",
       "Read current active Press Ahead task. No public 400-level/native-complete or live-Auth0 claim made."
     ]
-  }
+  },
+  "campaignRecordCount": 20,
+  "remainingScheduledDrafts": 17
 }

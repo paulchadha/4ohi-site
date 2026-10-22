@@ -107,7 +107,7 @@
     ],
     "status": "draft",
     "date": null,
-    "scheduledFor": "2026-10-23",
+    "scheduledFor": null,
     "language": "en",
     "featured": false,
     "body": [
@@ -119,7 +119,9 @@
           "This is a look at the game we are building, not a launch announcement. The sky is ambitious. The release date remains unannounced. We are packing optimism. It is lighter than spare wings."
         ]
       }
-    ]
+    ],
+    "editorialQueueState": "deferred-for-press-ahead",
+    "previouslyScheduledFor": "2026-10-23"
   },
   {
     "id": "palace-last-card",
@@ -2272,9 +2274,9 @@
     ],
     "status": "draft",
     "date": null,
-    "scheduledFor": null,
+    "scheduledFor": "2026-10-23",
     "proposedPublicationDay": "2026-10-23",
-    "editorialQueueState": "pending-slot-reassignment",
+    "editorialQueueState": "scheduled",
     "language": "en",
     "featured": false,
     "body": [
