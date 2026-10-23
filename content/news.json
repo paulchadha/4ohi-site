@@ -116,7 +116,7 @@
     "date": "2026-10-22",
     "scheduledFor": "2026-10-22",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "On the workbench",
@@ -3144,13 +3144,13 @@
       "company",
       "development"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-23",
     "scheduledFor": "2026-10-23",
     "proposedPublicationDay": "2026-10-23",
-    "editorialQueueState": "scheduled",
+    "editorialQueueState": "published",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "On the workbench",
@@ -3161,7 +3161,22 @@
         ]
       }
     ],
-    "image": "assets/press-ahead/scout-icon-512.webp",
-    "imageAlt": "Original Press Ahead scout artwork, with a finger pressing the explorer hat"
+    "image": "assets/press-ahead/scout-browser.webp",
+    "imageAlt": "Press Ahead development browser capture: stage-completion screen with the scout, three stars and Press Ahead button",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development browser capture",
+      "caption": "Press Ahead development browser capture of stage completion. This is browser testing, not physical-phone or public-release evidence. Current builds may differ.",
+      "evidence": "assets/press-ahead/provenance.json",
+      "width": 1280,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-10-22",
+      "label": "Private 0.2.0 developer-test build checkpoint; physical-phone and live sign-in/cloud checks remain incomplete.",
+      "evidence": "docs/PRESS-AHEAD-NEWS-2026-10-23.md",
+      "sourceRevision": "30d42f46949f403ddc5ad59c851c787322277b8f"
+    }
   }
 ]

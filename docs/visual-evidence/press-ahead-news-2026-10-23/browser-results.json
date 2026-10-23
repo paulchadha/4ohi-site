@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-23T14:01:26.861Z",
+  "base": "http://127.0.0.1:56763",
+  "selected": "press-ahead-a-little-head-start",
+  "checks": [
+    {
+      "route": "news-press-ahead-a-little-head-start.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-press-ahead-a-little-head-start.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-press-ahead-a-little-head-start.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-press-ahead-a-little-head-start.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-press-ahead.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "press-ahead.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 49,
+  "draftRoutesExcluded": 17
+}

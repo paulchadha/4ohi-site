@@ -1,0 +1,21 @@
+{
+  "base": "d2cc8a7f83865333f591091781dcc2b3e74ce035",
+  "today": "2026-10-23",
+  "timeZone": "America/Chicago",
+  "existingPublished": 48,
+  "selectedId": "press-ahead-a-little-head-start",
+  "published": [
+    {
+      "slug": "press-ahead-a-little-head-start",
+      "planned": "2026-10-23",
+      "published": "2026-10-23"
+    }
+  ],
+  "draftCountBefore": 18,
+  "draftCountAfter": 17,
+  "remainingScheduledDrafts": 16,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/press-ahead/scout-browser.webp",
+  "imageSHA256": "cac3d6440463b2013ac88ddd7a71553c2c5aed7846ff6d96f7eec11fdac94975",
+  "documentedBuildDate": "2026-10-22"
+}
