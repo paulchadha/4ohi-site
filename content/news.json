@@ -29,7 +29,25 @@
       }
     ],
     "image": "assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp",
-    "imageAlt": "Sling Bling gold dollar and blue euro money monsters with a jeweled slingshot; development artwork, not a gameplay screenshot"
+    "imageAlt": "Sling Bling: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Sling Bling artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 512,
+      "height": 512
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-10-20",
+      "label": "Sling artwork shared on the website",
+      "evidence": "docs/SLING-BLING-RELEASE-2026-10-20.md",
+      "commit": "77c164781ba422c636832b78d03816c6aab4ca5c",
+      "detail": "The October 20 commit and release evidence establish the website artwork update. They do not establish a released 1,000-level game.",
+      "publicationDate": "2026-10-20"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "gin-rummy-gold-trim",
@@ -59,7 +77,26 @@
           "This is a visual development update, not a public launch. Better tailoring does not guarantee better decisions. We checked."
         ]
       }
-    ]
+    ],
+    "image": "assets/gin-rummy/development-phone.webp",
+    "imageAlt": "Gin Rummy: actual development table capture",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development-build capture",
+      "caption": "Reference visual: Actual Gin Rummy development-build capture supplied by the game owner. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "docs/GIN-RUMMY-WEBSITE-2026-09-12.md",
+      "width": 362,
+      "height": 876
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-21"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "sleep-amigo-notification-home",
@@ -89,7 +126,26 @@
           "Sleep Amigo remains in development. It is a wellness companion, not medical care. The navigation is allowed to improve without acquiring a medical degree."
         ]
       }
-    ]
+    ],
+    "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+    "imageAlt": "Sleep Amigo: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Sleep Amigo artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-22"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "gildenspire-scenic-route",
@@ -633,7 +689,26 @@
     "productIds": [
       "sling-nouveau"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp",
+    "imageAlt": "Sling Bling: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Sling Bling artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 512,
+      "height": 512
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "palace-workbench-october-2026",
@@ -665,7 +740,26 @@
     "productIds": [
       "palace"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/card-apps/palace.webp",
+    "imageAlt": "Palace: actual development app table screenshot",
+    "media": {
+      "kind": "phone-screenshot",
+      "label": "Development phone screenshot",
+      "caption": "Reference visual: Actual Samsung app screenshot; system bars cropped. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 1600,
+      "height": 678
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "euchre-workbench-october-2026",
@@ -697,7 +791,26 @@
     "productIds": [
       "euchre"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/card-apps/euchre.webp",
+    "imageAlt": "Euchre: actual development table capture",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development browser capture",
+      "caption": "Reference visual: Actual app web render from September 12 audit; local bot calling. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 844,
+      "height": 390
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "hearts-workbench-october-2026",
@@ -729,7 +842,26 @@
     "productIds": [
       "hearts"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/card-apps/hearts.webp",
+    "imageAlt": "Hearts: actual development table capture",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development browser capture",
+      "caption": "Reference visual: Actual Hearts web render from unchanged mobile-app source; local bot table. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 1000,
+      "height": 500
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "spades-workbench-october-2026",
@@ -761,7 +893,26 @@
     "productIds": [
       "spades"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/card-apps/spades.webp",
+    "imageAlt": "Spades: actual development table capture",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development browser capture",
+      "caption": "Reference visual: Actual app web render from September 12 audit; local bot bidding. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 844,
+      "height": 390
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "solitaire-workbench-october-2026",
@@ -793,7 +944,26 @@
     "productIds": [
       "solitaire"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/card-games/solitaire-tile.webp",
+    "imageAlt": "Solitaire: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Solitaire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1024,
+      "height": 1024
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "war-workbench-october-2026",
@@ -825,7 +995,26 @@
     "productIds": [
       "war"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/card-games/war-tile.webp",
+    "imageAlt": "War: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: War artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1024,
+      "height": 1024
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "gildenspire-workbench-october-2026",
@@ -858,7 +1047,26 @@
     "productIds": [
       "gildenspire"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/gildenspire/gildenspire-tile-960.webp",
+    "imageAlt": "GildenSpire: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: GildenSpire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "thumb-command-workbench-october-2026",
@@ -890,7 +1098,26 @@
     "productIds": [
       "thumb-command"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/thumb-command/thumb-command-app-icon-768.webp",
+    "imageAlt": "Thumb Command: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Thumb Command artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 768,
+      "height": 768
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "bobby-workbench-october-2026",
@@ -922,7 +1149,26 @@
     "productIds": [
       "bobby"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/bobby/bobby-hero-1200.webp",
+    "imageAlt": "Bobby the Breadasaurus: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Bobby the Breadasaurus artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 927
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "evil-doom-boy-workbench-october-2026",
@@ -955,7 +1201,26 @@
     "productIds": [
       "evil-doom-boy"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/portfolio-2026/evil-doom-card.png",
+    "imageAlt": "Evil Doom Boy: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Evil Doom Boy artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "booyang-city-workbench-october-2026",
@@ -988,7 +1253,26 @@
     "productIds": [
       "booyang-city"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+    "imageAlt": "BooYang City: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: BooYang City artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "funky-town-workbench-october-2026",
@@ -1021,7 +1305,26 @@
     "productIds": [
       "funky-town"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/funkey-town/funkey-town-tile-960.webp",
+    "imageAlt": "Funkey Town: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Funkey Town artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "assets/funkey-town/provenance.json",
+      "width": 960,
+      "height": 960
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "heartstack-workbench-october-2026",
@@ -1054,7 +1357,26 @@
     "productIds": [
       "heartstack"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/heartstack-2026/heartstack-key-art.webp",
+    "imageAlt": "Unicorn Blast: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Unicorn Blast artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1254,
+      "height": 1254
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "princess-land-workbench-october-2026",
@@ -1086,7 +1408,26 @@
     "productIds": [
       "princess-land"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/portfolio-2026/princess-land-card.png",
+    "imageAlt": "Princess Land Adventures: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Princess Land Adventures artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "unicorn-land-workbench-october-2026",
@@ -1118,7 +1459,26 @@
     "productIds": [
       "unicorn-land"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/portfolio-2026/unicorn-land-card.png",
+    "imageAlt": "Unicorn Land Adventures: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Unicorn Land Adventures artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "sleep-amigo-workbench-october-2026",
@@ -1151,7 +1511,26 @@
     "productIds": [
       "sleep-amigo"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+    "imageAlt": "Sleep Amigo: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Sleep Amigo artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "sovinto-workbench-october-2026",
@@ -1184,7 +1563,26 @@
     "productIds": [
       "sovinto"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/sovinto/sovinto-tile-1024.png",
+    "imageAlt": "SOVINTO: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: SOVINTO artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1024,
+      "height": 1024
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "whomly-workbench-october-2026",
@@ -1217,7 +1615,26 @@
     "productIds": [
       "whomly"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/studio-expansion/whomly-tile-720.webp",
+    "imageAlt": "Whomly: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Whomly artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "gin-rummy-a-table-with-room-to-think",
@@ -1249,7 +1666,26 @@
     "productIds": [
       "gin-rummy"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/gin-rummy/development-phone.webp",
+    "imageAlt": "Gin Rummy: actual development table capture",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development-build capture",
+      "caption": "Reference visual: Actual Gin Rummy development-build capture supplied by the game owner. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "docs/GIN-RUMMY-WEBSITE-2026-09-12.md",
+      "width": 362,
+      "height": 876
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "before-the-dragons-there-were-cards",
@@ -1289,7 +1725,26 @@
     "language": "en",
     "seriesId": "product-origins",
     "seriesOrder": 1,
-    "historicalPeriod": "Early card-table roots"
+    "historicalPeriod": "Early card-table roots",
+    "image": "assets/card-apps/palace.webp",
+    "imageAlt": "Palace: actual development app table screenshot",
+    "media": {
+      "kind": "phone-screenshot",
+      "label": "Development phone screenshot",
+      "caption": "Reference visual: Actual Samsung app screenshot; system bars cropped. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 1600,
+      "height": 678
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Early card-table roots",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "the-card-table-got-a-little-out-of-hand",
@@ -1335,7 +1790,26 @@
     "language": "en",
     "seriesId": "product-origins",
     "seriesOrder": 2,
-    "historicalPeriod": "From the card table to original worlds"
+    "historicalPeriod": "From the card table to original worlds",
+    "image": "assets/gildenspire/gildenspire-tile-960.webp",
+    "imageAlt": "GildenSpire: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: GildenSpire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "From the card table to original worlds",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "a-u-has-entered-the-chat",
@@ -1370,7 +1844,26 @@
     "language": "en",
     "seriesId": "product-origins",
     "seriesOrder": 3,
-    "seriesRole": "Editorial interlude"
+    "seriesRole": "Editorial interlude",
+    "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+    "imageAlt": "BooYang City current product artwork, accompanying the studio naming story",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: BooYang City artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "fewer-buttons-more-one-more-go",
@@ -1411,7 +1904,26 @@
       "whomly",
       "sovinto"
     ],
-    "language": "en"
+    "language": "en",
+    "image": "assets/icon-palace-4hearts.webp",
+    "imageAlt": "Palace: current product artwork",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Palace artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 512,
+      "height": 512
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-10-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "booyang-a-town-that-grows-with-play",
@@ -1426,8 +1938,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/studio-expansion/booyang-city-hero-1600.webp",
-    "imageAlt": "BooYang City development artwork",
+    "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+    "imageAlt": "BooYang City: current product artwork",
     "body": [
       {
         "heading": "September 11–12: from feeding fixes to new adventures",
@@ -1455,7 +1967,25 @@
     "productIds": [
       "booyang-city"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: BooYang City artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-09-11",
+      "endDate": "2026-09-12",
+      "label": "Feeding repair and toy-town development checkpoint",
+      "evidence": "docs/SEPTEMBER-NEWS-SOURCES.md",
+      "detail": "The preserved article explicitly dates the feeding checkpoint September 11 and the development build September 12; source notes name BooYang commit def175e.",
+      "publicationDate": "2026-09-12"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "gildenspire-a-dragon-built-to-move",
@@ -1470,8 +2000,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/gildenspire/gildenspire-fly-960.webp",
-    "imageAlt": "GildenSpire dragon-flight concept artwork",
+    "image": "assets/gildenspire/gildenspire-tile-960.webp",
+    "imageAlt": "GildenSpire: current product artwork",
     "body": [
       {
         "heading": "September 12: movement, models, and a world to fly through",
@@ -1499,7 +2029,24 @@
     "productIds": [
       "gildenspire"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: GildenSpire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-09-12",
+      "label": "Rigged-dragon and campaign development checkpoint",
+      "evidence": "docs/SEPTEMBER-NEWS-SOURCES.md",
+      "detail": "The preserved article and source notes identify the September 12 rigged-asset checkpoint and eacef40; polish/performance remain unfinished.",
+      "publicationDate": "2026-09-12"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "small-fixes-that-change-the-feel",
@@ -1516,8 +2063,8 @@
       "lifestyle-apps"
     ],
     "featured": false,
-    "image": "assets/brand-mark-4oh.webp",
-    "imageAlt": "Four of Hearts Interactive studio mark",
+    "image": "assets/portfolio-2026/evil-doom-card.png",
+    "imageAlt": "Evil Doom Boy: current product artwork",
     "body": [
       {
         "heading": "September 12: careful engineering in practice",
@@ -1558,7 +2105,24 @@
       "princess-land",
       "unicorn-land"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Evil Doom Boy artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-09-12",
+      "label": "Focused app behavior and device checks",
+      "evidence": "docs/SEPTEMBER-NEWS-SOURCES.md",
+      "detail": "September 12 BATTLE_SPEED and portfolio-audit source notes cover the named scoped repairs; this is not a public release.",
+      "publicationDate": "2026-09-12"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "ai-in-the-workshop-and-the-product",
@@ -1573,8 +2137,8 @@
       "lifestyle-apps"
     ],
     "featured": false,
-    "image": "assets/sovinto/sovinto-tile-1024.png",
-    "imageAlt": "SOVINTO negotiation app emblem",
+    "image": "assets/studio-expansion/whomly-tile-720.webp",
+    "imageAlt": "Whomly: current product artwork",
     "body": [
       {
         "heading": "September 12: a note from the workbench",
@@ -1610,7 +2174,24 @@
       "sovinto",
       "funky-town"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Whomly artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-09-12"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "introducing-gildenspire-flight-or-fight",
@@ -1625,8 +2206,8 @@
       "gildenspire"
     ],
     "featured": false,
-    "image": "assets/gildenspire/gildenspire-social-1200x630.jpg",
-    "imageAlt": "A red GildenSpire dragon and rider flying toward a vast fantasy world as a rival approaches",
+    "image": "assets/gildenspire/gildenspire-tile-960.webp",
+    "imageAlt": "GildenSpire: current product artwork",
     "body": [
       {
         "heading": "Considerably bigger wings",
@@ -1656,7 +2237,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 12
+    "seriesOrder": 12,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: GildenSpire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-09-05"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "why-flying-has-to-be-fun",
@@ -1672,8 +2270,8 @@
       "design"
     ],
     "featured": false,
-    "image": "assets/gildenspire/gildenspire-fly-960.webp",
-    "imageAlt": "A rider directly controlling a red dragon over islands, castles, mountains, and waterfalls",
+    "image": "assets/gildenspire/gildenspire-tile-960.webp",
+    "imageAlt": "GildenSpire: current product artwork",
     "body": [
       {
         "heading": "Getting somewhere should be part of the fun",
@@ -1700,7 +2298,24 @@
     "productIds": [
       "gildenspire"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: GildenSpire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-09-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "building-dragons-that-actually-feel-different",
@@ -1716,8 +2331,8 @@
       "dragons"
     ],
     "featured": false,
-    "image": "assets/gildenspire/gildenspire-dragons-960.webp",
-    "imageAlt": "A collection of substantially different dragon species planned for GildenSpire",
+    "image": "assets/gildenspire/gildenspire-tile-960.webp",
+    "imageAlt": "GildenSpire: current product artwork",
     "body": [
       {
         "heading": "Another dragon, not another skin",
@@ -1745,7 +2360,24 @@
     "productIds": [
       "gildenspire"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: GildenSpire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-09-03"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "from-search-to-opportunity-building-whomly",
@@ -1761,8 +2393,8 @@
       "privacy"
     ],
     "featured": false,
-    "image": "assets/studio-expansion/whomly-social-1200.webp",
-    "imageAlt": "Whomly interface showing public professional search, profiles, AI-assisted context, and outreach preparation",
+    "image": "assets/studio-expansion/whomly-tile-720.webp",
+    "imageAlt": "Whomly: current product artwork",
     "body": [
       {
         "heading": "Start with the question",
@@ -1786,7 +2418,24 @@
     "productIds": [
       "whomly"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Whomly artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-09-03"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "welcome-to-booyang-city",
@@ -1801,8 +2450,8 @@
       "booyang-city"
     ],
     "featured": false,
-    "image": "assets/studio-expansion/booyang-city-social-1200.webp",
-    "imageAlt": "BooYang City artwork featuring a cheerful character and a colorful city of destinations",
+    "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+    "imageAlt": "BooYang City: current product artwork",
     "body": [
       {
         "heading": "A city is better than a menu",
@@ -1828,7 +2477,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 11
+    "seriesOrder": 11,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: BooYang City artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-31"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "thumb-command-save-planet-earth",
@@ -1842,8 +2508,8 @@
       "company"
     ],
     "featured": false,
-    "image": "assets/thumb-command/thumb-command-chicago-gameplay-news-1200.jpg",
-    "imageAlt": "Blueguard interceptor defending Chicago from a purple alien invasion",
+    "image": "assets/thumb-command/thumb-command-app-icon-768.webp",
+    "imageAlt": "Thumb Command: current product artwork",
     "body": [
       {
         "heading": "The city is the base",
@@ -1860,7 +2526,24 @@
     "productIds": [
       "thumb-command"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Thumb Command artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 768,
+      "height": 768
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-29"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "making-sleep-data-feel-human",
@@ -1876,8 +2559,8 @@
       "design"
     ],
     "featured": false,
-    "image": "assets/studio-expansion/sleep-amigo-social-1200.webp",
-    "imageAlt": "Sleep Amigo celestial companion and dark premium sleep guidance interface",
+    "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+    "imageAlt": "Sleep Amigo: current product artwork",
     "body": [
       {
         "heading": "A score needs an explanation",
@@ -1901,7 +2584,24 @@
     "productIds": [
       "sleep-amigo"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Sleep Amigo artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-28"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "building-a-town-that-refuses-to-look-normal",
@@ -1917,8 +2617,8 @@
       "design"
     ],
     "featured": false,
-    "image": "assets/studio-expansion/funky-town-social-1200.webp",
-    "imageAlt": "Funky Town artwork showing a bold neighborhood transformed by murals, color, music, and street art",
+    "image": "assets/funkey-town/funkey-town-tile-960.webp",
+    "imageAlt": "Funkey Town: current product artwork",
     "body": [
       {
         "heading": "Buildings can become canvases",
@@ -1942,7 +2642,24 @@
     "productIds": [
       "funky-town"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Funkey Town artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "assets/funkey-town/provenance.json",
+      "width": 960,
+      "height": 960
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-25"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "building-unicorn-land-adventures",
@@ -1955,8 +2672,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/portfolio-2026/unicorn-land-world.webp",
-    "imageAlt": "Unicorn Land Adventures habitat",
+    "image": "assets/portfolio-2026/unicorn-land-card.png",
+    "imageAlt": "Unicorn Land Adventures: current product artwork",
     "body": [
       {
         "heading": "Current development direction",
@@ -1975,7 +2692,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 10
+    "seriesOrder": 10,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Unicorn Land Adventures artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-24"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "inside-princess-land-adventures",
@@ -1988,8 +2722,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/portfolio-2026/princess-land-world.webp",
-    "imageAlt": "Princess Land Adventures castle world",
+    "image": "assets/portfolio-2026/princess-land-card.png",
+    "imageAlt": "Princess Land Adventures: current product artwork",
     "body": [
       {
         "heading": "Current development direction",
@@ -2008,7 +2742,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 9
+    "seriesOrder": 9,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Princess Land Adventures artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-21"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "people-lens-is-becoming-whomly",
@@ -2024,8 +2775,8 @@
       "company"
     ],
     "featured": false,
-    "image": "assets/studio-expansion/whomly-social-1200.webp",
-    "imageAlt": "Whomly product identity and public-information people discovery interface",
+    "image": "assets/studio-expansion/whomly-tile-720.webp",
+    "imageAlt": "Whomly: current product artwork",
     "body": [
       {
         "heading": "A name that fits the whole idea",
@@ -2051,7 +2802,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 8
+    "seriesOrder": 8,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Whomly artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-19"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "heartstack-joins-the-workbench",
@@ -2064,8 +2832,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/heartstack-2026/heartstack-gameplay.webp",
-    "imageAlt": "HeartStack Unicorn Blast colourful match board",
+    "image": "assets/heartstack-2026/heartstack-key-art.webp",
+    "imageAlt": "Unicorn Blast: current product artwork",
     "body": [
       {
         "heading": "Current build direction",
@@ -2084,7 +2852,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 7
+    "seriesOrder": 7,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Unicorn Blast artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1254,
+      "height": 1254
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-18"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "evil-doom-two-heroes-one-route",
@@ -2097,8 +2882,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/evil-doom/evil-doom-heroes-purple-1200.webp",
-    "imageAlt": "Evil Doom Boy and alternate playable hero Evil Doom Girl facing Evil Doom",
+    "image": "assets/portfolio-2026/evil-doom-card.png",
+    "imageAlt": "Evil Doom Boy: current product artwork",
     "body": [
       {
         "heading": "Choose who stands up to Evil Doom",
@@ -2117,7 +2902,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 6
+    "seriesOrder": 6,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Evil Doom Boy artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-14"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "bobby-and-the-breadstone",
@@ -2130,8 +2932,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/portfolio-2026/bobby-gameplay.webp",
-    "imageAlt": "Bobby the Breadasaurus tower-defense gameplay",
+    "image": "assets/bobby/bobby-hero-1200.webp",
+    "imageAlt": "Bobby the Breadasaurus: current product artwork",
     "body": [
       {
         "heading": "A small hero holds a very busy path",
@@ -2150,7 +2952,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 5
+    "seriesOrder": 5,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Bobby the Breadasaurus artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 927
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-11"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "why-were-building-sleep-amigo",
@@ -2165,8 +2984,8 @@
       "sleep-amigo"
     ],
     "featured": false,
-    "image": "assets/studio-expansion/sleep-amigo-board-1024.webp",
-    "imageAlt": "Sleep Amigo concept board with its celestial guide and nightly sleep interfaces",
+    "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+    "imageAlt": "Sleep Amigo: current product artwork",
     "body": [
       {
         "heading": "A nightly conversation, not another dashboard",
@@ -2190,7 +3009,24 @@
     "productIds": [
       "sleep-amigo"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Sleep Amigo artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-08"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "card-table-adds-solitaire-war",
@@ -2205,7 +3041,7 @@
     ],
     "featured": false,
     "image": "assets/card-games/solitaire-tile.webp",
-    "imageAlt": "Original Four of Hearts Solitaire card-table artwork",
+    "imageAlt": "Solitaire: current product artwork",
     "body": [
       {
         "heading": "More seats at the card table",
@@ -2225,7 +3061,24 @@
     ],
     "language": "en",
     "seriesId": "product-origins",
-    "seriesOrder": 4
+    "seriesOrder": 4,
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current visual: Solitaire artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1024,
+      "height": 1024
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-07"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "slug": "palace-019-founder-review",
@@ -2239,8 +3092,8 @@
       "card-table"
     ],
     "featured": false,
-    "image": "assets/icon-palace-4hearts.webp",
-    "imageAlt": "Palace castle artwork from Four of Hearts Interactive",
+    "image": "assets/card-apps/palace.webp",
+    "imageAlt": "Palace: actual development app table screenshot",
     "body": [
       {
         "heading": "Testing the whole table journey",
@@ -2257,7 +3110,24 @@
     "productIds": [
       "palace"
     ],
-    "language": "en"
+    "language": "en",
+    "media": {
+      "kind": "phone-screenshot",
+      "label": "Development phone screenshot",
+      "caption": "Reference visual: Actual Samsung app screenshot; system bars cropped. Current builds may differ. Test data is shown; the image does not date the work described in this article.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 1600,
+      "height": 678
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development retrospective",
+      "evidence": "content/workbench-date-evidence.json",
+      "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+      "publicationDate": "2026-08-04"
+    },
+    "revisedDate": "2026-10-23"
   },
   {
     "id": "press-ahead-a-little-head-start",

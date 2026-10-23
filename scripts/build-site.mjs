@@ -1,3 +1,4 @@
+import { newsMediaInfo, newsVisual, workDateContext, developmentTimeline } from "./news-visuals.mjs";
 import { withProductGallery } from "./carousel-content.mjs";
 import { pressAheadPage, pressAheadStyles } from "./press-ahead-content.mjs";
 import { accountNavigation } from "./account-navigation.mjs";
@@ -40,7 +41,7 @@ const formatDate = (date) => new Intl.DateTimeFormat("en-US", { month: "long", d
 const articleFile = (slug) => `news-${slug}.html`;
 // Retired generated journal routes cannot leave a newly private draft on disk.
 const journalOutputPath = resolve(root,"content/journal-output-manifest.json");
-const journalOutputs = [...news.map(a => articleFile(a.slug)), "news-archive.html", "news-origins.html", ...productCatalog.map(productArchive)];
+const journalOutputs = [...news.map(a => articleFile(a.slug)), "news-archive.html", "news-origins.html", "news-timeline.html", ...productCatalog.map(productArchive)];
 if (existsSync(journalOutputPath)) {
   const previousOutputs = JSON.parse(readFileSync(journalOutputPath,"utf8"));
   for (const file of previousOutputs) {
@@ -173,6 +174,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/responsive-refinements.css">
   <link rel="stylesheet" href="assets/card-game-stories.css">
   <link rel="stylesheet" href="assets/workbench.css">
+  <link rel="stylesheet" href="assets/news-visuals.css">
   <link rel="stylesheet" href="assets/sling-bling.css">
   <link rel="stylesheet" href="assets/swipe-carousel.css">
   <noscript><link rel="stylesheet" href="assets/workbench-nojs.css"></noscript>
@@ -273,6 +275,7 @@ write("news.html", page({
 for (const [file,options] of [["news-archive.html",{oldest:true}],["news-origins.html",{origins:true}]]) {
   write(file,page({title:`${options.origins ? "Start at the beginning" : "The workbench archive"} | Four of Hearts News`,description:"Read the preserved Four of Hearts development archive from the beginning.",path:`/${file}`,current:"news",bodyClass:"news-page",content:newsListing(news,options)}));
 }
+write("news-timeline.html",page({title:"The development story over time | Four of Hearts News",description:"Documented website milestones, source-backed work dates and undated development retrospectives, with original publication dates preserved.",path:"/news-timeline.html",current:"news",bodyClass:"news-page",content:developmentTimeline(news)}));
 for (const product of productCatalog) {
   const file = productArchive(product);
   write(file,page({title:`${product.title} Development Journal | Four of Hearts News`,description:`Development notes and design goals for ${product.title} from the 4OH Workshop.`,path:`/${file}`,current:"news",bodyClass:"news-page",content:newsListing(news,{product})}));
@@ -284,6 +287,7 @@ news.forEach((item, index) => {
   const series = item.seriesId ? news.filter(a => a.seriesId === item.seriesId).sort((a,b) => a.seriesOrder-b.seriesOrder) : [];
   const seriesIndex = series.findIndex(a => a.id === item.id);
   const seriesNext = series[seriesIndex+1];
+  const visual = newsMediaInfo(item);
   const body = item.body.map(section => `<h2>${escapeHtml(section.heading)}</h2>${section.paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}`).join("");
   const products = item.productIds.map(id => productCatalog.find(p => p.id === id));
   const latestAvailability = products.length ? products.map(p => `<p><strong>${escapeHtml(p.title)}:</strong> ${escapeHtml(p.availability)}.</p><a href="${p.infoUrl}">Meet ${escapeHtml(p.title)} →</a>`).join("") : "<p>This studio note does not announce a public product release.</p>";
@@ -292,8 +296,8 @@ news.forEach((item, index) => {
     description: item.description,
     path: `/${articleFile(item.slug)}`,
     current: "news",
-    image: item.image,
-    imageAlt: item.imageAlt,
+    image: visual.image,
+    imageAlt: visual.alt,
     type: "article",
     bodyClass: "workbench-article-page",
     jsonLd: {
@@ -303,7 +307,7 @@ news.forEach((item, index) => {
       description: item.description,
       datePublished: item.date,
       ...(item.revisedDate ? {dateModified:item.revisedDate} : {}),
-      ...(item.image ? {image:`${siteUrl}/${item.image}`} : {}),
+      image:`${siteUrl}/${visual.image}`,
       inLanguage: "en",
       articleSection: articleTypes[item.articleType],
       author: { "@type": "Organization", name: item.author },
@@ -313,13 +317,14 @@ news.forEach((item, index) => {
     content: `
       <article class="workbench-article" lang="en" dir="ltr" translate="no" data-original-language>
         <header class="article-header shell">
-          <div class="workbench-meta"><span>${articleTypes[item.articleType]}</span><time datetime="${item.date}">${formatDate(item.date)}</time></div>
+          <div class="workbench-meta"><span>${articleTypes[item.articleType]}</span><span>Published <time datetime="${item.date}">${formatDate(item.date)}</time></span></div>
           <h1>${escapeHtml(item.title)}</h1><p class="lede">${escapeHtml(item.description)}</p>
-          <p>By ${escapeHtml(item.author)}${item.revisedDate ? ` · Revised <time datetime="${item.revisedDate}">${formatDate(item.revisedDate)}</time>` : ""}</p>
+          ${workDateContext(item)}
+          <p>By ${escapeHtml(item.author)}${item.revisedDate ? ` · Visuals and timeline updated <time datetime="${item.revisedDate}">${formatDate(item.revisedDate)}</time>` : ""}</p>
           ${item.historicalPeriod ? `<p>Looking back at: ${escapeHtml(item.historicalPeriod)}</p>` : ""}
           <p class="workbench-language" data-workbench-language hidden>This article is available in English. Your selected language still applies to the site controls.</p>
         </header>
-        ${item.image ? `<div class="shell"><img class="article-art" src="${item.image}"${articleArtworkAttributes(item.image)} alt="${escapeHtml(item.imageAlt)}" width="1200" height="630"></div>` : ""}
+        <div class="shell">${newsVisual(item,{variant:"hero"})}</div>
         <section class="section"><div class="shell article-layout">
           <div class="prose">${body}</div>
           <aside class="article-aside">${item.historicalPeriod ? `<h2>Period covered</h2><p>${escapeHtml(item.historicalPeriod)}</p>` : ""}<h2>Current availability</h2>${latestAvailability}<p>The article text records its original publication context.</p>${series.length ? `<h2>From the beginning</h2><p>${item.seriesRole ? escapeHtml(item.seriesRole) : `Part ${item.seriesOrder} of the origin stories.`}</p>${seriesNext ? `<a href="${articleFile(seriesNext.slug)}">Next origin story: ${escapeHtml(seriesNext.title)} →</a>` : ""}<a href="news-origins.html">All origin stories →</a>` : ""}</aside>
@@ -589,7 +594,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
 const sitemapFiles = [
   "index.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
-  "sling-nouveau.html", "news-archive.html", "news-origins.html", ...productCatalog.map(productArchive),
+  "sling-nouveau.html", "news-archive.html", "news-origins.html", "news-timeline.html", ...productCatalog.map(productArchive),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
   "palace-faq.html", "about.html", "support.html", "privacy.html", "security.html", "terms.html", "contact.html"
 ];

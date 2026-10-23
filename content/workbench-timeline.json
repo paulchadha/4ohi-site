@@ -1,0 +1,127 @@
+{
+  "reviewed": "2026-10-23",
+  "scope": "Repository dates establish website records; only explicitly sourced work checkpoints are dated as development work.",
+  "milestones": [
+    {
+      "date": "2026-07-25",
+      "kind": "website",
+      "title": "Website foundation",
+      "summary": "The initial company website was recorded. This establishes website work, not the date the company or its games began.",
+      "articleIds": [
+        "before-the-dragons-there-were-cards"
+      ],
+      "image": "assets/brand-mark-4oh.webp",
+      "source": {
+        "kind": "git",
+        "commit": "9b4a3d74ec8f58f9b3661b4acaec7ca898d5eb7c"
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "kind": "website",
+      "title": "Thumb Command joins the website",
+      "summary": "The world-defense presentation and its city artwork were added to the site.",
+      "articleIds": [
+        "thumb-command-save-planet-earth"
+      ],
+      "image": "assets/thumb-command/thumb-command-app-icon-768.webp",
+      "source": {
+        "kind": "git",
+        "commit": "e8d01a64b43779106b160132d190e840cb701c9f"
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "kind": "website",
+      "title": "A broader studio portfolio",
+      "summary": "The portfolio and product pages were rebuilt around card games and original worlds.",
+      "articleIds": [
+        "card-table-adds-solitaire-war",
+        "bobby-and-the-breadstone",
+        "heartstack-joins-the-workbench"
+      ],
+      "image": "assets/bobby/bobby-hero-1200.webp",
+      "source": {
+        "kind": "git",
+        "commit": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a"
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "kind": "website",
+      "title": "Dragons, towns, and useful apps",
+      "summary": "The GildenSpire website experience and the September portfolio additions document a growing lineup. These are website records, not app launch dates.",
+      "articleIds": [
+        "introducing-gildenspire-flight-or-fight",
+        "welcome-to-booyang-city",
+        "from-search-to-opportunity-building-whomly"
+      ],
+      "image": "assets/gildenspire/gildenspire-tile-960.webp",
+      "source": {
+        "kind": "git",
+        "commit": "9f0efb741998fd24eb3d9d4486f29adabce90f8e"
+      }
+    },
+    {
+      "date": "2026-09-11",
+      "endDate": "2026-09-12",
+      "kind": "documented-work",
+      "title": "BooYang feeding and growth checkpoints",
+      "summary": "The source notes and preserved article distinguish a September 11 feeding repair from the September 12 development build and its scoped checks.",
+      "articleIds": [
+        "booyang-a-town-that-grows-with-play"
+      ],
+      "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+      "source": {
+        "kind": "document",
+        "path": "docs/SEPTEMBER-NEWS-SOURCES.md",
+        "projectCommit": "def175e"
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "kind": "documented-work",
+      "title": "Small repairs, better play",
+      "summary": "The September 11–12 source notes record feeding, dragon movement and scoped app-behavior checks, with remaining limits kept in the articles.",
+      "articleIds": [
+        "booyang-a-town-that-grows-with-play",
+        "gildenspire-a-dragon-built-to-move",
+        "small-fixes-that-change-the-feel"
+      ],
+      "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+      "source": {
+        "kind": "git",
+        "commit": "5b02cdbc757a3abe745040df7f45df71909585ac"
+      }
+    },
+    {
+      "date": "2026-10-04",
+      "kind": "website",
+      "title": "The shared workbench opens",
+      "summary": "The journal and product reading routes were published together, alongside repairs to the fixed Palace browser demo. The batch publication does not date every underlying task.",
+      "articleIds": [
+        "palace-workbench-october-2026",
+        "fewer-buttons-more-one-more-go"
+      ],
+      "image": "assets/card-apps/palace.webp",
+      "source": {
+        "kind": "git",
+        "commit": "0410b456d6e5c67324ce8faeb3688fa705e9bd22"
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "website-artwork",
+      "title": "Sling Bling gets its new look",
+      "summary": "New artwork and the October 20 development note reached the website. The game overhaul remained in development.",
+      "articleIds": [
+        "sling-bling-gold-jewels-and-gravity"
+      ],
+      "image": "assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp",
+      "source": {
+        "kind": "git",
+        "commit": "77c164781ba422c636832b78d03816c6aab4ca5c"
+      }
+    }
+  ]
+}

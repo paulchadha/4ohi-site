@@ -1,0 +1,1371 @@
+{
+  "reviewed": "2026-10-23",
+  "base": "52f0db76ff27cde8bbdfdd8530865648c148cbc3",
+  "scope": "Existing published entries only; original publication dates and text retained.",
+  "dateEvidence": [
+    {
+      "id": "sling-bling-gold-jewels-and-gravity",
+      "publicationDate": "2026-10-20",
+      "firstWebsiteRecord": "77c164781ba422c636832b78d03816c6aab4ca5c|2026-10-20|Publish Sling Bling artwork and October 20 developer update",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "development-update",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "gin-rummy-gold-trim",
+      "publicationDate": "2026-10-21",
+      "firstWebsiteRecord": "47d52e955d9661e18cd40d370ca65a09ddbaada0|2026-10-21|Publish October 21 Gin Rummy development update",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "development-update",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "sleep-amigo-notification-home",
+      "publicationDate": "2026-10-22",
+      "firstWebsiteRecord": "723362f32177e1c5edebb8b3b8a3d4e01a903666|2026-10-22|Publish October 22 Sleep Amigo development update",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "development-update",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "sling-nouveau-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "palace-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "euchre-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "hearts-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "design-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "spades-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "design-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "solitaire-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "war-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "gildenspire-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "thumb-command-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "bobby-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "evil-doom-boy-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "booyang-city-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "funky-town-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "heartstack-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "princess-land-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "unicorn-land-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "design-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "sleep-amigo-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "sovinto-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "workbench-brief",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "whomly-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "workbench-brief",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "gin-rummy-a-table-with-room-to-think",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "workbench-brief",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "before-the-dragons-there-were-cards",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": "Early card-table roots",
+      "articleType": "retrospective",
+      "seriesId": "product-origins",
+      "seriesOrder": 1
+    },
+    {
+      "id": "the-card-table-got-a-little-out-of-hand",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": "From the card table to original worlds",
+      "articleType": "retrospective",
+      "seriesId": "product-origins",
+      "seriesOrder": 2
+    },
+    {
+      "id": "a-u-has-entered-the-chat",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "studio-story",
+      "seriesId": "product-origins",
+      "seriesOrder": 3
+    },
+    {
+      "id": "fewer-buttons-more-one-more-go",
+      "publicationDate": "2026-10-04",
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "booyang-a-town-that-grows-with-play",
+      "publicationDate": "2026-09-12",
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates",
+      "explicitDateText": [
+        "September 11–12: from feeding fixes to new adventures",
+        "Published September 12, 2026. A September 11 checkpoint repaired animal feeding. The September 12 development build extends that everyday play into a growing toy town."
+      ],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "gildenspire-a-dragon-built-to-move",
+      "publicationDate": "2026-09-12",
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates",
+      "explicitDateText": [
+        "September 12: movement, models, and a world to fly through",
+        "Published September 12, 2026. The latest development checkpoint brings an original rigged dragon with 17 animation clips, leafy trees, a more detailed tower, and reworked islands and alpine terrain."
+      ],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "small-fixes-that-change-the-feel",
+      "publicationDate": "2026-09-12",
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates",
+      "explicitDateText": [
+        "September 12: careful engineering in practice",
+        "Published September 12, 2026. Recent work focused on how the apps behave when you actually use them: changing a setting, returning to a game, refreshing information, or saving something you made."
+      ],
+      "historicalPeriod": null,
+      "articleType": "studio-story",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "ai-in-the-workshop-and-the-product",
+      "publicationDate": "2026-09-12",
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates",
+      "explicitDateText": [
+        "September 12: a note from the workbench",
+        "Published September 12, 2026. We use AI to help explore ideas, write and review software, and test our work. It expands what an independent studio can attempt; human judgment still sets the direction."
+      ],
+      "historicalPeriod": null,
+      "articleType": "studio-story",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "introducing-gildenspire-flight-or-fight",
+      "publicationDate": "2026-09-05",
+      "firstWebsiteRecord": "9f0efb741998fd24eb3d9d4486f29adabce90f8e|2026-09-05|feat: launch GildenSpire website experience",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 12
+    },
+    {
+      "id": "why-flying-has-to-be-fun",
+      "publicationDate": "2026-09-04",
+      "firstWebsiteRecord": "9f0efb741998fd24eb3d9d4486f29adabce90f8e|2026-09-05|feat: launch GildenSpire website experience",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "building-dragons-that-actually-feel-different",
+      "publicationDate": "2026-09-03",
+      "firstWebsiteRecord": "9f0efb741998fd24eb3d9d4486f29adabce90f8e|2026-09-05|feat: launch GildenSpire website experience",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "from-search-to-opportunity-building-whomly",
+      "publicationDate": "2026-09-03",
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "welcome-to-booyang-city",
+      "publicationDate": "2026-08-31",
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 11
+    },
+    {
+      "id": "thumb-command-save-planet-earth",
+      "publicationDate": "2026-08-29",
+      "firstWebsiteRecord": "e8d01a64b43779106b160132d190e840cb701c9f|2026-08-29|feat(site): launch Thumb Command world defense experience",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "making-sleep-data-feel-human",
+      "publicationDate": "2026-08-28",
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "building-a-town-that-refuses-to-look-normal",
+      "publicationDate": "2026-08-25",
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "building-unicorn-land-adventures",
+      "publicationDate": "2026-08-24",
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 10
+    },
+    {
+      "id": "inside-princess-land-adventures",
+      "publicationDate": "2026-08-21",
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 9
+    },
+    {
+      "id": "people-lens-is-becoming-whomly",
+      "publicationDate": "2026-08-19",
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 8
+    },
+    {
+      "id": "heartstack-joins-the-workbench",
+      "publicationDate": "2026-08-18",
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 7
+    },
+    {
+      "id": "evil-doom-two-heroes-one-route",
+      "publicationDate": "2026-08-14",
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 6
+    },
+    {
+      "id": "bobby-and-the-breadstone",
+      "publicationDate": "2026-08-11",
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": "product-origins",
+      "seriesOrder": 5
+    },
+    {
+      "id": "why-were-building-sleep-amigo",
+      "publicationDate": "2026-08-08",
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    },
+    {
+      "id": "card-table-adds-solitaire-war",
+      "publicationDate": "2026-08-07",
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "studio-story",
+      "seriesId": "product-origins",
+      "seriesOrder": 4
+    },
+    {
+      "id": "palace-019-founder-review",
+      "publicationDate": "2026-08-04",
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization",
+      "explicitDateText": [],
+      "historicalPeriod": null,
+      "articleType": "developer-diary",
+      "seriesId": null,
+      "seriesOrder": null
+    }
+  ],
+  "articleAudit": [
+    {
+      "id": "sling-bling-gold-jewels-and-gravity",
+      "slug": "sling-bling-gold-jewels-and-gravity",
+      "publicationDate": "2026-10-20",
+      "image": "assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "documented-work",
+        "date": "2026-10-20",
+        "label": "Sling artwork shared on the website",
+        "evidence": "docs/SLING-BLING-RELEASE-2026-10-20.md",
+        "commit": "77c164781ba422c636832b78d03816c6aab4ca5c",
+        "detail": "The October 20 commit and release evidence establish the website artwork update. They do not establish a released 1,000-level game.",
+        "publicationDate": "2026-10-20"
+      },
+      "firstWebsiteRecord": "77c164781ba422c636832b78d03816c6aab4ca5c|2026-10-20|Publish Sling Bling artwork and October 20 developer update"
+    },
+    {
+      "id": "gin-rummy-gold-trim",
+      "slug": "gin-rummy-gold-trim",
+      "publicationDate": "2026-10-21",
+      "image": "assets/gin-rummy/development-phone.webp",
+      "kind": "development-capture",
+      "imageEvidence": "docs/GIN-RUMMY-WEBSITE-2026-09-12.md",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-21"
+      },
+      "firstWebsiteRecord": "47d52e955d9661e18cd40d370ca65a09ddbaada0|2026-10-21|Publish October 21 Gin Rummy development update"
+    },
+    {
+      "id": "sleep-amigo-notification-home",
+      "slug": "sleep-amigo-notification-home",
+      "publicationDate": "2026-10-22",
+      "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-22"
+      },
+      "firstWebsiteRecord": "723362f32177e1c5edebb8b3b8a3d4e01a903666|2026-10-22|Publish October 22 Sleep Amigo development update"
+    },
+    {
+      "id": "sling-nouveau-workbench-october-2026",
+      "slug": "sling-nouveau-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/sling-bling/money-monsters-512-b1b77b7ed32c.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "palace-workbench-october-2026",
+      "slug": "palace-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/card-apps/palace.webp",
+      "kind": "phone-screenshot",
+      "imageEvidence": "assets/card-apps/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "euchre-workbench-october-2026",
+      "slug": "euchre-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/card-apps/euchre.webp",
+      "kind": "development-capture",
+      "imageEvidence": "assets/card-apps/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "hearts-workbench-october-2026",
+      "slug": "hearts-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/card-apps/hearts.webp",
+      "kind": "development-capture",
+      "imageEvidence": "assets/card-apps/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "spades-workbench-october-2026",
+      "slug": "spades-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/card-apps/spades.webp",
+      "kind": "development-capture",
+      "imageEvidence": "assets/card-apps/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "solitaire-workbench-october-2026",
+      "slug": "solitaire-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/card-games/solitaire-tile.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "war-workbench-october-2026",
+      "slug": "war-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/card-games/war-tile.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "gildenspire-workbench-october-2026",
+      "slug": "gildenspire-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/gildenspire/gildenspire-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "thumb-command-workbench-october-2026",
+      "slug": "thumb-command-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/thumb-command/thumb-command-app-icon-768.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "bobby-workbench-october-2026",
+      "slug": "bobby-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/bobby/bobby-hero-1200.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "evil-doom-boy-workbench-october-2026",
+      "slug": "evil-doom-boy-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/portfolio-2026/evil-doom-card.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "booyang-city-workbench-october-2026",
+      "slug": "booyang-city-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "funky-town-workbench-october-2026",
+      "slug": "funky-town-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/funkey-town/funkey-town-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "assets/funkey-town/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "heartstack-workbench-october-2026",
+      "slug": "heartstack-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/heartstack-2026/heartstack-key-art.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "princess-land-workbench-october-2026",
+      "slug": "princess-land-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/portfolio-2026/princess-land-card.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "unicorn-land-workbench-october-2026",
+      "slug": "unicorn-land-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/portfolio-2026/unicorn-land-card.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "sleep-amigo-workbench-october-2026",
+      "slug": "sleep-amigo-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "sovinto-workbench-october-2026",
+      "slug": "sovinto-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/sovinto/sovinto-tile-1024.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "whomly-workbench-october-2026",
+      "slug": "whomly-workbench-october-2026",
+      "publicationDate": "2026-10-04",
+      "image": "assets/studio-expansion/whomly-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "gin-rummy-a-table-with-room-to-think",
+      "slug": "gin-rummy-a-table-with-room-to-think",
+      "publicationDate": "2026-10-04",
+      "image": "assets/gin-rummy/development-phone.webp",
+      "kind": "development-capture",
+      "imageEvidence": "docs/GIN-RUMMY-WEBSITE-2026-09-12.md",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "before-the-dragons-there-were-cards",
+      "slug": "before-the-dragons-there-were-cards",
+      "publicationDate": "2026-10-04",
+      "image": "assets/card-apps/palace.webp",
+      "kind": "phone-screenshot",
+      "imageEvidence": "assets/card-apps/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Early card-table roots",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "the-card-table-got-a-little-out-of-hand",
+      "slug": "the-card-table-got-a-little-out-of-hand",
+      "publicationDate": "2026-10-04",
+      "image": "assets/gildenspire/gildenspire-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "From the card table to original worlds",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "a-u-has-entered-the-chat",
+      "slug": "a-u-has-entered-the-chat",
+      "publicationDate": "2026-10-04",
+      "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "fewer-buttons-more-one-more-go",
+      "slug": "fewer-buttons-more-one-more-go",
+      "publicationDate": "2026-10-04",
+      "image": "assets/icon-palace-4hearts.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-10-04"
+      },
+      "firstWebsiteRecord": "0410b456d6e5c67324ce8faeb3688fa705e9bd22|2026-10-04|Publish shared workbench journals and repair fixed Palace demo"
+    },
+    {
+      "id": "booyang-a-town-that-grows-with-play",
+      "slug": "booyang-a-town-that-grows-with-play",
+      "publicationDate": "2026-09-12",
+      "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "documented-work",
+        "date": "2026-09-11",
+        "endDate": "2026-09-12",
+        "label": "Feeding repair and toy-town development checkpoint",
+        "evidence": "docs/SEPTEMBER-NEWS-SOURCES.md",
+        "detail": "The preserved article explicitly dates the feeding checkpoint September 11 and the development build September 12; source notes name BooYang commit def175e.",
+        "publicationDate": "2026-09-12"
+      },
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates"
+    },
+    {
+      "id": "gildenspire-a-dragon-built-to-move",
+      "slug": "gildenspire-a-dragon-built-to-move",
+      "publicationDate": "2026-09-12",
+      "image": "assets/gildenspire/gildenspire-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "documented-work",
+        "date": "2026-09-12",
+        "label": "Rigged-dragon and campaign development checkpoint",
+        "evidence": "docs/SEPTEMBER-NEWS-SOURCES.md",
+        "detail": "The preserved article and source notes identify the September 12 rigged-asset checkpoint and eacef40; polish/performance remain unfinished.",
+        "publicationDate": "2026-09-12"
+      },
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates"
+    },
+    {
+      "id": "small-fixes-that-change-the-feel",
+      "slug": "small-fixes-that-change-the-feel",
+      "publicationDate": "2026-09-12",
+      "image": "assets/portfolio-2026/evil-doom-card.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "documented-work",
+        "date": "2026-09-12",
+        "label": "Focused app behavior and device checks",
+        "evidence": "docs/SEPTEMBER-NEWS-SOURCES.md",
+        "detail": "September 12 BATTLE_SPEED and portfolio-audit source notes cover the named scoped repairs; this is not a public release.",
+        "publicationDate": "2026-09-12"
+      },
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates"
+    },
+    {
+      "id": "ai-in-the-workshop-and-the-product",
+      "slug": "ai-in-the-workshop-and-the-product",
+      "publicationDate": "2026-09-12",
+      "image": "assets/studio-expansion/whomly-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-09-12"
+      },
+      "firstWebsiteRecord": "5b02cdbc757a3abe745040df7f45df71909585ac|2026-09-12|Fix SOVINTO word wrapping and publish verified September updates"
+    },
+    {
+      "id": "introducing-gildenspire-flight-or-fight",
+      "slug": "introducing-gildenspire-flight-or-fight",
+      "publicationDate": "2026-09-05",
+      "image": "assets/gildenspire/gildenspire-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-09-05"
+      },
+      "firstWebsiteRecord": "9f0efb741998fd24eb3d9d4486f29adabce90f8e|2026-09-05|feat: launch GildenSpire website experience"
+    },
+    {
+      "id": "why-flying-has-to-be-fun",
+      "slug": "why-flying-has-to-be-fun",
+      "publicationDate": "2026-09-04",
+      "image": "assets/gildenspire/gildenspire-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-09-04"
+      },
+      "firstWebsiteRecord": "9f0efb741998fd24eb3d9d4486f29adabce90f8e|2026-09-05|feat: launch GildenSpire website experience"
+    },
+    {
+      "id": "building-dragons-that-actually-feel-different",
+      "slug": "building-dragons-that-actually-feel-different",
+      "publicationDate": "2026-09-03",
+      "image": "assets/gildenspire/gildenspire-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-09-03"
+      },
+      "firstWebsiteRecord": "9f0efb741998fd24eb3d9d4486f29adabce90f8e|2026-09-05|feat: launch GildenSpire website experience"
+    },
+    {
+      "id": "from-search-to-opportunity-building-whomly",
+      "slug": "from-search-to-opportunity-building-whomly",
+      "publicationDate": "2026-09-03",
+      "image": "assets/studio-expansion/whomly-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-09-03"
+      },
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo"
+    },
+    {
+      "id": "welcome-to-booyang-city",
+      "slug": "welcome-to-booyang-city",
+      "publicationDate": "2026-08-31",
+      "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-31"
+      },
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo"
+    },
+    {
+      "id": "thumb-command-save-planet-earth",
+      "slug": "thumb-command-save-planet-earth",
+      "publicationDate": "2026-08-29",
+      "image": "assets/thumb-command/thumb-command-app-icon-768.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-29"
+      },
+      "firstWebsiteRecord": "e8d01a64b43779106b160132d190e840cb701c9f|2026-08-29|feat(site): launch Thumb Command world defense experience"
+    },
+    {
+      "id": "making-sleep-data-feel-human",
+      "slug": "making-sleep-data-feel-human",
+      "publicationDate": "2026-08-28",
+      "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-28"
+      },
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo"
+    },
+    {
+      "id": "building-a-town-that-refuses-to-look-normal",
+      "slug": "building-a-town-that-refuses-to-look-normal",
+      "publicationDate": "2026-08-25",
+      "image": "assets/funkey-town/funkey-town-tile-960.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "assets/funkey-town/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-25"
+      },
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo"
+    },
+    {
+      "id": "building-unicorn-land-adventures",
+      "slug": "building-unicorn-land-adventures",
+      "publicationDate": "2026-08-24",
+      "image": "assets/portfolio-2026/unicorn-land-card.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-24"
+      },
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization"
+    },
+    {
+      "id": "inside-princess-land-adventures",
+      "slug": "inside-princess-land-adventures",
+      "publicationDate": "2026-08-21",
+      "image": "assets/portfolio-2026/princess-land-card.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-21"
+      },
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization"
+    },
+    {
+      "id": "people-lens-is-becoming-whomly",
+      "slug": "people-lens-is-becoming-whomly",
+      "publicationDate": "2026-08-19",
+      "image": "assets/studio-expansion/whomly-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-19"
+      },
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo"
+    },
+    {
+      "id": "heartstack-joins-the-workbench",
+      "slug": "heartstack-joins-the-workbench",
+      "publicationDate": "2026-08-18",
+      "image": "assets/heartstack-2026/heartstack-key-art.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-18"
+      },
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization"
+    },
+    {
+      "id": "evil-doom-two-heroes-one-route",
+      "slug": "evil-doom-two-heroes-one-route",
+      "publicationDate": "2026-08-14",
+      "image": "assets/portfolio-2026/evil-doom-card.png",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-14"
+      },
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization"
+    },
+    {
+      "id": "bobby-and-the-breadstone",
+      "slug": "bobby-and-the-breadstone",
+      "publicationDate": "2026-08-11",
+      "image": "assets/bobby/bobby-hero-1200.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-11"
+      },
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization"
+    },
+    {
+      "id": "why-were-building-sleep-amigo",
+      "slug": "why-were-building-sleep-amigo",
+      "publicationDate": "2026-08-08",
+      "image": "assets/studio-expansion/sleep-amigo-tile-720.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-08"
+      },
+      "firstWebsiteRecord": "8c51c4886360533c615125bbc7202249a8854741|2026-09-05|Add BooYang City Funky Town Whomly and Sleep Amigo"
+    },
+    {
+      "id": "card-table-adds-solitaire-war",
+      "slug": "card-table-adds-solitaire-war",
+      "publicationDate": "2026-08-07",
+      "image": "assets/card-games/solitaire-tile.webp",
+      "kind": "product-artwork",
+      "imageEvidence": "scripts/studio-product-manifest.mjs",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-07"
+      },
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization"
+    },
+    {
+      "id": "palace-019-founder-review",
+      "slug": "palace-019-founder-review",
+      "publicationDate": "2026-08-04",
+      "image": "assets/card-apps/palace.webp",
+      "kind": "phone-screenshot",
+      "imageEvidence": "assets/card-apps/provenance.json",
+      "timeline": {
+        "mode": "undated-retrospective",
+        "date": null,
+        "label": "Undated development retrospective",
+        "evidence": "content/workbench-date-evidence.json",
+        "detail": "The publication date is preserved. The available source does not establish a separate date for the underlying work.",
+        "publicationDate": "2026-08-04"
+      },
+      "firstWebsiteRecord": "308d670931bb0ab84b9a43c9ca5f23ab5cd8b01a|2026-08-30|Rebuild production portfolio and localization"
+    }
+  ],
+  "knownWorkDates": [
+    "booyang-a-town-that-grows-with-play",
+    "gildenspire-a-dragon-built-to-move",
+    "small-fixes-that-change-the-feel",
+    "sling-bling-gold-jewels-and-gravity"
+  ],
+  "unknownWorkDates": [
+    "gin-rummy-gold-trim",
+    "sleep-amigo-notification-home",
+    "sling-nouveau-workbench-october-2026",
+    "palace-workbench-october-2026",
+    "euchre-workbench-october-2026",
+    "hearts-workbench-october-2026",
+    "spades-workbench-october-2026",
+    "solitaire-workbench-october-2026",
+    "war-workbench-october-2026",
+    "gildenspire-workbench-october-2026",
+    "thumb-command-workbench-october-2026",
+    "bobby-workbench-october-2026",
+    "evil-doom-boy-workbench-october-2026",
+    "booyang-city-workbench-october-2026",
+    "funky-town-workbench-october-2026",
+    "heartstack-workbench-october-2026",
+    "princess-land-workbench-october-2026",
+    "unicorn-land-workbench-october-2026",
+    "sleep-amigo-workbench-october-2026",
+    "sovinto-workbench-october-2026",
+    "whomly-workbench-october-2026",
+    "gin-rummy-a-table-with-room-to-think",
+    "before-the-dragons-there-were-cards",
+    "the-card-table-got-a-little-out-of-hand",
+    "a-u-has-entered-the-chat",
+    "fewer-buttons-more-one-more-go",
+    "ai-in-the-workshop-and-the-product",
+    "introducing-gildenspire-flight-or-fight",
+    "why-flying-has-to-be-fun",
+    "building-dragons-that-actually-feel-different",
+    "from-search-to-opportunity-building-whomly",
+    "welcome-to-booyang-city",
+    "thumb-command-save-planet-earth",
+    "making-sleep-data-feel-human",
+    "building-a-town-that-refuses-to-look-normal",
+    "building-unicorn-land-adventures",
+    "inside-princess-land-adventures",
+    "people-lens-is-becoming-whomly",
+    "heartstack-joins-the-workbench",
+    "evil-doom-two-heroes-one-route",
+    "bobby-and-the-breadstone",
+    "why-were-building-sleep-amigo",
+    "card-table-adds-solitaire-war",
+    "palace-019-founder-review"
+  ]
+}

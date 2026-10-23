@@ -25,6 +25,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/immersive-world.js": "assets/immersive-world.js?v=f122e5072a7f",
   "assets/launch-countdown.js": "assets/launch-countdown.js?v=e12b73d95f5b",
   "assets/more-games-tutorial.js": "assets/more-games-tutorial.js?v=8398244e0f9b",
+  "assets/news-visuals.css": "assets/news-visuals.css?v=7e1f8bbf228b",
   "assets/next-level.js": "assets/next-level.js?v=2e525a711d2b",
   "assets/og-brand.jpg": "assets/og-brand.jpg?v=cf1c3afb519a",
   "assets/og-palace-app-world.jpg": "assets/og-palace-app-world.jpg?v=cc87c619c30f",

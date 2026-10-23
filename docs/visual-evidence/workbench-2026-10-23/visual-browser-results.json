@@ -1,0 +1,373 @@
+{
+  "verifiedAt": "2026-10-23T13:38:28.058Z",
+  "base": "http://127.0.0.1:56291",
+  "checks": [
+    {
+      "route": "news.html",
+      "width": 320,
+      "media": 48,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "media": 48,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 768,
+      "media": 48,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 1440,
+      "media": 48,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news-archive.html",
+      "width": 390,
+      "js": false,
+      "status": "pass"
+    },
+    {
+      "route": "news-origins.html",
+      "width": 390,
+      "js": false,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-funky-town.html",
+      "width": 390,
+      "js": false,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-palace.html",
+      "width": 390,
+      "js": false,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "status": "pass"
+    }
+  ],
+  "articles": [
+    {
+      "id": "sling-bling-gold-jewels-and-gravity",
+      "date": "2026-10-20",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "gin-rummy-gold-trim",
+      "date": "2026-10-21",
+      "kind": "development-capture",
+      "status": "pass"
+    },
+    {
+      "id": "sleep-amigo-notification-home",
+      "date": "2026-10-22",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "sling-nouveau-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "palace-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "phone-screenshot",
+      "status": "pass"
+    },
+    {
+      "id": "euchre-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "development-capture",
+      "status": "pass"
+    },
+    {
+      "id": "hearts-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "development-capture",
+      "status": "pass"
+    },
+    {
+      "id": "spades-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "development-capture",
+      "status": "pass"
+    },
+    {
+      "id": "solitaire-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "war-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "gildenspire-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "thumb-command-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "bobby-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "evil-doom-boy-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "booyang-city-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "funky-town-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "heartstack-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "princess-land-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "unicorn-land-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "sleep-amigo-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "sovinto-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "whomly-workbench-october-2026",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "gin-rummy-a-table-with-room-to-think",
+      "date": "2026-10-04",
+      "kind": "development-capture",
+      "status": "pass"
+    },
+    {
+      "id": "before-the-dragons-there-were-cards",
+      "date": "2026-10-04",
+      "kind": "phone-screenshot",
+      "status": "pass"
+    },
+    {
+      "id": "the-card-table-got-a-little-out-of-hand",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "a-u-has-entered-the-chat",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "fewer-buttons-more-one-more-go",
+      "date": "2026-10-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "booyang-a-town-that-grows-with-play",
+      "date": "2026-09-12",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "gildenspire-a-dragon-built-to-move",
+      "date": "2026-09-12",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "small-fixes-that-change-the-feel",
+      "date": "2026-09-12",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "ai-in-the-workshop-and-the-product",
+      "date": "2026-09-12",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "introducing-gildenspire-flight-or-fight",
+      "date": "2026-09-05",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "why-flying-has-to-be-fun",
+      "date": "2026-09-04",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "building-dragons-that-actually-feel-different",
+      "date": "2026-09-03",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "from-search-to-opportunity-building-whomly",
+      "date": "2026-09-03",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "welcome-to-booyang-city",
+      "date": "2026-08-31",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "thumb-command-save-planet-earth",
+      "date": "2026-08-29",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "making-sleep-data-feel-human",
+      "date": "2026-08-28",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "building-a-town-that-refuses-to-look-normal",
+      "date": "2026-08-25",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "building-unicorn-land-adventures",
+      "date": "2026-08-24",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "inside-princess-land-adventures",
+      "date": "2026-08-21",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "people-lens-is-becoming-whomly",
+      "date": "2026-08-19",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "heartstack-joins-the-workbench",
+      "date": "2026-08-18",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "evil-doom-two-heroes-one-route",
+      "date": "2026-08-14",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "bobby-and-the-breadstone",
+      "date": "2026-08-11",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "why-were-building-sleep-amigo",
+      "date": "2026-08-08",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "card-table-adds-solitaire-war",
+      "date": "2026-08-07",
+      "kind": "product-artwork",
+      "status": "pass"
+    },
+    {
+      "id": "palace-019-founder-review",
+      "date": "2026-08-04",
+      "kind": "phone-screenshot",
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "httpErrors": [],
+  "published": 48,
+  "draftsUnpublished": 18
+}

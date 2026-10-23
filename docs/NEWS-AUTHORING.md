@@ -2,8 +2,8 @@
 
 Create one article → tag products → preview → publish. `content/news.json` is the only article collection. The generator supplies full articles, News, homepage previews, product journals, product archives, RSS and sitemap entries. There is no CMS, database or new runtime dependency.
 
-1. Copy `content/article-template.json` into the array in `content/news.json`. Choose unique, permanent `id` and `slug` values; routes remain `news-SLUG.html`. Do not rename IDs or slugs when a title changes. `archive`, `origins`, and `product-*` slugs are reserved.
-2. Keep `status: "draft"` while writing. Use a useful excerpt in `description`, the `The 4OH Workshop` byline, and plain-text `body` sections (`heading` and `paragraphs`). Markup is escaped. Optional `image` must be an approved repository asset with meaningful `imageAlt`; omit both for text-only posts.
+1. Copy `content/article-template.json` into the array in `content/news.json`. Choose unique, permanent `id` and `slug` values; routes remain `news-SLUG.html`. Do not rename IDs or slugs when a title changes. `archive`, `origins`, `timeline`, and `product-*` slugs are reserved.
+2. Keep `status: "draft"` while writing. Use a useful excerpt in `description`, the `The 4OH Workshop` byline, and plain-text `body` sections (`heading` and `paragraphs`). Markup is escaped. Every published entry should have an approved repository `image` and meaningful `imageAlt`. Prefer an authentic development capture where available; otherwise use the current product tile. The renderer supplies a labeled current-artwork fallback if an entry has no explicit image.
 3. Set `productIds` to one or several stable IDs from `scripts/studio-product-manifest.mjs`. Leave it empty for a general studio story. Tag only products actually discussed. Use `tags` for collections such as `games`, `card-table`, `lifestyle-apps`, `company` and `development`.
 4. Choose `articleType`: `studio-story`, `developer-diary`, `design-diary`, `workbench-brief`, `retrospective`, or `release-notes`. Use design diaries or workbench briefs where implementation evidence is limited. Release notes need evidence of an actual release.
 5. Run `node scripts/preview-post.mjs YOUR-SLUG`, then open the printed local URL. It renders the complete article in a disposable private copy, marks it noindex, and leaves your source record as a draft. Press Ctrl+C to remove the preview. Ordinary builds exclude drafts from every public output.
@@ -16,6 +16,12 @@ Create one article → tag products → preview → publish. `content/news.json`
 - Set `featured: true` on one published article and false on the previous feature. Zero selected features falls back to the newest published article. More than one fails the build.
 - For a reading series, supply `seriesId` and positive `seriesOrder`. The preserved introductions use `product-origins`; `news-origins.html` starts there and articles link to the next entry. New origin stories can extend that series with the next order.
 - Keep RSS GUIDs and article routes permanent. Optional `rssGuid` can retain a specific historical identifier; the default is the existing absolute article URL. `content/publication-history.json` records the original 21 identifiers and dates for regression checks.
+
+## Visuals and sourced work dates
+
+Visual metadata uses `media.kind` (`phone-screenshot`, `development-capture`, `product-artwork`, or `studio-artwork`), positive native `width`/`height`, and explicit `label`, `caption`, and `evidence`. Never call concept or promotional artwork a screenshot. A current reference image does not date the underlying work.
+
+For separately verified work dates use `timeline.mode: "documented-work"`, `date`, optional `endDate`, and a source-backed `label`/`evidence`. Otherwise use `timeline.mode: "undated-retrospective"` and `date: null`. Keep the actual article publication `date` unchanged. `content/workbench-timeline.json` contains independently sourced website records and development checkpoints for the timeline index. See [the October 23 source audit](WORKBENCH-VISUAL-TIMELINE-2026-10-23.md).
 
 ## Stable product IDs and names
 
