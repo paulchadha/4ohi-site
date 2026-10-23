@@ -10,6 +10,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/favicon.png": "assets/favicon.png?v=e3eeb5210a2e",
   "assets/founder-corrections.css": "assets/founder-corrections.css?v=e9c4d7cfa7ab",
   "assets/founder-redesign.css": "assets/founder-redesign.css?v=70777616e8ba",
+  "assets/funkey-town.css": "assets/funkey-town.css?v=4f1831455f91",
   "assets/gildenspire.css": "assets/gildenspire.css?v=a2a84c6ae3fb",
   "assets/home-tile-refinements.css": "assets/home-tile-refinements.css?v=c796d8a5f506",
   "assets/icon-euchre-4hearts.png": "assets/icon-euchre-4hearts.png?v=34cecc883495",
@@ -80,7 +81,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/swipe-carousel.js": "assets/swipe-carousel.js?v=15e01bacb85f",
   "assets/thumb-command.css": "assets/thumb-command.css?v=78f59cf96671",
   "assets/workbench-nojs.css": "assets/workbench-nojs.css?v=bd027f56fb88",
-  "assets/workbench-products.js": "assets/workbench-products.js?v=4738906a6731",
+  "assets/workbench-products.js": "assets/workbench-products.js?v=14bec24340ff",
   "assets/workbench.css": "assets/workbench.css?v=6ae3d3a783e0",
   "assets/workbench.js": "assets/workbench.js?v=2975ad0290ea"
 });

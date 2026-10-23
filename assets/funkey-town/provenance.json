@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-23",
+  "brand": "Funkey Town",
+  "spelling": "F-U-N-K-E-Y",
+  "scope": "Visual website rebrand only; no app/game implementation, publication dates or queue changes.",
+  "method": "Built-in image_gen conversation-image edits, preserving the established mural-city look and correcting title/badge spelling. Windows file-path inputs failed before execution; conversation references succeeded.",
+  "sources": [
+    {
+      "path": "docs/source-assets/funkey-town-2026-10-23/funkey-town-title.png",
+      "sha256": "79f73ff58ca944f226067d17d0420e01c812db544c5f1d1dec98f9769a215b44"
+    },
+    {
+      "path": "docs/source-assets/funkey-town-2026-10-23/funkey-town-concept.png",
+      "sha256": "a3df0a70b3b8021de1ed3fde83a16bf3205fd4502fce419f552542d2708d026d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "assets/funkey-town/funkey-town-tile-960.webp",
+      "sha256": "870a80d8aec7df625dd1672ee1ac414d6cf03f756190f82b16eb6f5d0d80ea79",
+      "width": 960,
+      "height": 960,
+      "source": "docs/source-assets/funkey-town-2026-10-23/funkey-town-title.png"
+    },
+    {
+      "path": "assets/funkey-town/funkey-town-tile-480.webp",
+      "sha256": "eadebdb945528201ec95c93b22af1e151f6dc6b106489f81b684ff9cabae719c",
+      "width": 480,
+      "height": 480,
+      "source": "docs/source-assets/funkey-town-2026-10-23/funkey-town-title.png"
+    },
+    {
+      "path": "assets/funkey-town/funkey-town-hero-1600.webp",
+      "sha256": "85bf092783f7edc4d7421ff84ac673d845bc7fc947d340956be43ba12fcbe696",
+      "width": 1600,
+      "height": 900,
+      "source": "docs/source-assets/funkey-town-2026-10-23/funkey-town-title.png"
+    },
+    {
+      "path": "assets/funkey-town/funkey-town-social-1200.webp",
+      "sha256": "ecdf4493d4981e124fd9b6eb0f64b640e913cf8ffc2f3b7b3d923c4837b969fa",
+      "width": 1200,
+      "height": 630,
+      "source": "docs/source-assets/funkey-town-2026-10-23/funkey-town-title.png"
+    },
+    {
+      "path": "assets/funkey-town/funkey-town-concept-960.webp",
+      "sha256": "15275c434b70dccdc659af8d8647b1c44153c8dcc00c1fdbda6e9acb5ac04d2e",
+      "width": 960,
+      "height": 1080,
+      "source": "docs/source-assets/funkey-town-2026-10-23/funkey-town-concept.png"
+    }
+  ],
+  "originalsRetained": true
+}

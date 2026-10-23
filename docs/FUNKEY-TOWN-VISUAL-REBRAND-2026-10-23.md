@@ -1,0 +1,17 @@
+# Funkey Town visual rebrand
+
+Owner-requested spelling: **Funkey Town**, F-U-N-K-E-Y. This release changes current website branding and artwork only. The stable product ID `funky-town` and `/funky-town.html` URL remain. Historical article records and wording, publication dates, all draft/queue fields, scheduling and publishing scripts are untouched. No trademark clearance or public game release is claimed.
+
+The product registry drives the opening tile-first homepage, Games cards/showcase, shared navigation/footer, metadata, current availability labels and product journal name. The title and concept-badge artwork use the corrected spelling. Existing assets are retained; new versioned assets live in `assets/funkey-town/`, with source/output hashes in `assets/funkey-town/provenance.json`. Final source PNGs are in `docs/source-assets/funkey-town-2026-10-23/`.
+
+Built-in `image_gen` was used. Windows file-path inputs failed before image execution; conversation-image references then succeeded. A generated spelling-reference image was discarded. The final title and portrait concept were visually checked for the six-letter spelling. The original mural-city art direction and concept presentation remain; images are not labeled gameplay screenshots.
+
+## Final prompt set
+
+Title artwork:
+
+> Use case: text-localization. Among the supplied conversation images, the EDIT TARGET is the original landscape 4:3 promotional tile with giant white FUNKY and golden TOWN brush letters, a crown above, mural-face building and three right-side street signs reading SMALL TOWNS / BIG IDEAS / BRIGHTER TOMORROW. Edit that original tile, not either portrait gameplay concept. The newer square FUNKEY TOWN image is only an exact-spelling reference. Change the original big title from FUNKY TOWN to exactly FUNKEY TOWN: F U N K E Y, six letters with E between K and Y. Keep the original white-and-gold brush lettering style, dark paint backing, crown, colorful neighborhood, mural face, skyline and street signs. Fit the six-letter word naturally, reducing/rebalancing only the wordmark spacing if needed so the whole corrected title is legible and not clipped. Preserve the rest of the original tile's composition and warm colorful illustrated look closely. Output one corrected promotional tile, preferably square with safe margins for website use. Do not create a different neighborhood, do not add objects, slogans, app features or trademark symbols. This is a spelling-only visual rebrand of the existing tile.
+
+Concept badge:
+
+> Two supplied conversation images have distinct roles. The earlier portrait city-builder concept with the top-left 'Funky Town' name badge is the EDIT TARGET. The newer square FUNKEY TOWN title artwork is only a spelling/brand reference, not a replacement scene. Edit the portrait concept target only: replace the top-left badge text 'Funky Town' with exactly 'Funkey Town', spelled F U N K E Y with E between K and Y. Keep it mixed-case white, within the existing dark rounded badge; reduce text size slightly if needed. Preserve the rest of that portrait target as closely as possible: crowned smile icon, all coin/gem counts, settings gear, mural-covered city buildings, sneaker roof, gardens, food trucks, people, and the five bottom buttons Build, Decorate, People, Quests, Map. Do not introduce the large new square wordmark into this portrait. Do not redesign or add any game features. Only change the name spelling. No trademark symbols. Return one edited portrait concept image.
