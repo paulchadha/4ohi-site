@@ -1,0 +1,21 @@
+{
+  "base": "caa24eea8201ebc464b67b69c4ffe55cb6fb7f37",
+  "today": "2026-10-24",
+  "timeZone": "America/Chicago",
+  "published": [
+    {
+      "slug": "palace-last-card",
+      "planned": "2026-10-24",
+      "published": "2026-10-24"
+    }
+  ],
+  "selectedId": "palace-last-card",
+  "previousPublishedArticles": 49,
+  "publishedArticleCount": 50,
+  "remainingDrafts": 16,
+  "futureScheduledDrafts": 15,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/card-apps/palace.webp",
+  "imageSHA256": "d878543dc82ff4de9ec3b5889961d28db49aeeb6e519488267be099761816594",
+  "workDate": "undated"
+}

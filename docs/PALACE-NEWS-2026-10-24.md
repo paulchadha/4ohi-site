@@ -1,0 +1,11 @@
+# Palace daily spotlight — October 24, 2026
+
+The existing approved `palace-last-card` draft is the sole October 24 eligible entry in `content/news.json`. Yesterday's Press Ahead article remains published on October 23, and GildenSpire remains unpublished unscheduled backlog under the revised queue. Remote main and the live Pages build both matched `caa24eea8201ebc464b67b69c4ffe55cb6fb7f37` before this operation. The Palace article URL returned 404 and no article had an October 24 publication date.
+
+The guarded handoff checks the actual America/Chicago day, absence of a same-day publication, the exact due count and ID, the unchanged base, and the unscheduled backlog before invoking the existing publisher with the explicit local date. The existing script's UTC/batch behavior and the automation schedule are unchanged. Its preview selected exactly this draft. There is one new publication today, leaving 15 scheduled future drafts and one unscheduled backlog draft.
+
+The prepared title, description and body are unchanged. The browser table offers local play against a bot; the separate app remains in private testing. The spotlight announces no app release, online launch, new feature or new development milestone. It uses the actual October 24 publication date. No separate date is invented for the original development work; the article is explicitly labeled with undated development context.
+
+The reference visual is the existing `assets/card-apps/palace.webp`, 1600 × 678. `assets/card-apps/provenance.json` records it as an actual Samsung app screenshot, cropped from `portfolio-native-table.png` (source SHA-256 `82de982419528584db0e61acb73b872cfc6444a67703d3cda473ea8bb8070090`). Caption and alt text identify private-app development imagery and distinguish it from the website browser demo. The screenshot does not establish a work date, current device test or public app release.
+
+Preservation checks retain the previous 49 article records, dates, visuals and content, all 16 remaining drafts, the completed Workbench/timeline backfill, tile-first homepage, Funkey and Sling artwork, app pages, countdown and Palace demo. The previous featured article's flag moves to the new spotlight, and adjacent journal navigation gains the new article link. No credentials, grants, services or security settings change.

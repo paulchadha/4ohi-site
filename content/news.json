@@ -193,11 +193,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-24",
     "scheduledFor": "2026-10-24",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -207,7 +207,24 @@
           "Readable choices, useful power cards, and a finish that refuses to reveal its references in advance. The website table is available to play; this spotlight does not announce a standalone app release. Our confidence is coming along beautifully. The deck has requested a second opinion."
         ]
       }
-    ]
+    ],
+    "image": "assets/card-apps/palace.webp",
+    "imageAlt": "Palace private-app development table on a Samsung phone; reference screenshot distinct from the website browser demo",
+    "media": {
+      "kind": "phone-screenshot",
+      "label": "Development phone screenshot",
+      "caption": "Reference visual: a recorded Samsung screenshot of the private Palace app, with system bars cropped. The website browser table is separate. Current builds may differ; this image does not establish the development date or announce an app release.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 1600,
+      "height": 678
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "evidence": "docs/PALACE-NEWS-2026-10-24.md",
+      "detail": "Today is the actual publication date of this prepared spotlight. The source does not establish a separate original date for all development work described."
+    }
   },
   {
     "id": "booyang-bakery-eventually",
@@ -3150,7 +3167,7 @@
     "proposedPublicationDay": "2026-10-23",
     "editorialQueueState": "published",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "On the workbench",

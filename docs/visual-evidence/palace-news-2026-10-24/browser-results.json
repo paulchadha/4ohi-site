@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-24T13:42:17.527Z",
+  "base": "http://127.0.0.1:55919",
+  "selected": "palace-last-card",
+  "checks": [
+    {
+      "route": "news-palace-last-card.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-palace-last-card.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-palace-last-card.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-palace-last-card.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-palace.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "palace.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 50,
+  "draftRoutesExcluded": 16
+}

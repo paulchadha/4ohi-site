@@ -1,0 +1,19 @@
+{
+  "verifiedAt": "2026-10-24T13:42:10.117Z",
+  "base": "caa24eea8201ebc464b67b69c4ffe55cb6fb7f37",
+  "selected": "palace-last-card",
+  "publicationDay": "2026-10-24",
+  "timeZone": "America/Chicago",
+  "newPublications": 1,
+  "previousPublishedEntriesPreserved": 49,
+  "previousArticleContentAndVisualsPreserved": 49,
+  "adjacentJournalNavigationUpdated": true,
+  "remainingDraftsUnchanged": 16,
+  "futureScheduledDrafts": 15,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "previousTileFirstHomeFunkeyAndSlingArtPreserved": true,
+  "palaceDemoAndCountdownPreserved": true,
+  "scheduleAndPublisherUnchanged": true,
+  "originalDirtyCheckoutUnchanged": true,
+  "deterministicBuild": true
+}
