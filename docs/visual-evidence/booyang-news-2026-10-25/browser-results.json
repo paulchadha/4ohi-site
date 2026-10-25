@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-25T13:27:40.346Z",
+  "base": "http://127.0.0.1:52006",
+  "selected": "booyang-bakery-eventually",
+  "checks": [
+    {
+      "route": "news-booyang-bakery-eventually.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-booyang-bakery-eventually.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-booyang-bakery-eventually.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-booyang-bakery-eventually.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-booyang-city.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "booyang-city.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 51,
+  "draftRoutesExcluded": 15
+}

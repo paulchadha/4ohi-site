@@ -1,0 +1,21 @@
+{
+  "base": "58f325b8b6e6b71bc0af6ec054d3423e27891611",
+  "today": "2026-10-25",
+  "timeZone": "America/Chicago",
+  "published": [
+    {
+      "slug": "booyang-bakery-eventually",
+      "planned": "2026-10-25",
+      "published": "2026-10-25"
+    }
+  ],
+  "selectedId": "booyang-bakery-eventually",
+  "previousPublishedArticles": 50,
+  "publishedArticleCount": 51,
+  "remainingDrafts": 15,
+  "futureScheduledDrafts": 14,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+  "imageSHA256": "a0db100d8303df4ece54a659d9f717242f73c42bbb62658dade47a96ec9c93b3",
+  "workDate": "undated"
+}

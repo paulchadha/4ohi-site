@@ -197,7 +197,7 @@
     "date": "2026-10-24",
     "scheduledFor": "2026-10-24",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -240,11 +240,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-25",
     "scheduledFor": "2026-10-25",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -254,7 +254,24 @@
           "Development continues; no public release is announced. The bakery is not accepting complaints about how long you spent at the zoo. You can explain the three-hour bread run when you get home. We will be very sympathetic."
         ]
       }
-    ]
+    ],
+    "image": "assets/studio-expansion/booyang-city-tile-960.webp",
+    "imageAlt": "BooYang City artwork featuring the neighborhood, bakery and zoo; not a gameplay screenshot",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current BooYang City product artwork, not a gameplay screenshot. This image illustrates the development spotlight; it does not establish a development date or announce a public release.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 960,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "evidence": "docs/BOOYANG-NEWS-2026-10-25.md",
+      "detail": "Today is the actual publication date of this prepared spotlight. The source does not establish a separate original date for all development work described."
+    }
   },
   {
     "id": "thumb-command-earth-assignment",
