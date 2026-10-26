@@ -1,0 +1,21 @@
+{
+  "base": "8a2597b6621b1b67f7b0b8e50d9da5defd407adb",
+  "today": "2026-10-26",
+  "timeZone": "America/Chicago",
+  "published": [
+    {
+      "slug": "thumb-command-earth-assignment",
+      "planned": "2026-10-26",
+      "published": "2026-10-26"
+    }
+  ],
+  "selectedId": "thumb-command-earth-assignment",
+  "previousPublishedArticles": 51,
+  "publishedArticleCount": 52,
+  "remainingDrafts": 14,
+  "futureScheduledDrafts": 13,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/thumb-command/thumb-command-app-icon-768.webp",
+  "imageSHA256": "d93855b560b80a54de8bff10fc401d0c86a729de611a46cc00a94254dfc19b05",
+  "workDate": "undated"
+}

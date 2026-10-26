@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-26T14:32:18.552Z",
+  "base": "http://127.0.0.1:64073",
+  "selected": "thumb-command-earth-assignment",
+  "checks": [
+    {
+      "route": "news-thumb-command-earth-assignment.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-thumb-command-earth-assignment.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-thumb-command-earth-assignment.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-thumb-command-earth-assignment.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-thumb-command.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "thumb-command.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 52,
+  "draftRoutesExcluded": 14
+}

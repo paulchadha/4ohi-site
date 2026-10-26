@@ -244,7 +244,7 @@
     "date": "2026-10-25",
     "scheduledFor": "2026-10-25",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -287,11 +287,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-26",
     "scheduledFor": "2026-10-26",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -301,7 +301,24 @@
           "This is a spotlight on its arcade-defense premise, not a report of newly released missions or features. Thumb Command remains in development. We appreciate your help. The planet is a little difficult to replace."
         ]
       }
-    ]
+    ],
+    "image": "assets/thumb-command/thumb-command-app-icon-768.webp",
+    "imageAlt": "Thumb Command artwork showing the Blueguard interceptor defending Earth from an alien fleet; not a gameplay screenshot",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current Thumb Command product artwork, not a gameplay screenshot. This image illustrates the development spotlight; it does not establish a development date or announce a public release.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 768,
+      "height": 768
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "evidence": "docs/THUMB-NEWS-2026-10-26.md",
+      "detail": "Today is the actual publication date of this prepared spotlight. The source does not establish a separate original date for all development work described."
+    }
   },
   {
     "id": "sovinto-prepare-a-position",
