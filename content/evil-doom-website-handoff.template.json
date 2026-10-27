@@ -1,0 +1,45 @@
+{
+  "verificationStatus": "pending-game-owner-handoff",
+  "reference": {
+    "filename": "1000014446.png",
+    "pixelInspectionComplete": false,
+    "verifiedConsumerLocalPath": null,
+    "sha256": null,
+    "usage": "Visual design guide only; never identify it as a gameplay capture."
+  },
+  "game": {
+    "sourceRevision": null,
+    "version": null,
+    "implementedFeatures": [],
+    "plannedFeatures": [],
+    "knownLimits": [],
+    "selectableHeroesVerified": []
+  },
+  "catalogTile": {
+    "sourcePath": null,
+    "sha256": null,
+    "width": null,
+    "height": null,
+    "alt": null,
+    "provenance": null
+  },
+  "detailHero": {
+    "sourcePath": null,
+    "sha256": null,
+    "width": null,
+    "height": null,
+    "kind": null,
+    "platformAndBuild": null,
+    "alt": null,
+    "caption": null,
+    "provenance": null
+  },
+  "gallery": [],
+  "website": {
+    "stableProductId": "evil-doom-boy",
+    "canonicalRoute": "/games/evil-doom-boy/",
+    "newPublicDownloadAuthorized": false,
+    "newPlayableRuntimeAuthorized": false,
+    "additionalNewsPublicationAuthorized": false
+  }
+}

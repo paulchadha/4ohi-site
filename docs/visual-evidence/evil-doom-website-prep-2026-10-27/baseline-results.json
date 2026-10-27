@@ -1,0 +1,160 @@
+{
+  "verifiedAt": "2026-10-27T14:35:26.820Z",
+  "checks": [
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 1440,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "images": [
+    {
+      "width": 390,
+      "images": [
+        {
+          "src": "assets/evil-doom/evil-doom-boy-preview.png?v=f68bf85ff10a",
+          "alt": "Character artwork for Boy, the brother in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-girl-preview.png?v=464226804a1d",
+          "alt": "Character artwork for Girl, the sister in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-worlds-purple-1440.webp?v=190c4b45992c",
+          "alt": "Environment concept artwork for Evil Doom",
+          "natural": [
+            1440,
+            206
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-boy-preview.png?v=f68bf85ff10a",
+          "alt": "Character artwork for Boy, the brother in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-girl-preview.png?v=464226804a1d",
+          "alt": "Character artwork for Girl, the sister in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-worlds-purple-1440.webp?v=190c4b45992c",
+          "alt": "Environment concept artwork for Evil Doom",
+          "natural": [
+            1440,
+            206
+          ]
+        },
+        {
+          "src": "assets/portfolio-2026/evil-doom-card.png?v=60fc6c020b83",
+          "alt": "Evil Doom Boy: current product artwork",
+          "natural": [
+            1200,
+            750
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "images": [
+        {
+          "src": "assets/evil-doom/evil-doom-boy-preview.png?v=f68bf85ff10a",
+          "alt": "Character artwork for Boy, the brother in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-girl-preview.png?v=464226804a1d",
+          "alt": "Character artwork for Girl, the sister in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-worlds-purple-1440.webp?v=190c4b45992c",
+          "alt": "Environment concept artwork for Evil Doom",
+          "natural": [
+            1440,
+            206
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-boy-preview.png?v=f68bf85ff10a",
+          "alt": "Character artwork for Boy, the brother in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-girl-preview.png?v=464226804a1d",
+          "alt": "Character artwork for Girl, the sister in Evil Doom",
+          "natural": [
+            1200,
+            900
+          ]
+        },
+        {
+          "src": "assets/evil-doom/evil-doom-worlds-purple-1440.webp?v=190c4b45992c",
+          "alt": "Environment concept artwork for Evil Doom",
+          "natural": [
+            1440,
+            206
+          ]
+        },
+        {
+          "src": "assets/portfolio-2026/evil-doom-card.png?v=60fc6c020b83",
+          "alt": "Evil Doom Boy: current product artwork",
+          "natural": [
+            1200,
+            750
+          ]
+        }
+      ]
+    }
+  ]
+}

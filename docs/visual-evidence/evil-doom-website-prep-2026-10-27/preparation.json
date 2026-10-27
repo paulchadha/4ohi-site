@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-27T14:42:20.690Z",
+  "base": "8b8e9553ce3f5c91b4187526a39617b850fe931b",
+  "isolatedCheckout": "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-release",
+  "existingPageImplementationExtractedVerbatim": true,
+  "optionalGalleryCaptionHook": true,
+  "publicOutputBytesUnchanged": true,
+  "articleRecordsAndQueueUnchanged": true,
+  "publishedArticles": 53,
+  "drafts": 13,
+  "gameProjectWrites": 0,
+  "newPublications": 0,
+  "pushes": 0,
+  "referencePixelsInspected": false,
+  "referenceLocalInstallation": "not completed: required extended attributes unsupported by Windows Python; WSL is not installed",
+  "handoffRequired": [
+    "Inspectable reference pixels",
+    "Verified game-owned media paths, hashes, dimensions and build/platform provenance",
+    "Implemented-versus-planned feature evidence"
+  ]
+}
