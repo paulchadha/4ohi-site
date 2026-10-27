@@ -16,7 +16,10 @@ assert.equal(h.verificationStatus,'verified','Pending verified game-owned media 
 assert.equal(h.website?.finalPublicationHandoffReady,true,'Final game-owner publication handoff is not ready');
 assert.equal(h.game?.finalBuildVerified,true,'Final game-build verification remains pending');
 assert.equal(h.reference?.pixelInspectionComplete,true,'Reference pixels must be inspected');
-assert.match(h.game?.sourceRevision||'',/^[a-f0-9]{7,40}$/i,'Record the verified game source revision');
+assert.match(h.game?.baselineRevision||'',/^[a-f0-9]{40}\b/i,'Record the game baseline without inventing a final clean revision');
+assert.ok(h.game.sourceRevisionScope?.includes('working-tree'),'Describe the accepted working-tree state separately from its baseline');
+assert.match(h.game.candidateBuild||'',/^index-[A-Za-z0-9_-]+\.js$/,'Record the exact accepted game bundle');
+for(const key of ['finalBundleSHA256','acceptanceSHA256','canonicalPromotionReceiptSHA256'])assert.match(h.game[key]||'',/^[a-f0-9]{64}$/i,'Record the final verified '+key);
 assert.ok(Array.isArray(h.game.implementedFeatures)&&Array.isArray(h.game.plannedFeatures)&&Array.isArray(h.game.knownLimits),'Separate implemented, planned and limited behavior');
 const media=[h.catalogTile,h.detailHero,h.heroPortraits?.boy,h.heroPortraits?.girl,...(h.gallery||[])].filter(Boolean);
 assert.ok(h.catalogTile&&h.detailHero,'Verified catalog tile and detail hero are required');
@@ -38,4 +41,4 @@ const html=readFileSync(resolve(root,'games/evil-doom-boy/index.html'),'utf8');
 assert.ok(!html.includes('Updated game-owned visuals await verification'),'Remove provisional hero copy before publishing');
 assert.ok(!html.includes('Earlier concept artwork. Updated'),'Replace staging artwork before publishing');
 execFileSync('git',['-c','core.safecrlf=false','diff','--quiet',base,'--','content/news.json','content/publication-history.json','scripts/publish-due-news.mjs','scripts/verify-news-schedule.mjs','feed.xml','assets/palace-web','assets/palace-web.js','assets/palace-web.css','assets/launch-countdown.js','assets/site-config.js'],{cwd:root});
-console.log(JSON.stringify({state:'ready-for-final-visual-QA',base,gameRevision:h.game.sourceRevision,verifiedMedia:media.length,newsAndPalacePreserved:true}));
+console.log(JSON.stringify({state:'local-media-verified',base,gameBundle:h.game.candidateBuild,gameBundleSHA256:h.game.finalBundleSHA256,verifiedMedia:media.length,newsAndPalacePreserved:true,publicDeploymentAuthorized:h.website.publicDeploymentAuthorized===true,pushPerformed:false}));

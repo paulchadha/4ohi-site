@@ -1,79 +1,177 @@
 {
-  "verificationStatus": "pending-final-game-runtime-and-media-verification",
+  "verificationStatus": "verified",
   "reference": {
-    "filename": "file_00000000782c81f5b35aacabde8813ed.png",
     "pixelInspectionComplete": true,
-    "verifiedConsumerLocalPath": "C:/Users/paulc/AppData/Local/Temp/4ohi-evil-mail-reference-20261027/reference-from-email.png",
+    "source": "Exact user-supplied Gmail self-mail attachment; original Library attachment visually confirmed by parent",
+    "verifiedConsumerLocalPath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\art_source\\references\\2026-10-27\\gmail-reference-20261027.png",
     "sha256": "56ce7d7811d4761c4b1c16d2d6e045205e407820e87ed401b341cf252285c99b",
-    "bytes": 3090036,
     "width": 1536,
     "height": 1024,
-    "source": "User-supplied Gmail self-email attachment; read_attachment retrieval",
-    "usage": "Visual design guide only; not implementation or gameplay evidence."
+    "usage": "Reference concept only. Never publish as an actual gameplay capture."
   },
+  "sourceManifestSHA256": "7c946967ca459c0b872c7d2af5148b2a58256b55cdb1447906daf1ca8a88c295",
+  "sourceVerificationStatus": "GAME_VISUAL_IMPLEMENTATION_SOFTWARE_ANDROID_AND_CANONICAL_INTEGRATION_VERIFIED",
   "game": {
-    "sourceRevision": null,
-    "version": null,
-    "implementedFeatures": [],
+    "baselineRevision": "e1ebfffa483965caf51e2ade96a3631b1eb29c99 plus hash-verified accepted v4 dirty working tree",
+    "sourceRevisionScope": "Baseline commit plus accepted working-tree changes; final build identity is the exact bundle and acceptance hashes below.",
+    "finalBuildVerified": true,
+    "versionCode": 5,
+    "versionName": "1.0",
+    "candidateBuild": "index-DuR4CwCM.js",
+    "finalBundleSHA256": "e409981d3ada0e9d2f893d35c7a1595eb0e0befecbfc8dac0eef07a678e8fcce",
+    "acceptanceSHA256": "109e7185700b13359231c9e92e2956babedbe30cde3d9ad0796bf3263038c186",
+    "canonicalPromotionReceiptSHA256": "b17ce38088450b3c7616a7e75ae5b86afc7174140c375a46fb10e025066dd886",
+    "implementedFeatures": [
+      "Two selectable siblings",
+      "Twelve authored missions in four realms",
+      "Real tower defense and exclusive tower evolutions",
+      "Three equipped spells chosen from four real spells",
+      "Earned Doom Points",
+      "Tactical hero Rush",
+      "Offline guest play",
+      "Six functioning Home destinations: Story, Campaign, Heroes, Upgrades, Spells, Achievements",
+      "Responsive framed Boy/Girl selection with actual saved choice and combat stats",
+      "Twelve earned mission nodes and real mission briefing with editable three-slot spell loadout",
+      "Real Hero/Spells/Towers upgrades, costs, unlocks, purchase/equip/respec and saved state",
+      "Actual victory/defeat rewards and battle statistics; save-error exit protection",
+      "Responsive Settings/Achievements/Story and portrait phone layout support"
+    ],
     "plannedFeatures": [],
     "knownLimits": [
       "Native sign-in remains disabled",
       "No Items inventory or new item/XP economy",
       "One selected hero in battle",
-      "Final art and actual gameplay verification still in progress",
-      "No device installation or public release"
+      "No physical-device installation or performance test",
+      "No public game deployment or public APK download authorized",
+      "Twelve earned campaign clears use accelerated simulation plus exact hashed saved-profile continuation, not a real-time hardware campaign"
     ],
     "selectableHeroesVerified": [
       "boy",
       "girl"
     ],
-    "checkpointStatus": "Implementation checkpoint reported by parent; final artwork, visual/gameplay QA and Android build pending. This is not verified public feature evidence.",
-    "baselineRevision": "e1ebfffa483965caf51e2ade96a3631b1eb29c99 plus hash-verified accepted v4 dirty working tree",
-    "finalBuildVerified": false
+    "physicalDeviceTested": false
   },
-  "catalogTile": null,
-  "detailHero": null,
-  "gallery": [],
-  "website": {
-    "stableProductId": "evil-doom-boy",
-    "canonicalRoute": "/games/evil-doom-boy/",
-    "newPublicDownloadAuthorized": false,
-    "newPlayableRuntimeAuthorized": false,
-    "additionalNewsPublicationAuthorized": false,
-    "finalPublicationHandoffReady": false
+  "catalogTile": {
+    "src": "assets/evil-doom/reference-20261027/home-key-art-1a457b097664.webp",
+    "sha256": "1a457b09766446c070cb31f594530a4d970371cb4ce5a84e87dfe12110f9ddf1",
+    "width": 1672,
+    "height": 941,
+    "bytes": 544552,
+    "kind": "product-artwork",
+    "alt": "Original illustrated title backdrop. Two hooded siblings face a bright castle and waterfall valley.",
+    "caption": "Original production key art; live game title/buttons are separate. Not a gameplay screenshot.",
+    "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+    "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\home.webp",
+    "platformAndBuild": "Original art installed in final index-DuR4CwCM.js productionwebpayload and verifiedversion5localAPK."
+  },
+  "detailHero": {
+    "src": "assets/evil-doom/reference-20261027/home-key-art-1a457b097664.webp",
+    "sha256": "1a457b09766446c070cb31f594530a4d970371cb4ce5a84e87dfe12110f9ddf1",
+    "width": 1672,
+    "height": 941,
+    "bytes": 544552,
+    "kind": "product-artwork",
+    "alt": "Original illustrated title backdrop. Two hooded siblings face a bright castle and waterfall valley.",
+    "caption": "Original production key art; live game title/buttons are separate. Not a gameplay screenshot.",
+    "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+    "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\home.webp",
+    "platformAndBuild": "Original art installed in final index-DuR4CwCM.js productionwebpayload and verifiedversion5localAPK."
   },
   "heroPortraits": {
     "boy": {
-      "id": "boy",
       "src": "assets/evil-doom/reference-20261027/boy-portrait-ac14a93083bf.webp",
       "sha256": "ac14a93083bf200c087e64a24a1eda249e4acbaa74a6285c813bd6d2177006ea",
       "width": 1024,
       "height": 1024,
       "bytes": 245548,
       "kind": "product-artwork",
-      "hasTrueAlpha": true,
       "alt": "Evil Doom Boy, a small hooded defender with glowing white eyes, a purple scarf and a violet blade.",
       "caption": "Original character artwork for Evil Doom Boy. Static illustration; battle animation uses separate production frames.",
-      "provenance": "docs/EVIL-DOOM-CHARACTER-ART-2026-10-27.json",
-      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\boy-portrait.webp",
-      "sourceSHA256": "1093c4873cffe5c556ec0c7d69b61cda3e01949b4710a65644f5558a62f55679"
+      "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\boy-portrait.webp"
     },
     "girl": {
-      "id": "girl",
       "src": "assets/evil-doom/reference-20261027/girl-portrait-3521b4a6cb23.webp",
       "sha256": "3521b4a6cb2381f71e5f5f69daed3eed95583482919954f283986fa038a2d46a",
       "width": 1024,
       "height": 1024,
       "bytes": 233092,
       "kind": "product-artwork",
-      "hasTrueAlpha": true,
       "alt": "Evil Doom Girl, a hooded defender with glowing white eyes, flowing purple hair and paired violet blades.",
       "caption": "Original character artwork for Evil Doom Girl. Static illustration; battle animation uses separate production frames.",
-      "provenance": "docs/EVIL-DOOM-CHARACTER-ART-2026-10-27.json",
-      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\girl-portrait.webp",
-      "sourceSHA256": "116c0f351a0c462c809e20a12bf44c44d859cf544cd7b04edfcd385b6c18d838"
+      "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\girl-portrait.webp"
     }
   },
-  "sourceManifestSHA256": "72c5c483c9be4afc611f9ad46c2ea10d72fdcadaf4f17d1c255541874409f63c",
-  "sourceVerificationStatus": "PARTIAL_ART_REVIEWED_FINAL_RUNTIME_QA_PENDING"
+  "gallery": [
+    {
+      "src": "assets/evil-doom/reference-20261027/build-home-caa6554b43c2.png",
+      "sha256": "caa6554b43c2c6ccd5d7acf44eff7f78ba901e6ada895b343cae3df4fe431c65",
+      "width": 390,
+      "height": 844,
+      "bytes": 481469,
+      "kind": "browser-development-capture",
+      "alt": "Live Evil Doom Boy Home on a portrait phone viewport, with waterfall art and six working destinations.",
+      "caption": "Actual development menu captured in Chromium at a 390 × 844 phone viewport. Browser preview; physical-device testing remains ahead.",
+      "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\deliverables\\verified-game-media\\evil-doom-boy-v5-home-phone.png",
+      "platformAndBuild": "Final frozen Candidate-03 production web build index-DuR4CwCM.js; Chromium browser capture; same370web files verified inside local version5APK."
+    },
+    {
+      "src": "assets/evil-doom/reference-20261027/build-siblings-100c3a6568e8.png",
+      "sha256": "100c3a6568e8193f08512dbf82337d59e5794da518c4af7d74eba82ee74c738d",
+      "width": 390,
+      "height": 844,
+      "bytes": 252591,
+      "kind": "browser-development-capture",
+      "alt": "The two selectable siblings and their actual combat stats, with Evil Doom Girl selected.",
+      "caption": "Actual sibling-selection menu in the development build, with Girl selected. Your selected sibling follows you into battle.",
+      "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\deliverables\\verified-game-media\\evil-doom-boy-v5-siblings-phone.png",
+      "platformAndBuild": "Final frozen Candidate-03 production web build index-DuR4CwCM.js; Chromium browser capture; same370web files verified inside local version5APK."
+    },
+    {
+      "src": "assets/evil-doom/reference-20261027/build-rush-fcb8b166672a.png",
+      "sha256": "fcb8b166672a852d4152eb501eaed4a48660c4cf9415e54ad8e372d0fc96b3f6",
+      "width": 1280,
+      "height": 720,
+      "bytes": 2089483,
+      "kind": "browser-development-capture",
+      "alt": "Evil Doom Boy uses Tactical Rush against a real group of enemies on Lantern Road.",
+      "caption": "Actual browser gameplay on Lantern Road: Boy uses Tactical Rush during the first wave. Captured from the development build.",
+      "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\deliverables\\verified-game-media\\evil-doom-boy-v5-actual-rush.png",
+      "platformAndBuild": "Final frozen Candidate-03 production web build index-DuR4CwCM.js; Chromium browser capture; same370web files verified inside local version5APK."
+    },
+    {
+      "src": "assets/evil-doom/reference-20261027/build-victory-77c0299ba911.png",
+      "sha256": "77c0299ba91106fbb078893775cc1fd2460bbf638ac448436e6daa3e01f94815",
+      "width": 1280,
+      "height": 720,
+      "bytes": 668150,
+      "kind": "browser-development-capture",
+      "alt": "A real three-star Lantern Road victory awards five Doom Points after eight waves.",
+      "caption": "An earned three-star Lantern Road victory after eight waves, awarding five Doom Points. Actual browser development capture.",
+      "provenance": "docs/EVIL-DOOM-FINAL-MEDIA-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\deliverables\\verified-game-media\\evil-doom-boy-v5-earned-victory.png",
+      "platformAndBuild": "Final frozen Candidate-03 production web build index-DuR4CwCM.js; Chromium browser capture; same370web files verified inside local version5APK."
+    }
+  ],
+  "website": {
+    "stableProductId": "evil-doom-boy",
+    "canonicalRoute": "/games/evil-doom-boy/",
+    "preparedCheckoutReportedByParent": "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-release",
+    "preparedCommitReportedByParent": "19b7a7fd712765b2e842388a82d3491d28a42827",
+    "rootChangedWebsite": false,
+    "finalPublicationHandoffReady": true,
+    "newPublicDownloadAuthorized": false,
+    "newPlayableRuntimeAuthorized": false,
+    "additionalNewsPublicationAuthorized": false,
+    "publicationBoundary": "Separate website owner may finish the approved visual/media updates using these exact assets and truthful facts. This handoff does not add public game/APK distribution or provider/account enablement authority.",
+    "publicDeploymentAuthorized": false,
+    "publicDeploymentStatus": "pending-explicit-owner-authorization",
+    "localIntegrationOnly": true,
+    "pushes": 0,
+    "deployments": 0
+  }
 }

@@ -3,3 +3,7 @@
 @media(max-width:560px){.doom-reference-grid{display:flex;flex-direction:column;align-items:stretch;gap:.85rem}.doom-reference-grid>div{display:contents}.doom-reference-grid .doom-reference-kicker{order:0;margin:0}.doom-reference-grid h1{order:1;margin:.3rem 0}.doom-reference-grid .doom-reference-strap{order:2;margin:.3rem 0}.doom-reference-grid>.doom-reference-keyart{order:3;margin:.4rem 0}.doom-reference-grid .lede{order:4;margin:.3rem 0}.doom-reference-grid .product-detail-status{order:5;margin:.5rem 0}.doom-reference-grid .actions{order:6}.doom-reference-grid .doom-reference-availability{order:7;margin:.5rem 0}}
 
 .doom-reference-page .doom-dual-stage .doom-portrait-caption{font-size:.72rem;line-height:1.55;color:#bcb0cb}.showcase-card[data-showcase-product="evil-doom-boy"] .showcase-art img{object-fit:contain}
+
+.production-tile[href*="games/evil-doom-boy/"] .production-tile-art img{object-fit:contain}
+
+.doom-reference-page .product-journal h2,.doom-reference-page .product-journal h3{color:#0c2038}.doom-reference-page .product-journal .production-eyebrow{color:#8a311d}.doom-reference-page .product-journal .text-link{color:#0757a7}.doom-reference-page .product-journal a:focus-visible{outline-color:#0757a7!important}

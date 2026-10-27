@@ -1,0 +1,70 @@
+{
+  "verifiedAt": "2026-10-27T17:58:41.754Z",
+  "state": "local-reviewed-release-public-authorization-pending",
+  "baseline": "8b8e9553ce3f5c91b4187526a39617b850fe931b",
+  "deterministicBuild": true,
+  "functionalBrowserChecks": 15,
+  "contrastChecks": [
+    {
+      "width": 320,
+      "minimumContrast": 6.366066791110737,
+      "status": "pass"
+    },
+    {
+      "width": 390,
+      "minimumContrast": 6.366066791110737,
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "minimumContrast": 6.366066791110737,
+      "status": "pass"
+    },
+    {
+      "width": 1440,
+      "minimumContrast": 6.366066791110737,
+      "status": "pass"
+    }
+  ],
+  "failure": null,
+  "articleBodiesPreserved": 53,
+  "draftsPreserved": 13,
+  "otherProductsPreserved": 20,
+  "pageTemplateUnchanged": true,
+  "mediaDistinct": 7,
+  "actualBrowserCaptures": 4,
+  "gameBundleSHA256": "e409981d3ada0e9d2f893d35c7a1595eb0e0befecbfc8dac0eef07a678e8fcce",
+  "publicDeploymentAuthorized": false,
+  "pushes": 0,
+  "published": false,
+  "representativeImages": [
+    "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-evidence\\final-local\\first-screen-390.png",
+    "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-evidence\\final-local\\first-screen-1440.png",
+    "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-evidence\\final-local\\index-card-390.png",
+    "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-evidence\\final-local\\victory-slide-390.png",
+    "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-evidence\\final-local\\journal-390.png"
+  ],
+  "relatedCardChecks": [
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "games/thumb-command/",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games/thumb-command/",
+      "width": 1440,
+      "status": "pass"
+    }
+  ],
+  "finalInputSHA256": "dacfb3f52c4721d1bcc8c9c184ef91d87385b1ca5bbbc75420fbd2c1704a9d1f"
+}

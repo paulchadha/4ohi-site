@@ -1,5 +1,7 @@
 # Evil Doom website preparation — October 27, 2026
 
+**Current state:** final game-owned media has been integrated locally. The seven distinct website assets include the title illustration, both sibling portraits and four actual browser captures. The existing prepared page template is unchanged. `content/evil-doom-website-handoff.json` now verifies the game media/build while explicitly recording `publicDeploymentAuthorized: false`. No push, publication or deployment is permitted pending the parent's receipt of explicit owner authorization. See `EVIL-DOOM-PROPOSED-WEBSITE-CHANGES-2026-10-27.md` for the concrete review scope. The preparation and partial-handoff notes below describe earlier checkpoints.
+
 This separate artwork/page request follows today's completed SOVINTO publication at `8b8e9553ce3f5c91b4187526a39617b850fe931b`. It publishes no news article. The current page and catalog are being audited while the game owner prepares verified assets and implementation facts.
 
 The canonical product is `/games/evil-doom-boy/`, with one product record and the existing Boy/Girl preview selector, Girmat story and labeled concept imagery. Home has 21 first-grid product tiles and one Evil Doom lower catalog card; Games has one corresponding catalog card plus its shared showcase. The current page presents a story-led title block, hero previews and a generated image gallery. The current public product page exposes no APK/private Drive link.
