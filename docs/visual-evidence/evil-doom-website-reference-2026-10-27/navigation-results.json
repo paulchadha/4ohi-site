@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-10-27T15:56:27.047Z",
+  "legacyRoutes": [
+    {
+      "route": "evil-doom-adventures.html",
+      "status": "pass"
+    },
+    {
+      "route": "evil-doom-boy-adventures.html",
+      "status": "pass"
+    },
+    {
+      "route": "evil-doom-girl-adventures.html",
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-girl/",
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy-adventures/",
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-girl-adventures/",
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-adventures/",
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-adventures-shadow-run/",
+      "status": "pass"
+    }
+  ],
+  "galleryArrows": true,
+  "galleryKeyboard": true,
+  "staticGalleryWithoutJavaScript": true,
+  "provisional": true,
+  "published": false
+}

@@ -1,0 +1,40 @@
+{
+  "verifiedAt": "2026-10-27T15:49:02.185Z",
+  "checks": [
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "provisional": true,
+  "usesEarlierConceptArt": true,
+  "published": false
+}

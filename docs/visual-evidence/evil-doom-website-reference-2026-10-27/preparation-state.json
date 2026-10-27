@@ -1,0 +1,27 @@
+{
+  "state": "reference-inspected-provisional-website-prepared",
+  "verifiedAt": "2026-10-27T15:56:27.558Z",
+  "websiteBase": "8b8e9553ce3f5c91b4187526a39617b850fe931b",
+  "referenceLocalPath": "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-mail-reference-20261027\\reference-from-email.png",
+  "referenceSHA256": "56ce7d7811d4761c4b1c16d2d6e045205e407820e87ed401b341cf252285c99b",
+  "referencePixelsInspected": true,
+  "implementedWebsitePreparation": [
+    "Reference-informed purple/gold product-page shell",
+    "Game-led mobile image order",
+    "Preserved sibling selection, story and canonical navigation",
+    "Scoped home/catalog frame styling",
+    "Caption-preserving gallery slot",
+    "Verified-media pre-publication gate"
+  ],
+  "provisionalAssets": "Earlier concept media clearly labeled; actual new game media not yet supplied",
+  "publishedArticlesUnchanged": 53,
+  "draftsUnchanged": 13,
+  "newsAndScheduleUnchanged": true,
+  "gameProjectWrites": 0,
+  "pushes": 0,
+  "releaseGate": "blocked until verified game-owned assets and implemented/planned feature evidence arrive",
+  "pending": [
+    "Verified catalog tile, hero, portraits and build captures with hashes/dimensions/captions",
+    "Game revision/build, implemented features, planned features and limits"
+  ]
+}

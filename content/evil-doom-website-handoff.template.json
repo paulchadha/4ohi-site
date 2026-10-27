@@ -1,11 +1,15 @@
 {
   "verificationStatus": "pending-game-owner-handoff",
   "reference": {
-    "filename": "1000014446.png",
-    "pixelInspectionComplete": false,
-    "verifiedConsumerLocalPath": null,
-    "sha256": null,
-    "usage": "Visual design guide only; never identify it as a gameplay capture."
+    "filename": "file_00000000782c81f5b35aacabde8813ed.png",
+    "pixelInspectionComplete": true,
+    "verifiedConsumerLocalPath": "C:/Users/paulc/AppData/Local/Temp/4ohi-evil-mail-reference-20261027/reference-from-email.png",
+    "sha256": "56ce7d7811d4761c4b1c16d2d6e045205e407820e87ed401b341cf252285c99b",
+    "bytes": 3090036,
+    "width": 1536,
+    "height": 1024,
+    "source": "User-supplied Gmail self-email attachment; read_attachment retrieval",
+    "usage": "Visual design guide only; not implementation or gameplay evidence."
   },
   "game": {
     "sourceRevision": null,
@@ -13,7 +17,8 @@
     "implementedFeatures": [],
     "plannedFeatures": [],
     "knownLimits": [],
-    "selectableHeroesVerified": []
+    "selectableHeroesVerified": [],
+    "checkpointStatus": "Implementation checkpoint reported by parent; final artwork, visual/gameplay QA and Android build pending. This is not verified public feature evidence."
   },
   "catalogTile": {
     "sourcePath": null,
@@ -21,7 +26,11 @@
     "width": null,
     "height": null,
     "alt": null,
-    "provenance": null
+    "provenance": null,
+    "src": null,
+    "kind": null,
+    "caption": null,
+    "platformAndBuild": null
   },
   "detailHero": {
     "sourcePath": null,
@@ -32,7 +41,8 @@
     "platformAndBuild": null,
     "alt": null,
     "caption": null,
-    "provenance": null
+    "provenance": null,
+    "src": null
   },
   "gallery": [],
   "website": {
@@ -41,5 +51,9 @@
     "newPublicDownloadAuthorized": false,
     "newPlayableRuntimeAuthorized": false,
     "additionalNewsPublicationAuthorized": false
+  },
+  "heroPortraits": {
+    "boy": null,
+    "girl": null
   }
 }

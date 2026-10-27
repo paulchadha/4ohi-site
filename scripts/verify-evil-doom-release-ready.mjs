@@ -1,0 +1,37 @@
+import assert from 'node:assert/strict';
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+import { productByKey } from './studio-product-manifest.mjs';
+
+const root=resolve(import.meta.dirname,'..');
+const value=process.argv.indexOf('--base');
+const base=value>=0?process.argv[value+1]:null;
+assert.ok(base&&/^[a-f0-9]{7,40}$/i.test(base),'Pass the reconciled main commit with --base');
+const file=resolve(root,'content/evil-doom-website-handoff.json');
+assert.ok(existsSync(file),'Pending verified game handoff: content/evil-doom-website-handoff.json is absent');
+const h=JSON.parse(readFileSync(file,'utf8'));
+assert.equal(h.verificationStatus,'verified','Pending verified game-owned media and feature facts');
+assert.equal(h.reference?.pixelInspectionComplete,true,'Reference pixels must be inspected');
+assert.match(h.game?.sourceRevision||'',/^[a-f0-9]{7,40}$/i,'Record the verified game source revision');
+assert.ok(Array.isArray(h.game.implementedFeatures)&&Array.isArray(h.game.plannedFeatures)&&Array.isArray(h.game.knownLimits),'Separate implemented, planned and limited behavior');
+const media=[h.catalogTile,h.detailHero,h.heroPortraits?.boy,h.heroPortraits?.girl,...(h.gallery||[])].filter(Boolean);
+assert.ok(h.catalogTile&&h.detailHero,'Verified catalog tile and detail hero are required');
+for(const m of media){
+ assert.match(m.src||'',/^assets\/[a-zA-Z0-9/_\-.]+$/,'Use public repository asset paths');
+ assert.ok(m.alt&&m.caption&&m.provenance,'Every image needs alt, caption and provenance');
+ assert.ok(['product-artwork','concept-art','browser-development-capture','phone-screenshot'].includes(m.kind),'Label artwork and genuine capture types separately');
+ if(m.kind.endsWith('capture')||m.kind==='phone-screenshot')assert.ok(m.platformAndBuild,'Captures need platform and build provenance');
+ assert.ok([m.width,m.height].every(n=>Number.isInteger(n)&&n>0),'Record native dimensions');
+ assert.match(m.sha256||'',/^[a-f0-9]{64}$/i,'Record a complete image SHA-256');
+ const bytes=readFileSync(resolve(root,m.src));
+ assert.equal(createHash('sha256').update(bytes).digest('hex'),m.sha256.toLowerCase(),m.src+' differs from verified handoff');
+}
+assert.equal(productByKey['evil-doom'].artwork,h.catalogTile.src,'Catalog still points at provisional artwork');
+assert.equal(productByKey['evil-doom'].referenceHeroArtwork,h.detailHero.src,'Hero still points at provisional artwork');
+const html=readFileSync(resolve(root,'games/evil-doom-boy/index.html'),'utf8');
+assert.ok(!html.includes('Updated game-owned visuals await verification'),'Remove provisional hero copy before publishing');
+assert.ok(!html.includes('Earlier concept artwork. Updated'),'Replace staging artwork before publishing');
+execFileSync('git',['-c','core.safecrlf=false','diff','--quiet',base,'--','content/news.json','content/publication-history.json','scripts/publish-due-news.mjs','scripts/verify-news-schedule.mjs','feed.xml','assets/palace-web','assets/palace-web.js','assets/palace-web.css','assets/launch-countdown.js','assets/site-config.js'],{cwd:root});
+console.log(JSON.stringify({state:'ready-for-final-visual-QA',base,gameRevision:h.game.sourceRevision,verifiedMedia:media.length,newsAndPalacePreserved:true}));

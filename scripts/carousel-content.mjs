@@ -27,13 +27,14 @@ function productImages(product,content){
 export function withProductGallery(product,content){
  const images=productImages(product,content);
  if(images.length<2)return content;
- const id=product.key==='press-ahead'?'preview':'product-gallery-'+product.key;
+ const id=product.key==='press-ahead'?'preview':product.key==='evil-doom'?'doom-gallery':'product-gallery-'+product.key;
  const slides=images.map(m=>`<figure class="carousel-media"><a class="carousel-media-frame" href="${m.src}" aria-label="Open full-size image: ${esc(m.alt)}"><img src="${m.src}" alt="${esc(m.alt)}" width="1600" height="1000" loading="lazy" draggable="false"></a><figcaption><strong>${esc(m.alt)}</strong><span>${esc(m.caption)}</span></figcaption></figure>`);
  const gallery=carouselMarkup({id,label:product.title+' image gallery',slides});
  if(product.key==='sling-nouveau')content=content.replace(/<div class="bling-worlds">[\s\S]*?<\/div>/,gallery);
  else {
  const section=`<section class="product-swipe-gallery" id="${id}" aria-labelledby="${id}-title"><div class="production-shell"><header><p class="production-eyebrow">${esc(product.title)} · THE GALLERY</p><h2 id="${id}-title">${product.key==='press-ahead'?'Postcards from development.':'The current picture.'}</h2><p>Browse existing artwork and development captures. Each caption explains what you are seeing; previews may evolve.</p></header>${gallery}</div></section>`;
  if(product.key==='press-ahead')content=content.replace(/<section class="pa-preview"[\s\S]*?<\/section>/,section);
+ else if(product.key==='evil-doom'&&content.includes('<div id="doom-gallery" data-doom-gallery-slot></div>'))content=content.replace('<div id="doom-gallery" data-doom-gallery-slot></div>',section);
  else if(content.includes('</header>'))content=content.replace('</header>','</header>'+section);
  else content=content.replace('</section>','</section>'+section);
  }

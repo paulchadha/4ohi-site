@@ -7,6 +7,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/canadian-copy.js": "assets/canadian-copy.js?v=96b90eedf1e7",
   "assets/canadian-mode.js": "assets/canadian-mode.js?v=7c46f3c87bf1",
   "assets/card-game-stories.css": "assets/card-game-stories.css?v=efacb779638c",
+  "assets/evil-doom-reference.css": "assets/evil-doom-reference.css?v=a3862317d565",
   "assets/favicon.png": "assets/favicon.png?v=e3eeb5210a2e",
   "assets/founder-corrections.css": "assets/founder-corrections.css?v=e9c4d7cfa7ab",
   "assets/founder-redesign.css": "assets/founder-redesign.css?v=70777616e8ba",

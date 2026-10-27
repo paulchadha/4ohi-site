@@ -175,6 +175,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/card-game-stories.css">
   <link rel="stylesheet" href="assets/workbench.css">
   <link rel="stylesheet" href="assets/news-visuals.css">
+  ${['/','/games.html','/games/evil-doom-boy/'].includes(path)?'<link rel="stylesheet" href="assets/evil-doom-reference.css">':''}
   <link rel="stylesheet" href="assets/sling-bling.css">
   <link rel="stylesheet" href="assets/swipe-carousel.css">
   <noscript><link rel="stylesheet" href="assets/workbench-nojs.css"></noscript>

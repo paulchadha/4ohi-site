@@ -10,14 +10,14 @@ Keep one Evil Doom product, stable ID `evil-doom-boy`, canonical URL `/games/evi
 
 ## Required inputs before the visual implementation is finalized
 
-1. Inspect actual reference pixels. The attached reference is `1000014446.png`, 1536 × 1024. Do not infer its composition from a caption or asset pointer. Use a supported Library route or an explicitly verified game-owner local handoff. Do not use a partial transfer, strip required metadata, patch transfer helpers, install services, or fetch a raw transfer URL as a workaround. The reference is a design guide, not proof of implemented gameplay and not a gameplay screenshot for the website.
+1. Actual reference pixels have now been inspected from the user's emailed PNG. Local copy: `C:/Users/paulc/AppData/Local/Temp/4ohi-evil-mail-reference-20261027/reference-from-email.png`; dimensions 1536 × 1024; 3,090,036 bytes; SHA-256 `56ce7d7811d4761c4b1c16d2d6e045205e407820e87ed401b341cf252285c99b`. Retrieve it from this verified local path. This was obtained through Gmail's supported attachment read; the failed Library transfer was not bypassed or patched. The reference remains a design guide, not proof of implemented gameplay and not a gameplay screenshot for the website.
 2. Obtain the game owner's verified revision, build/version, implemented feature list, planned features and known limits. Do not present pictured or planned UI as shipped behavior. Retain In Development status and truthful availability.
 3. Obtain exact local paths and SHA-256 values for the approved catalog tile, detail hero and real development captures. Inspect each image. Record native dimensions, source revision/build/platform, a useful alt description and an accurate caption. A browser development capture is not physical-phone evidence; promotional/concept art is not a screenshot.
 4. Use `content/evil-doom-website-handoff.template.json` as a private handoff checklist. Its null fields are pending inputs, not assets to invent. Never publish private Drive links or app packages through this website task.
 
 ## Existing source map
 
-- `scripts/evil-doom-page.mjs`: the existing page, extracted verbatim for scoped work. `scripts/studio-world-pages.mjs` re-exports it so the generator API stays stable.
+- `scripts/evil-doom-page.mjs`: the product page, first extracted verbatim and now prepared with a reference-informed hero, portrait selector, gallery placement and story section. Its local rendering still uses labeled earlier concept art pending verified game-owned assets. `scripts/studio-world-pages.mjs` re-exports it so the generator API stays stable.
 - `scripts/evil-doom-story.mjs`: the exact approved story. Preserve its text; change layout around it rather than rewriting canon casually.
 - `scripts/studio-product-manifest.mjs`: the single current product record, artwork, hero assets, alt text, route and availability.
 - `scripts/production-pages.mjs`: tile-first home grid and lower catalog cards. The shared product artwork also appears on Games cards.
@@ -26,6 +26,12 @@ Keep one Evil Doom product, stable ID `evil-doom-boy`, canonical URL `/games/evi
 - `assets/studio-portfolio.js`: existing Boy/Girl preview selection and `hero` query handling. Preserve keyboard focus, selection state and canonical identity.
 
 ## Page and catalog implementation
+
+The inspected seven-panel reference combines a bright castle/waterfall landscape and hooded siblings with white eyes, purple cloth/energy, dark armor and warm gold trim. It uses dark translucent panels, gold selected-card outlines, cream/white type and prominent purple pill buttons. Its panels depict a title screen, sibling selection, campaign map, mission preparation, battle, upgrades/spells and victory. Those are observations about the supplied design reference only; each corresponding feature or capture still needs game-owner evidence before it becomes a website claim.
+
+The prepared website follows the material palette, strong game-led title/art pairing, purple actions, gold selection treatment and clear screen framing. The original Girmat story is retained below the previews. No reference-screen names, combat roles, rewards, level counts or ability implementations are asserted as verified game features. Replace the visibly labeled older silhouettes/concepts with the verified new media before publishing. The website button says Meet both heroes rather than offering a new playable runtime.
+
+The hero accepts `referenceHeroArtwork`, `referenceHeroAlt`, `referenceHeroWidth`, `referenceHeroHeight` and `referenceHeroCaption` on the existing product record. Populate these only from verified game-owned media; retain truthful explicit fallback labels while preparing locally. Boy/Girl portraits remain the existing `heroArtwork`/`alternateHeroArtwork` inputs. Final captions for genuine captures must replace the provisional concept captions. Never use the emailed collage as a substitute for actual build evidence.
 
 Use the inspected reference and verified game media to update the visual hierarchy of the current page. Aim for a clear game-led first impression, relevant labeled build previews, readable status and a concise path into the existing story and hero selection. This is a proposal for structure, not a claim that the uninspected reference has a particular palette, layout or screen set.
 
@@ -50,6 +56,8 @@ Leave `content/news.json`, all historical article wording/dates/slugs/images/GUI
 Build with `node scripts/build-site.mjs`, run `node scripts/validate-site.mjs`, and verify deterministic output. Run the relevant Evil Doom identity/navigation/responsive checks, adapting assertions only for approved final behavior. Check 320, 390, 768 and 1440px, desktop and touch input, reduced motion, keyboard, meaningful image captions/alt text, complete home/catalog placement and all legacy URLs. Visually inspect full-page and game-media screenshots; source hashes alone do not establish correct rendering.
 
 Compare the final news collection and RSS to the reconciled baseline byte-for-byte. Verify all other product records and protected Palace/countdown files. Confirm remaining draft routes stay absent. Check the public Palace demo still deals, accepts a move and restarts correctly. Keep source/game work read-only.
+
+Run `node scripts/verify-evil-doom-release-ready.mjs --base RECONCILED_MAIN_SHA` with the actual reconciled main commit. It requires a verified `content/evil-doom-website-handoff.json`, complete media hashes/provenance, registry paths that actually use the verified tile and hero, removal of provisional hero copy, and unchanged news/Palace inputs. This gate currently remains blocked pending the game handoff; a successful local shell render does not satisfy it.
 
 Standing authorization covers publishing this finished website change after verified game facts/media are received and these checks pass; no additional user acceptance is required by this prompt. Reconcile remote main immediately before the non-force push, then verify exact remote SHA, successful Pages workflow/deployment, direct live page/home/catalog URLs, live asset hashes and rendered screenshots. An uncertain push must be reconciled before retrying. Report any denied, pending or uncertain action precisely, without changing credentials or routing around a denial.
 
