@@ -1,0 +1,37 @@
+{
+  "state": "partial-art-reviewed-not-publication-ready",
+  "sourceManifestSHA256": "72c5c483c9be4afc611f9ad46c2ea10d72fdcadaf4f17d1c255541874409f63c",
+  "referenceSHA256": "56ce7d7811d4761c4b1c16d2d6e045205e407820e87ed401b341cf252285c99b",
+  "media": [
+    {
+      "id": "boy",
+      "src": "assets/evil-doom/reference-20261027/boy-portrait-ac14a93083bf.webp",
+      "sha256": "ac14a93083bf200c087e64a24a1eda249e4acbaa74a6285c813bd6d2177006ea",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 245548,
+      "kind": "product-artwork",
+      "hasTrueAlpha": true,
+      "alt": "Evil Doom Boy, a small hooded defender with glowing white eyes, a purple scarf and a violet blade.",
+      "caption": "Original character artwork for Evil Doom Boy. Static illustration; battle animation uses separate production frames.",
+      "provenance": "docs/EVIL-DOOM-CHARACTER-ART-2026-10-27.json",
+      "sourceSHA256": "1093c4873cffe5c556ec0c7d69b61cda3e01949b4710a65644f5558a62f55679"
+    },
+    {
+      "id": "girl",
+      "src": "assets/evil-doom/reference-20261027/girl-portrait-3521b4a6cb23.webp",
+      "sha256": "3521b4a6cb2381f71e5f5f69daed3eed95583482919954f283986fa038a2d46a",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 233092,
+      "kind": "product-artwork",
+      "hasTrueAlpha": true,
+      "alt": "Evil Doom Girl, a hooded defender with glowing white eyes, flowing purple hair and paired violet blades.",
+      "caption": "Original character artwork for Evil Doom Girl. Static illustration; battle animation uses separate production frames.",
+      "provenance": "docs/EVIL-DOOM-CHARACTER-ART-2026-10-27.json",
+      "sourceSHA256": "116c0f351a0c462c809e20a12bf44c44d859cf544cd7b04edfcd385b6c18d838"
+    }
+  ],
+  "gameplayCapturesProvided": 0,
+  "finalRuntimeQAVerified": false
+}

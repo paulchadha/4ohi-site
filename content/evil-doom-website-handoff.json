@@ -1,0 +1,79 @@
+{
+  "verificationStatus": "pending-final-game-runtime-and-media-verification",
+  "reference": {
+    "filename": "file_00000000782c81f5b35aacabde8813ed.png",
+    "pixelInspectionComplete": true,
+    "verifiedConsumerLocalPath": "C:/Users/paulc/AppData/Local/Temp/4ohi-evil-mail-reference-20261027/reference-from-email.png",
+    "sha256": "56ce7d7811d4761c4b1c16d2d6e045205e407820e87ed401b341cf252285c99b",
+    "bytes": 3090036,
+    "width": 1536,
+    "height": 1024,
+    "source": "User-supplied Gmail self-email attachment; read_attachment retrieval",
+    "usage": "Visual design guide only; not implementation or gameplay evidence."
+  },
+  "game": {
+    "sourceRevision": null,
+    "version": null,
+    "implementedFeatures": [],
+    "plannedFeatures": [],
+    "knownLimits": [
+      "Native sign-in remains disabled",
+      "No Items inventory or new item/XP economy",
+      "One selected hero in battle",
+      "Final art and actual gameplay verification still in progress",
+      "No device installation or public release"
+    ],
+    "selectableHeroesVerified": [
+      "boy",
+      "girl"
+    ],
+    "checkpointStatus": "Implementation checkpoint reported by parent; final artwork, visual/gameplay QA and Android build pending. This is not verified public feature evidence.",
+    "baselineRevision": "e1ebfffa483965caf51e2ade96a3631b1eb29c99 plus hash-verified accepted v4 dirty working tree",
+    "finalBuildVerified": false
+  },
+  "catalogTile": null,
+  "detailHero": null,
+  "gallery": [],
+  "website": {
+    "stableProductId": "evil-doom-boy",
+    "canonicalRoute": "/games/evil-doom-boy/",
+    "newPublicDownloadAuthorized": false,
+    "newPlayableRuntimeAuthorized": false,
+    "additionalNewsPublicationAuthorized": false,
+    "finalPublicationHandoffReady": false
+  },
+  "heroPortraits": {
+    "boy": {
+      "id": "boy",
+      "src": "assets/evil-doom/reference-20261027/boy-portrait-ac14a93083bf.webp",
+      "sha256": "ac14a93083bf200c087e64a24a1eda249e4acbaa74a6285c813bd6d2177006ea",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 245548,
+      "kind": "product-artwork",
+      "hasTrueAlpha": true,
+      "alt": "Evil Doom Boy, a small hooded defender with glowing white eyes, a purple scarf and a violet blade.",
+      "caption": "Original character artwork for Evil Doom Boy. Static illustration; battle animation uses separate production frames.",
+      "provenance": "docs/EVIL-DOOM-CHARACTER-ART-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\boy-portrait.webp",
+      "sourceSHA256": "1093c4873cffe5c556ec0c7d69b61cda3e01949b4710a65644f5558a62f55679"
+    },
+    "girl": {
+      "id": "girl",
+      "src": "assets/evil-doom/reference-20261027/girl-portrait-3521b4a6cb23.webp",
+      "sha256": "3521b4a6cb2381f71e5f5f69daed3eed95583482919954f283986fa038a2d46a",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 233092,
+      "kind": "product-artwork",
+      "hasTrueAlpha": true,
+      "alt": "Evil Doom Girl, a hooded defender with glowing white eyes, flowing purple hair and paired violet blades.",
+      "caption": "Original character artwork for Evil Doom Girl. Static illustration; battle animation uses separate production frames.",
+      "provenance": "docs/EVIL-DOOM-CHARACTER-ART-2026-10-27.json",
+      "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-27\\task-2\\game\\public\\assets\\reference-20261027\\girl-portrait.webp",
+      "sourceSHA256": "116c0f351a0c462c809e20a12bf44c44d859cf544cd7b04edfcd385b6c18d838"
+    }
+  },
+  "sourceManifestSHA256": "72c5c483c9be4afc611f9ad46c2ea10d72fdcadaf4f17d1c255541874409f63c",
+  "sourceVerificationStatus": "PARTIAL_ART_REVIEWED_FINAL_RUNTIME_QA_PENDING"
+}

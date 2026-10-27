@@ -1,0 +1,53 @@
+{
+  "state": "verified-character-art-staged-final-handoff-pending",
+  "verifiedAt": "2026-10-27T16:41:33.556Z",
+  "isolatedCheckout": "C:\\Users\\paulc\\AppData\\Local\\Temp\\4ohi-evil-website-20261027-release",
+  "sourceManifestSHA256": "72c5c483c9be4afc611f9ad46c2ea10d72fdcadaf4f17d1c255541874409f63c",
+  "portraits": [
+    {
+      "id": "boy",
+      "src": "assets/evil-doom/reference-20261027/boy-portrait-ac14a93083bf.webp",
+      "sha256": "ac14a93083bf200c087e64a24a1eda249e4acbaa74a6285c813bd6d2177006ea",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "kind": "product-artwork"
+    },
+    {
+      "id": "girl",
+      "src": "assets/evil-doom/reference-20261027/girl-portrait-3521b4a6cb23.webp",
+      "sha256": "3521b4a6cb2381f71e5f5f69daed3eed95583482919954f283986fa038a2d46a",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "kind": "product-artwork"
+    }
+  ],
+  "portraitBrowserChecks": 8,
+  "responsiveWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "staticArtCaptionsVerified": true,
+  "nativeDimensionsAndContainFitVerified": true,
+  "newsRecordsPreserved": 53,
+  "draftsPreserved": 13,
+  "publisherAndScheduleUnchanged": true,
+  "oldAssetsAndPalacePreserved": true,
+  "gameProjectWrites": 0,
+  "mainCheckoutWrites": 0,
+  "newArtGeneration": 0,
+  "newPublications": 0,
+  "pushes": 0,
+  "publicationGateBlocked": true,
+  "publicationReady": false,
+  "pending": [
+    "Verified catalog tile and detail hero",
+    "Actual game captures",
+    "Final runtime/feature/publication handoff"
+  ]
+}
