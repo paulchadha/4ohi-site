@@ -291,7 +291,7 @@
     "date": "2026-10-26",
     "scheduledFor": "2026-10-26",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -334,11 +334,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-27",
     "scheduledFor": "2026-10-27",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -348,7 +348,24 @@
           "Preparation cannot guarantee agreement. It can at least give “let me think” something useful to do. SOVINTO remains in development. We are very persuasive in the car afterward. We would like to move some of that talent into the meeting."
         ]
       }
-    ]
+    ],
+    "image": "assets/sovinto/sovinto-tile-1024.png",
+    "imageAlt": "SOVINTO app icon artwork: a gold and silver S on a dark background; not an app screenshot",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Current SOVINTO product artwork, not an app screenshot. This image illustrates the development spotlight; it does not establish a development date or announce a public release.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1024,
+      "height": 1024
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "evidence": "docs/SOVINTO-NEWS-2026-10-27.md",
+      "detail": "Today is the actual publication date of this prepared spotlight. The source does not establish a separate original date for all development work described."
+    }
   },
   {
     "id": "hearts-some-gifts",

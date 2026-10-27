@@ -1,0 +1,21 @@
+{
+  "base": "f037da9dd9381f614d155a9c5ce6c6eed688e875",
+  "today": "2026-10-27",
+  "timeZone": "America/Chicago",
+  "published": [
+    {
+      "slug": "sovinto-prepare-a-position",
+      "planned": "2026-10-27",
+      "published": "2026-10-27"
+    }
+  ],
+  "selectedId": "sovinto-prepare-a-position",
+  "previousPublishedArticles": 52,
+  "publishedArticleCount": 53,
+  "remainingDrafts": 13,
+  "futureScheduledDrafts": 12,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/sovinto/sovinto-tile-1024.png",
+  "imageSHA256": "efcf30fc55aeca7b0744aba2c8749fb6392920b241eeae53c6117c18543726da",
+  "workDate": "undated"
+}

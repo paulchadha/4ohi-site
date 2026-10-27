@@ -1,0 +1,11 @@
+# SOVINTO daily spotlight — October 27, 2026
+
+The approved `sovinto-prepare-a-position` draft is the sole October 27 eligible entry in the revised `content/news.json` queue. The checkout, remote main and successful live Pages build matched `f037da9dd9381f614d155a9c5ce6c6eed688e875` before mutation. Yesterday's Thumb Command article returned 200; today's SOVINTO route returned 404. No article was already dated October 27.
+
+The guarded handoff checks the actual America/Chicago day, absence of a same-day publication, unchanged base, exact due count and ID, and unscheduled GildenSpire backlog before calling the existing publisher with the explicit local date. Its preview returned exactly this draft. The underlying publisher's UTC/batch behavior, queue dates and automation schedule are unchanged. One article is published today, leaving 12 future dated drafts and one unscheduled GildenSpire backlog draft.
+
+The prepared title, description and body are unchanged. They match the source-grounded status in `scripts/sovinto-content.mjs` and `docs/SOVINTO-RELEASE-2026-09-12.md`: the foundation includes local case preparation and general prewritten help; interactive practice, a broader toolset and live AI coaching remain development work. The spotlight guarantees no negotiation outcome and announces no public release or newly shipped feature. October 27 is the actual publication date; no separate historical development date is invented.
+
+The visual is the existing approved `assets/sovinto/sovinto-tile-1024.png`, 1024 × 1024, showing the gold and silver S icon. The shared product manifest and existing SOVINTO article identify this artwork. Caption and alternative text distinguish product artwork from an app screenshot, date evidence or release evidence. No new image generation or app-project writes are involved.
+
+Preservation checks retain the previous 52 article records, dates, visuals and content; all 13 remaining drafts; the Workbench/timeline backfill; tile-first homepage; Funkey/Sling artwork; app pages; countdown; and Palace demo. The previous feature flag moves from Thumb Command to this spotlight, and adjacent article navigation gains the new link. No credentials, grants, security settings, services or schedule changes are included.
