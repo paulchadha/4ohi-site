@@ -1,0 +1,51 @@
+{
+  "verifiedAt": "2026-10-28T13:53:04.814Z",
+  "base": "http://127.0.0.1:63839",
+  "selected": "hearts-some-gifts",
+  "checks": [
+    {
+      "route": "news-hearts-some-gifts.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-hearts-some-gifts.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-hearts-some-gifts.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-hearts-some-gifts.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-hearts.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 55,
+  "draftRoutesExcluded": 12
+}

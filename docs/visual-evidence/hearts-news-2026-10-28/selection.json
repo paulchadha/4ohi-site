@@ -1,0 +1,29 @@
+{
+  "base": "ec56482c53437316fe2d5a4dc95839ccf60be335",
+  "today": "2026-10-28",
+  "timeZone": "America/Chicago",
+  "selectedId": "hearts-some-gifts",
+  "published": [
+    {
+      "slug": "hearts-some-gifts",
+      "planned": "2026-10-28",
+      "published": "2026-10-28"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "existingNonQueuedAnnouncements": [
+    {
+      "id": "auth0-sign-in-rolling-out",
+      "date": "2026-10-28",
+      "scheduledFor": null
+    }
+  ],
+  "previousPublished": 54,
+  "publishedCount": 55,
+  "remainingDrafts": 12,
+  "futureScheduledDrafts": 11,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/card-apps/hearts.webp",
+  "imageSHA256": "d69f6547515b68426062586af41ee09ddf44a0bb14350ddedee9527566d54ea3",
+  "evilDoomReleaseExcluded": true
+}

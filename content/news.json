@@ -12,7 +12,7 @@
       "games",
       "lifestyle-apps"
     ],
-    "featured": true,
+    "featured": false,
     "image": "assets/brand-mark-4oh.webp",
     "imageAlt": "Four of Hearts Interactive studio mark with a red heart and coloured card-suit accents",
     "media": {
@@ -465,11 +465,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-28",
     "scheduledFor": "2026-10-28",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -479,7 +479,25 @@
           "A readable hand, clear turns, and an understandable table matter. The queen of spades already supplies enough tension. She does not need help from the interface. We are working on being gracious. We would also very much like to win."
         ]
       }
-    ]
+    ],
+    "image": "assets/card-apps/hearts.webp",
+    "imageAlt": "Hearts development browser table with a player hand and three local bot opponents",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development browser capture",
+      "caption": "Actual Hearts development browser capture of a local bot table. Current builds may differ. This image illustrates the spotlight; it does not establish the date of the underlying work or announce a public release.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 1000,
+      "height": 500
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-10-28",
+      "evidence": "docs/HEARTS-NEWS-2026-10-28.md",
+      "detail": "October 28 is the actual publication date of this prepared spotlight. The source does not establish a separate original date for every development activity described."
+    }
   },
   {
     "id": "funky-town-buildings-express-themselves",
