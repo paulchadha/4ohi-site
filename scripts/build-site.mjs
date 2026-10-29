@@ -3,6 +3,7 @@ import { withProductGallery } from "./carousel-content.mjs";
 import { pressAheadPage, pressAheadStyles } from "./press-ahead-content.mjs";
 import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
+import { cardRoomMedia } from "./card-room-media.mjs";
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
@@ -419,7 +420,7 @@ write("lifestyle-apps.html", page({
 write("whomly.html", whomlyPage({page,company,siteUrl,product:gameByKey.whomly}));
 write("sleep-amigo.html", sleepAmigoPage({page,company,siteUrl,product:gameByKey["sleep-amigo"]}));
 
-for(const [key,g] of Object.entries(cardGames)){write(cardRoute(key),page({title:g.title+" | Four of Hearts Interactive",description:g.intro,path:"/"+cardRoute(key),current:"games",bodyClass:"card-game-page",image:"assets/card-apps/"+key+".webp",imageAlt:g.title+" app visual",content:cardGamePage(key)}));}
+for(const [key,g] of Object.entries(cardGames)){write(cardRoute(key),page({title:g.title+" | Four of Hearts Interactive",description:g.intro,path:"/"+cardRoute(key),current:"games",bodyClass:"card-game-page",image:cardRoomMedia[key].phone.src,imageAlt:cardRoomMedia[key].phone.alt,content:cardGamePage(key)}));}
 
 write("play.html", page({
   title: "Quick Play | Four of Hearts Interactive",

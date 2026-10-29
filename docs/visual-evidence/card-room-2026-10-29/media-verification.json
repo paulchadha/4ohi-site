@@ -1,0 +1,222 @@
+{
+  "verifiedAt": "2026-10-29T17:53:56.978Z",
+  "baseline": "41cc9ab78a04b4078314fd261f71604b005c87c6",
+  "sourceManifest": {
+    "path": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\deliverables\\WEBSITE-CARD-SCREENSHOTS.json",
+    "sha256": "7153adf11e12c6d6e7b07af739abb309a06c13c51c407a88038513c8be4b4220"
+  },
+  "handoff": {
+    "path": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\deliverables\\WEBSITE-CARD-HANDOFF.md",
+    "sha256": "9e604bf663a7a599ee487f14a7928640d51d100e43ca54aadae3c828e656309f"
+  },
+  "results": {
+    "path": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\PLATFORM-RESULTS.md",
+    "sha256": "81a860f0f80dd0d039eb3dd5817e56eba4ef4d837e73c59b8d352d14debba5bc"
+  },
+  "mediaCount": 14,
+  "games": {
+    "palace": {
+      "phone": {
+        "src": "assets/card-room-20261029/palace-table-phone-f57ef33cba58.png",
+        "sha256": "f57ef33cba5877f0d7686485de0f9e24f2055a4acbf853098908122b295a7e6e",
+        "width": 844,
+        "height": 390,
+        "bytes": 438007,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Palace development table with blue felt, a reserve, draw and pickup piles, and two player hands, phone-landscape browser viewport",
+        "caption": "Actual-source browser capture at 844 × 390. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\palace-table-phone.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      },
+      "tablet": {
+        "src": "assets/card-room-20261029/palace-table-tablet-c53901fdb784.png",
+        "sha256": "c53901fdb78445b33929d0b58c14c1bc9173d5570ec1f0cbfd2e62ed31be0af3",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1189057,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Palace development table with blue felt, a reserve, draw and pickup piles, and two player hands, tablet-sized browser viewport",
+        "caption": "Actual-source browser capture at 1280 × 800. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\palace-table-tablet.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      }
+    },
+    "hearts": {
+      "phone": {
+        "src": "assets/card-room-20261029/hearts-table-phone-9b4883f5c155.png",
+        "sha256": "9b4883f5c15558b84c38ce506d1a829dd4b2a8d4ff40416ac9b7935dca833cf9",
+        "width": 844,
+        "height": 390,
+        "bytes": 421831,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Hearts development table with blue felt, passing controls and a thirteen-card player hand, phone-landscape browser viewport",
+        "caption": "Actual-source browser capture at 844 × 390. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\hearts-table-phone.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      },
+      "tablet": {
+        "src": "assets/card-room-20261029/hearts-table-tablet-d841ca287cb4.png",
+        "sha256": "d841ca287cb4da98e36e13d779abb389d5e62a1f0e7b8d83f4dc883b0d359833",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1271363,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Hearts development table with blue felt, passing controls and a thirteen-card player hand, tablet-sized browser viewport",
+        "caption": "Actual-source browser capture at 1280 × 800. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\hearts-table-tablet.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      }
+    },
+    "spades": {
+      "phone": {
+        "src": "assets/card-room-20261029/spades-table-phone-be5f8036b50d.png",
+        "sha256": "be5f8036b50d15b38544e4bbac58d81fb98cc75990c742ae63c08e1b9707c055",
+        "width": 844,
+        "height": 390,
+        "bytes": 414198,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Spades development table with partnership scores, bid selection and a player hand, phone-landscape browser viewport",
+        "caption": "Actual-source browser capture at 844 × 390. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\spades-table-phone.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      },
+      "tablet": {
+        "src": "assets/card-room-20261029/spades-table-tablet-6079085bab58.png",
+        "sha256": "6079085bab58698680096db21aef47f4b8890556dee139230873ba7b9a865027",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1060015,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Spades development table with partnership scores, bid selection and a player hand, tablet-sized browser viewport",
+        "caption": "Actual-source browser capture at 1280 × 800. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\spades-table-tablet.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      }
+    },
+    "euchre": {
+      "phone": {
+        "src": "assets/card-room-20261029/euchre-table-phone-8716efb90a34.png",
+        "sha256": "8716efb90a347845bacdd5e15fa9153e38f9ab50cd40e4ce4c8e21614fd8c41a",
+        "width": 844,
+        "height": 390,
+        "bytes": 461361,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Euchre development table with a trump upcard, pass/order controls and a five-card hand, phone-landscape browser viewport",
+        "caption": "Actual-source browser capture at 844 × 390. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\euchre-table-phone.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      },
+      "tablet": {
+        "src": "assets/card-room-20261029/euchre-table-tablet-0a836ffc07db.png",
+        "sha256": "0a836ffc07dbe57d1f120fb6efc8b3a1afb75b97b4b89d08312f9aaf23c9a0fe",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1300463,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Euchre development table with a trump upcard, pass/order controls and a five-card hand, tablet-sized browser viewport",
+        "caption": "Actual-source browser capture at 1280 × 800. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\euchre-table-tablet.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      }
+    },
+    "war": {
+      "phone": {
+        "src": "assets/card-room-20261029/war-table-phone-8798a698fcd5.png",
+        "sha256": "8798a698fcd58c6bf7083daf21bae3264f6866a3391fb7397e0039b551fe228f",
+        "width": 844,
+        "height": 390,
+        "bytes": 460173,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "War development table with two local players, card stacks and Flip Both Cards, phone-landscape browser viewport",
+        "caption": "Actual-source browser capture at 844 × 390. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\war-table-phone.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      },
+      "tablet": {
+        "src": "assets/card-room-20261029/war-table-tablet-233b96e7290f.png",
+        "sha256": "233b96e7290f42c3ef770d75c31248bd21c0def468035654a2c19a97412480a3",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1313685,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "War development table with two local players, card stacks and Flip Both Cards, tablet-sized browser viewport",
+        "caption": "Actual-source browser capture at 1280 × 800. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\war-table-tablet.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      }
+    },
+    "solitaire": {
+      "phone": {
+        "src": "assets/card-room-20261029/solitaire-table-phone-9d4fb5e7437a.png",
+        "sha256": "9d4fb5e7437ab3108fd750d1b505b5d850544b7626a480ddeb6e9a105e4e4bd4",
+        "width": 844,
+        "height": 390,
+        "bytes": 396453,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Solitaire development table with stock, foundations, a seven-column tableau and Undo, phone-landscape browser viewport",
+        "caption": "Actual-source browser capture at 844 × 390. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\solitaire-table-phone.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      },
+      "tablet": {
+        "src": "assets/card-room-20261029/solitaire-table-tablet-dcf31809491c.png",
+        "sha256": "dcf31809491cc570007592fb32a8ce83f57b5965ea261627e20411ee70d846bb",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1186354,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Solitaire development table with stock, foundations, a seven-column tableau and Undo, tablet-sized browser viewport",
+        "caption": "Actual-source browser capture at 1280 × 800. Test names and scores are shown. Final physical-device acceptance remains pending.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\design-felt-plane\\solitaire-table-tablet.png",
+        "sourceUsage": "Final shared felt-plane source render; browser, not a physical-device capture."
+      }
+    },
+    "gin-rummy": {
+      "phone": {
+        "src": "assets/card-room-20261029/gin-rummy-table-phone-d9c5d46c4606.png",
+        "sha256": "d9c5d46c460697cafcf22255bd1a70dea60cd0ea7fe3002129fbd019a0c31de6",
+        "width": 844,
+        "height": 390,
+        "bytes": 418501,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Gin Rummy development table with two test hands, stock, a discard pile and a deadwood count, phone-landscape browser viewport",
+        "caption": "Actual-source browser capture at 844 × 390. Test names and scores are shown. An isolated local service was used; the live Host/Join service is unavailable.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\gin-fidelity-fix\\gin-table-phone.png",
+        "sourceUsage": "Final Gin composition, played against isolated local service; not production hosting."
+      },
+      "tablet": {
+        "src": "assets/card-room-20261029/gin-rummy-table-tablet-890977f5f59f.png",
+        "sha256": "890977f5f59fbe5c88ac6406b7df30d6ce5e2fde62e2a382450e7092b43ff918",
+        "width": 1280,
+        "height": 800,
+        "bytes": 1242772,
+        "kind": "browser-development-capture",
+        "label": "Palace-based card-room design, development preview",
+        "alt": "Gin Rummy development table with two test hands, stock, a discard pile and a deadwood count, tablet-sized browser viewport",
+        "caption": "Actual-source browser capture at 1280 × 800. Test names and scores are shown. An isolated local service was used; the live Host/Join service is unavailable.",
+        "sourcePath": "C:\\Users\\paulc\\Documents\\Codex\\2026-10-29\\task\\evidence\\gin-fidelity-fix\\gin-table-tablet.png",
+        "sourceUsage": "Final Gin composition, played against isolated local service; not production hosting."
+      }
+    }
+  },
+  "physicalDeviceAccepted": false,
+  "productionStandingsAvailable": false,
+  "ginLivePrivateRoomsAvailable": false,
+  "staleHomeCapturesExcluded": true,
+  "gameProjectWrites": 0,
+  "publicBinaryUploads": 0,
+  "newQueuedPublications": 0
+}

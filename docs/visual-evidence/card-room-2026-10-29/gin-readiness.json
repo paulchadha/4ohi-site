@@ -1,0 +1,12 @@
+[
+  {
+    "Path": "/gin-rummy/health",
+    "Status": 404,
+    "Method": "anonymous GET"
+  },
+  {
+    "Path": "/gin-rummy/api/state",
+    "Status": 404,
+    "Method": "anonymous GET"
+  }
+]

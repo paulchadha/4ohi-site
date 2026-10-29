@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-10-29T18:06:00.557Z",
+  "base": "41cc9ab78a04b4078314fd261f71604b005c87c6",
+  "selectedMedia": 14,
+  "games": 7,
+  "browserChecks": {
+    "cardPages": 71,
+    "mediaAndGallery": 16,
+    "showcaseAvailability": 2
+  },
+  "publishedArticleBodiesPreserved": 56,
+  "draftsPreserved": 11,
+  "queuedPublicationsToday": 1,
+  "newQueuedPublications": 0,
+  "feedSitemapAndScheduleUnchanged": true,
+  "oldArticleImageBytesPreserved": true,
+  "firstTileGridAndOtherAppsPreserved": true,
+  "evilDoomPreserved": true,
+  "palaceDemoPreserved": true,
+  "deterministicBuild": true,
+  "physicalDeviceAccepted": false,
+  "productionStandingsAvailable": false,
+  "ginLivePrivateRoomsAvailable": false,
+  "gameProjectWrites": 0,
+  "privateBinaryUploads": 0
+}
