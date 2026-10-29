@@ -1,0 +1,87 @@
+{
+  "verifiedAt": "2026-10-29T14:21:14.117Z",
+  "baseline": "7cffab790047c492623f7797e7171aeffadfdb58",
+  "checks": [
+    {
+      "name": "Product page, native assets, gallery, keyboard and reduced motion",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "name": "Product page, native assets, gallery, keyboard and reduced motion",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "name": "Product page, native assets, gallery, keyboard and reduced motion",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "name": "Product page, native assets, gallery, keyboard and reduced motion",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "name": "Current artwork and product link",
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "name": "Current artwork and product link",
+      "route": "index.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "name": "Current artwork and product link",
+      "route": "games.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "name": "Current artwork and product link",
+      "route": "games.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "name": "Eight compatibility routes",
+      "count": 8,
+      "status": "pass"
+    },
+    {
+      "name": "Pointer drag",
+      "status": "pass"
+    },
+    {
+      "name": "Touch swipe",
+      "status": "pass"
+    },
+    {
+      "name": "Actual 15-second automatic advance and pause control",
+      "status": "pass"
+    },
+    {
+      "name": "All four captures reachable without JavaScript",
+      "status": "pass"
+    },
+    {
+      "name": "Palace fixed deal, five legal moves and exact restart",
+      "status": "pass"
+    },
+    {
+      "name": "All 56 published article bodies, 11 drafts, other 20 products, RSS, publisher, canon, Palace and countdown preserved",
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "mediaDistinct": 7,
+  "actualBrowserCaptures": 4,
+  "gameBundleSHA256": "e409981d3ada0e9d2f893d35c7a1595eb0e0befecbfc8dac0eef07a678e8fcce",
+  "publicDeploymentAuthorized": true,
+  "pushes": 0,
+  "published": false
+}

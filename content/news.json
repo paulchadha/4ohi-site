@@ -1,5 +1,89 @@
 [
   {
+    "id": "auth0-sign-in-rolling-out",
+    "slug": "auth0-sign-in-rolling-out",
+    "title": "A proper front door. Hold the moose.",
+    "description": "Auth0 sign-in pages are rolling into development across our games and apps. Less entrance confusion. More getting on with the good stuff, eh?",
+    "date": "2026-10-28",
+    "category": "Development",
+    "tags": [
+      "development",
+      "company",
+      "games",
+      "lifestyle-apps"
+    ],
+    "featured": false,
+    "image": "assets/brand-mark-4oh.webp",
+    "imageAlt": "Four of Hearts Interactive studio mark with a red heart and coloured card-suit accents",
+    "media": {
+      "kind": "studio-artwork",
+      "label": "4OH studio artwork",
+      "caption": "The Four of Hearts Interactive studio mark accompanies this development update. It is artwork, not a login-screen capture.",
+      "evidence": "Existing website studio brand artwork: assets/brand-mark-4oh.webp",
+      "width": 512,
+      "height": 512
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-10-28",
+      "label": "Auth0 sign-in page rollout announced in development",
+      "evidence": "October 28, 2026 user-requested studio sign-in implementation and website announcement",
+      "detail": "Visible sign-in pages are being added across the active source portfolio. Per-app Auth0 configuration and live sign-in verification remain incomplete.",
+      "publicationDate": "2026-10-28"
+    },
+    "body": [
+      {
+        "heading": "Every game. Every app. A clearer way in.",
+        "paragraphs": [
+          "Big workshop news: we’re adding a clear Auth0 sign-in page across our games and apps. Whether you’re heading for a card table, a dragon’s next turn, a gloriously odd little town, or a useful everyday tool, finding the entrance should be the easy part.",
+          "Think of it as putting a proper front door on the workshop. A welcome mat. A readable sign. Somewhere for the moose to wait while we explain that antlers are not a password."
+        ]
+      },
+      {
+        "heading": "A welcome worth getting right",
+        "paragraphs": [
+          "The rollout is focused on an obvious sign-in action, a clear way back when something goes wrong, and honest messages when a particular app’s account connection is still being configured. No mysterious button that silently wanders off into the snow.",
+          "The games keep their own flavour, from a tense card-table decision to a dragon’s next turn, a puzzle expedition, or a gloriously odd little town. A friendly entrance belongs in all of them. Even the dragons have agreed to stop breathing fire on the welcome mat. Mostly.",
+          "The same sign-in-page work also includes our lifestyle apps: SOVINTO, Whomly and Sleep Amigo. Useful tools deserve a welcoming entrance too. They’ve had a long day. Offer them a chair."
+        ]
+      },
+      {
+        "heading": "On the workbench, eh?",
+        "paragraphs": [
+          "This is a development rollout, and availability will vary by product while each connection is configured and tested. It does not mean every app can sign in today, and it does not announce a new public build or release date.",
+          "We’ll share more as those pieces are ready. For now: clearer entrances, friendlier messages, and a little more colour in the welcome. The extra U is complimentary. We’re very generous with vowels."
+        ]
+      }
+    ],
+    "author": "The 4OH Workshop",
+    "articleType": "workbench-brief",
+    "status": "published",
+    "productIds": [
+      "press-ahead",
+      "sling-nouveau",
+      "gin-rummy",
+      "sovinto",
+      "palace",
+      "hearts",
+      "spades",
+      "euchre",
+      "solitaire",
+      "war",
+      "gildenspire",
+      "booyang-city",
+      "funky-town",
+      "thumb-command",
+      "bobby",
+      "evil-doom-boy",
+      "heartstack",
+      "princess-land",
+      "unicorn-land",
+      "whomly",
+      "sleep-amigo"
+    ],
+    "language": "en"
+  },
+  {
     "id": "sling-bling-gold-jewels-and-gravity",
     "slug": "sling-bling-gold-jewels-and-gravity",
     "title": "Gravity is getting a more expensive-looking wardrobe.",
@@ -338,7 +422,7 @@
     "date": "2026-10-27",
     "scheduledFor": "2026-10-27",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -381,8 +465,8 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-28",
     "scheduledFor": "2026-10-28",
     "language": "en",
     "featured": false,
@@ -395,7 +479,25 @@
           "A readable hand, clear turns, and an understandable table matter. The queen of spades already supplies enough tension. She does not need help from the interface. We are working on being gracious. We would also very much like to win."
         ]
       }
-    ]
+    ],
+    "image": "assets/card-apps/hearts.webp",
+    "imageAlt": "Hearts development browser table with a player hand and three local bot opponents",
+    "media": {
+      "kind": "development-capture",
+      "label": "Development browser capture",
+      "caption": "Actual Hearts development browser capture of a local bot table. Current builds may differ. This image illustrates the spotlight; it does not establish the date of the underlying work or announce a public release.",
+      "evidence": "assets/card-apps/provenance.json",
+      "width": 1000,
+      "height": 500
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-10-28",
+      "evidence": "docs/HEARTS-NEWS-2026-10-28.md",
+      "detail": "October 28 is the actual publication date of this prepared spotlight. The source does not establish a separate original date for every development activity described."
+    }
   },
   {
     "id": "funky-town-buildings-express-themselves",
@@ -411,21 +513,39 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-29",
     "scheduledFor": "2026-10-29",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
         "paragraphs": [
-          "Funky Town’s creative direction gives ordinary buildings rather extraordinary prospects. Murals, gardens, music, sculpture, and unusual architecture belong in a town shaped by the player. Our city planning is coming along nicely, provided nobody asks why the bakery has moved three times.",
+          "Funkey Town’s creative direction gives ordinary buildings rather extraordinary prospects. Murals, gardens, music, sculpture, and unusual architecture belong in a town shaped by the player. Our city planning is coming along nicely, provided nobody asks why the bakery has moved three times.",
           "Grow a neighborhood, change its character, and zoom out to see your choices add up. Sensible shoes may be advisable. Sensible buildings are negotiable.",
           "Development continues; this is not an announcement that new building tools or public community features have shipped. There is room for a sensible neighborhood. We have also made room for your other idea."
         ]
       }
-    ]
+    ],
+    "image": "assets/funkey-town/funkey-town-tile-960.webp",
+    "imageAlt": "Original Funkey Town product artwork with a mural-covered neighborhood and the Funkey Town title",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Original Funkey Town product artwork, not a gameplay screenshot. It illustrates the development direction; new building tools and public community features are not announced as shipped.",
+      "evidence": "assets/funkey-town/provenance.json",
+      "width": 960,
+      "height": 960
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-10-29",
+      "evidence": "docs/FUNKEY-NEWS-2026-10-29.md",
+      "detail": "October 29 is the actual publication date of this prepared spotlight. The source does not establish a separate original date for every development activity described."
+    }
   },
   {
     "id": "bobby-defensive-perimeter",

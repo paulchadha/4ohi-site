@@ -1,6 +1,6 @@
 # Proposed Evil Doom Boy website media update
 
-Local release only. No push, publication or deployment is authorized in the current handoff. The parent is awaiting explicit owner authorization after an approval-review rejection of public deployment.
+Historical local review from October 27. The owner explicitly authorized website publication on October 29. This reviewed candidate is now being integrated with the latest daily-news main; current scope and checks are recorded in `SITE-REFRESH-2026-10-29.md`. The original review evidence below remains dated to its actual inspection.
 
 ## Exact proposed public changes
 
@@ -39,4 +39,4 @@ Evidence: `docs/visual-evidence/evil-doom-website-final-local-2026-10-27/browser
 
 Preserve all 53 published news records and their article bodies, all 13 drafts, RSS, the publisher and schedule, the other 20 products, the approved Evil Doom story, Palace assets/controller/fixed deal/replay, and countdown. Keep the original dirty checkout and game project read-only.
 
-An attempted replacement page-authoring file was rejected by automatic approval review as restarting authoring; that action did not execute. The completed safer integration retains the validated page template unchanged and wires only verified media through the existing catalog/gallery system. This is separate from the parent's pending public-deployment authorization.
+An attempted replacement page-authoring file was rejected by automatic approval review as restarting authoring; that action did not execute. The completed safer integration retains the validated page template unchanged and wires only verified media through the existing catalog/gallery system. The deployment authorization was pending at this October 27 checkpoint and was explicitly received on October 29.

@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-10-29T13:17:20.854Z",
+  "base": "441bb2ff1767ef99f0a081f2999fc4a357d6dab4",
+  "selected": "funky-town-buildings-express-themselves",
+  "publicationDay": "2026-10-29",
+  "timeZone": "America/Chicago",
+  "newQueuedPublications": 1,
+  "existingSeparateAuth0AnnouncementPreserved": true,
+  "previousPublishedEntriesPreserved": 55,
+  "remainingDraftsUnchanged": 11,
+  "futureScheduledDrafts": 10,
+  "allExistingArticleBodiesAndVisualsPreserved": true,
+  "adjacentJournalNavigationUpdated": true,
+  "allAppSourceAndAssetsPreserved": true,
+  "tileFirstHomePalaceCountdownPreserved": true,
+  "evilDoomProductPageAndReleaseCheckoutUntouched": true,
+  "primaryDirtyCheckoutUntouched": true,
+  "publisherAndScheduleUnchanged": true,
+  "deterministicBuild": true
+}

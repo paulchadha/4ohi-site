@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-29T13:17:48.577Z",
+  "base": "http://127.0.0.1:52221",
+  "selected": "funky-town-buildings-express-themselves",
+  "checks": [
+    {
+      "route": "news-funky-town-buildings-express-themselves.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-funky-town-buildings-express-themselves.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-funky-town-buildings-express-themselves.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-funky-town-buildings-express-themselves.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-funky-town.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "funky-town.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 56,
+  "draftRoutesExcluded": 11
+}

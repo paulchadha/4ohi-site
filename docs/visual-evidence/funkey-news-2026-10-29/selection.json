@@ -1,0 +1,23 @@
+{
+  "base": "441bb2ff1767ef99f0a081f2999fc4a357d6dab4",
+  "today": "2026-10-29",
+  "timeZone": "America/Chicago",
+  "selectedId": "funky-town-buildings-express-themselves",
+  "published": [
+    {
+      "slug": "funky-town-buildings-express-themselves",
+      "planned": "2026-10-29",
+      "published": "2026-10-29"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "existingNonQueuedAnnouncements": [],
+  "previousPublished": 55,
+  "publishedCount": 56,
+  "remainingDrafts": 11,
+  "futureScheduledDrafts": 10,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/funkey-town/funkey-town-tile-960.webp",
+  "imageSHA256": "870a80d8aec7df625dd1672ee1ac414d6cf03f756190f82b16eb6f5d0d80ea79",
+  "evilDoomReleaseExcluded": true
+}

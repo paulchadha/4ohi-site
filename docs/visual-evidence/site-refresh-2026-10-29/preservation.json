@@ -1,0 +1,34 @@
+{
+  "verifiedAt": "2026-10-29T14:34:19.246Z",
+  "base": "7cffab790047c492623f7797e7171aeffadfdb58",
+  "reviewedCandidate": "7b1db80c61ae424d6707ff04aedce936577c1e27",
+  "publishedArticlesPreserved": 56,
+  "draftsPreserved": 11,
+  "queuedPublicationsToday": 1,
+  "newNewsPublications": 0,
+  "feedAndSitemapUnchanged": true,
+  "publisherAndScheduleUnchanged": true,
+  "cardRulesScoresContinuityAndAvailabilityUnchanged": true,
+  "otherProductRecordsPreserved": 20,
+  "palaceMainEngineAndCountdownPreserved": true,
+  "verifiedDistinctMedia": 7,
+  "actualBrowserCaptures": 4,
+  "newCardImplementationClaims": 0,
+  "privacyStatusAndPolicyUnchanged": true,
+  "deterministicBuild": true,
+  "browserChecks": {
+    "evil": 15,
+    "surfaces": 55,
+    "cards": 71,
+    "readability": 10
+  },
+  "uniqueDesignGoalPages": [
+    "thumb-command",
+    "bobby",
+    "heartstack",
+    "princess-land",
+    "unicorn-land"
+  ],
+  "publicDeploymentAuthorized": true,
+  "pushed": false
+}

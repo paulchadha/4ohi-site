@@ -1,0 +1,152 @@
+{
+  "createdAt": "2026-10-29T14:14:49.790Z",
+  "state": "local-validation-complete",
+  "reconciledMain": "7cffab790047c492623f7797e7171aeffadfdb58",
+  "reviewedEvilDoomCandidate": "7b1db80c61ae424d6707ff04aedce936577c1e27",
+  "newsPublished": 56,
+  "newsDrafts": 11,
+  "queuedPublicationsToday": 1,
+  "newsSourceUnchanged": true,
+  "publicDeploymentAuthorized": true,
+  "scope": [
+    "Verified Evil Doom artwork and four genuine browser captures",
+    "Fresh home/catalog/lifestyle copy",
+    "Distinct design-goal headings for five game pages",
+    "Distinct card-rule headings with rules and implementation status preserved"
+  ],
+  "cardImplementation": {
+    "ownerTask": "01a187fa-61d1-7714-b29f-aecc10711004",
+    "finalProductionHandoffReceived": false,
+    "newShippedClaimsAdded": false,
+    "latestParentCheckpoint": {
+      "localSignedIdentityRankingTests": "passed for Hearts, Spades and Euchre",
+      "productionBackendAndGrants": "unverified",
+      "publicLiveClaimsAdded": false
+    }
+  },
+  "gameRepositoryWrites": 0,
+  "extraNewsPublications": 0,
+  "replacements": [
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "Independent games and useful apps, made in South Dakota. Pull up a chair. We saved you the one that doesn't wobble.",
+      "after": "Independent games and useful apps, made in South Dakota. We started with cards. The dragons seemed like a perfectly reasonable next step."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "Independent games and useful apps, made in South Dakota. Pull up a chair, bud. We saved you the one that doesn't wobble.",
+      "after": "Independent games and useful apps, made in South Dakota. We started with cards, bud. The dragons seemed reasonable at the time."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "Arcade battles, tactical bread dinosaurs, creative play, and card-table arguments worth having.",
+      "after": "Dragons, card tables, and a bread dinosaur with a defense budget. We have several excellent explanations. None are particularly brief."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "Arcade battles, tactical bread dinosaurs, creative play, and card-table arguments settled with excellent manners.",
+      "after": "Dragons, card tables, and a bread dinosaur with a defence budget. Several excellent explanations, all delivered politely."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "A little strategy. A little silliness. A lot of heart.",
+      "after": "Some games ask for a plan. Some ask for good aim. The queen of spades asks whether you have considered having a more difficult afternoon."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "Useful software.<br><em>Less nonsense.</em>",
+      "after": "A little help.<br><em>For the fourteen-tab day.</em>"
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "We like software that actually does something: thoughtful tools, clear decisions, and privacy built into the plan.",
+      "after": "Sleep, research, and a conversation worth preparing for. Three apps in development, for the day your to-do list starts assigning homework."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "Thoughtful tools for real jobs, made by an independent studio that would rather solve the problem than decorate it with jargon.",
+      "after": "Thoughtful tools in development for sleep, people research, and preparation. A little structure for the day your plan acquires subfolders."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "import { newsCardImage } from \"./news-visuals.mjs\";",
+      "after": "import { newsCardImage } from \"./news-visuals.mjs\";\nimport { productVoice } from \"./product-voice.mjs\";"
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "<h2>Clear enough to begin.<br>Interesting enough to continue.</h2>",
+      "after": "<h2>${productVoice[product.key]?.heading||\"A clear idea.<br>Room to make it yours.\"}</h2>"
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "<h3>What we are building</h3><ul><li>A focused product loop with readable choices and responsive feedback.</li><li>An accessible, family-friendly presentation with no dark-pattern design.</li><li>A development process that labels concepts honestly and avoids invented release promises.</li></ul>",
+      "after": "<h3>Design goals</h3><ul>${(productVoice[product.key]?.goals||[\"Readable choices, clear feedback, and room to enjoy the decisions.\",\"A welcoming presentation with development status explained plainly.\"]).map(goal=>`<li>${goal}</li>`).join(\"\")}</ul>"
+    },
+    {
+      "file": "scripts/card-game-pages.mjs",
+      "before": "export const cardGamePage=(key)=>{",
+      "after": "const ruleHeadings={\"palace\":\"Three layers. Several reasons to keep a two.\",\"hearts\":\"The queen has arrived. Try to look pleased.\",\"spades\":\"A promise in numbers. A partnership in practice.\",\"euchre\":\"Small hand. Large opinions.\",\"solitaire\":\"Make room for one more move.\",\"war\":\"A simple flip. An elaborate reaction.\",\"gin-rummy\":\"Ten cards. An impressively casual glance.\"};\nexport const cardGamePage=(key)=>{"
+    },
+    {
+      "file": "scripts/card-game-pages.mjs",
+      "before": "${key==='solitaire'?'Make room for one more move.':'A few rules. A table full of possibilities.'}",
+      "after": "${ruleHeadings[key]}"
+    },
+    {
+      "file": "scripts/card-game-pages.mjs",
+      "before": "${key==='solitaire'?'Your next quiet moment.':'The score has a story.'}",
+      "after": "${key==='solitaire'?'Your next quiet moment.':'Match progress and continuity'}"
+    },
+    {
+      "file": "scripts/studio-expansion-pages.mjs",
+      "before": "Describe who matters. Whomly is designed to help organize public professional sources into useful context, then help you prepare the next conversation.",
+      "after": "Describe who matters. Whomly is being designed to turn public professional sources into useful context for the next conversation. Your browser tabs may finally get a day off."
+    },
+    {
+      "file": "scripts/studio-expansion-pages.mjs",
+      "before": "Sleep information is useful. Knowing what it may mean for tonight is better. Sleep Amigo is designed to turn available information into a clear, supportive game plan.",
+      "after": "Sleep information is useful. Decoding it before breakfast is less appealing. Sleep Amigo is designed to turn available information into a clear, supportive plan."
+    },
+    {
+      "file": "scripts/production-pages.mjs",
+      "before": "Distributed product architecture and SDK inventory require verification before release.",
+      "after": "Privacy details for this product are still being reviewed.",
+      "scope": "Display copy only; privacy status, source profile and policy remain unchanged."
+    }
+  ],
+  "validation": {
+    "verifiedAt": "2026-10-29T14:34:19.246Z",
+    "base": "7cffab790047c492623f7797e7171aeffadfdb58",
+    "reviewedCandidate": "7b1db80c61ae424d6707ff04aedce936577c1e27",
+    "publishedArticlesPreserved": 56,
+    "draftsPreserved": 11,
+    "queuedPublicationsToday": 1,
+    "newNewsPublications": 0,
+    "feedAndSitemapUnchanged": true,
+    "publisherAndScheduleUnchanged": true,
+    "cardRulesScoresContinuityAndAvailabilityUnchanged": true,
+    "otherProductRecordsPreserved": 20,
+    "palaceMainEngineAndCountdownPreserved": true,
+    "verifiedDistinctMedia": 7,
+    "actualBrowserCaptures": 4,
+    "newCardImplementationClaims": 0,
+    "privacyStatusAndPolicyUnchanged": true,
+    "deterministicBuild": true,
+    "browserChecks": {
+      "evil": 15,
+      "surfaces": 55,
+      "cards": 71,
+      "readability": 10
+    },
+    "uniqueDesignGoalPages": [
+      "thumb-command",
+      "bobby",
+      "heartstack",
+      "princess-land",
+      "unicorn-land"
+    ],
+    "publicDeploymentAuthorized": true,
+    "pushed": false
+  },
+  "readabilityFix": "Dark eyebrow text on the paper background of product detail sections"
+}

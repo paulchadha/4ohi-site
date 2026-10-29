@@ -55,3 +55,5 @@
 
 /* Keep the complete Evil Doom title artwork visible in shared related cards. */
 .production-card[href*="games/evil-doom-boy/"] .production-card-art img,.production-tile[href*="games/evil-doom-boy/"] .production-tile-art img{object-fit:contain}
+
+.production-detail-body .production-eyebrow{color:#8a311d}

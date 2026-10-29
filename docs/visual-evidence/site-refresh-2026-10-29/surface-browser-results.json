@@ -1,0 +1,292 @@
+{
+  "verifiedAt": "2026-10-29T14:21:27.998Z",
+  "baseline": "7cffab790047c492623f7797e7171aeffadfdb58",
+  "checks": [
+    {
+      "route": "index.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "lifestyle-apps.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "lifestyle-apps.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "lifestyle-apps.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "lifestyle-apps.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "press-ahead.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "press-ahead.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "sling-nouveau.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "sling-nouveau.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "gin-rummy.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "gin-rummy.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "sovinto.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "sovinto.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "palace.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "palace.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "hearts-play.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "hearts-play.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "spades-play.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "spades-play.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "euchre-play.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "euchre-play.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "solitaire.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "solitaire.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "war.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "war.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "gildenspire.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "gildenspire.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "booyang-city.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "booyang-city.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "funky-town.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "funky-town.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "games/thumb-command/",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games/thumb-command/",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "heartstack-unicorn-blast.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "heartstack-unicorn-blast.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "princess-land-adventures.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "princess-land-adventures.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "unicorn-land-adventures.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "unicorn-land-adventures.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "whomly.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "whomly.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "sleep-amigo.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "sleep-amigo.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "index.html?lang=en-CA",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "uniqueDesignGoalPages": [
+    "thumb-command",
+    "bobby",
+    "heartstack",
+    "princess-land",
+    "unicorn-land"
+  ],
+  "newCardImplementationClaims": 0,
+  "published": false
+}

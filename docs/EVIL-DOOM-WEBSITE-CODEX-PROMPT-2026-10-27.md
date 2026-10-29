@@ -2,7 +2,7 @@
 
 Use this website section in the combined game-and-website prompt pack. The game owner supplies implementation facts and art; this section changes only the existing 4ohi-site repository. Do not create another website, modify game code, generate competing game artwork, or publish a binary or playable game runtime.
 
-**Current boundary: local integration and review only. Do not push, publish or deploy.** The parent reports that the public-deployment request was rejected by approval review and that explicit owner authorization is pending. Game media readiness does not constitute deployment authorization. Keep that distinction in all handoffs.
+**Current boundary as of October 29: owner-authorized website publication after integration and verification.** The owner explicitly requested publication of the website update. This resolves the earlier deployment-authorization hold. Keep game/APK distribution separate: this instruction covers the website media and public copy, and adds no public game binary or playable runtime.
 
 ## Starting point and ownership
 
@@ -63,6 +63,6 @@ Compare the final news collection and RSS to the reconciled baseline byte-for-by
 
 Run `node scripts/verify-evil-doom-release-ready.mjs --base RECONCILED_MAIN_SHA` with the actual reconciled main commit. It checks the final media handoff, exact asset hashes, final bundle/acceptance/receipt identity, actual catalog/hero paths and unchanged news/Palace inputs. The game was accepted as a baseline plus working-tree changes, so do not invent a final clean source commit. Its exact accepted bundle is `index-DuR4CwCM.js`, SHA-256 `e409981d3ada0e9d2f893d35c7a1595eb0e0befecbfc8dac0eef07a678e8fcce`. A successful local media check grants no publication authority.
 
-Public deployment remains on hold pending the parent's receipt of explicit owner authorization. Do not push, publish, deploy, or attempt another route. Once authorization is relayed, reconcile remote main and live state before any approved non-force push, preserving intervening changes. Then verify exact remote SHA, successful Pages workflow/deployment, direct live page/home/catalog URLs, live asset hashes and rendered screenshots. An uncertain push must be reconciled before retrying. Report any denied, pending or uncertain action precisely, without changing credentials or routing around a denial.
+Explicit owner publication authorization was relayed on October 29. Reconcile remote main and live state before the approved non-force push, preserving intervening daily-news changes. Then verify exact remote SHA, successful Pages workflow/deployment, direct live page/home/catalog URLs, live asset hashes and rendered screenshots. The prior rejected public-deployment instruction did not execute; the new authorization permits one retry of that operation. An uncertain push must be reconciled before retrying. If review still denies publication, stop that action and report its exact target and reason without a workaround.
 
 Return the exact commit and Pages evidence, direct live URLs, changed surfaces, verification results and remaining limits. If reference pixels or verified assets/facts are still unavailable, finish independent preparation, state that concrete dependency, and make no claim that the refreshed site is published.

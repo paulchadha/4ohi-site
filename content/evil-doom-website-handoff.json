@@ -168,9 +168,9 @@
     "newPlayableRuntimeAuthorized": false,
     "additionalNewsPublicationAuthorized": false,
     "publicationBoundary": "Separate website owner may finish the approved visual/media updates using these exact assets and truthful facts. This handoff does not add public game/APK distribution or provider/account enablement authority.",
-    "publicDeploymentAuthorized": false,
-    "publicDeploymentStatus": "pending-explicit-owner-authorization",
-    "localIntegrationOnly": true,
+    "publicDeploymentAuthorized": true,
+    "publicDeploymentStatus": "owner-authorized-website-publication-2026-10-29",
+    "localIntegrationOnly": false,
     "pushes": 0,
     "deployments": 0
   }
