@@ -1,5 +1,66 @@
 [
   {
+    "id": "gloze-make-words-make-believe",
+    "slug": "gloze-make-words-make-believe",
+    "title": "Gloze: Make words. Make believe.",
+    "description": "A new word game is taking shape at 4OH. Bring your vocabulary, your best explanation and a remarkably steady face.",
+    "date": "2026-10-30",
+    "publishedAt": "2026-10-30T06:05:51.389Z",
+    "category": "Development",
+    "tags": [
+      "games",
+      "development",
+      "gloze"
+    ],
+    "featured": false,
+    "image": "assets/gloze/g-tile-1024-9f228badb157.webp",
+    "imageAlt": "Gloze brand tile: a bold ink G on warm ivory coated card with a coral lower edge",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current Gloze brand tile",
+      "caption": "Gloze brand artwork following the current coated-card design. This is not a gameplay screenshot; the game is in development with no public playable release announced.",
+      "evidence": "assets/gloze/provenance.json",
+      "width": 1024,
+      "height": 1024
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-10-30",
+      "label": "Gloze joins the 4OH workbench with its current word-game design and concept-art gallery. Implementation and testing are underway.",
+      "evidence": "docs/GLOZE-WEBSITE-2026-10-30.md"
+    },
+    "author": "The 4OH Workshop",
+    "articleType": "development-update",
+    "status": "published",
+    "productIds": [
+      "gloze"
+    ],
+    "language": "en",
+    "body": [
+      {
+        "heading": "A word with you. Possibly an invented one.",
+        "paragraphs": [
+          "Meet Gloze, a new word game in development at Four of Hearts. Its invitation is simple: “Make words. Make believe.” A good vocabulary helps. So does the ability to deliver a deeply questionable explanation without adjusting your collar.",
+          "The design gives both players a full 45 seconds to build a word, then moves to definition challenges. Is that a real word? Does that meaning fit? Should someone who sounds this confident be allowed near a dictionary? These are excellent questions."
+        ]
+      },
+      {
+        "heading": "Give the vowels a little respect.",
+        "paragraphs": [
+          "Useful prizes are part of the plan: choose a letter, find a vowel, earn extra word space, or refresh the possibilities. The shared board is designed to make those rewards clear. We would like the excitement to come from the next good word, rather than discovering what a mysterious badge does.",
+          "A successful invented-word bluff has its own place in the design. It does not magically make the word real. A pleasant typeface and a persuasive nod remain insufficient qualifications for dictionary membership."
+        ]
+      },
+      {
+        "heading": "On the workbench, in full color.",
+        "paragraphs": [
+          "The current direction uses warm ivory, bold ink lettering, cobalt, coral and yellow. The new Gloze page shows the latest six concept references: home, word building, definitions, the prize board, rewards and a bluff reveal. Illustrative names and scores belong to those designs; they are not real match results.",
+          "Bot practice and two-player friend matches are design goals. Implementation and testing are underway; this introduction does not announce a public playable build, online service, store release or download. We will share tested gameplay when it is ready. In the meantime, practise your thoughtful expression. It travels well."
+        ]
+      }
+    ]
+  },
+  {
     "id": "reel-fun-a-fresh-cast",
     "slug": "reel-fun-a-fresh-cast",
     "title": "Reel Fun: a fresh cast. Same enormous grin.",

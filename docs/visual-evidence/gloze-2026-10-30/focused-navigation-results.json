@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-30T06:13:10.025Z",
+  "checks": [
+    {
+      "route": "evil-doom-boy-adventures.html",
+      "canonical": "/games/evil-doom-boy/",
+      "status": "pass"
+    },
+    {
+      "route": "mobile-menu-to-gloze",
+      "status": "pass"
+    }
+  ],
+  "resolvedCrawlTimeout": "Legacy Evil Doom redirect completed in a single-page follow-up; source route/redirect logic unchanged."
+}

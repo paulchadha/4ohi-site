@@ -2,6 +2,7 @@ import { newsMediaInfo, newsVisual, workDateContext, developmentTimeline } from 
 import { withProductGallery } from "./carousel-content.mjs";
 import { pressAheadPage, pressAheadStyles } from "./press-ahead-content.mjs";
 import { reelFunPage, reelFunStyles } from "./reel-fun-content.mjs";
+import { glozePage, glozeStyles } from "./gloze-content.mjs";
 import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
 import { cardRoomMedia } from "./card-room-media.mjs";
@@ -355,8 +356,8 @@ const productMarkup = (product) => page({
   bodyClass:`production-page product-${product.key}`,
   image:product.artwork || "assets/brand-mark-4oh.webp", imageAlt:product.alt || "Four of Hearts Interactive studio mark",
   jsonLd:{"@context":"https://schema.org","@type":product.category === "game" ? "VideoGame" : "SoftwareApplication",name:product.title,description:product.description,applicationCategory:product.type,operatingSystem:"In development",publisher:{"@type":"Organization",name:company},url:`${siteUrl}/${product.infoUrl}`},
-  script: product.key === "reel-fun" ? reelFunStyles : product.key === "press-ahead" ? pressAheadStyles : undefined,
-  content:product.key === "reel-fun" ? reelFunPage() : product.key === "press-ahead" ? pressAheadPage() : product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
+  script: product.key === "gloze" ? glozeStyles : product.key === "reel-fun" ? reelFunStyles : product.key === "press-ahead" ? pressAheadStyles : undefined,
+  content:product.key === "gloze" ? glozePage() : product.key === "reel-fun" ? reelFunPage() : product.key === "press-ahead" ? pressAheadPage() : product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
 });
 const gildenspire = gameByKey.gildenspire;
 const gildenspireMarkup = page({
@@ -406,7 +407,7 @@ write("news-thumb-command-world-tour.html", legacyRedirectPage("Thumb Command st
 write("news-unicorn-land-adventures-development.html", legacyRedirectPage("Unicorn Land story", "news-building-unicorn-land-adventures.html"));
 write("news-welcome-to-four-of-hearts.html", legacyRedirectPage("Studio news", "news.html"));
 write("news-why-were-building-palace.html", legacyRedirectPage("Palace story", "news-palace-019-founder-review.html"));
-["reel-fun","press-ahead","sling-nouveau","bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
+["gloze","reel-fun","press-ahead","sling-nouveau","bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
 write("booyang-city.html", booyangCityPage({page,company,siteUrl,game:gameByKey["booyang-city"]}));
 write("funky-town.html", funkyTownPage({page,company,siteUrl,game:gameByKey["funky-town"]}));
 const evilDoomMarkup = evilDoomPage({ page, company, siteUrl, game: gameByKey["evil-doom"] });
@@ -595,7 +596,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
-  "index.html", "reel-fun.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
+  "index.html", "gloze.html", "reel-fun.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "sling-nouveau.html", "news-archive.html", "news-origins.html", "news-timeline.html", ...productCatalog.map(productArchive),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",

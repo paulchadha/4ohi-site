@@ -1,4 +1,5 @@
 window.FOUR_HEARTS_WORKBENCH_PRODUCT_ALIASES = Object.freeze({
+  "gloze": "gloze",
   "reel-fun": "reel-fun",
   "reel fun": "reel-fun",
   "press-ahead": "press-ahead",
