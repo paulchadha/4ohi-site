@@ -1,0 +1,122 @@
+{
+  "verifiedAt": "2026-10-30T05:27:01.308Z",
+  "base": "http://127.0.0.1:50302",
+  "checks": [
+    {
+      "route": "index.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "reel-fun.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-reel-fun-a-fresh-cast.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-reel-fun.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "reel-fun.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-reel-fun-a-fresh-cast.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-reel-fun.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "reel-fun.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-reel-fun-a-fresh-cast.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-reel-fun.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "reel-fun.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news-reel-fun-a-fresh-cast.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-reel-fun.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "filterAndArticleNavigation": true,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 1440,
+      "filterAndArticleNavigation": true,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "newQueuedPublications": 0,
+  "publicPlayableBuild": false
+}

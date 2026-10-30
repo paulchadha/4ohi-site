@@ -11,7 +11,7 @@ const text=(en,ca)=>`<span data-copy-en="${en.replaceAll('"','&quot;')}" data-co
 const canadianStatus={"Interactive Preview":"Interactive preview. Pull up a chair.","Internal Alpha":"Internal alpha. Still wearing work boots.","In Development":"In development. We measured twice."};
 const canadianCta={gildenspire:"Discover GildenSpire",palace:"Play Palace, bud",hearts:"Meet Hearts",spades:"Meet Spades",euchre:"Meet Euchre",solitaire:"Meet Solitaire",war:"Meet War","thumb-command":"Save Earth, bud",bobby:"See Bobby’s defences","evil-doom":"Meet both heroes",heartstack:"See Unicorn Blast","princess-land":"Visit Princess Land","unicorn-land":"Meet the unicorns",whomly:"Discover Whomly","sleep-amigo":"Meet Sleep Amigo"};
 const status=(product)=>`<span class="production-status"><span aria-hidden="true">●</span> ${text(product.status,canadianStatus[product.status]||product.status)}</span>`;
-const picture=(product,eager=false)=>product.key === "sling-nouveau" ? slingTreatment(true) : `<img src="${product.artwork}" alt="${product.alt}" width="${product.key==='evil-doom'?product.artWidth:1024}" height="${product.key==='evil-doom'?product.artHeight:1024}" ${eager?'fetchpriority="high"':'loading="lazy"'}>`;
+const picture=(product,eager=false)=>product.key === "sling-nouveau" ? slingTreatment(true) : `<img src="${product.artwork}" alt="${product.alt}" width="${['evil-doom','reel-fun'].includes(product.key)?product.artWidth:1024}" height="${['evil-doom','reel-fun'].includes(product.key)?product.artHeight:1024}" ${eager?'fetchpriority="high"':'loading="lazy"'}>`;
 
 const canadianSummary={
  gildenspire:"Raise your dragon, take to the skies, and politely inform anything hostile that the sky is already occupied.",

@@ -1,0 +1,90 @@
+{
+  "verifiedAt": "2026-10-30T05:16:29.922Z",
+  "project": "Reel Fun",
+  "sourceTitle": "Reel Happy",
+  "rename": "Owner requested name-only change to Reel Fun. Source branding image has no embedded title; original visual direction is retained.",
+  "sources": {
+    "kitDriveId": "1Ynj80C7Rokba0P3GgSKKlEKi4JRjPNHz",
+    "artBookDriveId": "13geY_Uua_B45YtlIvC_LIrAdWz5X5pYb",
+    "guideDriveId": "1D7iwV4GpfMQuIn75olmr0OPG20Nwcfdc",
+    "promptsDriveId": "10TUPW4t9dFysDLx9svH8co6xWshTUrEd",
+    "assetManifestSha256": "acaf9d01e60b5cc5ef09b235d64d5b9074bf7e0355cdf85b1fd3cc05438bc879",
+    "contentDesignSha256": "03956e4df1a2267c7334b9456d3cc436ba8b8d1b40b1b876ce370d2e857788d0"
+  },
+  "inspection": "All five distinct source images visually inspected. Icon is text-free; world images are clean static scenery; Sunburst is transparent character artwork. None is a gameplay screenshot.",
+  "designCatalogue": {
+    "fish": 36,
+    "worlds": 6,
+    "status": "Supplied design and source art, not a released-feature count."
+  },
+  "publicBuildAvailable": false,
+  "sourceGameWrites": 0,
+  "media": {
+    "tile-512": {
+      "src": "assets/reel-fun/tile-512-5ed344073fe5.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 91382,
+      "sha256": "5ed344073fe533faf1510e76df441c30a3f1774c01801c99d378525320322d75",
+      "source": "artwork/branding/reel_happy_app_icon.png",
+      "sourceSha256": "27e6b5abc55a164bdf46dfff840a69629889845cd22ceb89b50ab30503347f8b",
+      "kind": "supplied-static-artwork",
+      "transform": "Proportional resize and WebP encoding only; no retouching, new title, cropping or generated imagery."
+    },
+    "tile-1024": {
+      "src": "assets/reel-fun/tile-1024-e52a316f252f.webp",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 242012,
+      "sha256": "e52a316f252fb5b5526ae3cb680604f86423a34133b0c227b3be4eb4ed0b96d3",
+      "source": "artwork/branding/reel_happy_app_icon.png",
+      "sourceSha256": "27e6b5abc55a164bdf46dfff840a69629889845cd22ceb89b50ab30503347f8b",
+      "kind": "supplied-static-artwork",
+      "transform": "Proportional resize and WebP encoding only; no retouching, new title, cropping or generated imagery."
+    },
+    "sunny-pond": {
+      "src": "assets/reel-fun/sunny-pond-21747bca4090.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 475482,
+      "sha256": "21747bca4090f6522d4c8a00fb94908dbad86347923e3b1dcfdef2d32134f091",
+      "source": "artwork/worlds/W01_sunny_pond.png",
+      "sourceSha256": "be7d66f9c77822a2dec7ca88e1be9a5a3ec59a153d0e9e82efa777cf1e5d0571",
+      "kind": "supplied-static-artwork",
+      "transform": "Proportional resize and WebP encoding only; no retouching, new title, cropping or generated imagery."
+    },
+    "coral-cove": {
+      "src": "assets/reel-fun/coral-cove-39a97fe50756.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 417246,
+      "sha256": "39a97fe507560a041df4e6613ce2b87cdd2a2a8835cb5b994bd13fd3c4552998",
+      "source": "artwork/worlds/W02_coral_cove.png",
+      "sourceSha256": "f71ab674a2c016fb84ff3dcce4add7e3cfb5a8d83145b27eaccec54880f98ca5",
+      "kind": "supplied-static-artwork",
+      "transform": "Proportional resize and WebP encoding only; no retouching, new title, cropping or generated imagery."
+    },
+    "glow-lagoon": {
+      "src": "assets/reel-fun/glow-lagoon-bdab09b8784c.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 392102,
+      "sha256": "bdab09b8784c329a39bac0584e1d4aa91315d651070648370d7852c128447906",
+      "source": "artwork/worlds/W03_glow_lagoon.png",
+      "sourceSha256": "b1714588fd970839a196fd4a90191d7f1d4b19e7baff016432a50c7433222882",
+      "kind": "supplied-static-artwork",
+      "transform": "Proportional resize and WebP encoding only; no retouching, new title, cropping or generated imagery."
+    },
+    "sunburst": {
+      "src": "assets/reel-fun/sunburst-6d1a8d5d541a.webp",
+      "width": 960,
+      "height": 960,
+      "bytes": 226530,
+      "sha256": "6d1a8d5d541ae088e60531f1fe9821321ca4c666e9fc87c332fd0489ff46a4a9",
+      "source": "artwork/fish/F001_sunburst.png",
+      "sourceSha256": "d15601c0d99b7af21703e86c8e8d3f003268f4ebfe6b6393d892fb5cd350a351",
+      "kind": "supplied-static-artwork",
+      "transform": "Proportional resize and WebP encoding only; no retouching, new title, cropping or generated imagery."
+    }
+  }
+}

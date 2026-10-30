@@ -10,7 +10,8 @@ const campaign=records.filter(a=>a.scheduledFor).sort((a,b)=>a.scheduledFor.loca
 assert.equal(campaign.length,20);assert.equal(new Set(campaign.flatMap(a=>a.productIds)).size,20);
 assert.equal(records.find(a=>a.id==="press-ahead-a-little-head-start").scheduledFor,"2026-10-23");
 assert.equal(records.find(a=>a.id==="gildenspire-scenic-route").scheduledFor,null);
-assert.deepEqual(new Set(campaign.flatMap(a=>a.productIds)),new Set(productCatalog.filter(p=>p.id!=="gildenspire").map(p=>p.id)));
+// Reel Fun's separately requested introduction does not expand the original daily campaign.
+assert.deepEqual(new Set(campaign.flatMap(a=>a.productIds)),new Set(productCatalog.filter(p=>!["gildenspire","reel-fun"].includes(p.id)).map(p=>p.id)));
 assert.equal(campaign[0].scheduledFor,'2026-10-20');assert.equal(campaign.at(-1).scheduledFor,'2026-11-08');
 const fixture=structuredClone(campaign);fixture.forEach(a=>{a.status='draft';a.date=null;a.featured=false;});
 assert.deepEqual(publishDue(fixture,'2026-10-19'),[]);

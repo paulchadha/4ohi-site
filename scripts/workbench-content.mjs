@@ -60,6 +60,10 @@ export const articleArtworkAttributes = image => image === "assets/sling-bling/m
 export const notePreview = (a, heading = "h3") => `<article class="workbench-note" lang="en" data-original-language translate="no">${newsVisual(a,{variant:"note"})}${meta(a)}${workDateContext(a,{compact:true})}<${heading}><a href="${articleFile(a.slug)}">${escapeHtml(a.title)}</a></${heading}><p>${escapeHtml(a.description)}</p><a class="text-link" href="${articleFile(a.slug)}">Read the development diary <span aria-hidden="true">→</span></a></article>`;
 
 export const workbenchGoals = Object.freeze({
+  "reel-fun": [
+    "Design direction · active development",
+    "A friendly aim, cast and reel loop using the supplied original fish and world artwork. Runtime implementation and testing are underway; these previews do not announce a public playable release. The fish have arrived. The plumbing is receiving our full attention."
+  ],
   "press-ahead": ["Developer testing", "A private 0.2.0 candidate brings 400 existing boards and a cheerful scout. Physical-phone testing and live sign-in/cloud checks remain incomplete. We are pressing ahead; the hat has been very patient."],
   "sling-nouveau": [
     "Design direction",

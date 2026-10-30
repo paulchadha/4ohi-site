@@ -54,6 +54,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/product-authority.js": "assets/product-authority.js?v=6f581402fcf5",
   "assets/production-2026.css": "assets/production-2026.css?v=1139d57c2fd4",
   "assets/production-locales.js": "assets/production-locales.js?v=1f8183142bea",
+  "assets/reel-fun-20261030.css": "assets/reel-fun-20261030.css?v=5092155869d6",
   "assets/release-strip.js": "assets/release-strip.js?v=30895a559a29",
   "assets/responsive-refinements.css": "assets/responsive-refinements.css?v=1840a5bef847",
   "assets/route-home.js": "assets/route-home.js?v=9826ec99fe99",
@@ -83,7 +84,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/swipe-carousel.js": "assets/swipe-carousel.js?v=15e01bacb85f",
   "assets/thumb-command.css": "assets/thumb-command.css?v=78f59cf96671",
   "assets/workbench-nojs.css": "assets/workbench-nojs.css?v=bd027f56fb88",
-  "assets/workbench-products.js": "assets/workbench-products.js?v=14bec24340ff",
+  "assets/workbench-products.js": "assets/workbench-products.js?v=2fa348ecb60e",
   "assets/workbench.css": "assets/workbench.css?v=6ae3d3a783e0",
   "assets/workbench.js": "assets/workbench.js?v=2975ad0290ea"
 });
