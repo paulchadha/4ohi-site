@@ -639,7 +639,7 @@
     "date": "2026-10-29",
     "scheduledFor": "2026-10-29",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -683,11 +683,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-30",
     "scheduledFor": "2026-10-30",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -697,7 +697,26 @@
           "Bobby remains in development, with no public release date announced. This is a closer look at the idea, not a claim that a fresh batch of levels has shipped. Please admire the fortifications. Someone has put a lot of heart into this loaf."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-10-30T13:58:22.091Z",
+    "image": "assets/bobby/bobby-hero-1200.webp",
+    "imageAlt": "Bobby, a smiling bread dinosaur, beneath the Bobby the Breadasaurus title in a colorful volcanic landscape",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Bobby product artwork",
+      "caption": "Original Bobby product artwork, not a gameplay screenshot. This spotlight describes the development direction; it does not announce a new playable build or shipped levels.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1200,
+      "height": 927
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-10-30",
+      "evidence": "docs/BOBBY-NEWS-2026-10-30.md",
+      "detail": "October 30 is the actual publication day of this prepared spotlight. The source does not establish a separate date for each design activity described."
+    }
   },
   {
     "id": "evil-doom-village-objections",

@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-30T14:01:49.505Z",
+  "base": "http://127.0.0.1:64948",
+  "selected": "bobby-defensive-perimeter",
+  "checks": [
+    {
+      "route": "news-bobby-defensive-perimeter.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-bobby-defensive-perimeter.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-bobby-defensive-perimeter.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-bobby-defensive-perimeter.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-bobby.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "bobby-the-breadasaurus.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 59,
+  "draftRoutesExcluded": 10
+}

@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-10-30T14:04:51.778Z",
+  "baseline": "6bdbec2eecdaf2fed730d02783686b83d5d3ce49",
+  "checks": [
+    {
+      "url": "https://4ohi.com/news-bobby-defensive-perimeter.html",
+      "status": 404,
+      "bobbyPublishedGuid": false
+    },
+    {
+      "url": "https://4ohi.com/feed.xml",
+      "status": 200,
+      "bobbyPublishedGuid": false
+    }
+  ]
+}

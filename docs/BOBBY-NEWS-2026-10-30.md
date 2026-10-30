@@ -1,0 +1,11 @@
+# Bobby daily spotlight - October 30, 2026
+
+The approved `bobby-defensive-perimeter` draft is the sole eligible October 30 queued entry. Before modification, the daily checkout was safely fast-forwarded to remote main and successful live Pages commit `6bdbec2eecdaf2fed730d02783686b83d5d3ce49`. Existing untracked Workbench QA files were preserved. The queue preview selected one draft; no queued article was published on the actual America/Chicago local day. Reel Fun and Gloze are separate owner-requested announcements and do not consume the original queue.
+
+The guarded existing handoff checks the explicit local date, checkout/base/branch, exact due count and ID, prior same-day queued publications, original campaign count and unscheduled GildenSpire backlog before calling the existing publisher with that local date. It publishes at most this one draft. No scheduled date, future draft, publisher implementation, schedule, credential, grant, service or security setting changes.
+
+The prepared title, excerpt and body remain unchanged. The spotlight describes Bobby's premise and proposed tower-defense design, explicitly in development with no new shipped-level or public-release claim. October 30 is its actual publication date. A recorded actual-time RSS timestamp accompanies this publication. The development context is an undated retrospective because a separate source-backed historical work date is not established.
+
+The visual is the current catalog artwork, `assets/bobby/bobby-hero-1200.webp`, 1200 x 927. Its pixels were inspected: Bobby is a cheerful bread dinosaur beneath the title in a colorful volcanic landscape. New alternative text describes that image; the caption explicitly identifies product artwork, not a gameplay screenshot or evidence of new released features. No artwork is regenerated or changed.
+
+Preserve all 58 previously published articles, both same-day separate announcements, all app pages, 23-tile home, Gloze/Reel Fun media, shared card-room and Evil Doom updates, countdown and working Palace demo. The sole prior featured flag moves to this spotlight. Ten drafts remain: nine scheduled future entries and the unscheduled GildenSpire backlog. Evidence is retained in `docs/visual-evidence/bobby-news-2026-10-30/`.
