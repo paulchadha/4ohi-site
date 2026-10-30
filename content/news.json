@@ -18,7 +18,7 @@
     "media": {
       "kind": "product-artwork",
       "label": "Original Reel Fun artwork",
-      "caption": "The supplied text-free fish icon, exported for the website under the new Reel Fun name. Source artwork, not a gameplay screenshot or evidence of a public release.",
+      "caption": "Original Reel Fun promotional artwork, not a gameplay screenshot. The game is in development; no public playable release is announced.",
       "evidence": "assets/reel-fun/provenance.json",
       "width": 1024,
       "height": 1024
@@ -26,7 +26,7 @@
     "timeline": {
       "mode": "documented-work",
       "date": "2026-10-30",
-      "label": "Owner-requested Reel Fun website introduction and name-only rebrand using the supplied art and build kit.",
+      "label": "Reel Fun joins the 4OH workbench with original fish and world artwork. Game development and testing are underway.",
       "evidence": "docs/REEL-FUN-WEBSITE-2026-10-30.md"
     },
     "author": "The 4OH Workshop",
