@@ -687,7 +687,7 @@
     "date": "2026-10-30",
     "scheduledFor": "2026-10-30",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -732,11 +732,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-10-31",
     "scheduledFor": "2026-10-31",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -746,7 +746,26 @@
           "Development continues; no public release is announced. Girmat’s alarming presentation should not be mistaken for an approved launch schedule. We have tried being hospitable. The towers are handling the follow-up."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-10-31T13:46:40.560Z",
+    "image": "assets/evil-doom/reference-20261027/build-rush-fcb8b166672a.png",
+    "imageAlt": "Evil Doom Boy using Tactical Rush beside advancing monsters on Lantern Road in a browser development capture",
+    "media": {
+      "kind": "development-capture",
+      "label": "Browser development capture",
+      "caption": "Actual browser development capture: Tactical Rush on Lantern Road. Recorded from the reviewed private build; current builds may differ. No public game release is announced.",
+      "evidence": "content/evil-doom-website-handoff.json",
+      "width": 1280,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-10-31",
+      "evidence": "docs/EVIL-DOOM-NEWS-2026-10-31.md",
+      "detail": "October 31 is the actual publication day of this prepared spotlight. No separate historical date is assigned to the premise and design activities described."
+    }
   },
   {
     "id": "unicorn-blast-rescue-operation",

@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-10-31T13:48:47.098Z",
+  "baseline": "6e07d276307769c253ac3af2a96659873de02eba",
+  "checks": [
+    {
+      "url": "https://4ohi.com/news-evil-doom-village-objections.html",
+      "status": 404,
+      "selectedPublishedGuid": false
+    },
+    {
+      "url": "https://4ohi.com/feed.xml",
+      "status": 200,
+      "selectedPublishedGuid": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "base": "6e07d276307769c253ac3af2a96659873de02eba",
+  "today": "2026-10-31",
+  "timeZone": "America/Chicago",
+  "selectedId": "evil-doom-village-objections",
+  "published": [
+    {
+      "slug": "evil-doom-village-objections",
+      "planned": "2026-10-31",
+      "published": "2026-10-31"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 59,
+  "publishedCount": 60,
+  "remainingDrafts": 9,
+  "futureScheduledDrafts": 8,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/evil-doom/reference-20261027/build-rush-fcb8b166672a.png",
+  "imageSHA256": "fcb8b166672a852d4152eb501eaed4a48660c4cf9415e54ad8e372d0fc96b3f6",
+  "imageKind": "development-capture",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}

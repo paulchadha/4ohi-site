@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-31T13:48:18.319Z",
+  "base": "http://127.0.0.1:56042",
+  "selected": "evil-doom-village-objections",
+  "checks": [
+    {
+      "route": "news-evil-doom-village-objections.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-evil-doom-village-objections.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-evil-doom-village-objections.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-evil-doom-village-objections.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-evil-doom-boy.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "games/evil-doom-boy/",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 60,
+  "draftRoutesExcluded": 9
+}
