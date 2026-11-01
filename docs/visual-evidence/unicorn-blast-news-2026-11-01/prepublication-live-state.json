@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-01T14:10:57.074Z",
+  "baseline": "0b012a8805283520b88efb816cd50ab0d9a5387b",
+  "checks": [
+    {
+      "url": "https://4ohi.com/news-unicorn-blast-rescue-operation.html",
+      "status": 404,
+      "selectedPublishedGuid": false
+    },
+    {
+      "url": "https://4ohi.com/feed.xml",
+      "status": 200,
+      "selectedPublishedGuid": false
+    }
+  ]
+}

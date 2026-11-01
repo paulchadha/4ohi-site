@@ -1,0 +1,24 @@
+{
+  "base": "0b012a8805283520b88efb816cd50ab0d9a5387b",
+  "today": "2026-11-01",
+  "timeZone": "America/Chicago",
+  "selectedId": "unicorn-blast-rescue-operation",
+  "published": [
+    {
+      "slug": "unicorn-blast-rescue-operation",
+      "planned": "2026-11-01",
+      "published": "2026-11-01"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 60,
+  "publishedCount": 61,
+  "remainingDrafts": 8,
+  "futureScheduledDrafts": 7,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/heartstack-2026/heartstack-key-art.webp",
+  "imageSHA256": "8fd346b483750faae811258b4b4391bec4945f3f43889791ab85df577c5b9c67",
+  "imageKind": "product-artwork",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}

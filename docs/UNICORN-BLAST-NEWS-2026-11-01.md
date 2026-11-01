@@ -1,0 +1,11 @@
+# Unicorn Blast daily spotlight - November 1, 2026
+
+The approved `unicorn-blast-rescue-operation` draft is the only eligible November 1 entry in the original daily campaign. Before editing, the daily checkout, remote main and successful live Pages build matched October 31's Evil Doom publication, `0b012a8805283520b88efb816cd50ab0d9a5387b`. The unchanged publisher preview selected only this draft, with no existing queued publication for the actual America/Chicago local day. The local date is derived from the IANA timezone and automatically accounts for the daylight-saving transition.
+
+The existing guarded handoff checks the day, base/branch, same-day queued publications, exact due count and ID, original twenty-record campaign and unscheduled GildenSpire backlog before invoking the unchanged publisher with the explicit local day. At most one queued post is published. No planned date, future draft, publishing logic, automation, credential, grant, security setting or service changes.
+
+Prepared title, excerpt and body are preserved. The story describes the suit-matching, combo and unicorn-rescue design, uses the current Unicorn Blast name, and explicitly announces no new release. November 1 is the actual publication date, with a recorded publication timestamp for RSS. The underlying development context is an undated retrospective; no historical milestone date is invented.
+
+The current product artwork, `assets/heartstack-2026/heartstack-key-art.webp`, is 1254 x 1254 and was visually inspected. It shows a winking rainbow-maned unicorn holding a pink crystal heart, with a rainbow and magical castle behind. The caption identifies development artwork rather than a gameplay screenshot or evidence of newly shipped features. The existing image bytes are unchanged; no art is generated or modified and no game runtime or private binary is uploaded.
+
+All 60 previous published articles, all app pages/media, the 23-tile home, countdown, working Palace demo and unrelated untracked Workbench evidence are preserved. The normal single featured flag moves from October 31's Evil Doom spotlight to this post. Eight drafts remain: seven future scheduled entries and the unscheduled GildenSpire backlog. Evidence is retained in `docs/visual-evidence/unicorn-blast-news-2026-11-01/`.

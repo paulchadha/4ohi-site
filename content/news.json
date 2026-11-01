@@ -736,7 +736,7 @@
     "date": "2026-10-31",
     "scheduledFor": "2026-10-31",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -781,11 +781,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-01",
     "scheduledFor": "2026-11-01",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -795,7 +795,26 @@
           "The game remains in development. Unicorn Blast is the current name; older pages may still mention HeartStack. This spotlight introduces no new release. The unicorns are simply receiving their allotted editorial attention. Restraint was discussed. The unicorns voted for the sparkling option."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-01T14:08:14.785Z",
+    "image": "assets/heartstack-2026/heartstack-key-art.webp",
+    "imageAlt": "A winking rainbow-maned unicorn holding a pink crystal heart beneath a rainbow, with a magical castle behind",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Unicorn Blast product artwork",
+      "caption": "Unicorn Blast development artwork, not a gameplay screenshot. This spotlight discusses the design direction; no new public release or shipped feature is announced.",
+      "evidence": "scripts/studio-product-manifest.mjs",
+      "width": 1254,
+      "height": 1254
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-01",
+      "evidence": "docs/UNICORN-BLAST-NEWS-2026-11-01.md",
+      "detail": "November 1 is the actual publication day of this prepared spotlight. No separate historical date is assigned to the design activities described."
+    }
   },
   {
     "id": "spades-bid-noted",
