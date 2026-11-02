@@ -1,0 +1,24 @@
+{
+  "base": "2d267779fab1664a5fd9a2c5679b4856a0fc8aba",
+  "today": "2026-11-02",
+  "timeZone": "America/Chicago",
+  "selectedId": "spades-bid-noted",
+  "published": [
+    {
+      "slug": "spades-bid-noted",
+      "planned": "2026-11-02",
+      "published": "2026-11-02"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 61,
+  "publishedCount": 62,
+  "remainingDrafts": 7,
+  "futureScheduledDrafts": 6,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/card-room-20261029/spades-table-phone-be5f8036b50d.png",
+  "imageSHA256": "be5f8036b50d15b38544e4bbac58d81fb98cc75990c742ae63c08e1b9707c055",
+  "imageKind": "development-capture",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}

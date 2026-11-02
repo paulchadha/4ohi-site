@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-02T14:57:11.058Z",
+  "baseline": "2d267779fab1664a5fd9a2c5679b4856a0fc8aba",
+  "checks": [
+    {
+      "url": "https://4ohi.com/news-spades-bid-noted.html",
+      "status": 404,
+      "selectedPublishedGuid": false
+    },
+    {
+      "url": "https://4ohi.com/feed.xml",
+      "status": 200,
+      "selectedPublishedGuid": false
+    }
+  ]
+}

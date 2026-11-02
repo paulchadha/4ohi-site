@@ -785,7 +785,7 @@
     "date": "2026-11-01",
     "scheduledFor": "2026-11-01",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -830,11 +830,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-02",
     "scheduledFor": "2026-11-02",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -844,7 +844,26 @@
           "Partnership strategy should provide the complexity. Finding the score should not. This is a developer spotlight, rather than a new release announcement. We bring optimism to the partnership. Our partner would quite reasonably prefer tricks."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-02T14:54:46.920Z",
+    "image": "assets/card-room-20261029/spades-table-phone-be5f8036b50d.png",
+    "imageAlt": "Spades local-bot development table with partnership scores, bid-selection controls and a player hand, captured in a phone-landscape browser viewport",
+    "media": {
+      "kind": "development-capture",
+      "label": "Browser development capture",
+      "caption": "Actual browser development capture of local-bot Spades in the Palace-based card room. Test names and scores are shown; current builds may differ. Public multiplayer is not available.",
+      "evidence": "content/card-room-media-2026-10-29.json",
+      "width": 844,
+      "height": 390
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-02",
+      "evidence": "docs/SPADES-NEWS-2026-11-02.md",
+      "detail": "November 2 is the actual publication day of this prepared spotlight. No separate historical date is assigned to the premise and design activities described."
+    }
   },
   {
     "id": "princess-land-royal-duties",
