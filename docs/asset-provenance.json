@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-22",
+  "updated": "2026-11-02",
   "owner": "Four of Hearts Interactive, LLC",
   "assets": [
     {
@@ -206,6 +206,20 @@
       "sha256": "b1b77b7ed32c27d8fe6cab5ef9586be6474fdbba8c9b68f8e16210f5ceb59ecc",
       "masterFile": "sling-bling-money-monsters-1024.png",
       "masterSha256": "e5fc6b3219dfa233210a01b1e43fe1beca6d1580e43621c41c9fa6593afb09ad"
+    },
+    {
+      "paths": [
+        "assets/bobby/protector-builder/bobby-hero-960.webp",
+        "assets/bobby/protector-builder/bobby-hero-1600.webp",
+        "assets/bobby/protector-builder/bobby-tile-480.webp",
+        "assets/bobby/protector-builder/bobby-tile-800.webp"
+      ],
+      "source": "Founder-supplied Bobby Protector + Builder Artwork package dated 2026-10-31; unchanged source PNGs retained in docs/source-assets/bobby-protector-builder-2026-10-31",
+      "created": "2026-10-31",
+      "commercialUse": "approved by explicit website integration and publication request",
+      "thirdParty": false,
+      "license": "Proprietary Four of Hearts Interactive",
+      "derivatives": "scripts/process-bobby-protector-art.py; complete source composition retained; hashes and dimensions in assets/bobby/protector-builder/provenance.json"
     }
   ]
 }

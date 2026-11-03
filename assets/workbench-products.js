@@ -31,7 +31,7 @@ window.FOUR_HEARTS_WORKBENCH_PRODUCT_ALIASES = Object.freeze({
   "commander-thum-b": "thumb-command",
   "bobby": "bobby",
   "bobby-the-breadasaurus": "bobby",
-  "bobby the breadasaurus": "bobby",
+  "bobby the breadasaurus: tower defense adventures": "bobby",
   "evil-doom-boy": "evil-doom-boy",
   "evil-doom": "evil-doom-boy",
   "evil doom boy": "evil-doom-boy",

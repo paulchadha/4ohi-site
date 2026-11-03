@@ -1,0 +1,26 @@
+/* Bobby artwork stays in its supplied composition; titles and controls remain HTML. */
+.bobby-protector-hero{position:relative;isolation:isolate;min-height:clamp(640px,56.25vw,1000px);padding:0;display:grid;align-items:center;background:#102e47;overflow:hidden}
+.bobby-protector-scenery{position:absolute;inset:0;z-index:-2;display:block}
+.bobby-protector-scenery img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.bobby-protector-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,24,42,.93),rgba(5,24,42,.8) 31%,rgba(5,24,42,.12) 54%,transparent 67%)}
+.bobby-protector-copy{padding-block:3rem}
+.bobby-protector-copy>div{width:43%;max-width:510px}
+.bobby-protector-copy h1{font-size:clamp(2.6rem,4.3vw,4.8rem);line-height:.98;letter-spacing:-.045em;overflow-wrap:normal}
+.bobby-protector-copy .production-detail-summary{font-size:clamp(1rem,1.35vw,1.25rem);max-width:30rem}
+.bobby-protector-copy .production-detail-status{display:grid;gap:.6rem;font-size:.86rem;line-height:1.5}
+.bobby-protector-copy .production-status{font-size:.76rem}
+.bobby-protector-copy .actions{gap:.7rem}
+.bobby-protector-copy .button{min-height:44px;padding:.85rem 1rem}
+.product-bobby .production-card-art.bobby-square-tile{aspect-ratio:1}
+@media(max-width:1000px){
+ .bobby-protector-hero{display:block;min-height:0}
+ .bobby-protector-scenery{position:relative;inset:auto;z-index:0;aspect-ratio:960/540}
+ .bobby-protector-scenery img{height:auto;aspect-ratio:1600/900;object-fit:contain}
+ .bobby-protector-hero::after{display:none}
+ .bobby-protector-copy{padding-block:2rem}
+ .bobby-protector-copy>div{width:100%;max-width:46rem}
+ .bobby-protector-copy h1{font-size:clamp(2.2rem,7.2vw,4rem);max-width:20ch}
+ .bobby-protector-copy .production-detail-summary{max-width:42rem}
+}
+/* Preserve the separately composed square tile everywhere it appears. */
+.production-card-art.bobby-square-tile{aspect-ratio:1}

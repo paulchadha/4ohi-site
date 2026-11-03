@@ -1,0 +1,163 @@
+{
+  "base": "http://127.0.0.1:4216",
+  "results": [
+    {
+      "width": 320,
+      "hero": {
+        "loaded": true,
+        "w": 960,
+        "h": 540,
+        "renderW": 320,
+        "renderH": 180,
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-hero-960.webp",
+        "fit": "contain"
+      },
+      "links": [
+        {
+          "text": "Meet the protector",
+          "href": "/bobby-the-breadasaurus.html#product-gallery-bobby"
+        },
+        {
+          "text": "Back to Games",
+          "href": "/games.html?lang=en"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 390,
+      "hero": {
+        "loaded": true,
+        "w": 960,
+        "h": 540,
+        "renderW": 390,
+        "renderH": 219,
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-hero-960.webp",
+        "fit": "contain"
+      },
+      "links": [
+        {
+          "text": "Meet the protector",
+          "href": "/bobby-the-breadasaurus.html#product-gallery-bobby"
+        },
+        {
+          "text": "Back to Games",
+          "href": "/games.html?lang=en"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "hero": {
+        "loaded": true,
+        "w": 960,
+        "h": 540,
+        "renderW": 768,
+        "renderH": 432,
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-hero-960.webp",
+        "fit": "contain"
+      },
+      "links": [
+        {
+          "text": "Meet the protector",
+          "href": "/bobby-the-breadasaurus.html#product-gallery-bobby"
+        },
+        {
+          "text": "Back to Games",
+          "href": "/games.html?lang=en"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 1024,
+      "hero": {
+        "loaded": true,
+        "w": 1600,
+        "h": 900,
+        "renderW": 1024,
+        "renderH": 640,
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-hero-1600.webp?v=ca9983980dde",
+        "fit": "cover"
+      },
+      "links": [
+        {
+          "text": "Meet the protector",
+          "href": "/bobby-the-breadasaurus.html#product-gallery-bobby"
+        },
+        {
+          "text": "Back to Games",
+          "href": "/games.html?lang=en"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 1440,
+      "hero": {
+        "loaded": true,
+        "w": 1600,
+        "h": 900,
+        "renderW": 1440,
+        "renderH": 810,
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-hero-1600.webp?v=ca9983980dde",
+        "fit": "cover"
+      },
+      "links": [
+        {
+          "text": "Meet the protector",
+          "href": "/bobby-the-breadasaurus.html#product-gallery-bobby"
+        },
+        {
+          "text": "Back to Games",
+          "href": "/games.html?lang=en"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "width": 1920,
+      "hero": {
+        "loaded": true,
+        "w": 1600,
+        "h": 900,
+        "renderW": 1920,
+        "renderH": 1000,
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-hero-1600.webp?v=ca9983980dde",
+        "fit": "cover"
+      },
+      "links": [
+        {
+          "text": "Meet the protector",
+          "href": "/bobby-the-breadasaurus.html#product-gallery-bobby"
+        },
+        {
+          "text": "Back to Games",
+          "href": "/games.html?lang=en"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "tile": {
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-tile-800.webp?v=d6cff9a9bb12",
+        "w": 800,
+        "h": 800,
+        "ratio": "1 / 1"
+      },
+      "status": "pass"
+    },
+    {
+      "route": "games.html",
+      "tile": {
+        "src": "http://127.0.0.1:4216/assets/bobby/protector-builder/bobby-tile-800.webp?v=d6cff9a9bb12",
+        "w": 800,
+        "h": 800,
+        "ratio": "1 / 1"
+      },
+      "status": "pass"
+    }
+  ]
+}

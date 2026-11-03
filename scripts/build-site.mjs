@@ -354,9 +354,9 @@ const productMarkup = (product) => page({
   path:`/${product.infoUrl.replace(/index\.html$/,"")}`,
   current:product.category === "game" ? product.key : "lifestyle",
   bodyClass:`production-page product-${product.key}`,
-  image:product.artwork || "assets/brand-mark-4oh.webp", imageAlt:product.alt || "Four of Hearts Interactive studio mark",
+  image:(product.key === "bobby" ? product.heroArtwork : product.artwork) || "assets/brand-mark-4oh.webp", imageAlt:product.alt || "Four of Hearts Interactive studio mark",
   jsonLd:{"@context":"https://schema.org","@type":product.category === "game" ? "VideoGame" : "SoftwareApplication",name:product.title,description:product.description,applicationCategory:product.type,operatingSystem:"In development",publisher:{"@type":"Organization",name:company},url:`${siteUrl}/${product.infoUrl}`},
-  script: product.key === "gloze" ? glozeStyles : product.key === "reel-fun" ? reelFunStyles : product.key === "press-ahead" ? pressAheadStyles : undefined,
+  script: product.key === "bobby" ? '<link rel="stylesheet" href="assets/bobby-protector-builder.css">' : product.key === "gloze" ? glozeStyles : product.key === "reel-fun" ? reelFunStyles : product.key === "press-ahead" ? pressAheadStyles : undefined,
   content:product.key === "gloze" ? glozePage() : product.key === "reel-fun" ? reelFunPage() : product.key === "press-ahead" ? pressAheadPage() : product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
 });
 const gildenspire = gameByKey.gildenspire;

@@ -1,0 +1,4 @@
+export const bobbyHero = (product, status, summary) => `<header class="production-detail-hero bobby-protector-hero">
+  <picture class="bobby-protector-scenery"><source media="(max-width: 1000px)" srcset="assets/bobby/protector-builder/bobby-hero-960.webp"><img src="${product.heroArtwork}" alt="${product.alt}" width="1600" height="900" fetchpriority="high"></picture>
+  <div class="production-shell bobby-protector-copy"><div><p class="production-eyebrow">${product.genre}</p><h1>${product.title}</h1><p class="production-detail-summary">${summary}</p><div class="production-detail-status">${status}<span>${product.availability}</span></div><div class="actions"><a class="button" href="#product-gallery-bobby">Meet the protector</a><a class="button secondary" href="games.html">Back to Games</a></div></div></div>
+</header>`;

@@ -1,0 +1,47 @@
+{
+  "owner": "Four of Hearts Interactive, LLC",
+  "sourcePackage": "Bobby Protector + Builder Artwork, 2026-10-31",
+  "status": "Founder-supplied static development artwork; not gameplay screenshots",
+  "derivatives": [
+    {
+      "path": "assets/bobby/protector-builder/bobby-hero-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 90360,
+      "sha256": "c4f4f9a8d3553895408023bd2951994ae80d4be4d00d6f7d2a096a4daed7d170",
+      "source": "docs/source-assets/bobby-protector-builder-2026-10-31/bobby_website_hero.png",
+      "sourceSha256": "99f4ff2d98b38bdb5cc82e18031fe08373b1be979db7479b1df1eaadc09dc562",
+      "crop": "none; complete source composition retained"
+    },
+    {
+      "path": "assets/bobby/protector-builder/bobby-hero-1600.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 178460,
+      "sha256": "ca9983980dde7137173d53aedefb9cc6422d3b02dfae21df147a99294f23853b",
+      "source": "docs/source-assets/bobby-protector-builder-2026-10-31/bobby_website_hero.png",
+      "sourceSha256": "99f4ff2d98b38bdb5cc82e18031fe08373b1be979db7479b1df1eaadc09dc562",
+      "crop": "none; complete source composition retained"
+    },
+    {
+      "path": "assets/bobby/protector-builder/bobby-tile-480.webp",
+      "width": 480,
+      "height": 480,
+      "bytes": 49898,
+      "sha256": "811f3820ca9c124cce5b07d153e47aa1c22b576a4dd7d7cf2030415811f0b8d1",
+      "source": "docs/source-assets/bobby-protector-builder-2026-10-31/bobby_website_tile.png",
+      "sourceSha256": "5af4ae83c763b425a84a636cbe9c508aea4da726a7e9924c10625161ed68afe8",
+      "crop": "none; complete source composition retained"
+    },
+    {
+      "path": "assets/bobby/protector-builder/bobby-tile-800.webp",
+      "width": 800,
+      "height": 800,
+      "bytes": 104338,
+      "sha256": "d6cff9a9bb1223d8366c0b713b7ddd697cf3bf1651183197d187e8bedb3abecc",
+      "source": "docs/source-assets/bobby-protector-builder-2026-10-31/bobby_website_tile.png",
+      "sourceSha256": "5af4ae83c763b425a84a636cbe9c508aea4da726a7e9924c10625161ed68afe8",
+      "crop": "none; complete source composition retained"
+    }
+  ]
+}

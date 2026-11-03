@@ -699,15 +699,15 @@
       }
     ],
     "publishedAt": "2026-10-30T13:58:22.091Z",
-    "image": "assets/bobby/bobby-hero-1200.webp",
-    "imageAlt": "Bobby, a smiling bread dinosaur, beneath the Bobby the Breadasaurus title in a colorful volcanic landscape",
+    "image": "assets/bobby/protector-builder/bobby-hero-1600.webp",
+    "imageAlt": "Bobby the Breadasaurus with his shield and builder plan in a sunny bread village",
     "media": {
       "kind": "product-artwork",
-      "label": "Bobby product artwork",
-      "caption": "Original Bobby product artwork, not a gameplay screenshot. This spotlight describes the development direction; it does not announce a new playable build or shipped levels.",
+      "label": "Current Protector + Builder artwork",
+      "caption": "Current static development artwork supplied October 31, 2026; not a gameplay screenshot or evidence of the date of work described.",
       "evidence": "scripts/studio-product-manifest.mjs",
-      "width": 1200,
-      "height": 927
+      "width": 1600,
+      "height": 900
     },
     "timeline": {
       "mode": "undated-retrospective",
@@ -1536,15 +1536,15 @@
       "bobby"
     ],
     "language": "en",
-    "image": "assets/bobby/bobby-hero-1200.webp",
-    "imageAlt": "Bobby the Breadasaurus: current product artwork",
+    "image": "assets/bobby/protector-builder/bobby-hero-1600.webp",
+    "imageAlt": "Bobby the Breadasaurus with his shield and builder plan in a sunny bread village",
     "media": {
       "kind": "product-artwork",
-      "label": "Current app artwork",
-      "caption": "Current visual: Bobby the Breadasaurus artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "label": "Current Protector + Builder artwork",
+      "caption": "Current static development artwork supplied October 31, 2026; not a gameplay screenshot or evidence of the date of work described.",
       "evidence": "scripts/studio-product-manifest.mjs",
-      "width": 1200,
-      "height": 927
+      "width": 1600,
+      "height": 900
     },
     "timeline": {
       "mode": "undated-retrospective",
@@ -3318,8 +3318,8 @@
       "games"
     ],
     "featured": false,
-    "image": "assets/bobby/bobby-hero-1200.webp",
-    "imageAlt": "Bobby the Breadasaurus: current product artwork",
+    "image": "assets/bobby/protector-builder/bobby-hero-1600.webp",
+    "imageAlt": "Bobby the Breadasaurus with his shield and builder plan in a sunny bread village",
     "body": [
       {
         "heading": "A small hero holds a very busy path",
@@ -3341,11 +3341,11 @@
     "seriesOrder": 5,
     "media": {
       "kind": "product-artwork",
-      "label": "Current app artwork",
-      "caption": "Current visual: Bobby the Breadasaurus artwork, not a gameplay screenshot. The original article wording and publication context are retained.",
+      "label": "Current Protector + Builder artwork",
+      "caption": "Current static development artwork supplied October 31, 2026; not a gameplay screenshot or evidence of the date of work described.",
       "evidence": "scripts/studio-product-manifest.mjs",
-      "width": 1200,
-      "height": 927
+      "width": 1600,
+      "height": 900
     },
     "timeline": {
       "mode": "undated-retrospective",

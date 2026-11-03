@@ -57,3 +57,6 @@
 .production-card[href*="games/evil-doom-boy/"] .production-card-art img,.production-tile[href*="games/evil-doom-boy/"] .production-tile-art img{object-fit:contain}
 
 .production-detail-body .production-eyebrow{color:#8a311d}
+
+/* Bobby uses a separately composed square tile, without the generic card crop. */
+.production-card-art.bobby-square-tile{aspect-ratio:1}
