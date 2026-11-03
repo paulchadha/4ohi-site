@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-11-03T14:39:49.149Z",
+  "base": "aaef61591929e7b519adfb36075ce9bf2549e1cd",
+  "selected": "princess-land-royal-duties",
+  "publicationDay": "2026-11-03",
+  "timeZone": "America/Chicago",
+  "newQueuedPublications": 1,
+  "queuedToday": 1,
+  "previousPublishedArticlesPreserved": 62,
+  "preservedSeparateAnnouncements": [
+    "gloze-make-words-make-believe",
+    "reel-fun-a-fresh-cast"
+  ],
+  "remainingDrafts": 6,
+  "futureScheduledDrafts": 5,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "preparedTitleDescriptionBodyPreserved": true,
+  "allAppPagesAssetsSourcePreserved": true,
+  "tileFirstHomeAnd23TilesPreserved": true,
+  "palaceDemoCountdownPreserved": true,
+  "otherCheckoutsAndUntrackedFilesPreserved": true,
+  "publisherQueueAndScheduleUnchanged": true,
+  "allOldRssItemsPreserved": true,
+  "draftHtmlAbsent": true,
+  "deterministicBuild": true,
+  "gameSourceWrites": 0
+}

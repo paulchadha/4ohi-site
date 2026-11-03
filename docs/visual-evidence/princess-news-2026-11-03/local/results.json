@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-11-03T14:39:51.750Z",
+  "base": "http://127.0.0.1:60642",
+  "selected": "princess-land-royal-duties",
+  "checks": [
+    {
+      "route": "news-princess-land-royal-duties.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-princess-land-royal-duties.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-princess-land-royal-duties.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-princess-land-royal-duties.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-princess-land.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "princess-land-adventures.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 63,
+  "draftRoutesExcluded": 6
+}

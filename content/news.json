@@ -834,7 +834,7 @@
     "date": "2026-11-02",
     "scheduledFor": "2026-11-02",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -879,11 +879,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-03",
     "scheduledFor": "2026-11-03",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -893,7 +893,26 @@
           "This is a spotlight, not a newly released wardrobe or room collection. Development continues, and the royal calendar contains no public launch date. The crown confers many privileges. Instant certainty about curtains is, sadly, not one of them."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-03T14:37:15.125Z",
+    "image": "assets/portfolio-2026/princess-land-card.png",
+    "imageAlt": "Princess Land Adventures product artwork showing a princess in a pink gown and a castle",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Princess Land Adventures product artwork, not a gameplay screenshot. This creative-simulation project remains in development; no public launch date is announced.",
+      "evidence": "docs/ASSET_PROVENANCE.md",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-03",
+      "evidence": "docs/PRINCESS-LAND-NEWS-2026-11-03.md",
+      "detail": "November 3 is the actual publication day of this prepared spotlight. No separate historical date is assigned to the creative-simulation premise and design activities described."
+    }
   },
   {
     "id": "whomly-before-hello",

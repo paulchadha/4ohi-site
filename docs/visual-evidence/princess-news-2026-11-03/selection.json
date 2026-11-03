@@ -1,0 +1,24 @@
+{
+  "base": "aaef61591929e7b519adfb36075ce9bf2549e1cd",
+  "today": "2026-11-03",
+  "timeZone": "America/Chicago",
+  "selectedId": "princess-land-royal-duties",
+  "published": [
+    {
+      "slug": "princess-land-royal-duties",
+      "planned": "2026-11-03",
+      "published": "2026-11-03"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 62,
+  "publishedCount": 63,
+  "remainingDrafts": 6,
+  "futureScheduledDrafts": 5,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/portfolio-2026/princess-land-card.png",
+  "imageSHA256": "41e305773c0d0042082d11b175a055c27bcc0c98145c5bb3bc8b413c2716c226",
+  "imageKind": "product-artwork",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}
