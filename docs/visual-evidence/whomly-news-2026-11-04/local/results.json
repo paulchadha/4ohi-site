@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-11-04T14:44:15.728Z",
+  "base": "http://127.0.0.1:52685",
+  "selected": "whomly-before-hello",
+  "checks": [
+    {
+      "route": "news-whomly-before-hello.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-whomly-before-hello.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-whomly-before-hello.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-whomly-before-hello.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-whomly.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "whomly.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 64,
+  "draftRoutesExcluded": 5
+}

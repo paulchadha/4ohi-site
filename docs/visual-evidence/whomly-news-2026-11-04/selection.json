@@ -1,0 +1,24 @@
+{
+  "base": "c4adf11ca4919aa4e6506d403b893ab68cace689",
+  "today": "2026-11-04",
+  "timeZone": "America/Chicago",
+  "selectedId": "whomly-before-hello",
+  "published": [
+    {
+      "slug": "whomly-before-hello",
+      "planned": "2026-11-04",
+      "published": "2026-11-04"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 63,
+  "publishedCount": 64,
+  "remainingDrafts": 5,
+  "futureScheduledDrafts": 4,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/studio-expansion/whomly-tile-720.webp",
+  "imageSHA256": "ceab096dfa21af0eb3ffcbedd9f74ac4ef2d3be6df0b3a38a3a95fe862424324",
+  "imageKind": "product-artwork",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}

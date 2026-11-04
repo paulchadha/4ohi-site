@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-04T14:44:36.963Z",
+  "build": true,
+  "staticPagesValidated": 154,
+  "newsScheduleAndFuturePrivacy": true,
+  "palaceRulesAndExactReplay": true,
+  "localBrowserChecks": 9,
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "localBrowser": "Microsoft Edge",
+  "localBrowserPageErrors": [],
+  "priorPublishedArticlesPreserved": 63,
+  "appPagesAndCurrentBobbyArtPreserved": true,
+  "unrelatedWorkPreserved": true,
+  "diffCheck": true
+}

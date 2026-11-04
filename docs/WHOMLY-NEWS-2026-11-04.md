@@ -1,0 +1,9 @@
+# Whomly daily spotlight - November 4, 2026
+
+The approved whomly-before-hello draft is the only eligible November 4 entry in the original daily campaign. Remote main and the live home/feed match baseline c4adf11ca4919aa4e6506d403b893ab68cace689. The guarded handoff checks the actual America/Chicago day, unchanged base and branch, no queued publication today, one due ID, original twenty-record campaign and unscheduled GildenSpire backlog. It invokes the existing publisher with the explicit local date.
+
+Prepared title, excerpt and body are unchanged. The proposed public-information discovery, understanding and introduction flow remains in development. No public service, automated contact feature or production release is claimed. November 4 is the actual publication date with an actual RSS timestamp; the broader design context is an undated retrospective, not a fabricated historical milestone.
+
+The visually inspected current app artwork is assets/studio-expansion/whomly-tile-720.webp, 720 x 720, SHA256 ceab096dfa21af0eb3ffcbedd9f74ac4ef2d3be6df0b3a38a3a95fe862424324. It shows a white W within a cyan-to-violet magnifying-glass identity on navy. docs/ASSET_PROVENANCE.md documents the founder-supplied source board and derivative assets. It is labeled app artwork, not a working-app screenshot. No image or app source changes.
+
+All 63 earlier articles, current app pages and Bobby media, the 23-tile homepage, countdown, Palace demo, unchanged daily queue/publisher and unrelated work are preserved. The feature moves from Princess Land to Whomly. Five drafts remain: four future scheduled drafts and the unscheduled GildenSpire backlog. Reviewed build, preservation and responsive evidence is in docs/visual-evidence/whomly-news-2026-11-04/. No credential, grant, security setting or service changes.

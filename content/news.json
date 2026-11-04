@@ -883,7 +883,7 @@
     "date": "2026-11-03",
     "scheduledFor": "2026-11-03",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -928,11 +928,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-04",
     "scheduledFor": "2026-11-04",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -942,7 +942,26 @@
           "Whomly remains in development; no public service or automated contact feature is announced. Research should improve the conversation, not give everyone a reason to leave it. A little preparation can do wonders. We still recommend checking for spinach before the meeting."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-04T14:43:42.593Z",
+    "image": "assets/studio-expansion/whomly-tile-720.webp",
+    "imageAlt": "Whomly app artwork with a white W inside a cyan-to-violet magnifying glass on deep navy",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Whomly app artwork, not a working-app screenshot. Public-information people discovery remains in development; no public service, automated contact feature or launch date is announced.",
+      "evidence": "docs/ASSET_PROVENANCE.md",
+      "width": 720,
+      "height": 720
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-04",
+      "evidence": "docs/WHOMLY-NEWS-2026-11-04.md",
+      "detail": "November 4 is the actual publication day of this prepared spotlight. No separate historical milestone date is assigned to the proposed discovery, research and introduction flow described."
+    }
   },
   {
     "id": "solitaire-excellent-attendance",
