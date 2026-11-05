@@ -1,0 +1,24 @@
+{
+  "base": "0db7a719f37cc498c081c6eb5e91a30ab5f63ae0",
+  "today": "2026-11-05",
+  "timeZone": "America/Chicago",
+  "selectedId": "solitaire-excellent-attendance",
+  "published": [
+    {
+      "slug": "solitaire-excellent-attendance",
+      "planned": "2026-11-05",
+      "published": "2026-11-05"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 64,
+  "publishedCount": 65,
+  "remainingDrafts": 4,
+  "futureScheduledDrafts": 3,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/card-room-20261029/solitaire-table-phone-9d4fb5e7437a.png",
+  "imageSHA256": "9d4fb5e7437ab3108fd750d1b505b5d850544b7626a480ddeb6e9a105e4e4bd4",
+  "imageKind": "development-capture",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}

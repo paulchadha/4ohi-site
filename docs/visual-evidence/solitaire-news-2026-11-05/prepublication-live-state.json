@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-11-05T14:26:36.696Z",
+  "base": "0db7a719f37cc498c081c6eb5e91a30ab5f63ae0",
+  "remoteAndLiveBaselineMatched": true,
+  "articleUrl": "https://4ohi.com/news-solitaire-excellent-attendance.html",
+  "articleStatus": 404,
+  "articleRssGuidAbsent": true,
+  "parity": [
+    {
+      "url": "https://4ohi.com/",
+      "status": 200,
+      "matchesBaseline": true
+    },
+    {
+      "url": "https://4ohi.com/feed.xml",
+      "status": 200,
+      "matchesBaseline": true
+    }
+  ]
+}

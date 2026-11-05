@@ -932,7 +932,7 @@
     "date": "2026-11-04",
     "scheduledFor": "2026-11-04",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -977,11 +977,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-05",
     "scheduledFor": "2026-11-05",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -991,7 +991,26 @@
           "The standalone app remains in development. No need to schedule a rematch with anyone, which does simplify the administration. If you need another deal, we understand. We were just about to suggest the same thing."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-05T14:27:44.366Z",
+    "image": "assets/card-room-20261029/solitaire-table-phone-9d4fb5e7437a.png",
+    "imageAlt": "Solitaire development table with stock, foundations, a seven-column tableau and Undo, captured in a phone-landscape browser viewport",
+    "media": {
+      "kind": "development-capture",
+      "label": "Browser development capture",
+      "caption": "Actual-source browser development capture of local Solitaire in the Palace-based card room. Current builds may differ. This is not a physical-device capture or a public app release.",
+      "evidence": "content/card-room-media-2026-10-29.json",
+      "width": 844,
+      "height": 390
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-05",
+      "evidence": "docs/SOLITAIRE-NEWS-2026-11-05.md",
+      "detail": "November 5 is the actual publication day of this prepared spotlight. No separate historical milestone date is assigned to the local-play features and design direction described."
+    }
   },
   {
     "id": "unicorn-land-another-opinion",
