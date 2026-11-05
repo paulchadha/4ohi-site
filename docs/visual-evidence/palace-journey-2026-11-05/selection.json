@@ -1,0 +1,29 @@
+{
+  "base": "49cb5a2ea91d81cfbd3edb0bd9d48ca3fa5e4ef4",
+  "today": "2026-11-05",
+  "timeZone": "America/Chicago",
+  "selectedId": "palace-good-hand-stubborn-front-door",
+  "authorizationScope": "Owner-requested Palace development diary, separate from original daily campaign",
+  "newManualPublications": 1,
+  "queuedPublicationsToday": 1,
+  "unchangedQueuedPublication": "solitaire-excellent-attendance",
+  "originalCampaignCount": 20,
+  "previousPublished": 65,
+  "publishedCount": 66,
+  "remainingDrafts": 4,
+  "futureScheduledDrafts": 3,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/card-room-20261029/palace-table-phone-f57ef33cba58.png",
+  "imageSHA256": "f57ef33cba5877f0d7686485de0f9e24f2055a4acbf853098908122b295a7e6e",
+  "imageKind": "development-capture",
+  "localAccountAuditPassed": 96,
+  "localBackendAuditPassed": 22,
+  "productionRoutes": [
+    200,
+    404,
+    404,
+    404
+  ],
+  "gameProjectWrites": 0,
+  "credentialsOrServiceChanges": 0
+}

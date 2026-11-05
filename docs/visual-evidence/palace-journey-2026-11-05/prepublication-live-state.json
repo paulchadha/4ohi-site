@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-11-05T15:01:17.489Z",
+  "base": "49cb5a2ea91d81cfbd3edb0bd9d48ca3fa5e4ef4",
+  "articleStatus": 404,
+  "rssEntryAbsent": true,
+  "liveParity": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "matchesBaseline": true
+    },
+    {
+      "file": "feed.xml",
+      "status": 200,
+      "matchesBaseline": true
+    }
+  ]
+}

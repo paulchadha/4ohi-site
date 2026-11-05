@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-05T15:03:35.380Z",
+  "build": true,
+  "staticPagesValidated": 156,
+  "newsScheduleAndFuturePrivacy": true,
+  "palaceRulesAndExactReplay": true,
+  "localBrowserChecks": 9,
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "localBrowser": "Microsoft Edge",
+  "errors": [],
+  "priorPublishedArticlesPreserved": 65,
+  "newManualArticles": 1,
+  "newQueuedArticles": 0,
+  "queuedToday": 1,
+  "unrelatedWorkPreserved": true,
+  "diffCheck": true
+}

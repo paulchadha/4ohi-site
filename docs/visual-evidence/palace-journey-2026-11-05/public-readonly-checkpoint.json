@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-05T14:57:59.468Z",
+  "method": "Anonymous GET of four previously documented public routes; no account, session, token or private-record access; no mutation.",
+  "checks": [
+    {
+      "name": "game-health",
+      "status": 200,
+      "checkedAt": "2026-11-05T14:57:59.160Z"
+    },
+    {
+      "name": "verified-palace-leaderboard",
+      "status": 404,
+      "checkedAt": "2026-11-05T14:57:59.217Z"
+    },
+    {
+      "name": "game-account-bridge",
+      "status": 404,
+      "checkedAt": "2026-11-05T14:57:59.103Z"
+    },
+    {
+      "name": "accounts-palace-capabilities",
+      "status": 404,
+      "checkedAt": "2026-11-05T14:57:59.468Z"
+    }
+  ]
+}

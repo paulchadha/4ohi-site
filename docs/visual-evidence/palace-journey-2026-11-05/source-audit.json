@@ -1,0 +1,45 @@
+{
+  "verifiedAt": "2026-11-05T15:02:14.434Z",
+  "date": "2026-11-05",
+  "scope": "Existing local audit logs and anonymous production-readiness checks; no production acceptance or deployment is inferred from local tests.",
+  "localAudits": [
+    {
+      "role": "local account-state audit",
+      "testCount": 96,
+      "passed": 96,
+      "failed": 0,
+      "sourceSHA256": "43c0802b5ad1cba5b95f6779a0f720fc8c98c5e61f9ad5b7b36563a1c1acd820",
+      "checkedAt": "2026-11-05T15:02:14.434Z"
+    },
+    {
+      "role": "local backend audit",
+      "testCount": 22,
+      "passed": 22,
+      "failed": 0,
+      "sourceSHA256": "fadb16788006ffc1fbb669fe9c1b7e051a1a58d68d6b94b0ca61a2223c2aa9ca",
+      "checkedAt": "2026-11-05T15:02:14.434Z"
+    }
+  ],
+  "production": [
+    {
+      "name": "game-health",
+      "status": 200,
+      "checkedAt": "2026-11-05T14:57:59.160Z"
+    },
+    {
+      "name": "verified-palace-leaderboard",
+      "status": 404,
+      "checkedAt": "2026-11-05T14:57:59.217Z"
+    },
+    {
+      "name": "game-account-bridge",
+      "status": 404,
+      "checkedAt": "2026-11-05T14:57:59.103Z"
+    },
+    {
+      "name": "accounts-palace-capabilities",
+      "status": 404,
+      "checkedAt": "2026-11-05T14:57:59.468Z"
+    }
+  ]
+}

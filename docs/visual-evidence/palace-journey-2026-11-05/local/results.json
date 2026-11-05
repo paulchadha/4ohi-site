@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-11-05T15:02:59.473Z",
+  "base": "http://127.0.0.1:52930",
+  "selected": "palace-good-hand-stubborn-front-door",
+  "checks": [
+    {
+      "route": "news-palace-good-hand-stubborn-front-door.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-palace-good-hand-stubborn-front-door.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-palace-good-hand-stubborn-front-door.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-palace-good-hand-stubborn-front-door.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-palace.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "palace.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 66,
+  "draftRoutesExcluded": 4
+}
