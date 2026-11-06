@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-11-06T14:59:44.346Z",
+  "build": true,
+  "staticPagesValidated": 157,
+  "newsScheduleAndFuturePrivacy": true,
+  "palaceRulesAndExactReplay": true,
+  "localBrowserChecks": 9,
+  "viewportWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "localBrowser": "Microsoft Edge",
+  "errors": [],
+  "priorPublishedArticlesPreserved": 66,
+  "palaceDiaryPreserved": true,
+  "oldPublisherTrackedDeletionsPreserved": 730,
+  "unrelatedWorkPreserved": true,
+  "diffCheck": true,
+  "unrunChecks": [
+    "Full legacy site/browser suites: focused single-post release checks used",
+    "Native app and physical-device tests: news-only change"
+  ]
+}

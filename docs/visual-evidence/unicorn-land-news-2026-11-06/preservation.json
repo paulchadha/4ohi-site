@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-11-06T14:58:40.451Z",
+  "base": "a7d215ff25235fe10eb285ddf774206777b47463",
+  "selected": "unicorn-land-another-opinion",
+  "publicationDay": "2026-11-06",
+  "timeZone": "America/Chicago",
+  "newQueuedPublications": 1,
+  "queuedToday": 1,
+  "previousPublishedArticlesPreserved": 66,
+  "preservedSeparateAnnouncements": [
+    "gloze-make-words-make-believe",
+    "reel-fun-a-fresh-cast"
+  ],
+  "remainingDrafts": 3,
+  "futureScheduledDrafts": 2,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "preparedTitleDescriptionBodyPreserved": true,
+  "allAppPagesAssetsSourcePreserved": true,
+  "tileFirstHomeAnd23TilesPreserved": true,
+  "palaceDemoCountdownPreserved": true,
+  "otherCheckoutsAndUntrackedFilesPreserved": true,
+  "publisherQueueAndScheduleUnchanged": true,
+  "allOldRssItemsPreserved": true,
+  "draftHtmlAbsent": true,
+  "deterministicBuild": true,
+  "gameSourceWrites": 0
+}

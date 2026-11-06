@@ -1026,11 +1026,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-06",
     "scheduledFor": "2026-11-06",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -1040,7 +1040,26 @@
           "The game remains in development, with no public release date announced. Landscaping expertise is optional. Opinions about flowers will probably emerge naturally. We will be delighted to see what you make. We may ask where you found that particularly nice shrub."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-06T14:58:20.095Z",
+    "image": "assets/portfolio-2026/unicorn-land-card.png",
+    "imageAlt": "Unicorn Land Adventures product artwork with a white rainbow-maned unicorn in a magical garden",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Current app artwork",
+      "caption": "Unicorn Land Adventures product artwork, not a gameplay screenshot. The creative-adventure game remains in development; no public release date is announced.",
+      "evidence": "docs/ASSET_PROVENANCE.md",
+      "width": 1200,
+      "height": 750
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-06",
+      "evidence": "docs/UNICORN-LAND-NEWS-2026-11-06.md",
+      "detail": "November 6 is the actual publication day of this prepared spotlight. No separate historical milestone date is assigned to the creative-play features and design context described."
+    }
   },
   {
     "id": "euchre-large-opinion",
@@ -3643,7 +3662,7 @@
     "date": "2026-11-05",
     "publishedAt": "2026-11-05T15:02:15.157Z",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "image": "assets/card-room-20261029/palace-table-phone-f57ef33cba58.png",
     "imageAlt": "Palace development table on blue felt with a reserve, draw and pickup piles and two player hands, captured in a phone-landscape browser viewport",
     "media": {

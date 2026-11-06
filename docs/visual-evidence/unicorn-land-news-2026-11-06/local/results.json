@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-11-06T14:59:26.067Z",
+  "base": "http://127.0.0.1:51103",
+  "selected": "unicorn-land-another-opinion",
+  "checks": [
+    {
+      "route": "news-unicorn-land-another-opinion.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-unicorn-land-another-opinion.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-unicorn-land-another-opinion.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-unicorn-land-another-opinion.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-unicorn-land.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "unicorn-land-adventures.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 67,
+  "draftRoutesExcluded": 3
+}

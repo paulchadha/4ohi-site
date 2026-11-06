@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-06T14:55:47.122Z",
+  "matchedAssets": 90,
+  "repairs": [
+    {
+      "file": "assets/bobby-protector-builder.css",
+      "expected": "064326966971",
+      "rawByteFormMatched": true,
+      "sourceContentChanged": false
+    },
+    {
+      "file": "assets/workbench-products.js",
+      "expected": "752d3c61bf2b",
+      "rawByteFormMatched": true,
+      "sourceContentChanged": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "base": "a7d215ff25235fe10eb285ddf774206777b47463",
+  "today": "2026-11-06",
+  "timeZone": "America/Chicago",
+  "selectedId": "unicorn-land-another-opinion",
+  "published": [
+    {
+      "slug": "unicorn-land-another-opinion",
+      "planned": "2026-11-06",
+      "published": "2026-11-06"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 66,
+  "publishedCount": 67,
+  "remainingDrafts": 3,
+  "futureScheduledDrafts": 2,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/portfolio-2026/unicorn-land-card.png",
+  "imageSHA256": "03773f1b1498984e3d1255d9a2dba21be3df4b5c085932add7ec11126a7b9b64",
+  "imageKind": "product-artwork",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}
