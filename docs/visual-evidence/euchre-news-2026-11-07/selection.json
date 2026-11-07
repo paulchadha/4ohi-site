@@ -1,0 +1,24 @@
+{
+  "base": "5d615e1b92d0cf7d8f98ecf191d6806c67b6e8c6",
+  "today": "2026-11-07",
+  "timeZone": "America/Chicago",
+  "selectedId": "euchre-large-opinion",
+  "published": [
+    {
+      "slug": "euchre-large-opinion",
+      "planned": "2026-11-07",
+      "published": "2026-11-07"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 67,
+  "publishedCount": 68,
+  "remainingDrafts": 2,
+  "futureScheduledDrafts": 1,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/card-room-20261029/euchre-table-phone-8716efb90a34.png",
+  "imageSHA256": "8716efb90a347845bacdd5e15fa9153e38f9ab50cd40e4ce4c8e21614fd8c41a",
+  "imageKind": "development-capture",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}

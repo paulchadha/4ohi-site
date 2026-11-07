@@ -1030,7 +1030,7 @@
     "date": "2026-11-06",
     "scheduledFor": "2026-11-06",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -1075,11 +1075,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-07",
     "scheduledFor": "2026-11-07",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -1089,7 +1089,26 @@
           "Keep trump, the caller, partners, and scores easy to follow. The cards may surprise you; the controls should make an effort not to. If the brave plan works, we will be modest about it. We have been practising our expression."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-07T14:15:08.497Z",
+    "image": "assets/card-room-20261029/euchre-table-phone-8716efb90a34.png",
+    "imageAlt": "Euchre local-bot development table with a trump upcard, pass and order controls, Go Alone and a five-card hand, captured in a phone-landscape browser viewport",
+    "media": {
+      "kind": "development-capture",
+      "label": "Browser development capture",
+      "caption": "Actual-source browser development capture of local-bot Euchre in the Palace-based card room. Test names and scores are shown; current builds may differ. This is not a physical-device capture or evidence of public online tables.",
+      "evidence": "content/card-room-media-2026-10-29.json",
+      "width": 844,
+      "height": 390
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-07",
+      "evidence": "docs/EUCHRE-NEWS-2026-11-07.md",
+      "detail": "November 7 is the actual publication day of this prepared spotlight. No separate historical milestone date is assigned to the local-match implementation and design context described."
+    }
   },
   {
     "id": "war-random-strategy",
