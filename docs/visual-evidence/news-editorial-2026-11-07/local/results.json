@@ -1,0 +1,72 @@
+{
+  "verifiedAt": "2026-11-07T15:34:58.006Z",
+  "base": "http://127.0.0.1:56515",
+  "checks": [
+    {
+      "name": "first-screen-latest-artwork-overflow",
+      "width": 360,
+      "height": 640,
+      "titleBottom": 442.234375,
+      "readLinkBottom": 581.234375
+    },
+    {
+      "name": "first-screen-latest-artwork-overflow",
+      "width": 390,
+      "height": 844,
+      "titleBottom": 409.84375,
+      "readLinkBottom": 524.84375
+    },
+    {
+      "name": "first-screen-latest-artwork-overflow",
+      "width": 768,
+      "height": 1024,
+      "titleBottom": 407.59375,
+      "readLinkBottom": 541.375
+    },
+    {
+      "name": "first-screen-latest-artwork-overflow",
+      "width": 1440,
+      "height": 900,
+      "titleBottom": 483.515625,
+      "readLinkBottom": 617.296875
+    },
+    {
+      "name": "type-product-order-reset-load-more-history-empty-keyboard",
+      "status": "pass"
+    },
+    {
+      "name": "legacy-product-query-alias",
+      "status": "pass"
+    },
+    {
+      "name": "no-js-complete-publication-log",
+      "publishedNotes": 68
+    },
+    {
+      "name": "preserved-reading-route",
+      "route": "news-archive.html",
+      "notes": 68
+    },
+    {
+      "name": "preserved-reading-route",
+      "route": "news-origins.html",
+      "notes": 12
+    },
+    {
+      "name": "preserved-reading-route",
+      "route": "news-product-palace.html",
+      "notes": 8
+    },
+    {
+      "name": "revised-palace-diary-intact",
+      "status": "pass"
+    },
+    {
+      "name": "draft-isolation-and-rss",
+      "drafts": 2,
+      "rssEntries": 68
+    }
+  ],
+  "errors": [],
+  "failure": null
+}

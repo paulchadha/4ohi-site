@@ -1,3 +1,4 @@
+import { editorialNews } from './editorial-news.mjs';
 import { newsVisual, workDateContext, timelineOverview } from "./news-visuals.mjs";
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
@@ -162,6 +163,7 @@ const pressAheadWorkbenchNote = "<aside class=\"workbench-goal\" id=\"press-ahea
 const storyCard = a => `<article class="workbench-story" data-workbench-story data-date="${a.date}" data-article-type="${a.articleType}" data-product-ids="${a.productIds.join(" ")}" data-tags="${(a.tags || []).join(" ")}" lang="en" data-original-language translate="no">${newsVisual(a)}<div>${a.seriesRole ? `<p class="workbench-meta">${escapeHtml(a.seriesRole)}</p>` : ""}${meta(a)}${workDateContext(a,{compact:true})}<h3><a href="${articleFile(a.slug)}">${escapeHtml(a.title)}</a></h3><p>${escapeHtml(a.description)}</p><small>${escapeHtml(a.author)}${a.productIds.length ? " · " + a.productIds.map(id => escapeHtml(byId.get(id).title)).join(" · ") : ""}</small></div></article>`;
 
 export function newsListing(articles, {oldest = false, origins = false, product = null} = {}) {
+  if (!oldest && !origins && !product) return editorialNews(articles, articleTypes);
   let items = product ? notesFor(articles,product) : origins ? articles.filter(a => a.seriesId === "product-origins") : articles;
   if (origins) items = [...items].sort((a,b) => a.seriesOrder-b.seriesOrder);
   else if (oldest) items = [...items].reverse();

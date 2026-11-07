@@ -177,7 +177,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/responsive-refinements.css">
   <link rel="stylesheet" href="assets/card-game-stories.css">
   <link rel="stylesheet" href="assets/workbench.css">
-  <link rel="stylesheet" href="assets/news-visuals.css">
+  <link rel="stylesheet" href="assets/news-visuals.css">${path === "/news.html" && !noindex ? '\n  <link rel="stylesheet" href="assets/news-editorial-20261107.css">' : ""}
   ${['/','/games.html','/games/evil-doom-boy/'].includes(path)?'<link rel="stylesheet" href="assets/evil-doom-reference.css">':''}
   <link rel="stylesheet" href="assets/sling-bling.css">
   <link rel="stylesheet" href="assets/swipe-carousel.css">
@@ -199,7 +199,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <script src="assets/canadian-mode.js" defer></script>
   <script src="assets/production-locales.js" defer></script>
   <script src="assets/workbench-products.js" defer></script>
-  <script src="assets/workbench.js" defer></script>
+  ${path === "/news.html" && !noindex ? '<script src="assets/news-editorial-20261107.js" defer></script>' : '<script src="assets/workbench.js" defer></script>'}
   <script src="assets/swipe-carousel.js" defer></script>
   ${script}
   ${structuredData ? `<script type="application/ld+json">${structuredData}</script>` : ""}

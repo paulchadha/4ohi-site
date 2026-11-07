@@ -1,0 +1,46 @@
+{
+  "verifiedAt": "2026-11-07T15:38:50.322Z",
+  "build": true,
+  "staticPagesValidated": 158,
+  "schedulePrivacy": true,
+  "palaceRulesReplay": true,
+  "localBrowserChecks": 12,
+  "firstScreenViewports": [
+    "360x640",
+    "390x844",
+    "768x1024",
+    "1440x900"
+  ],
+  "firstScreenNewestAndReadLink": true,
+  "keyboardLabelsAltImagesOverflow": true,
+  "filtersResetLoadMoreHistory": true,
+  "noJsAll68Notes": true,
+  "archiveOriginsProductRoutes": true,
+  "preservedPalaceRevision": true,
+  "sourceAndMetadataPreservation": true,
+  "deterministicBuild": true,
+  "textContrast": [
+    {
+      "color": "#202a30",
+      "on": "#f5f2eb",
+      "ratio": 13.09
+    },
+    {
+      "color": "#53625c",
+      "on": "#f5f2eb",
+      "ratio": 5.75
+    },
+    {
+      "color": "#973c2b",
+      "on": "#f5f2eb",
+      "ratio": 6.27
+    }
+  ],
+  "screenshotsVisuallyInspected": true,
+  "newPublications": 0,
+  "newQueuedPublications": 0,
+  "unrunChecks": [
+    "Full legacy site/portfolio suites: focused current-layout regressions used",
+    "Native app, live sign-in/multiplayer and physical-device acceptance: outside website scope"
+  ]
+}

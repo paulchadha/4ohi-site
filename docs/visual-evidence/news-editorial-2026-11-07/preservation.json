@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-07T15:36:12.370Z",
+  "base": "c574e58f6a4218e46d826739d21202d7e37e4a41",
+  "newsSourceSHA256": "92a25def051225442e1258800bbed57490a897ccf69ac83f8def683b8d33fd9a",
+  "publishedArticlesUnchanged": 68,
+  "draftsUnchanged": 2,
+  "otherPublicHtmlXmlUnchangedBeyondCacheVersion": 189,
+  "oldAssetFingerprintsUnchanged": 90,
+  "newAssets": [
+    "assets/news-editorial-20261107.css",
+    "assets/news-editorial-20261107.js"
+  ],
+  "latestIndependentOfManualFeature": true,
+  "sameDayPublicationTimeOrder": true,
+  "draftsExcludedFromEditorialRenderer": true,
+  "palaceHonestyRevisionAndHistoryPreserved": true,
+  "appPagesAndPalaceRuntimePreserved": true,
+  "originsArchiveRssSitemapPreserved": true,
+  "newPublications": 0,
+  "newQueuedPublications": 0,
+  "deterministicBuild": true
+}

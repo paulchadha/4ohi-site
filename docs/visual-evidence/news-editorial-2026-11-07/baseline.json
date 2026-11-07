@@ -1,0 +1,19 @@
+{
+  "base": "c574e58f6a4218e46d826739d21202d7e37e4a41",
+  "recordedAt": "2026-11-07T15:23:27.388Z",
+  "newsSHA256": "92a25def051225442e1258800bbed57490a897ccf69ac83f8def683b8d33fd9a",
+  "publishedCount": 68,
+  "drafts": 2,
+  "queuedToday": "euchre-large-opinion",
+  "palaceRevision": "2026-11-07",
+  "references": [
+    {
+      "url": "https://linear.app/now",
+      "principle": "Current article first, topic navigation, a mix of engineering and team stories."
+    },
+    {
+      "url": "https://www.factorio.com/blog/",
+      "principle": "Dated development notes about process, testing, problems and iteration."
+    }
+  ]
+}
