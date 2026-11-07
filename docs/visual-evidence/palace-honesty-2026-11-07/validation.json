@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-07T15:15:21.155Z",
+  "build": true,
+  "staticPagesValidated": 158,
+  "schedulePrivacy": true,
+  "palaceRulesReplay": true,
+  "localBrowser": 4,
+  "noJs": true,
+  "otherArticlesAndPublicHtmlUnchanged": true,
+  "publishedCountUnchanged": 68,
+  "newQueuedPublications": 0,
+  "unrunChecks": [
+    "Full legacy site/browser suites: focused revision checks used",
+    "Native/sign-in/device acceptance: not performed or claimed"
+  ]
+}

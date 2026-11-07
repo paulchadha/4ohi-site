@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-11-07T15:13:26.788Z",
+  "base": "http://127.0.0.1:57358",
+  "checks": [
+    {
+      "width": 320,
+      "height": 844,
+      "revisionAndHistory": true,
+      "status": "pass"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "revisionAndHistory": true,
+      "status": "pass"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "revisionAndHistory": true,
+      "status": "pass"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revisionAndHistory": true,
+      "status": "pass"
+    }
+  ],
+  "noJs": true,
+  "errors": [],
+  "failure": null
+}

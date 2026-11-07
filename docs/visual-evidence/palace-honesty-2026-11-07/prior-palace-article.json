@@ -1,0 +1,78 @@
+{
+  "id": "palace-good-hand-stubborn-front-door",
+  "slug": "palace-good-hand-stubborn-front-door",
+  "title": "Palace: a good hand, a stubborn front door.",
+  "description": "Accounts, multiplayer and the leaderboard are getting the unglamorous workbench treatment. A sign-in screen is progress. A reliable signed-in game is the test.",
+  "author": "The 4OH Workshop",
+  "articleType": "developer-diary",
+  "productIds": [
+    "palace"
+  ],
+  "tags": [
+    "development",
+    "card-table",
+    "accounts",
+    "multiplayer",
+    "leaderboard"
+  ],
+  "status": "published",
+  "date": "2026-11-05",
+  "publishedAt": "2026-11-05T15:02:15.157Z",
+  "language": "en",
+  "featured": false,
+  "image": "assets/card-room-20261029/palace-table-phone-f57ef33cba58.png",
+  "imageAlt": "Palace development table on blue felt with a reserve, draw and pickup piles and two player hands, captured in a phone-landscape browser viewport",
+  "media": {
+    "kind": "development-capture",
+    "label": "Browser development capture",
+    "caption": "Actual-source browser capture of the Palace development app. This is separate from the website demo, not a physical-device capture, and not evidence of live multiplayer or verified rankings.",
+    "evidence": "content/card-room-media-2026-10-29.json",
+    "width": 844,
+    "height": 390
+  },
+  "timeline": {
+    "mode": "documented-work",
+    "date": "2026-11-05",
+    "label": "Account audit and public-readiness checkpoint",
+    "evidence": "docs/PALACE-JOURNEY-2026-11-05.md",
+    "detail": "November 5 records the review of existing local audit results and fresh anonymous production-readiness checks. It does not date the beginning of Palace development or announce a release."
+  },
+  "body": [
+    {
+      "heading": "The bit you can actually play",
+      "paragraphs": [
+        "The cards do not ask for a password. The rest of Palace has been rather more demanding. Today's local browser-demo checks passed dealing, a human action and restarting the fixed demo, along with rules, exact replay and keeping all 52 cards accounted for. A modest number, until one goes missing.",
+        "That is real progress you can try from the Palace page. It is a local browser demo, with bots. It does not establish that accounts, online matches or a public leaderboard are ready."
+      ]
+    },
+    {
+      "heading": "Getting through the front door",
+      "paragraphs": [
+        "An account flow has to survive more than a cheerful sign-in button: interrupted sign-in, restoring a session, checking email verification and signing out cleanly. A saved session must come back as the right person, with the right access. That is where some of our current effort is going.",
+        "Today's workbench review found 96 account-state tests and 22 backend tests passing in the saved local audit runs. They exercise recovery and identity boundaries, including keeping one person's session from becoming somebody else's. Useful progress. Terrible material for a glamour photograph.",
+        "Those are local test results, not a completed production sign-in journey. The remaining acceptance work includes a real sign-in leading reliably into the correct game session. We would prefer the front door to lead into the house."
+      ]
+    },
+    {
+      "heading": "A Host button is not a multiplayer service",
+      "paragraphs": [
+        "Online play needs the whole chain: players getting into the same match, each holding the correct seat, reconnecting safely and reaching one agreed result. A good-looking table or a running server proves only part of that chain.",
+        "At today's anonymous, read-only production check, game health responded, while the checked account-to-game capability routes and verified Palace leaderboard route returned unavailable responses. In plain terms: a server can be awake while the full experience is still getting its shoes on. This update does not announce public multiplayer."
+      ]
+    },
+    {
+      "heading": "The leaderboard has to earn its numbers",
+      "paragraphs": [
+        "A local rating or a row in a test database is useful for development. A public leaderboard needs trusted player identities, checked match results and records that survive beyond a test run. Otherwise we have built a very confident spreadsheet.",
+        "Verified production standings remain unfinished at this checkpoint. We are not dressing up test scores as a live leaderboard. The next useful proof is a complete signed-in match with its result recorded correctly, rather than another encouraging screenshot."
+      ]
+    },
+    {
+      "heading": "Progress, with the receipts still attached",
+      "paragraphs": [
+        "The honest position today: the browser demo works in our checks; account recovery and backend identity tests are passing locally; the complete production account, multiplayer and verified-ranking path is not yet established. There are ups. Some of them arrive wearing overalls.",
+        "We will keep recording the awkward bits as well as the good ones, with dates for the work we can actually verify. This is a development diary, not release notes. No new public launch date, store release or online feature is being announced."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "reviewedAt": "2026-11-07T15:10:03.816Z",
+  "sourceRecordedAt": "2026-11-07T04:28:32.339Z",
+  "sourceSHA256": "9600e83ec46dfcd387f963eecfc4db6af7c4c58c9a19b34b0ba02c087fa33ff2",
+  "sourceScope": {
+    "palaceProjectAccess": false,
+    "networkRequests": 0,
+    "websiteSourceReadOnly": true
+  },
+  "localEvidence": "Existing record: eight synthetic-strategy local acceptance checks, a complete synthetic match, one ledger result and ratings. Not real multi-account/phone or production acceptance.",
+  "ownerReport": "Paul reports no leaderboard in the live app.",
+  "unverified": [
+    "Real Google/email multi-account behavior",
+    "Production services end to end",
+    "Current phone build",
+    "Account/game identity integration"
+  ],
+  "reportedObstacles": [
+    "Project-access restrictions",
+    "Networking trouble",
+    "Phone-development tooling blocker"
+  ],
+  "classification": "Local recorded results and owner-observed app behavior are distinguished. No live sign-in or phone access is claimed.",
+  "sensitiveDetailsCopied": false
+}

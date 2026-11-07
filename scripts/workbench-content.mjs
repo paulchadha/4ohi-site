@@ -36,6 +36,7 @@ export function loadArticles(root) {
     if (!Array.isArray(a.productIds) || new Set(a.productIds).size !== a.productIds.length || a.productIds.some(id => !byId.has(id))) fail("productIds must use unique canonical stable IDs");
     if (a.status === "published" && (!validDate(a.date) || a.date > today)) fail("real, non-future publication date required");
     if (a.revisedDate && (!validDate(a.revisedDate) || a.revisedDate < a.date || a.revisedDate > today)) fail("invalid genuine revision date");
+    if (a.revisionLabel !== undefined && (!a.revisedDate || typeof a.revisionLabel !== "string" || !a.revisionLabel.trim())) fail("revision label requires a revision date and nonempty text");
     if (a.seriesId && (!/^[a-z0-9-]+$/.test(a.seriesId) || !Number.isInteger(a.seriesOrder) || a.seriesOrder < 1)) fail("series ID and positive order required together");
     if (a.seriesOrder && !a.seriesId) fail("series order requires a series ID");
     if (a.status === "published" && a.seriesId) {

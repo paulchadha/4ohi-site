@@ -324,7 +324,7 @@ news.forEach((item, index) => {
           <div class="workbench-meta"><span>${articleTypes[item.articleType]}</span><span>Published <time datetime="${item.date}">${formatDate(item.date)}</time></span></div>
           <h1>${escapeHtml(item.title)}</h1><p class="lede">${escapeHtml(item.description)}</p>
           ${workDateContext(item)}
-          <p>By ${escapeHtml(item.author)}${item.revisedDate ? ` · Visuals and timeline updated <time datetime="${item.revisedDate}">${formatDate(item.revisedDate)}</time>` : ""}</p>
+          <p>By ${escapeHtml(item.author)}${item.revisedDate ? ` · ${escapeHtml(item.revisionLabel || "Visuals and timeline updated")} <time datetime="${item.revisedDate}">${formatDate(item.revisedDate)}</time>` : ""}</p>
           ${item.historicalPeriod ? `<p>Looking back at: ${escapeHtml(item.historicalPeriod)}</p>` : ""}
           <p class="workbench-language" data-workbench-language hidden>This article is available in English. Your selected language still applies to the site controls.</p>
         </header>

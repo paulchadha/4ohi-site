@@ -3701,6 +3701,26 @@
     },
     "body": [
       {
+        "heading": "November 7: the leaderboard is still the struggle",
+        "paragraphs": [
+          "A controlled local test completed a synthetic game and recorded a result and rating. That is useful engineering evidence. Paul reports that there is still no leaderboard in the live app. A test score has not given him a leaderboard he can open and use. Useful progress, if our product were a number.",
+          "The real multi-account journey across Google and email sign-in remains unverified. So do the production services, the current phone build and the connection between each account and its game identity. Synthetic players have been impressively cooperative. Real accounts still need their turn."
+        ]
+      },
+      {
+        "heading": "The snags belong in the story",
+        "paragraphs": [
+          "Project-access restrictions have limited what could be inspected. Networking trouble has interrupted checks. A problem with the phone development tools has blocked native verification. These are actual setbacks; a separate local test does not make them disappear. The tools have contributed several strong opinions and very little bedside manner.",
+          "The unresolved end-to-end gap is a real player signing in, finishing a match and seeing the correct result under the correct account on the live leaderboard. That behavior has not been verified. This is a record of progress and obstacles, not a completed-feature announcement or a promised delivery date."
+        ]
+      },
+      {
+        "heading": "Earlier checkpoint — November 5, 2026",
+        "paragraphs": [
+          "The original November 5 entry follows unchanged. Its references to “today” mean that checkpoint. Its local audit totals and public-readiness observations are not fresh claims of live success."
+        ]
+      },
+      {
         "heading": "The bit you can actually play",
         "paragraphs": [
           "The cards do not ask for a password. The rest of Palace has been rather more demanding. Today's local browser-demo checks passed dealing, a human action and restarting the fixed demo, along with rules, exact replay and keeping all 52 cards accounted for. A modest number, until one goes missing.",
@@ -3736,6 +3756,8 @@
           "We will keep recording the awkward bits as well as the good ones, with dates for the work we can actually verify. This is a development diary, not release notes. No new public launch date, store release or online feature is being announced."
         ]
       }
-    ]
+    ],
+    "revisedDate": "2026-11-07",
+    "revisionLabel": "Leaderboard progress updated"
   }
 ]
