@@ -1,0 +1,85 @@
+{
+  "verifiedAt": "2026-11-08T14:54:57.540Z",
+  "base": "http://127.0.0.1:53624",
+  "selected": "war-random-strategy",
+  "checks": [
+    {
+      "route": "news-war-random-strategy.html",
+      "width": 320,
+      "status": "pass"
+    },
+    {
+      "route": "news-war-random-strategy.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-war-random-strategy.html",
+      "width": 768,
+      "status": "pass"
+    },
+    {
+      "route": "news-war-random-strategy.html",
+      "width": 1440,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-product-war.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "war.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news-timeline.html",
+      "width": 390,
+      "status": "pass"
+    },
+    {
+      "route": "news.html",
+      "width": 360,
+      "height": 640,
+      "newestTitleAboveFold": true,
+      "readLinkAboveFold": true
+    },
+    {
+      "route": "news.html",
+      "width": 390,
+      "height": 844,
+      "newestTitleAboveFold": true,
+      "readLinkAboveFold": true
+    },
+    {
+      "route": "news.html",
+      "width": 1440,
+      "height": 900,
+      "newestTitleAboveFold": true,
+      "readLinkAboveFold": true
+    },
+    {
+      "route": "news.html",
+      "filtersResetLoadMoreHistory": true
+    },
+    {
+      "route": "news.html",
+      "noJsPublishedNotes": 69
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "publishedArticleCount": 69,
+  "draftRoutesExcluded": 1
+}

@@ -1,0 +1,24 @@
+{
+  "base": "78c1be3031f989d0a83902e5cfa1c918b512a666",
+  "today": "2026-11-08",
+  "timeZone": "America/Chicago",
+  "selectedId": "war-random-strategy",
+  "published": [
+    {
+      "slug": "war-random-strategy",
+      "planned": "2026-11-08",
+      "published": "2026-11-08"
+    }
+  ],
+  "queuedPublicationsToday": 1,
+  "previousPublished": 68,
+  "publishedCount": 69,
+  "remainingDrafts": 1,
+  "futureScheduledDrafts": 0,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "image": "assets/card-room-20261029/war-table-phone-8798a698fcd5.png",
+  "imageSHA256": "8798a698fcd58c6bf7083daf21bae3264f6866a3391fb7397e0039b551fe228f",
+  "imageKind": "development-capture",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "gameProjectWrites": 0
+}

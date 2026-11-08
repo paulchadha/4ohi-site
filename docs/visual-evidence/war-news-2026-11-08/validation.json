@@ -1,0 +1,102 @@
+{
+  "verifiedAt": "2026-11-08T14:59:54.797Z",
+  "baseCommit": "78c1be3031f989d0a83902e5cfa1c918b512a666",
+  "selected": "war-random-strategy",
+  "originalQueueDate": "2026-11-08",
+  "actualPublicationDate": "2026-11-08",
+  "timeZone": "America/Chicago",
+  "articleUrl": "https://4ohi.com/news-war-random-strategy.html",
+  "preparedTitleDescriptionBodyUnchanged": true,
+  "media": {
+    "path": "assets/card-room-20261029/war-table-phone-8798a698fcd5.png",
+    "kind": "actual-source browser development capture",
+    "width": 844,
+    "height": 390,
+    "sha256": "8798a698fcd58c6bf7083daf21bae3264f6866a3391fb7397e0039b551fe228f",
+    "physicalDeviceOrOnlineProof": false
+  },
+  "completedChecks": {
+    "build": {
+      "publicDocumentsGenerated": 134,
+      "publishedArticles": 69
+    },
+    "staticValidation": {
+      "pages": 159
+    },
+    "schedule": {
+      "campaignEntries": 20,
+      "futureDrafts": 0,
+      "publicHtmlXmlInspected": 191
+    },
+    "palaceRulesReplay": {
+      "passed": true,
+      "fullGamesActions": [
+        122,
+        121
+      ]
+    },
+    "localBrowser": {
+      "passed": 14,
+      "articleWidths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "newsFirstScreens": [
+        [
+          360,
+          640
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          1440,
+          900
+        ]
+      ],
+      "filtersResetLoadMoreHistory": true,
+      "noJs": true,
+      "errors": 0
+    },
+    "visualReview": {
+      "reviewed": true,
+      "screenshots": [
+        "local/article-390.png",
+        "local/article-1440.png",
+        "local/news-360-first.png",
+        "local/news-390-first.png",
+        "local/news-1440-first.png"
+      ]
+    },
+    "preservation": {
+      "priorPublishedArticles": 68,
+      "unrelatedDirtyPublisherFiles": 168,
+      "allAppPagesAssetsAndPublisherUnchanged": true,
+      "newsRedesignAndPalaceRevisionPreserved": true
+    },
+    "deterministicBuild": true,
+    "diffWhitespace": true
+  },
+  "notRun": [
+    "Full historical legacy suite",
+    "Fresh native War gameplay tests",
+    "Physical device acceptance",
+    "Production identity, multiplayer or leaderboard testing"
+  ],
+  "pending": [
+    "Remote publication and deployment verification",
+    "Live browser checks",
+    "Live Palace smoke check"
+  ],
+  "remainingQueue": {
+    "scheduled": 0,
+    "unscheduledDrafts": [
+      "gildenspire-scenic-route"
+    ],
+    "approvedDailyQueueExhaustedAfterThisPublication": true
+  },
+  "automationOrSecurityChanges": false
+}

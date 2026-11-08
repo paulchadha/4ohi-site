@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-11-08T14:47:34.929Z",
+  "approvedAssets": 92,
+  "fixes": [
+    {
+      "file": "assets/bobby-protector-builder.css",
+      "expected": "064326966971",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/news-editorial-20261107.css",
+      "expected": "996b04b97a57",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/news-editorial-20261107.js",
+      "expected": "062174f4e3b6",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/workbench-products.js",
+      "expected": "752d3c61bf2b",
+      "contentUnchanged": true
+    }
+  ]
+}

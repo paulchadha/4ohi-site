@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-11-08T14:53:43.216Z",
+  "base": "78c1be3031f989d0a83902e5cfa1c918b512a666",
+  "selected": "war-random-strategy",
+  "publicationDay": "2026-11-08",
+  "timeZone": "America/Chicago",
+  "newQueuedPublications": 1,
+  "queuedToday": 1,
+  "previousPublishedArticlesPreserved": 68,
+  "preservedSeparateAnnouncements": [
+    "gloze-make-words-make-believe",
+    "reel-fun-a-fresh-cast"
+  ],
+  "remainingDrafts": 1,
+  "futureScheduledDrafts": 0,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "preparedTitleDescriptionBodyPreserved": true,
+  "allAppPagesAssetsSourcePreserved": true,
+  "tileFirstHomeAnd23TilesPreserved": true,
+  "palaceDemoCountdownPreserved": true,
+  "otherCheckoutsAndUntrackedFilesPreserved": true,
+  "publisherQueueAndScheduleUnchanged": true,
+  "allOldRssItemsPreserved": true,
+  "draftHtmlAbsent": true,
+  "deterministicBuild": true,
+  "gameSourceWrites": 0
+}

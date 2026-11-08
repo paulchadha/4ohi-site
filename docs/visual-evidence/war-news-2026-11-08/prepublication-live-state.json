@@ -1,0 +1,23 @@
+{
+  "verifiedAt": "2026-11-08T14:50:42.843Z",
+  "base": "78c1be3031f989d0a83902e5cfa1c918b512a666",
+  "articleStatus": 404,
+  "rssEntryAbsent": true,
+  "liveParity": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "matchesBaseline": true
+    },
+    {
+      "file": "news.html",
+      "status": 200,
+      "matchesBaseline": true
+    },
+    {
+      "file": "feed.xml",
+      "status": 200,
+      "matchesBaseline": true
+    }
+  ]
+}

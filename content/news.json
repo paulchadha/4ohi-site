@@ -1079,7 +1079,7 @@
     "date": "2026-11-07",
     "scheduledFor": "2026-11-07",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
@@ -1124,11 +1124,11 @@
       "development",
       "developer-spotlight"
     ],
-    "status": "draft",
-    "date": null,
+    "status": "published",
+    "date": "2026-11-08",
     "scheduledFor": "2026-11-08",
     "language": "en",
-    "featured": false,
+    "featured": true,
     "body": [
       {
         "heading": "From the developers",
@@ -1138,7 +1138,26 @@
           "The standalone app remains in development. A good run is still worth enjoying, even if your strategic contribution was turning the card over. Please enjoy your good run. We will admire your technique and avoid asking too many questions."
         ]
       }
-    ]
+    ],
+    "publishedAt": "2026-11-08T14:53:22.788Z",
+    "image": "assets/card-room-20261029/war-table-phone-8798a698fcd5.png",
+    "imageAlt": "War development table with two local players, card stacks and Flip Both Cards, captured in a phone-landscape browser viewport",
+    "media": {
+      "kind": "development-capture",
+      "label": "Browser development capture",
+      "caption": "Actual-source browser development capture of local War in the Palace-based card room. Two test players share this local table; current builds may differ. This is not a physical-device capture or an online match.",
+      "evidence": "content/card-room-media-2026-10-29.json",
+      "width": 844,
+      "height": 390
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Undated development context",
+      "publicationDate": "2026-11-08",
+      "evidence": "docs/WAR-NEWS-2026-11-08.md",
+      "detail": "November 8 is the actual publication day of this prepared spotlight. No separate historical milestone date is assigned to the local-play features and design context described."
+    }
   },
   {
     "id": "sling-nouveau-workbench-october-2026",
