@@ -6,6 +6,7 @@ import { glozePage, glozeStyles } from "./gloze-content.mjs";
 import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
 import { cardRoomMedia } from "./card-room-media.mjs";
+import { palaceLeaderboardOrigin, palaceLeaderboardPage } from "./palace-leaderboard-content.mjs";
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
@@ -139,7 +140,7 @@ const footer = () => `<footer class="site-footer">
 const head = ({ title, description, path, image = "assets/og-palace-app-world.jpg", imageAlt = "Four of Hearts Interactive", type = "website", jsonLd, noindex = false, script = "", originalLanguage = false }) => {
   const structuredData = jsonLd ? JSON.stringify(jsonLd).replaceAll("<", "\\u003c") : "";
   const structuredDataHash = structuredData ? createHash("sha256").update(structuredData).digest("base64") : "";
-  const contentPolicy = `default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'${structuredDataHash ? ` 'sha256-${structuredDataHash}'` : ""}; connect-src 'self'; media-src 'self'; font-src 'self'; upgrade-insecure-requests`;
+  const contentPolicy = `default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'${structuredDataHash ? ` 'sha256-${structuredDataHash}'` : ""}; connect-src 'self'${path === '/palace-leaderboard.html' ? ' ' + palaceLeaderboardOrigin : ''}; media-src 'self'; font-src 'self'; upgrade-insecure-requests`;
   const canonical = `${siteUrl}${path}`;
   return `<!doctype html>
 <html lang="en">
@@ -175,7 +176,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/gildenspire.css">
   <link rel="stylesheet" href="assets/studio-expansion.css">
   <link rel="stylesheet" href="assets/responsive-refinements.css">
-  <link rel="stylesheet" href="assets/card-game-stories.css">
+  <link rel="stylesheet" href="assets/card-game-stories.css">${path === "/palace-leaderboard.html" ? '\n  <link rel="stylesheet" href="assets/palace-leaderboard/board.css">' : ""}
   <link rel="stylesheet" href="assets/workbench.css">
   <link rel="stylesheet" href="assets/news-visuals.css">${path === "/news.html" && !noindex ? '\n  <link rel="stylesheet" href="assets/news-editorial-20261107.css">' : ""}
   ${['/','/games.html','/games/evil-doom-boy/'].includes(path)?'<link rel="stylesheet" href="assets/evil-doom-reference.css">':''}
@@ -423,6 +424,7 @@ write("whomly.html", whomlyPage({page,company,siteUrl,product:gameByKey.whomly})
 write("sleep-amigo.html", sleepAmigoPage({page,company,siteUrl,product:gameByKey["sleep-amigo"]}));
 
 for(const [key,g] of Object.entries(cardGames)){write(cardRoute(key),page({title:g.title+" | Four of Hearts Interactive",description:g.intro,path:"/"+cardRoute(key),current:"games",bodyClass:"card-game-page",image:cardRoomMedia[key].phone.src,imageAlt:cardRoomMedia[key].phone.alt,content:cardGamePage(key)}));}
+write("palace-leaderboard.html",page({title:"Palace Leaderboard | Four of Hearts Interactive",description:"The public Palace Global Top 25, current champion and official ranked ratings. Your personal standing stays private in the signed-in Palace app.",path:"/palace-leaderboard.html",current:"games",bodyClass:"palace-leaderboard-page",content:palaceLeaderboardPage(),script:`<script type="module" src="${assetVersion("assets/palace-leaderboard/client.mjs")}"></script>`}));
 
 write("play.html", page({
   title: "Quick Play | Four of Hearts Interactive",
@@ -596,7 +598,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
-  "index.html", "gloze.html", "reel-fun.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
+  "index.html", "gloze.html", "reel-fun.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-leaderboard.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "sling-nouveau.html", "news-archive.html", "news-origins.html", "news-timeline.html", ...productCatalog.map(productArchive),
   "games.html", "play.html", "hearts-play.html", "spades-play.html", "euchre-play.html",
