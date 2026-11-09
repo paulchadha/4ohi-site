@@ -1,4 +1,5 @@
 import { editorialNews } from './editorial-news.mjs';
+import { validateArticleProse } from './article-prose.mjs';
 import { newsVisual, workDateContext, timelineOverview } from "./news-visuals.mjs";
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
@@ -34,6 +35,7 @@ export function loadArticles(root) {
     if (!articleTypes[a.articleType]) fail("unknown article type");
     if (![a.title,a.description,a.author].every(x => typeof x === "string" && x.trim())) fail("title, excerpt (description), and author required");
     if (!Array.isArray(a.body) || !a.body.length || a.body.some(s => !s.heading || !Array.isArray(s.paragraphs) || !s.paragraphs.length || s.paragraphs.some(p => typeof p !== "string" || !p.trim()))) fail("body sections required");
+    validateArticleProse(a);
     if (!Array.isArray(a.productIds) || new Set(a.productIds).size !== a.productIds.length || a.productIds.some(id => !byId.has(id))) fail("productIds must use unique canonical stable IDs");
     if (a.status === "published" && (!validDate(a.date) || a.date > today)) fail("real, non-future publication date required");
     if (a.revisedDate && (!validDate(a.revisedDate) || a.revisedDate < a.date || a.revisedDate > today)) fail("invalid genuine revision date");

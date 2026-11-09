@@ -1,0 +1,74 @@
+{
+  "verifiedAt": "2026-11-09T15:58:57.056Z",
+  "base": "http://127.0.0.1:60956",
+  "articleId": "palace-leaderboard-entered-the-room",
+  "checks": [
+    {
+      "articleWidth": 320,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "articleWidth": 390,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "articleWidth": 768,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "articleWidth": 1440,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "surface": "news.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "news-product-palace.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "palace.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "index.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "news-timeline.html",
+      "newArticleLinked": true
+    },
+    {
+      "newsWidth": 360,
+      "height": 640,
+      "newestTitleAndLinkAboveFold": true
+    },
+    {
+      "newsWidth": 390,
+      "height": 844,
+      "newestTitleAndLinkAboveFold": true
+    },
+    {
+      "newsWidth": 1440,
+      "height": 900,
+      "newestTitleAndLinkAboveFold": true
+    },
+    {
+      "newsFiltersResetLoadMoreHistory": true
+    },
+    {
+      "keyboardReadLink": true
+    },
+    {
+      "noJsArticleAnd70Notes": true
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "approvedParagraphs": 11,
+  "approvedHeadings": 3,
+  "imageHashExact": true,
+  "publishedArticles": 70,
+  "draftRoutesExcluded": 1
+}

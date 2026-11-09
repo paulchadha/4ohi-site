@@ -1,5 +1,78 @@
 [
   {
+    "id": "palace-leaderboard-entered-the-room",
+    "slug": "palace-leaderboard-entered-the-room",
+    "title": "Palace: The Leaderboard Has Entered the Room",
+    "description": "For a while, Palace’s leaderboard was doing an excellent impression of a feature that would be ready shortly.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "productIds": [
+      "palace"
+    ],
+    "tags": [
+      "games",
+      "card-table",
+      "development"
+    ],
+    "status": "published",
+    "date": "2026-11-09",
+    "language": "en",
+    "featured": true,
+    "image": "assets/palace-news/palace-public-leaderboard-20261109-59b68e97796d.jpg",
+    "imageAlt": "Palace’s public leaderboard showing Paul Chadha first, followed by LEGO and TheChamp.",
+    "media": {
+      "kind": "development-capture",
+      "label": "Public Palace leaderboard",
+      "caption": "The Palace leaderboard on November 9, with the first three players on the board.",
+      "width": 1165,
+      "height": 747,
+      "evidence": "docs/PALACE-LEADERBOARD-STORY-2026-11-09.md"
+    },
+    "intro": [
+      "There were passing tests and scores recorded in controlled runs. There was also the reasonable question of why someone holding the actual app still couldn’t open a useful leaderboard.",
+      "On November 8, that changed. Three people competed, and the leaderboard finally had some real business to attend to.",
+      "On our Samsung test tablet, the tested Google account now opens the leaderboard room. Close Palace completely, reopen it, and the account and personal standing are still there. Players generally call this “what it should do.” Around the workbench, it received a warmer reception."
+    ],
+    "body": [
+      {
+        "heading": "The front door had another front door",
+        "paragraphs": [
+          "One stubborn problem was permission. An account could sign in successfully without having the Palace access needed for the next step. The app knew who you were, then behaved like a doorman who had misplaced the guest list.",
+          "We corrected that permission for the tested account. The leaderboard loaded, refresh updated its timestamp, and the login and standing survived a full restart. A display-name change survived too, and we restored the original afterward. Even our test accounts deserve a little dignity."
+        ]
+      },
+      {
+        "heading": "The website is keeping score, too",
+        "paragraphs": [
+          "The public Palace leaderboard now draws standings from the game service. Personal standing appears in the signed-in app, while local practice ratings remain separate.",
+          "At the time of our screenshot, three players were on the board, and Paul was in first place. He’s asked us not to expect that to last. We appreciate his humility and will be checking the standings with entirely professional interest."
+        ]
+      },
+      {
+        "heading": "Still a few cards to play",
+        "paragraphs": [
+          "A completely new account still needs to prove the enrollment journey without individual intervention. Google and email registration, verification and password recovery need more testing. The Apple version is in TestFlight, but an installation problem remains unresolved.",
+          "The fuller four-person trial is still ahead: separate accounts, complete ranked games, reconnects, and results checked for persistence and correct display. Three people competing is real progress, but it doesn’t tick every remaining testing box.",
+          "Palace now has a working leaderboard room on a real tablet, a public board, and people competing. After all that work on the entrance, it’s rather nice to be inside."
+        ]
+      }
+    ],
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-11-08",
+      "endDate": "2026-11-09",
+      "label": "Leaderboard progress on November 8 and approved public-board screenshot on November 9.",
+      "evidence": "docs/PALACE-LEADERBOARD-STORY-2026-11-09.md"
+    },
+    "publishedAt": "2026-11-09T15:52:58.159Z",
+    "inlineLinks": [
+      {
+        "text": "public Palace leaderboard",
+        "href": "https://4ohi.com/palace-leaderboard.html"
+      }
+    ]
+  },
+  {
     "id": "gloze-make-words-make-believe",
     "slug": "gloze-make-words-make-believe",
     "title": "Gloze: Make words. Make believe.",
@@ -1128,7 +1201,7 @@
     "date": "2026-11-08",
     "scheduledFor": "2026-11-08",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "body": [
       {
         "heading": "From the developers",
