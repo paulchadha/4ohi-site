@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "gameId": "hearts",
+  "mode": "ranked",
+  "boardKey": "default",
+  "rulesVersion": "hearts-canonical-v1",
+  "policyVersion": "four-of-hearts-server-elo-v1",
+  "metric": {
+    "key": "rating",
+    "label": "Rating",
+    "direction": "desc",
+    "tieBreak": "wins"
+  },
+  "version": "32",
+  "snapshotAt": "2026-11-09T14:45:31.787Z",
+  "eligibleCount": 32,
+  "rows": [
+    {
+      "playerId": "73aeb436-b54d-4796-9411-864d531b9aea",
+      "name": "Player",
+      "rank": 1,
+      "value": 1700,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "d409e22b-541b-4182-b721-adfad5d0e763",
+      "name": "Synthetic 2",
+      "rank": 1,
+      "value": 1700,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "0db6c9ca-9f53-435e-a969-cb85bcc9d9d0",
+      "name": "Synthetic 3",
+      "rank": 1,
+      "value": 1700,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "1eeac274-066c-454d-b763-7392b442d779",
+      "name": "Synthetic 4",
+      "rank": 4,
+      "value": 1596,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "192f0a92-7646-4824-aee0-8a9a4d7b9c74",
+      "name": "Synthetic 5",
+      "rank": 5,
+      "value": 1595,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "bfe7bd28-ef66-412c-88b4-14d0d5d9987b",
+      "name": "Synthetic 6",
+      "rank": 6,
+      "value": 1594,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "2ba0696d-11e1-4822-bc81-5964c9d6ce6c",
+      "name": "Synthetic 7",
+      "rank": 7,
+      "value": 1593,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "23e88dc2-8e6b-4c10-8f56-927d9cd31b8e",
+      "name": "Synthetic 8",
+      "rank": 8,
+      "value": 1592,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "39287009-67f5-4bb5-9890-0eff81c3e7ac",
+      "name": "Synthetic 9",
+      "rank": 9,
+      "value": 1591,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "4c946671-1a4a-44d9-8554-76f469e76d53",
+      "name": "Synthetic 10",
+      "rank": 10,
+      "value": 1590,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "cdec218e-4ac6-42f3-862a-1dbde0a52fdb",
+      "name": "Synthetic 11",
+      "rank": 11,
+      "value": 1589,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "02d29c22-7d25-4325-b25e-8b559681e720",
+      "name": "Synthetic 12",
+      "rank": 12,
+      "value": 1588,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "0ad6ee23-2357-46a5-b88e-c75c1cd0446b",
+      "name": "Synthetic 13",
+      "rank": 13,
+      "value": 1587,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "53c64ca6-1122-4c60-8a26-18d666decfa3",
+      "name": "Synthetic 14",
+      "rank": 14,
+      "value": 1586,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "2e47a5e4-d789-41f6-b480-a25e485d7481",
+      "name": "Synthetic 15",
+      "rank": 15,
+      "value": 1585,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "031aa0cb-e1e3-4100-8e2d-d8775306666e",
+      "name": "Synthetic 16",
+      "rank": 16,
+      "value": 1584,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "236b7b65-e6ac-40d8-930c-3285a2cab484",
+      "name": "Synthetic 17",
+      "rank": 17,
+      "value": 1583,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "9e261dac-c080-414f-8e51-bfc7389acde3",
+      "name": "Synthetic 18",
+      "rank": 18,
+      "value": 1582,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "1f5c68c5-6b68-4c98-90a2-c2cfcd3ad40e",
+      "name": "Synthetic 19",
+      "rank": 19,
+      "value": 1581,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "d0674419-e68c-4327-861b-d0a761d27612",
+      "name": "Synthetic 20",
+      "rank": 20,
+      "value": 1580,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "6e88032e-4cd4-47ee-8a74-530724621663",
+      "name": "Synthetic 21",
+      "rank": 21,
+      "value": 1579,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "5081d632-1c1e-462d-9a54-188c7086016a",
+      "name": "Synthetic 22",
+      "rank": 22,
+      "value": 1578,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "0034a4fb-d012-435c-bea2-86238cf4de03",
+      "name": "Synthetic 23",
+      "rank": 23,
+      "value": 1577,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "e2f86a40-a38d-4cf5-87fc-0c71f4dfa383",
+      "name": "Synthetic 24",
+      "rank": 24,
+      "value": 1576,
+      "wins": 1,
+      "matches": 1
+    },
+    {
+      "playerId": "d6a0b4fe-345d-4cce-b4a0-1a89d4fffd29",
+      "name": "Synthetic 25",
+      "rank": 25,
+      "value": 1575,
+      "wins": 1,
+      "matches": 1
+    }
+  ]
+}

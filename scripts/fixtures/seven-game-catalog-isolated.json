@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "contract": "four-of-hearts.verified-results.v1",
+  "games": [
+    {
+      "schemaVersion": 1,
+      "contract": "four-of-hearts.verified-results.v1",
+      "gameId": "bobby",
+      "displayName": "Bobby the Breadasaurus: Tower Defense Adventures",
+      "rulesVersion": null,
+      "verifiedResults": {
+        "enabled": false,
+        "source": "server-challenge-replay",
+        "reason": "service_unavailable"
+      },
+      "leaderboard": {
+        "enabled": false,
+        "public": true,
+        "policyVersion": null,
+        "defaultBoard": "default",
+        "metric": null,
+        "reason": "ranking_policy_unavailable"
+      },
+      "capabilitiesPath": "/games/bobby/v1/capabilities",
+      "publicLeaderboardPath": "/games/bobby/v1/public-leaderboard"
+    },
+    {
+      "schemaVersion": 1,
+      "contract": "four-of-hearts.verified-results.v1",
+      "gameId": "evil-doom-boy",
+      "displayName": "Evil Doom Boy",
+      "rulesVersion": null,
+      "verifiedResults": {
+        "enabled": false,
+        "source": "server-challenge-replay",
+        "reason": "service_unavailable"
+      },
+      "leaderboard": {
+        "enabled": false,
+        "public": true,
+        "policyVersion": null,
+        "defaultBoard": "default",
+        "metric": null,
+        "reason": "ranking_policy_unavailable"
+      },
+      "capabilitiesPath": "/games/evil-doom-boy/v1/capabilities",
+      "publicLeaderboardPath": "/games/evil-doom-boy/v1/public-leaderboard"
+    },
+    {
+      "schemaVersion": 1,
+      "contract": "four-of-hearts.verified-results.v1",
+      "gameId": "gin-rummy",
+      "displayName": "Gin Rummy",
+      "rulesVersion": "gin-rummy-100-v1",
+      "verifiedResults": {
+        "enabled": false,
+        "source": "authoritative-engine",
+        "reason": "service_unavailable"
+      },
+      "leaderboard": {
+        "enabled": false,
+        "public": true,
+        "policyVersion": null,
+        "defaultBoard": "default",
+        "metric": null,
+        "reason": "ranking_policy_unavailable"
+      },
+      "capabilitiesPath": "/games/gin-rummy/v1/capabilities",
+      "publicLeaderboardPath": "/games/gin-rummy/v1/public-leaderboard"
+    },
+    {
+      "schemaVersion": 1,
+      "contract": "four-of-hearts.verified-results.v1",
+      "gameId": "hearts",
+      "displayName": "Hearts",
+      "rulesVersion": "hearts-canonical-v1",
+      "verifiedResults": {
+        "enabled": false,
+        "source": "authoritative-engine",
+        "reason": "service_unavailable"
+      },
+      "leaderboard": {
+        "enabled": false,
+        "public": true,
+        "policyVersion": "four-of-hearts-server-elo-v1",
+        "defaultBoard": "default",
+        "metric": {
+          "key": "rating",
+          "label": "Rating",
+          "direction": "desc",
+          "tieBreak": "wins"
+        },
+        "reason": "service_unavailable"
+      },
+      "capabilitiesPath": "/games/hearts/v1/capabilities",
+      "publicLeaderboardPath": "/games/hearts/v1/public-leaderboard"
+    },
+    {
+      "schemaVersion": 1,
+      "contract": "four-of-hearts.verified-results.v1",
+      "gameId": "sling",
+      "displayName": "Sling Bling",
+      "rulesVersion": null,
+      "verifiedResults": {
+        "enabled": false,
+        "source": "server-challenge-replay",
+        "reason": "service_unavailable"
+      },
+      "leaderboard": {
+        "enabled": false,
+        "public": true,
+        "policyVersion": null,
+        "defaultBoard": "default",
+        "metric": null,
+        "reason": "ranking_policy_unavailable"
+      },
+      "capabilitiesPath": "/games/sling/v1/capabilities",
+      "publicLeaderboardPath": "/games/sling/v1/public-leaderboard"
+    },
+    {
+      "schemaVersion": 1,
+      "contract": "four-of-hearts.verified-results.v1",
+      "gameId": "spades",
+      "displayName": "Spades",
+      "rulesVersion": "spades-canonical-v1",
+      "verifiedResults": {
+        "enabled": false,
+        "source": "authoritative-engine",
+        "reason": "service_unavailable"
+      },
+      "leaderboard": {
+        "enabled": false,
+        "public": true,
+        "policyVersion": "four-of-hearts-server-elo-v1",
+        "defaultBoard": "default",
+        "metric": {
+          "key": "rating",
+          "label": "Rating",
+          "direction": "desc",
+          "tieBreak": "wins"
+        },
+        "reason": "service_unavailable"
+      },
+      "capabilitiesPath": "/games/spades/v1/capabilities",
+      "publicLeaderboardPath": "/games/spades/v1/public-leaderboard"
+    },
+    {
+      "schemaVersion": 1,
+      "contract": "four-of-hearts.verified-results.v1",
+      "gameId": "thumb-command",
+      "displayName": "Thumb Command",
+      "rulesVersion": "tc-replay-v1",
+      "verifiedResults": {
+        "enabled": false,
+        "source": "server-challenge-replay",
+        "reason": "service_unavailable"
+      },
+      "leaderboard": {
+        "enabled": false,
+        "public": true,
+        "policyVersion": "tc-mission-v1",
+        "defaultBoard": "tc-mission-v1-l1-medium-blueguard-m1-a0",
+        "metric": {
+          "key": "points",
+          "label": "Points",
+          "direction": "desc",
+          "tieBreak": "earliest"
+        },
+        "reason": "service_unavailable"
+      },
+      "capabilitiesPath": "/games/thumb-command/v1/capabilities",
+      "publicLeaderboardPath": "/games/thumb-command/v1/public-leaderboard"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/app-experience-v2.css": "assets/app-experience-v2.css?v=9dbc0aa7e82c",
   "assets/apple-touch-icon.png": "assets/apple-touch-icon.png?v=d91e719cdc3b",
-  "assets/bobby-protector-builder.css": "assets/bobby-protector-builder.css?v=064326966971",
+  "assets/bobby-protector-builder.css": "assets/bobby-protector-builder.css?v=e45313ef08cc",
   "assets/brand-board.webp": "assets/brand-board.webp?v=1b09e7aa049b",
   "assets/brand-mark-4oh.webp": "assets/brand-mark-4oh.webp?v=f884669fed67",
   "assets/canadian-copy-v2.js": "assets/canadian-copy-v2.js?v=1dd6e1ac9889",
@@ -28,7 +28,7 @@ window.FOUR_HEARTS_ASSETS = Object.freeze({
   "assets/immersive-world.js": "assets/immersive-world.js?v=f122e5072a7f",
   "assets/launch-countdown.js": "assets/launch-countdown.js?v=e12b73d95f5b",
   "assets/more-games-tutorial.js": "assets/more-games-tutorial.js?v=8398244e0f9b",
-  "assets/news-editorial-20261107.css": "assets/news-editorial-20261107.css?v=996b04b97a57",
+  "assets/news-editorial-20261107.css": "assets/news-editorial-20261107.css?v=5e2207bbfd09",
   "assets/news-editorial-20261107.js": "assets/news-editorial-20261107.js?v=062174f4e3b6",
   "assets/news-visuals.css": "assets/news-visuals.css?v=55d670db582f",
   "assets/next-level.js": "assets/next-level.js?v=2e525a711d2b",

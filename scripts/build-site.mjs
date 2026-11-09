@@ -7,6 +7,7 @@ import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
 import { cardRoomMedia } from "./card-room-media.mjs";
 import { palaceLeaderboardOrigin, palaceLeaderboardPage } from "./palace-leaderboard-content.mjs";
+import { WEB_GAMES, GAME_ORIGIN, leaderboardsHub, gameLeaderboardPage, leaderboardEntry } from "./game-leaderboards-content.mjs";
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { resolve } from "node:path";
@@ -65,7 +66,7 @@ write("assets/asset-manifest.js", `window.FOUR_HEARTS_ASSETS = Object.freeze(${J
 const nav = (current) => {
   const navItem = (product) => `<a href="${product.infoUrl}"${product.key === current ? ' aria-current="page"' : ""}><strong>${product.shortTitle}</strong><small>${product.type}</small></a>`;
   const group = (label, key) => `<section class="games-menu-section menu-${key}"><h2>${label}</h2><div>${productGroups[key].map(navItem).join("")}</div></section>`;
-  const gamesMenu = `${group("Card Games","card-games")}${group("Arcade, Defense & Adventure","arcade-adventure")}${group("Puzzle & Creative Play","puzzle-creative")}<a class="view-all-games" href="games.html">View All Games →</a>`;
+  const gamesMenu = `${group("Card Games","card-games")}${group("Arcade, Defense & Adventure","arcade-adventure")}${group("Puzzle & Creative Play","puzzle-creative")}<a class="view-all-games" href="games.html">View All Games →</a><a class="view-all-games" href="leaderboards.html">Public leaderboards →</a>`;
   const appsMenu = appCatalog.map(navItem).join("");
   return `<header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}><img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="" width="76" height="58"><span class="brand-copy">Four of Hearts<small>Interactive</small></span><span class="sr-only">Four of Hearts Interactive home</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button><nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary"><details class="games-menu"${current === "games" ? " data-current=true" : ""}><summary>Games <span aria-hidden="true">+</span></summary><div class="games-menu-panel">${gamesMenu}</div></details><details class="nav-lifestyle"${current === "lifestyle" ? " data-current=true" : ""}><summary>Lifestyle Apps</summary><div class="nav-lifestyle-panel">${appsMenu}<a href="lifestyle-apps.html"><strong>View Lifestyle Apps</strong></a></div></details><a href="news.html"${current === "news" ? ' aria-current="page"' : ""}>News</a><a href="about.html"${current === "about" ? ' aria-current="page"' : ""}>About</a><a href="support.html"${current === "support" ? ' aria-current="page"' : ""}>Support</a><a class="nav-play-palace" href="palace-play.html"${current === "play" ? ' aria-current="page"' : ""}>Play Palace</a>${accountNavigation()}</nav><div class="header-tools" aria-label="Site preferences"><label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label><button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button></div></div></header>`;
 };
@@ -140,7 +141,9 @@ const footer = () => `<footer class="site-footer">
 const head = ({ title, description, path, image = "assets/og-palace-app-world.jpg", imageAlt = "Four of Hearts Interactive", type = "website", jsonLd, noindex = false, script = "", originalLanguage = false }) => {
   const structuredData = jsonLd ? JSON.stringify(jsonLd).replaceAll("<", "\\u003c") : "";
   const structuredDataHash = structuredData ? createHash("sha256").update(structuredData).digest("base64") : "";
-  const contentPolicy = `default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'${structuredDataHash ? ` 'sha256-${structuredDataHash}'` : ""}; connect-src 'self'${path === '/palace-leaderboard.html' ? ' ' + palaceLeaderboardOrigin : ''}; media-src 'self'; font-src 'self'; upgrade-insecure-requests`;
+  const suiteBoardPage = path === '/leaderboards.html' || WEB_GAMES.some(game => path === '/' + game.route);
+  const suiteBoardProduct = WEB_GAMES.find(game => path === '/' + game.infoUrl);
+  const contentPolicy = `default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'${structuredDataHash ? ` 'sha256-${structuredDataHash}'` : ""}; connect-src 'self'${path === '/palace-leaderboard.html' ? ' ' + palaceLeaderboardOrigin : suiteBoardPage ? ' ' + GAME_ORIGIN : ''}; media-src 'self'; font-src 'self'; upgrade-insecure-requests`;
   const canonical = `${siteUrl}${path}`;
   return `<!doctype html>
 <html lang="en">
@@ -176,7 +179,7 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
   <link rel="stylesheet" href="assets/gildenspire.css">
   <link rel="stylesheet" href="assets/studio-expansion.css">
   <link rel="stylesheet" href="assets/responsive-refinements.css">
-  <link rel="stylesheet" href="assets/card-game-stories.css">${path === "/palace-leaderboard.html" ? '\n  <link rel="stylesheet" href="assets/palace-leaderboard/board.css">' : ""}
+  <link rel="stylesheet" href="assets/card-game-stories.css">${path === "/palace-leaderboard.html" ? '\n  <link rel="stylesheet" href="assets/palace-leaderboard/board.css">' : ""}${suiteBoardPage || suiteBoardProduct ? '\n  <link rel="stylesheet" href="assets/game-leaderboards/board.css">' : ""}
   <link rel="stylesheet" href="assets/workbench.css">
   <link rel="stylesheet" href="assets/news-visuals.css">${path === "/news.html" && !noindex ? '\n  <link rel="stylesheet" href="assets/news-editorial-20261107.css">' : ""}
   ${['/','/games.html','/games/evil-doom-boy/'].includes(path)?'<link rel="stylesheet" href="assets/evil-doom-reference.css">':''}
@@ -209,12 +212,13 @@ const head = ({ title, description, path, image = "assets/og-palace-app-world.jp
 
 const page = ({ title, description, path, current, content, image, imageAlt, type, jsonLd, noindex, script, bodyClass = "" }) => {
   const journalProduct = !noindex && productCatalog.find(product => path === `/${product.infoUrl.replace(/index\.html$/, "")}`);
+  const suiteBoardProduct = WEB_GAMES.find(game => path === '/' + game.infoUrl);
   return `${head({ title, description, path, image, imageAlt, type, jsonLd, noindex, script, originalLanguage: current === "news" })}
 <body class="${bodyClass}">
   <a class="skip-link" href="#main">Skip to content</a>
   ${nav(current)}
   ${["palace", "play"].includes(current) ? `<div class="release-strip" data-release-strip role="timer"></div>` : ""}
-  <main id="main">${journalProduct ? withProductGallery(journalProduct,content) : content}${journalProduct ? productJournal(journalProduct,news) : ""}</main>
+  <main id="main">${journalProduct ? withProductGallery(journalProduct,content) : content}${suiteBoardProduct ? leaderboardEntry(suiteBoardProduct) : ''}${journalProduct ? productJournal(journalProduct,news) : ""}</main>
   ${footer()}
   ${globalDialogs()}
 </body>
@@ -425,6 +429,8 @@ write("sleep-amigo.html", sleepAmigoPage({page,company,siteUrl,product:gameByKey
 
 for(const [key,g] of Object.entries(cardGames)){write(cardRoute(key),page({title:g.title+" | Four of Hearts Interactive",description:g.intro,path:"/"+cardRoute(key),current:"games",bodyClass:"card-game-page",image:cardRoomMedia[key].phone.src,imageAlt:cardRoomMedia[key].phone.alt,content:cardGamePage(key)}));}
 write("palace-leaderboard.html",page({title:"Palace Leaderboard | Four of Hearts Interactive",description:"The public Palace Global Top 25, current champion and official ranked ratings. Your personal standing stays private in the signed-in Palace app.",path:"/palace-leaderboard.html",current:"games",bodyClass:"palace-leaderboard-page",content:palaceLeaderboardPage(),script:`<script type="module" src="${assetVersion("assets/palace-leaderboard/client.mjs")}"></script>`}));
+write("leaderboards.html",page({title:"Game Leaderboards | Four of Hearts Interactive",description:"Check public Top 25 standings and ranking availability for Bobby, Evil Doom Boy, Gin Rummy, Hearts, Sling Bling, Spades and Thumb Command.",path:"/leaderboards.html",current:"games",bodyClass:"game-leaderboards-page",content:leaderboardsHub(),script:`<script type="module" src="${assetVersion("assets/game-leaderboards/client.mjs")}"></script>`}));
+for(const game of WEB_GAMES)write(game.route,page({title:game.name+" Leaderboard | Four of Hearts Interactive",description:"Check the public "+game.name+" Top 25 and current ranking availability. Personal standings remain private in the signed-in game.",path:"/"+game.route,current:"games",bodyClass:"game-leaderboards-page",image:game.artwork,content:gameLeaderboardPage(game),script:`<script type="module" src="${assetVersion("assets/game-leaderboards/client.mjs")}"></script>`}));
 
 write("play.html", page({
   title: "Quick Play | Four of Hearts Interactive",
@@ -598,6 +604,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
+  "leaderboards.html", ...WEB_GAMES.map(game => game.route),
   "index.html", "gloze.html", "reel-fun.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-leaderboard.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),
   "sling-nouveau.html", "news-archive.html", "news-origins.html", "news-timeline.html", ...productCatalog.map(productArchive),
