@@ -1,0 +1,36 @@
+{
+  "integratedAt": "2026-11-09T15:52:58.163Z",
+  "base": "47c18bb02a6e5871b86ff0fb10b60e206bc82564",
+  "articleId": "palace-leaderboard-entered-the-room",
+  "publicationDate": "2026-11-09",
+  "publishedAt": "2026-11-09T15:52:58.159Z",
+  "timeZone": "America/Chicago",
+  "image": "assets/palace-news/palace-public-leaderboard-20261109-59b68e97796d.jpg",
+  "imageSHA256": "59b68e97796d57797017251070a7184fb2bed6bdcee46872ed9d364585574ca6",
+  "imageBytes": 130154,
+  "approvedOpeningParagraphs": 4,
+  "approvedSectionHeadings": 3,
+  "approvedParagraphs": 11,
+  "firstParagraphRenderedOnceAsLead": true,
+  "existingArticles": 69,
+  "scheduledDraftsRemaining": 0,
+  "assetFingerprintsPreserved": 92,
+  "rawByteFormsMatched": [
+    {
+      "file": "assets/bobby-protector-builder.css",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/news-editorial-20261107.css",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/news-editorial-20261107.js",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/workbench-products.js",
+      "contentUnchanged": true
+    }
+  ]
+}

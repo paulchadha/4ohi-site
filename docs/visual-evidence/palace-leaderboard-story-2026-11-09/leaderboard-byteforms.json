@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-11-09T15:54:02.147Z",
+  "fixes": [
+    {
+      "file": "assets/palace-leaderboard/board.css",
+      "expected": "9ebdd3411341",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/palace-leaderboard/client.mjs",
+      "expected": "4c016f9d113f",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/game-leaderboards/board.css",
+      "expected": "13abf41a3677",
+      "contentUnchanged": true
+    },
+    {
+      "file": "assets/game-leaderboards/client.mjs",
+      "expected": "8f536174b1ff",
+      "contentUnchanged": true
+    }
+  ]
+}

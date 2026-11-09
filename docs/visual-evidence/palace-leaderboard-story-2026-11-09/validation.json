@@ -1,0 +1,86 @@
+{
+  "verifiedAt": "2026-11-09T16:00:59.160Z",
+  "phase": "Prepublication validation",
+  "base": "47c18bb02a6e5871b86ff0fb10b60e206bc82564",
+  "articleId": "palace-leaderboard-entered-the-room",
+  "actualPublicationDate": "2026-11-09",
+  "timeZone": "America/Chicago",
+  "build": {
+    "generatedPublicDocuments": 144,
+    "publishedArticles": 70
+  },
+  "static": {
+    "pages": 169,
+    "passed": true
+  },
+  "schedule": {
+    "catalogPosts": 20,
+    "futureDrafts": 0,
+    "publicHtmlXmlInspected": 201,
+    "passed": true,
+    "queueConsumed": 0
+  },
+  "articleProseUnitTests": {
+    "passed": 5
+  },
+  "palaceAndSharedLeaderboardTests": {
+    "passed": 21
+  },
+  "palaceWebEngine": {
+    "focusedChecks": 33,
+    "completeSimulations": 100,
+    "failed": 0
+  },
+  "localBrowser": {
+    "passed": 15,
+    "articleWidths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "newsFirstScreenSizes": [
+      [
+        360,
+        640
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "exactTitleParagraphsHeadingsCaptionAltAndImage": true,
+    "keyboardFilterResetLoadMoreHistoryAndNoJs": true,
+    "errors": 0
+  },
+  "visualReview": {
+    "desktop": true,
+    "mobile": true,
+    "approvedOriginalScreenshotInspected": true
+  },
+  "preservation": {
+    "previousPublishedArticles": 69,
+    "protectedCheckouts": 5,
+    "protectedDirtyFiles": 2499,
+    "allPreviousTextDatesImagesAndLinksPreserved": true,
+    "sharedLeaderboardBasePreserved": true,
+    "originalDesktopFileUnchanged": true
+  },
+  "deterministicBuild": true,
+  "whitespaceCheck": true,
+  "resolvedTestHarnessIssue": "Keyboard navigation URL matcher now accepts the existing language query parameter.",
+  "notRun": [
+    "Full historical legacy suite",
+    "New native or physical-device testing",
+    "New account enrollment, provider recovery, TestFlight installation or four-person ranked trial"
+  ],
+  "pending": [
+    "Exact remote commit/deployment verification",
+    "Live article, image and browser checks",
+    "Live Palace demo smoke"
+  ]
+}

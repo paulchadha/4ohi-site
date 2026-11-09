@@ -1,4 +1,5 @@
 import { newsMediaInfo, newsVisual, workDateContext, developmentTimeline } from "./news-visuals.mjs";
+import { articleBody } from "./article-prose.mjs";
 import { withProductGallery } from "./carousel-content.mjs";
 import { pressAheadPage, pressAheadStyles } from "./press-ahead-content.mjs";
 import { reelFunPage, reelFunStyles } from "./reel-fun-content.mjs";
@@ -297,7 +298,7 @@ news.forEach((item, index) => {
   const seriesIndex = series.findIndex(a => a.id === item.id);
   const seriesNext = series[seriesIndex+1];
   const visual = newsMediaInfo(item);
-  const body = item.body.map(section => `<h2>${escapeHtml(section.heading)}</h2>${section.paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}`).join("");
+  const body = articleBody(item);
   const products = item.productIds.map(id => productCatalog.find(p => p.id === id));
   const latestAvailability = products.length ? products.map(p => `<p><strong>${escapeHtml(p.title)}:</strong> ${escapeHtml(p.availability)}.</p><a href="${p.infoUrl}">Meet ${escapeHtml(p.title)} →</a>`).join("") : "<p>This studio note does not announce a public product release.</p>";
   write(articleFile(item.slug), page({
