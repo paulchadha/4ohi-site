@@ -38,9 +38,9 @@ export function parseCatalog(value){
  if(new Set(games.map(game=>game.gameId)).size!==games.length)invalid();
  return {schemaVersion:1,contract,games};
 }
-export function parsePublicBoard(value,capability){
+export function parsePublicBoard(value,capability,requestedBoard=null){
  if(!capability?.leaderboard.enabled||capability.leaderboard.public!==true||
-  !keys(value,['schemaVersion','gameId','mode','boardKey','rulesVersion','policyVersion','metric','version','snapshotAt','eligibleCount','rows'])||value.schemaVersion!==1||value.gameId!==capability.gameId||value.mode!=='ranked'||value.boardKey!==capability.leaderboard.defaultBoard||value.rulesVersion!==capability.rulesVersion||value.policyVersion!==capability.leaderboard.policyVersion||
+  !keys(value,['schemaVersion','gameId','mode','boardKey','rulesVersion','policyVersion','metric','version','snapshotAt','eligibleCount','rows'])||value.schemaVersion!==1||value.gameId!==capability.gameId||value.mode!=='ranked'||value.boardKey!==(requestedBoard??capability.leaderboard.defaultBoard)||value.rulesVersion!==capability.rulesVersion||value.policyVersion!==capability.leaderboard.policyVersion||
   !metric(value.metric)||['key','label','direction','tieBreak'].some(key=>value.metric[key]!==capability.leaderboard.metric[key])||!version(value.version)||!timestamp(value.snapshotAt)||!integer(value.eligibleCount)||!Array.isArray(value.rows)||value.rows.length!==Math.min(25,value.eligibleCount))invalid();
  const rows=value.rows.map(row=>{
   if(!keys(row,['playerId','name','rank','value','wins','matches'])||!text(row.playerId,80)||!/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(row.playerId)||!text(row.name)||row.name.includes('@')||!integer(row.rank,1)||!Number.isFinite(row.value)||!integer(row.wins)||!integer(row.matches,1)||row.wins>row.matches)invalid();
@@ -61,12 +61,13 @@ async function boundedJson(response){
  const bytes=new Uint8Array(size);let at=0;for(const chunk of chunks){bytes.set(chunk,at);at+=chunk.length;}return JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(bytes));
 }
 const options=signal=>({method:'GET',credentials:'omit',cache:'no-store',redirect:'error',referrerPolicy:'no-referrer',signal});
-export function createGameBoardReader({gameId,fetcher=fetch,onChange=()=>{}}={}){
+export function createGameBoardReader({gameId,boardKey=null,fetcher=fetch,onChange=()=>{}}={}){
  if(gameId!==null&&!byId.has(gameId))invalid();
  let state={status:'loading',gameId,data:null,catalog:null,message:''},pending=null,controller=null,disposed=false;
  const publish=next=>{if(!disposed){state=next;onChange(next);}};
  async function load(){
   if(disposed)return;if(pending)return pending;
+  if(boardKey!==null&&(gameId===null||typeof boardKey!=='string'||!/^[a-z0-9-]{1,160}$/.test(boardKey)||['hearts','spades','gin-rummy'].includes(gameId)&&boardKey!=='default')){publish({status:'error',gameId,data:null,catalog:null,message:'This board link is invalid. Open the game’s default leaderboard.'});return;}
   controller=new AbortController();const signal=controller.signal;
   publish({...state,status:state.data?'refreshing':'loading',message:''});
   pending=Promise.resolve().then(async()=>{
@@ -78,13 +79,14 @@ export function createGameBoardReader({gameId,fetcher=fetch,onChange=()=>{}}={})
     if(gameId===null){publish({status:'ready',gameId,data:null,catalog,message:''});return;}
     const capability=catalog.games.find(game=>game.gameId===gameId);
     if(!capability?.leaderboard.enabled||capability.leaderboard.public!==true){publish({status:'unavailable',gameId,data:null,catalog,message:'Ranked standings are not available for this game yet.'});return;}
-    if(state.data&&(state.data.boardKey!==capability.leaderboard.defaultBoard||state.data.rulesVersion!==capability.rulesVersion||state.data.policyVersion!==capability.leaderboard.policyVersion||['key','label','direction','tieBreak'].some(key=>state.data.metric[key]!==capability.leaderboard.metric[key])))publish({status:'loading',gameId,data:null,catalog,message:''});
-    const boardResponse=await fetcher(GAME_ORIGIN+capability.publicLeaderboardPath+'?mode=ranked&limit=25',options(signal));
+    const selectedBoard=boardKey??capability.leaderboard.defaultBoard;
+    if(state.data&&(state.data.boardKey!==selectedBoard||state.data.rulesVersion!==capability.rulesVersion||state.data.policyVersion!==capability.leaderboard.policyVersion||['key','label','direction','tieBreak'].some(key=>state.data.metric[key]!==capability.leaderboard.metric[key])))publish({status:'loading',gameId,data:null,catalog,message:''});
+    const boardResponse=await fetcher(GAME_ORIGIN+capability.publicLeaderboardPath+'?mode=ranked&limit=25'+(boardKey===null?'':'&board='+encodeURIComponent(boardKey)),options(signal));
     if(!boardResponse.ok){
      if(boardResponse.status===503){const failure=await boundedJson(boardResponse);if(failure?.code==='ranking_policy_unavailable'){publish({status:'unavailable',gameId,data:null,catalog,message:'Ranked standings are not available for this game yet.'});return;}}
      throw Error('Standings unavailable');
     }
-    const data=parsePublicBoard(await boundedJson(boardResponse),capability);
+    const data=parsePublicBoard(await boundedJson(boardResponse),capability,selectedBoard);
     publish({status:data.rows.length?'ready':'empty',gameId,data,catalog,message:''});
    }catch{
     const retained=!!state.data||gameId===null&&!!state.catalog;
@@ -119,7 +121,9 @@ export function renderGameBoard(root,state){
  find('[data-suite-champion-name]').textContent=top?.name||'';find('[data-suite-champion-value]').textContent=top?formatValue(top.value):'';find('[data-suite-champion-metric]').textContent=data?.metric.label||'';
 }
 export function mountGameBoard(root,{document:doc=root.ownerDocument,window:win=doc.defaultView,fetcher=fetch}={}){
- const reader=createGameBoardReader({gameId:root.dataset.gameId??null,fetcher,onChange:state=>renderGameBoard(root,state)}),button=root.querySelector('[data-suite-refresh]');
+ const linkedBoards=new URL(win.location.href).searchParams.getAll('board');
+ const boardKey=root.dataset.gameId?(linkedBoards.length>1?'!':linkedBoards[0]??null):null;
+ const reader=createGameBoardReader({gameId:root.dataset.gameId??null,boardKey,fetcher,onChange:state=>renderGameBoard(root,state)}),button=root.querySelector('[data-suite-refresh]');
  const refresh=()=>{if(doc.visibilityState!=='hidden')void reader.load();},manual=()=>void reader.load();
  button.addEventListener('click',manual);doc.addEventListener('visibilitychange',refresh);win.addEventListener('online',refresh);
  const interval=win.setInterval(refresh,REFRESH_MS);refresh();

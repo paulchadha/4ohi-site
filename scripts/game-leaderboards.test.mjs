@@ -38,6 +38,20 @@ test('reader retrieves only approved catalog/public GETs without credentials, ca
  const cap=capability(),calls=[],reader=createGameBoardReader({gameId:'hearts',fetcher:async(url,options)=>{calls.push(url);assert.equal(options.method,'GET');assert.equal(options.credentials,'omit');assert.equal(options.cache,'no-store');assert.equal(options.redirect,'error');assert.equal(options.referrerPolicy,'no-referrer');assert.equal(options.headers,undefined);return reply(url===CATALOG_URL?catalog([cap]):board(cap));}});
  await reader.load();assert.deepEqual(calls,[CATALOG_URL,GAME_ORIGIN+'/games/hearts/v1/public-leaderboard?mode=ranked&limit=25']);assert.equal(reader.snapshot().status,'ready');reader.dispose();
 });
+
+test('a shared mission link reads and validates that exact public board instead of the default',async()=>{
+ const cap=capability('thumb-command',{metric:{key:'points',label:'Points',direction:'desc',tieBreak:'earliest'},rulesVersion:'tc-replay-v1',board:'tc-mission-v1-l1-medium-blueguard-m1-a0'}),selected='tc-mission-v1-l2-medium-blueguard-m1-a0',calls=[];
+ const value=board(cap,{rows:[],eligibleCount:0});value.boardKey=selected;
+ const reader=createGameBoardReader({gameId:'thumb-command',boardKey:selected,fetcher:async(url,options)=>{calls.push(url);assert.equal(options.credentials,'omit');assert.equal(options.headers,undefined);return reply(url===CATALOG_URL?catalog([cap]):value);}});
+ await reader.load();assert.equal(reader.snapshot().status,'empty');assert.equal(reader.snapshot().data.boardKey,selected);assert.equal(calls[1],GAME_ORIGIN+cap.publicLeaderboardPath+'?mode=ranked&limit=25&board='+selected);reader.dispose();
+ assert.throws(()=>parsePublicBoard({...value,boardKey:cap.leaderboard.defaultBoard},cap,selected));
+});
+
+test('invalid, injected and unrelated card board links fail before any network request',async()=>{
+ for(const [gameId,boardKey] of [['thumb-command','https://other.invalid/board'],['thumb-command','default&token=private'],['thumb-command','x'.repeat(161)],['hearts','another-room'],['spades','../default']]){
+  let requests=0;const reader=createGameBoardReader({gameId,boardKey,fetcher:async()=>{requests++;return reply(catalog());}});await reader.load();assert.equal(reader.snapshot().status,'error');assert.equal(reader.snapshot().data,null);assert.equal(requests,0);reader.dispose();
+ }
+});
 test('disabled/private policies never fetch private or fabricated board rows and never become successful empty',async()=>{
  for(const cap of [capability('bobby',{enabled:false,metric:null,rulesVersion:null}),{...capability(),leaderboard:{...capability().leaderboard,public:false}}]){const calls=[],reader=createGameBoardReader({gameId:cap.gameId,fetcher:async url=>{calls.push(url);return reply(catalog([cap]));}});await reader.load();assert.equal(reader.snapshot().status,'unavailable');assert.equal(reader.snapshot().data,null);assert.deepEqual(calls,[CATALOG_URL]);reader.dispose();}
  const reader=createGameBoardReader({gameId:'hearts',fetcher:async url=>url===CATALOG_URL?reply(catalog()):Response.json({code:'ranking_policy_unavailable'},{status:503})});await reader.load();assert.equal(reader.snapshot().status,'unavailable');assert.equal(reader.snapshot().data,null);reader.dispose();
