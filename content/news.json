@@ -1,5 +1,84 @@
 [
   {
+    "id": "4oh-is-keeping-score-brag-responsibly",
+    "slug": "4oh-is-keeping-score-brag-responsibly",
+    "title": "4OH Is Keeping Score. Brag Responsibly.",
+    "description": "The leaderboard is up and running, and Four of Hearts now has somewhere to settle at least a few friendly arguments.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "productIds": [
+      "palace",
+      "thumb-command",
+      "hearts",
+      "spades",
+      "bobby",
+      "evil-doom-boy",
+      "gin-rummy",
+      "sling-nouveau"
+    ],
+    "tags": [
+      "games",
+      "card-table",
+      "development"
+    ],
+    "status": "published",
+    "date": "2026-11-10",
+    "language": "en",
+    "featured": true,
+    "image": "assets/palace-news/palace-leaderboard-20261110-452556101430.jpg",
+    "imageAlt": "Palace’s public leaderboard showing Paul Chadha first with a rating of 1,606, LEGO second with 1,600, and TheChamp third with 1,594.",
+    "media": {
+      "kind": "development-capture",
+      "label": "Public Palace leaderboard",
+      "caption": "Palace’s public leaderboard on November 10, 2026, at approximately 8:18 a.m. Central. Standings can change.",
+      "width": 1165,
+      "height": 747,
+      "evidence": "docs/LEADERBOARD-STORY-2026-11-10.md"
+    },
+    "intro": [
+      "The leaderboard is up and running, and Four of Hearts now has somewhere to settle at least a few friendly arguments.",
+      "Our public leaderboard hub brings the game boards together. Palace has its own ranked table, and each game follows its own scoring rules. A good card player and a busy spaceship pilot should not have to explain their achievements using the same number."
+    ],
+    "body": [
+      {
+        "heading": "Actual names. Actual standings.",
+        "paragraphs": [
+          "At this morning’s check, Palace’s board showed Paul Chadha at 1,606, LEGO at 1,600, and TheChamp at 1,594.",
+          "Paul is still first in today’s screenshot. He has already warned us not to expect that to last. We have postponed the statue.",
+          "Three people competed on November 8, giving the board something better to display than our intentions. Getting here took work on account access, the leaderboard connection, and keeping the tested account and standing intact after restarting the app. Passing tests was encouraging. Opening the app and seeing the board was considerably more satisfying."
+        ]
+      },
+      {
+        "heading": "The picture is getting bigger",
+        "paragraphs": [
+          "Thumb Command’s public board also returned a result this morning: HanSolo with 3,897 points.",
+          "Hearts and Spades have responding boards, but no eligible ranked players yet. Bobby the Breadasaurus, Evil Doom Boy, Gin Rummy, and Sling Bling still show that ranked standings are not available.",
+          "That is where things stand today. More games and complete player journeys still need testing before we can call the whole lineup connected.",
+          "The larger goal is straightforward: finish a game, have the eligible result recorded, and see how it compares with other players. Public boards show display names and results; personal standing belongs inside the signed-in game.",
+          "For now, the scoreboard has names on it. The friendly competition has somewhere to live. And Paul has a screenshot he may wish to keep.",
+          "Check the 4OH leaderboards."
+        ]
+      }
+    ],
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-11-10",
+      "label": "Public leaderboard snapshot on November 10, 2026.",
+      "evidence": "docs/LEADERBOARD-STORY-2026-11-10.md"
+    },
+    "publishedAt": "2026-11-10T14:29:43.777Z",
+    "inlineLinks": [
+      {
+        "text": "public leaderboard hub",
+        "href": "https://4ohi.com/leaderboards.html"
+      },
+      {
+        "text": "Check the 4OH leaderboards",
+        "href": "https://4ohi.com/leaderboards.html"
+      }
+    ]
+  },
+  {
     "id": "palace-leaderboard-entered-the-room",
     "slug": "palace-leaderboard-entered-the-room",
     "title": "Palace: The Leaderboard Has Entered the Room",
@@ -17,7 +96,7 @@
     "status": "published",
     "date": "2026-11-09",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "image": "assets/palace-news/palace-public-leaderboard-20261109-59b68e97796d.jpg",
     "imageAlt": "Palace’s public leaderboard showing Paul Chadha first, followed by LEGO and TheChamp.",
     "media": {
