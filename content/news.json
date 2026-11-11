@@ -1,5 +1,54 @@
 [
   {
+    "id": "sling-bling-money-personality-problem",
+    "slug": "sling-bling-money-personality-problem",
+    "title": "Sling Bling’s Money Has Developed a Personality Problem",
+    "description": "Sling Bling’s currency characters are getting personalities, new artwork and smoother movement in the latest Android test build.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "productIds": [
+      "sling-nouveau"
+    ],
+    "tags": [
+      "games",
+      "development"
+    ],
+    "status": "published",
+    "date": "2026-11-11",
+    "language": "en",
+    "featured": true,
+    "image": "assets/sling-news/sling-bling-personalities-20261111.png",
+    "imageAlt": "Three Sling Bling money-monster concepts: a grinning copper penny, a muscular green monster made of $20 notes, and a confident $100 strategist in a jacket.",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Sling Bling concept artwork",
+      "caption": "Sling Bling’s character direction: a goofy penny, a furious $20 and a $100 mastermind. Concept artwork, not a gameplay screenshot.",
+      "width": 1774,
+      "height": 887,
+      "evidence": "docs/SLING-PERSONALITIES-STORY-2026-11-11.md"
+    },
+    "intro": [
+      "The feedback was wonderfully clear: same three guys, same exact spot. A game about launching things should not feel like Groundhog Day with a slingshot.",
+      "Then came the next problem. The monsters looked too much like animals, their movement felt blocky, and the scenery, sling and interface looked like pictures stacked on pictures. We had pieces of a game. They needed to feel like they belonged together."
+    ],
+    "body": [
+      {
+        "heading": "So the money got an attitude adjustment.",
+        "paragraphs": [
+          "The new character direction includes a goofy penny, a furious $20 and a $100 mastermind who looks suspiciously pleased with his own plan. Apparently, compound interest wasn’t threatening enough.",
+          "That direction has now reached a new Android test build. All 18 currency characters have updated artwork, with six poses apiece and continuous animation between them. The scenery and player interface have also been refreshed, aiming for one lively cartoon world.",
+          "The build has passed its package and gameplay checks. The next test is the one that matters: how it looks, moves and feels on the phone. That check is still pending, and the broader level overhaul is unfinished.",
+          "We’re pleased with the progress. We’re also keeping the victory lap short. There is a very angry twenty-dollar bill waiting to see whether this actually feels fun."
+        ]
+      }
+    ],
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null
+    },
+    "publishedAt": "2026-11-11T16:30:21.813Z"
+  },
+  {
     "id": "4oh-is-keeping-score-brag-responsibly",
     "slug": "4oh-is-keeping-score-brag-responsibly",
     "title": "4OH Is Keeping Score. Brag Responsibly.",
@@ -24,7 +73,7 @@
     "status": "published",
     "date": "2026-11-10",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "image": "assets/palace-news/palace-leaderboard-20261110-452556101430.jpg",
     "imageAlt": "Palace’s public leaderboard showing Paul Chadha first with a rating of 1,606, LEGO second with 1,600, and TheChamp third with 1,594.",
     "media": {
