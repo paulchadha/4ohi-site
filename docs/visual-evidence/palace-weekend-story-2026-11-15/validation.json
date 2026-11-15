@@ -1,0 +1,77 @@
+{
+  "verifiedAt": "2026-11-15T21:37:46.129Z",
+  "phase": "Prepublication",
+  "base": "208c320819c677f01d8a39c1fb553485b1b2f3ce",
+  "title": "Palace: A Weekend Well Played",
+  "actualPublicationDate": "2026-11-15",
+  "timeZone": "America/Chicago",
+  "approvedText": {
+    "paragraphs": 5,
+    "sectionHeadings": 0,
+    "titleExact": true,
+    "bodyExact": true,
+    "captionExact": true,
+    "altExact": true
+  },
+  "approvedArt": {
+    "path": "assets/icon-palace-4hearts.webp",
+    "bytes": 61024,
+    "width": 512,
+    "height": 512,
+    "sha256": "f82b9541bfdb0034f4163d129c9e7020c4a5c910956fed74844fed4e7420781f",
+    "originalUnchanged": true,
+    "repoGitAndDeployedHashesEqual": true,
+    "ownerConfirmedExistingArt": true,
+    "libraryMetadataMatches": true,
+    "libraryDigestExposed": false
+  },
+  "build": {
+    "publicDocumentsGenerated": 147,
+    "publishedArticles": 73
+  },
+  "staticPages": 172,
+  "schedule": {
+    "passed": true,
+    "catalogPosts": 20,
+    "futureDrafts": 0,
+    "publicHtmlXmlInspected": 204,
+    "queueConsumed": 0
+  },
+  "unitTests": 33,
+  "localBrowserChecks": 15,
+  "articleWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "newsFirstScreens": [
+    [
+      360,
+      640
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "filtersResetLoadMoreHistoryKeyboardAndNoJs": true,
+  "desktopMobileVisualReview": true,
+  "priorArticlesPreserved": 72,
+  "quietRefreshAndHomepagePalaceLinkPreserved": true,
+  "allOtherAppsAndDemoPreserved": true,
+  "deterministicBuild": true,
+  "notRun": [
+    "Native/device or new account/gameplay acceptance",
+    "Full historical legacy suite"
+  ],
+  "pending": [
+    "Exact remote/deployment verification",
+    "Live article and image fidelity",
+    "Live Palace demo and quiet leaderboard smoke"
+  ]
+}

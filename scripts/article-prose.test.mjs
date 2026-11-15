@@ -8,6 +8,10 @@ test('legacy plain prose keeps escaping and exact markup', () => {
 test('opening paragraphs precede sections and approved links preserve visible text', () => {
   assert.equal(articleBody({intro:['The opening.'],body:[{heading:'The board',paragraphs:['See the public Palace leaderboard, then return.']}],inlineLinks:[{text:'public Palace leaderboard',href:'https://4ohi.com/palace-leaderboard.html'}]}), '<p>The opening.</p><h2>The board</h2><p>See the <a href="https://4ohi.com/palace-leaderboard.html">public Palace leaderboard</a>, then return.</p>');
 });
+
+test('a short approved story can contain paragraphs without invented section headings', () => {
+  assert.equal(articleBody({intro:['First approved paragraph.','Second approved paragraph.'],body:[]}), '<p>First approved paragraph.</p><p>Second approved paragraph.</p>');
+});
 test('HTML in labels and surrounding text is escaped; Markdown is not implicitly parsed', () => {
   const text='<b>Board</b> & [unapproved](javascript:alert)';
   assert.equal(articleBody({body:[{heading:'Safe',paragraphs:[text]}],inlineLinks:[{text:'<b>Board</b>',href:'https://4ohi.com/palace-leaderboard.html?x=1&y=2'}]}), '<h2>Safe</h2><p><a href="https://4ohi.com/palace-leaderboard.html?x=1&amp;y=2">&lt;b&gt;Board&lt;/b&gt;</a> &amp; [unapproved](javascript:alert)</p>');

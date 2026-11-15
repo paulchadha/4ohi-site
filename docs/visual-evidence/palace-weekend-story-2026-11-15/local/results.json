@@ -1,0 +1,74 @@
+{
+  "verifiedAt": "2026-11-15T21:32:45.973Z",
+  "base": "http://127.0.0.1:54780",
+  "articleId": "palace-a-weekend-well-played",
+  "checks": [
+    {
+      "articleWidth": 320,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "articleWidth": 390,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "articleWidth": 768,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "articleWidth": 1440,
+      "approvedTextAndImageExact": true
+    },
+    {
+      "surface": "news.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "news-product-palace.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "palace.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "index.html",
+      "newArticleLinked": true
+    },
+    {
+      "surface": "news-timeline.html",
+      "newArticleLinked": true
+    },
+    {
+      "newsWidth": 360,
+      "height": 640,
+      "newestTitleAndLinkAboveFold": true
+    },
+    {
+      "newsWidth": 390,
+      "height": 844,
+      "newestTitleAndLinkAboveFold": true
+    },
+    {
+      "newsWidth": 1440,
+      "height": 900,
+      "newestTitleAndLinkAboveFold": true
+    },
+    {
+      "newsFiltersResetLoadMoreHistory": true
+    },
+    {
+      "keyboardReadLink": true
+    },
+    {
+      "noJsArticleAnd73Notes": true
+    }
+  ],
+  "errors": [],
+  "failure": null,
+  "approvedParagraphs": 5,
+  "approvedHeadings": 0,
+  "imageHashExact": true,
+  "publishedArticles": 73,
+  "draftRoutesExcluded": 1
+}

@@ -34,7 +34,7 @@ export function loadArticles(root) {
     if (a.language !== "en") fail("only English article bodies are currently supported; do not label an untranslated post as a translation");
     if (!articleTypes[a.articleType]) fail("unknown article type");
     if (![a.title,a.description,a.author].every(x => typeof x === "string" && x.trim())) fail("title, excerpt (description), and author required");
-    if (!Array.isArray(a.body) || !a.body.length || a.body.some(s => !s.heading || !Array.isArray(s.paragraphs) || !s.paragraphs.length || s.paragraphs.some(p => typeof p !== "string" || !p.trim()))) fail("body sections required");
+    if (!Array.isArray(a.body) || (!a.body.length && !a.intro?.length) || a.body.some(s => !s.heading || !Array.isArray(s.paragraphs) || !s.paragraphs.length || s.paragraphs.some(p => typeof p !== "string" || !p.trim()))) fail("body sections or opening paragraphs required");
     validateArticleProse(a);
     if (!Array.isArray(a.productIds) || new Set(a.productIds).size !== a.productIds.length || a.productIds.some(id => !byId.has(id))) fail("productIds must use unique canonical stable IDs");
     if (a.status === "published" && (!validDate(a.date) || a.date > today)) fail("real, non-future publication date required");

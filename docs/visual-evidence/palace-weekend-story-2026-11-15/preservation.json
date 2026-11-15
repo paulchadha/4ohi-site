@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-15T21:35:01.767Z",
+  "base": "208c320819c677f01d8a39c1fb553485b1b2f3ce",
+  "articleId": "palace-a-weekend-well-played",
+  "publicationDay": "2026-11-15",
+  "timeZone": "America/Chicago",
+  "approvedTitleAndFiveParagraphsCaptionAltExact": true,
+  "approvedExistingArtworkBytesUnchanged": true,
+  "priorPublishedArticlesPreserved": 72,
+  "publishedArticles": 73,
+  "queuedDraftsConsumed": 0,
+  "remainingScheduledDrafts": 0,
+  "unscheduledBacklog": "gildenspire-scenic-route",
+  "homeOutsideNewsAndDirectPalaceLinkPreserved": true,
+  "quietPalaceRefreshAndAllLeaderboardImplementationsPreserved": true,
+  "allOtherAppPagesAndPalaceDemoPreserved": true,
+  "oldArticleDatesTextArtAndRssItemsPreserved": true,
+  "protectedCheckouts": 7,
+  "protectedDirtyFiles": 4488,
+  "unrelatedWorkPreserved": true,
+  "deterministicBuild": true
+}

@@ -1,0 +1,36 @@
+{
+  "id": "palace-a-weekend-well-played",
+  "slug": "palace-a-weekend-well-played",
+  "title": "Palace: A Weekend Well Played",
+  "description": "We played a lot of Palace this weekend. A lot. Strictly for testing purposes, naturally.",
+  "author": "The 4OH Workshop",
+  "articleType": "developer-diary",
+  "productIds": ["palace"],
+  "tags": ["games", "card-table", "development"],
+  "status": "draft",
+  "date": null,
+  "intendedActualPublicationDate": "2026-11-15",
+  "timeZone": "America/Chicago",
+  "language": "en",
+  "featured": false,
+  "intro": [
+    "Real games are helping us tighten the app and find the awkward edges before release. There’s a difference between “the code looks right” and “everyone at the table agrees that seven should be allowed.” We’re working on that difference.",
+    "We’re also working through the Apple installation bumps. Getting into the game shouldn’t be harder than winning it.",
+    "Palace is getting closer, but we’re not calling it finished while those issues remain. More play, more polish, fewer technical interruptions. That’s the plan.",
+    "And if another game is necessary for quality assurance, we are prepared to make that sacrifice."
+  ],
+  "body": [],
+  "imageAlt": "A fantasy castle with blue towers, the Four of Hearts emblem and a gold Palace banner.",
+  "media": {
+    "kind": "product-artwork",
+    "label": "Palace promotional artwork",
+    "caption": "Palace, getting closer one game at a time. Promotional artwork, not a gameplay screenshot.",
+    "libraryFileId": "libfile_b869d76d632c819193947f93c7798e88",
+    "libraryVersion": 0
+  },
+  "timeline": {
+    "mode": "undated-retrospective",
+    "date": null,
+    "label": "Weekend playtesting report; individual game-session dates are not specified."
+  }
+}
