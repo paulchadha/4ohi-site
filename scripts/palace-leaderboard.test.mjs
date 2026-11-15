@@ -21,6 +21,29 @@ test('failed refresh preserves real prior rows and labels them stale; retry reco
   await reader.load();await reader.load();assert.equal(reader.snapshot().status,'stale');assert.equal(reader.snapshot().data.version,1);assert.match(reader.snapshot().message,/last received/);
   await reader.load();assert.equal(reader.snapshot().status,'ready');assert.equal(reader.snapshot().data.version,3);reader.dispose();
 });
+
+test('a pending refresh retains the accepted state and freshness; overlapping refreshes coalesce',async()=>{
+  let calls=0,release;
+  const reader=createPublicLeaderboardReader({fetcher:()=>++calls===1?Promise.resolve(Response.json(board())):new Promise(resolve=>release=()=>resolve(Response.json({...board(),version:'5',snapshotAt:'2026-11-15T18:00:00Z'})))});
+  await reader.load();const accepted=reader.snapshot().data;
+  const first=reader.load(),second=reader.load();await Promise.resolve();
+  assert.equal(calls,2);assert.equal(reader.snapshot().status,'ready');assert.equal(reader.snapshot().refreshing,true);assert.equal(reader.snapshot().message,'');assert.equal(reader.snapshot().data,accepted);
+  release();await Promise.all([first,second]);assert.equal(reader.snapshot().data.version,'5');assert.equal(reader.snapshot().refreshing,false);reader.dispose();
+});
+
+test('a retry preserves the stale warning until accepted data arrives; empty boards also remain stable',async()=>{
+  let calls=0,release;const reader=createPublicLeaderboardReader({fetcher:()=>{calls++;if(calls===1)return Promise.resolve(Response.json(board()));if(calls===2)return Promise.reject(Error('Offline'));return new Promise(resolve=>release=()=>resolve(Response.json({...board([]),version:String(calls)})));}});
+  await reader.load();await reader.load();const stale=reader.snapshot();
+  let request=reader.load();await Promise.resolve();assert.equal(reader.snapshot().status,'stale');assert.equal(reader.snapshot().message,stale.message);assert.equal(reader.snapshot().data,stale.data);release();await request;
+  assert.equal(reader.snapshot().status,'empty');assert.equal(reader.snapshot().message,'');request=reader.load();await Promise.resolve();assert.equal(reader.snapshot().status,'empty');assert.equal(reader.snapshot().data.rows.length,0);release();await request;reader.dispose();
+});
+
+test('navigation can resume only validated prior data and disposed responses cannot overwrite a new reader',async()=>{
+  let oldRelease;const changes=[],old=createPublicLeaderboardReader({initialState:{status:'stale',data:board()},fetcher:()=>new Promise(resolve=>oldRelease=()=>resolve(Response.json({...board(),version:'99'}))),onChange:s=>changes.push(s)});
+  const pending=old.load();await Promise.resolve();assert.equal(old.snapshot().status,'stale');assert.match(old.snapshot().message,/last received/);old.dispose();
+  const resumed=createPublicLeaderboardReader({initialState:old.snapshot(),fetcher:async()=>Response.json({...board(),version:'6'})});assert.equal(resumed.snapshot().data.version,'4');await resumed.load();oldRelease();await pending;assert.equal(changes.length,1);assert.equal(resumed.snapshot().data.version,'6');resumed.dispose();
+  assert.throws(()=>createPublicLeaderboardReader({initialState:{status:'ready',data:{...board(),own:{rank:1}}}}));
+});
 test('a synchronous network failure is retryable and overlapping loads issue one request',async()=>{
   let calls=0,release;const reader=createPublicLeaderboardReader({fetcher:()=>{if(++calls===1)throw Error('Offline');return new Promise(resolve=>release=()=>resolve(Response.json(board())));}});
   await reader.load();assert.equal(reader.snapshot().status,'error');const a=reader.load(),b=reader.load();await Promise.resolve();assert.equal(calls,2);release();await Promise.all([a,b]);assert.equal(reader.snapshot().status,'ready');reader.dispose();

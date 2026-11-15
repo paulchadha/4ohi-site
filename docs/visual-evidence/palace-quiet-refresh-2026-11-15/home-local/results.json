@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-11-15T18:27:03.781Z",
+  "scope": "Local source; isolated empty API response verifies link destination",
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "directPalacePrimaryLink": true,
+      "allLeaderboardsRetained": true,
+      "tileCount": 23,
+      "keyboardNavigation": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "directPalacePrimaryLink": true,
+      "allLeaderboardsRetained": true,
+      "tileCount": 23,
+      "keyboardNavigation": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

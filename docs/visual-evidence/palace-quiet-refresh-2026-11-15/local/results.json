@@ -1,0 +1,122 @@
+{
+  "scope": "Local actual-source browser QA with isolated API responses; not live deployment evidence",
+  "api": "https://plankton-app-qgwhz.ondigitalocean.app/games/palace/v1/public-leaderboard?mode=ranked&limit=25",
+  "results": [
+    {
+      "test": "populated layout",
+      "width": 320,
+      "height": 740,
+      "rows": 25,
+      "tiesPreserved": true,
+      "overflow": false
+    },
+    {
+      "test": "populated layout",
+      "width": 390,
+      "height": 844,
+      "rows": 25,
+      "tiesPreserved": true,
+      "overflow": false
+    },
+    {
+      "test": "mobile pending refresh retains rows, text and document layout",
+      "width": 390,
+      "height": 844,
+      "passed": true
+    },
+    {
+      "test": "populated layout",
+      "width": 768,
+      "height": 1024,
+      "rows": 25,
+      "tiesPreserved": true,
+      "overflow": false
+    },
+    {
+      "test": "populated layout",
+      "width": 844,
+      "height": 390,
+      "rows": 25,
+      "tiesPreserved": true,
+      "overflow": false
+    },
+    {
+      "test": "populated layout",
+      "width": 1024,
+      "height": 768,
+      "rows": 25,
+      "tiesPreserved": true,
+      "overflow": false
+    },
+    {
+      "test": "populated layout",
+      "width": 1440,
+      "height": 900,
+      "rows": 25,
+      "tiesPreserved": true,
+      "overflow": false
+    },
+    {
+      "test": "loading is distinct from empty",
+      "passed": true
+    },
+    {
+      "test": "slow refresh is silent, coalesces repeated requests and has no layout shift",
+      "passed": true,
+      "heldMs": 1000
+    },
+    {
+      "test": "repeated unchanged standings retain the original row nodes",
+      "passed": true
+    },
+    {
+      "test": "service failure preserves and labels prior standings",
+      "passed": true
+    },
+    {
+      "test": "pending retry retains the stale warning and original timestamp",
+      "passed": true
+    },
+    {
+      "test": "retry handles genuinely empty results",
+      "passed": true
+    },
+    {
+      "test": "an empty board stays honestly empty during refresh",
+      "passed": true
+    },
+    {
+      "test": "player names render as text",
+      "passed": true
+    },
+    {
+      "test": "visible automatic refresh",
+      "elapsedMs": 3037,
+      "targetMs": 10000
+    },
+    {
+      "test": "hidden pages pause and foreground refreshes immediately",
+      "passed": true
+    },
+    {
+      "test": "cached navigation retains rows and rejects an obsolete in-flight response",
+      "passed": true
+    },
+    {
+      "test": "real navigation away and back reloads the valid board",
+      "passed": true
+    },
+    {
+      "test": "initial HTTP failure",
+      "passed": true
+    },
+    {
+      "test": "private payload rejected",
+      "passed": true
+    },
+    {
+      "test": "Palace page exposes the actual leaderboard route",
+      "passed": true
+    }
+  ]
+}

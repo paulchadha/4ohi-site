@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-11-15T18:26:14.877Z",
+  "base": "15ba34132e5e0934cb7ffc1a3240f9615a84c81a",
+  "changedTrackedFiles": [
+    "assets/palace-leaderboard/client.mjs",
+    "docs/PALACE-QUIET-REFRESH-2026-11-15.md",
+    "docs/visual-evidence/palace-quiet-refresh-2026-11-15/local/quiet-pending-mobile-390.png",
+    "docs/visual-evidence/palace-quiet-refresh-2026-11-15/local/quiet-pending-refresh.png",
+    "docs/visual-evidence/palace-quiet-refresh-2026-11-15/local/results.json",
+    "docs/visual-evidence/palace-quiet-refresh-2026-11-15/preservation.json",
+    "docs/visual-evidence/palace-quiet-refresh-2026-11-15/validation.json",
+    "index.html",
+    "palace-leaderboard.html",
+    "scripts/homepage-leaderboard-link.test.mjs",
+    "scripts/palace-leaderboard.test.mjs",
+    "scripts/production-pages.mjs",
+    "scripts/verify-palace-leaderboard.cjs"
+  ],
+  "newsCollectionAndAllNewsPagesUnchanged": true,
+  "allOtherAppPagesAndPublicDocumentsUnchanged": true,
+  "palacePageOnlyClientCacheVersionChanged": true,
+  "endpointDecoderRefreshCadenceAndRequestPrivacyUnchanged": true,
+  "protectedCheckouts": 6,
+  "protectedDirtyFiles": 4488,
+  "unrelatedWorkingFilesHeadsAndIndexesPreserved": true,
+  "deterministicFocusedBuild": true,
+  "buildScopeNote": "The baseline Sling story has a pre-existing asset-manifest cache-key drift on full builds; its exact published bytes are retained to honor the no-news-change scope.",
+  "clientSHA256": "4a35ebc086ff567bb01d5661279816504a3754ed2c7c050bf1a23b2d0b28014e",
+  "clientVersion": "4a35ebc086ff"
+}

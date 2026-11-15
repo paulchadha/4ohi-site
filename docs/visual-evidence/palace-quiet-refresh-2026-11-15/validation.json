@@ -1,0 +1,93 @@
+{
+  "verifiedAt": "2026-11-15T18:22:51.643Z",
+  "phase": "Prepublication",
+  "base": "15ba34132e5e0934cb7ffc1a3240f9615a84c81a",
+  "change": "Silent Palace background refresh with retained accepted rows and honest error/stale states",
+  "palaceReaderTests": 13,
+  "browserChecks": 22,
+  "browserScope": "Local actual-source browser QA with isolated API responses; not live deployment evidence",
+  "viewports": [
+    [
+      320,
+      740
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      844,
+      390
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "pendingRefreshStableAtDesktopAndMobile": true,
+  "testsInclude": [
+    "slow and coalesced refreshes",
+    "stable document geometry and text",
+    "unchanged row identity across repeated accepted snapshots",
+    "stale warning retained through retry",
+    "empty results retained during refresh",
+    "hidden-page pause",
+    "cached navigation and obsolete response rejection",
+    "real navigation away/back",
+    "initial HTTP errors",
+    "private payload rejection",
+    "text-only player names"
+  ],
+  "staticPages": 171,
+  "schedule": {
+    "catalogPosts": 20,
+    "publicHtmlXmlFiles": 203,
+    "futureDrafts": 0,
+    "passed": true
+  },
+  "palaceWebEngine": {
+    "focused": 33,
+    "completeSimulations": 100,
+    "failed": 0
+  },
+  "newsPublished": 72,
+  "newsChanged": false,
+  "deterministicFocusedBuild": true,
+  "visualReview": {
+    "desktop": true,
+    "mobile": true,
+    "homeDesktop": true,
+    "homeMobile": true
+  },
+  "notRun": [
+    "Native app or physical-device tests",
+    "Production game/account write operations",
+    "Full historical legacy suite"
+  ],
+  "pending": [
+    "Exact deployment and live behavior verification",
+    "Actual public-service read smoke",
+    "Live Palace demo smoke"
+  ],
+  "homepageLink": {
+    "directPalacePrimary": true,
+    "allLeaderboardsRetained": true,
+    "unitChecks": 1,
+    "browserChecks": 2,
+    "widths": [
+      390,
+      1440
+    ],
+    "keyboardNavigation": true,
+    "tileCount": 23
+  },
+  "otherLeaderboardUnitTests": 13
+}

@@ -31,24 +31,26 @@ export function parsePublicStandings(value){
   return {...value,rows,topPlayer};
 }
 
-export function createPublicLeaderboardReader({fetcher=fetch,onChange=()=>{}}={}){
-  let state={status:'loading',data:null,message:''},disposed=false,pending=null,controller=null;
+export function createPublicLeaderboardReader({fetcher=fetch,onChange=()=>{},initialState}={}){
+  const initialData=initialState?.data?parsePublicStandings(initialState.data):null;
+  const initialStale=initialData&&initialState.status==='stale';
+  let state={status:initialData?(initialStale?'stale':initialData.rows.length?'ready':'empty'):'loading',data:initialData,message:initialStale?'Refresh failed. Showing the last received standings.':'',refreshing:false},disposed=false,pending=null,controller=null;
   const publish=next=>{if(!disposed){state=next;onChange(state);}};
   async function load(){
     if(disposed)return;
     if(pending)return pending;
     controller=new AbortController();
     const signal=controller.signal;
-    publish({...state,status:state.data?'refreshing':'loading',message:''});
+    publish({...state,status:state.data?state.status:'loading',message:state.data?state.message:'',refreshing:true});
     pending=Promise.resolve().then(async()=>{
       const timeout=setTimeout(()=>controller?.abort(),4500);
       try{
         const response=await fetcher(LEADERBOARD_URL,{method:'GET',credentials:'omit',cache:'no-store',redirect:'error',referrerPolicy:'no-referrer',signal});
         if(!response.ok)throw Error('Standings request failed');
         const data=parsePublicStandings(await response.json());
-        publish({status:data.rows.length?'ready':'empty',data,message:''});
+        publish({status:data.rows.length?'ready':'empty',data,message:'',refreshing:false});
       }catch{
-        publish({...state,status:state.data?'stale':'error',message:state.data?'Refresh failed. Showing the last received standings.':'Official standings are temporarily unavailable. Please retry.'});
+        publish({...state,status:state.data?'stale':'error',message:state.data?'Refresh failed. Showing the last received standings.':'Official standings are temporarily unavailable. Please retry.',refreshing:false});
       }finally{clearTimeout(timeout);pending=null;controller=null;}
     });
     return pending;
@@ -56,33 +58,42 @@ export function createPublicLeaderboardReader({fetcher=fetch,onChange=()=>{}}={}
   return {load,snapshot:()=>state,dispose(){disposed=true;controller?.abort();}};
 }
 
+const displayedBoards=new WeakMap();
+const setText=(node,value)=>{if(node.textContent!==value)node.textContent=value;};
+
 export function renderPublicStandings(root,state){
   const find=selector=>root.querySelector(selector);
-  const busy=state.status==='loading'||state.status==='refreshing';
-  find('[data-board-panel]').setAttribute('aria-busy',String(busy));
-  const refresh=find('[data-board-refresh]');refresh.disabled=busy;refresh.textContent=busy?'Refreshing…':state.status==='error'||state.status==='stale'?'Retry':'Refresh';
+  const initialLoading=!state.data&&state.status==='loading';
+  const panel=find('[data-board-panel]');
+  if(panel.getAttribute('aria-busy')!==String(initialLoading))panel.setAttribute('aria-busy',String(initialLoading));
+  const refresh=find('[data-board-refresh]');
+  refresh.disabled=initialLoading;
+  setText(refresh,initialLoading?'Refreshing…':state.status==='error'||state.status==='stale'?'Retry':'Refresh');
   const status=find('[data-board-status]');
-  status.textContent=state.message||(state.status==='loading'?'Loading official standings…':state.status==='empty'?'No ranked players yet. Completed eligible matches will appear here.':state.status==='refreshing'?'Updating official standings…':'');
-  status.dataset.state=state.status;
-  const body=find('[data-board-rows]');
-  body.replaceChildren(...(state.data?.rows||[]).map(row=>{
-    const tr=root.ownerDocument.createElement('tr');
-    for(const [index,value]of [row.rank,row.name,row.rating.toLocaleString('en-US')].entries()){
-      const td=root.ownerDocument.createElement('td');td.textContent=String(value);
-      if(index===1)td.title=row.name;
-      tr.append(td);
-    }
-    return tr;
-  }));
+  setText(status,state.message||(initialLoading?'Loading official standings…':state.status==='empty'?'No ranked players yet. Completed eligible matches will appear here.':''));
+  if(status.dataset.state!==state.status)status.dataset.state=state.status;
+  const rows=state.data?.rows||[],rowsKey=JSON.stringify(rows);
+  if(displayedBoards.get(root)?.rowsKey!==rowsKey){
+    find('[data-board-rows]').replaceChildren(...rows.map(row=>{
+      const tr=root.ownerDocument.createElement('tr');
+      for(const [index,value]of [row.rank,row.name,row.rating.toLocaleString('en-US')].entries()){
+        const td=root.ownerDocument.createElement('td');td.textContent=String(value);
+        if(index===1)td.title=row.name;
+        tr.append(td);
+      }
+      return tr;
+    }));
+  }
   const data=state.data,top=data?.topPlayer;
-  find('[data-board-count]').textContent=data?`${data.rows.length} of ${data.eligibleCount.toLocaleString('en-US')} eligible players`:'Official Palace standings';
-  find('[data-board-time]').textContent=data?`${state.status==='stale'?'STALE · ':''}As of ${new Date(data.snapshotAt).toLocaleString()} · Version ${data.version}`:state.status==='error'?'No standings received':'Waiting for the game service';
-  find('[data-board-champion-name]').textContent=top?.name||(data?'Awaiting a champion':'—');
-  find('[data-board-champion-rating]').textContent=top?top.rating.toLocaleString('en-US'):'—';
+  setText(find('[data-board-count]'),data?`${data.rows.length} of ${data.eligibleCount.toLocaleString('en-US')} eligible players`:'Official Palace standings');
+  setText(find('[data-board-time]'),data?`${state.status==='stale'?'STALE · ':''}As of ${new Date(data.snapshotAt).toLocaleString()} · Version ${data.version}`:state.status==='error'?'No standings received':'Waiting for the game service');
+  setText(find('[data-board-champion-name]'),top?.name||(data?'Awaiting a champion':'—'));
+  setText(find('[data-board-champion-rating]'),top?top.rating.toLocaleString('en-US'):'—');
+  displayedBoards.set(root,{rowsKey,state});
 }
 
 export function mountPublicLeaderboard(root,{document:doc=root.ownerDocument,window:win=doc.defaultView,fetcher=fetch}={}){
-  const reader=createPublicLeaderboardReader({fetcher,onChange:state=>renderPublicStandings(root,state)});
+  const reader=createPublicLeaderboardReader({fetcher,initialState:displayedBoards.get(root)?.state,onChange:state=>renderPublicStandings(root,state)});
   const refresh=()=>{if(doc.visibilityState!=='hidden')void reader.load();};
   const manual=()=>void reader.load();
   root.querySelector('[data-board-refresh]').addEventListener('click',manual);
