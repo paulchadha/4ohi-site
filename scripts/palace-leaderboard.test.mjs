@@ -2,6 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createPublicLeaderboardReader,parsePublicStandings,LEADERBOARD_URL,REFRESH_MS} from '../assets/palace-leaderboard/client.mjs';
+import {palaceLeaderboardPage} from './palace-leaderboard-content.mjs';
 const player=(i=1)=>({playerId:`00000000-0000-4000-8000-${String(i).padStart(12,'0')}`,name:`Player ${i}`,avatar:'♠',rank:i,rating:1600-i,wins:1,matches:2});
 const board=(rows=[player()])=>({apiVersion:1,game:'palace',mode:'ranked',metric:'rating',metricLabel:'Ranked rating',ordering:'rating-desc,wins-desc,account-id-asc',tiePolicy:'shared-rank-rating-wins',eligibleCount:rows.length,snapshotAt:'2026-11-08T18:00:00Z',activatedAt:'2026-11-01T18:00:00Z',version:'4',rulesVersion:'palace-v2',policyVersion:'palace-pairwise-12-v1',rows,topPlayer:rows[0]||null});
 test('public reader binds the canonical production endpoint without cookies, tokens, redirects or cache',async()=>{
@@ -70,6 +71,17 @@ test('PostgreSQL bigint version strings are preserved without lossy numeric conv
 });
 test('generated route binds module, exact API CSP, public-only copy and usable Palace link',()=>{
   const page=readFileSync(new URL('../palace-leaderboard.html',import.meta.url),'utf8'),palace=readFileSync(new URL('../palace.html',import.meta.url),'utf8');
-  assert.match(page,/connect-src 'self' https:\/\/plankton-app-qgwhz\.ondigitalocean\.app;/);assert.match(page,/<script type="module" src="assets\/palace-leaderboard\/client\.mjs\?v=[a-f0-9]+"/);assert.match(page,/personal standing stays private/);assert.match(palace,/href="palace-leaderboard.html">Ranked leaderboard/);assert.equal(REFRESH_MS,5000);
+  assert.match(page,/connect-src 'self' https:\/\/plankton-app-qgwhz\.ondigitalocean\.app;/);assert.match(page,/<script type="module" src="assets\/palace-leaderboard\/client\.mjs\?v=[a-f0-9]+"/);assert.match(page,/data-points-explainer/);assert.match(palace,/href="palace-leaderboard.html">Ranked leaderboard/);assert.equal(REFRESH_MS,5000);
   assert.doesNotMatch(page,/Database Player|account:profile|access_token|own\.rank/);
+});
+
+test('prepared placement explanation contains the exact owner-approved values and no old personal/tie copy',()=>{
+  const html=palaceLeaderboardPage();
+  for(const [players,expected]of [[2,['+8','-8','—','—']],[3,['+8','-7','-8','—']],[4,['+8','-6','-7','-8']]]){
+    const row=html.match(new RegExp('<tr data-ranked-points-players="'+players+'">([\\s\\S]*?)<\\/tr>'))?.[1];assert.ok(row);
+    assert.deepEqual([...row.matchAll(/<td[^>]*>([^<]*)<\/td>/g)].map(m=>m[1]),expected);
+  }
+  assert.match(html,/<caption>Placement points per accepted ranked match between players<\/caption>/);
+  assert.match(html,/PLAYER VS PLAYER/);assert.match(html,/Bot matches do not change public standings/);
+  assert.doesNotMatch(html,/YOUR RANK|Your personal standing|Equal ratings and wins|palace-board-private/);
 });
