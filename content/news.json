@@ -1,5 +1,49 @@
 [
   {
+    "id": "palace-four-players-one-step-closer",
+    "slug": "palace-four-players-one-step-closer",
+    "title": "Palace: Four Players, One Step Closer",
+    "description": "Four-player Palace games are working, and we’ve been having a lot of fun playing them. That’s the exciting news: Palace is getting closer and closer to release.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "productIds": [
+      "palace"
+    ],
+    "tags": [
+      "games",
+      "card-table",
+      "development"
+    ],
+    "status": "published",
+    "date": "2026-11-16",
+    "language": "en",
+    "featured": true,
+    "intro": [
+      "Our latest Apple and Android testing has brought encouraging results. After the installation headaches and all the work behind the scenes, getting people into a game together feels like a real milestone.",
+      "We still have work to finish before publication. The latest rules and scoring changes need to be verified on the live service, and we’re continuing to check the awkward edge cases that only seem to appear when someone is absolutely certain they’re about to win.",
+      "But successful four-player games give us something worth celebrating. Palace is becoming the game we’ve wanted to share.",
+      "And yes, we’ll keep playing. Someone has to do the research."
+    ],
+    "body": [],
+    "image": "assets/icon-palace-4hearts.webp",
+    "imageAlt": "A gold Palace banner beneath a blue-towered castle and the Four of Hearts emblem.",
+    "media": {
+      "kind": "product-artwork",
+      "label": "Palace promotional artwork",
+      "caption": "Palace is getting closer to release. Promotional artwork, not a gameplay screenshot.",
+      "width": 512,
+      "height": 512,
+      "evidence": "docs/PALACE-FOUR-PLAYER-STORY-2026-11-16.md"
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Founder report of successful four-player games; individual game-session dates are not specified.",
+      "evidence": "docs/PALACE-FOUR-PLAYER-STORY-2026-11-16.md"
+    },
+    "publishedAt": "2026-11-16T14:22:04.041Z"
+  },
+  {
     "id": "palace-a-weekend-well-played",
     "slug": "palace-a-weekend-well-played",
     "title": "Palace: A Weekend Well Played",
@@ -17,7 +61,7 @@
     "status": "published",
     "date": "2026-11-15",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "intro": [
       "Real games are helping us tighten the app and find the awkward edges before release. There’s a difference between “the code looks right” and “everyone at the table agrees that seven should be allowed.” We’re working on that difference.",
       "We’re also working through the Apple installation bumps. Getting into the game shouldn’t be harder than winning it.",
