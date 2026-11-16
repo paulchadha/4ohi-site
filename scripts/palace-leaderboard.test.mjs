@@ -85,3 +85,5 @@ test('prepared placement explanation contains the exact owner-approved values an
   assert.match(html,/PLAYER VS PLAYER/);assert.match(html,/Bot matches do not change public standings/);
   assert.doesNotMatch(html,/YOUR RANK|Your personal standing|Equal ratings and wins|palace-board-private/);
 });
+
+test('leaderboard omits metadata and manual refresh footer',()=>{for(const html of [palaceLeaderboardPage(),readFileSync(new URL('../palace-leaderboard.html',import.meta.url),'utf8')])assert.doesNotMatch(html,/data-board-count|data-board-time|data-board-refresh|palace-board-footer/);});

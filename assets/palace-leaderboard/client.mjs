@@ -66,9 +66,6 @@ export function renderPublicStandings(root,state){
   const initialLoading=!state.data&&state.status==='loading';
   const panel=find('[data-board-panel]');
   if(panel.getAttribute('aria-busy')!==String(initialLoading))panel.setAttribute('aria-busy',String(initialLoading));
-  const refresh=find('[data-board-refresh]');
-  refresh.disabled=initialLoading;
-  setText(refresh,initialLoading?'Refreshing…':state.status==='error'||state.status==='stale'?'Retry':'Refresh');
   const status=find('[data-board-status]');
   setText(status,state.message||(initialLoading?'Loading official standings…':state.status==='empty'?'No ranked players yet. Completed eligible matches will appear here.':''));
   if(status.dataset.state!==state.status)status.dataset.state=state.status;
@@ -85,8 +82,6 @@ export function renderPublicStandings(root,state){
     }));
   }
   const data=state.data,top=data?.topPlayer;
-  setText(find('[data-board-count]'),data?`${data.rows.length} of ${data.eligibleCount.toLocaleString('en-US')} eligible players`:'Official Palace standings');
-  setText(find('[data-board-time]'),data?`${state.status==='stale'?'STALE · ':''}As of ${new Date(data.snapshotAt).toLocaleString()} · Version ${data.version}`:state.status==='error'?'No standings received':'Waiting for the game service');
   setText(find('[data-board-champion-name]'),top?.name||(data?'Awaiting a champion':'—'));
   setText(find('[data-board-champion-rating]'),top?top.rating.toLocaleString('en-US'):'—');
   displayedBoards.set(root,{rowsKey,state});
@@ -95,12 +90,10 @@ export function renderPublicStandings(root,state){
 export function mountPublicLeaderboard(root,{document:doc=root.ownerDocument,window:win=doc.defaultView,fetcher=fetch}={}){
   const reader=createPublicLeaderboardReader({fetcher,initialState:displayedBoards.get(root)?.state,onChange:state=>renderPublicStandings(root,state)});
   const refresh=()=>{if(doc.visibilityState!=='hidden')void reader.load();};
-  const manual=()=>void reader.load();
-  root.querySelector('[data-board-refresh]').addEventListener('click',manual);
   doc.addEventListener('visibilitychange',refresh);win.addEventListener('online',refresh);
   const interval=win.setInterval(refresh,REFRESH_MS);
   refresh();
-  return ()=>{reader.dispose();win.clearInterval(interval);doc.removeEventListener('visibilitychange',refresh);win.removeEventListener('online',refresh);root.querySelector('[data-board-refresh]').removeEventListener('click',manual);};
+  return ()=>{reader.dispose();win.clearInterval(interval);doc.removeEventListener('visibilitychange',refresh);win.removeEventListener('online',refresh);};
 }
 if(typeof document!=='undefined'){
   const root=document.querySelector('[data-palace-leaderboard]');
