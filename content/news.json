@@ -1,5 +1,47 @@
 [
   {
+    "id": "palace-hits-a-snag",
+    "slug": "palace-hits-a-snag",
+    "title": "Palace Hits a Snag",
+    "description": "We were hoping to be closer to the Palace release by now. Instead, we’ve run into a frustrating problem: on iPad, some buttons aren’t responding reliably to a normal tap. That’s not the kind of royal treatment we had in mind.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "productIds": [
+      "palace"
+    ],
+    "tags": [
+      "games",
+      "card-table",
+      "development"
+    ],
+    "status": "published",
+    "date": "2026-11-17",
+    "language": "en",
+    "featured": true,
+    "intro": [
+      "We’re investigating the touch issue and comparing earlier builds, but we haven’t confirmed the cause or a fix yet. On Android, a new test build addresses situations that could leave a move stuck syncing. It has passed automated tests, but still needs to be tested in a real game.",
+      "The bottom line: Palace needs more work before it’s ready. We’d rather take the setback seriously than pretend an unresponsive button is a feature. We’ll share more when we have a verified fix."
+    ],
+    "body": [],
+    "image": "assets/card-room-20261029/palace-table-phone-f57ef33cba58.png",
+    "imageAlt": "Palace development table in a browser capture.",
+    "media": {
+      "kind": "development-capture",
+      "label": "Palace development capture",
+      "caption": "Palace development capture. This illustrates the game, not the iPad touch problem.",
+      "width": 844,
+      "height": 390,
+      "evidence": "Approved existing Palace development screenshot from the Palace product page."
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-11-17",
+      "label": "Release setback update",
+      "evidence": "Owner-approved November 17 story covering the unresolved iPad touch issue and Android test build."
+    },
+    "publishedAt": "2026-11-17T14:22:11.558Z"
+  },
+  {
     "id": "palace-four-players-one-step-closer",
     "slug": "palace-four-players-one-step-closer",
     "title": "Palace: Four Players, One Step Closer",
@@ -17,7 +59,7 @@
     "status": "published",
     "date": "2026-11-16",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "intro": [
       "Our latest Apple and Android testing has brought encouraging results. After the installation headaches and all the work behind the scenes, getting people into a game together feels like a real milestone.",
       "We still have work to finish before publication. The latest rules and scoring changes need to be verified on the live service, and we’re continuing to check the awkward edge cases that only seem to appear when someone is absolutely certain they’re about to win.",
