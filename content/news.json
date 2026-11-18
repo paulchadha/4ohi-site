@@ -1,5 +1,49 @@
 [
   {
+    "id": "princesses-unicorns-making-things-work",
+    "slug": "princesses-unicorns-making-things-work",
+    "title": "Princesses, Unicorns, and the Extremely Unglamorous Business of Making Things Work",
+    "description": "The latest test builds of Princess Land Adventures and Unicorn Land Adventures have been getting some work under the hood. As it turns out, a magical makeover takes more than waving a wand at a pile of dresses. We checked.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "productIds": [
+      "princess-land",
+      "unicorn-land"
+    ],
+    "tags": [
+      "games",
+      "development"
+    ],
+    "status": "published",
+    "date": "2026-11-18",
+    "language": "en",
+    "featured": true,
+    "intro": [
+      "In Princess Land, we’ve been improving the wardrobe browser so it stays open while you choose and remembers where you were scrolling. Jewelry choices are more independent, makeup has separate controls, and we’ve been working on how complete looks load and save. Naturally fitting clothes remain a work in progress. The royal tailor has been notified.",
+      "Unicorn Land has been getting attention too: work on keeping complete looks together as players change styles, preserving saved choices, smoothing animation, and making the Makeover screen ready more reliably when the game starts. Those changes still need more device testing. Unicorns are magical, but apparently not magical enough to debug themselves.",
+      "And yes, there’s new stuff to wear. Princess Land’s test wardrobe adds four dress designs, bringing it to 23. Unicorn Land adds two markings, Starlight Paint and Petal Cheeks, and makes five existing coat palettes available in the studio. No new unicorns this time. The current herd has been advised not to get comfortable.",
+      "These are test updates, not a finished-release announcement. We’ll keep fitting, polishing and testing until the magic works as well as it looks."
+    ],
+    "body": [],
+    "image": "assets/news/land-adventures-wardrobe-20261118.png",
+    "imageAlt": "A smiling princess in a yellow floral gown and a lavender unicorn with petal-shaped cheek markings choose fabric beside dresses and jewelry in a sunlit magical wardrobe.",
+    "media": {
+      "kind": "studio-artwork",
+      "label": "Original editorial illustration",
+      "caption": "A little wardrobe magic. Original editorial illustration inspired by the updates, not an in-game screenshot.",
+      "width": 1672,
+      "height": 941,
+      "evidence": "Owner-approved original editorial illustration, November 18, 2026."
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "Test-build development update",
+      "evidence": "Owner-approved November 18 technical development diary."
+    },
+    "publishedAt": "2026-11-18T22:16:53.157Z"
+  },
+  {
     "id": "palace-hits-a-snag",
     "slug": "palace-hits-a-snag",
     "title": "Palace Hits a Snag",
@@ -17,7 +61,7 @@
     "status": "published",
     "date": "2026-11-17",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "intro": [
       "We’re investigating the touch issue and comparing earlier builds, but we haven’t confirmed the cause or a fix yet. On Android, a new test build addresses situations that could leave a move stuck syncing. It has passed automated tests, but still needs to be tested in a real game.",
       "The bottom line: Palace needs more work before it’s ready. We’d rather take the setback seriously than pretend an unresponsive button is a feature. We’ll share more when we have a verified fix."
