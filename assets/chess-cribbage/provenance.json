@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-23",
+  "device": "Samsung SM-X920 test tablet",
+  "artworkIsNotGameplay": true,
+  "noPrivateIdentityOrThirdPartyPlayerPhotos": true,
+  "media": [
+    {
+      "file": "assets/chess-cribbage/chess-tile-v2.webp",
+      "sha256": "b8461e74d83c4c9c3818479d061e5d248e2eb5cfcd5e155f3f6137837a3d69a8",
+      "kind": "Original Four of Hearts product artwork",
+      "source": "Verified Chess build-2 product art"
+    },
+    {
+      "file": "assets/chess-cribbage/cribbage-tile-1024.png",
+      "sha256": "a19724ac5d65eea4189550d22fe9adbd4ca26f0e96b436b2681ecf45126cee1e",
+      "kind": "Original Four of Hearts product artwork",
+      "source": "Verified Cribbage build-2 launcher derivative"
+    },
+    {
+      "file": "assets/chess-cribbage/chess-tablet-home.png",
+      "sha256": "b6bd8e0d9337c4f59e33e58bad8ca11010b04485033bfcced1657881f661963e",
+      "kind": "Actual Samsung tablet screenshot",
+      "source": "Captured directly from the hash-verified installed Yota4 app, November 23, 2026"
+    },
+    {
+      "file": "assets/chess-cribbage/chess-tablet-e4-nc6.png",
+      "sha256": "9e7084ce262d57dcbf404b4cb16db241d804eb4f6fdf0ba7451ddf9246d91394",
+      "kind": "Actual Samsung tablet screenshot",
+      "source": "Captured directly from the hash-verified installed Yota4 app, November 23, 2026"
+    },
+    {
+      "file": "assets/chess-cribbage/cribbage-tablet-home.png",
+      "sha256": "59e77a5762681e0b14f582698b2f64637d844f0008b2edb320a6ad9cdc9fc436",
+      "kind": "Actual Samsung tablet screenshot",
+      "source": "Captured directly from the hash-verified installed Yota4 app, November 23, 2026"
+    },
+    {
+      "file": "assets/chess-cribbage/cribbage-tablet-discard.png",
+      "sha256": "c324992c282505125bb25bd747d6f5d9e9622fa1c98d49941106730d9c478e41",
+      "kind": "Actual Samsung tablet screenshot",
+      "source": "Captured directly from the hash-verified installed Yota4 app, November 23, 2026"
+    },
+    {
+      "file": "assets/chess-cribbage/chess-pieces-notice.txt",
+      "sha256": "a872ebc50916d34c6672768c6bd350babf84da795794db1f5a796f30a4db6ea2",
+      "kind": "Third-party piece attribution and BSD notice",
+      "source": "Cburnett attribution retained from the game project"
+    },
+    {
+      "file": "assets/chess-cribbage/cribbage-tablet-pegging.png",
+      "sha256": "bbdbad2cb0d4da74594a64784583746b2ec0350f08b840af824e93aa64719a52",
+      "kind": "Actual Samsung tablet screenshot",
+      "source": "Direct capture of the hash-verified installed Cribbage app on Yota4, November 23, 2026; local human 4C and bot 7H, running count 11"
+    }
+  ]
+}

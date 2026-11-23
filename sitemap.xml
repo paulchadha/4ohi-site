@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://4ohi.com/chess.html</loc></url>
+  <url><loc>https://4ohi.com/cribbage.html</loc></url>
   <url><loc>https://4ohi.com/leaderboards.html</loc></url>
   <url><loc>https://4ohi.com/bobby-leaderboard.html</loc></url>
   <url><loc>https://4ohi.com/evil-doom-boy-leaderboard.html</loc></url>
@@ -33,6 +35,7 @@
   <url><loc>https://4ohi.com/sleep-amigo.html</loc></url>
   <url><loc>https://4ohi.com/sovinto.html</loc></url>
   <url><loc>https://4ohi.com/news.html</loc></url>
+  <url><loc>https://4ohi.com/news-chess-cribbage-and-the-fine-art-of-looking-thoughtful.html</loc></url>
   <url><loc>https://4ohi.com/news-gta-vi-stole-our-weekend.html</loc></url>
   <url><loc>https://4ohi.com/news-princesses-unicorns-making-things-work.html</loc></url>
   <url><loc>https://4ohi.com/news-palace-hits-a-snag.html</loc></url>
@@ -114,6 +117,8 @@
   <url><loc>https://4ohi.com/news-archive.html</loc></url>
   <url><loc>https://4ohi.com/news-origins.html</loc></url>
   <url><loc>https://4ohi.com/news-timeline.html</loc></url>
+  <url><loc>https://4ohi.com/news-product-chess.html</loc></url>
+  <url><loc>https://4ohi.com/news-product-cribbage.html</loc></url>
   <url><loc>https://4ohi.com/news-product-gloze.html</loc></url>
   <url><loc>https://4ohi.com/news-product-reel-fun.html</loc></url>
   <url><loc>https://4ohi.com/news-product-press-ahead.html</loc></url>

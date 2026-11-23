@@ -1,5 +1,83 @@
 [
   {
+    "id": "chess-cribbage-looking-thoughtful",
+    "slug": "chess-cribbage-and-the-fine-art-of-looking-thoughtful",
+    "title": "Chess, Cribbage, and the Fine Art of Looking Thoughtful",
+    "description": "Two classics reach the Samsung test tablet. The knight answers back, the crib needs two cards, and the workshop gets a little more honest about what is ready.",
+    "author": "The 4OH Workshop",
+    "articleType": "developer-diary",
+    "category": "From the Workbench",
+    "productIds": [
+      "chess",
+      "cribbage"
+    ],
+    "tags": [
+      "games",
+      "card-table",
+      "development",
+      "chess",
+      "cribbage"
+    ],
+    "status": "published",
+    "date": "2026-11-23",
+    "publishedAt": "2026-11-23T18:52:31.078Z",
+    "language": "en",
+    "featured": true,
+    "image": "assets/chess-cribbage/cribbage-tablet-pegging.png",
+    "imageAlt": "Actual Cribbage computer practice on the Samsung test tablet after a four of clubs and seven of hearts brought the running count to eleven",
+    "media": {
+      "kind": "development-capture",
+      "width": 2960,
+      "height": 1848,
+      "label": "Actual Samsung tablet capture · private test build",
+      "caption": "Cribbage 0.2.0 build 2 running locally on Yota4 on November 23, 2026. This is a real practice hand against the computer, not an online match or promotional mockup.",
+      "evidence": "docs/CHESS-CRIBBAGE-2026-11-23.md"
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-11-23",
+      "label": "Chess and Cribbage private Android builds installed, hash-verified and exercised on the Samsung test tablet.",
+      "evidence": "docs/CHESS-CRIBBAGE-2026-11-23.md"
+    },
+    "inlineLinks": [
+      {
+        "text": "Chess",
+        "href": "https://4ohi.com/chess.html"
+      },
+      {
+        "text": "Cribbage",
+        "href": "https://4ohi.com/cribbage.html"
+      }
+    ],
+    "intro": [
+      "Chess and Cribbage have joined the Four of Hearts table. One rewards the ability to see several moves ahead. The other asks whether we can add up to fifteen without moving our lips. A balanced development programme."
+    ],
+    "body": [
+      {
+        "heading": "The knight has entered the conversation",
+        "paragraphs": [
+          "We installed the private Chess build on our Samsung test tablet and played e4 with ordinary taps. The computer replied Nc6. A modest exchange, but an important one: the opponent is playing chess, rather than posing attractively beside a button.",
+          "The current game has a quiet blue-and-ivory board, visible clocks and computer setup with a choice of side, difficulty and time control. The lakeside scenery stays outside the squares. The knight already has enough places to go."
+        ]
+      },
+      {
+        "heading": "Six cards. Two difficult goodbyes.",
+        "paragraphs": [
+          "Cribbage made the same trip to the tablet. We started Standard computer practice, received six cards, selected two for the crib and confirmed the discard. The hand moved into pegging. A four of clubs followed by the computer’s seven of hearts took the count to eleven. Real cards, real responses, and a running total with considerably less confidence than our opening expression.",
+          "Both games borrow the Palace family’s deep blues, warm gold and welcoming table-room atmosphere. We would like them to feel like they belong together, without requiring a small committee to explain where to press."
+        ]
+      },
+      {
+        "heading": "What the testing actually proves",
+        "paragraphs": [
+          "These observations come from private Android 0.2.0 build 2 of each game. Local computer practice is working on the tablet. This is progress we can point to, preferably while keeping our fingers clear of the next move.",
+          "Fresh Google and email account journeys, real human online matches and public ranked results still need verification. A handsome Play Ranked button does not count as a multiplayer acceptance test. We tried admiring it for a moment. The paperwork remained unimpressed.",
+          "Both games now have their own pages, current artwork and genuine tablet captures on this website. There is no public download or store release announced here. We will keep recording what works, what needs another pass, and the occasional moment when the computer makes a perfectly reasonable move that we take personally."
+        ]
+      }
+    ]
+  },
+  {
     "id": "gta-vi-stole-our-weekend",
     "slug": "gta-vi-stole-our-weekend",
     "title": "GTA VI Stole Our Weekend",
@@ -14,7 +92,7 @@
     "status": "published",
     "date": "2026-11-22",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "intro": [
       "We took the weekend off to play. We could call it “open-world research,” but that would imply somebody took notes.",
       "For real, though: hats off to the people at Rockstar who made this thing. The designers, artists, programmers, animators, writers, audio crew, testers, and everyone else who made a whole city worth getting sidetracked in. You’re our heroes. If we can make something that makes somebody say “one more minute” and accidentally lose an hour, we’ll count that as a win.",

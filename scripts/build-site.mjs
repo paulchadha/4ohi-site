@@ -4,6 +4,7 @@ import { withProductGallery } from "./carousel-content.mjs";
 import { pressAheadPage, pressAheadStyles } from "./press-ahead-content.mjs";
 import { reelFunPage, reelFunStyles } from "./reel-fun-content.mjs";
 import { glozePage, glozeStyles } from "./gloze-content.mjs";
+import { tabletopPage, tabletopStyles } from "./chess-cribbage-content.mjs";
 import { accountNavigation } from "./account-navigation.mjs";
 import { cardGamePage, cardGames, cardRoute } from "./card-game-pages.mjs";
 import { cardRoomMedia } from "./card-room-media.mjs";
@@ -67,7 +68,7 @@ write("assets/asset-manifest.js", `window.FOUR_HEARTS_ASSETS = Object.freeze(${J
 const nav = (current) => {
   const navItem = (product) => `<a href="${product.infoUrl}"${product.key === current ? ' aria-current="page"' : ""}><strong>${product.shortTitle}</strong><small>${product.type}</small></a>`;
   const group = (label, key) => `<section class="games-menu-section menu-${key}"><h2>${label}</h2><div>${productGroups[key].map(navItem).join("")}</div></section>`;
-  const gamesMenu = `${group("Card Games","card-games")}${group("Arcade, Defense & Adventure","arcade-adventure")}${group("Puzzle & Creative Play","puzzle-creative")}<a class="view-all-games" href="games.html">View All Games →</a><a class="view-all-games" href="leaderboards.html">Public leaderboards →</a>`;
+  const gamesMenu = `${group("Card & Board Games","card-games")}${group("Arcade, Defense & Adventure","arcade-adventure")}${group("Puzzle & Creative Play","puzzle-creative")}<a class="view-all-games" href="games.html">View All Games →</a><a class="view-all-games" href="leaderboards.html">Public leaderboards →</a>`;
   const appsMenu = appCatalog.map(navItem).join("");
   return `<header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html"${current === "home" ? ' aria-current="page"' : ""}><img class="brand-logo" src="assets/brand-mark-4oh.webp" alt="" width="76" height="58"><span class="brand-copy">Four of Hearts<small>Interactive</small></span><span class="sr-only">Four of Hearts Interactive home</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button><nav class="site-nav" id="primary-navigation" data-open="false" aria-label="Primary"><details class="games-menu"${current === "games" ? " data-current=true" : ""}><summary>Games <span aria-hidden="true">+</span></summary><div class="games-menu-panel">${gamesMenu}</div></details><details class="nav-lifestyle"${current === "lifestyle" ? " data-current=true" : ""}><summary>Lifestyle Apps</summary><div class="nav-lifestyle-panel">${appsMenu}<a href="lifestyle-apps.html"><strong>View Lifestyle Apps</strong></a></div></details><a href="news.html"${current === "news" ? ' aria-current="page"' : ""}>News</a><a href="about.html"${current === "about" ? ' aria-current="page"' : ""}>About</a><a href="support.html"${current === "support" ? ' aria-current="page"' : ""}>Support</a><a class="nav-play-palace" href="palace-play.html"${current === "play" ? ' aria-current="page"' : ""}>Play Palace</a>${accountNavigation()}</nav><div class="header-tools" aria-label="Site preferences"><label class="header-language"><span class="sr-only">Language</span><select data-locale aria-label="Language"></select></label><button class="header-settings" type="button" data-open-settings aria-label="Open settings">⚙</button></div></div></header>`;
 };
@@ -132,7 +133,7 @@ const footer = () => `<footer class="site-footer">
   <div class="shell"><div class="footer-grid footer-grid-editorial">
     <div class="footer-brand"><div class="footer-title"><span aria-hidden="true">♥</span><strong>${company}</strong></div><p class="footer-promise">Games with heart. Apps with purpose.</p><p class="footer-copy">Independent software from South Dakota.</p><a href="mailto:support@4ohi.com">support@4ohi.com</a><div class="social-slot" data-social-slot aria-label="Official social profiles"></div></div>
     <nav class="footer-group" aria-label="Games"><h2>Games</h2><a href="games.html">All Games</a>${gameCatalog.filter(game=>game.group!=="card-games").map(game=>`<a href="${game.infoUrl}">${game.title}</a>`).join("")}</nav>
-    <nav class="footer-group" aria-label="Card games"><h2>Card Games</h2>${productGroups["card-games"].map(game=>`<a href="${game.infoUrl}">${game.title}</a>`).join("")}</nav>
+    <nav class="footer-group" aria-label="Card and board games"><h2>Card &amp; Board Games</h2>${productGroups["card-games"].map(game=>`<a href="${game.infoUrl}">${game.title}</a>`).join("")}</nav>
     <nav class="footer-group" aria-label="Applications"><h2>Apps</h2><a href="lifestyle-apps.html">All Apps</a>${appCatalog.map(app=>`<a href="${app.infoUrl}">${app.title}</a>`).join("")}</nav>
     <nav class="footer-group" aria-label="Company"><h2>Company</h2><a href="about.html">About</a><a href="about.html#south-dakota">South Dakota</a><a href="news.html">News</a><a href="support.html">Support</a><a href="contact.html">Contact</a></nav>
     <nav class="footer-group footer-trust" aria-label="Trust"><h2>Trust</h2><a href="privacy.html">Privacy Approach</a><button class="footer-privacy-button" type="button" data-open-privacy>Your Privacy Choices</button><a href="privacy.html#do-not-sell">Do Not Sell or Share</a><a href="security.html">Security</a><a href="terms.html">Terms</a></nav>
@@ -362,8 +363,8 @@ const productMarkup = (product) => page({
   bodyClass:`production-page product-${product.key}`,
   image:(product.key === "bobby" ? product.heroArtwork : product.artwork) || "assets/brand-mark-4oh.webp", imageAlt:product.alt || "Four of Hearts Interactive studio mark",
   jsonLd:{"@context":"https://schema.org","@type":product.category === "game" ? "VideoGame" : "SoftwareApplication",name:product.title,description:product.description,applicationCategory:product.type,operatingSystem:"In development",publisher:{"@type":"Organization",name:company},url:`${siteUrl}/${product.infoUrl}`},
-  script: product.key === "bobby" ? '<link rel="stylesheet" href="assets/bobby-protector-builder.css">' : product.key === "gloze" ? glozeStyles : product.key === "reel-fun" ? reelFunStyles : product.key === "press-ahead" ? pressAheadStyles : undefined,
-  content:product.key === "gloze" ? glozePage() : product.key === "reel-fun" ? reelFunPage() : product.key === "press-ahead" ? pressAheadPage() : product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
+  script: ["chess","cribbage"].includes(product.key) ? tabletopStyles : product.key === "bobby" ? '<link rel="stylesheet" href="assets/bobby-protector-builder.css">' : product.key === "gloze" ? glozeStyles : product.key === "reel-fun" ? reelFunStyles : product.key === "press-ahead" ? pressAheadStyles : undefined,
+  content:["chess","cribbage"].includes(product.key) ? tabletopPage(product) : product.key === "gloze" ? glozePage() : product.key === "reel-fun" ? reelFunPage() : product.key === "press-ahead" ? pressAheadPage() : product.key === "sling-nouveau" ? slingPage(product) : productPage({product,related:relatedFor(product),newsHref:notesFor(news,product)[0] ? articleFile(notesFor(news,product)[0].slug) : undefined})
 });
 const gildenspire = gameByKey.gildenspire;
 const gildenspireMarkup = page({
@@ -413,7 +414,7 @@ write("news-thumb-command-world-tour.html", legacyRedirectPage("Thumb Command st
 write("news-unicorn-land-adventures-development.html", legacyRedirectPage("Unicorn Land story", "news-building-unicorn-land-adventures.html"));
 write("news-welcome-to-four-of-hearts.html", legacyRedirectPage("Studio news", "news.html"));
 write("news-why-were-building-palace.html", legacyRedirectPage("Palace story", "news-palace-019-founder-review.html"));
-["gloze","reel-fun","press-ahead","sling-nouveau","bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
+["chess","cribbage","gloze","reel-fun","press-ahead","sling-nouveau","bobby","heartstack","princess-land","unicorn-land","solitaire","war","sovinto"].forEach((key) => write(gameByKey[key].infoUrl, productMarkup(gameByKey[key])));
 write("booyang-city.html", booyangCityPage({page,company,siteUrl,game:gameByKey["booyang-city"]}));
 write("funky-town.html", funkyTownPage({page,company,siteUrl,game:gameByKey["funky-town"]}));
 const evilDoomMarkup = evilDoomPage({ page, company, siteUrl, game: gameByKey["evil-doom"] });
@@ -605,6 +606,7 @@ Object.entries(routeAliases).forEach(([file, target]) => {
   write(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${robots}<meta http-equiv="refresh" content="0; url=${target}"><title>Moving to Four of Hearts Interactive</title><link rel="canonical" href="${siteUrl}/${canonicalPath}"></head><body><main><h1>Continue to Four of Hearts Interactive</h1><p><a href="${target}">Open the requested page</a>.</p></main></body></html>`);
 });
 const sitemapFiles = [
+  "chess.html", "cribbage.html",
   "leaderboards.html", ...WEB_GAMES.map(game => game.route),
   "index.html", "gloze.html", "reel-fun.html", "press-ahead.html", "gildenspire.html", "booyang-city.html", "funky-town.html", "palace.html", "palace-play.html", "palace-leaderboard.html", "palace-story.html", "thumb-command.html", "solitaire.html", "war.html", "gin-rummy.html", "bobby-the-breadasaurus.html", "games/evil-doom-boy/index.html", "heartstack-unicorn-blast.html", "princess-land-adventures.html", "unicorn-land-adventures.html", "lifestyle-apps.html", "whomly.html", "sleep-amigo.html", "sovinto.html", "news.html",
   ...news.map((item) => articleFile(item.slug)),

@@ -146,6 +146,14 @@ export const workbenchGoals = Object.freeze({
     "Design direction",
     "Who is relevant? What supports that conclusion? What would make a thoughtful next conversation?"
   ],
+  "chess": [
+    "Private Android testing",
+    "Real tablet taps, a responding computer opponent and a quiet board. Local computer practice is verified; independent-account and human online acceptance remain unfinished. The knight has declined to soften its feedback."
+  ],
+  "cribbage": [
+    "Private Android testing",
+    "Six-card deals, real crib discards, bot replies and automatic pegging scores are being exercised on the Samsung test tablet. Online tables and new-account acceptance remain unverified. Our counting face is coming along nicely."
+  ],
   "gin-rummy": [
     "Design direction",
     "A clear two-player table, readable sets and runs, and reliable match recovery. Online play is still in development."

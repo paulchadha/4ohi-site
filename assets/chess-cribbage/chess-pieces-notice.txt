@@ -1,0 +1,38 @@
+# Cburnett Staunton chess pieces
+
+The twelve SVG chess pieces in this directory are by **Cburnett**, obtained unchanged from Wikimedia Commons on **23 November 2026**. Original artwork dates shown on the file pages are 27 December 2006. We use the **BSD 3-Clause license** offered on each file page. The pages also offer other licenses; this distribution selects BSD 3-Clause consistently for all twelve files.
+
+Only the local filenames have changed. The SVG bytes, geometry, colors and transparent backgrounds are unmodified. Copyright belongs to the original author. Cburnett and Wikimedia do not endorse Four of Hearts Chess.
+
+| Local file | Piece | Primary source / license page |
+| --- | --- | --- |
+| `wp.svg` | White pawn | [Chess plt45.svg](https://commons.wikimedia.org/wiki/File:Chess_plt45.svg) |
+| `wn.svg` | White knight | [Chess nlt45.svg](https://commons.wikimedia.org/wiki/File:Chess_nlt45.svg) |
+| `wb.svg` | White bishop | [Chess blt45.svg](https://commons.wikimedia.org/wiki/File:Chess_blt45.svg) |
+| `wr.svg` | White rook | [Chess rlt45.svg](https://commons.wikimedia.org/wiki/File:Chess_rlt45.svg) |
+| `wq.svg` | White queen | [Chess qlt45.svg](https://commons.wikimedia.org/wiki/File:Chess_qlt45.svg) |
+| `wk.svg` | White king | [Chess klt45.svg](https://commons.wikimedia.org/wiki/File:Chess_klt45.svg) |
+| `bp.svg` | Black pawn | [Chess pdt45.svg](https://commons.wikimedia.org/wiki/File:Chess_pdt45.svg) |
+| `bn.svg` | Black knight | [Chess ndt45.svg](https://commons.wikimedia.org/wiki/File:Chess_ndt45.svg) |
+| `bb.svg` | Black bishop | [Chess bdt45.svg](https://commons.wikimedia.org/wiki/File:Chess_bdt45.svg) |
+| `br.svg` | Black rook | [Chess rdt45.svg](https://commons.wikimedia.org/wiki/File:Chess_rdt45.svg) |
+| `bq.svg` | Black queen | [Chess qdt45.svg](https://commons.wikimedia.org/wiki/File:Chess_qdt45.svg) |
+| `bk.svg` | Black king | [Chess kdt45.svg](https://commons.wikimedia.org/wiki/File:Chess_kdt45.svg) |
+
+Each primary file page was checked for the named author and its BSD license terms before downloading its linked SVG original. Exact upload URLs, byte lengths and SHA-256 checksums are recorded in [sources.json](sources.json). `node scripts/fetch-cburnett-pieces.mjs --verify` checks local files without network access. Run the same command without `--verify` to reproduce the downloads; a changed upstream file fails its pinned checksum before being written.
+
+The earlier original Four of Hearts piece files remain in the parent directory. This versioned set is distributed separately so an asset update does not overwrite them.
+
+## License notice
+
+The following BSD notice is the license offered on the source file pages; “The author” refers to Cburnett, credited above.
+
+Copyright © The author
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of The author nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
