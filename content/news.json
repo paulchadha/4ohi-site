@@ -1,5 +1,45 @@
 [
   {
+    "id": "gta-vi-stole-our-weekend",
+    "slug": "gta-vi-stole-our-weekend",
+    "title": "GTA VI Stole Our Weekend",
+    "description": "If you were wondering why the Four of Hearts workshop went quiet, we have a suspect. Grand Theft Auto VI came out Thursday. By Friday, our to-do list had been abandoned in a parking lot in Vice City.",
+    "author": "The 4OH Workshop",
+    "articleType": "studio-story",
+    "productIds": [],
+    "tags": [
+      "company",
+      "games"
+    ],
+    "status": "published",
+    "date": "2026-11-22",
+    "language": "en",
+    "featured": true,
+    "intro": [
+      "We took the weekend off to play. We could call it “open-world research,” but that would imply somebody took notes.",
+      "For real, though: hats off to the people at Rockstar who made this thing. The designers, artists, programmers, animators, writers, audio crew, testers, and everyone else who made a whole city worth getting sidetracked in. You’re our heroes. If we can make something that makes somebody say “one more minute” and accidentally lose an hour, we’ll count that as a win.",
+      "We’re back to making games Monday. If the weekend cost us a little productivity, please direct all complaints to Vice City. We hear the line is long."
+    ],
+    "body": [],
+    "image": "assets/news/gta-vi-stole-our-weekend-20261122.png",
+    "imageAlt": "An abandoned indie developer desk with a laptop, controller and four-heart sticker overlooks a neon pink and teal palm-lined coastal city at sunset.",
+    "media": {
+      "kind": "studio-artwork",
+      "label": "Original editorial illustration",
+      "caption": "Original editorial cover artwork, not a gameplay screenshot.",
+      "width": 1672,
+      "height": 941,
+      "evidence": "docs/GTA-WEEKEND-STORY-2026-11-22.md"
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null,
+      "label": "A weekend at the workshop",
+      "evidence": "Owner-approved studio story, published November 22, 2026."
+    },
+    "publishedAt": "2026-11-23T03:23:18.399Z"
+  },
+  {
     "id": "princesses-unicorns-making-things-work",
     "slug": "princesses-unicorns-making-things-work",
     "title": "Princesses, Unicorns, and the Extremely Unglamorous Business of Making Things Work",
@@ -17,7 +57,7 @@
     "status": "published",
     "date": "2026-11-18",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "intro": [
       "In Princess Land, we’ve been improving the wardrobe browser so it stays open while you choose and remembers where you were scrolling. Jewelry choices are more independent, makeup has separate controls, and we’ve been working on how complete looks load and save. Naturally fitting clothes remain a work in progress. The royal tailor has been notified.",
       "Unicorn Land has been getting attention too: work on keeping complete looks together as players change styles, preserving saved choices, smoothing animation, and making the Makeover screen ready more reliably when the game starts. Those changes still need more device testing. Unicorns are magical, but apparently not magical enough to debug themselves.",
