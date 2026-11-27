@@ -1,5 +1,44 @@
 [
   {
+    "id": "thanksgiving-2026",
+    "slug": "happy-thanksgiving-from-four-of-hearts",
+    "title": "Happy Thanksgiving from Four of Hearts",
+    "description": "From all of us at Four of Hearts Interactive, happy Thanksgiving!",
+    "author": "The 4OH Workshop",
+    "articleType": "studio-story",
+    "category": "From the Workbench",
+    "productIds": [],
+    "tags": [
+      "company"
+    ],
+    "status": "published",
+    "date": "2026-11-27",
+    "publishedAt": "2026-11-27T17:33:30.715Z",
+    "language": "en",
+    "featured": true,
+    "image": "assets/news/4oh-thanksgiving-20261127-a52c8cd8693f.webp",
+    "imageAlt": "A slice of pumpkin pie, the four of hearts, and two wooden chess pieces on a candlelit table.",
+    "media": {
+      "kind": "studio-artwork",
+      "width": 1672,
+      "height": 941,
+      "label": "Original illustration",
+      "caption": "There’s always room for pie and one more round. Original illustration.",
+      "evidence": "docs/THANKSGIVING-2026-11-27.md"
+    },
+    "timeline": {
+      "mode": "documented-work",
+      "date": "2026-11-27",
+      "label": "Thanksgiving message from Four of Hearts Interactive.",
+      "evidence": "docs/THANKSGIVING-2026-11-27.md"
+    },
+    "intro": [
+      "From all of us at Four of Hearts Interactive, happy Thanksgiving! We’re grateful to everyone who’s played a game, sent us feedback, or stuck around for one more round when the pie was already on the table.",
+      "We hope your Thanksgiving weekend brings good company, good leftovers, and at least one highly questionable claim that someone was “just about to win.”"
+    ],
+    "body": []
+  },
+  {
     "id": "chess-cribbage-looking-thoughtful",
     "slug": "chess-cribbage-and-the-fine-art-of-looking-thoughtful",
     "title": "Chess, Cribbage, and the Fine Art of Looking Thoughtful",
@@ -22,7 +61,7 @@
     "date": "2026-11-23",
     "publishedAt": "2026-11-23T18:52:31.078Z",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "image": "assets/chess-cribbage/cribbage-tablet-pegging.png",
     "imageAlt": "Actual Cribbage computer practice on the Samsung test tablet after a four of clubs and seven of hearts brought the running count to eleven",
     "media": {
