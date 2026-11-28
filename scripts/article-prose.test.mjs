@@ -12,6 +12,15 @@ test('opening paragraphs precede sections and approved links preserve visible te
 test('a short approved story can contain paragraphs without invented section headings', () => {
   assert.equal(articleBody({intro:['First approved paragraph.','Second approved paragraph.'],body:[]}), '<p>First approved paragraph.</p><p>Second approved paragraph.</p>');
 });
+
+test('approved emphasis preserves literal visible words without interpreting Markdown or HTML', () => {
+  assert.equal(articleBody({intro:['Reel Fun of the Lakes, then Reel Fun of the Sea.'],body:[],inlineStrong:['Reel Fun of the Lakes','Reel Fun of the Sea']}), '<p><strong>Reel Fun of the Lakes</strong>, then <strong>Reel Fun of the Sea</strong>.</p>');
+  assert.equal(articleBody({intro:['<b>Fish</b> & **literal**'],body:[],inlineStrong:['<b>Fish</b>']}), '<p><strong>&lt;b&gt;Fish&lt;/b&gt;</strong> &amp; **literal**</p>');
+});
+
+test('malformed or duplicate emphasis labels are refused', () => {
+  for (const inlineStrong of ['Fish',[null],[' '],['Fish','Fish']]) assert.throws(()=>validateArticleProse({inlineStrong}));
+});
 test('HTML in labels and surrounding text is escaped; Markdown is not implicitly parsed', () => {
   const text='<b>Board</b> & [unapproved](javascript:alert)';
   assert.equal(articleBody({body:[{heading:'Safe',paragraphs:[text]}],inlineLinks:[{text:'<b>Board</b>',href:'https://4ohi.com/palace-leaderboard.html?x=1&y=2'}]}), '<h2>Safe</h2><p><a href="https://4ohi.com/palace-leaderboard.html?x=1&amp;y=2">&lt;b&gt;Board&lt;/b&gt;</a> &amp; [unapproved](javascript:alert)</p>');

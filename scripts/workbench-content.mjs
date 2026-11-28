@@ -48,7 +48,7 @@ export function loadArticles(root) {
       seriesOrders.add(position);
     }
     if (a.image && (!/^assets\/[a-zA-Z0-9/_\-.]+$/.test(a.image) || !existsSync(resolve(root,a.image)) || !a.imageAlt)) fail("approved local image and alt text required");
-    if (a.media && (!["phone-screenshot","development-capture","product-artwork","studio-artwork"].includes(a.media.kind) || ![a.media.width,a.media.height].every(n=>Number.isInteger(n)&&n>0) || ![a.media.label,a.media.caption,a.media.evidence].every(s=>typeof s==="string"&&s.trim()))) fail("visual kind, dimensions, caption and source evidence required");
+    if (a.media && (!["phone-screenshot","development-capture","product-artwork","studio-artwork","reference-photograph"].includes(a.media.kind) || ![a.media.width,a.media.height].every(n=>Number.isInteger(n)&&n>0) || ![a.media.label,a.media.caption,a.media.evidence].every(s=>typeof s==="string"&&s.trim()))) fail("visual kind, dimensions, caption and source evidence required");
     if (a.timeline && (!["documented-work","undated-retrospective"].includes(a.timeline.mode) || (a.timeline.mode === "documented-work" && (!validDate(a.timeline.date) || a.timeline.date > today || (a.timeline.endDate && (!validDate(a.timeline.endDate) || a.timeline.endDate < a.timeline.date || a.timeline.endDate > today)))) || (a.timeline.mode === "undated-retrospective" && a.timeline.date !== null))) fail("documented work date or explicit undated context required");
   }
   const published = records.filter(a => a.status === "published").sort((a,b) => b.date.localeCompare(a.date));

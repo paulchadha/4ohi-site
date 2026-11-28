@@ -2,6 +2,7 @@ const escapeHtml = value => String(value).replaceAll("&", "&amp;").replaceAll("<
 
 export function validateArticleProse(article) {
   if (article.intro !== undefined && (!Array.isArray(article.intro) || article.intro.some(p => typeof p !== "string" || !p.trim()))) throw Error("Article intro must contain plain-text paragraphs");
+  if (article.inlineStrong !== undefined && (!Array.isArray(article.inlineStrong) || new Set(article.inlineStrong).size !== article.inlineStrong.length || article.inlineStrong.some(text => typeof text !== "string" || !text.trim()))) throw Error("Article emphasis must contain unique plain-text labels");
   if (article.inlineLinks === undefined) return;
   if (!Array.isArray(article.inlineLinks)) throw Error("Article inline links must be an array");
   const labels = new Set();
@@ -13,13 +14,14 @@ export function validateArticleProse(article) {
   }
 }
 
-export function articleParagraph(text, links = []) {
+export function articleParagraph(text, links = [], strong = []) {
+  const labels = [...links, ...strong.map(text => ({text, strong:true}))];
   let html = "", cursor = 0;
   while (cursor < text.length) {
-    const next = links.map(link => ({...link, index:text.indexOf(link.text, cursor)})).filter(link => link.index >= 0).sort((a,b) => a.index-b.index || b.text.length-a.text.length)[0];
+    const next = labels.map(link => ({...link, index:text.indexOf(link.text, cursor)})).filter(link => link.index >= 0).sort((a,b) => a.index-b.index || b.text.length-a.text.length)[0];
     if (!next) break;
     html += escapeHtml(text.slice(cursor, next.index));
-    html += `<a href="${escapeHtml(next.href)}">${escapeHtml(next.text)}</a>`;
+    html += next.strong ? `<strong>${escapeHtml(next.text)}</strong>` : `<a href="${escapeHtml(next.href)}">${escapeHtml(next.text)}</a>`;
     cursor = next.index + next.text.length;
   }
   return html + escapeHtml(text.slice(cursor));
@@ -27,6 +29,6 @@ export function articleParagraph(text, links = []) {
 
 export function articleBody(article) {
   validateArticleProse(article);
-  const paragraph = text => `<p>${articleParagraph(text, article.inlineLinks)}</p>`;
+  const paragraph = text => `<p>${articleParagraph(text, article.inlineLinks, article.inlineStrong)}</p>`;
   return (article.intro || []).map(paragraph).join("") + article.body.map(section => `<h2>${escapeHtml(section.heading)}</h2>${section.paragraphs.map(paragraph).join("")}`).join("");
 }

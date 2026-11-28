@@ -1,5 +1,50 @@
 [
   {
+    "id": "reel-fun-real-fish",
+    "slug": "reel-fun-just-got-a-little-more-real",
+    "title": "Reel Fun Just Got a Little More Real",
+    "description": "After months of watching footage, poring over our own aquarium photos, and studying how fish actually look and move, we’ve reached a milestone: every fish in Reel Fun is based on a real fish.",
+    "author": "The 4OH Workshop",
+    "articleType": "studio-story",
+    "category": "From the Workbench",
+    "productIds": [
+      "reel-fun"
+    ],
+    "tags": [
+      "games",
+      "development"
+    ],
+    "status": "published",
+    "date": "2026-11-28",
+    "publishedAt": "2026-11-28T14:02:17.744Z",
+    "language": "en",
+    "featured": true,
+    "image": "assets/news/reel-fun-aquarium-20261128-1e3e41b41dfe.jpg",
+    "imageAlt": "Freshwater aquarium with yellow and silver fish, small blue and red fish, aquatic plants and driftwood above gravel.",
+    "media": {
+      "kind": "reference-photograph",
+      "width": 2048,
+      "height": 1536,
+      "label": "Freshwater aquarium reference photograph",
+      "caption": "Our freshwater aquarium, one of the real-world references for Reel Fun.",
+      "evidence": "docs/REEL-FUN-PHOTO-2026-11-28.md"
+    },
+    "timeline": {
+      "mode": "undated-retrospective",
+      "date": null
+    },
+    "intro": [
+      "After months of watching footage, poring over our own aquarium photos, and studying how fish actually look and move, we’ve reached a milestone: every fish in Reel Fun is based on a real fish. We spent an unreasonable amount of time staring at fins. The fish, for their part, declined to give notes.",
+      "We’re starting in freshwater with Reel Fun of the Lakes. The idea is that when you reel something in, you’re meeting a fish you could actually look up. How big it was when you tell the story later is between you and your conscience.",
+      "Saltwater comes later with Reel Fun of the Sea. First the lakes. Then the ocean. We hear it’s a bit bigger."
+    ],
+    "inlineStrong": [
+      "Reel Fun of the Lakes",
+      "Reel Fun of the Sea"
+    ],
+    "body": []
+  },
+  {
     "id": "thanksgiving-2026",
     "slug": "happy-thanksgiving-from-four-of-hearts",
     "title": "Happy Thanksgiving from Four of Hearts",
@@ -15,7 +60,7 @@
     "date": "2026-11-27",
     "publishedAt": "2026-11-27T17:33:30.715Z",
     "language": "en",
-    "featured": true,
+    "featured": false,
     "image": "assets/news/4oh-thanksgiving-20261127-a52c8cd8693f.webp",
     "imageAlt": "A slice of pumpkin pie, the four of hearts, and two wooden chess pieces on a candlelit table.",
     "media": {
